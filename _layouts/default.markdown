@@ -21,7 +21,7 @@
       <div id="header">
         <nav>
           <ul>
-            ![Burning MUD Logo]({% link /images/burning.jpg %})
+            <img src="./images/burning.jpg" alt="Burning MUD">
             {% if site.show_downloads %}
               <li class="fork"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
               <li class="downloads"><a href="{{ site.github.zip_url }}">ZIP</a></li>
