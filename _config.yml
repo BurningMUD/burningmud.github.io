@@ -32,6 +32,7 @@ url: "https://burningmud.github.io" # the base hostname & protocol for your site
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 #  - jekyll-remote-theme
 
 # Exclude from processing.
