@@ -7,9 +7,9 @@ layout: home
 
 <h1>{{ page.home }}</h1>
 
-# Welcome
+# Burning MUD
 
-**Welcome to the Burning MUD Homepage**
+##Welcome to the Burning MUD Homepage
 
-Test.
+**This is a test**
 
