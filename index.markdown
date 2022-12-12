@@ -15,7 +15,7 @@ layout: default
 
 <table>
     <tr>
-        <td>Test1</td>
+        <td>[About]({% link about.markdown %})</td>
 	<td>test2</td>
 	<td>test3</td>
     </tr>
