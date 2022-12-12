@@ -4,3 +4,12 @@
 
 layout: home
 ---
+
+<h1>{{ page.home }}</h1>
+
+# Welcome
+
+**Welcome to the Burning MUD Homepage**
+
+Test.
+
