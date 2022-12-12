@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-![Burning MUD Logo]({% link /images/burning.jpg %})
-
 ## Welcome to the Burning MUD homepage!
 
 [About]({% link about.markdown %})<br />

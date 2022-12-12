@@ -21,14 +21,17 @@
       <div id="header">
         <div style="text-align: center;">
         <center><img src="{{ site.baseurl }} {% link /images/burning.jpg %} " alt="Burning MUD"></center>
+ 	* * *
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
+	| [Home]{{ site.baseurl }}        | [About]{{ site.baseurl.about }}({% link /images/burning.jpg %})          | three |
+ 	* * *
+
       </div><!-- end header -->
 
     <div class="wrapper">
 
       <section>
         {{ content }}
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
       </section>
 
     </div>
