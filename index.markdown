@@ -13,6 +13,8 @@ layout: default
 
 **This is a test**
 
+[About]({% link about.markdown %})
+
 <table>
     <tr>
         <td>[About]({% link about.markdown %})</td>
