@@ -20,7 +20,7 @@
   <body>
       <div id="header">
         <div style="text-align: center;">
-        <center><img src="{{ site.baseurl }} {% link /images/burning.jpg %} " alt="Burning MUD"></center>a
+        <center><img src="{{ site.baseurl }} {% link /images/burning.jpg %} " alt="Burning MUD"></center>
       </div><!-- end header -->
 
     <div class="wrapper">
