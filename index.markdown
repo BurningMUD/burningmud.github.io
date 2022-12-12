@@ -4,15 +4,9 @@
 
 layout: default
 ---
-
-<h1>{{ page.home }}</h1>
-
 ![Burning MUD Logo]({% link /images/burning.jpg %})
 
-
-##Welcome to the Burning MUD Homepage...
-
-**This is a test**
+## Welcome to the Burning MUD homepage!
 
 [About]({% link about.markdown %})
-
+[Player Sites]({% link /player_sites/player_sites.markdown %})
