@@ -17,5 +17,6 @@ layout: home
     <tr>
         <td>Test1</td>
 	<td>test2</td>
+	<td>test3</td>
     </tr>
 </table>
