@@ -5,6 +5,6 @@ layout: default
 
 ## Welcome to the Burning MUD homepage!
 
-[About]({% link about.markdown %})
-[Player Sites]({% link player_sites.markdown %})
-[Help]({% link help.markdown %})
+[About]({% link about.markdown %})<br />
+[Player Sites]({% link player_sites.markdown %})<br />
+[Help]({% link help.markdown %})<br />

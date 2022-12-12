@@ -3,9 +3,9 @@ layout: default
 ---
 ![Burning MUD Logo]({% link /images/burning.jpg %})
 
-# Help with Burning MUD
+# Help with Burning MUD<br />
 
-## Game Support
+## Game Support<br />
 
-## FAQ
+## FAQ<br />
 

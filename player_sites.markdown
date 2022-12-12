@@ -1,8 +1,9 @@
 ---
 layout: default
 ---
-# Player Sites
+# Player Sites<br />
+<br />
 
-[Ozrak](http://ozrak.insomnia247.nl/burning/)
-[Cindy](http://www.lysator.liu.se/~tomca/burning/)
+[Ozrak](http://ozrak.insomnia247.nl/burning/)<br />
+[Cindy](http://www.lysator.liu.se/~tomca/burning/)<br />
 
