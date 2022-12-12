@@ -9,7 +9,7 @@ layout: home
 
 # Burning MUD
 
-##Welcome to the Burning MUD Homepage
+##Welcome to the Burning MUD Homepage...
 
 **This is a test**
 
