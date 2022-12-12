@@ -21,20 +21,14 @@
       <div id="header">
         <div style="text-align: center;">
         <center><img src="{{ site.baseurl }} {% link /images/burning.jpg %} " alt="Burning MUD"></center>
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
       </div><!-- end header -->
 
     <div class="wrapper">
 
       <section>
-        <div id="title">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
-          <p>{{ site.description | default: site.github.project_tagline }}</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
-        </div>
-
         {{ content }}
-
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
       </section>
 
     </div>
