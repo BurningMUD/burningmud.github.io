@@ -7,7 +7,8 @@ layout: default
 
 <h1>{{ page.home }}</h1>
 
-# Burning MUD
+![Burning MUD Logo]({% link /images/burning.jpg %})
+
 
 ##Welcome to the Burning MUD Homepage...
 
@@ -15,10 +16,3 @@ layout: default
 
 [About]({% link about.markdown %})
 
-<table>
-    <tr>
-        <td>[About]({% link about.markdown %})</td>
-	<td>test2</td>
-	<td>test3</td>
-    </tr>
-</table>
