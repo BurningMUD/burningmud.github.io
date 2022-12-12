@@ -23,7 +23,7 @@
         <center><img src="{{ site.baseurl }} {% link /images/burning.jpg %} " alt="Burning MUD"></center>
  	* * *
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
-	| [Home]({% link site.baseurl %})        | [About]({% link about.markdown %})          | [About]({% link player_sites.markdown %}) |
+	| [Home]({% link index.markdown %})        | [About]({% link about.markdown %})          | [About]({% link player_sites.markdown %}) |
  	* * *
 
       </div><!-- end header -->
