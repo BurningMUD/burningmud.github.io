@@ -13,3 +13,9 @@ layout: home
 
 **This is a test**
 
+<table>
+    <tr>
+        <td>Test1</td>
+	<td>test2</td>
+    </tr>
+</table>
