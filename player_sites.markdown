@@ -1,4 +1,5 @@
 ---
+title: Player Websites
 layout: default
 ---
 # Player Sites<br />
