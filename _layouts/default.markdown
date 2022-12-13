@@ -22,7 +22,7 @@
         <div style="text-align: center;">
         <center><img src="{{ site.baseurl }} {% link /images/burning.jpg %} " alt="Burning MUD"></center>
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        | <a href="/">Home</a> | <a href="/maps">Maps</a>
+        | <a href="/">Home</a> | <a href="/maps">Maps</a> | <a href="/mud_clients">MUD Clients</a> | <a href="/player_sites">Player Sites</a> |
 
       </div><!-- end header -->
 
