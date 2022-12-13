@@ -2,7 +2,11 @@
 layout: default
 title: Maps
 ---
-<p style="background-image: url('/maps/BurningMUD_Orhan');">
+<style>
+body {
+  background-image: url('/images/BurningMUD_Orhan.jpg');
+}
+</style>
 ## Graphical Maps
 
 * ![Alt text](../images/BurningMUD_Orhan.jpg)
