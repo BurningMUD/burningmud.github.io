@@ -29,7 +29,7 @@
   </head>
   <body>
       <div id="header">
-        <div style="text-align: center; overflow: auto;">
+        <div style="text-align: center;">
           <br />
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
         <br />
