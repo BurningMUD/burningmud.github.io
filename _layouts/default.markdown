@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <style>
       body {
-        overflow: auto;
+        overflow-y: auto;
       }
       img {
         max-width: 1000px;
@@ -33,7 +33,6 @@
         <center><img src="{{ site.baseurl }} {% link /images/burning.jpg %} " alt="Burning MUD"></center>
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
         | <a href="/">Home</a> | <a href="/maps">Maps</a> | <a href="/mud_clients">MUD Clients</a> | <a href="/player_sites">Player Sites</a> | <a href="/about">About</a> | <a href="/documentation">Documentation</a> | <a href="/help">Help</a>
-        </div>
       </div><!-- end header -->
     <div class="wrapper">
       <section>
