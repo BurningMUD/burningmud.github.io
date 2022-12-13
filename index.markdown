@@ -2,11 +2,13 @@
 layout: default
 ---
 
-## Out of the burning ashes
+## Out of the burning ashes,
 
-## Rose a new life
+## Rose a new life,
 
-## A new creature, born into the Burning World
+## A new creature,
+
+## Born into the Burning World.
 
 * * *
 
