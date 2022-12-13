@@ -4,9 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <style>
-    img {
-      width: 100%;
-    }
+      .container {
+      width: 60%;
+      height: 60%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
     </style>
 {% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
