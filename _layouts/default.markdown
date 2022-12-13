@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <style>
-      post {
+      body {
         overflow-y:auto;
       }
       .container {
@@ -41,9 +41,7 @@
     <div class="wrapper">
 
       <section>
-        <div id="post">
           {{ content }}
-        </div>
       </section>
 
     </div>
