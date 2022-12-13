@@ -3,9 +3,11 @@ layout: default
 title: Maps
 ---
 <style>
+img {
+    opacity: 0.5;
+}
 body {
   background-image: url('/images/BurningMUD_Orhan.jpg');
-  opacity: 0.5;
 }
 </style>
 ## Graphical Maps
