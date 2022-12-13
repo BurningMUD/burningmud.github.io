@@ -10,9 +10,9 @@ body {
   background-position: center;
 }
 </style>
-## Graphical Maps
+## Graphical Maps for Continents
 
-* [Alt text](../images/BurningMUD_Orhan.jpg)<br />
-* [Alt text](../images/BurningMUD_Ashinara.jpg)
+* [Ohran](../images/BurningMUD_Orhan.jpg)<br />
+* [Ashinara](../images/BurningMUD_Ashinara.jpg)
 
 ## Text Maps
