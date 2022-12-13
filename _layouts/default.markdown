@@ -29,9 +29,11 @@
   </head>
   <body>
       <div id="header">
-        <div style="text-align: center;">
-        <br />
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <nav>
+          <div style="text-align: center;">
+          <br />
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        </nav>
         <br />
         <br />
         <center><img src="{{ site.baseurl }} {% link /images/burning.jpg %} " alt="Burning MUD"></center>
