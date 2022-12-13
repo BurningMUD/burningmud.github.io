@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <style>
+      post {
+        overflow-y:auto;
+      }
       .container {
       width: 60%;
       height: 60%;
@@ -36,10 +39,11 @@
       </div><!-- end header -->
 
     <div class="wrapper">
-    overflow-y:auto;
 
       <section>
-        {{ content }}
+        <div id="post">
+          {{ content }}
+        </div>
       </section>
 
     </div>
