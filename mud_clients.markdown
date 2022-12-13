@@ -12,7 +12,7 @@ title: MUD Clients
 [TinyFugue (tf)](https://tinyfugue.sourceforge.net/) - A client for Linux<br />
 [PuTTy](https://putty.org/) - Telnet / SSH Client for Windows<br />
     * Connect directly to BurningMUD via Telnet protocol. PuTTy itself does not support triggers.<br />
-    * Connect to a Linux SSH server where TinyFugue client is hosted.
+    * Connect to a Linux SSH server where TinyFugue client is hosted.<br />
 [TinTin++](https://tintin.mudhalla.net/) - Legacy client for Linux or Windows (WinTin++)<br />
 
 # Mobile Clients
@@ -21,7 +21,7 @@ title: MUD Clients
 * * *
 
 # Triggers
-In fast-paced action MUDs, it can sometimes be hard to keep up with how much text appears on the screen! We try to help the player filter out some information optionally through the [Gags](help.markdown) system, which allows a player to filter out incoming text that doesn't affect them directly.
+In fast-paced action MUDs, it can sometimes be hard to keep up with how much text appears on the screen! We try to help the player filter out some information optionally through the [Gags](help.markdown) system, which allows a player to filter out incoming text that doesn't affect them directly.<br />
 [Uzi](https://github.com/tollofsen/uzi) - An extensive trigger set designed for Tinyfugue, exclusively for Burning MUD.<br />
     * Author: Moe<br />
     * Maintainer: Brutus<br />
