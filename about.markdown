@@ -6,17 +6,12 @@ permalink: /about/
 
 <head>
 <style>
-body {
-  background-color:#E7E9EB;
-}
 #myDIV {
-  height:300px;
-  background-color:#FFFFFF;
+  height:50%;
 }
 .ex1 {
-  background-color: lightblue;
-  width: 500px;
-  height: 20px;
+  width: 80%;
+  height: 80%;
   overflow:auto;
 }
 </style>
