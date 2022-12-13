@@ -36,6 +36,7 @@
       </div><!-- end header -->
 
     <div class="wrapper">
+    overflow-y:auto;
 
       <section>
         {{ content }}
