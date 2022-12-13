@@ -31,6 +31,7 @@
       <div id="header">
         <div style="text-align: center;">
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <br />
         <center><img src="{{ site.baseurl }} {% link /images/burning.jpg %} " alt="Burning MUD"></center>
         | <a href="/">Home</a> | <a href="/maps">Maps</a> | <a href="/mud_clients">MUD Clients</a> | <a href="/player_sites">Player Sites</a> | <a href="/about">About</a> | <a href="/documentation">Documentation</a> | <a href="/help">Help</a> |
       </div><!-- end header -->

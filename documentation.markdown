@@ -1,5 +1,6 @@
 ---
 layout: default
 ---
-## OLC Documentation<br />
-## Mobprogs Documentation<br />
+## OLC Documentation
+
+## Mobprogs Documentation

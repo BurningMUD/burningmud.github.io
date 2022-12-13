@@ -12,7 +12,7 @@ permalink: /about/
 .ex1 {
   width: 80%;
   height: 80%;
-  overflow:auto;
+  overflow: auto;
 }
 </style>
 </head>
