@@ -22,7 +22,7 @@
         <div style="text-align: center;">
         <center><img src="{{ site.baseurl }} {% link /images/burning.jpg %} " alt="Burning MUD"></center>
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        | <a href="{{ site.url }}">Home</a> | <a href="{{ site.url }} {% link /maps %} ">Maps</a>
+        | <a href="/">Home</a> | <a href="/maps">Maps</a>
 
       </div><!-- end header -->
 
