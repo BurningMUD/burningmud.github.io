@@ -29,13 +29,12 @@
   </head>
   <body>
       <div id="header">
-        <nav>
-          <div style="text-align: center;">
+        <div style="text-align: center; overflow: auto;">
           <br />
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        </nav>
         <br />
         <br />
+        </div>
         <center><img src="{{ site.baseurl }} {% link /images/burning.jpg %} " alt="Burning MUD"></center>
         Obvious Exits: [ <a href="/">Home</a> | <a href="/maps">Maps</a> | <a href="/mud_clients">MUD Clients</a> | <a href="/player_sites">Player Sites</a> | <a href="/about">About</a> | <a href="/documentation">Documentation</a> | <a href="/help">Help</a> ]
       </div><!-- end header -->
