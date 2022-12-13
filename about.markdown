@@ -7,11 +7,12 @@ permalink: /about/
 <head>
 <style>
 #myDIV {
-  height:50%;
+  height:100%;
+  overflow: auto;
 }
 .ex1 {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   overflow: auto;
 }
 </style>
