@@ -22,7 +22,7 @@
         <div style="text-align: center;">
         <center><img src="{{ site.baseurl }} {% link /images/burning.jpg %} " alt="Burning MUD"></center>
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
-	| <a href="{{ site.baseurl }}">Home</a>        | [About]({% link about.markdown %})          | [About]({% link player_sites.markdown %}) |
+	| [Home](../index.markdown)        | [Maps](../maps/maps.markdown)          | [Player Sites](../player_sites.markdown)          | [MUD Clients](../mud_clients.markdown)          | [About](../about.markdown)          | [Help](../help.markdown)          | [Documentation](../documentation.markdown) |
 
       </div><!-- end header -->
 
