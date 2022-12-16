@@ -16,7 +16,7 @@ permalink: /about/
   overflow: visible;
 }
 p {
-  font-family: 'Iconsolata';
+  font-family: 'Inconsolata';
 }
 
 </style>
