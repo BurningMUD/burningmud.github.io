@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <style>
       img {
+        max-height: 288px;
+        max-width: 1000px;
         width: 100%;
         height: 100%;
       }
