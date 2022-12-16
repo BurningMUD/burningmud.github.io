@@ -19,23 +19,22 @@
   </head>
   <body>
       <div id="header">
-        <div style="text-align: center;">
-          <br>
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <nav>
+          <ul>
+              {% if site.show_downloads %}
+              <li class="downloads"><a href="{{ site.github.zip_url }}">ZIP</a></li>
+              <li class="downloads"><a href="{{ site.github.tar_url }}">TAR</a></li>
+              <li class="title">DOWNLOADS</li>
+              {% endif %}
+          </ul>
+        </nav>
         <br>
         <br>
         <center><img src="{{ site.baseurl }} {% link /images/burning.jpg %} " alt="Burning MUD"></center>
         Obvious Exits: [ <a href="/">Home</a> | <a href="/maps">Maps</a> | <a href="/mud_clients">MUD Clients</a> | <a href="/player_sites">Player Sites</a> | <a href="/about">About</a> | <a href="/documentation">Documentation</a> | <a href="/help">Help</a> ]
       </div><!-- end header -->
     <div class="wrapper">
-      <section>
-        <div id="title">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
-          <p>{{ site.description | default: site.github.project_tagline }}</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
-        </div>
+      <section>>
         {{ content }}
       </section>
     </div>
