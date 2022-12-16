@@ -21,11 +21,7 @@
       <div id="header">
         <nav>
           <ul>
-              {% if site.show_downloads %}
-              <li class="downloads"><a href="{{ site.github.zip_url }}">ZIP</a></li>
-              <li class="downloads"><a href="{{ site.github.tar_url }}">TAR</a></li>
-              <li class="title">DOWNLOADS</li>
-              {% endif %}
+          <!-- nothing here -->
           </ul>
         </nav>
         <br>
