@@ -41,11 +41,9 @@
     <div class="wrapper">
 
       <section>
-      <div id="body">
-        <div style="font-family: 'Iconoclasta'">
 
           {{ content }}
-      </div>
+
       </section>
 
     </div>
