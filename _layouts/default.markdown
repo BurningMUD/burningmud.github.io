@@ -3,7 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+    <style>
+      body {
+        overflow-y: auto;
+      }
+      img {
+        max-width: 1000px;
+        max-height: 288px;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
 {% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -19,20 +29,23 @@
   </head>
   <body>
       <div id="header">
-        <nav>
-          <ul>
-          <!-- nothing here -->
-          </ul>
-        </nav>
-        <br>
-        <br>
+        <div style="text-align: center;">
+          <br />
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <br />
+        <br />
         <center><img src="{{ site.baseurl }} {% link /images/burning.jpg %} " alt="Burning MUD"></center>
         Obvious Exits: [ <a href="/">Home</a> | <a href="/maps">Maps</a> | <a href="/mud_clients">MUD Clients</a> | <a href="/player_sites">Player Sites</a> | <a href="/about">About</a> | <a href="/documentation">Documentation</a> | <a href="/help">Help</a> ]
       </div><!-- end header -->
+
     <div class="wrapper">
+
       <section>
-        {{ content }}
+
+          {{ content }}
+
       </section>
+
     </div>
   </body>
 </html>
