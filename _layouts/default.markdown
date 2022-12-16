@@ -6,6 +6,7 @@
     <style>
       body {
         overflow-y: auto;
+        font-family: "Iconsolata";
       }
       img {
         max-width: 1000px;

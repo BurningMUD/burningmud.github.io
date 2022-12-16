@@ -8,14 +8,17 @@ permalink: /about/
 <style>
 #myDIV {
   height:100%;
-  overflow: auto;
+  overflow: visible;
 }
 .ex1 {
   width: 100%;
   height: 100%;
-  overflow: auto;
-  font-family: 'Play';
+  overflow: visible;
 }
+p {
+  font-family: 'Iconsolata';
+}
+
 </style>
 </head>
 <body>
