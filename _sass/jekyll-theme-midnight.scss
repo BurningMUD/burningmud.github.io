@@ -11,8 +11,8 @@ body {
   background: #252525;
   background-attachment: fixed !important;
   background: linear-gradient(#2a2a29, #1c1c1c);
-  overflow: scroll;
-  max-height: 480px;
+  overflow: auto;
+  position: absolute;
 }
 
 h1, h2, h3, h4, h5, h6 {
