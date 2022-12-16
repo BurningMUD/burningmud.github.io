@@ -77,9 +77,11 @@ strong {
 
 .wrapper {
   max-width:800px;
+  max-height:480px;
   margin:0 auto;
-  position:absolute;
+  position:relative;
   padding: 0 20px;
+  overflow: auto;
 }
 
 section img {
