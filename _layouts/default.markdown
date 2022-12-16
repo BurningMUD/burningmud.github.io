@@ -30,7 +30,7 @@
         Obvious Exits: [ <a href="/">Home</a> | <a href="/maps">Maps</a> | <a href="/mud_clients">MUD Clients</a> | <a href="/player_sites">Player Sites</a> | <a href="/about">About</a> | <a href="/documentation">Documentation</a> | <a href="/help">Help</a> ]
       </div><!-- end header -->
     <div class="wrapper">
-      <section>>
+      <section>
         {{ content }}
       </section>
     </div>
