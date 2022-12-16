@@ -4,9 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <style>
-      body {
-        overflow-y: visible;
-      }
       img {
         max-width: 1000px;
         max-height: 288px;
