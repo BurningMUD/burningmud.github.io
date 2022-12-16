@@ -20,7 +20,7 @@
   <body>
       <div id="header">
         <br>
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <center><h1>{{ site.title | default: site.github.repository_name }}</h1></center>
         <br>
         <br>
         <center><img src="{{ site.baseurl }} {% link /images/burning.jpg %} " alt="Burning MUD"></center>
