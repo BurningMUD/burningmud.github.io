@@ -12,7 +12,7 @@ body {
   background-attachment: fixed !important;
   background: linear-gradient(#2a2a29, #1c1c1c);
   overflow: scroll;
-  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -82,8 +82,6 @@ strong {
   margin:0 auto;
   position:relative;
   padding: 0 20px;
-  overflow: scroll;
-  overflow-y: hidden;
 }
 
 section img {
