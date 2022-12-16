@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <style>
       body {
-        overflow-y: auto;
-        font-family: "Iconsolata";
+        overflow-y: visible;
       }
       img {
         max-width: 1000px;
@@ -30,7 +29,7 @@
   </head>
   <body>
       <div id="header">
-        <div style="text-align: center;">
+        <div style="text-align: center; font-family: ''Iconaclasta'">
           <br />
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
         <br />
@@ -42,9 +41,11 @@
     <div class="wrapper">
 
       <section>
+      <div id="body">
+        <div style="font-family: 'Iconoclasta'">
 
           {{ content }}
-
+      </div>
       </section>
 
     </div>
