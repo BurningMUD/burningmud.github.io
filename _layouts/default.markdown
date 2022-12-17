@@ -24,8 +24,6 @@
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     {% include head-custom.html %}
-  </head>
-  <body>
       <div id="header">
         <br>
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
@@ -35,6 +33,8 @@
         <h1>Obvious Exits: [ <a href="/">Home</a> | <a href="/maps">Maps</a> | <a href="/mud_clients">MUD Clients</a> | <a href="/player_sites">Player Sites</a> | <a href="/about">About</a> | <a href="/documentation">Documentation</a> | <a href="/help">Help</a> ]</h1>
         <br>
       </div><!-- end header -->
+  </head>
+  <body>
 
     <div class="wrapper">
 
