@@ -9,7 +9,6 @@
         max-width: 1000px;
         width: 100%;
         height: 100%;
-        text-align: center;
       }
     </style>
 
@@ -35,7 +34,6 @@
         <br>
       </div><!-- end header -->
   </head>
-  <br>
   <body>
 
     <div class="wrapper">
