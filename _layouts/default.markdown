@@ -28,11 +28,11 @@
   <body>
       <div id="header">
         <br>
-        <center><h1>{{ site.title | default: site.github.repository_name }}</h1></center>
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
         <br>
         <br>
-        <center><img src="{{ site.baseurl }} {% link /images/burning.jpg %} " alt="Burning MUD"</center>
-        <center>Obvious Exits: [ <a href="/">Home</a> | <a href="/maps">Maps</a> | <a href="/mud_clients">MUD Clients</a> | <a href="/player_sites">Player Sites</a> | <a href="/about">About</a> | <a href="/documentation">Documentation</a> | <a href="/help">Help</a> ]</center>
+        <p><img src="{{ site.baseurl }} {% link /images/burning.jpg %} " alt="Burning MUD"></p>
+        <p>Obvious Exits: [ <a href="/">Home</a> | <a href="/maps">Maps</a> | <a href="/mud_clients">MUD Clients</a> | <a href="/player_sites">Player Sites</a> | <a href="/about">About</a> | <a href="/documentation">Documentation</a> | <a href="/help">Help</a> ]</p>
         <br>
       </div><!-- end header -->
 
