@@ -31,8 +31,8 @@
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
         <br>
         <br>
-        <p><img src="{{ site.baseurl }} {% link /images/burning.jpg %} " alt="Burning MUD"></p>
-        <p>Obvious Exits: [ <a href="/">Home</a> | <a href="/maps">Maps</a> | <a href="/mud_clients">MUD Clients</a> | <a href="/player_sites">Player Sites</a> | <a href="/about">About</a> | <a href="/documentation">Documentation</a> | <a href="/help">Help</a> ]</p>
+        <h1><img src="{{ site.baseurl }} {% link /images/burning.jpg %} " alt="Burning MUD"></h1>
+        <h1>Obvious Exits: [ <a href="/">Home</a> | <a href="/maps">Maps</a> | <a href="/mud_clients">MUD Clients</a> | <a href="/player_sites">Player Sites</a> | <a href="/about">About</a> | <a href="/documentation">Documentation</a> | <a href="/help">Help</a> ]</h1>
         <br>
       </div><!-- end header -->
 
