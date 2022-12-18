@@ -5,7 +5,7 @@ permalink: /vote/
 ---
 ## Vote for Burning MUD
 
-Voting brings attention to Burning for potential players. If you enjnoy playing Burning MUD, help keep us visible on sites where players are browsing for new MUDs to play!
+Voting brings attention to Burning for potential players. If you enjoy playing Burning MUD, help keep us visible on sites where players are browsing for new MUDs to play!
 
 You should never feel obligated to vote for Burning MUD, and shouldn't consider it a chore to vote each day. To note, you can only vote for one MUD each day, per website, but we appreciate of course any votes toward Burning. Thanks!
 
