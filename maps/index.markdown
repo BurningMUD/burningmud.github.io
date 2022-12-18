@@ -7,34 +7,9 @@ title: Maps
 * [Ohran](../images/BurningMUD_Orhan.jpg)<br>
 * [Ashinara](../images/BurningMUD_Ashinara.jpg)
 
-## Text Maps
-Test map
-```
-Graven 50-100, Construct (Valheim: 12s3e2nene2nennen2e3ne2n))
- ~*| work in progress, NOT COMPLETE yet |*
+## Karandras Home Town Map
+* [Karandras - Side A](../images/karandras_map_side_a.png)
+* [Karandras - Side B](../images/karandras_map_side_b.png)
 
-             o   ?   ?
-             |   +   |
-             o - o + gwv
-             |
-            ElW--o - o - o
-                 |*      |
-                 | ?     o                 ?
-           mss + o       |                 |
-                         o - o         o - o - ?
-                         |             |   |
- o - o - o               o + o - gtf + o - ?
- |   |   |               |             |
- o - o - o - o - o - o - o - cre       o - ?
- |   |   |       |       |               FIELDS
- o - o - o      apo     rer
-     |
-     o
-     |
-     o - o (yahg/well)
-     |
-     X
-     |
-   - o - (Mushroom forest)
-     |
-```
+## Text Maps
+Check [Player Sites] for extensive text maps created by the players.
