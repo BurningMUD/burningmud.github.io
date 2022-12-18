@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-
+<h1><img src="{{ site.baseurl }} {% link /images/burning.jpg %} " alt="Burning MUD"></h1>
+<div style="text-align: center;">
 ## Out of the burning ashes,
 
 ## Rose a new life,
@@ -9,7 +10,7 @@ layout: default
 ## A new creature,
 
 ## Born into the Burning World.
-
+</div>
 * * *
 
 With ancient roots in DikuMUD, and MobProgs later ported over from CircleMUD, Burning has been extensively modified over decades!
