@@ -11,7 +11,10 @@ layout: default
 * * *
 Burning MUD is a completely free, text-based online multiplayer game. All players login and play together in the same world!
 
-Burning is a PvE Hack m' Slash MUD, with optional PvP inside special arenas for fun!
+Burning is a cooperative PvE Hack n' Slash MUD, with optional PvP inside special arenas for fun. Play alone or with buddies, an extensive channel system allows public and private chats, as well as a Mercenary Group system where you can build a 
+
+
+Group focused at the core, with no limit to the size of a group, the nearly immortal creatures require that players band together in large numbers to defeat the greatest threats to the world, but the rewards may far outshine what you can achieve alone in a dangerous and deadly world.
 
 Come have some fun and play casually or dive deep into the depth of the games content and systems. Burning is not a roleplaying MUD in the sense that you can chat about whatever you want in-game, and the gameplay really is focused around the fast-paced combat system!
 
