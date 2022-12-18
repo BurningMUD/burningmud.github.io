@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<h1><img src="{{ site.baseurl }} {% link /images/burning.jpg %} " alt="Burning MUD"></h1>
+<h1><img src="{{ site.baseurl }} {% link /images/BurningMUD_ASCII_bright.png %} " alt="Burning MUD"></h1>
 <div class="center">
 <h1>Out of the burning ashes</h1>
 <h1>Rose a new life</h1>
