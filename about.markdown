@@ -8,8 +8,6 @@ permalink: /about/
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .collapsible {
-  background-color: #777;
-  color: white;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -23,7 +21,6 @@ permalink: /about/
 }
 .collapsible:after {
   content: '\002B';
-  color: white;
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -36,8 +33,7 @@ permalink: /about/
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-}
+  }
 </style>
 </head>
 <body>
