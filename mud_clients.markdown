@@ -3,17 +3,16 @@ layout: default
 title: MUD Clients
 ---
 
-# Windows MUD Clients
-
-[Mudlet](https://www.mudlet.org/) - Newer client for Windows. If you are unfamiliar with MUDs, this may be a good starting place.<br>
+# PC Visual MUD Clients
+[Mudlet](https://www.mudlet.org/) - Newer client for Windows, Mac, and Linux. If you are unfamiliar with MUDs, this may be a good starting place.<br>
 [ZMUD](https://www.zuggsoft.com/) - Legacy paid client for Windows.<br>
 
-# Telnet / SSH Clients (PC)
-[TinyFugue (tf)](https://tinyfugue.sourceforge.net/) - A client for Linux<br>
+# PC Telnet / SSH Commandline Clients
+[TinyFugue (tf)](https://tinyfugue.sourceforge.net/) - A commandline client for Linux<br>
 [PuTTy](https://putty.org/) - Telnet / SSH Client for Windows<br>
     * Connect directly to BurningMUD via Telnet protocol. PuTTy itself does not support triggers.<br>
     * Connect to a Linux SSH server where TinyFugue client is hosted.<br>
-[TinTin++](https://tintin.mudhalla.net/) - Legacy client for Linux or Windows (WinTin++)<br>
+[TinTin++](https://tintin.mudhalla.net/) - Legacy commandline client for Linux or Windows (WinTin++)<br>
 
 # Mobile Clients
 [JuiceSSH](https://juicessh.com/) - Android SSH or Telnet client.
@@ -21,7 +20,7 @@ title: MUD Clients
 * * *
 
 # Triggers
-In fast-paced action MUDs, it can sometimes be hard to keep up with how much text appears on the screen! We try to help the player filter out some information optionally through the [Gags](help.markdown) system, which allows a player to filter out incoming text that doesn't affect them directly.<br>
+In fast-paced action MUDs, it can sometimes be hard to keep up with how much text appears on the screen! We try to help the player filter out this information overload optionally through the [Gags](help.markdown) system, which allows a player to filter out incoming text that doesn't affect them directly.<br>
 <br>
 [Uzi](https://github.com/tollofsen/uzi) - An extensive trigger set designed for Tinyfugue, exclusively for Burning MUD.<br>
     * Author: Moe<br>
