@@ -3,10 +3,10 @@ layout: default
 ---
 <style>
 h1 {
-    color: orange;
+    color: #990000;
 }
 </style>
-<h7><img src="{{ site.baseurl }} {% link /images/BurningMUD_ASCII_bright.png %} " alt="Burning MUD"></h7>
+<img src="{{ site.baseurl }} {% link /images/BurningMUD_ASCII_bright.png %} " alt="Burning MUD">
 <div class="center">
 <h1>Out of the burning ashes</h1>
 <h1>Rose a new life</h1>
