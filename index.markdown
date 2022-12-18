@@ -19,4 +19,3 @@ Voting brings attention to Burning for potential players. If you enjnoy playing 
 
 <a href='https://www.mudconnect.com/cgi-bin/vote.cgi?mud=BurningMUD'><img src='https://www.mudconnect.com/images/tmc_vote.png'></a><br>
 <a href='http://www.mudverse.com/vote/306'><img src='http://www.mudverse.com/images/vote.png'/></a><br>
-<a thumb href='http://www.topmudsites.com/vote-Burning.html'><img src='https://www.topmudsites.com/forums/styles/dark/misc/forumheader2.jpg'></a><br>
