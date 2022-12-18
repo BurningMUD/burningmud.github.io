@@ -14,4 +14,4 @@ Karandras is the default starting point for all players, and remains the most po
 * [Karandras - Side B](../images/karandras_map_side_b.png)
 
 ## Text Maps
-Check [Player Sites] for extensive text maps created by the players.
+Check [Player Sites](/player_sites) for extensive text maps created by the players.
