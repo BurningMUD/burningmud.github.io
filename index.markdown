@@ -9,9 +9,13 @@ layout: default
 <h1>Born into the Burning World</h1>
 </div>
 * * *
-
-With ancient roots in DikuMUD, and MobProgs later ported over from CircleMUD, Burning has been extensively modified over decades!
-
-Burning MUD is **completely free**, text-based online multiplayer game. All players login and play together in the same world!
+Burning MUD is a **completely free**, text-based online multiplayer game. All players login and play together in the same world!
 
 To play the game use one of the various [MUD Clients](mud_clients.markdown) available, at your preference.
+
+## Vote for Burning MUD
+
+Voting brings attention to Burning for potential players. If you enjnoy playing Burning MUD, help keep us visible on sites where players are browsing for new MUDs to play! You should never feel obligated to vote for Burning MUD, but of course we appreciate it! Thanks!
+<a href='https://www.mudconnect.com/cgi-bin/vote.cgi?mud=BurningMUD'><img src='https://www.mudconnect.com/images/tmc_vote.png'></a>
+<a href='http://www.mudverse.com/vote/306'><img src='http://www.mudverse.com/images/vote.png'/></a>
+<a href='http://www.topmudsites.com/vote-Burning.html'><img src='https://www.topmudsites.com/forums/styles/dark/misc/forumheader2.jpg'/></a>
