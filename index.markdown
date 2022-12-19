@@ -3,7 +3,7 @@ layout: default
 ---
 <style>
 h1 {
-    color: #990000;
+    color: darkorange;
 }
 </style>
 <div class="center">
