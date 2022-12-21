@@ -34,10 +34,10 @@ We all like to have a game that we can play anytime, and not worry that it might
 One might feel that a text-only game has many weaknesses when compared to a modern MMO or action game, but some people say the book is always better than the movie. Graphics can help visualize your environment in a fun and meaninful ways, and 3D environments and worlds provide interesting emergent behaviors that add complexity to even simple systems, but the strengths of modern MMOs can also expose their weaknesses in turn. Displaying 3D graphics can consume a lot of computing power, and this limits the scope, scale, performance and fidelity of any graphical game, which in the long run, can affect the longevity of your game as it ages and loses the technical edge that it had upon release.
 
 Problems that affect longevity of MMOs, can be issues like:
-    * Costs associated with architecting and hosting, which trickle down to monthly subscriptions or other fees for players. Once this money stops rolling in, it's likely the game will shut down. MUDs are cheap to host, and building content is as simple as writing a paragraph.
-    * "Sharding" required with most graphical MMOs ends up splitting the playerbase into small chunks in order to be performant. On a MUD, everyone exists and plays together in the same world.
-    * New content is difficult and costly to create. MUD content creation generally involves being able to write a paragraph.
-    * Graphics get outdated. This can affect the longevity of your game as players move to newer games that have better graphics every few years. A MUD's graphics never become outdated.
+* Costs associated with architecting and hosting, which trickle down to monthly subscriptions or other fees for players. Once this money stops rolling in, it's likely the game will shut down. MUDs are cheap to host, and building content is as simple as writing a paragraph.
+* "Sharding" required with most graphical MMOs ends up splitting the playerbase into small chunks in order to be performant. On a MUD, everyone exists and plays together in the same world.
+* New content is difficult and costly to create. MUD content creation generally involves being able to write a paragraph.
+* Graphics get outdated. This can affect the longevity of your game as players move to newer games that have better graphics every few years. A MUD's graphics never become outdated.
 
 This limits the fidelity of the graphics, and also once the game begins to age, the once wonderful graphics may begin to lose their luster.  Writing does not get dated in this way. As well with the need for computing power, often MMO games are "sharded", which splits the playerbase into slices and you only see a portion of the playerbase at any time which prevents the gameservers and your client from becoming overloaded. This same weakness can prevent the world from being
 
