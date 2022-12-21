@@ -36,10 +36,8 @@ One might feel that a text-only game has many weaknesses when compared to a mode
 Problems that affect longevity of MMOs, can be issues like:
 * Costs associated with architecting and hosting, which trickle down to monthly subscriptions or other fees for players. Once this money stops rolling in, it's likely the game will shut down. MUDs are cheap to host, and building content is as simple as writing a paragraph.
 * "Sharding" required with most graphical MMOs ends up splitting the playerbase into small chunks in order to be performant. On a MUD, everyone exists and plays together in the same world.
-* New content is difficult and costly to create. MUD content creation generally involves being able to write a paragraph.
-* Graphics get outdated. This can affect the longevity of your game as players move to newer games that have better graphics every few years. A MUD's graphics never become outdated.
-
-This limits the fidelity of the graphics, and also once the game begins to age, the once wonderful graphics may begin to lose their luster.  Writing does not get dated in this way. As well with the need for computing power, often MMO games are "sharded", which splits the playerbase into slices and you only see a portion of the playerbase at any time which prevents the gameservers and your client from becoming overloaded. This same weakness can prevent the world from being
+* New content is difficult, costly and time consuming to create. To create content on a MUD you just need to use your imagination, and any computer will work.
+* Graphics age and become outdated. MUDs only limitation graphically is your imagination, and they never age visually.
 
 ## Why should I play Burning MUD?
 
