@@ -24,4 +24,6 @@ Burning is not a roleplaying MUD. Chat about whatever you want in-game, as long 
 
 To play the game use one of the various [MUD Clients](mud_clients.markdown) available, at your preference.
 
+If you enjoy playing Burning, you can vote for us on a few MUD listing sites.
+
 [Vote for Burning MUD](/vote.markdown)
