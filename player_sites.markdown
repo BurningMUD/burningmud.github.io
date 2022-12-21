@@ -2,8 +2,6 @@
 title: Player Websites
 layout: default
 ---
-# Player Websites and Triggers
-
 ## Player Websites
 The world of Burning is massive and consists of two continents, with an innumerable amount of dark pathways and villainous creatures. As you progress and become more powerful, danger beginsS to lurk behind every corner and spring from every shadow. It is not easy to survive without some help, whether that is from informational sources like maps, or grouping up with other players to heal and protect each other.
 
