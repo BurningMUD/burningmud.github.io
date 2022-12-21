@@ -1,7 +1,6 @@
 ---
 layout: default
 title: About
-permalink: /about/
 ---
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,9 +38,8 @@ permalink: /about/
 <button class="collapsible">History</button>
 <div class="content">
     <p>Burning MUD was opened in its current form by Lorgalis, Alxar and Andraax, after an extended downtime from the first iteration of Burning MUD. Lorgalis had played Burning MUD since around 1990, and the game shut down around 1994. After entirely rebuilding the game, it was reopened publicly on the first of January, 1996.</p>
-    <p>Burning MUD is a heavily modified Diku codebase with a mostly original medieval fantasy world that brings a unique flavor to the genre of text-based MMO games. Burning contains a massive planet spanning two continents separated by a deep ocean, and lurking beneath the bustling surface of the planet's crust lies an extensive expanse of procedurally generated underground caverns, called the Well.
+    <p>Burning MUD is a heavily modified Diku codebase with a mostly original medieval fantasy world that brings a unique flavor to the genre of text-based MMO games. Burning contains a massive planet spanning two continents separated by a deep ocean, and lurking beneath the bustling surface of the planet's crust lies an extensive expanse of procedurally generated underground caverns, called the Well.</p>
     <p> The Well, an expansive underground cave system, leading 20 levels deep with thousands of rooms, reaveals countless mythical creatures and deadly environmental traps as one ventures deeper underground. Each day, the caverns are reshaped by these environmental forces such as lava flows, bringing surprises and unending threats to the intrepid adventurers who dare to explore the perilous depths. But risk is not without reward, for one will find that the creatures are imbued with the magic of these baffling caverns, leaving behind fragments of elemental energy that grant unimaginable powers of an eternal and ancient race.</p>
-
 </div>
 
 <button class="collapsible">Multiclassing</button>

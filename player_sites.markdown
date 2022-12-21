@@ -1,7 +1,6 @@
 ---
 title: Player Websites
 layout: default
-permalink: /player_websites/
 ---
 # Player Websites and Triggers
 

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: MUD Clients
-permalink: /clients/
 ---
 
 # PC Visual MUD Clients

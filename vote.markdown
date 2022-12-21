@@ -1,7 +1,6 @@
 ---
 title: Vote
 layout: default
-permalink: /vote/
 ---
 ## Vote for Burning MUD
 
