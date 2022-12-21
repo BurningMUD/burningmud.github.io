@@ -9,8 +9,8 @@ title: MUD Clients
 [CMUD](https://www.zuggsoft.com/) - ($$) Modern paid ZMUD replacement.<br>
 
 # PC Telnet / SSH Commandline Clients
-[TinyFugue (tf)](https://tinyfugue.sourceforge.net/) - A commandline client for Linux<br>
-[PuTTy](https://putty.org/) - Telnet / SSH Client for Windows<br>
+[TinyFugue (tf)](https://tinyfugue.sourceforge.net/) - A commandline client for Linux.<br>
+[PuTTy](https://putty.org/) - Telnet / SSH Client for Windows.<br>
     * Connect directly to BurningMUD via Telnet protocol. PuTTy itself does not support triggers.<br>
     * Connect to a Linux SSH server where TinyFugue client is hosted.<br>
 [TinTin++](https://tintin.mudhalla.net/) - Legacy commandline client for Linux or Windows (WinTin++)<br>
