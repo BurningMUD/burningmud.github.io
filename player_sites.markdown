@@ -30,4 +30,4 @@ In fast-paced action MUDs, it can sometimes be hard to keep up with how much tex
 
 * * *
 
-### **Please note that maps, scripts and websites are provided as is. People who donate their time to these efforts should not be harrassed for new features or fixes. If you would like to suggest changes or features, then please follow instructions on their respective websites to reach the authors.
+### ** Please note that maps, scripts and websites are provided as is. People who donate their time to these efforts should not be harrassed for new features or fixes. If you would like to suggest changes or features, then please follow instructions on their respective websites to reach the authors.
