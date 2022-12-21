@@ -35,7 +35,7 @@ One might feel that a text-only game has many weaknesses when compared to a mode
 
 Problems that affect longevity of MMOs, can be issues like:
 * Costs associated with architecting and hosting, which trickle down to monthly subscriptions or other fees for players. Once this money stops rolling in, it's likely the game will shut down. MUDs are cheap to host, and building content is as simple as writing a paragraph.
-* "Sharding" required with most graphical MMOs ends up splitting the playerbase into small chunks in order to be performant. On a MUD, everyone exists and plays together in the same world.
+* "Sharding" required with most graphical MMOs ends up splitting the playerbase into small chunks in order to avoid lag. On a MUD, everyone exists and plays together in the same world.
 * New content is difficult, costly and time consuming to create. To create content on a MUD you just need to use your imagination, and any computer will work.
 * Graphics age and become outdated. MUDs only limitation graphically is your imagination, and they never age visually.
 
@@ -85,4 +85,4 @@ You can learn about just about anything in the game. If you can't find something
 * We also do hosted quests, which are live events run by immortals that you can join. Most of the time these are announced ahead of time, but the events can range from hide and seek type events, to arena VS battles, to teaming up to take down emergent threats, and sometimes smaller events are hosted on the spot without prior announcement.
 
 ## Is there an objective or a win condition, or a final goal t othe game?
-* No, frankly it's up to you what you want to do once you reach a 
+* No, frankly it's up to you what you want to do. You can create your own goals and achievments to attain.
