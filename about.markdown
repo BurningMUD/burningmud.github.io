@@ -46,7 +46,7 @@ title: About
   <p>We all like to have a game that we can play anytime, and not worry that it might be gone tomorrow or bought by a larger company and totally changed out from under us. It's nice to not have a paid subscription fee. It's nice to know that regardless of how long it has been since you played, your characters are still saved and waiting for you.</p>
 </div>
 
-<button class="collapsible">Why should I play a MUD?</button>
+<button class="collapsible">Why should I play Burning MUD?</button>
 <div class="content">
   <p>We all like to have a game that we can play anytime, and not worry that it might be gone tomorrow or bought by a larger company and totally changed out from under us. It's nice to not have a paid subscription fee. It's nice to know that regardless of how long it has been since you played, your characters are still saved and waiting for you.</p>
   <p>One might feel that a text-only game has many weaknesses when compared to a modern MMO or action game, but some people say the book is always better than the movie. Graphics can help visualize your environment in a fun and meaninful ways, and 3D environments and worlds provide interesting emergent behaviors that add complexity to even simple systems, but the strengths of modern MMOs can also expose their weaknesses in turn. Displaying 3D graphics can consume a lot of computing power, and this limits the scope, scale, performance and fidelity of any graphical game, which in the long run, can affect the longevity of your game as it ages and loses the technical edge that it had upon release.</p>
