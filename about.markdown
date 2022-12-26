@@ -53,8 +53,8 @@ title: About
 </div>
 
 <button class="collapsible">Why should I play Burning MUD?</button>
-<p>Burning is a unuiqely fast-paced cooperative action game. It might sound like an oxymoron to say that a text game is fast-paced, but combat can be intense and satisfying in Burning, and split second decisions can mean life or death!</p>
 <div class="content">
+<p>Burning is a unuiqely fast-paced cooperative action game. It might sound like an oxymoron to say that a text game is fast-paced, but combat can be intense and satisfying in Burning, and split second decisions can mean life or death!</p>
 </div>
 
 <button class="collapsible">Features</button>
