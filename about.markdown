@@ -15,7 +15,7 @@ title: About
   font-size: 15px;
 }
 .active, .collapsible:hover {
-  background-color: #FF6633;
+  background-color: #CC6633;
 }
 .collapsible:after {
   content: '\002B';
