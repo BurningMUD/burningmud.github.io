@@ -25,24 +25,6 @@ The best way to learn is to play. MUDs may feel obtuse during your early moments
 
 Once you start to get familiar with some basic commands and learn how to play, it starts to come together and feel more natural. After awhile, you really forget that it's just a text game, in the way that reading an exciting book can transport you to another world, and similar to a book, it may feel like a little work to get started, but once you become invested it can be a very rewarding experience!
 
-## What is a MUD?
-A MUD is a Multi-User Dungeon, as it was originally coined. It is generally considered an open-world online game with other players that is text-based, or an MMO. A MUD is really just a text MMO? Yes, and many players are already familiar with this term, although when MUDs released, this was not yet a term. The MMO genre started its life in the form of MUDs, and there were very many MUDs based on open source codebasese like Diku, Smaug, RoM, CircleMUD, and many others.
-
-## Why should I play a MUD?
-We all like to have a game that we can play anytime, and not worry that it might be gone tomorrow or bought by a larger company and totally changed out from under us. It's nice to not have a paid subscription fee. It's nice to know that regardless of how long it has been since you played, your characters are still saved and waiting for you.
-
-One might feel that a text-only game has many weaknesses when compared to a modern MMO or action game, but some people say the book is always better than the movie. Graphics can help visualize your environment in a fun and meaninful ways, and 3D environments and worlds provide interesting emergent behaviors that add complexity to even simple systems, but the strengths of modern MMOs can also expose their weaknesses in turn. Displaying 3D graphics can consume a lot of computing power, and this limits the scope, scale, performance and fidelity of any graphical game, which in the long run, can affect the longevity of your game as it ages and loses the technical edge that it had upon release.
-
-Problems that affect longevity of MMOs, can be issues like:
-* Costs associated with architecting and hosting, which trickle down to monthly subscriptions or other fees for players. Once this money stops rolling in, it's likely the game will shut down. MUDs are cheap to host, and building content is as simple as writing a paragraph.
-* "Sharding" required with most graphical MMOs ends up splitting the playerbase into small chunks in order to avoid lag. On a MUD, everyone exists and plays together in the same world.
-* New content is difficult, costly and time consuming to create. To create content on a MUD you just need to use your imagination, and any computer will work.
-* Graphics age and become outdated. MUDs only limitation graphically is your imagination, and they never age visually.
-
-## Why should I play Burning MUD?
-
-Burning is a unuiqely fast-paced cooperative action game. It might sound like an oxymoron to say that a text game is fast-paced, but combat can be intense and satisfying in Burning, and split second decisions can mean life or death!
-
 * * *
 # Game Specific FAQ
 ## Finding new gear
