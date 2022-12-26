@@ -13,6 +13,7 @@ title: About
   text-align: left;
   outline: none;
   font-size: 15px;
+  background-color: #f0e7d5;
 }
 .active, .collapsible:hover {
   background-color: #CC6633;
