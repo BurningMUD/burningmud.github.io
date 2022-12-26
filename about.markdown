@@ -46,10 +46,17 @@ title: About
   <p>We all like to have a game that we can play anytime, and not worry that it might be gone tomorrow or bought by a larger company and totally changed out from under us. It's nice to not have a paid subscription fee. It's nice to know that regardless of how long it has been since you played, your characters are still saved and waiting for you.</p>
 </div>
 
-
-<button class="collapsible">History</button>
+<button class="collapsible">Why should I play a MUD?</button>
 <div class="content">
-    <p>Burning MUD was opened in its current form by Lorgalis, Alxar and Andraax, after an extended downtime from the first iteration of Burning MUD. Lorgalis had played Burning MUD since around 1990, and the game shut down around 1994. After entirely rebuilding the game, it was reopened publicly on the first of January, 1996.</p>
+  <p>We all like to have a game that we can play anytime, and not worry that it might be gone tomorrow or bought by a larger company and totally changed out from under us. It's nice to not have a paid subscription fee. It's nice to know that regardless of how long it has been since you played, your characters are still saved and waiting for you.</p>
+  
+  <p>One might feel that a text-only game has many weaknesses when compared to a modern MMO or action game, but some people say the book is always better than the movie. Graphics can help visualize your environment in a fun and meaninful ways, and 3D environments and worlds provide interesting emergent behaviors that add complexity to even simple systems, but the strengths of modern MMOs can also expose their weaknesses in turn. Displaying 3D graphics can consume a lot of computing power, and this limits the scope, scale, performance and fidelity of any graphical game, which in the long run, can affect the longevity of your game as it ages and loses the technical edge that it had upon release.</p>
+
+  <p>Problems that affect longevity of MMOs, can be issues like:
+  * Costs associated with architecting and hosting, which trickle down to monthly subscriptions or other fees for players. Once this money stops rolling in, it's likely the game will shut down. MUDs are cheap to host, and building content is as simple as writing a paragraph.
+  * "Sharding" required with most graphical MMOs ends up splitting the playerbase into small chunks in order to avoid lag. On a MUD, everyone exists and plays together in the same world.
+  * New content is difficult, costly and time consuming to create. To create content on a MUD you just need to use your imagination, and any computer will work.
+  * Graphics age and become outdated. MUDs only limitation graphically is your imagination, and they never age visually.</p>
 </div>
 
 <button class="collapsible">Features</button>
@@ -77,19 +84,3 @@ for (i = 0; i < coll.length; i++) {
 </script>
 
 </body>
-
-
-
-
-
-One might feel that a text-only game has many weaknesses when compared to a modern MMO or action game, but some people say the book is always better than the movie. Graphics can help visualize your environment in a fun and meaninful ways, and 3D environments and worlds provide interesting emergent behaviors that add complexity to even simple systems, but the strengths of modern MMOs can also expose their weaknesses in turn. Displaying 3D graphics can consume a lot of computing power, and this limits the scope, scale, performance and fidelity of any graphical game, which in the long run, can affect the longevity of your game as it ages and loses the technical edge that it had upon release.
-
-Problems that affect longevity of MMOs, can be issues like:
-* Costs associated with architecting and hosting, which trickle down to monthly subscriptions or other fees for players. Once this money stops rolling in, it's likely the game will shut down. MUDs are cheap to host, and building content is as simple as writing a paragraph.
-* "Sharding" required with most graphical MMOs ends up splitting the playerbase into small chunks in order to avoid lag. On a MUD, everyone exists and plays together in the same world.
-* New content is difficult, costly and time consuming to create. To create content on a MUD you just need to use your imagination, and any computer will work.
-* Graphics age and become outdated. MUDs only limitation graphically is your imagination, and they never age visually.
-
-## Why should I play Burning MUD?
-
-Burning is a unuiqely fast-paced cooperative action game. It might sound like an oxymoron to say that a text game is fast-paced, but combat can be intense and satisfying in Burning, and split second decisions can mean life or death!
