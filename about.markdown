@@ -36,7 +36,7 @@ title: About
 </head>
 <body>
 
-<button class="collapsible.active">What is a MUD?</button>
+<button class="active">What is a MUD?</button>
 <div class="content">
   <p>A MUD is a Multi-User Dungeon, as it was originally coined. It is generally considered an open-world online game with other players that is text-based, or an MMO. A MUD is really just a text MMO? Yes, and many players are already familiar with this term, although when MUDs released, this was not yet a term. The MMO genre started its life in the form of MUDs, and there were very many MUDs based on open source codebasese like Diku, Smaug, RoM, CircleMUD, and many others.</p>
 </div>
