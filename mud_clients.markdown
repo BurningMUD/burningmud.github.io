@@ -5,8 +5,8 @@ title: MUD Clients
 
 # PC Visual MUD Clients
 [Mudlet](https://www.mudlet.org/) - Newer client for Windows, Mac, and Linux. If you are unfamiliar with MUDs, this may be a good starting place.<br>
-[ZMUD](https://www.zuggsoft.com/) - ($$) Legacy paid client for Windows.<br>
-[CMUD](https://www.zuggsoft.com/) - ($$) Modern paid ZMUD replacement.<br>
+[ZMUD](https://www.zuggsoft.com/) - Legacy paid client for Windows.<br>
+[CMUD](https://www.zuggsoft.com/) - Modern paid ZMUD replacement.<br>
 
 # PC Telnet / SSH Commandline Clients
 [TinyFugue (tf)](https://tinyfugue.sourceforge.net/) - A commandline client for Linux.<br>
