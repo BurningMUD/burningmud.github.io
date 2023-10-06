@@ -12,7 +12,6 @@ title: Maps
   <thead>
     <tr>
       <th>Maps</th>
-      <th>Link</th>
     </tr>
   </thead>
   <tbody>
@@ -21,7 +20,6 @@ title: Maps
         {% assign base_name = file.name | remove: file.extname %}
         {% assign display_name = base_name | replace: '_', ' ' %}
         <tr>
-          <td>{{ display_name | capitalize }}</td>
           <td><a href="{{ site.baseurl }}{{ file.path }}">{{ display_name | capitalize }}</a></td>
         </tr>
       {% endif %}
