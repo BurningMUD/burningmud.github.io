@@ -11,23 +11,24 @@ title: Maps
 <table>
   <thead>
     <tr>
-      <th>Map Name</th>
+      <th>Maps</th>
       <th>Link</th>
     </tr>
   </thead>
   <tbody>
-    {% for p in site.pages %}
-      {% if p.url contains '/maps/' and p.url != page.url %}
-        {% assign base_name = p.url | remove: '/maps/' | remove: '.html' %}
+    {% for file in site.static_files %}
+      {% if file.path contains '/maps/' %}
+        {% assign base_name = file.name | remove: file.extname %}
         {% assign display_name = base_name | replace: '_', ' ' %}
         <tr>
           <td>{{ display_name | capitalize }}</td>
-          <td><a href="{{ site.baseurl }}{{ p.url }}">{{ display_name | capitalize }}</a></td>
+          <td><a href="{{ site.baseurl }}{{ file.path }}">{{ display_name | capitalize }}</a></td>
         </tr>
       {% endif %}
     {% endfor %}
   </tbody>
 </table>
+
 
 ## Karandras Home Town Map
 Karandras is the default starting point for all players, and remains the most popular city in the game and acts as a central hub for grouping up. The maps here are from the in-game map, which is given to all new characters upon creation. If you need help navigating or have any questions, the gossip channel is a good place to ask other players for some advice, or just contact an immortal directly in-game, as the immortals are here to help.
