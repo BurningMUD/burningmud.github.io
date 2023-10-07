@@ -38,6 +38,13 @@ title: About
 </head>
 <body>
 
+{% for topic in site.data.about_topics %}
+  <button class="collapsible">{{ topic.title }}</button>
+  <div class="content">
+    <p>{{ topic.content }}</p>
+  </div>
+{% endfor %}
+
 <script>
   var coll = document.getElementsByClassName("collapsible");
   var i;
