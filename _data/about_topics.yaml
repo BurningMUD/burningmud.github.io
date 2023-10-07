@@ -1,29 +1,30 @@
-# _data/about_topics.yaml
+# topics and content can be filled in here. The content is written in markdown, and html can be used.
+# A single line content can be written without |, but multiline content must be written with | and indented.
 
-- title: "What is a MUD?"
+- title: What is a MUD?
   content: |
     A MUD is a Multi-User Dungeon, as it was originally coined. It is generally considered an open-world online game with other players that is text-based, or an MMO. A MUD is really just a text MMO? Yes, and many players are already familiar with this term, although when MUDs released, this was not yet a term. The MMO genre started its life in the form of MUDs, and there were very many MUDs based on open source codebases like DIKU, Smaug, RoM, CircleMUD, and many others.
 
-- title: "Why should I play a MUD?"
+- title: Why should I play a MUD?
   content: |
-    <p>We all like to have a game that we can play anytime, and not worry that it might be gone tomorrow or bought by a larger company and totally changed out from under us. It's nice to not have a paid subscription fee. It's nice to know that regardless of how long it has been since you played, your characters are still saved and waiting for you.</p>
-    <p>One might feel that a text-only game has many weaknesses when compared to a modern MMO or action game, but some people say the book is always better than the movie. Graphics can help visualize your environment in a fun and meaninful ways, and 3D environments and worlds provide interesting emergent behaviors that add complexity to even simple systems, but the strengths of modern MMOs can also expose their weaknesses in turn. Displaying 3D graphics can consume a lot of computing power, and this limits the scope, scale, performance and fidelity of any graphical game, which in the long run, can affect the longevity of your game as it ages and loses the technical edge that it had upon release.</p>
-    <p>Problems that affect longevity of MMOs, can be issues like:</p>
-    <p> * Costs associated with architecting and hosting, which trickle down to monthly subscriptions or other fees for players. Once this money stops rolling in, it's likely the game will shut down. MUDs are cheap to host, and building content is as simple as writing a paragraph.</p>
-    <p> * "Sharding" required with most graphical MMOs ends up splitting the playerbase into small chunks in order to avoid lag. On a MUD, everyone exists and plays together in the same world.</p>
-    <p> * New content is difficult, costly and time consuming to create. To create content on a MUD you just need to use your imagination, and any computer will work.</p>
-    <p> * Graphics age and become outdated. MUDs only limitation graphically is your imagination, and they never age visually.</p>
+    We all like to have a game that we can play anytime, and not worry that it might be gone tomorrow or bought by a larger company and totally changed out from under us. It's nice to not have a paid subscription fee. It's nice to know that regardless of how long it has been since you played, your characters are still saved and waiting for you.
+    One might feel that a text-only game has many weaknesses when compared to a modern MMO or action game, but some people say the book is always better than the movie. Graphics can help visualize your environment in a fun and meaninful ways, and 3D environments and worlds provide interesting emergent behaviors that add complexity to even simple systems, but the strengths of modern MMOs can also expose their weaknesses in turn. Displaying 3D graphics can consume a lot of computing power, and this limits the scope, scale, performance and fidelity of any graphical game, which in the long run, can affect the longevity of your game as it ages and loses the technical edge that it had upon release.
+    Problems that affect longevity of MMOs, can be issues like:
+     * Costs associated with architecting and hosting, which trickle down to monthly subscriptions or other fees for players. Once this money stops rolling in, it's likely the game will shut down. MUDs are cheap to host, and building content is as simple as writing a paragraph.
+     * "Sharding" required with most graphical MMOs ends up splitting the playerbase into small chunks in order to avoid lag. On a MUD, everyone exists and plays together in the same world.
+     * New content is difficult, costly and time consuming to create. To create content on a MUD you just need to use your imagination, and any computer will work.
+     * Graphics age and become outdated. MUDs only limitation graphically is your imagination, and they never age visually.
 
-- title: "Why should I play Burning MUD?"
+- title: Why should I play Burning MUD?
   content: |
-    <p>Burning is a unuiqely fast-paced cooperative action game. It might sound like an oxymoron to say that a text game is fast-paced, but combat can be intense and satisfying in Burning, and split second decisions can mean life or death!</p>
+    Burning is a unuiqely fast-paced cooperative action game. It might sound like an oxymoron to say that a text game is fast-paced, but combat can be intense and satisfying in Burning, and split second decisions can mean life or death!
 
-- title: "Features"
+- title: Features
   content: |
-    <p>Burning MUD has a unique multi-classing system where you select a second class after gaining mastery over the first class. Your character becomes a mix of the two classes, allowing interesting combinations of powerful abilities. Pick opposites like the Mage/Fighter to have a broad range of abilities, or narrow your focus instead and choose Mage/Mage to gain highly specialized spells and skills. There are over 64 different combinations, including classics such as the Fighter, Priest, Mage, and Rogue, as well as more exotic options Warlock, Nightblade, Animist, and Templar. Nearly any combination of two classes is possible, while the first class will weigh more heavily in defining your character.</p>
-    <p>Burning MUD is a heavily modified Diku codebase with a mostly original medieval fantasy world that brings a unique flavor to the genre of text-based MMO games. Burning contains a massive planet spanning two continents separated by a deep ocean, and lurking beneath the bustling surface of the planet's crust lies an extensive expanse of procedurally generated underground caverns, called the Well.</p>
-    <p>The Well, an expansive underground cave system, leading 20 levels deep with thousands of rooms, reaveals countless mythical creatures and deadly environmental traps as one ventures deeper underground. Each day, the caverns are reshaped by these environmental forces such as lava flows, bringing surprises and unending threats to the intrepid adventurers who dare to explore the perilous depths. But risk is not without reward, for one will find that the creatures are imbued with the magic of these baffling caverns, leaving behind fragments of elemental energy that grant unimaginable powers of an eternal and ancient race.</p>
+    Burning MUD has a unique multi-classing system where you select a second class after gaining mastery over the first class. Your character becomes a mix of the two classes, allowing interesting combinations of powerful abilities. Pick opposites like the Mage/Fighter to have a broad range of abilities, or narrow your focus instead and choose Mage/Mage to gain highly specialized spells and skills. There are over 64 different combinations, including classics such as the Fighter, Priest, Mage, and Rogue, as well as more exotic options Warlock, Nightblade, Animist, and Templar. Nearly any combination of two classes is possible, while the first class will weigh more heavily in defining your character.
+    Burning MUD is a heavily modified Diku codebase with a mostly original medieval fantasy world that brings a unique flavor to the genre of text-based MMO games. Burning contains a massive planet spanning two continents separated by a deep ocean, and lurking beneath the bustling surface of the planet's crust lies an extensive expanse of procedurally generated underground caverns, called the Well.
+    The Well, an expansive underground cave system, leading 20 levels deep with thousands of rooms, reaveals countless mythical creatures and deadly environmental traps as one ventures deeper underground. Each day, the caverns are reshaped by these environmental forces such as lava flows, bringing surprises and unending threats to the intrepid adventurers who dare to explore the perilous depths. But risk is not without reward, for one will find that the creatures are imbued with the magic of these baffling caverns, leaving behind fragments of elemental energy that grant unimaginable powers of an eternal and ancient race.
 
-- title: "Test topic"
+- title: Test topic
   content: |
-    <p>This is a test paragraph.</p>
+    This is a test paragraph.
