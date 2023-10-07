@@ -51,6 +51,11 @@ If you enjoy playing Burning, you can vote for us on a few MUD listing sites.
 
 [Vote for Burning MUD](/vote.markdown)
 
+{% from description in site.data.about_topics %}
+  <div class="description">
+  <p>{{ description.content | newline_to_br }}</p>
+  </div>
+
 {% for topic in site.data.about_topics %}
   <button class="collapsible">{{ topic.title }}</button>
   <div class="content">
