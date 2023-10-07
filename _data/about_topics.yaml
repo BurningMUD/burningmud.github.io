@@ -1,8 +1,7 @@
 # topics and content can be filled in here. The content is written in markdown, and html can be used.
 # A single line content can be written without |, but multiline content must be written with | and indented.
 
-- description: About Burning MUD
-  info: |
+- description: |
     Burning MUD is a completely free, text-based online multiplayer game. All players login and play together in the same world!
 
     Burning is a cooperative PvE Hack n' Slash MUD, with optional PvP inside special arenas for fun. Play alone or with friends. An extensive channel system allows public and private chats, as well as a Mercenary Group system where you can build a home base for your group of friends that is entirely private.
