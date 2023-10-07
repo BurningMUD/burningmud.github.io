@@ -11,7 +11,7 @@ title: Maps
 <table>
   <thead>
     <tr>
-      <th>Maps</th>
+      <th>Text Maps</th>
     </tr>
   </thead>
   <tbody>
