@@ -16,7 +16,7 @@ title: Maps
   </thead>
   <tbody>
     {% for file in site.static_files %}
-      {% if file.path contains '/maps/' %}
+      {% if file.path contains '/maps/files/' %}
         {% assign base_name = file.name | remove: file.extname %}
         {% assign display_name = base_name | replace: '_', ' ' %}
         <tr>
