@@ -20,6 +20,22 @@ h1 {
     }
 }
 
+/* Ensure the line and its content are aligned to the left */
+.terminal {
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace; /* this makes it look more terminal-like, optional */
+}
+
+.line {
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    margin-right: 10px; /* slight space between the prompt and the typed text */
+}
+
+
 </style>
 <div class="center">
 <img src="{{ site.baseurl }} {% link /images/BurningMUD_ASCII_Logo.png %} " alt="Burning MUD">
@@ -34,32 +50,24 @@ h1 {
 </div>
 
 
+<div id="terminal" class="terminal"></div>
+
 <script>
 var options = {
-    strings: ["Out of the burning ashes", "Rose a new life", "A new creature", "Born into the Burning World"],
+    strings: ["<h1>Out of the burning ashes</h1>", "<h1>Rose a new life</h1>", "<h1>A new creature</h1>", "<h1>Born into the Burning World</h1>"],
     typeSpeed: 50,
     backSpeed: 0,
     showCursor: true,
-    cursorChar: "",
     loop: false,
-    onComplete: function(self) {
-        if (self.arrayPos < self.strings.length - 1) {
-            var newLine = document.createElement("div");
-            newLine.className = 'line';
-            var newPrompt = document.createElement("span");
-            newPrompt.className = 'prompt';
-            newPrompt.innerText = '100(100)H 100(100)M 100(100)V >';
-            newLine.appendChild(newPrompt);
-            var newSpan = document.createElement("span");
-            var newId = "typed-" + new Date().getTime();
-            newSpan.id = newId;
-            newLine.appendChild(newSpan);
-            document.querySelector('.terminal').appendChild(newLine);
-            new Typed("#" + newId, options);
-        }
+    onStart: function() {
+        // Before typing each string, add a new line with the prompt
+        var newLine = document.createElement("div");
+        newLine.className = "line";
+        newLine.innerHTML = '<span class="prompt">100(100)H 100(100)M 100(100)V ></span><span id="typed-' + this.sequence + '"></span>';
+        document.querySelector('.terminal').appendChild(newLine);
+        this.el = document.querySelector("#typed-" + this.sequence);  // Update the element to type into
     }
 };
 
-var typed = new Typed("#typed-output", options);
-
+var typed = new Typed("#typed-0", options);
 </script>
