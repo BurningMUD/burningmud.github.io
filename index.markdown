@@ -13,15 +13,20 @@ h1 {
 
 <div id="typed-output"></div>
 <script>
-    var options = {
-        strings: [
-            "<h1>Out of the burning ashes</h1>",
-            "<h1>Rose a new life</h1>",
-            "<h1>A new creature</h1>",
-            "<h1>Born into the Burning World</h1>"
-        ],
-        //... (other options as I previously described)
-    };
+var options = {
+    strings: ["<h1>Out of the burning ashes</h1>", "<h1>Rose a new life</h1>", "<h1>A new creature</h1>", "<h1>Born into the Burning World</h1>"],
+    typeSpeed: 50,
+    backSpeed: 0,
+    showCursor: true,
+    loop: false,
+    onComplete: function(self) {
+        var newPrompt = document.createElement("div");
+        newPrompt.innerHTML = "$ <span id='typed-new'></span>";
+        document.querySelector('.terminal').appendChild(newPrompt);
 
-    var typed = new Typed("#typed-output", options);
+        new Typed("#typed-new", options);
+    }
+};
+
+var typed = new Typed("#typed", options);
 </script>
