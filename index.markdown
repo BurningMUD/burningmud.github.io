@@ -7,6 +7,7 @@ h1 {
 }
 .terminal {
     text-align: left;
+    margin: auto;
 }
 </style>
 

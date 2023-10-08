@@ -1,5 +1,5 @@
-# topics and content can be filled in here. The content is written in markdown, and html can be used.
-# A single line content can be written without |, but multiline content must be written with | and indented.
+# Topics and content should be added here. Markdown and html will be processed.
+# A single line content can be written without "|", but multiline content must be written with | and indented as shown in examples.
 
 description: |
   Burning MUD is a completely free, text-based online multiplayer game, run by a staff of volunteers.
