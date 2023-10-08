@@ -13,12 +13,18 @@ h1 {
     text-align: left;
     margin: auto;
     padding: 10px;
-    display: inline-block;
+}
+.spacer {
+    height: 50px;  /* or whatever height you desire */
+    clear: both;  /* this ensures it doesn't get affected by floating elements, if any */
 }
 </style>
 
 <div class="center">
 <img src="{{ site.baseurl }} {% link /images/BurningMUD_ASCII_Logo.png %} " alt="Burning MUD">
+
+<div class="spacer"></div>
+
 
 <div id="terminal" class="terminal"></div>
 
