@@ -15,7 +15,7 @@
     If you enjoy playing Burning, you can vote for us on a few MUD listing sites.
 
     [Vote for Burning MUD](/vote.markdown)
-about_topics:
+topics:
   - title: What is a MUD?
     content: |
       A MUD is a Multi-User Dungeon, as it was originally coined. It is generally considered an open-world online game with other players that is text-based, or an MMO. A MUD is really just a text MMO? Yes, and many players are already familiar with this term, although when MUDs released, this was not yet a term. The MMO genre started its life in the form of MUDs, and there were very many MUDs based on open source codebases like DIKU, Smaug, RoM, CircleMUD, and many others.

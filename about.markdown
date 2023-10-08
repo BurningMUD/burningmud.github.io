@@ -39,10 +39,11 @@ title: About
 <body>
 
 <div class="description">
-  <p>{{ site.data.about_topics.description | newline_to_br }}</p>
+  <!-- Directly displaying the description -->
+  <p>{{ site.data.description | newline_to_br }}</p>
 </div>
 
-{% for about_topics.title in site.data.about_topics %}
+{% for topic in site.data.about_topics.topics %}
   <button class="collapsible">{{ topic.title }}</button>
   <div class="content">
     <p>{{ topic.content | newline_to_br }}</p>
