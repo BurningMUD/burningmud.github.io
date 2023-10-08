@@ -5,12 +5,11 @@ layout: default
 h1 {
     color: darkorange;
 }
-.terminal-container {
-    width: 100%; /* take the full width of its parent */
-}
 .terminal {
+    width: 50%;
     text-align: left;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
 }
 .spacer {
