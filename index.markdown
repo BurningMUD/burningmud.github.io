@@ -8,6 +8,9 @@ h1 {
 .terminal {
     text-align: left;
     margin: auto;
+    width: 50%;
+    padding: 10px;
+    display: inline-block;
 }
 </style>
 
