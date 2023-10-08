@@ -42,13 +42,6 @@ h1 {
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-<div class="terminal">
-    <div class="line">
-        <span class="prompt">100(100)H 100(100)M 100(100)V ></span>
-        <span id="typed-output"></span>
-    </div>
-</div>
-
 
 <div id="terminal" class="terminal"></div>
 
@@ -60,10 +53,10 @@ var options = {
     showCursor: true,
     loop: false,
     onStart: function() {
-        // Before typing each string, add a new line with the prompt
+        // Before typing each string, add a new line
         var newLine = document.createElement("div");
         newLine.className = "line";
-        newLine.innerHTML = '<span class="prompt">100(100)H 100(100)M 100(100)V ></span><span id="typed-' + this.sequence + '"></span>';
+        newLine.innerHTML = '<span id="typed-' + this.sequence + '"></span>';
         document.querySelector('.terminal').appendChild(newLine);
         this.el = document.querySelector("#typed-" + this.sequence);  // Update the element to type into
     }
@@ -71,3 +64,4 @@ var options = {
 
 var typed = new Typed("#typed-0", options);
 </script>
+
