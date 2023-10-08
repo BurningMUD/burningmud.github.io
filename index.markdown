@@ -42,6 +42,12 @@ h1 {
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
+<div class="terminal">
+    <div class="line">
+        <span id="typed-output"></span>
+    </div>
+</div>
+
 
 <div id="terminal" class="terminal"></div>
 
