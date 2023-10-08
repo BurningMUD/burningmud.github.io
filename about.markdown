@@ -42,7 +42,7 @@ title: About
   <!-- Directly displaying the description -->
   <p>{{ site.data.about_topics.description | markdownify }}</p>
 </div>
-
+* * *
 {% for topic in site.data.about_topics.topics %}
   <button class="collapsible">{{ topic.title }}</button>
   <div class="content">
