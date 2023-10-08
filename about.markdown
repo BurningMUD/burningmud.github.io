@@ -40,7 +40,7 @@ title: About
 
 <div class="description">
   <!-- Directly displaying the description -->
-  <p>{{ site.data.description | newline_to_br }}</p>
+  <p>{{ site.data.about_topics.description | newline_to_br }}</p>
 </div>
 
 {% for topic in site.data.about_topics.topics %}
