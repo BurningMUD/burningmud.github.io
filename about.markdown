@@ -40,13 +40,13 @@ title: About
 
 <div class="description">
   <!-- Directly displaying the description -->
-  <p>{{ site.data.about_topics.description | newline_to_br }}</p>
+  <p>{{ site.data.about_topics.description | markdownify }}</p>
 </div>
 
 {% for topic in site.data.about_topics.topics %}
   <button class="collapsible">{{ topic.title }}</button>
   <div class="content">
-    <p>{{ topic.content | newline_to_br }}</p>
+    <p>{{ topic.content | markdownify }}</p>
   </div>
 {% endfor %}
 
