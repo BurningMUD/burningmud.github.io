@@ -5,6 +5,9 @@ layout: default
 h1 {
     color: darkorange;
 }
+.terminal {
+    text-align: left;
+}
 </style>
 
 <div class="center">
@@ -16,9 +19,9 @@ h1 {
 const terminal = document.getElementById("terminal");
 const lines = [
     "Out of the burning ashes",
-    "Rosed a new life",
+    "Rose a new life",
     "A new creature",
-    "Born into the Burning World"
+    "Born into the Burning world"
 ];
 const typeSpeed = 50;
 
