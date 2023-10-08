@@ -7,7 +7,6 @@ h1 {
 }
 .terminal {
     width: 50%;
-    text-align: left;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
