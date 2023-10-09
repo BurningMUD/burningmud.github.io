@@ -1,6 +1,6 @@
 ---
 layout: default
-title: MUD Clients
+title: Play
 ---
 
 # PC Visual MUD Clients

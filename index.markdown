@@ -33,10 +33,10 @@ h1 {
 <script>
 const terminal = document.getElementById("terminal");
 const lines = [
-    "Out of the burning ashes",
-    "Rose a new life",
-    "A new creature",
-    "Born into the Burning world"
+    "Out of the burning ashes,",
+    "Rose a new life,",
+    "A new creature,",
+    "Born into the Burning world!"
 ];
 const typeSpeed = 50;
 
