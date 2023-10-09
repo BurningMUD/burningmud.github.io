@@ -36,7 +36,7 @@ const lines = [
     "Out of the burning ashes,",
     "Rose a new life,",
     "A new creature,",
-    "Born into the Burning world!"
+    "Born into the Burning world..."
 ];
 const typeSpeed = 50;
 
@@ -60,4 +60,7 @@ function typeLine() {
 
 typeLine();  // Start the typewriter effect
 </script>
-
+<div class="spacer"></div>
+<div class="terminal">
+[MUD Clients](play.html)
+</div>
