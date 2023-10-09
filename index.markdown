@@ -62,5 +62,5 @@ typeLine();  // Start the typewriter effect
 </script>
 <div class="spacer"></div>
 <div class="terminal">
-[MUD Clients](play.html)
+{{ "[MUD Clients](play.html)" | markdownify }}
 </div>

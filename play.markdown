@@ -2,6 +2,9 @@
 layout: default
 title: Play
 ---
+The first time you play, you may not need anything special to play if you are just checking the game out. Just click play and create a game account and you can create a character to get started.
+
+But as time goes, to play a MUD of any kind, you generally will want to find a client that can do some things like triggers, which are just means to automatically react to certain events. For example, a first trigger many people add is to eat food when the "You are hungry." message appears, allowing them to focus on more important tasks. That said, triggers are not smart in the way a person is, and cannot anticiapte problems in the same way, and only do exactly what you told them to do. Sometimes, maybe during a fight if you become hungry, the best choice of action is usually not to eat food. So be careful with how you structure your reactions. If you string together a bunch of commands all at once, the commands are queued or stacked, and there is no way to cancel these actions, so if something unexpected happens during this time while waiting for your queue of commands to happen, you will be unable to react in time.
 
 # PC Visual MUD Clients
 [Mudlet](https://www.mudlet.org/) - Newer client for Windows, Mac, and Linux. If you are unfamiliar with MUDs, this may be a good starting place.<br>
