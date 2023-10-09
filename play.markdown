@@ -5,6 +5,7 @@ title: Play
 <style>
 .font-125percent {
     font-size: 125%;
+    font-colo: green;
 }
 </style>
 
