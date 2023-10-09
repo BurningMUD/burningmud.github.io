@@ -30,9 +30,9 @@ While the MUD itself has no graphics so to speak, many popular Windows clients h
 [ZMUD](https://www.zuggsoft.com/) - Legacy paid client for Windows.<br>
 [CMUD](https://www.zuggsoft.com/) - Modern paid ZMUD replacement.<br>
 [PuTTy](https://putty.org/) - Telnet / SSH Client for Windows.<br>
-    - Connect directly to BurningMUD via Telnet protocol. PuTTy itself does not support triggers.<br>
-    - Connect to a Linux SSH server where TinyFugue client is hosted.<br>
-    - Generally used on Windows to connect to Linux server that has TinyFugue installed.
+&nbsp;&nbsp;&nbsp;&nbsp;* Connect directly to BurningMUD via Telnet protocol. PuTTy itself does not support triggers.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;* Connect to a Linux SSH server where TinyFugue client is hosted.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;* Generally used on Windows to connect to Linux server that has TinyFugue installed.
 
 # PC Commandline Clients
 These clients are run through the commandline, and do not require a mouse.
