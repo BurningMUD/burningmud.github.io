@@ -2,6 +2,12 @@
 layout: default
 title: Play
 ---
+<style>
+.font-125percent {
+    font-size: 125%;
+}
+</style>
+
 # New Players Info
 The first time you play, you may not need a client if you are just trying the game out. Just click play and create a game account and you can create a character to get started.
 
@@ -11,9 +17,9 @@ That said, triggers are not smart in the way a person is, and cannot anticiapte 
 * * *
 
 <div style="text-align: center">
-
-# [Connect to BurningMUD](telnet://burningmud.com:4000)
-
+    <p class="font-125percent">
+        <a href="telnet://burningmud.com:4000">Connect to BurningMUD</a>
+    </p>
 </div>
 
 # PC MUD Clients
