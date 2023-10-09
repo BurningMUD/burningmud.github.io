@@ -11,7 +11,9 @@ That said, triggers are not smart in the way a person is, and cannot anticiapte 
 * * *
 
 <div style="text-align: center">
-{{ [Connect to BurningMUD](telnet://burningmud.com:4000) | markdownify }}
+
+# [Connect to BurningMUD](telnet://burningmud.com:4000)
+
 </div>
 
 # PC MUD Clients
