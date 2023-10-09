@@ -2,7 +2,7 @@
 layout: default
 title: Play
 ---
-# [Connect to BurningMUD](telnet://burningmud.com:4000)<br>
+# <span style="color:green">[Connect to BurningMUD](telnet://burningmud.com:4000)<br></span>
 # New Players Info
 The first time you play, you may not need a client if you are just trying the game out. Just click play and create a game account and you can create a character to get started.
 
