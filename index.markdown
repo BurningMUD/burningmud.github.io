@@ -8,7 +8,6 @@ h1 {
 .teminal-container {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 .terminal {
     width: 50%;
