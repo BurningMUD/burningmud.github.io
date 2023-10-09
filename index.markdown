@@ -5,6 +5,11 @@ layout: default
 h1 {
     color: darkorange;
 }
+.teminal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .terminal {
     width: 50%;
     margin-left: auto;
@@ -22,8 +27,9 @@ h1 {
 
 <div class="spacer"></div>
 
-
-<div id="terminal" class="terminal"></div>
+<div class="terminal-container">
+    <div id="terminal" class="terminal"></div>
+</div>
 
 <script>
 const terminal = document.getElementById("terminal");
