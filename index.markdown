@@ -23,7 +23,13 @@ h1 {
 
 <div class="center">
 <img src="{{ site.baseurl }} {% link /images/BurningMUD_ASCII_Logo.png %} " alt="Burning MUD">
-
+<div class="spacer"></div>
+<div class="center">
+    <div class="terminal">
+        {{ "[PLAY](play.html)" | markdownify }}
+        {{ "[Vote for Burning MUD](vote.html)" | markdownify }}
+    </div>
+</div>
 <div class="spacer"></div>
 
 <div class="terminal-container">
@@ -60,10 +66,3 @@ function typeLine() {
 typeLine();  // Start the typewriter effect
 </script>
 
-<div class="spacer"></div>
-<div class="center">
-    <div class="terminal">
-        {{ "[PLAY](play.html)" | markdownify }}<br>
-        {{ [Vote for Burning MUD](/vote.html) | markdownify }}
-    </div>
-</div>
