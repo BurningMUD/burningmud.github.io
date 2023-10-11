@@ -25,7 +25,8 @@ h1 {
 <img src="{{ site.baseurl }} {% link /images/BurningMUD_ASCII_Logo.png %} " alt="Burning MUD">
 
 <div class="terminal">
-{{ "[PLAY](play.html)" | markdownify }}
+{{ "[PLAY](play.html)" | markdownify }}<br>
+{{ [Vote for Burning MUD](/vote.html) | markdownify }}
 </div>
 
 <div class="spacer"></div>
