@@ -2,8 +2,6 @@
 # A single line content can be written without "|", but multiline content must be written with | and indented as shown in examples.
 
 description: |
-  Burning MUD has a long history of hack n' slash, going all the way back to around 1990, with the current version online since 1996. Join us and see why Burning is one of the longest running MUDs in history!
-
   Adventurer, be warned! Burning MUD is a fast-paced cooperative action game, where split second decisions can mean life or death! Join an ancient world of epic scale and difficulty spanning across two massive continents, fighting intense battles in groups of up to 50 players or more to defeat nearly immortal creatures.
 
   With Burning Multi-classing, there are over 60 deadly combinations of character classes to explore such as the Rogue/Mage, a deadly combination of treachery and magic, or the Templar/Templar, so focused in his holy arts that he can perform a miracle on a dying ally, or even something more exotic like the Nightblade/Warlock, whom embraces the dark arts and lives her life as an assassin.
@@ -12,7 +10,7 @@ description: |
 
   Become a powerful force in a massive world of over 400 areas, with thousands of unique items and creatures. Join us adventurer, as there are yet powerful foes who remain undefeated, and we need your help! Facing down creatures of unspeakable power who reside in the dark and wretched castles and forests and caves, can be difficult even for large groups of experienced players, but the rewards can be great!
 
-    To play the game, use one of the various [MUD Clients](play.html) available, at your preference. You can find us at burningmud.com:4000
+    To play the game, use one of the various [MUD Clients](play.html) available, at your preference. You can find us at <a href="telnet://burningmud.com:4000">Connect to BurningMUD</a>.
 
     If you enjoy playing Burning, you can vote for us on a few MUD listing sites.
 
@@ -39,7 +37,7 @@ topics:
 
   - title: Why should I play Burning MUD?
     content: |
-      Burning is a unuiqely fast-paced cooperative MUD. Combat is intense and satisfying, and requires teamwork and strategy. The community is friendly and helpful, and the game is still being updated. Your characters and equipment will never be deleted, so join up anytime at your own pace. We have been online since 1996! Join us and be welcome, and see why Burning is one of the longest running MUDs in history!
+      Burning is a unuiqely fast-paced cooperative MUD. Combat is intense and satisfying, and requires teamwork and strategy. The community is friendly and helpful, and the game is still being updated. Your characters and equipment will never be deleted, so join up anytime at your own pace. We have been online since 1990, with the current version online since 1996. Join us and see why Burning is one of the longest running MUDs in history!
 
   - title: Features
     content: |
