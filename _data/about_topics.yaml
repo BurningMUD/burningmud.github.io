@@ -2,13 +2,15 @@
 # A single line content can be written without "|", but multiline content must be written with | and indented as shown in examples.
 
 description: |
-  Burning MUD is a completely free, text-based online multiplayer game, run by a staff of volunteers.
-  
-  Burning is a cooperative PvE Hack n' Slash MUD, with optional PvP inside special arenas for fun. Play alone or with friends. All players login and play together in the same world! Form a Mercenary Group and build a home base for your group of friends that is entirely private, or join an existing merc.
+Burning MUD has a long history of hack n' slash, going all the way back to around 1990, with the current version online since 1996. Join us and see why Burning is one of the longest running MUDs in history!
 
-  Group focused and social at the core, the nearly immortal creatures require that players band together in large numbers to defeat the greatest threats to the world, but that risk is not without its rewards... 
+Adventurer, be warned! Burning MUD is a fast-paced cooperative action game, where split second decisions can mean life or death! Join an ancient world of epic scale and difficulty spanning across two massive continents, fighting intense battles in groups of up to 50 players or more to defeat nearly immortal creatures.
 
-  Burning is not a roleplaying MUD generally, but of course you are welcome to play as you like. Chat about whatever you want in-game, as long as it fits within the rules. Everyone is welcome on Burning, so just leave room for others to speak in public channels please. :)
+With Burning Multi-classing, there are over 60 deadly combinations of character classes to explore such as the Rogue/Mage, a deadly combination of treachery and magic, or the Templar/Templar, so focused in his holy arts that he can perform a miracle on a dying ally, or even something more exotic like the Nightblade/Warlock, whom embraces the dark arts and lives her life as an assassin.
+
+Team up and explore the depths of the Well, a 20-level deep cavernous expanse of over 6,000 procedurally generated rooms, each level harder and more rewarding than the last. Here you can find fragments of elemental essence, which when collected, can transform your character into a new race, and more.
+
+Become a powerful force in a massive world of over 400 areas, with thousands of unique items and creatures. Join us adventurer, as there are yet powerful foes who remain undefeated, and we need your help! Facing down creatures of unspeakable power who reside in the dark and wretched castles and forests and caves, can be difficult even for large groups of experienced players, but the rewards can be great!
 
   To play the game, use one of the various [MUD Clients](play.html) available, at your preference. You can find us at burningmud.com:4000
 
@@ -18,26 +20,25 @@ description: |
 topics:
   - title: What is a MUD?
     content: |
-      A MUD is a Multi-User Dungeon, as it was originally coined. It is generally considered an open-world online game with other players that is text-based, or an MMO. A MUD is really just a text MMO? Yes, and many players are already familiar with this term, although when MUDs released, this was not yet a term. The MMO genre started its life in the form of MUDs, and there were very many MUDs based on open source codebases like DIKU, Smaug, RoM, CircleMUD, and many others.
+      A MUD is a Multi-User Dungeon. It is generally considered an open-world online game with other players that is text-based. The MMO genre started its life in the form of MUDs, and there were many MUDs based on open source codebases like DIKU, Smaug, RoM, CircleMUD, and many others. Burning began as modified DIKU, but has been heavily modified over the years, and is now mostly unique.
 
   - title: Why should I play a MUD?
     content: |
-      We all like to have a game that we can play anytime, and not worry that it might be gone tomorrow or bought by a larger company and totally changed out from under us. It's nice to not have a paid subscription fee. It's nice to know that regardless of how long it has been since you played, your characters are still saved and waiting for you.
+      * MUDs generally provide a depth of content beyond what graphical games can offer. As the content is simpler to create, more can be generated. This generally means more areas, more items, more monsters, more quests, and more things to do.
 
-      One might feel that a text-only game has many weaknesses when compared to a modern MMO or action game, but some people say the book is always better than the movie. Graphics can help visualize your environment in a fun and meaninful ways, and 3D environments and worlds provide interesting emergent behaviors that add complexity to even simple systems, but the strengths of modern MMOs can also expose their weaknesses in turn. Displaying 3D graphics can consume a lot of computing power, and this limits the scope, scale, performance and fidelity of any graphical game, which in the long run, can affect the longevity of your game as it ages and loses the technical edge that it had upon release.
+      * MUDs can be played on any computer, even a phone or tablet.
 
-      Problems that affect longevity of MMOs, can be issues like:
-      * Costs associated with architecting and hosting, which trickle down to monthly subscriptions or other fees for players. Once this money stops rolling in, it's likely the game will shut down. MUDs are cheap to host, and building content is as simple as writing a paragraph.
+      * Hosting costs are much more affordable with MUDs. A single older PC could host a MUD if needed, while a modern MMO can require hundreds of powerful servers. This means that MUDs can be run by individuals, and are not beholden to a company or corporation.
 
-      * "Sharding" required with most graphical MMOs ends up splitting the playerbase into small chunks in order to avoid lag. On a MUD, everyone exists and plays together in the same world.
+      * On a MUD, everyone exists and plays together in the same world. No "sharding" or "instancing" is required to balance performance. This means that you can play with your friends, and not be separated by arbitrary server boundaries.
 
-      * New content is difficult, costly and time consuming to create. To create content on a MUD you just need to use your imagination, and any computer will work.
+      * To create content on a MUD you just need to use your imagination, and any computer will work. In a graphical MMO, new content is difficult, costly and time consuming to create.
 
-      * Graphics age and become outdated. MUDs only limitation graphically is your imagination, and they never age visually.
+      * MUDs only limitation graphically is your imagination, and they never age visually. Graphics age and become outdated. MUDs are timeless like a good book.
 
   - title: Why should I play Burning MUD?
     content: |
-      Burning is a unuiqely fast-paced cooperative action game. It might sound like an oxymoron to say that a text game is fast-paced, but combat can be intense and satisfying in Burning, and split second decisions can mean life or death!
+      Burning is a unuiqely fast-paced cooperative MUD. Combat is intense and satisfying, and requires teamwork and strategy. THe community is friendly and helpful, and the game is still being updated. Burning has been online since 1996, and has a long history of hack n' slash. Join us and see why Burning is one of the longest running MUDs in history!
 
   - title: Features
     content: |

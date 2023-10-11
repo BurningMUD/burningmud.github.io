@@ -47,7 +47,7 @@ These clients are run through the commandline, and do not require a mouse.
 
 # Telnet Protocol
 Finally, if you don't want to install anything, you can always stop by using a Telnet client @ burningmud.com, port 4000.<br>
-Just click the "Connect to BurningMUD" link at the top of the page to launch a telnet connection with your default client.
+Just click the "Connect to BurningMUD" link at the top of the page to launch a telnet connection with your default client.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;* Learn more about Telnet technicals and commandline usage at [Microsoft](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/telnet)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;* Learn how to enable built-in support for Telnet on Windows 10 at [Microsoft](https://social.technet.microsoft.com/wiki/contents/articles/38433.windows-10-enabling-telnet-client.aspx)
 
