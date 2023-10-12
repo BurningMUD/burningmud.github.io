@@ -1,5 +1,5 @@
 ---
-title: Player Websites
+title: Community
 layout: default
 ---
 ## Player Websites

@@ -37,7 +37,7 @@ As a low level character, one of your most important pieces of equipment is your
 
 * Check the Auction House, which is located near the reception. Players may bid on objects put up for auction here.
 
-* [Player Sites](/player_sites.markdown) have some advice about gear, as well as databases of known items.
+* [Community](/player_sites.markdown) have some advice about gear, as well as databases of known items.
 
 * To learn more about gear and how it affects you, you should "identify" it. There are scrolls of identifaction at the magic shop, or spells for certain classes, and you can store items for in your item storage and identify items within it.
 
@@ -48,7 +48,7 @@ As a low level character, one of your most important pieces of equipment is your
 
 * Cartographers in each Temple City have maps showing the relative location of zones nearby. Check the "areas" command to see a list of zones in the game. You can filter this list by using commands such as, "areas 1-10", which displays a list of zones that fit within this range that are recommended for players who are level 1 up to level 10 max. These are recommended ranges generally, but you can explore anywhere you want. Only a few very dangerous areas may be blocked off from the lower level players.
 
-* Again, [Player Sites](/player_sites.markdown) tend to have a lot of help here, and more specific help.
+* Again, [Community](/player_sites.markdown) tend to have a lot of help here, and more specific help.
 
 ## My character can't see! It's too dark!
 Some races have darkvision like Dwarves, and some like Humans do not. Some classes also learn a spell called Darkvision, which grants this ability when cast, but without any extra help, sometimes you may need a light source! As well, it is possible to discover and wear items that absorb light, which can counteract your light source(..It seems to absorb light!). Some light sources are also more powerful than others. If you are ever stuck and don't know how to get home, you can always use the Recall skill, to return back to the Temple where you entered the game.
