@@ -47,4 +47,4 @@ Just click the "Connect to BurningMUD" link at the top of the page to launch a t
 
 
 ## Triggers
-Players familiar with triggers and scripts for Burning can find information and trigger files for your perferred client on the [Player Sites](/player_sites.markdown) page.
+Players familiar with triggers and scripts for Burning can find information and trigger files for your perferred client on the [Community](/player_sites.markdown) page.
