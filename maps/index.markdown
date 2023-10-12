@@ -16,7 +16,7 @@ Karandras is the default starting point for all players, and remains the most po
 ## Text Maps
 A cartographer in each Temple City such as Karandras or Sundhaven can sell you maps for the city itself and the surrounding areas. Make sure to visit them on your travels! A Temple City is any city that contains a temple which may be used as a starting point when you login to the game or after you die. Learn more about [Temple Cities](../help.markdown).
 
-Check [Player Sites](../player_sites.markdown) for extensive text maps created by the players.
+Check [Community](../community.markdown) for extensive text maps created by the players.
 
 * * *
 
