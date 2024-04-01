@@ -23,7 +23,7 @@ Check [Community](../community.markdown) for extensive text maps created by the 
 <table>
   <thead>
     <tr>
-      <th>Text Maps</th>
+      <th>Text Map files added will be displayed below</th>
     </tr>
   </thead>
   <tbody>
