@@ -66,5 +66,5 @@ You can learn about just about anything in the game. If you can't find something
 
 * We also do hosted quests, which are live events run by immortals that you can join. Most of the time these are announced ahead of time, but the events can range from hide and seek type events, to arena VS battles, to teaming up to take down emergent threats, and sometimes smaller events are hosted on the spot without prior announcement.
 
-## Is there an objective or a win condition, or a final goal t othe game?
+## Is there an objective or a win condition, or a final goal to the game?
 * No, frankly it's up to you what you want to do. You can create your own goals and achievments to attain.
