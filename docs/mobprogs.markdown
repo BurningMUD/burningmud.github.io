@@ -535,8 +535,7 @@ Basically, it is: an 'if' line, followed by zero or more 'or' lines, followed by
 
 The only new syntax labels are all in the IF line:
 
---Explanations
-
+Explanations:
 An IF_CHECK is a string which describes under what context to compare things. The ARGUMENT is the reference point from which the LHS of an expression comes. The OPERATOR indicates how the LHS and RHS are going to be compared. The VALUE is the RHS of the expression to be compared by the operator.
 
 The BREAK command bails out of the entire MOBprogram regardless of the level if nesting.
@@ -549,9 +548,26 @@ If that looks confusing, skip to the end of the document and review the Example.
 
 Most of the basic numeric operators are legal and perform the same function as in C. The string operators are a bit more confusing. There are negative versions of some of the operators. These are not strictly needed, since the if/else construct of Control Flow commands can handle either case.
 
-`Numeric Operators: == != > < >= <= & | String Operators: == != / !/`
+|Numeric Operators | Description |
+|------------------|-------------|
+| == | equal to |
+| != | not equal to |
+| > | greater than |
+| < | less than |
+| >= | greater than or equal to |
+| <= | less than or equal to |
+| & | and |
+| \| | or |
+<br>
 
-For strings, == and != check for exact match between the two strings and the other two, / and !/ check to see if the second string is contained in the first one. This is so things like: if name($n) / guard will respond true to "cityguard" "guard" "guardian" etc. Using == on a name implies that you are matching the complete name "cityguard guard" or whatever. The string operators are case SENSITIVE.
+| String Operators | Description |
+|------------------|-------------|
+| == | equal to |
+| != | not equal to |
+| / | is contained in |
+| !/ | is not contained in |
+
+NOTE: For strings, == and != check for exact match between the two strings and the other two, / and !/ check to see if the second string is contained in the first one. This is so things like: if name($n) / guard will respond true to "cityguard" "guard" "guardian" etc. Using == on a name implies that you are matching the complete name "cityguard guard" or whatever. The string operators are case SENSITIVE.
 <br>
 <br>
 
