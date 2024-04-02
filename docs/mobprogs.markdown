@@ -1213,7 +1213,7 @@ providing it in the first place.
 Moonchilde Jun 14th, 1994
 jtraub@zso.dec.com
 
-Ported to BurningMUD and expanded Lorgalis
+Ported to BurningMUD and expanded by Lorgalis
 Expanded further by Ninian
 ```
 
