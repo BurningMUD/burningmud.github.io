@@ -555,7 +555,7 @@ For strings, == and != check for exact match between the two strings and the oth
 <br>
 <br>
 
-## If_Checks In Control Flow
+## If Checks In Control Flow
 
 The provided list of if_checks and their arguments are below. They should all be fairly obvious in what they do, but some of the more obtuse deserve a slight explanation. Any '==' operator can be replaced with any of the available ones described above. The argument ($*) refers to any of the variables which make sense for that if_check (i.e. for an if_check which is referencing a person the only valid variables would be $i, $n, $t or $r) A value type of string is a sequence of characters. It does not need to be included in quotes or anything like that (i.e. name($n)== orc large brown)
 
@@ -908,7 +908,7 @@ Note: Previous exit will be replaced. Use <target room> -1 to remove exit.
 <br>
 <br>
 
-## MOBprogram quick reference to triggers/variables/ifchecks/mobcommands
+## Quick Reference Guide
 ```
 trigger argument and what must happen to activate trigger
 -----------------------------------------------------------------------------
