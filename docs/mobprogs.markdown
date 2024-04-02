@@ -910,7 +910,6 @@ MPFORCE <victim> <command>
 +++ Additional Burning mobprog commands +++
 
 MPPAUSE <ticks>
-MPWALK <virtual room number>
 MPWALK <virtual room number> - let mobile walk to <room>.
 MPHOUR <hours>  - let mobile pause until the hour is <hours>.
 MPDAY <days> - let mobile pause until the day is <days>.
