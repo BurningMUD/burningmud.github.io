@@ -549,7 +549,7 @@ If that looks confusing, skip to the end of the document and review the Example.
 Most of the basic numeric operators are legal and perform the same function as in C. The string operators are a bit more confusing. There are negative versions of some of the operators. These are not strictly needed, since the if/else construct of Control Flow commands can handle either case.
 
 | Numeric Operators | Description |
-|------------------|-------------|
+|-------------------|-------------|
 | == | equal to |
 | != | not equal to |
 | > | greater than |
@@ -558,7 +558,6 @@ Most of the basic numeric operators are legal and perform the same function as i
 | <= | less than or equal to |
 | & | and |
 | \| | or |
-<br>
 
 | String Operators | Description |
 |------------------|-------------|
