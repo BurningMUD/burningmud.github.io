@@ -20,12 +20,11 @@ understandable and more to the point, extendable. The remainder of this document
 - [Operators](#operators)
 - [If Checks In Control Flow](#if-checks-in-control-flow)
 - [MOBcommands Of Interest](#mobcommands-of-interest)
+- [Quick Reference Guide](#quick-reference-guide)
+- [MOBprogram Example](#mobprogram-example)
 - [Regarding CPU Slowdown](#regarding-cpu-slowdown)
 - [Miscellaneous Information](#miscellaneous-information)
 - [Adding New Triggers](#adding-new-triggers)
-- [Credits](#credits)
-- [Quick Reference Guide](#quick-reference-guide)
-- [MOBprogram Example](#mobprogram-example)
 - [Credits](#credits)
 
 ## The Basic Idea
@@ -909,121 +908,6 @@ Note: Previous exit will be replaced. Use <target room> -1 to remove exit.
 <br>
 <br>
 
-## Regarding CPU Slowdown
-
-We have no real idea how slow this makes a mud. However, you will find
-that if you are judicious with your use of MOBprograms, you can either do
-little damage, or even reduce the effort on your server! This means that
-mobile polling (including the rand_progs) need only be checked when players
-are around. This reduces computation of random_stuff a little, but it is
-still a polling method, and subject to a basic inefficiency there. However,
-aside from the rand_progs, the only additional slowdowns will be when the
-mobile is responding to the situation, and you would get that from a special
-procedure as well (although MOBprograms are surely not as efficient as
-compiled C code)
-
-For those who are afraid that MOBprograms will drown their CPU, here is a
-brazen suggestion which could put you a bit more at ease. Instead of having
-aggressive mobiles, try the following MOBprogram block on all would be
-aggressives.
-
->greet_prog 100~
-if ispc($n)
-if isimmort($n)
-bow $n
-else
-mkill $n
-endif
-endif
-~
-
-This has the effect of making the mobile attack the FIRST visable
-mortal player who walks into the room.
-
-What this should allow, is to comment out the aggressive mobile check
-section of the code and thus reduce computation by a bunch. There is no
-continuous polling through all the mobiles in occupied zones and checking to
-see if there is an NPC aggressor and a PC victim. There is also no need to
-worry about players skipping through aggressives, since the trigger catches
-folk as soon as they enter the room.
-
-Note that the price paid for this, was that if a second player
-walked in during the combat, and the first character fled, the mobile won't
-realize that there is a new target. So, a compromise would be adding a
-rand_prog which had the mobile appear to peer around the room and then do an
-mkill $r.
-AHA! you say, we are back to polling. Well true, but since mobile_update
-is called anyway (at 1/16 the frequency of aggr_update in default Merc 2.0)
-and we only add an if check, a walk of a short link_list and the MOBprogram
-execution itself, we have still reduced the aggr_update stuff by major amounts.
-<br>
-<br>
-
-## Miscellaneous Information
-
-There is really no limit to the number of MOBprograms a given mobile
-can have. However, the length of a single command block is limited by the
-value of MAX_STRING_LENGTH. In my version it was around 4k, so that is
-probably about 100 lines. The indentation spaces shown in the example
-above are NOT required, but do make it easier to read (and debug)
-
-The MOBprogram stuff runs totally without anything in the
-mob_commands.c file, but letting mobiles be a bit more godlike has allowed
-us to do what we consider to be wonderful things. The replicant and
-polymorphing mobiles described above as well as some nifty mob helping mob
-interactions are an example.
-
-It IS possible to accidentally make mobiles which can trigger in
-loops. As mentioned in the example at the end of this document, the result is
-usually a mud crash or major CPU dent. We dont know any way to prevent this
-from happening, other than careful coding and a restriction of mobile travel
-from zones of one creator to another (another good reason to not have charmed
-mobiles do anything). Tracking down the culprit mobile is not always easy.
-The only thing we have found which always works, is to add a log statement
-into the MOBprogram driver and fill some disk space until it becomes apparent
-what commands are repetitively issued. Also, most infinite loops are flukes
-where the situation just happens to be right and usually it never happens
-again.
-
-The list of variables and triggers and if_checks will grow
-continuously as our creators demand the ability to do certain things. If you
-have a request or if you have a new one, we don't mind hearing about them,
-and if you find bugs, we shall gladly attempt to squash them for you. As
-additions or fixes are made, the code will occasionally be redistributed.
-However, if you want a current version, please feel free to ask. When the
-code is redistributed, a file containing the change history from the original
-release will be provided (when possible) to allow you to patch in the changes
-with low grief.
-
-I will be glad to lend advice to someone who is trying to install this for
-a modified version of Circle 2.20 and if something develops I will be glad to
-make that public as well.
-<br>
-<br>
-
-## Adding New Triggers
-
-This section explains how to add new triggers.
-
-All you have to do is to follow these simple steps...
-
-1. Add the appropriate #define XXXXX_PROG to structs.h
-2. Write a trigger procedure at the end of mob_prog.c
-3. Add the new case in *mprog_type_to_name(...) in mob_cmd.c
-4. Add a new if statement in mprog_name_to_type(..) in db.c
-
-There you have it, a new trigger for your MOBProgram system.
-
-Kahn
-MERC Industries
-10/29/93
-
-Moonchilde
-jtraub@zso.dec.com
-06/14/94
-<br>
-<br>
-
 ## MOBprogram quick reference to triggers/variables/ifchecks/mobcommands
 ```
 trigger argument and what must happen to activate trigger
@@ -1171,6 +1055,114 @@ noone is going to stand in your way (However, the result of this would be
 a bug message and a bail out from the ifcheck so things dont really break)
 <br>
 <br>
+
+## Regarding CPU Slowdown
+
+We have no real idea how slow this makes a mud. However, you will find
+that if you are judicious with your use of MOBprograms, you can either do
+little damage, or even reduce the effort on your server! This means that
+mobile polling (including the rand_progs) need only be checked when players
+are around. This reduces computation of random_stuff a little, but it is
+still a polling method, and subject to a basic inefficiency there. However,
+aside from the rand_progs, the only additional slowdowns will be when the
+mobile is responding to the situation, and you would get that from a special
+procedure as well (although MOBprograms are surely not as efficient as
+compiled C code)
+
+For those who are afraid that MOBprograms will drown their CPU, here is a
+brazen suggestion which could put you a bit more at ease. Instead of having
+aggressive mobiles, try the following MOBprogram block on all would be
+aggressives.
+```
+>greet_prog 100~
+if ispc($n)
+if isimmort($n)
+bow $n
+else
+mkill $n
+endif
+endif
+~
+```
+This has the effect of making the mobile attack the FIRST visable
+mortal player who walks into the room.
+
+What this should allow, is to comment out the aggressive mobile check
+section of the code and thus reduce computation by a bunch. There is no
+continuous polling through all the mobiles in occupied zones and checking to
+see if there is an NPC aggressor and a PC victim. There is also no need to
+worry about players skipping through aggressives, since the trigger catches
+folk as soon as they enter the room.
+
+Note that the price paid for this, was that if a second player
+walked in during the combat, and the first character fled, the mobile won't
+realize that there is a new target. So, a compromise would be adding a
+rand_prog which had the mobile appear to peer around the room and then do an
+mkill $r.
+AHA! you say, we are back to polling. Well true, but since mobile_update
+is called anyway (at 1/16 the frequency of aggr_update in default Merc 2.0)
+and we only add an if check, a walk of a short link_list and the MOBprogram
+execution itself, we have still reduced the aggr_update stuff by major amounts.
+<br>
+<br>
+
+## Miscellaneous Information
+
+There is really no limit to the number of MOBprograms a given mobile
+can have. However, the length of a single command block is limited by the
+value of MAX_STRING_LENGTH. In my version it was around 4k, so that is
+probably about 100 lines. The indentation spaces shown in the example
+above are NOT required, but do make it easier to read (and debug)
+
+The MOBprogram stuff runs totally without anything in the
+mob_commands.c file, but letting mobiles be a bit more godlike has allowed
+us to do what we consider to be wonderful things. The replicant and
+polymorphing mobiles described above as well as some nifty mob helping mob
+interactions are an example.
+
+It IS possible to accidentally make mobiles which can trigger in
+loops. As mentioned in the example at the end of this document, the result is
+usually a mud crash or major CPU dent. We dont know any way to prevent this
+from happening, other than careful coding and a restriction of mobile travel
+from zones of one creator to another (another good reason to not have charmed
+mobiles do anything). Tracking down the culprit mobile is not always easy.
+The only thing we have found which always works, is to add a log statement
+into the MOBprogram driver and fill some disk space until it becomes apparent
+what commands are repetitively issued. Also, most infinite loops are flukes
+where the situation just happens to be right and usually it never happens
+again.
+
+The list of variables and triggers and if_checks will grow
+continuously as our creators demand the ability to do certain things. If you
+have a request or if you have a new one, we don't mind hearing about them,
+and if you find bugs, we shall gladly attempt to squash them for you. As
+additions or fixes are made, the code will occasionally be redistributed.
+However, if you want a current version, please feel free to ask. When the
+code is redistributed, a file containing the change history from the original
+release will be provided (when possible) to allow you to patch in the changes
+with low grief.
+
+I will be glad to lend advice to someone who is trying to install this for
+a modified version of Circle 2.20 and if something develops I will be glad to
+make that public as well.
+<br>
+<br>
+
+## Adding New Triggers
+
+This section explains how to add new triggers.
+
+All you have to do is to follow these simple steps...
+
+1. Add the appropriate #define XXXXX_PROG to structs.h
+2. Write a trigger procedure at the end of mob_prog.c
+3. Add the new case in *mprog_type_to_name(...) in mob_cmd.c
+4. Add a new if statement in mprog_name_to_type(..) in db.c
+
+There you have it, a new trigger for your MOBProgram system.
+<br>
+<br>
+
 
 ## Credits
 ```
