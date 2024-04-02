@@ -9,4 +9,4 @@ We have a high standard of quality for zones, and we will be glad to assist you 
 * * *
 
 ## Mobprogs Documentation
-[Mobprogs Document](/documentation.markdown)
+[Mobprogs Document](/docs/mobprogs.markdown)
