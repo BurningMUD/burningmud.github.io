@@ -2,18 +2,28 @@
 layout: default
 title: Mobprogs Document
 ---
+<style>
+h1 {
+    color: orange;
+}
+
+h2 {
+    color: lightblue;
+}
+code {
+    color: green;
+}
+</style>
+
 
 # MOBprograms
-
 MOBprograms are a way to make your mobiles more interesting. This
 basic version has enough to get things going, and should be quite readable and
 understandable and more to the point, extendable. The remainder of this document describes MOBprograms and gives a couple trivial examples.
 
-# Table of Contents:
+# Table of Contents
 - [The Basic Idea](#the-basic-idea)
 - [MOBprogram Syntax](#mobprogram-syntax)
-- [Associating MOBprograms With A Mobile](#associating-mobprograms-with-a-mobile)
-- [MOBprogram Files](#mobprogram-files)
 - [Trigger Types](#trigger-types)
 - [Variables](#variables)
 - [Control Flow Syntax](#control-flow-syntax)
@@ -25,6 +35,8 @@ understandable and more to the point, extendable. The remainder of this document
 - [Regarding CPU Slowdown](#regarding-cpu-slowdown)
 - [Miscellaneous Information](#miscellaneous-information)
 - [Adding New Triggers](#adding-new-triggers)
+- [Associating MOBprograms With A Mobile](#associating-mobprograms-with-a-mobile)
+- [MOBprogram Files](#mobprogram-files)
 - [Credits](#credits)
 
 ## The Basic Idea
@@ -65,8 +77,8 @@ Thus, the basic idea: let mobiles react to a myriad of mud
 events/situations by having them perform a list of commands which can be
 tailored to the moment through a simple and unintimidating scheme usable by
 any creator.
-<br>
-<br>
+#### [&#x2191; Back to ToC](#table-of-contents)
+
 
 ## MOBprogram Syntax
 
@@ -84,108 +96,16 @@ the labels used will be described following the syntax diagram.
 . . .
 {program_command_N} NL
 "~" NL`
-```
 
--- Explanations
-
+Explanations:
 A TRIGGER_TYPE is one of the available triggers.
 A PROGRAM_COMMAND can be any legal mud command, or a control flow command.
 The ARGUMENT_LIST depends upon the trigger, but it is always parsed into the
 system as a character string.
 
 This is an example of ONE MOBProgram block for a mob.
-<br>
-<br>
-
-## Associating MOBprograms With A Mobile
-
-There is one only way for the mud to associate the program with the
-mobile. In either case, the result is a link list of mob_programs which are
-attached to the mobile_prototype. This is done at boot time, and so only one
-copy is kept, regardless of how many instances of the mobile are running
-about. This also means that there is no dynamic way to edit or modify the
-MOBprograms.
-
-Back to how to associate...
-The method involves a simple in-file approach. In your mobile file
-in your world directory, at the end of the mobile's block (i.e. on the line
-following the typical position/default position/sex line), append any number
-of MOBprogram blocks (using the syntax above) followed by a line starting
-with one '|' (pipe).
-
 ```
-#3062
-fido dog~
-the beastly fido~
-A beastly fido is mucking through the garbage looking for food here.
-~
-The fido is a small dog that has a foul smell and pieces of rotted meat hanging
-around his teeth.
-~
-161 0 -200 S
-0 20 10 1d6+4 1d4+0
-0 25
-8 8 1
->greet_prog 60~
-if isgood($n)
-if rand(30)
-mpechoat $n $I wags $l tail at you.
-mpechoaround $n $I wags $l tail at $n.
-endif
-else
-growl $n
-endif~
-|
-```
-
---Explanations
-<br>
-<br>
-
-## MOBprogram Files
-
-Since it is often useful to have the same MOBprograms affecting several
-different mobiles, referencing MOBprograms stored in an external file
-is needed. Using the method above, in place of a true MOBprogram block, one
-can place the dummy line in the mob file in place of the MOBProgram block(s).
-CircleMud 2.20 with these modifications expects these programs to be
-stored under the lib/world/prg directory.
-
-`">" "in_file_prog" {MOBprogram_filename} "~" NL`
-
-```
-#3062
-fido dog~
-the beastly fido~
-A beastly fido is mucking through the garbage looking for food here.
-~
-The fido is a small dog that has a foul smell and pieces of rotted meat hanging
-around his teeth.
-~
-161 0 -200 S
-0 20 10 1d6+4 1d4+0
-0 25
-8 8 1
->in_file_prog greet.prg~
-|
-
-Note there is no list of program_commands as well as no second tilde ~.
-You can in fact have multiple >in_file_prog blocks, as well as mixing
-them with in line MOBProg blocks.
-
-In a file, the syntax is exactly the same as it is for a in_file
-approach:
-
-A list of MOBprogram (NOT including any dummy in_file_prog
-lines, sorry but recursion was outlawed for simplicity)
-blocks followed by a line starting with one '|' (pipe).
-
-More than one mobile can use the same file and one mobile can call more
-than one file. Files referenced using the dummy in_file_prog line are
-placed in the MOBprogram list at the point where the dummy line exists.
-```
-<br>
-<br>
+#### [&#x2191; Back to ToC](#table-of-contents)
 
 ## Trigger Types
 
@@ -448,8 +368,7 @@ mobiles which are given special powers from being implemented by a player.
 One bug we had in early testing was a player who charmed a mobile and then
 used its aggressive greet_prog to attack other players.
 ```
-<br>
-<br>
+#### [&#x2191; Back to ToC](#table-of-contents)
 
 ## Variables
 
@@ -499,8 +418,7 @@ $A a,an based on first character of $p
 Also, in if_checks, the accepted variables are the basic ones (i,n,t,r,o,p). If a variable is referenced that doesn’t exist, then the value is simply left blank. (i.e referring to $o when the trigger is: A kisses B)
 
 The only problem with the variables is that the secondary object and the secondary target are passed by act() in the same location. This means that if you reference $t in an A puts B in C situation, the result will probably be a happy mud crash or some weird side effect, especially if $t is used in an if_check (i.e. if isnpc($t) in the above situation) The basic fix for this is to change everyone who calls the act() procedure to specify a secondary object and a secondary character. But that is a fairly comprehensive trivial twiddle, so we left it the way it is so that, you aren’t forced to make all those twiddles to use the MOBprograms.
-<br>
-<br>
+#### [&#x2191; Back to ToC](#table-of-contents)
 
 ## Control Flow Syntax
 
@@ -541,8 +459,7 @@ An IF_CHECK is a string which describes under what context to compare things. Th
 The BREAK command bails out of the entire MOBprogram regardless of the level if nesting.
 
 If that looks confusing, skip to the end of the document and review the Example. Hopefully that should clear things, otherwise you'll probably have to give us a mail since examples are the best way we know to explain syntax.
-<br>
-<br>
+#### [&#x2191; Back to ToC](#table-of-contents)
 
 ## Operators
 
@@ -559,16 +476,15 @@ Most of the basic numeric operators are legal and perform the same function as i
 | & | and |
 | \| | or |
 
-| String Operators | Description |
-|------------------|-------------|
+| String Operators  | Description |
+|-------------------|-------------|
 | == | equal to |
 | != | not equal to |
 | / | is contained in |
 | !/ | is not contained in |
 
 NOTE: For strings, == and != check for exact match between the two strings and the other two, / and !/ check to see if the second string is contained in the first one. This is so things like: if name($n) / guard will respond true to "cityguard" "guard" "guardian" etc. Using == on a name implies that you are matching the complete name "cityguard guard" or whatever. The string operators are case SENSITIVE.
-<br>
-<br>
+#### [&#x2191; Back to ToC](#table-of-contents)
 
 ## If Checks In Control Flow
 
@@ -608,11 +524,7 @@ The provided list of if_checks and their arguments are below. They should all be
 | `wis($*) == integer` | Is the wisdom of $* equal to integer |
 | `dex($*) == integer` | Is the dexterity of $* equal to integer |
 | `con($*) == integer` | Is the constitution of $* equal to integer |
-
-
-NOTE: There are some fairly interesting and possibly useful ones not on this list, and the might or might not get added in later days. Please send any that YOU add to me, or to the circle@marble.bu.edu mailing list.
-<br>
-<br>
+#### [&#x2191; Back to ToC](#table-of-contents)
 
 ## MOBCommands Of Interest
 
@@ -920,8 +832,7 @@ Note: Previous exit will be replaced. Use <target room> -1 to remove exit.
 ### `MPAFFECT <target> <spell> <duration> - add spell affect to target mob/player`
 
 ### `MPHEAL <target> XdY+Z - heals target for XdY+Z hitpoints`
-<br>
-<br>
+#### [&#x2191; Back to ToC](#table-of-contents)
 
 ## Quick Reference Guide
 ```
@@ -1024,8 +935,6 @@ where <target room> is the target room's vnum, [flags] are optional exit
 MPAFFECT <target> <spell> <duration> - add a spell affect on target
 MPHEAL <target> XdY+Z - heals target for XdY+Z hitpoints
 ```
-<br>
-<br>
 
 EXAMPLE Referenced from above in the Control Flow section
 ```
@@ -1068,8 +977,7 @@ its two letter form, and placed immediately following an 'if' line. Thus,
 if you want to be that malicious in trying to break the MOBprogram code,
 noone is going to stand in your way (However, the result of this would be
 a bug message and a bail out from the ifcheck so things dont really break)
-<br>
-<br>
+#### [&#x2191; Back to ToC](#table-of-contents)
 
 ## Regarding CPU Slowdown
 
@@ -1118,8 +1026,7 @@ AHA! you say, we are back to polling. Well true, but since mobile_update
 is called anyway (at 1/16 the frequency of aggr_update in default Merc 2.0)
 and we only add an if check, a walk of a short link_list and the MOBprogram
 execution itself, we have still reduced the aggr_update stuff by major amounts.
-<br>
-<br>
+#### [&#x2191; Back to ToC](#table-of-contents)
 
 ## Miscellaneous Information
 
@@ -1160,8 +1067,92 @@ with low grief.
 I will be glad to lend advice to someone who is trying to install this for
 a modified version of Circle 2.20 and if something develops I will be glad to
 make that public as well.
-<br>
-<br>
+#### [&#x2191; Back to ToC](#table-of-contents)
+
+## Associating MOBprograms With A Mobile
+
+There is one only way for the mud to associate the program with the
+mobile. In either case, the result is a link list of mob_programs which are
+attached to the mobile_prototype. This is done at boot time, and so only one
+copy is kept, regardless of how many instances of the mobile are running
+about. This also means that there is no dynamic way to edit or modify the
+MOBprograms.
+
+Back to how to associate...
+The method involves a simple in-file approach. In your mobile file
+in your world directory, at the end of the mobile's block (i.e. on the line
+following the typical position/default position/sex line), append any number
+of MOBprogram blocks (using the syntax above) followed by a line starting
+with one '|' (pipe).
+
+```
+#3062
+fido dog~
+the beastly fido~
+A beastly fido is mucking through the garbage looking for food here.
+~
+The fido is a small dog that has a foul smell and pieces of rotted meat hanging
+around his teeth.
+~
+161 0 -200 S
+0 20 10 1d6+4 1d4+0
+0 25
+8 8 1
+>greet_prog 60~
+if isgood($n)
+if rand(30)
+mpechoat $n $I wags $l tail at you.
+mpechoaround $n $I wags $l tail at $n.
+endif
+else
+growl $n
+endif~
+|
+
+Explanations
+Since it is often useful to have the same MOBprograms affecting several
+different mobiles, referencing MOBprograms stored in an external file
+is needed. Using the method above, in place of a true MOBprogram block, one
+can place the dummy line in the mob file in place of the MOBProgram block(s).
+CircleMud 2.20 with these modifications expects these programs to be
+stored under the lib/world/prg directory.
+```
+
+```
+">" "in_file_prog" {MOBprogram_filename} "~" NL
+
+#3062
+fido dog~
+the beastly fido~
+A beastly fido is mucking through the garbage looking for food here.
+~
+The fido is a small dog that has a foul smell and pieces of rotted meat hanging
+around his teeth.
+~
+161 0 -200 S
+0 20 10 1d6+4 1d4+0
+0 25
+8 8 1
+>in_file_prog greet.prg~
+|
+```
+```
+Note there is no list of program_commands as well as no second tilde ~.
+You can in fact have multiple >in_file_prog blocks, as well as mixing
+them with in line MOBProg blocks.
+
+In a file, the syntax is exactly the same as it is for a in_file
+approach:
+
+A list of MOBprogram (NOT including any dummy in_file_prog
+lines, sorry but recursion was outlawed for simplicity)
+blocks followed by a line starting with one '|' (pipe).
+
+More than one mobile can use the same file and one mobile can call more
+than one file. Files referenced using the dummy in_file_prog line are
+placed in the MOBprogram list at the point where the dummy line exists.
+```
+#### [&#x2191; Back to ToC](#table-of-contents)
 
 ## Adding New Triggers
 
@@ -1175,9 +1166,7 @@ All you have to do is to follow these simple steps...
 4. Add a new if statement in mprog_name_to_type(..) in db.c
 
 There you have it, a new trigger for your MOBProgram system.
-<br>
-<br>
-
+#### [&#x2191; Back to ToC](#table-of-contents)
 
 ## Credits
 ```
@@ -1235,3 +1224,4 @@ Expanded further by Ninian
 ```
 
 Further questions about mobprogs on Burning specifically, can be sent to bane@burningmud.com.
+#### [&#x2191; Back to ToC](#table-of-contents)
