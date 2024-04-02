@@ -1052,9 +1052,8 @@ a/an                  --      --     --      --      $a      $A
 '$'symbol=$$
 
 
-ifcheck argument? meaning
------------------------------------------------------------------------------
-rand(num)      Is a random percentage less than or equal to num
+| ifcheck | argument? | meaning
+|rand(num)      Is a random percentage less than or equal to num
 isnpc($*)      Is $* an NPC
 ispc($*)       Is $* a PC
 isgood($*)     Does $* have a good alignment
@@ -1065,6 +1064,7 @@ ischarmed($*)  Is $* affected by charm
 isfollow($*)   Is $* a follower with their master in the room
 isleader($*)   Is $* a leader with followers in the room?
 isaffected($*) & integer Is ($*->affected_by & integer) true (person only)
+iswearing($*) == integer Is $* equal to object vnum.
 hitprcnt($*) == percent Is the hit/max_hit of $* equal to percent
 inroom($*) == [integer | $i | $n | $t | $r]
 Is the room of $* equal to integer or other
@@ -1097,16 +1097,26 @@ MPTRANSFER <dest> [location]
 MPFORCE <victim> <command>
 
 +++ Additional Burning mobprog commands +++
+
 MPPAUSE <ticks>
 MPWALK <virtual room number>
-MPHOUR <hours>
-MPDAY <days>
-MPFLUSH @ <command>
-MPSTOP -
-MPZIP -
-MPWEAR <victim> <subcmd> <obj> …
-MPBOND <victim> <object>
-MPADDREP <victim> <value> <group| > <silent| >
+MPWALK <virtual room number> - let mobile walk to <room>.
+MPHOUR <hours>  - let mobile pause until the hour is <hours>.
+MPDAY <days> - let mobile pause until the day is <days>.
+MPFLUSH - cancel all buffered mob commands.
+MPSTOP - stop all hunting (including pending mpwalk commands).
+MPZIP - do nothing.
+MPWAIT <victim> <duration> - give victim <duration> rounds of waitstate.
+MPPAGE <room> <victim> <id> - trigger another mobile page_trigger with <id>.
+MPWEAR <victim> <subcmd> <object> - wear an item.
+MPBOND <victim> <object> - bond an item to a victim.
+MPADDREP <victim> <value> <group| > <silent| > - add reputation to victim.
+MPCAST 'spellname' <victim> - cast a spell 'spellname' on <victim>.
+MPQUEST <victim> <quest num> - make <victim> join quest <quest num>.
+MPCOMPQUEST <victim> - make victim complete current quest.
+MPDAMAGE XdY+Z <save_type> <dam_flags=1|2|4> <save modifier>
+MPINFO <message> - send a custom info kill message
+ note: mpinfo only works in combination with mpdamage
 MPEXIT <north|east|south|west|up|down> <target room> [flags] [exit descr]
 where <target room> is the target room's vnum, [flags] are optional exit
  flags, and [exit descr] is an optional exit description.
