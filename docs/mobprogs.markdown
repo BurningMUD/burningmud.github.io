@@ -4,14 +4,14 @@ title: Mobprogs Document
 ---
 <style>
 h1 {
-    color: orange;
+    color: green;
 }
 
 h2 {
-    color: lightblue;
+    color: green;
 }
 code {
-    color: green;
+    color: lightgreen;
 }
 </style>
 
