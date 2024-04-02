@@ -1223,5 +1223,5 @@ Ported to BurningMUD and expanded by Lorgalis
 Expanded further by Ninian
 ```
 
-Further questions about mobprogs on Burning specifically, can be sent to bane@burningmud.com.
+Further questions about mobprogs on Burning specifically, can be sent to olc@burningmud.com.
 #### [&#x2191; Back to ToC](#table-of-contents)
