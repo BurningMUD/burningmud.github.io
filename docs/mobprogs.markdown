@@ -936,32 +936,32 @@ a/an                  --      --     --      --      $a      $A
 '$'symbol=$$
 
 
-| ifcheck | argument? | meaning
-|rand(num)      Is a random percentage less than or equal to num
-isnpc($*)      Is $* an NPC
-ispc($*)       Is $* a PC
-isgood($*)     Does $* have a good alignment
-isfight($*)    Is $* fighting
-ishunt($*)     Is $* hunting
-isimmort($*)   Is the level of $* greater than max_mortal
-ischarmed($*)  Is $* affected by charm
-isfollow($*)   Is $* a follower with their master in the room
-isleader($*)   Is $* a leader with followers in the room?
-isaffected($*) & integer Is ($*->affected_by & integer) true (person only)
-iswearing($*) == integer Is $* equal to object vnum.
-hitprcnt($*) == percent Is the hit/max_hit of $* equal to percent
-inroom($*) == [integer | $i | $n | $t | $r]
-Is the room of $* equal to integer or other
-person. (person only)
-sex($*) == integer Is the sex of $* equal to integer
-position($*) == integer Is the position of $* equal to integer
-level($*) == integer Is the level of $* equal to integer
-class($*) == integer Is the class of $* equal to integer
-goldamt($*) == integer Does $* have a gold total equal to integer
-objtype($*) == integer Is the type of $* equal to integer (armor,boat,etc)
-objval#($*) == integer Is $*->value[#] equal to integer (# from 0-3)
-number($*) == integer Is the vnum of $* equal to integer
-name($*) == string Is the name of $* equal to string
+ifcheck & argument          meaning
+-----------------------------------------------------------------------------
+rand(num)                   Is a random percentage less than or equal to num
+isnpc($*)                   Is $* an NPC
+ispc($*)                    Is $* a PC
+isgood($*)                  Does $* have a good alignment
+isfight($*)                 Is $* fighting
+ishunt($*)                  Is $* hunting
+isimmort($*)                Is the level of $* greater than max_mortal
+ischarmed($*)               Is $* affected by charm
+isfollow($*)                Is $* a follower with their master in the room
+isleader($*)                Is $* a leader with followers in the room?
+isaffected($*) == integer   Is ($*->affected_by integer) true (person only)
+iswearing($*) == integer    Is $* equal to object vnum.
+hitprcnt($*) == percent     Is the hit/max_hit of $* equal to percent
+inroom($*) == [integer | $i | $n | $t | $r] Is the room of $* equal to integer
+    or other person. (person only)
+sex($*) == integer          Is the sex of $* equal to integer
+position($*) == integer     Is the position of $* equal to integer
+level($*) == integer        Is the level of $* equal to integer
+class($*) == integer        Is the class of $* equal to integer
+goldamt($*) == integer      Does $* have a gold total equal to integer
+objtype($*) == integer      Is the type of $* equal to integer (armor,boat,etc)
+objval#($*) == integer      Is $*->value[#] equal to integer (# from 0-3)
+number($*) == integer       Is the vnum of $* equal to integer
+name($*) == string          Is the name of $* equal to string
 
 MOBcommand argument_list MOBcommand argument_list
 -----------------------------------------------------------------------------
