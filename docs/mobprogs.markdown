@@ -1212,6 +1212,9 @@ providing it in the first place.
 
 Moonchilde Jun 14th, 1994
 jtraub@zso.dec.com
+
+Ported to BurningMUD and expanded Lorgalis
+Expanded further by Ninian
 ```
 
-Further questions about mobprogs on Burning can be sent to bane@burningmud.com.
+Further questions about mobprogs on Burning specifically, can be sent to bane@burningmud.com.
