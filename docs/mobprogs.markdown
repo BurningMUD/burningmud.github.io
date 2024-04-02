@@ -524,6 +524,7 @@ The provided list of if_checks and their arguments are below. They should all be
 | `wis($*) == integer` | Is the wisdom of $* equal to integer |
 | `dex($*) == integer` | Is the dexterity of $* equal to integer |
 | `con($*) == integer` | Is the constitution of $* equal to integer |
+
 #### [&#x2191; Back to ToC](#table-of-contents)
 
 ## MOBCommands Of Interest
