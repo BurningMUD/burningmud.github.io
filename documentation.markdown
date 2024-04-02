@@ -9,6 +9,4 @@ We have a high standard of quality for zones, and we will be glad to assist you 
 * * *
 
 ## Mobprogs Documentation
-Written in Word format, and saved into html, so the format might not be ideal, but it's an old document that needs to be reformatted. But, it's here in full, with syntax and info on all the customizations that coders have added over time. More information about the inception of Mobprogs, and how they ended up on Burning, can be found within the document itself.
-
 <a href="/docs/mobile_programs.markdown">Mobile Programs</a>
