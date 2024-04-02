@@ -608,93 +608,146 @@ Here are the basic MOBcommands that we found to be enticing:
 
 ### `MPSTAT <mobile>`
 ```
-Shows the MOBprograms which are set on the mob of the given name or vnum and some basic stats for the mobile
+Shows the MOBprograms which are set on the mob of the given name or vnum
+and some basic stats for the mobile
 ```
 
 ### `MPASOUND <text_string>`
 ```
-Prints the text string to the rooms around the mobile in the same manner as a death cry. This is really useful for powerful aggressives and is also nice for wandering minstrels or mobiles like that in concept.
+Prints the text string to the rooms around the mobile in the same manner
+as a death cry. This is really useful for powerful aggressives and is
+also nice for wandering minstrels or mobiles like that in concept.
 ```
 ### `MPJUNK <object>`
 ```
 
-Destroys the object refered to in the mobiles inven. It prints no message to the world and you can do things like junk all.bread or junk all. This is nice for having janitor mobiles clean out their inventory if they are carrying too much (have a MOBprogram trigger on the 'full inventory')
+Destroys the object refered to in the mobiles inven. It prints no message
+to the world and you can do things like junk all.bread or junk all. This
+is nice for having janitor mobiles clean out their inventory if they are
+carrying too much (have a MOBprogram trigger on the 'full inventory')
 ```
 
 ### `MPECHO <text_string> / MPECHOAT <victim> <text_string> / MPECHOAROUND <victim> <text_string>`
 ```
-Prints the text message to the room of the mobile. The three options let you tailor the message to goto victims or to do things sneaky like having a merchant do: mpat guard mpechoat guard rescue_please This coupled with a guard act_prog trigger on rescue_please to mpgoto $n and mpecho $I has arrived. It is an affective way of quickly bringing guards to the scene of an attack.
+Prints the text message to the room of the mobile. The three options let
+you tailor the message to goto victims or to do things sneaky like having
+a merchant do: mpat guard mpechoat guard rescue_please This coupled with
+a guard act_prog trigger on rescue_please to mpgoto $n and mpecho $I has
+arrived. It is an affective way of quickly bringing guards to the scene
+of an attack.
 ```
 
 ### `MPMLOAD <vnum> / MPOLOAD <vnum>`
 ```
-Loads the obj/mobile into the inven/room of the mobile. Even if the item is non-takable, the mobile will receive it in the inventory. This lets a mobile distribute a quest item or load a key or something.
+Loads the obj/mobile into the inven/room of the mobile. Even if the item
+is non-takable, the mobile will receive it in the inventory. This lets a
+mobile distribute a quest item or load a key or something.
 ```
 
 
 ### `MPKILL <victim>`
 ```
-Lets a mobile kill a player without having to murder and be fifth level. Lots of MOBprograms end up with mpkill $n commands floating around. It works on both mobiles and players.
+Lets a mobile kill a player without having to murder and be fifth level.
+Lots of MOBprograms end up with mpkill $n commands floating around. It
+works on both mobiles and players.
 ```
 
 
 ### `MPPURGE [argument]`
 ```
-Destroys the argument from the room of the mobile. Without an argument the result is the cleansing of all NPC's and items from the room with the exception of the mobile itself. However, mppurge $i will indeed purge the mobile, but it MUST be the last command the mobile tries to do, otherwise the mud cant reference the acting mobile trying to do the commands and bad things happen.
+Destroys the argument from the room of the mobile. Without an argument the
+result is the cleansing of all NPC's and items from the room with the
+exception of the mobile itself. However, mppurge $i will indeed purge the
+mobile, but it MUST be the last command the mobile tries to do, otherwise
+the mud cant reference the acting mobile trying to do the commands and bad
+things happen.
 ```
 
 
 ### `MPGOTO <dest>`
 ```
-Moves the mobile to the room or mobile or object requested. It makes no message of its departure or of its entrance, so these must be supplied with mpecho commands if they are desired.
+Moves the mobile to the room or mobile or object requested. It makes no
+message of its departure or of its entrance, so these must be supplied with
+mpecho commands if they are desired.
 ```
 
 
 ###  `MPAT <dest> <command>`
 ```
-Perfoms the command at the designated location. Very useful for doing magic slight of hand tricks that leave players dumbfounded.. such as metamorphing mobiles, or guard summoning, or corpse vanishing.
+Perfoms the command at the designated location. Very useful for doing magic
+slight of hand tricks that leave players dumbfounded.. such as metamorphing
+mobiles, or guard summoning, or corpse vanishing.
 ```
 
 
 ### `MPTRANSFER <victim> [dest]`
 ```
-Sends the victim to the destination or to the room of the mobile as a default. if the victim is "all" then all the characters in the room of the mobile are transfered to the destination. Good for starting quests or things like that. There is no message given to the player that it has been transfered and the player doesnt do a look at the new room unless the mob forces them to. Immortals cannot be tranfered.
+Sends the victim to the destination or to the room of the mobile as a default.
+if the victim is "all" then all the characters in the room of the mobile are
+transfered to the destination. Good for starting quests or things like that.
+There is no message given to the player that it has been transfered and the
+player doesnt do a look at the new room unless the mob forces them to.
+Immortals cannot be tranfered.
 ```
 
 
 ### `MPFORCE <victim> <command>`
 ```
-Forces the victim to do the designated command. The victim is not told that they are forced, they just do the command so usually some mpecho message is nice. You can force players to remove belongings and give them to you, etc. The player sees the normal command messages (such as removing the item and giving it away in the above example) Again, if the victim is "all" then everyone in the mobiles room does the command. This cannot be used on immortals.
+Forces the victim to do the designated command. The victim is not told that
+they are forced, they just do the command so usually some mpecho message is
+nice. You can force players to remove belongings and give them to you, etc.
+The player sees the normal command messages (such as removing the item and
+giving it away in the above example) Again, if the victim is "all" then
+everyone in the mobiles room does the command. This cannot be used on immortals.
 ```
 
 Here are the extra Burning mobile commands:
 
 ### `MPPAUSE <how many ticks to pause>`
 ```
-Burning has added the fourth dimension 'time' to the original mobprog code. As a result of this, on Burning each mob command is performed once per mob tick, whereas on standard mobprog muds all commands are performed instantly. If you want the mobile to pause while performing its commands, you can use the mppause command to specify how many mob-ticks the mobile should pause before performing the next command in the list.
+Burning has added the fourth dimension 'time' to the original mobprog code.
+As a result of this, on Burning each mob command is performed once per mob
+tick, whereas on standard mobprog muds all commands are performed instantly.
+If you want the mobile to pause while performing its commands, you can use
+the mppause command to specify how many mob-ticks the mobile should pause
+before performing the next command in the list.
 ```
 
 
 ### `MPHOUR <hour to wait for>`
 ```
-Burning has added the fourth dimension 'time' to the original mobprog code. As a result of this, on Burning each mob command is performed once per mob tick, whereas on standard mobprog muds all commands are performed instantly. If you want the mobile to wait for a certain hour before resuming the commands, you can use mphour with the hour to wait for.
+Burning has added the fourth dimension 'time' to the original mobprog code.
+As a result of this, on Burning each mob command is performed once per mob
+tick, whereas on standard mobprog muds all commands are performed instantly.
+If you want the mobile to wait for a certain hour before resuming the
+commands, you can use mphour with the hour to wait for.
 ```
 
 
 ### `MPDAY <day to wait for>`
 ```
-This command works like mphour with the difference that the mobile waits for a certain day before resuming the commands.
+This command works like mphour with the difference that the mobile waits for
+a certain day before resuming the commands.
 ```
 
 
 ### `MPFLUSH`
 ```
-This command is very useful when writing complex mobprogs that allows the mob to change its course of action. When executing mpflush, the mobile throws away any pending commands. You can then add new commands that will be executed next. It is perfectly ok to call mpflush on a mobile that does not have any pending commands just to make sure it doesn't.
+This command is very useful when writing complex mobprogs that allows the mob
+to change its course of action. When executing mpflush, the mobile throws
+away any pending commands. You can then add new commands that will be
+executed next. It is perfectly ok to call mpflush on a mobile that does not
+have any pending commands just to make sure it doesn't.
 ```
 
 ### `MPWALK <virtual room number of desired destination>`
 ```
-This very powerful command is used to have the mobile walking around in the mud without any prior knowledge of its whereabouts or the path to a specific room. By simply adding a mpwalk command followed by a virtual room number, the mobile will try to walk to that room always choosing the shortest path. The next command will not be executed until the mobile has reached its desired destination.
+This very powerful command is used to have the mobile walking around in the
+mud without any prior knowledge of its whereabouts or the path to a specific
+room. By simply adding a mpwalk command followed by a virtual room number,
+the mobile will try to walk to that room always choosing the shortest path.
+The next command will not be executed until the mobile has reached its
+desired destination.
 ```
 
 
@@ -718,7 +771,8 @@ endif
 
 ### `MPWAIT <victim> <duration>`
 ```
-Causes the victim of the mpwait command to suffer a waitstate before any further action is carried out. Duration is in combat pulses and is of the xDy+z variety.
+Causes the victim of the mpwait command to suffer a waitstate before any further
+action is carried out. Duration is in combat pulses and is of the xDy+z variety.
 ```
 
 ### `MPPAGE <room number> <mobile name | virtual number> <id>`
@@ -731,10 +785,13 @@ room number can be:
     mobile name | num - x.guard, guard, or virtual number.
     id - an integer matching the page_prog id.
 
-If the second argument, mobile name or number, is a number then all mobiles with that virtual number in the 'room' are paged. If a mobile has a page_prog with an <id> that matches the mppage, that mobprog is activated.
+If the second argument, mobile name or number, is a number then all mobiles with
+that virtual number in the 'room' are paged. If a mobile has a page_prog with an
+<id> that matches the mppage, that mobprog is activated.
 
 Examples:
-mppage -1 3067 1 - activate all mobs with vnum 3067 in the world that have a page_prog with id 1.
+mppage -1 3067 1 - activate all mobs with vnum 3067 in the world that have a
+page_prog with id 1.
 mppage 0 3067 1 - activate all mobs in this room only with vnum3067 and id 1.
 mppage 0 2.guard 1 - only activate 2.guard in this room if he has id 1.
 mppage 3046 guard 2 - activate the first guard in room 3046 with id 2.
@@ -743,13 +800,17 @@ mppage 3046 guard 2 - activate the first guard in room 3046 with id 2.
 
 ### `@ <original command>`
 ```
-Sometimes one wants the mobile to perform commands faster than one command per tick. This is possible by adding the @ character in front of the normal command. When using the @ character in front of a command, the next one will be performed instantly (just like on the original mobprog).
+Sometimes one wants the mobile to perform commands faster than one command per
+tick. This is possible by adding the @ character in front of the normal command.
+When using the @ character in front of a command, the next one will be performed
+instantly (just like on the original mobprog).
 
 Example:
 @smile
 say Hi, welcome to my humble place!
 
-Will cause the mobile to smile followed by an instant 'say'. You can call any command after the @ sign, including mobprog commands.
+Will cause the mobile to smile followed by an instant 'say'. You can call any
+command after the @ sign, including mobprog commands.
 ```
 
 
@@ -780,7 +841,8 @@ Example:
 ### `MPADDREP <victim> <value> <group| > <silent| >`
 ```
 
-Victim gets <value> rep points. Argument 'group' affects all group members; silent is without info.
+Victim gets <value> rep points. Argument 'group' affects all group members; silent
+is without info.
 
 Example:
 @mpaddrep $n 20
@@ -801,31 +863,40 @@ Usage:
 mpdamage <target OR target-type> <damdice> [damtype] [damflags] [savemod]
 
 Argument description:
-<target OR target-type> is either the name of a player/mob ($n usually) or one of the following: "all" will damage everyone in room, "allm" will damage all mobiles in room, and "allp" will damage all players.
+<target OR target-type> is either the name of a player/mob ($n usually) or one of
+the following: "all" will damage everyone in room, "allm" will damage all mobiles
+in room, and "allp" will damage all players.
 
 <damdice> is a standard damage dice format, such as 5d200.
 
-[damtype] is optional and is any standard MUD damage type, such as crush, slash, spell, etc.
+[damtype] is optional and is any standard MUD damage type, such as crush, slash,
+spell, etc.
 
-[damflags] is optional and is a bitvector field, which can take the following flags: Negate Sanctuary (1), No Maxdam (2). As it is a bitvector, to get multiple flags, you add the number of each flag together. So a mpdamage command which has negate sanctuary and no max damage would have a damflag value of 3.
+[damflags] is optional and is a bitvector field, which can take the following
+flags: Negate Sanctuary (1), No Maxdam (2). As it is a bitvector, to get multiple
+flags, you add the number of each flag together. So a mpdamage command which has
+negate sanctuary and no max damage would have a damflag value of 3.
 
 [savemod] is the modifier to saving throws that the target receives.
 
 Example:
 mpdamage allp 5d200 spell 1 0
 
-This would damage all players in the room with a dice of 5d200, the damage would negate sanctuary, and be of a 'spell' damage type.
+This would damage all players in the room with a dice of 5d200, the damage would
+negate sanctuary, and be of a 'spell' damage type.
 ```
 
 ### `MPINFO <message> - send a custom info kill message`
 
 ```
-note: mpinfo only works in combination with mpdamage, and must be placed BEFORE the mpdamage command.
+note: mpinfo only works in combination with mpdamage, and must be placed BEFORE
+the mpdamage command.
 ```
 
 ### `MPEXIT <north|east|south|west|up|down> <target room> [flags] [exit descr]`
 ```
-Where <target room> is the target room's vnum, [flags] are optional exit flags, and [exit descr] is an optional exit description.
+Where <target room> is the target room's vnum, [flags] are optional exit flags,
+and [exit descr] is an optional exit description.
     
 Example: MPEXIT north 50001 SECRET ANTI-GOOD This is a secret anti-good exit.
 Note: Previous exit will be replaced. Use <target room> -1 to remove exit.
