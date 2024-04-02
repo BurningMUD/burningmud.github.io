@@ -1,3 +1,8 @@
+---
+layout: default
+title: Mobprogs Document
+---
+
 # MOBprograms
 
 MOBprograms are a way to make your mobiles more interesting. This
@@ -185,71 +190,117 @@ placed in the MOBprogram list at the point where the dummy line exists.
 
 ## Trigger Types
 
-Triggers are fairly easy to add, but this basic list should hold for most needs. Their names, argument list syntaxes, and translation into more articulate english are given below:
+Triggers are fairly easy to add, but this basic list should hold for
+most needs. Their names, argument list syntaxes, and translation into
+more articulate english are given below:
 
 ### `in_file_prog <ARGUMENT>`
 ```
-The argument is a single word which is the location of the stored file as referenced from the running directory (MOBProgs).
+The argument is a single word which is the location of the stored file
+as referenced from the running directory (MOBProgs).
 
-NOTE: Dummy trigger. Not valid in any file, only for use in loading files from the method described above.
+NOTE: Dummy trigger. Not valid in any file, only for use in loading
+files from the method described above.
 ```
 
 ### `act_prog [p] <ARGUMENT>`
 ```
-The argument is a list of keywords separated by spaces. If the first word is the character 'p' by itself then the rest of the word list is considered to be a phrase. The trigger is activated whenver a keyword (or the phrase) is contained in the act() message. Both the phrase and keywords are case insensitive.
+The argument is a list of keywords separated by spaces. If the first
+word is the character 'p' by itself then the rest of the word list is
+considered to be a phrase. The trigger is activated whenver a keyword
+(or the phrase) is contained in the act() message. Both the phrase and
+keywords are case insensitive.
 
-NOTE: Most general trigger. Applies to almost every event which happens in the mud. Anytime the function act() is called with a message to be delivered TO_CHAR,TO_VICT,TO_ROOM,etc. the act can be triggered. Basically this will trigger on almost everything you'll ever want (and some things you wont as well).
+NOTE: Most general trigger. Applies to almost every event which happens
+in the mud. Anytime the function act() is called with a message to be
+delivered TO_CHAR,TO_VICT,TO_ROOM,etc. the act can be triggered.
+Basically this will trigger on almost everything you'll ever want (and
+some things you wont as well).
 
 For example:
 MOBprogram: >act_prog p pokes you in the ribs.~
 
-This trigger will only be activated if a mobile receives a message in which the above five words are found in the exact order and spacing given. Note that the period is needed because the words must be found on their own. This eliminates confusion when the keyword is 'hi' and a message with the word 'this' is being checked. In CircleMud2.20 with these patches, neither emote nor say can trigger and act_prog, so it can ONLY be triggered by socials (and possibly by an IMPs echo ;)
+This trigger will only be activated if a mobile receives a message in
+which the above five words are found in the exact order and spacing given.
+Note that the period is needed because the words must be found on their
+own. This eliminates confusion when the keyword is 'hi' and a message
+with the word 'this' is being checked. In CircleMud2.20 with these
+patches, neither emote nor say can trigger and act_prog, so it can
+ONLY be triggered by socials (and possibly by an IMPs echo ;)
 ```
 
 ### `speech_prog [p] <ARGUMENT>`
 ```
 The argument is the same as for an act_prog.
 
-NOTE: This is only triggered when the keyword or phrase is contained in a message which has been said by a PC in the same room as the mob. The PC restriction is not necessary, but makes infinite loops between two talking mobiles impossible. It also makes it impossible for two NPC's to stand and discuss the weather however.
+NOTE: This is only triggered when the keyword or phrase is contained
+in a message which has been said by a PC in the same room as the mob.
+The PC restriction is not necessary, but makes infinite loops between
+two talking mobiles impossible. It also makes it impossible for two
+NPC's to stand and discuss the weather however.
 ```
 
 ### `rand_prog <NUMBER>`
 ```
 The argument is a number betweeen 1 and 100 inclusive.
 
-NOTE: This trigger is checked at each PULSE_MOBILE and if the argument is greater than a percentage roll the trigger is activated. This will happen even if there is no PC in the room with the mob, but there must be players in the same area.
+NOTE: This trigger is checked at each PULSE_MOBILE and if the argument
+is greater than a percentage roll the trigger is activated. This will
+happen even if there is no PC in the room with the mob, but there must
+be players in the same area.
 
-It is useful to give mobiles a bit of a personality. For instance a janitor who stops to spit tobacco, or complain about the hours, or wonder why there are no woman janitors on muds, or a fido which barks or growls or pees on the curb is much more alive than one which just sits there scavenging.
+It is useful to give mobiles a bit of a personality. For instance a
+janitor who stops to spit tobacco, or complain about the hours, or
+wonder why there are no woman janitors on muds, or a fido which
+barks or growls or pees on the curb is much more alive than one
+which just sits there scavenging.
 
-This trigger will even be checked when the mobile is fighting, so can provide some confusion if you don't expect it (for instance an mpecho about a fido peeing on the curb can happy during a fight or even while the mobile is lying mortally wounded!)
+This trigger will even be checked when the mobile is fighting, so
+can provide some confusion if you don't expect it (for instance an
+mpecho about a fido peeing on the curb can happy during a fight or
+even while the mobile is lying mortally wounded!)
 ```
 
 ### `fight_prog <NUMBER>`
 ```
 The argument is a percentage like in rand_prog.
 
-NOTE: Useful for giving mobiles combat attitude. It is checked every PULSE_VIOLENCE when the mobile is fighting. Can be used to cast spells, curse at the opponent, or whatever. Only the first successful one will be processed to save time. Also, this means that the mobile wont get lucky and 1. curse, cast a fireball and 2. spit on the player, cast another fireball in the same pulse.
+NOTE: Useful for giving mobiles combat attitude. It is checked every
+PULSE_VIOLENCE when the mobile is fighting. Can be used to cast
+spells, curse at the opponent, or whatever. Only the first successful
+one will be processed to save time. Also, this means that the mobile
+wont get lucky and 1. curse, cast a fireball and 2. spit on the
+player, cast another fireball in the same pulse.
 ```
 
 ### `hitprcnt_prog <NUMBER>`
 ```
 The argument is a percentage.
 
-NOTE: Is activated at each PULSE_VIOLENCE when the mobile is fighting. It checks to see if the hitpoints of the mobile are below the given percentage. Multiple hitprcnt_progs should be listed in increasing order of percent since a 40% will always be activated before a 20% and, only the first successful hitprcnt trigger is performed.
+NOTE: Is activated at each PULSE_VIOLENCE when the mobile is fighting.
+It checks to see if the hitpoints of the mobile are below the given
+percentage. Multiple hitprcnt_progs should be listed in increasing
+order of percent since a 40% will always be activated before a 20%
+and, only the first successful hitprcnt trigger is performed.
 ```
 
 ### `greet_prog <NUMBER>`
 ```
 Again a percentage argument.
 
-NOTE: Whenever someone enters the room with the mobile, and the mobile saw the person enter, this is checked. Good for shopkeepers who want to welcome customers, or for pseudo-aggressive mobiles which need to discriminate on who they attack.
+NOTE: Whenever someone enters the room with the mobile, and the mobile
+saw the person enter, this is checked. Good for shopkeepers who want
+to welcome customers, or for pseudo-aggressive mobiles which need to
+discriminate on who they attack.
 ```
 
 ### `all_greet_prog <NUMBER>`
 ```
 Again a percentage argument.
 
-NOTE: Like greet_prog, but it can be triggered even if the mobile didnt see the arrival (i.e. sneak, invis, etc). Most useful for faking teleport rooms (if your mobiles can transfer) or for impassable guardians.
+NOTE: Like greet_prog, but it can be triggered even if the mobile didnt
+see the arrival (i.e. sneak, invis, etc). Most useful for faking teleport
+rooms (if your mobiles can transfer) or for impassable guardians.
 
 **NOTE: neither greet_prog is activated if the mobile is fighting.**
 ```
@@ -258,36 +309,61 @@ NOTE: Like greet_prog, but it can be triggered even if the mobile didnt see the 
 ```
 Again a percentage argument.
 
-NOTE: The opposite of a greet_prog. Whenever the mobile itself enters a new room, this can be triggered. Useful for looking around, or waving or other things that real PCs do when they arrive at a crowded room. Only the first successful one of these is done so the mobile doesn’t look stupid by repeating commands resulting from multiple MOBprograms.
+NOTE: The opposite of a greet_prog. Whenever the mobile itself enters
+a new room, this can be triggered. Useful for looking around, or
+waving or other things that real PCs do when they arrive at a crowded
+room. Only the first successful one of these is done so the mobile
+doesn’t look stupid by repeating commands resulting from multiple
+MOBprograms.
 ```
 
 ### `leave_prog <NUMBER>`
 ```
 Again a percentage argument.
 
-NOTE: Whenever someone leaves a room with the mobile, and the mobile saw the person leave, this is checked. Good for shopkeepers who want to wave goodbye to customers, or for pseudo-aggressive mobiles which need to stop people from leaving etc. If the person leaving the room is attacked in the trigger, he/she can't leave the room as intended.
+NOTE: Whenever someone leaves a room with the mobile, and the mobile
+saw the person leave, this is checked. Good for shopkeepers who want
+to wave goodbye to customers, or for pseudo-aggressive mobiles which
+need to stop people from leaving etc. If the person leaving the room
+is attacked in the trigger, he/she can't leave the room as intended.
 ```
 ### `all_leave_prog <NUMBER> ??`
 ```
 Again a percentage argument.
 
-NOTE: This is just like leave_prog, except it will trigger even if the mobile cannot see the character leaving.
+NOTE: This is just like leave_prog, except it will trigger even if
+the mobile cannot see the character leaving.
 ```
 
 ### `give_prog <ARGUMENT>`
 ```
-The argument is either the complete name of an object, or the word 'all'. A complete name is like: "sword shiny magic" vs "sword". It is whatever is on the line of the object section following the VNUM.
+The argument is either the complete name of an object, or the word
+'all'. A complete name is like: "sword shiny magic" vs "sword". It
+is whatever is on the line of the object section following the VNUM.
 
-NOTE: This is triggered whenever something is given to the mobile. Best used for quests. Since the first successful trigger is the only one of this type which is processed, having an "all" argument give_prog at the end of the MOBprogram list is essentially a default response.
+NOTE: This is triggered whenever something is given to the mobile.
+Best used for quests. Since the first successful trigger is the only
+one of this type which is processed, having an "all" argument
+give_prog at the end of the MOBprogram list is essentially a default
+response.
 ```
 
 ### `bribe_prog <NUMBER>`
 ```
 The argument is any positive integer number.
 
-NOTE: This trigger is activated whenever money is given to the mobile. If the amount given exceeds the number, then process the commands. Note again, that an argument of '1' would act as a default response. If money is given to a mobile with this trigger type, instead of the cash being added to mob->gold, the mobile is instead given a pile of coins in the proper amount. In this way, the mobile can drop the coins or refer to the object by "amount" (short description:"%d gold coins").
+NOTE: This trigger is activated whenever money is given to the mobile.
+If the amount given exceeds the number, then process the commands.
+Note again, that an argument of '1' would act as a default response.
+If money is given to a mobile with this trigger type, instead of the
+cash being added to mob->gold, the mobile is instead given a pile of
+coins in the proper amount. In this way, the mobile can drop the
+coins or refer to the object by "amount" (short description:"%d gold
+coins").
 
-This surely has some drawbacks, but it lets the mobile do something with the bribe (NOTE: dropping it and getting it turns it into cash) This can be done sneakily if a NPC-only "at" command exists.
+This surely has some drawbacks, but it lets the mobile do something
+with the bribe (NOTE: dropping it and getting it turns it into cash).
+This can be done sneakily if a NPC-only "at" command exists.
 ```
 
 ### `hour_prog <1-24>`
@@ -301,25 +377,49 @@ NOTE: When the mudhour strikes X (1-24), this trigger is activated.
 ```
 The argument is a percentage.
 
-NOTE: This trigger is activated when a ferry reaches its new destination but before the captain exits the ferry. It is the captain who will act in this prog, not the vessel!
+NOTE: This trigger is activated when a ferry reaches its new
+destination but before the captain exits the ferry. It is the
+captain who will act in this prog, not the vessel!
 ```
 
 ### `page_prog <id> <percent>`
 ```
-<id> is a number to identify the page_prog and percent is the chance it is activated when triggered by mppage.
+<id> is a number to identify the page_prog and percent is the
+chance it is activated when triggered by mppage.
 
-NOTE: This trigger is activated when another mobile uses mppage to trigger it with the same id. See mppage for its syntax.
+NOTE: This trigger is activated when another mobile uses
+mppage to trigger it with the same id. See mppage for its
+syntax.
 ```
 
 ### `death_prog <NUMBER>`
 ```
 The argument is a percent once again.
 
-NOTE: When the mobile dies, if the random percentage is less than the argument the mobile performs the MOBprogram commands rather than the usual death_cry sequence. This is done before the corpse is made, so the commands can be considered the mobiles last gasp. It could perhaps destroy the items it was holding, or create some, or cast a spell on the killer and the room, or even goto a new location and die there (with a text message, the corpse would seem to vanish) The position of the mobile is set to STANDING, and so it can do all the normal commands, without worrying about being DEAD. However, even if the mobile restores itself to full hitpoints, it will still die.
+NOTE: When the mobile dies, if the random percentage is less than
+the argument the mobile performs the MOBprogram commands rather
+than the usual death_cry sequence. This is done before the corpse
+is made, so the commands can be considered the mobiles last gasp.
+It could perhaps destroy the items it was holding, or create some,
+or cast a spell on the killer and the room, or even goto a new
+location and die there (with a text message, the corpse would seem
+to vanish) The position of the mobile is set to STANDING, and so it
+can do all the normal commands, without worrying about being DEAD.
+However, even if the mobile restores itself to full hitpoints, it
+will still die.
 
-This is not a way to immortal mobiles. However, the last thing this mobile does could be to goto some vacant room, load a fresh version of itself, drop all its items, force the new mobile to get all the items and wear them, send the new mobile back to the character who killed it and force the new mobile to attack that character. Along with a text message which said the mobile restored itself, this might be a convincing effect. (Note that your kitten could turn into a dragon this way too). Of course this assumes that some NPC commands have been implemented.
+This is not a way to immortal mobiles. However, the last thing this
+mobile does could be to goto some vacant room, load a fresh version
+of itself, drop all its items, force the new mobile to get all the
+items and wear them, send the new mobile back to the character who
+killed it and force the new mobile to attack that character. Along
+with a text message which said the mobile restored itself, this might
+be a convincing effect. (Note that your kitten could turn into a dragon
+this way too). Of course this assumes that some NPC commands have been
+implemented.
 
-In the original code, it was impossible to do the 'restoration' trick above, however, in this code, it is in fact possible. Try it ;)
+In the original code, it was impossible to do the 'restoration' trick
+above, however, in this code, it is in fact possible. Try it ;)
 ```
 
 ### `command_word_prog <command>`
@@ -328,19 +428,40 @@ This mobprog will trigger on the command specified in <command>
 
 Syntax: command_phrase_prog <command> <args>
 
-This mobprog will trigger on the command specified in <command> if the argument is the same as specified in <args>.
+This mobprog will trigger on the command specified in <command> if the
+argument is the same as specified in <args>.
+
 IE: command_phrase_prog open door~
 
-Note that the first successful bribe_prog, give_prog, hitprcnt_prog, death_prog, fight_prog, rand_prog and entry_prog is the only one which is executed. All the successful greet(_all)_progs, speech_progs, and act_progs will be done. This is the best arrangement we found for handling situations where you imported several MOBprogram files for a mobile. If you are going to write lots of little files and piece them together to create the effect you want, it is advisible to not mix things together all that much, otherwise you have to pay close attention to the order in which the programs are added to the link list.
+Note that the first successful bribe_prog, give_prog, hitprcnt_prog,
+death_prog, fight_prog, rand_prog and entry_prog is the only one which
+is executed. All the successful greet(_all)_progs, speech_progs, and
+act_progs will be done. This is the best arrangement we found for
+handling situations where you imported several MOBprogram files for a
+mobile. If you are going to write lots of little files and piece them
+together to create the effect you want, it is advisible to not mix
+things together all that much, otherwise you have to pay close attention
+to the order in which the programs are added to the link list.
 
-Also, no MOBprograms will be successful when the mobile is charmed (since it has no self violition, it should act like it has none) to protect mobiles which are given special powers from being implemented by a player. One bug we had in early testing was a player who charmed a mobile and then used its aggressive greet_prog to attack other players.
+Also, no MOBprograms will be successful when the mobile is charmed (since
+it has no self violition, it should act like it has none) to protect
+mobiles which are given special powers from being implemented by a player.
+One bug we had in early testing was a player who charmed a mobile and then
+used its aggressive greet_prog to attack other players.
 ```
 <br>
 <br>
 
 ## Variables
 
-To make things come alive, variables are needed. These are represented in the MOBprograms by using a dollar sign convention as in the socials. When the mud command is processed, these variables are expanded into the values shown below. Usually, it is best to use the short descriptions of mobiles and the names of players when speaking them, but if you are performing an action to someone almost always you want the name. The title field for players is an extra that probably wont often be used. Without further hesitation... the variables:
+To make things come alive, variables are needed. These are represented in the
+MOBprograms by using a dollar sign convention as in the socials. When the mud
+command is processed, these variables are expanded into the values shown
+below. Usually, it is best to use the short descriptions of mobiles and the
+names of players when speaking them, but if you are performing an action to
+someone almost always you want the name. The title field for players is an
+extra that probably wont often be used. Without further hesitation... the
+variables:
 
 ```
 $i the first of the names of the mobile itself.
