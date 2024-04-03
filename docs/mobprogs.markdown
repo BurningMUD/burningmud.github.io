@@ -1029,6 +1029,8 @@ Some truths or limitations of mobprogs, some of which might feel unexpected from
 
 * If-statements are not required in basic progs, but as the mud may drop some mobprog commands if too much CPU usage occurs, it seems that through testing, the best way to ensure that a mobprog always triggers, is to wrap an if-statement around the mobprog logic. This can often simply be an if rand(100) statement, which just means that 100% of the time, this event will trigger, when the mobprog itself is activated. Without this if-statement, it seems the mud may process the command more lazily or not at all in rare instances.
 
+* Sometimes, a player and an NPC may share the same name or keywords, and be standing in the same room. So, in the case of a mobprog, use "0." prefix to associate with a player name. This will always match with player names first. This is also the case for gameplay, with spells such as summon, where to target the player named Orc, versus one of the many orcs in the game, they must use "0.Orc"
+
 * Individual mobprogs are limited to 120 lines.
 
 
