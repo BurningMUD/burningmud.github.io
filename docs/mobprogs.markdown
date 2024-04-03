@@ -965,6 +965,8 @@ where <target room> is the target room's vnum, [flags] are optional exit
  Note: Previous exit will be replaced. Use <target room> -1 to remove exit.
 MPAFFECT <target> <spell> <duration> - add a spell affect on target
 MPHEAL <target> XdY+Z - heals target for XdY+Z hitpoints
+MPVAR <variable> <integer> - Range from 0-100. Variables $1 and $2 avaialble to set.
+MPADD <varable> <-/+ int> - Add or subtract desired amount from variable.
 ```
 
 EXAMPLE Referenced from above in the Control Flow section
