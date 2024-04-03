@@ -1078,7 +1078,7 @@ MPAFFECT <target> <spell> <duration> - add a spell affect on target
 MPHEAL <target> XdY+Z - heals target for XdY+Z hitpoints
 MPVAR <variable> <integer> - Range from 0-100. Variables $1 and $2 avaialble to set.
 MPADD <varable> <-/+ int> - Add or subtract desired amount from variable.
-MPUTTER <text_string> - Fake spell cast message for custom spells.
+MPUTTER <text_string> - Custom spell name for custom spells.
 ```
 
 EXAMPLE Referenced from above in the Control Flow section
