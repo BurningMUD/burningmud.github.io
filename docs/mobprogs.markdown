@@ -846,29 +846,31 @@ system.
 
 ### `MPVAR <variable> <integer(0-100)>`
 ```
-Each instance of a mobile spawned into the game world, has two exposed integer
-variables, $1 and $2, which are initialized to a value of 0 when a mob pops,
-and can range from 0-100. You can set the variable to any number within the
-allowed range, with MPVAR.
+In the game, each mobile can use two special variables, $1 and $2, that
+initialize at 0 but can be changed to anything between 0 and 100. The
+builder changes these numbers with a command called MPVAR, like
+"MPVAR $1 0" to set $1 to 0, or with MPADD to increment or decrement in the
+amount desired, such as "MPADD $2 15", which adds 15 to the current value.
 
-The builder is able to use these variables for their own purposes in order to
-track events or count. You can either increment or decrement the variable, and
-can check what value the variable is currently set to, in order to react in a
-specific way.
+These numbers help builders make the mobs act in different ways
+based on conditions they set, like "if var($2) >= 50", to control how a mob
+reacts or behaves. Essentially, this gives mobs a way to "remember" up to 101
+different situations or actions.
 
 A mobile for instance, could count the number of players entering his zone,
-and warn other mobiles accordingly. If the number grows over 10, page the
-boss of the zone to prepare himself, which triggers the boss to call for his
-guards. If the mob, a gatekeep perhaps, checks again and there are no players
-in his vicinity for a period of time, the extra guards return to their normal
-positions.
+and warn other mobiles accordingly. If the number grows over 10 (that he is
+aware of), page the boss of the zone to prepare himself, which triggers the
+king to call for his guards. If the mob, a gatekeep perhaps, checks again
+and there are no players in his vicinity for a period of time, the extra
+guards return to their normal positions after the king is notified that the
+threat level has reduced.
 
-Another example would be a mob spawner, that spawns up to a certain amount of
-mobs, before destroying itself with mppurge self.
-
+This system introduces a form of memory for mobs, allowing them to keep track
+of past events and adding more depth to the game. It's a tool for builders to
+craft more complex and interactive game experiences
 ```
 
-### `MPADD <variable> <number>`
+### `MPADD <variable> <+/- integer>`
 ```
 Add or subtract, from an VAR variable. For use with MPVAR command. Variable
 range is limited to 0-100.
@@ -1035,10 +1037,10 @@ Some truths or limitations of mobprogs, some of which might feel unexpected from
 * As noted above, the BREAK command will exit out of a mobprog entirely, regardless of nested level of BREAK.
 
 * The flow of mobprogs is dictated naturally by mob-ticks unless you control the timing yourself with @. A mobprog containing multiple lines of mobprogs without any flow control, will execute each command at one mob-tick intervals. This adds a small pause between each action that gives it a more realistic feeling, rather than processing all lines at once.
-    * @ command prefix allows the specified command to execute immediately after the previous command without time between.
     * Mob ticks are a little shorter than a second. If you are not directly controlling the flow with @, then commands happen about every .75 seconds.
     * A Tick, that players may be more familiar with, is about 75 seconds of real time, which corresponds to 1 hour of game time.
-    * As time may pass, during the time it takes for the mobprog sequence to run, sometimes mobprogs will attempt to target victims which are no longer present. MPAT command allows you to act upon any room in the game as if they mobile is in the other room during the MPAT command.
+    * @ command prefix allows the specified command to execute immediately after the previous command without time between.
+    * As time may pass, during the time it takes for the mobprog sequence to run, sometimes mobprogs will attempt to target victims which are no longer present. MPAT command allows you to act upon any room in the game as if they mobile is in the target room during the MPAT command.
 
 * If-statements are not required in basic progs, but as the mud may drop some mobprog commands if too much CPU usage occurs, it seems that through testing, the best way to ensure that a mobprog always triggers, is to wrap an if-statement around the mobprog logic. This can often simply be an if rand(100) statement, which just means that 100% of the time, this event will trigger, when the mobprog itself is activated. Without this if-statement, it seems the mud may process the command more lazily or not at all in rare instances.
 
