@@ -548,7 +548,7 @@ is nice for having janitor mobiles clean out their inventory if they are
 carrying too much (have a MOBprogram trigger on the 'full inventory')
 ```
 
-### `MPECHO <text_string> / MPECHOAT <target> <text_string> / MPECHOAROUND <target> <text_string>` / `MPASOUND <text_string>`
+### `MPECHO <text_string> / MPECHOAT <target> <text_string> / MPECHOAROUND <target> <text_string> / MPASOUND <text_string>`
 
 ```
 Prints a text string.
