@@ -908,7 +908,12 @@ Can remove spell effects by setting duration to 0.
 ### `MPHEAL <target> XdY+Z - heals target for XdY+Z hitpoints`
 ```
 Heal any target for any amount. Is not affected by saving throws or any other
-system.
+system. No message is printed to the target or room, so it should generally
+be paired with MPECHO or MPUTTER or a similar command if you want observers
+to know this happened. This allows builders to create custom messages for
+healing abiltiies. Alternately, if you just want to cast a standard heal
+spell and have the standard messages included, this can be achieved using
+MPCAST mob comamnd.
 ```
 
 ### `MPVAR <variable> <integer(0-100)>`
@@ -942,6 +947,33 @@ craft more complex and interactive game experiences
 Add or subtract, from an VAR variable. For use with MPVAR command. Variable
 range is limited to 0-100.
 ```
+
+### `MPUTTER <text>`
+```
+Mimicks class-only spell messages, the same as when a player or mob casts a
+spell normally. If you share a class with the caster, you will see the actual
+text. If you do not, the sacred words will be unrecognizable to your
+character, as you cannot understand the spells of the other class. This
+enables builders to create an illusion of casting a real spell with
+commands like MPDAMAGE or MPAFFECT, while using custom spell messages with
+MPECHO and similar commands.
+
+Example of normal spell:
+A thief observer seeing an Animist casting a spell:
+    Skott utters the words, 'gji gpuzre'
+    Skott starts glowing.
+
+An Animist observer would see:
+    Skott utters the words, 'sun shield'
+    Skott starts glowing.
+
+An example of a custom "spell", being cast by a mob during combat.
+if rand(25)
+  @emote flings a shimmering metallic dust into the air! Watch your eyes!
+  @mputter Blinding Dust
+  @mpecho Your eyes! Oh no the metallic dust, it hurts! OUCH!
+  @mpaffect allp blindness 24
+
 #### [&#x2191; Back to ToC](#table-of-contents)
 
 ## Quick Reference Guide
@@ -1046,6 +1078,7 @@ MPAFFECT <target> <spell> <duration> - add a spell affect on target
 MPHEAL <target> XdY+Z - heals target for XdY+Z hitpoints
 MPVAR <variable> <integer> - Range from 0-100. Variables $1 and $2 avaialble to set.
 MPADD <varable> <-/+ int> - Add or subtract desired amount from variable.
+MPUTTER <text_string> - Fake spell cast message for custom spells.
 ```
 
 EXAMPLE Referenced from above in the Control Flow section
