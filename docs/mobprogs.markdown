@@ -592,7 +592,11 @@ endif
 
 To extend what these commands are capable of, combine them with MPAT, such as:
 
-MPAT $r MPECHO The wind rustles the leaves at your feet.
+MPAT $n MPECHO The wind rustles the leaves at your feet.
+(at player who triggered the mobprog, send a message to everyone in the room)
+
+MPAT 45526 MPECHOAT $n You think you hear a howling wolf the distance.
+(in room 45526, send a message to only to $n)
 
 This message will reach the player regardless of what room or zone they are in.
 
@@ -803,7 +807,6 @@ Example:
 
 ### `MPADDREP <victim> <value> <group| > <silent| >`
 ```
-
 Victim gets <value> rep points. Argument 'group' affects all group members; silent
 is without info.
 
@@ -812,13 +815,11 @@ Example:
 - Victim gets 20 rep points.
 @mpaddrep $n 20 group
 - All members in victim’s group get 20 rep points.
-
 ```
 ### `MPCAST <spell> <victim>`
 ```
 Cast any spell in the game on target.z
 ```
-
 ### `MPDAMAGE <target OR target-type> <damdice> [damtype] [damflags] [savemod]`
 ```
 This is a mobprog command used to cause damage to a player.
@@ -855,17 +856,48 @@ negate sanctuary, and be of a 'spell' damage type.
 ### `MPINFO <message> - send a custom info kill message`
 
 ```
-note: mpinfo only works in combination with mpdamage, and must be placed BEFORE
+Broadcasts an [INFO] message to everyone playing. This can only be used in
+tandem with a MPDAMAGE command, and is intended to allow builders to create
+custom death messages for players killed by mob special attacks or special
+damage applied from a mobprog generally.
+
+Notes:
+* mpinfo only works in combination with mpdamage, and must be placed BEFORE
 the mpdamage command.
+
+* mpinfo uses an older system of variables, one that is shared with the mud's
+socials, rather than the variables that mobprogs use. So, when writing mpinfo
+messages, reference the helpfile for "writing socials" to understand which
+variables correspond to which targets. For example, here the relevant lines
+from an above example. As the mpinfo command requires pairing with mpdamage,
+both have been included. If the player dies from the mpdamage command, the
+mpinfo command will be sent, which the entire mud sees, as an [INFO] channel
+message.
+
+@mpinfo $N was violently absorbed and dissolved by $n.
+@mpdamage $n 5000d500+10000 constitution 3 10
+
+In the case of mpinfo, $N is the victim, and $n is the killer.
+Help "writing socials" for more info on how to include variables in mpinfo
+messages.
 ```
 
 ### `MPEXIT <north|east|south|west|up|down> <target room> [flags] [exit descr]`
 ```
+This powerful command allows the builder to create or destroy exits within
+mobprogs on the fly. Some examples could be creating mazes in realtime, or
+knocking down walls when a boss dies, or have a collapsing tunnel that can
+block off certain rooms, or even giving the player an item that allows them
+to tunnel through specific dead ends to find secret locations or shortcuts.
+
 Where <target room> is the target room's vnum, [flags] are optional exit flags,
 and [exit descr] is an optional exit description.
     
 Example: MPEXIT north 50001 SECRET ANTI-GOOD This is a secret anti-good exit.
-Note: Previous exit will be replaced. Use <target room> -1 to remove exit.
+
+Notes:
+    * Previous exit will be replaced. Use <target room> -1 to remove exit.
+    * All exits return to default state when zone repops.
 ```
 
 
