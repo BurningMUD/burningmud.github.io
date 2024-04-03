@@ -561,9 +561,9 @@ MPASOUND - Only individuals in adjacent rooms will see this message.
 
 Builders may use this to craft custom messages for all points of view
 during a custom action, such as a special attack in combat, or any message
-that might "look" different from different perspectives, such as the below
+that might look different from different perspectives, such as the below
 messages involving being swallowed by a giant slime. At the end, if it
-successfully "absorbs" a player, it will heal itself with a Miracle spell.
+successfully absorbs a player, it will heal itself with a Miracle spell.
 We don't need to add an mpasound message for when it absorbs the player,
 as adjacent rooms already see death cry messages.
 
