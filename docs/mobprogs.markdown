@@ -833,6 +833,34 @@ Note: Previous exit will be replaced. Use <target room> -1 to remove exit.
 ### `MPAFFECT <target> <spell> <duration> - add spell affect to target mob/player`
 
 ### `MPHEAL <target> XdY+Z - heals target for XdY+Z hitpoints`
+
+### `MPVAR <variable> <+1 / -1>`
+```
+Each instance of a mobile spawned into the game world, has two exposed integer
+variables, $1 and $2, which are initialized at 0, and can range from 0-100.
+
+The builder is able to use these variables for their own purposes in order to
+track events or count. You can either increment or decrement the variable, and
+can check what value the variable is currently set to, in order to react in a
+specific way.
+
+A mobile for instance, could count the number of players entering his zone,
+and warn other mobiles accordingly. If the number grows over 10, page the
+boss of the zone to prepare himself, which triggers the boss to call for his
+guards. If the mob, a gatekeep perhaps, checks again and there are no players
+in his vicinity for a period of time, the extra guards return to their normal
+positions.
+
+Another example would be a mob spawner, that spawns up to a certain amount of
+mobs, before destroying itself with mppurge self.
+
+```
+
+#### `MPADD <variable> <number>`
+```
+Add or subtract, from an VAR variable. For use with MPVAR command. Variable
+range is limited to 0-100.
+```
 #### [&#x2191; Back to ToC](#table-of-contents)
 
 ## Quick Reference Guide
@@ -889,6 +917,7 @@ objtype($*) == integer      Is the type of $* equal to integer (armor,boat,etc)
 objval#($*) == integer      Is $*->value[#] equal to integer (# from 0-3)
 number($*) == integer       Is the vnum of $* equal to integer
 name($*) == string          Is the name of $* equal to string
+var($*) == integer          Is the number of $* ($1 or $2) equal to integer.
 
 MOBcommand argument_list MOBcommand argument_list
 -----------------------------------------------------------------------------
@@ -978,6 +1007,30 @@ if you want to be that malicious in trying to break the MOBprogram code,
 noone is going to stand in your way (However, the result of this would be
 a bug message and a bail out from the ifcheck so things dont really break)
 #### [&#x2191; Back to ToC](#table-of-contents)
+
+## Mobprog Usage complexities
+
+Some truths about mobprogs, some of which might feel unexpected from a builder's point of view, especially if they don't have a coding background.
+
+*  The entirety of a mobprog is processed at the same time, regardless of whether the mobprog involves time or takes time to execute. If a mob has a prog that waits for 10 mob ticks, then waves to a player in the room, it will have decided which player it is waving to as soon as the mobprog is triggered. The entire mobprog is processed when triggered. If the player happens to wander off during this time, the mobile will attempt to wave to a player who is already gone.
+
+* $r is always the same target, within the same triggered event. In a mobprog where $r is used multiple time, perhaps to cast multiple spells, $r will be the same individual for each spell. $r, the variable, is only determined once, at the beginning of the execution of the mobprog. For each run of the mobprog, $r may be different, but within the same event, $r is always the same target. In this sense, sometimes it might feel like $n, but it can still be useful if you understand this is not random, at every single instance of $r, but only at mobprog execution time. This allows you to cast a spell on a random target, and then keep track of that random target for the rest of the mobprog to do anything else.
+
+* MPAT can be combined with many other mobprog commands. This allows the mobile to act upon rooms and players who are not in the vicinity.
+
+* As noted above, the BREAK command will exit out of a mobprog entirely, regardless of nested level of BREAK.
+
+* The flow of mobprogs is dictated naturally by mob-ticks unless you control the timing yourself with @. A mobprog containing multiple lines of mobprogs without any flow control, will execute each command at one mob-tick intervals. This adds a small pause between each action that gives it a more realistic feeling, rather than processing all lines at once.
+    * @ command prefix allows the specified command to execute immediately after the previous command without time between.
+    * Mob ticks are a little shorter than a second. If you are not directly controlling the flow with @, then commands happen about every .75 seconds.
+    * A Tick, that players may be more familiar with, is about 75 seconds of real time, which corresponds to 1 hour of game time.
+    * As time may pass, during the time it takes for the mobprog sequence to run, sometimes mobprogs will attempt to target victims which are no longer present. MPAT command allows you to act upon any room in the game as if they mobile is in the other room during the MPAT command.
+
+* If-statements are not required in basic progs, but as the mud may drop some mobprog commands if too much CPU usage occurs, it seems that through testing, the best way to ensure that a mobprog always triggers, is to wrap it inside an if-statement. This can often simply be an if rand(100) statement, which just means that 100% of the time, this event will trigger, when the mobprog itself is activated. Without this if-statement, it seems the mud may process the command more lazily or not at all in rare instances.
+
+* Individual mobprogs are limited to 120 lines.
+
+
 
 ## Regarding CPU Slowdown
 
