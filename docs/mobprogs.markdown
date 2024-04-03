@@ -293,7 +293,7 @@ The argument is the clock when the trigger shall activate.
 NOTE: When the mudhour strikes X (1-24), this trigger is activated.
 ```
 
-### `ferry_prog <percent>`
+### `ferry_prog <PERCENT>`
 ```
 The argument is a percentage.
 
@@ -302,7 +302,7 @@ destination but before the captain exits the ferry. It is the
 captain who will act in this prog, not the vessel!
 ```
 
-### `page_prog <id> <percent>`
+### `page_prog <id> <PERCENT>`
 ```
 <id> is a number to identify the page_prog and percent is the
 chance it is activated when triggered by mppage.
@@ -342,7 +342,7 @@ In the original code, it was impossible to do the 'restoration' trick
 above, however, in this code, it is in fact possible. Try it ;)
 ```
 
-### `command_word_prog <command>`
+### `command_word_prog <COMMAND>`
 ```
 This mobprog will trigger on the command specified in <command>
 
@@ -1239,7 +1239,7 @@ All you have to do is to follow these simple steps...
 There you have it, a new trigger for your MOBProgram system.
 #### [&#x2191; Back to ToC](#table-of-contents)
 
-## Credits
+## Credits / History
 ```
 The reason this code was written was to enhance the playing
 experience at ThePrincedom (a Merc 2.0 based world scheduled to open in
