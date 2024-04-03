@@ -779,7 +779,10 @@ Example:
 - All members in victim’s group get 20 rep points.
 
 ```
-
+### `MPCAST <spell> <victim> <duration>`
+```
+Cast any spell in the game on target. Duration of 0, will remove a spell affect.
+```
 
 ### `MPDAMAGE <target OR target-type> <damdice> [damtype] [damflags] [savemod]`
 ```
@@ -832,8 +835,14 @@ Note: Previous exit will be replaced. Use <target room> -1 to remove exit.
 
 
 ### `MPAFFECT <target> <spell> <duration> - add spell affect to target mob/player`
-
+```
+Can remove spell effects by setting duration to 0.
+```
 ### `MPHEAL <target> XdY+Z - heals target for XdY+Z hitpoints`
+```
+Heal any target for any amount. Is not affected by saving throws or any other
+system.
+```
 
 ### `MPVAR <variable> <+1 / -1>`
 ```
