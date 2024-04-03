@@ -548,10 +548,15 @@ is nice for having janitor mobiles clean out their inventory if they are
 carrying too much (have a MOBprogram trigger on the 'full inventory')
 ```
 
-### `MPECHO <text_string> / MPECHOAT <target> <text_string> / MPECHOAROUND <target> <text_string> / MPASOUND <text_string>`
+### `MPECHO <text_string>`
+### `MPECHOAT <target> <text_string>`
+### `MPECHOAROUND <target> <text_string>`
+### `MPASOUND <text_string>`
 
 ```
-Prints a text string.
+Various commands to print text to fit different perspectives and observation
+points. Valid arguments for target are variables like $n, or direct names
+like "guard" or "0.Bane".
 
 MPECHO - Everyone in the room sees this message.
 MPECHOAT - Only the target sees this message.
@@ -590,13 +595,16 @@ To extend what these commands are capable of, combine them with MPAT, such as:
 MPAT $r MPECHO The wind rustles the leaves at your feet.
 
 This message will reach the player regardless of what room or zone they are in.
+
+* Colors can be used in messages with mud ansi color codes. (Help color)
 ```
 
 ### `MPMLOAD <vnum> / MPOLOAD <vnum>`
 ```
-Loads the obj/mobile into the inven/room of the mobile. Even if the item
+Loads the mob/obj into the inventory or room of the mobile. Even if the item
 is non-takable, the mobile will receive it in the inventory. This lets a
-mobile distribute a quest item or load a key or something.
+mobile distribute a quest item or load a key for use that is not intended
+for players to use.
 ```
 
 
@@ -619,7 +627,7 @@ things happen.
 ```
 
 
-### `MPGOTO <dest>`
+### `MPGOTO <room vnum / target>`
 ```
 Moves the mobile to the room or mobile or object requested. It makes no
 message of its departure or of its entrance, so these must be supplied with
@@ -627,7 +635,7 @@ mpecho commands if they are desired.
 ```
 
 
-###  `MPAT <dest> <command>`
+###  `MPAT <room vnum / target> <command>`
 ```
 Perfoms the command at the designated location. Very useful for doing magic
 slight of hand tricks that leave players dumbfounded.. such as metamorphing
