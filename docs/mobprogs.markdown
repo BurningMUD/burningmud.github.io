@@ -38,7 +38,7 @@ understandable and more to the point, extendable. The remainder of this document
 - [Adding New Triggers](#adding-new-triggers)
 - [Associating MOBprograms With A Mobile](#associating-mobprograms-with-a-mobile)
 - [MOBprogram Files](#mobprogram-files)
-- [Credits](#credits)
+- [Credits](#credits-&-history)
 
 ## The Basic Idea
 Ever wonder why most muds either seem dead or overcrowded? The answer
@@ -540,29 +540,56 @@ Shows the MOBprograms which are set on the mob of the given name or vnum
 and some basic stats for the mobile
 ```
 
-### `MPASOUND <text_string>`
-```
-Prints the text string to the rooms around the mobile in the same manner
-as a death cry. This is really useful for powerful aggressives and is
-also nice for wandering minstrels or mobiles like that in concept.
-```
 ### `MPJUNK <object>`
 ```
-
-Destroys the object refered to in the mobiles inven. It prints no message
+Destroys the object refered to in the mobiles inventory. It prints no message
 to the world and you can do things like junk all.bread or junk all. This
 is nice for having janitor mobiles clean out their inventory if they are
 carrying too much (have a MOBprogram trigger on the 'full inventory')
 ```
 
-### `MPECHO <text_string> / MPECHOAT <victim> <text_string> / MPECHOAROUND <victim> <text_string>`
+### `MPECHO <text_string> / MPECHOAT <target> <text_string> / MPECHOAROUND <target> <text_string>` / `MPASOUND <text_string>`
+
 ```
-Prints the text message to the room of the mobile. The three options let
-you tailor the message to goto victims or to do things sneaky like having
-a merchant do: mpat guard mpechoat guard rescue_please This coupled with
-a guard act_prog trigger on rescue_please to mpgoto $n and mpecho $I has
-arrived. It is an affective way of quickly bringing guards to the scene
-of an attack.
+Prints a text string.
+
+MPECHO - Everyone in the room sees this message.
+MPECHOAT - Only the target sees this message.
+MPECHOAROUND - The target DOES NOT see this message, but everyone else in
+the room does.
+MPASOUND - Only individuals in adjacent rooms will see this message.
+
+Builders may use this to craft custom messages for all points of view
+during a custom action, such as a special attack in combat, or any message
+that might "look" different from different perspectives, such as the below
+messages involving being swallowed by a giant slime. At the end, if it
+successfully "absorbs" a player, it will heal itself with a Miracle spell.
+We don't need to add an mpasound message for when it absorbs the player,
+as adjacent rooms already see death cry messages.
+
+if rand(50)
+  @emote chirps!
+  @mpasound You hear something chirping nearby.
+  @mpecho $I suddenly EXPANDS, attempting to absorb!
+  if rand(10)
+    @mpechoat $n You weren't fast enough to get away!
+    @mpechoaround $n You jump back just in time.
+    @mpechoat $n $I absorbs you into itself. Your body is dissolved instantly by the boiling acid.
+    @mpechoaround $n $n SCREAMS as $I absorbs $m into itself! $I looks healthier.
+    @mpinfo $N was violently absorbed and dissolved by $n.
+    @mpdamage $n 5000d500+10000 constitution 3 10
+    @mpcast 'miracle' self
+  break
+  endif
+  @mpecho You jump back just in time.
+break
+endif
+
+To extend what these commands are capable of, combine it with MPAT, such as:
+
+MPAT $r MPECHO The wind rustles the leaves at your feet.
+
+This message will reach the player regardless of what room or zone they are in.
 ```
 
 ### `MPMLOAD <vnum> / MPOLOAD <vnum>`
@@ -1239,7 +1266,7 @@ All you have to do is to follow these simple steps...
 There you have it, a new trigger for your MOBProgram system.
 #### [&#x2191; Back to ToC](#table-of-contents)
 
-## Credits / History
+## Credits & History
 ```
 The reason this code was written was to enhance the playing
 experience at ThePrincedom (a Merc 2.0 based world scheduled to open in
