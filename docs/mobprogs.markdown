@@ -844,11 +844,12 @@ Heal any target for any amount. Is not affected by saving throws or any other
 system.
 ```
 
-### `MPVAR <variable> <+1 / -1>`
+### `MPVAR <variable> <integer(0-100)>`
 ```
 Each instance of a mobile spawned into the game world, has two exposed integer
 variables, $1 and $2, which are initialized to a value of 0 when a mob pops,
-and can range from 0-100.
+and can range from 0-100. You can set the variable to any number within the
+allowed range, with MPVAR.
 
 The builder is able to use these variables for their own purposes in order to
 track events or count. You can either increment or decrement the variable, and
