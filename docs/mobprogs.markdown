@@ -858,7 +858,7 @@ mobs, before destroying itself with mppurge self.
 
 ```
 
-#### `MPADD <variable> <number>`
+### `MPADD <variable> <number>`
 ```
 Add or subtract, from an VAR variable. For use with MPVAR command. Variable
 range is limited to 0-100.
