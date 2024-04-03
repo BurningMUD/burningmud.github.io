@@ -779,9 +779,9 @@ Example:
 - All members in victim’s group get 20 rep points.
 
 ```
-### `MPCAST <spell> <victim> <duration>`
+### `MPCAST <spell> <victim>`
 ```
-Cast any spell in the game on target. Duration of 0, will remove a spell affect.
+Cast any spell in the game on target.z
 ```
 
 ### `MPDAMAGE <target OR target-type> <damdice> [damtype] [damflags] [savemod]`
