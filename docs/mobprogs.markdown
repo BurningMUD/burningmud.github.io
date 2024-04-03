@@ -585,7 +585,7 @@ if rand(50)
 break
 endif
 
-To extend what these commands are capable of, combine it with MPAT, such as:
+To extend what these commands are capable of, combine them with MPAT, such as:
 
 MPAT $r MPECHO The wind rustles the leaves at your feet.
 
