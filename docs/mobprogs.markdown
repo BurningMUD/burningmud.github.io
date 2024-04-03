@@ -973,7 +973,7 @@ if rand(25)
   @mputter Blinding Dust
   @mpecho Your eyes! Oh no the metallic dust, it hurts! OUCH!
   @mpaffect allp blindness 24
-
+```
 #### [&#x2191; Back to ToC](#table-of-contents)
 
 ## Quick Reference Guide
