@@ -31,6 +31,7 @@ understandable and more to the point, extendable. The remainder of this document
 - [If Checks In Control Flow](#if-checks-in-control-flow)
 - [MOBcommands Of Interest](#mobcommands-of-interest)
 - [Quick Reference Guide](#quick-reference-guide)
+- [Mobprog Usage Complexities](#mobprog-usage-complexities)
 - [MOBprogram Example](#mobprogram-example)
 - [Regarding CPU Slowdown](#regarding-cpu-slowdown)
 - [Miscellaneous Information](#miscellaneous-information)
@@ -1008,9 +1009,9 @@ noone is going to stand in your way (However, the result of this would be
 a bug message and a bail out from the ifcheck so things dont really break)
 #### [&#x2191; Back to ToC](#table-of-contents)
 
-## Mobprog Usage complexities
+## Mobprog Usage Complexities
 
-Some truths about mobprogs, some of which might feel unexpected from a builder's point of view, especially if they don't have a coding background.
+Some truths or limitations of mobprogs, some of which might feel unexpected from a builder's point of view, especially if they don't have a coding background.
 
 *  The entirety of a mobprog is processed at the same time, regardless of whether the mobprog involves time or takes time to execute. If a mob has a prog that waits for 10 mob ticks, then waves to a player in the room, it will have decided which player it is waving to as soon as the mobprog is triggered. The entire mobprog is processed when triggered. If the player happens to wander off during this time, the mobile will attempt to wave to a player who is already gone.
 
@@ -1026,7 +1027,7 @@ Some truths about mobprogs, some of which might feel unexpected from a builder's
     * A Tick, that players may be more familiar with, is about 75 seconds of real time, which corresponds to 1 hour of game time.
     * As time may pass, during the time it takes for the mobprog sequence to run, sometimes mobprogs will attempt to target victims which are no longer present. MPAT command allows you to act upon any room in the game as if they mobile is in the other room during the MPAT command.
 
-* If-statements are not required in basic progs, but as the mud may drop some mobprog commands if too much CPU usage occurs, it seems that through testing, the best way to ensure that a mobprog always triggers, is to wrap it inside an if-statement. This can often simply be an if rand(100) statement, which just means that 100% of the time, this event will trigger, when the mobprog itself is activated. Without this if-statement, it seems the mud may process the command more lazily or not at all in rare instances.
+* If-statements are not required in basic progs, but as the mud may drop some mobprog commands if too much CPU usage occurs, it seems that through testing, the best way to ensure that a mobprog always triggers, is to wrap an if-statement around the mobprog logic. This can often simply be an if rand(100) statement, which just means that 100% of the time, this event will trigger, when the mobprog itself is activated. Without this if-statement, it seems the mud may process the command more lazily or not at all in rare instances.
 
 * Individual mobprogs are limited to 120 lines.
 
