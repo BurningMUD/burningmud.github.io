@@ -865,6 +865,8 @@ Notes:
 * mpinfo only works in combination with mpdamage, and must be placed BEFORE
 the mpdamage command.
 
+* ONLY triggers if a player dies from associated MPDAMAGE command.
+
 * mpinfo uses an older system of variables, one that is shared with the mud's
 socials, rather than the variables that mobprogs use. So, when writing mpinfo
 messages, reference the helpfile for "writing socials" to understand which
