@@ -1,3 +1,19 @@
+---
+layout: default
+title: OLC Command Reference
+---
+<style>
+h1 {
+    color: green;
+}
+
+h2 {
+    color: green;
+}
+code {
+    color: lightgreen;
+}
+</style>
 If you are interested in building a new zone for Burning, please fill
 out the [web form](http://goo.gl/1JXT2a).
 
