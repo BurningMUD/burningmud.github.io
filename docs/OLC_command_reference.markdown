@@ -92,6 +92,8 @@ qremove     sremove     show mob vnum
 | equipment | \<mobile keyword>    | Edit the worn equipment of a mobile in the room. |
 | inventory | \<mobile keyword>    | Edit the inventory of a mobile in the room. |
 | contains  | \<container keyword> | Edit the contents of a container in the room. |
+| contents | \<drink container keyword> | Edit the contents of a drink container in the room. |
+| open / close / lock | \<door / container keyword> | Set an object to be open, closed, or locked by default. |
 | zadd      | \<mobile \| object>  | Zone Add. Remove resets for mobile or object in the room. |
 | purge     | \<mobile \| object>  | Remove resets for a mobile or object in the room. |
 
