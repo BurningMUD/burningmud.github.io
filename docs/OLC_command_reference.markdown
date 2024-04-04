@@ -47,15 +47,15 @@ qremove     sremove     show mob vnum
 
 | COMMAND | ARGUMENT       | DESCRIPTION |
 |---------|----------------|-------------|
-|  `olc`    | `<zone number>` | Enter target OLC zone. Use without argument to leave OLC mode. |
+|  olc    | \<zone number> | Enter target OLC zone. Use without argument to leave OLC mode. |
 
 ## ROOMS
 
 | COMMAND | ARGUMENT(S)  | DESCRIPTION |
 |---------|--------------|-------------|
-| `radd`    | `<room vnum>` | Creates a new room at vnum and opens it for edit. If no vnum provided, use lowest available. |
-| `redit`   | `<room vnum>` | Edits the room you are standing in, or the room number you specify. |
-| `rcopy`   | `<source room vnum> [target room vnum]` | Copies the room to a new vnum. If no target vnum is provided, copies room to lowest available vnum. |
+| radd    | \<room vnum> | Creates a new room at vnum and opens it for edit. If no vnum provided, use lowest available. |
+| redit   | \<room vnum> | Edits the room you are standing in, or the room number you specify. |
+| rcopy   | \<source room vnum> \[target room vnum] | Copies the room to a new vnum. If no target vnum is provided, copies room to lowest available vnum. |
 | rremove | \<room vnum> | Deletes room permanently. If vnum left blank it removes the current room. Restricted to level 108+. |
 | rformat | None         | Used to format the current room description to a standard 80 character per line limit. |
 
