@@ -10,5 +10,4 @@ We have a high standard of quality for zones, and we will be glad to assist you 
 [OLC Command Reference](/docs/OLC_command_reference.markdown)
 
 ## Mobprogs Documentation
-
 [Mobprogs Document](/docs/mobprogs.markdown)
