@@ -14,8 +14,6 @@ code {
     color: lightgreen;
 }
 </style>
-If you are interested in building a new zone for Burning, please fill
-out the [web form](http://goo.gl/1JXT2a).
 ```
             OLC QUICK COMMAND REFERENCE
 
@@ -48,6 +46,13 @@ qremove     sremove     show mob vnum
 | COMMAND | ARGUMENT       | DESCRIPTION |
 |---------|----------------|-------------|
 |  olc    | \<zone number> | Enter target OLC zone. Use without argument to leave OLC mode. |
+
+## Zone Configuration Options
+
+| COMMAND | ARGUMENT(S) | DESCRIPTION |
+|---------|-------------|-------------|
+| options | None        | Set default templates for rooms and mobs in your zone. |
+| zedit   | None        | Set Zone information such as Name, Author, Description, Level Limits, Continent. |
 
 ## ROOMS
 
@@ -96,13 +101,6 @@ qremove     sremove     show mob vnum
 | open / close / lock | \<door / container keyword> | Set an object to be open, closed, or locked by default. |
 | zadd      | \<mobile \| object>  | Zone Add. Remove resets for mobile or object in the room. |
 | purge     | \<mobile \| object>  | Remove resets for a mobile or object in the room. |
-
-## Zone Configuration Options
-
-| COMMAND | ARGUMENT(S) | DESCRIPTION |
-|---------|-------------|-------------|
-| options | None        | Set default templates for rooms and mobs in your zone. |
-| zedit   | None        | Set Zone information such as Name, Author, Description, Level Limits, Continent. |
 
 ## NPC Shops
 
