@@ -16,7 +16,6 @@ code {
 </style>
 If you are interested in building a new zone for Burning, please fill
 out the [web form](http://goo.gl/1JXT2a).
-
 ```
             OLC QUICK COMMAND REFERENCE
 
@@ -45,18 +44,18 @@ qremove     sremove     show mob vnum
 Questions? Need assistance? Email olc@burningmud.com and we can help.
 
 ## ENTER / EXIT OLC EDITING MODE
-| COMMAND | ARGUMENT | DESCRIPTION |
-|---------|----------|-------------|
+| COMMAND | ARGUMENT       | DESCRIPTION |
+|---------|----------------|-------------|
 |  olc    | \<zone number> | Enter target OLC zone. Use without argument to leave OLC mode. |
 
 ## ROOMS
-| COMMAND | ARGUMENT(S) | DESCRIPTION |
-|---------|-------------|-------------|
+| COMMAND | ARGUMENT(S)  | DESCRIPTION |
+|---------|--------------|-------------|
 | radd    | \<room vnum> | Creates a new room at vnum and opens it for edit. If no vnum provided, use lowest available. |
-| redit | \<room vnum> | Edits the room you are standing in, or the room number you specify. |
-| rcopy | \<source room vnum> \[target room vnum] | Copies the room to a new vnum. If no target vnum is provided, copies room to lowest available vnum. |
-| rremove | \<room vnum> | Deletes room permanently. If vnum left blank it removes the current room. Restricted to level 108+ |
-| rformat | None | Used to format the current room description to a standard 80 character per line limit. |
+| redit   | \<room vnum> | Edits the room you are standing in, or the room number you specify. |
+| rcopy   | \<source room vnum> \[target room vnum] | Copies the room to a new vnum. If no target vnum is provided, copies room to lowest available vnum. |
+| rremove | \<room vnum> | Deletes room permanently. If vnum left blank it removes the current room. Restricted to level 108+. |
+| rformat | None         | Used to format the current room description to a standard 80 character per line limit. |
 
 ## MOBS
 | COMMAND | ARGUMENT(S) | DESCRIPTION |
@@ -70,7 +69,7 @@ Questions? Need assistance? Email olc@burningmud.com and we can help.
 | COMMAND | ARGUMENT(S) | DESCRIPTION |
 |---------|-------------|-------------|
 | oadd    | \[obj vnum] | Creates a new object at vnum and opens it for edit. If vnum not provided, uses lowest available vnum. |
-| oedit   | \<obj vnum>  | Edit target object.|
+| oedit   | \<obj vnum> | Edit target object. |
 | ocopy   | \<source obj vnum> \[target obj vnum] | Copies object to the target vnum. If vnum not provided, use lowest available vnum. |
 | oremove | \<obj vnum> | Deletes object permanently. |
 
@@ -82,19 +81,19 @@ Questions? Need assistance? Email olc@burningmud.com and we can help.
 | qremove | \<quest vnum> | Delete a quest permanently. |
 
 ## Zone Reset Commands
-| COMMAND | ARGUMENT(S) | DESCRIPTION |
-|---------|-------------|-------------|
-| equipment | \<mobile keyword> | Edit the worn equipment of a mobile in the room. |
-| inventory | \<mobile keyword> | Edit the inventory of a mobile in the room. |
-| contains | \<container keyword> | Edit the contents of a container in the room. |
-| zadd | \<mobile \| object> | Zone Add. Remove resets for mobile or object in the room. |
-| purge | \<mobile \| object> | Remove resets for a mobile or object in the room. |
+| COMMAND   | ARGUMENT(S)          | DESCRIPTION |
+|-----------|----------------------|-------------|
+| equipment | \<mobile keyword>    | Edit the worn equipment of a mobile in the room. |
+| inventory | \<mobile keyword>    | Edit the inventory of a mobile in the room. |
+| contains  | \<container keyword> | Edit the contents of a container in the room. |
+| zadd      | \<mobile \| object>  | Zone Add. Remove resets for mobile or object in the room. |
+| purge     | \<mobile \| object>  | Remove resets for a mobile or object in the room. |
 
 ## Zone Configuration Options
 | COMMAND | ARGUMENT(S) | DESCRIPTION |
 |---------|-------------|-------------|
-| options | None | Set default templates for rooms and mobs in your zone. |
-| zedit | None | Set Zone information such as Name, Author, Description, Level Limits, Continent. |
+| options | None        | Set default templates for rooms and mobs in your zone. |
+| zedit   | None        | Set Zone information such as Name, Author, Description, Level Limits, Continent. |
 
 ## NPC Shops
 | COMMAND | ARGUMENT(S) | DESCRIPTION |
