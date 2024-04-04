@@ -25,14 +25,12 @@ qremove     sremove     show mob vnum
                         olc vnum(zone #)
                         mpstat vnum(mob #)
 ```
--------------------------------------------------------------------------------
 Questions? Need assistance? Email olc@burningmud.com and we can help.
 
 ## ENTER / EXIT OLC EDITING MODE
 | COMMAND | ARGUMENT | DESCRIPTION |
 |---------|----------|-------------|
 |  olc    |zone number| Enter target OLC zone. Use without argument to leave OLC mode. |
-
 
 ## ROOMS
 | COMMAND | ARGUMENT(S) | DESCRIPTION |
@@ -67,7 +65,6 @@ Questions? Need assistance? Email olc@burningmud.com and we can help.
 | qedit   | \<quest vnum> | Edit a quest. |
 | qremove | \<quest vnum> | Delete a quest permanently. |
 
-
 ## Zone Reset Commands
 | COMMAND | ARGUMENT(S) | DESCRIPTION |
 |---------|-------------|-------------|
@@ -81,8 +78,7 @@ Questions? Need assistance? Email olc@burningmud.com and we can help.
 | COMMAND | ARGUMENT(S) | DESCRIPTION |
 |---------|-------------|-------------|
 | options | None | Set default templates for rooms and mobs in your zone. |
-| zedit | None | Set Zone information such as Name, Author, Description, Level Limits, Continent.
-
+| zedit | None | Set Zone information such as Name, Author, Description, Level Limits, Continent. |
 
 ## NPC Shops
 | COMMAND | ARGUMENT(S) | DESCRIPTION |
