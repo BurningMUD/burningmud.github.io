@@ -41,23 +41,26 @@ qremove     sremove     show mob vnum
                         olc vnum(zone #)
                         mpstat vnum(mob #)
 ```
-Questions? Need assistance? Email olc@burningmud.com and we can help.
+#### Questions? Need assistance? Email olc@burningmud.com and we can help.
 
-## ENTER / EXIT OLC EDITING MODE
+## ENTER & EXIT OLC EDITING MODE
+
 | COMMAND | ARGUMENT       | DESCRIPTION |
 |---------|----------------|-------------|
-|  olc    | \<zone number> | Enter target OLC zone. Use without argument to leave OLC mode. |
+|  `olc`    | `<zone number>` | Enter target OLC zone. Use without argument to leave OLC mode. |
 
 ## ROOMS
+
 | COMMAND | ARGUMENT(S)  | DESCRIPTION |
 |---------|--------------|-------------|
-| radd    | \<room vnum> | Creates a new room at vnum and opens it for edit. If no vnum provided, use lowest available. |
-| redit   | \<room vnum> | Edits the room you are standing in, or the room number you specify. |
-| rcopy   | \<source room vnum> \[target room vnum] | Copies the room to a new vnum. If no target vnum is provided, copies room to lowest available vnum. |
+| `radd`    | `<room vnum>` | Creates a new room at vnum and opens it for edit. If no vnum provided, use lowest available. |
+| `redit`   | `<room vnum>` | Edits the room you are standing in, or the room number you specify. |
+| `rcopy`   | `<source room vnum> [target room vnum]` | Copies the room to a new vnum. If no target vnum is provided, copies room to lowest available vnum. |
 | rremove | \<room vnum> | Deletes room permanently. If vnum left blank it removes the current room. Restricted to level 108+. |
 | rformat | None         | Used to format the current room description to a standard 80 character per line limit. |
 
 ## MOBS
+
 | COMMAND | ARGUMENT(S) | DESCRIPTION |
 |---------|-------------|-------------|
 | madd    | \[mob vnum] | Creates a new mobile at vnum and opens it for edit. If vnum not provided, use lowest available. |
@@ -66,6 +69,7 @@ Questions? Need assistance? Email olc@burningmud.com and we can help.
 | mremove | \<mob vnum> | Deletes mob permanently. |
 
 ## OBJECTS
+
 | COMMAND | ARGUMENT(S) | DESCRIPTION |
 |---------|-------------|-------------|
 | oadd    | \[obj vnum] | Creates a new object at vnum and opens it for edit. If vnum not provided, uses lowest available vnum. |
@@ -74,6 +78,7 @@ Questions? Need assistance? Email olc@burningmud.com and we can help.
 | oremove | \<obj vnum> | Deletes object permanently. |
 
 ## QUESTS
+
 | COMMAND | ARGUMENT(S) | DESCRIPTION |
 |---------|-------------|-------------|
 | qadd    | \[quest vnum] | Creates a new quest at vnum. Without argument, uses lowest available vnum. |
@@ -81,6 +86,7 @@ Questions? Need assistance? Email olc@burningmud.com and we can help.
 | qremove | \<quest vnum> | Delete a quest permanently. |
 
 ## Zone Reset Commands
+
 | COMMAND   | ARGUMENT(S)          | DESCRIPTION |
 |-----------|----------------------|-------------|
 | equipment | \<mobile keyword>    | Edit the worn equipment of a mobile in the room. |
@@ -90,12 +96,14 @@ Questions? Need assistance? Email olc@burningmud.com and we can help.
 | purge     | \<mobile \| object>  | Remove resets for a mobile or object in the room. |
 
 ## Zone Configuration Options
+
 | COMMAND | ARGUMENT(S) | DESCRIPTION |
 |---------|-------------|-------------|
 | options | None        | Set default templates for rooms and mobs in your zone. |
 | zedit   | None        | Set Zone information such as Name, Author, Description, Level Limits, Continent. |
 
 ## NPC Shops
+
 | COMMAND | ARGUMENT(S) | DESCRIPTION |
 |---------|-------------|-------------|
 | sadd | \[shop vnum] | Create a new shop at target vnum. With no argument, uses lowest available vnum. |
