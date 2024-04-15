@@ -35,10 +35,9 @@ understandable and more to the point, extendable. The remainder of this document
 - [Mobprog Usage Complexities](#mobprog-usage-complexities)
 - [Regarding CPU Slowdown](#regarding-cpu-slowdown)
 - [Miscellaneous Information](#miscellaneous-information)
-- [Adding New Triggers](#adding-new-triggers)
 - [Associating MOBprograms With A Mobile](#associating-mobprograms-with-a-mobile)
-- [MOBprogram Files](#mobprogram-files)
-- [Credits](#credits-&-history)
+- [Adding New Triggers](#adding-new-triggers)
+- [Credits & History](#credits-&-history)
 
 ## The Basic Idea
 Ever wonder why most muds either seem dead or overcrowded? The answer
