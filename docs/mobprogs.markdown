@@ -507,9 +507,9 @@ The provided list of if_checks and their arguments are below. They should all be
 | `isgrouped($*)` | Is $* grouped (regardless of where group is) |
 | `inquest($*) == <num>` | Is $* in quest <num> |
 | `inmerc($*) == <num>` | Is $* in team <num> |
-| `exit(north\|east\|south\|west\|up\|down) == integer` | Is there exit to room integer |
-| `hitprcnt($*) == percent` | Is the hit/max_hit of $* equal to percent |
-| `inroom($*) == [integer \| $i \| $n \| $t \| $r]` | Is the room of $* equal to integer or other person. (person only) |
+| `exit(north | east | south | west | up | down) == integer` | Is there exit to room integer |
+| `hitprcnt($*) == percent` | Is the hit / max_hit of $* equal to percent |
+| `inroom($*) == [integer | $i | $n | $t | $r]` | Is the room of $* equal to integer or other person. (person only) |
 | `sex($*) == integer` | Is the sex of $* equal to integer |
 | `position ($*) == integer` | Is the position of $* equal to integer (1 dead, 2 morted, 3 incap, 4 stunned, 5 sleep, 6 rest, 7 sitting, 8 fighting, 9 standing, 10 flying) |
 | `level($*) == integer` | Is the level of $* equal to integer |
