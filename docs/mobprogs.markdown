@@ -1020,9 +1020,11 @@ isfollow($*)                Is $* a follower with their master in the room
 isleader($*)                Is $* a leader with followers in the room?
 isaffected($*) == integer   Is ($*->affected_by integer) true (person only)
 iswearing($*) == integer    Is $* equal to object vnum.
+exit(north | east | south | west | up | down) == integer
+    Is there exit to room integer
 hitprcnt($*) == percent     Is the hit/max_hit of $* equal to percent
-inroom($*) == [integer | $i | $n | $t | $r] Is the room of $* equal to integer
-    or other person. (person only)
+inroom($*) == [integer | $i | $n | $t | $r]
+    Is the room of $* equal to integer or other person. (person only)
 sex($*) == integer          Is the sex of $* equal to integer
 position($*) == integer     Is the position of $* equal to integer
 level($*) == integer        Is the level of $* equal to integer
