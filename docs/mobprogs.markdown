@@ -31,8 +31,8 @@ understandable and more to the point, extendable. The remainder of this document
 - [If Checks In Control Flow](#if-checks-in-control-flow)
 - [MOBcommands Of Interest](#mobcommands-of-interest)
 - [Quick Reference Guide](#quick-reference-guide)
-- [Mobprog Usage Complexities](#mobprog-usage-complexities)
 - [MOBprogram Example](#mobprogram-example)
+- [Mobprog Usage Complexities](#mobprog-usage-complexities)
 - [Regarding CPU Slowdown](#regarding-cpu-slowdown)
 - [Miscellaneous Information](#miscellaneous-information)
 - [Adding New Triggers](#adding-new-triggers)
@@ -1021,10 +1021,10 @@ isleader($*)                Is $* a leader with followers in the room?
 isaffected($*) == integer   Is ($*->affected_by integer) true (person only)
 iswearing($*) == integer    Is $* equal to object vnum.
 exit(north | east | south | west | up | down) == integer
-    Is there exit to room integer
+                            Is there exit to room integer
 hitprcnt($*) == percent     Is the hit/max_hit of $* equal to percent
 inroom($*) == [integer | $i | $n | $t | $r]
-    Is the room of $* equal to integer or other person. (person only)
+                            Is the room of $* equal to integer or other person. (person only)
 sex($*) == integer          Is the sex of $* equal to integer
 position($*) == integer     Is the position of $* equal to integer
 level($*) == integer        Is the level of $* equal to integer
@@ -1085,7 +1085,8 @@ MPADD <varable> <-/+ int> - Add or subtract desired amount from variable.
 MPUTTER <text_string> - Custom spell name for custom spells.
 ```
 
-EXAMPLE Referenced from above in the Control Flow section
+## Mobprog Example
+Referenced from above in the Control Flow section
 ```
 >act_prog p pokes you in the~
 if isnpc($n)
