@@ -37,7 +37,7 @@ understandable and more to the point, extendable. The remainder of this document
 - [Miscellaneous Information](#miscellaneous-information)
 - [Associating MOBprograms With A Mobile](#associating-mobprograms-with-a-mobile)
 - [Adding New Triggers](#adding-new-triggers)
-- [Credits & History](#credits-&-history)
+- [Credits & History](#credits--history)
 
 ## The Basic Idea
 Ever wonder why most muds either seem dead or overcrowded? The answer
