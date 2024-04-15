@@ -1153,6 +1153,7 @@ Some truths or limitations of mobprogs, some of which might feel unexpected from
 *  "0." always matches against players. Sometimes, a player and an NPC may share the same name or keywords, and might even be standing in the same room. So, in the case of a mobprog, use "0." prefix to match with only player names, and not NPC. If there is no player in the game matching, it will not look for the next match. This is also the case for gameplay, with spells such as summon, where to target the player named Orc, versus one of the many orcs in the game, they must use "0.Orc".
 
 * Individual mobprogs are limited to 120 lines.
+
 #### [&#x2191; Back to ToC](#table-of-contents)
 
 ## Regarding CPU Slowdown
