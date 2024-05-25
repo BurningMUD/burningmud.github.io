@@ -1,0 +1,1138 @@
+
+Strange exits.
+
+Some of these exits may have been created to be "strange". There are
+some I'm certain must be bugs, but it may be worth checking the
+descriptions in the rooms to see if they give any reason or hint that
+the exits are supposed to lead as they do now.
+
+I've marked out the interesting rooms with letters and written below
+each map how the exits work and how I think they were intended to work.
+
+If you need any help or have any questions, just email me back or give
+me a tell when you see me on.
+
+If you fix any of these exits, please tell me, so I can update my maps.
+I'd like to keep my maps up to date.
+
+
+Zorn Uzkul:
+                                  o o
+                                 /|/
+                                o o
+                               /
+                              o
+                             /
+                            o - o
+                            |   |
+                            o   o-o   o - o
+                           /          |   |
+                          o   o - o - o - o
+                         /    |   |
+                        o o - o   o
+                        +/
+                        o
+                        |
+                        o - o
+                            |
+                o - o - o - o ------ o ----- o   o
+                |       |   |                |   |
+                o - o   o   o     o-o-o  o - o - o
+                |   |       |    /
+                o - o       o - o
+                            |   |
+    o - o - o   o - o - o - o   o
+    |   |   |   |   +       +   |
+    g   o   o - o   o       o   h
+    |   |                       |
+    o   o       o   o - o       o
+        |       |   |   |       |
+    o - o       o - o   o - o - o - o - o
+        |       |   |   |       |       |
+       RIP      o - o - o       o + o - o
+                           /    |
+                          X -   |
+                         /      |
+                        o       |
+                       /        |
+                      o         |
+                     /          |
+                    o --- o --- o
+
+north from 'g' leads to 'h'
+
+
+Ancient Lands:
+
+
+                  |                             |
+                  ? --------------------- ?     o
+                  |                      /      |
+                  ?                     ? - ? - o
+                  |                             |
+                  ?                    ? - q -- o - s
+                 /                     |   |  \ |   |
+                ?                      o - o ->\p - o
+                +                      |        |   |
+            ? - ? -                    o        o - RIP
+        |   |                          |
+        ? - ?                 ?->Home  o
+        |                     ^        |
+        |                |    +        o
+        |   |          - ? +> ?        |
+        ? - ?            |             o
+            |   |   |   -?             |
+          - ? - ? - ?    ^             o
+            |   |   |    |             |     NO-RECALL
+            ? - ?   ? -> ?             o
+                             - - - - - | - - - - - - - - - - - -
+                                       o     RECALL WORKS
+                                       |
+
+west from p leads to q
+
+
+the Dungeons of Lord Ceanyth
+
+                                     /
+                                    X
+                                   /
+                     o    o   o   o   o   o
+                     |    |   |   |   |   |
+                 o - o -- o - o - o - o - o - o - o
+                     ^    |   |   |   |   |   |
+                     |    o   o   |   o   o   |
+                     |            |           |
+                     |            |   o   o   |
+                     |            |   |   |   |
+                 o - o - o <- o - o - o - o - o - o
+                     |            |   |   |   |
+                A <- o - o        |   o   o   |
+                     |            |           |
+     o               |   o        |           |
+     |               |   |        |           |
+ o - o ------------- o - o -> Y   |           |
+     |               |   |        |           |   o           o
+ o - o - o  o        V   o        |           |   |           |
+     |      |        o        o - o - o   o - o - p --------- s - o
+ o - o ---- o - o    |            |           |   |   /       |
+     |      |     C>-Y ---------- o - o       o   |   |   o - R - o
+     o      o        |            |               \-> q       |
+     |               o        o - o - o                   o - R - o
+     o                            |                           |
+                                  |     o    o     o    o     |
+                                  |     |    |     |    |     |
+                              o - o --- G -- o --- o -- H --- o - o
+                                  |     |    |     |    |     |
+                                  o     o    ?     o    o     A
+                                  |
+                                  o
+
+R: west and east directions are reverted
+G: east leads to H
+South from p leads to q (ok). North from q leads to s (ought to lead to p)
+
+
+High Clerists Tower:
+
+             o ----------------- o ----------------- o
+             |                                       |
+             |       o - o - o       o - o - o       |
+             |       |   |   |       |   |   |       |
+         o - o   o - o - o - o       o - o - o - o   o - o
+         |       |                               |       |
+     o - o   o - o   o - o - o       o - o - o   o - o   o - o
+     |       |       |   |   |       |   |   |       |       |
+ o - o   o - o       o - o - o       o - o - o       o - o   o - o
+ |       |               +               +               |       |
+ |   o - o               o - o       o - o               o - o   o
+ |   |   |               |   |       |   |               |   |  /|
+ o   o - o   o - o   o - o - o       o - o - o   o   o   o - o / |
+ |\  |   |   |   |   |   |               |   |   |   |   |   |/  |
+ | \ o - o   o - o + o - Q               o - o + o - o   o - o   |
+ |  \|   |   |   |   |   |               |   |   |   |   |   |   |
+ |   o - o   o - o   o - o               o - o   o   o   o - o   |
+ |   |   |           |   |        /      |   |           |   |   |
+ |   o - o       o + o - o ----stand---- o - o + o       o - o   |
+ |   |   |       |   |   |      /|       |   |   |       |   |   |
+ |   o - o   o - o   o - o - o - o - o - o - o   o - o   o - o   |
+ |   |   |   |       |       |   |   |       |       |   |   |   |
+ |   o - o   o   o - o   o + o - o - o + o   o - o   o   e->/f   |
+ |       |       |       |   +   |   +   |       |       |  |    |
+ o - o   o - o <-a   o - o   o   o   o   o - o   b-> g - o  |    |
+     |       |   |           |   |   |           |   | \    /    |
+     o - o   o - o           o   o   o           o - o  -<--     |
+         |   |   |               |               |   |           |
+         |   o   o - o - o - o - o - o - o - o - o   o       o - o
+         |   |       |   |/  |   |   |   |/  |/      |       |
+         |   o - o   o - U - o - o - o - d - c   o - o   o - o
+         |       |               |               |       |
+         o - o   o - o - o - o - X - o - o - o - o   o - o
+             |                   |                   |
+             o --------- D - o --|------ D --------- o
+                        /        |      /
+                                 |
+
+a and b are one-way exits (maybe should be this way?)
+c and d has an up-exits, leading to the same place. c shouldn't have
+an up-exit.
+West from f takes you to g. Should take you to e
+
+
+Crystalmir Lake (in the lake):
+
+                    A   A   A   A   A
+                    |   |   |   |   |
+                    |   |   |   |   |
+               <--- o - o - o - o - o --->
+                    |   |   |   |   |
+                    o - o - U - o - o - o
+         o          |   |   |   |   |
+         |  o - o - o - o - o - o - o
+         b  |       |   |   |   |   |
+         ^  o  <--- o - o - o - o - o --->
+         |          |   |   |   |   |
+         a ---- o - o - o - o - o - o
+         |          |   |   |   |   |
+         o          |   |   |   |   |
+                    V   V   V   V   V
+
+North from a takes you to b, and from there you can only get out by
+recalling (maybe it should be that way?)
+
+
+Darkfriends:
+                                            o     c
+                                            +    X
+                                      o-----o---o
+                                      |     |
+                                      |     V
+                                      |     /---\
+                                      |     |   V
+                                      o-----o---o
+                                         /  |   |
+                                         \--o---b
+
+The exits on this whole floor seems a bit strange (it's the floor just
+below the master). Maybe it should be this way?
+
+
+Dharynn's Huge Forest:
+
+                                                                 Ship to
+            o - o   o - U - o -- D - U   U - D - o - U - o - U + Myrridon
+            |   |   |       |        |   |   |   |       |
+            o   D - o - o - o - D    o - o   o   o - D   o   o - o
+            |       |   |   |        |       |   |   |   |   |
+     ------ X - U - o   U   U -- U - o - U - o   o   a - U   o
+            |       |   |                            /   |   |
+            |   o   |   |                    /------/|   |   |
+            |   |   |   |                    V       |   |   |
+            D   o   o - o - o  o-o   o - o - b - o - c   o - o
+            |   |   |       |    |   |       |       |   |   |
+            U   o - o   o   U    D - D   o - o-o-o   o   o   o
+            |   |   |   |   |    |   |   |   |       |       |
+            o - o   D   o - o -- o   o - o   U   o - o - o - o
+                |   |       |        |       |   |       |
+            D - o   o - o - d ->- e- o - o   o - o - o   o - o
+            |           |        /       |   |       |       |
+            U   D - o   o - o - o-o-o    o - D   o - o - o - o
+            |   |   |   |   |                |   |   |   |
+        o - o - o - o - o   o - o -- U   o - o - U   o   o
+                |   |       |        |   |           |   |
+                |   |       |        |   |       o   |   |   o
+                |   |       |        |   |       |   |   |   |
+            o   o   o - o - o - o    o - o - o   o   o - o - o
+            |   |       |   |   |    |       |   |   |       |
+            o - U   o - o   o   o -- o   o - o - o - o - o   o
+            |       |       |            |           |       |
+            o - o   o   o   o - o - f -> g - o - o - o - o - o
+                |   |   |   |   |   |            |       |
+            o   o - o   o - o   U   o -- o - h - o - o - o - o
+            |   |   |   |   |   |        |   |       |   |   |
+ Enchanted  |   |   |   |   |   |        |   V       |   |   |
+   Forest - o - o   o - o   o - o   o -- o   i - o - o   o   o
+            |   |   |       |       |        |       |   |   |
+            o - o - o - o - o - o - o    o - o - o - o - o   o - o
+
+south from a leads to b. North from c leads to a. I think south from
+a should lead to c.
+d to e, f to g, h to i: One way exits. Maybe should be that way?
+
+
+Dragoncult:
+
+          o - o     o   o    /--\
+              |     |   |   +    |
+          o - c ->/-a - o + o    V
+              |  /          |    o
+       o <--- b ----- D -+- o   /
+      /              X|        |
+     |                o        |
+     V                |        |
+     o                o        |
+     +                +        |
+     y                X        |
+                      |        |
+                               |
+                       o + o   |
+                       |   +   V
+ o             o       |   o + o
+ +            X|       |X
+ o       y   o o - o - U - o + o
+ |       +   |         |
+ o + o - o - o - o     o
+
+west from a leads to b. I think it should lead to c.
+
+
+Dragonspyre:
+                         o
+                        /+
+                     New o - RIP              o+o
+                  Thalos |                    +
+                         o                    o
+                         |                    +
+                         o            o+o-o-o-o-o-o-o-o-o
+                         |            |                 +
+                         o            o      New Thalos o
+                         |            |            /    +
+                       o o<-o-o-o-o-o-o-o-o-o-o-o+o     o
+                      /| |      |                       +
+             Starville | o      o                 o-o-o-o
+                       | |      |                 +
+           f-o-o-o-o-o-o-o      o                 o
+          /              |      |                 +
+         o               o--o-o-o                 o-o-o
+        /                                             +
+       o                                              o
+      /                                               |
+     o                                                o
+     |                                                |
+     o                                                o
+     |                                                |
+     o                                                o
+     |                                                |
+ X-o-o                                    o-o-o-o-o-o+o-o-o-C
+                                          |     |
+                                          V     o
+                                          o     +
+                                                o
+                                                +
+                                                o
+                                                +
+                                                o
+                                      /----\    |
+                                    a/<+c-o-b-o-o-o-o-o+P
+                                                |
+                                                o
+                                                |
+                                                o
+                                                |
+                                                o
+                                                |
+                                                o
+                                                |
+                                                o-> f
+
+East from a leads to b. I think it should lead to c.
+Also, if you stand at c, unlock the door to a and go west to a, the door
+is still locked from that side.
+
+
+Drow City:
+
+         o + o
+             |
+         /-- o --\   o
+         |  /    |   +
+         o RIP   o - o
+         |       |
+         \-- o --/
+             |
+           o--+o
+             |/|
+             o o + o
+              /
+             o       o
+             |       +
+ o - a - c - o - o - o - o
+     |   ^   |
+     |   |   |
+     \-> b   |
+             | o
+         WM  |/|
+       HPreg o |
+         |     |
+     o + o - o |   o   o - o
+         |     |   |   +
+ o   o - o --- o - o - o
+ +       |         |   |
+ o + o + o     o   o - o - X
+         |     |       |
+         o --- o - o - o
+         |     |   |
+     o + o    WM   o
+                   +
+                   o
+
+South from a leads to b. North from b leads to c. I think north from b should lead to a.
+
+
+EarthSea:
+                                  o
+                                 /|
+                                / o+o
+                               /  |
+                              o o+o+o
+                              |   |
+                              |   o - o  o Red
+                              |          |/|
+                              |          o o
+                              |            |
+                          o - o + o + a -> b - o + Green
+                         X    |
+                        o     o
+                        +    /|
+        o + o - o - o + o   / o    Ged
+       /                   /  +     +
+      / White             /   X     o
+     /   |               /    |    /
+    /    o              /         o
+   /     |             /         /
+  o ---- o ---------- o     o - o
+                      |     |  /
+                      o Black /
+                      |      /
+                      o /---/
+                      |/
+                      o
+                     /
+                   RIP
+
+a to b is a one-way exit on all other muds too. Maybe it's supposed to be
+that way? Apart from that, this map is ok.
+
+
+Fire Elemental Plains:
+
+              o - o - o
+                     X
+                    /
+             o - o-/-o - o - o - o - o
+             |    /  |   |   |       |
+             o   o - o   o   o - o   o
+             |   |   |   |   |   |   |
+             o   o - o   o   o - o   o
+             |   |       |   |       |
+             o - o - o - o - o - o - o
+             |           |   |       |
+             o - b <-a   o   d <-c   o
+             |   |   |   |   |   |   |
+             o   o - o - o   o - o - o
+             |           |           |
+             o - o - o - o - o - o - o
+                         |
+                         o
+                        /
+                     - o
+                      /
+                     o
+
+a to b, c to d: One-way exits. Perhaps supposed to be that way?
+
+
+Enchanted Forest:
+
+F = Forest "maze". All dirs leads back to F
+f = Forest "maze". All dirs leads back to f
+                                        g
+             f   f   f             f    ^    f
+             |   |   |             |    |    |
+         f---o---o---o---f     f---a-> -b-> -c----f
+         |      /|   |   |     |   |  / |  / |    |
+         |     |  \  |   |     |   | /  | /  |    |
+     f o+tree--o-----o---o-----o---d----e----o----o---f
+     |   |     |     |   |     |   |    |    |    |
+ f---o---f     |     |   |     |   |    |    |    |
+     |   |     |     |   |     |   |    |    |    |
+ f---o---o-----j-----o---o-----o---o----g----o----o---f
+     |   |     |     |   |     |   |    |  \ |
+ f---k---i----\V     |   |     |   |  __|__ \V     /\       o---o---o
+     |\  |     \     |   |     |   | /  |  \ \    / |       |   |   |
+     | \-+-----h-----o---o-----o---s----t-> -l------r---o---o---RIP /
+     |   |     |     |   |     |   |    |    /          |          o
+     |   |     |     |   |     |   |    |   /^          o         /
+     |   |     |     |   |     |   |    |  / |                   /
+     f---o-----o-----o---o-----o--boar--m----n---o              o
+         |     |     |   |     |   |    |    |   |             /
+         |     |     |   |     |   |    |/\  |   |            o
+         |     |     |   |     |   |    V |  |   |           /
+         f-----o-----f---q-> |-p---f--queen--o---f
+               |         |     |        |    | 
+               |         f     f        f    f 
+               |                               
+           F---o---F   F   F   F   F   F   F   
+               |   |   |   |   |   |   |   |   
+           F---o---X---o---o---o---o---o---o---
+                   |
+
+Hmm... Tough map. The strange exits may be there just to confuse people. Or
+the creator was just a little confused when he made the exits? Still...
+here goes:
+north from b leads to g (which is 2 south of b). Perhaps should lead to f
+instead?
+west from c leads to e. I think it should lead to b instead.
+west from b leads to d. I think it should lead to a instead.
+north from h leads to i. Looks like it should lead to j instead. And then
+let the west-exit from h lead to i, and the map would look much more "normal"
+south from l leads to m. I think it should lead to n.
+west from p leads back to p. I think it's supposed to lead to q.
+north from r leads to l (same as going west). Not sure where it's supposed
+to lead. Perhaps there's a room there that you can't get to?
+west from l leads to s. I think it's supposed to lead to t
+north from queen leads back to queen. Maybe supposed to lead to m?
+
+
+Enclave:
+                                         |
+                                         |
+                                       o-o
+                                       |
+       o-o+o         o----o----------- o
+       | |           |  / | /          |
+       o-o+o       o-o |  | |          |
+       | |     o-o |   a--o-b          |
+       o-o+o   | | o        |          |
+         |     o-o--o-e     o          o
+         o     |    | |     |          |
+         |     |    o V     |          |
+ o-o-o o+o+o   |Lorca f---o-o--o---X---o
+ | | |     |   | |    |     |          |
+ o-o-o-o-o-o-o-o-o--o-o-o   o
+ | | |           |  |       |
+ o-o-o           o  o-o---o-o
+                 |    |
+                 d<-c-o-o-o
+
+a and b: Perhaps should be that way? Not sure how to "correct" it.
+c to d & e to f: One-way exits. Maybe supposed to be that way?
+
+
+Ghenna:
+
+The whole place is mazey, so not much to say, except that the "Labyrinth
+of Bodies" here has several mobs, but the whole labyrinth is no-fight
+now, so you can't attack them. Don't see any reason for this. How about
+making it possible to attack them, like before?
+
+
+Gorm:
+
+                               ?   ? + ? - ?
+                               |   |   |   |
+                               ? - ?   ? - ?
+                                       |   |
+                                   ? - ? - ? - ?
+                                   |
+                           ?   ? - ?
+                           +   |
+                           ? - ? - ? - ?             o-o-o + o-o - o
+                           |       |                 |   |   | |   +
+                           |       + ? - ?           o   o   o-o   o
+                           |       | |   |           |   |         |
+                           |       | |   |           o-o-o         |
+                           |       | |   |               |         |
+                           ?       ?---? ? ------- o     + o-o --- o
+                           |         |/            |     |   |    /
+                           |         ?         o o-o-  o-o   o   o
+                           |                  /+ | |   |     |  /|
+     o - o     o - o       ? - ? - ? - ?-?-? / o | |   o+o+o-o / |
+     |   |     |   |                   +    /    | |          /  |
+     o   o --- o   o                   o   o-----o-?-        / o+o + o
+     |             |                   |                    o    |
+ o - a ->key - o - o - o -WM           o                    |    o + o
+ |        |            |   |           |                    o    |
+ o - o -- o -- o   o   o -WM           o - o                     o + o
+     |         |   |       |               |                     |
+     o   o --- o - o - o   o               o                 o + o
+     |   |     |   |   |   |               |                 |
+ o   o - o     o - o - o - o - o - o - o - o ------ o ------ o
+ +       |    /|   |   |   |               |
+ o - o   o RIP o   o - o - o - o           o
+     |         |   |       |   |           |
+     o --- o + c<- b - o   o   o           o
+               |   |       |   |           |
+               o   o - o - o - o           X
+                                           |
+                                         - o -
+
+a to key & b to c: One-way exits. Perhaps supposed to be that way?
+
+
+Graveyard:
+
+            |
+          - o -
+            +
+            X
+            |
+            o
+            |
+            o
+            |
+            o - Abandoned
+            |     Caves
+            o
+            +
+            o
+           X
+           |
+            \+ o           /-+-\
+               +           |   |
+       g - o - o - o - o - o   o
+       +       +   +
+       o   D   o   o-o-o
+       |   |   |   |   |
+       o - o   o - D   | o
+                       |/
+                       o
+
+ o - o - o - o
+ |   |   ^   |
+ o   U   |   o -\         /------\
+ |       |      |         |       |
+ V       |      V         V       |
+ g       \----- o - o-\   o - o--/
+                |   |  \  |   |
+                o - U --- o - o
+                              |
+                          o - o
+                          |   |
+                          o   hc
+                          |
+                          o - o + D
+
+                o --- o
+                |     |
+                |     o - o
+                |         |
+                |     o-o-o
+                |   |X    |
+                |  -p-   RIP
+                |   |
+                |    
+                |
+                |   o - o
+                |   |   |
+            o - U - o   o - o +> o
+                |           |    |
+                o           o    |
+                            |    |
+                            o    |
+                            |    |
+                            o    |
+                            |    |
+                        /-->o    |
+                        |   |    |
+                        o - o <+ o
+
+
+Ok. Some strange exits here and there. Not sure if there's anything wrong
+with them, though. Including the map if you want to see and decide yourself.
+
+
+Highlands:
+
+                        o o   o
+                       /| +   +
+                      o-+-o-o-o
+                        |     |
+                      o-o-o   o
+                      | | |   |
+                      o-o-o   o+o<+o-o-o-o-o
+                      | | |                |
+                      o-o-o                |
+                        |                  |
+                        | o                |
+                        |/|                |
+                        o o                o
+                          |                |
+                        o-o-o              |
+                          |                |
+                          o                |       o
+                          |                |      X
+                        o-o-o              o     o
+                          |                |    /
+                          o     o          |   o
+                 o        |    /|          |  /
+                X         o-o-o o        o-+-o
+               o                |        | |/
+              /                 o    o+o-+-o
+             o                  |    |   |
+            /                   o    o   o
+           o                         |   |
+          /+         o-o-o-o-o-o-o-o-o   o
+         / o         |                   |
+        o+o+-o-o-o-o-o   o-o-o-o-o       o
+        +  |             |       |       |
+        o  |           o-o       o-o-o-o-o
+        |  |           |           |
+        o  o-o-o-o-o-o-o     o     o
+        |              |    /|     |
+        o              o   o |     |
+        |              |   | |     o
+        a            o-o ooo |     |
+        |            |   | | |     |
+     b-/             o   o o o     o-o-o
+     |               |     | |         |
+     o               o     o o         o
+     |               |     | |         |
+     o o-o-o         o-o o-o o       o-o
+     | |   |           |     |       |
+     o-o   o         o o-o   o     o-o
+           |        X    |   |     |
+           o       o     o-o-o--o--o
+           |      /          |
+           o-o   o           o
+             |  /            |
+             o o             o                          o
+             +/+             |                         X
+             o o-o-o-o-o--o--o--o--o--o--o--o--o--o   o
+                             |                    |  /
+                             o                    o o
+                             |                    +/
+                             o                    o
+                             |                   /
+                             o        2 3 4 1 5 o
+                             |        | | | | |
+                          ---o--------o-o-o-o-o---
+                             |        | | | | |
+                             |        | | | | V
+                          y<-o--------o-o-o-o-y-Marsh
+                             |        | | | | |
+                             |        | | | | |
+                          ---1 Grolim-2-3-4-o-5---
+                             |        | | | | |
+                                            X
+                                            |
+
+Considering how perfect this area is (map-wise), the two rooms, a & b, are
+probably supposed to have either n-s exits to eachother, or s-e exits.
+
+
+Ice Wall:
+
+                                        o      a------\
+                                       /       |\      |
+                                      o <----- o \-b   |
+                                     /         |   |   V
+                                    /  o + o + o - o + p
+                                   o          X|   |
+                                   |         / |   |
+                                   o      o /  |   |
+                                   |      +/   |   |
+                               o - o ---- o ---|---|--o
+                                   |           |   |  |
+                                   o           |   |  |
+                                               |   |  |
+                                      o +> o - o - o  |
+                                     /         +      |
+                                    o          o      |
+                                   /^                 |
+                                  o |                 |
+           ----> o              |/  o ------- o       |
+          /     /|              s -           |       |
+         o  RIP/ |              |             o - o - o
+         |   |/  |
+         |   U   |
+     o   |   |   o          o - o - o
+     |   |   |  /|          |   |   |
+ o + o + o<--|-/ |          o - o - o
+     |   |   |   |              |   |
+     o   o   o --|----- o - o - o - o - o --- o
+         +   |   |              |   |   |     |
+     o - o   |   o  o - o - o - o - o - o --- o
+     +   +   |  /               |/  |   |     |
+     o   o   | /                s - o - d --> o
+             |/                 |   |   |     |
+             o                  |   |    \    |
+                                |   |   ^ \   |
+                                |   |   |  \  |
+                    o - o - o - o - o - c --- e
+                                |
+                              - X
+                                |
+
+west from b leads to a, but east from a leads to p. I belieave east from
+a should lead back to b.
+North from c leads to d, but south from d leads to e. I guess south from
+d should lead back to c
+
+
+Miden'nir:
+           /-- o --\
+          |         |
+          |     o   |
+          |     |   |          |
+      o - o o - o - o -(gone)- X - o
+          |     |   |          |   |
+          |     o   |  o ----- o   o - o
+          |         |  |       |   |   |
+           \-- o --/   o       o - o - o
+               |       |       |   |
+           o - o       o ----- o - o
+                       |       |
+                  p <- o   p - o
+                       |   |   |
+                       | /-|---/
+                       | | |
+                       o-W-o
+                         |
+                         o
+                        X
+                     Ghenna
+
+The whole west part here, with the inn and surroundings, is gone. I _think_
+it was there when I started playing (might just be that I copied this map
+from another mud).
+Also, the exits further down (p & p is the same room) are a bit strange, but
+maybe supposed to be that way.
+
+
+Mirror Realm:
+
+Earlier Caerlin and the masters in west tower were transported to a room
+called "Vell, hi!" when they died. I believe the coder may have wanted
+these mobs to be transported there to make their eq impossible to get
+hold of by mortals (not that the eq is great). Nowadays they just die
+and leave their corpse on the ground to be looted.
+Perhaps you should have a talk with the coder and see if this change is
+something he wants?
+
+Vell hi!: Safe no-exit room that you can't walk to/from to nor recall from.
+It says in its desc that "this is just a room used by mobprogs...".
+
+
+Mob Factory
+
+     p+> r - o - o - o - o
+     ^   |   |   |   |   |
+     \-+ q - o - o - o - o
+         |   |   |   |   |
+       - X - o - o - o - o
+         |   |   |   |   |
+         o   o   o   o - o
+         |   |   |   |   |
+         o   o   o   o - Q
+
+p: A room with butterflies. The door leading to it is always locked and
+there is no key to it. It's been unpickable and changed to be pickable,
+and changed back again. Not sure if it's pickable or not now.
+Anyway... Why?!?
+It's just butterflies! Place a key on a mob there or make the door
+unlocked.
+Also, going east from the butterflies leads to r. I think it should lead
+back to q.
+
+
+Museum (bottom floor):
+
+       o - b - o - o - o-o
+           ^\            |
+           | \           |
+           a-/           o           o-o - o - o - o - o
+           ^             |           |             ^     o
+           |             |           o             |     |
+           \-- c         o  XXX      |           o-o  o->o
+         o     |         |   ^       o           |    |  |
+         |     o-o       |   |       |       o - o    |  o
+         o<-o    |       o   oZEL-   o       |        |  |
+         |  |    o - o   |   ^BOTH   |   o - o   /->m-n  o
+         o  o-o      |   V   |       V   |       |  |/   |
+         |    |      o - o +>d-e-o<+ o - o   o - p       o
+         o    o-o        ^           ^       |   |       |
+         |    | |        |           |       |   o       o
+         o    o o<--- o  o-o       o-o  o -> o   |       +
+         |    |       |    |       |    |        o - o   V
+         o  o-g<---\  h-o  o - o - o  o-o        |       o
+         +    |    |  | |      |      | |        l       |
+         o    o    f<-/ o-o    o    o-o o        ^       o->o->XXX
+         |    |    |      |    |/   |   |        |       |TOMARIN
+ XXX<-o<-o    o    o      o-o-XXX-o-o   j        k       o
+   JOGATH|    |    |      |    |    |   |        |       ^
+         o    o    o  o - o    o    o-o \-i      o       +
+         +    |    |  |        |      |   |      |       r
+         o    o    o--o    o - o - o  o - o      o - o   ^
+         |    |    |       |       |      |      |       |
+         o    o o<-o   o - o       o - o  o->o   o       q
+         |    | |      |               |     |   |       |
+         o    o-o    o-o - o - o - o - o-o   o - o       o
+         |    |      | |       |       | |       |       |
+         o  o-o    o-o o       o       o o-o     o - o   o
+         |  |      |   |       |       |   |         |   |
+         o<-o    o-o   o       o       o   o-o       o ->o
+         |       |     |       |       |     |           |
+         o     o-o     o       o       o     o-o         o
+               |       |       |       |       |
+             o-o-o-o-o-o       o       o-o-o-o-o-o
+                               |
+                               o
+
+East from a leads to b. Should lead to c.
+d has an exit north to Zelboth. Perhaps it should be centered as well, ie,
+let e have that exit to Zelboth instead.
+going north from f leads to g. I think it's supposed to lead to h.
+the exit between i & j is a bit weird. Probably supposed to be a north-south
+exit.
+k to l is a one-way exit. It's probably supposed to be an exit back from
+l to k.
+Going south from m leads to n. It's probably supposed to lead back to p.
+q to r is a one-way exit. Probably supposed to be an exit back from r to q.
+
+
+Nirvana:
+                                        a ---- o
+                                        |      |
+                   o ---- o ---- b ----/       |
+                   |             |             |
+                   |     o   o   +   o   o     |
+                   |     |   |   |   |   |     |
+                   | o - o - o - o - o - o - o |
+                   |     |   |   |   |   |     |
+                   |     o   o   o   o   o     |
+                   |             |             |
+                   |             o             |
+                   |             |             |
+                   o     o - o - o - o - o     o
+                   |             |             |
+                   |     o   o   o   o   o     |
+                   |     |   |   |   |   |     |
+                   | o - o - o - o - o - o - o |
+                   |     |   |   |   |   |     |
+                   |     o   o   o   o   o     |
+                   |             |             |
+                   o + o -- o -- o -- o -- o + o
+                   |                           |
+                   o                           o
+                   |                           |
+                   o ---- o ---- X ---- o ---- o
+
+a should probably have a west-exit leading to b, instead of that south-exit.
+
+
+Scubdu's Harpy Area (mansion):
+
+ o ---------- u ----------- o
+ |            +\            |
+ |            |             |
+ |            |             |
+ |            |  /- b -- o  |
+ |            |  |  |    |  |
+ o            |  c  |  o |  o
+ |            V     |   \|  |
+ |  o o - o - a ----/    o  |
+ |   \|   |    \            |
+ |    o   o     o           |
+ |              |           |
+ o ----------o--|---------- o
+  \             |
+   o ---------- o
+
+The clouds is a maze, so I'm skipping that one. But past the cloud is a
+house. That's what my map is showing
+The exits from b seems to have been reversed. South from b should lead to
+c, and west from b should lead to a.
+
+
+Secret Garden:
+                           +
+                           o
+                           |
+                s - t ->  -q--\ <-r - o
+                 \__|____/ |\_/   |
+                    o      o      o
+                    |      |      |
+                    o ---- o ---- o
+                           |
+                        ---|->-
+                       /   |   \
+                  c=-k- <- l - m -> -n-> -p
+                           |\______/____/
+                           o
+                      NM   |
+                     X     |
+                   WM      |
+                  X        |
+                 o     o - o - o
+                X      |   |   |
+               o   o - o   o   o - o
+               |   |       |       |
+   o - o - v - w->-u       o       o - o - o - o - o
+       |    \____/ |       |       |           |
+       o - p       o - o   o   o - o       t - o
+          /            |   |   |          /       NM
+         q             o - o - o         s       X
+           o               ^                   WM
+          X|               |                  X
+         o |               |                 o
+        X  |               |                X
+      WM   |               o               o
+     X     |               |               |
+   NM  o - o - o           o           o - o - o
+       |       |           |           |       |
+   o - o<- o   o - o - o - o - o - o - o   o ->o - o
+       |   |   |       |       |       |   |   |
+       o   o - o       o   o   o       o - o   o
+           |           |   |   |           |
+           s           o - o - o           q
+          /                |              /
+         t                 o             p
+                           |
+                           o
+                           |
+                       o - o - o
+                       |   |   |
+                   o - o   o   o - o
+                       |       |
+                       o - o - o
+                           |
+                           o
+                           +
+                           X
+                           |
+                           o-
+
+k, l, m, n, p: Just weird. Make these exits normal, please.
+east from q leads back to q. Should lead to r.
+west from q leads to s. Should lead to t.
+west from u leads to v. Should lead to w.
+The whole north part is a jumbled maze. Some parts seem like mistakes,
+but it's too messy to even try solving.
+
+
+Underdark:
+
+       o-o-o-o-o-W-Y-R-M-o-o-S-T-R-E-E-T-o-o-o
+       |             |     |    /            |
+       |             |     |   o             |
+       |             |     |   |             |
+       |             |     |   o-o           |         o+o
+       | jade dwell. |gemst|       warehouse |  demon  |
+       o o-o-o-o-o   U o-o M o+o o o o-o-o+o o  clan   o+o
+       |   + |   |   | | | |   | + + |   |   |         |
+       o o-o o o+o+o B o-o O+o-o-o-o o+o o-o o   o-o   o+o
+       | | | +   |   |   + |   | + | |   + | |   | |   |
+       o o-o o o+o+o Y-o-o-O o+o o o-o+o o o S o+o-o   o+o
+       |     |       |     |   +           + | |       |
+       o-S-U-N-S-o-o-o o-o N   o 6-o-o-o o+o U o-o-o---o+o
+       + + + + | Bodak | | |     | | | |     | +   |   +   Sewers
+       o o o o E o+o+o o-o L-o-D-I-A-7-8-N-D-N o-o o /-o-o   /
+               |   |   + + |whore| trav. den | | | | |   |  o
+               T o+o-o o o I o-o o o o-o o   R o-o o o---o /
+               |   | + + | | | | | + | | +   |     +      o
+               o o+o o-o o G o-o o o-o-o+o+o I     UD..../
+               |   |     | | +   | | + + + + |    /
+       o o o   o o-o-o-o-o H o+o o o o o o o S   o
+       + + + + | +         | +   | +         |  /
+       o-o-o-5-L-A-V-E-R-S-o-2-R-O-U-T-E-o-o-E+X
+       + + + | |  market | |  prison +       |
+       o o o o-o o-o-o-o o-o o-o-o-o-o+o     o
+             | | +     + | | + + +   |       |
+       o o o o-o o-o-o-9-o-o o o o o+o+o o-o-o       T----E
+       + + + | |       | | |         |   |   +cages  |    |
+ ----> S-T-R-o-O-F-o-T-H-E-o--G--O o+o+o S o+o       T    N
+           | | | | | | | | shad. D   |   |   +       |    |
+       o-o-S B J A W M o o o+o-o S+o-o-o+U o-o       O o  o
+       |   |           | |   | | | + + + |           | |  |
+       o+o U   SHOPS   A o-o-o-o o o o o N-o-o-F-O-R-G o  |
+       |   |           |         |       |   Eurandu's +  o
+       o+o N-R-O-A-D-o-Z-#-o-S-H-A-D-O-o-R         o+o-o  |
+       |   |           |     +         | |           | |  o
+       o+o S           U o o+o+o o o o I-o--o-o--o o+o-o  |
+           |          <f>+   |   + + + |         |   |    |
+  Drow+T-R-A-V-E-L-L   R+o-o-o-o-o-o+o S o o o o A o+o+o-<f>
+       |           |   | +   | +   |   | + + + + |        |
+       o o o o Bar E   I o o+o o-o o+o E o-o-o-o L        o
+       | + + +     |   |     | | | |   |ass|guild|        |
+       C o-o-o+Q-o R   | o+o+o o-o o+o o   | o-o+L-E-Y-o--o
+       | + + + | | |   T               |   o |
+       R o o o o-o+S   | thieves guild o   | o o o o
+       |           |   |               |   | | + + +
+       E-S-C-E-N-T-o   E-o-D-E-A-T-H-S-o   o-o+o-o-o+o-o
+                                       |   +   + + + | |
+                                       L-A-N-E o o o o-o
+                                             |
+                                             o
+2: going south takes you west
+5: going north takes you east
+6: going south takes you southeast
+7: going south takes you west
+8: going south takes you west
+9: going south takes you southwest
+
+
+Valley of Kings:
+
+                        King2
+                          |
+                          o - o - o  King1           o-o-o-o-2
+                                  |    |             |       |    /
+                      o - o - o - o    1 - o         o       o - X
+                     /           /         |         |       |
+        King4 - o   3           o -------- o-o-a-\ <-c--o-o--b
+                |   |                             \          ^
+                o - o - King3                      \         |
+                |   |                               \--------/
+                1 - o
+                |
+                1----o
+                |   /|
+                |  / |
+                o-/--o
+                 /  /
+                o  o
+               /  /
+      King5 --/--o    King6
+             /          |
+            o - o - o   o - o - o
+                |   |   |       |   King7 + 1       2 ----- o   o-o
+                o - o - o       V           |       |       |   | |
+                            o - 1 - o - o - o - o - o King9 o-o-o King8
+                                |       |   |          X|     |
+                          RIP - o    Urthel 4    Shadow +     o-o
+                                        |   |           |       |
+                                        3   o - o - o - o       o
+                                        |   |
+                                        o   o
+                                        |   |
+                                        o - o
+                                        |
+                                        1 - o - o - King10
+                                        |
+                                        o
+                                        |
+                                        o ---- o
+                                        |     /
+                                        3    2
+                                        |   /
+                 King14 o - o - o - o - o  o - 1       o - o
+                    |   |      /           |   |       |
+                    o - o     /            o - o - o - o
+        o                    |                 |      X
+       /|                    |                 |     o ------- o - o
+      o KING                 |                 |              X   /
+     /                       |                 |             /  King11
+    o                        |                 |             \
+   /                         |                 |              \
+  o - 4  RIP                /     o - King13   3 (Harpy start) |
+      |   |                /      |            |               |
+      o - 2 - o - 4 - o - p - o - o            o King12    3 <-/
+          |                      /             |   |       |
+          o                     o      o - o - o - o - o + o - o - o
+          |                    /       |                       |
+ King15 - o                   2 ------ o               o + o - o
+                                                       +
+                                                       o
+
+Going east from a takes you to b. Should lead to c.

@@ -1,0 +1,62 @@
+# Point of Impact (227): 10-20, Zendrax  (Karandras: 5s3w3sw)
+* FIND OUT: A Watchman of the Dark     xp, hp, hp, money, money, [human?], irvs
+* FIND OUT: The Master Brain           xp, hp, hp, money, money, type, irvs
+* FIND OUT: A bright angel             xp
+#
+#                                 X-        /
+#                                /|       15
+#                               o         /
+#                              /         o
+#                             o         /             o
+#                            /         o              |/
+#                           o         /            o-30-o
+#                          /         o           o   /|
+#                         o         /            |  / o
+#                        /         o             o /
+#                       o         /              |/
+#                      /         o           o-o-o-o-o
+#                     o         /               /|                   o
+#                    /         o       o-o-o   / o                   |/  
+#                   o         /          |    /  |               o o-38-o
+#                  /         o           o   /   o               |  /|
+#                 o         /            |  /                    o o o
+#                /         o       o     o /   o                 |/ 
+#               o         /        |     |/    |             o-o-o-o-o
+#              /         o         o-o-o-o-o-o-o                /|
+#             o         /          |    /|     |               o o
+#            /         o           o   o o     o              /  |
+#           o         /               /  |                 o o   o
+#          /         o               o   o                 |/
+#         o         /               /    |           RIP o-o-o
+#        /         o               o   o-o-o           |  /|
+#       o         /               /                   WM / o
+#      /         o               o                     |/
+#     o         /               /             RIP-WM-Angel-WM-RIP
+#    /         o               o                       |
+#  15        |/              |/                    Watchman
+#  /       -30-            -38-                       /
+#           /|              /|                     Brain
+#
+* Max level 20
+* Nice lowbie area with plenty of mobs
+* First room destroyed moves. All other rooms boosted hp regen. Seems changed now, though.
+* The WM rooms near Angel boost mana regen (but has agg black haired beasts).
+* Bottom rooms are NOT very bright. Watchman/Brain rooms are recallable but not sumout
+
+Point of Impact:         Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+A large flying insect     10  110k E-----    ---  229-239     108-132  [insect], aware
+A rotten hand             10  110k E-----    ---  202-205      41-41   [human]
+A smelly foot             10  110k E-x---    ---  209-211      41-43   [undead]
+A small bug               12  155k E-----    ---  227-235     179-183  [insect]
+Some dark material        13  168k N-----    ---  253-254     345-357  [entity], sleeping
+A murderous bat           14  210k E-----    ---  292-294      30-49   [rodent], sleeping, invis
+A big creature            15  240k E-x---    ---  325-325     160-168  [magical], +300 starthp
+A carnivorous plant       15  247k E-----    GNE  314-320     251-254  [botanic]
+A huge eye                15  247k E---x-    GNE  340-348     178-181  [human], special-standing before being in battle - standing after
+A jumping stone           15  247k E-----    ---  298-311       2-2    [demon]
+A slithering green snake  22  770k E-x-x-    ---  471-475       1-1    [reptile], sitting, flees
+A heavy lizard            25 1500k E-x--x    ---  722-725    2672-2753 [dinosaur?], vuln fire, sitting, bash
+A black haired beast      30 3600k E-----    G E 1330-1341   5488-5591 [reptile]
+A Watchman of the Dark    30       E--x-      NE                       [human?], special-standing before being in battle - standing after
+The Master Brain          39       Ex---      NE                       [???], powerblind, earthquake, heal, 1-1 spells, standing before being in battle - flying after
+A bright angel           100  ~18k N--x--    -  79797-79940     1-1    INFO, [human], great ac, cake

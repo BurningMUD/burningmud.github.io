@@ -1,0 +1,77 @@
+# Dharynn's Huge Forest - The forest (42): 1-8, Dharynn  (King's Castle: 3wnwne2nw2nwne2nwne)
+#
+#            o - o   o - U - o -- D - U   U - D - o - U - o - U * Fishing
+#            |   |   |       |        |   |   |   |       |       Village
+#            o   D - o - o - o-D  o   o - o   o   o - D   o   o-o
+#            |       |   |   |    /   |       |   |   |   |   |
+#     ------ X - U - o   U   U - U -- o - U - o   o   o - U   o
+#            |       |   |                            /   |   |
+#            |   o   |   |                    /------/|   o - o
+#            |   |   |   |                    v       |   |   /
+#            D   o   o - o - o  o-o   o - o - o - o - U   o  /o
+#            |   |   |       |    |   |       |       |     \ |
+#            U   o - o   o   U    D - D   o - o-o-o   o      >o
+#            |   |   |   |   |    |   |   |   |       |       |
+#            o - o   D   o - o -- o   o - o   U   o - o - o - o
+#                |   |       |        |       |   |       |
+#            D - o   o - o - U ->-/D- o - o   o - o - o   o - o
+#            |           |       /        |   |       |       |
+#            U   D - o   o - o-o---o-o    o - D   o - o - o - o
+#            |   |   |   |   |                |   |   |   |
+#        o - o-- o-/-o - o   o - o -- U   o - o - U   o   o
+#              \_|/  |       |        |   |           |   |
+#                |   |       |        |   |       o   |   |   o
+#                |   |       |        |   |       |   |   |   |
+#            o   o   o - o - o - o    o - o - o   o   o - o - o
+#            |   |       |   |   |    |       |   |   |       |
+#            o - U   o - o   o   o -- o   o - o - o - o - o   o
+#            |       |       |            |           |       |
+#            o - o   o   o   o - o - o -> o - o - o - o - o - o
+#                |   |   |   |   |   |            |       |
+#            o   o - o   o - o   U   o -- o - o - o - o - o - o
+#            |   |   |   |   |   |        |   |       |   |   |
+# Enchanted  |   |   |   |   |   |        |   v       |   |   |
+#   Forest - o - o   o - o   o - o   o -- o   o - o - o   o   o
+#            |   |   |       |       |        |       |   |   |
+#            o - o - o - o - o - o - o    o - o - o - o - o   o - o
+#
+* Max level 4-7 for some nests, dens & caves (varies)
+* Very few aggies. Safe lowbie area
+
+Dharynn's Huge Forest:   Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+The fox cub                1   125 N-----    --    10-13        0-0    [canine]
+The mouse                  1   150 N-x---    --     6-15        0-0    [animal]
+The newly-hatched sparrow  1   100 N-----    --     7-11        0-0    [bird]
+The pigeon                 1   150 N-x---    --     9-15        0-0    [bird], imp
+The sparrow                1   200 N-x---    --     7-11        0-0    [bird]
+The black bear cub         2  1000 N----     --    30-38        0-0    [animal]
+The brown bear cub         2  1000 N-----    --    31-35        0-0    [animal]
+The fox                    2  1000 N-x---    --    32-37        0-0    [canine]
+The frog                   2  1000 N-----    --    33-40        0-0    [amphibian]
+The lynx cub               2  1000 N-----    --    31-40        0-0    [feline]
+The wolf cub               2  1000 N-----    --    31-40        0-0    [canine]
+The capercaillie           3  3000 N-x---    --    58-62        0-0    [bird]
+The deer                   3  3000 N-x---    --    58-63        0-0    [animal]
+The otter                  3  3000 N-x---    --    55-62        0-0    [animal]
+The reindeer               3  3000 N-x---    --    59-65        0-0    [animal]
+The wild horse             3  3000 N-x---    --    58-65        0-0    [---]
+The blackcock              4  7000 N-x---    --    77-85        0-0    [bird]
+The ermine                 4  7000 N-x---    --    79-85        0-0    [animal]
+The greyhen                4  7000 N-x---    --    78-83        0-0    [bird]
+The mink                   4  7000 N-x---    --    76-82        0-0    [animal]
+The elk                    5   12k N-x---    --    98-105       0-0    [animal]
+The falcon                 5   12k N-x---    --    98-103       0-0    [bird]
+The hawk                   5   13k N-x---    --    97-102       0-0    [bird]
+The lynx                   5   13k N-x---    --    95-103       0-0    [feline]
+The badger                 6   25k N-x---    --   118-120       0-0    [animal]
+The beaver                 6   24k N-x---    --   119-122       0-0    [animal]
+The toad                   6   24k N-x---    --   118-122       0-0    [amphibian]
+The black bear             7   35k N-x---    --   133-144       0-0    [animal]
+The brown bear             7   35k N-x---    --   131-148       0-0    [animal]
+The eagle                  7   35k N-x---    --   133-143       0-0    [bird]
+The snake                  7   35k N-x---    --   140-145       0-0    [snake]
+The wild boar              7   35k N-x---    --   135-148       0-0    [animal]
+The wild dog               7   35k N-x---    --   133-147       0-0    [animal]
+The wolf                   7   35k N----     GN   133-139       0-0    [canine]
+The wolverine              7   35k N-----    --   135-144       0-0    [canine]
+The poacher                8   60k N-x---    --   156-165     781-802  [human], imp

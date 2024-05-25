@@ -1,0 +1,42 @@
+# The Grasslands (Herd Area) (21): 1-10, Klaaw  (Elemental Canyon: 6s3es5deswsw6s2ws)
+#
+#        Revered
+#        Plateau
+#           |
+#           o - o - o - o - o - o - o - o
+#           |   |   |   |   |   |   |   |
+#           o - o - o - o - o - o - o - o
+#           |   |   |   |   |   |   |   |
+#           o - o - o - o - o - o - o - o
+#           |   |       +   |   |   |   |
+#           o - o   o - o   o - o - o - o
+#           |   |   |   |   |   |   |   |
+#           o - o   o - o   o - o - o - o
+#           |   |           |   |   |   |
+#           o - o - o - o - o - o - o - o
+#           |   |   |   |   |   |   |   |
+#           o - o - o - o - o - o - o - o
+#           |   |   |   |   |   |   |   |
+#           o - o - o - o - o - o - o - o
+#           |   |   |   |       |   |   |
+#           o - o - o - o       o - o - o
+#  Gypsy    |   |   |   |       |   |   |   Pixie
+# Village - X - o - o - o       o - o - o - Forest
+#
+* Safe area. Two herders (cows & goats) moving around.
+* Key to the cottage is in the doormat.
+
+Herd Area:               Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+A calf                     1       N--       ---    ?           ?      no-attack, follows cowherder
+A kid goat                 1       N--       ---    ?           ?      no-attack, follows goatherder
+A small mouse              1    60 N-x--     --     6-6        12-13   [rodent], +5 starthp
+A small rabbit             2   400 N-x---    --    20-31       34-37   [animal]
+A brown cow                3  1500 N-----    --    30-31       21-21   [---], follows cowherder
+A nanny goat               3  1500 N-----    --    28-33       21-21   [animal], follows goatherder
+A small grey wolf          3  3000 E-x-x-    --    41-42        1-1    [canine], sneak
+A billy goat               4  2600 N----     --    46-50       21-21   [animal], follows goatherder
+A herder's child           4  2600 N-x---    --    46-47       21-21   [human]
+A cowherder                5   10k N-x--x    --   110-110     401-401  [human], +50 starthp
+A goatherder               6   13k N-x--x    --   150-150     401-401  [human], +50 starthp
+The herder's mother        6   18k N----     --   129-130     136-138  [human]
+The herder's father       10  116k N--xx-    --   221-233     594-644  [human], sitting

@@ -1,0 +1,208 @@
+# Merc halls (?): ?-?, ?  (Different places)
+* FIND OUT: Lilith, the shadowblade           74-75
+* FIND OUT: Devrel, the guardian              94-95
+* FIND OUT: Lots more!
+#
+* Kindred of the Dark:
+* ====================
+#
+#               o
+#              /|
+#           TrR o
+#               |
+#       o - o - o - o -bar- o
+#           |   |   |
+#           o - F - o     o
+#           |   |   |    /|
+#           o - o - o   o |
+#               |      /  |
+#               |     o   o
+#               | ___/    |
+#               |/        |
+#               o         |
+#                         |
+# [Sundhaven] - o *-> o - o
+#
+Merc KoD:                   Lvl    Xp ASWIDMX # agg      Hp         Gold      Special
+A tamed great shadow dragon 100       N-        ---                           no-attack, special-block-north
+
+
+* Suicide Squad:
+* ==============
+#
+#        TrV  o
+#         |   |
+# ItemS - o - o
+#         |   |
+#         G  Pub
+#         |
+#      [Kerofk]
+#
+Merc SS:                    Lvl    Xp ASWIDMX # agg      Hp         Gold      Special
+The Suicide Squad Guardian    1       E-        ---                           no-attack, special-block-north, room is noflee/norecall
+
+
+* Coalition of Sin:
+* =================
+#
+#            |
+# [Desert] - G
+#
+Merc CoS:                   Lvl    Xp ASWIDMX # agg      Hp         Gold      Special
+A maid is here rigorously scrubbing the floor.
+A maid                        1       N-x
+A black robed monk          100       E-x
+The Unholy Guardian of Sin  100       E--                                     nofight-room, special-block-north
+
+
+* Generation Zero:
+* ================
+#
+#   |
+#   G
+#  /
+# o - [Sundhaven]
+#
+Merc GZ:                    Lvl    Xp ASWIDMX # agg      Hp         Gold      Special
+Alshir                       99       N--       ---                           no-attack, special-block-north
+
+
+* Paragons of Valour:
+* ===================
+#
+#            o
+#            |
+# [Kerofk]   o - o <arena>
+#    |       |   |    |
+#    o - o - o - o -- o - o
+#                     |
+#                     o
+#                    /
+#                   o
+#
+* Whole area is NOT very bright
+#
+Merc PoV:                           Lvl    Xp ASWIDMX # agg      Hp         Gold      Special
+Teshinar, the Keeper                  1       N-        ---                           no-attack
+Tirana, Matron of Paragons of Valour  1       N-        ---                           no-attack
+Yukor, the Sentinel of the Gates     90 1080M N--xx-     -- 32004-32005   8790-8840   [human], 6-6 attacks, room is noflee but recallable
+
+
+* Final Sanction:
+* ===============
+#
+#  [Ofcol]
+#     |
+#     o
+#     |
+#     G
+#     +
+# o - o - o      TrV
+# |   |   |       |
+# o - o - o - o + o + o
+# |   |   |       |
+# o - o - o       o
+#
+Merc FS:                            Lvl    Xp ASWIDMX # agg      Hp         Gold      Special
+Lilith, the shadowblade           74-75       N--                                     nofight-room
+Alain, the blademaster               80       N--                                     nofight-room
+Devrel, the guardian              94-95       Nx-x x     -     ~45k                   [human], immune blind (not dark), shrugger, 4-6 attacks, special-instakill, special-open/close-gate, special-block-south?
+
+
+* Shadowy Conquerors:
+* ===================
+#
+#   [Kerofk]
+#      /
+#     o
+#    /
+#   o
+#  /
+# G -
+#
+Merc SC:                Lvl    Xp ASWIDMX # agg      Hp         Gold      Special
+The gathered shadows     70       N--       ---                           nofight-room, special-block-east
+
+
+* The Trocade:
+* ============
+#
+#              [Sundhaven]
+#                  x
+#                 o
+#                 +
+#                 o
+#                 |
+#       o -- o -- o -- o -- o
+#      /                   /
+#     /   o               /
+#    /    |              /
+#   /     o   o + o     /
+#  /      +   |        /
+# o ----- o - o - o - o
+#         +   |
+#             o
+#            /
+#           o
+#
+* Whole area is nomag/nofight
+#
+Merc Tro:               Lvl    Xp ASWIDMX # agg      Hp         Gold      Special
+A hooded thief            1       E-x
+A large rat               4       N-x
+A female servant         70       E--
+A black hooded clerk    100       E--
+A hooded humanoid       100       N--
+The receptionist        100       E--
+
+
+* Blades of Torment:
+* ==================
+#
+#     <arena>
+#        |
+#    o - o - o
+#       /|
+#      / o
+# <arena>
+#
+
+
+* Red Hand:
+* =========
+#
+
+
+* Gangsters of Domination:
+* ========================
+#
+
+
+* Clandestine:
+* ============
+#
+
+
+* Storm Walkers:
+* ==============
+#
+
+
+* Dragon Riders:
+* ==============
+#
+
+
+* Titans:
+* =======
+#
+
+
+* Clearly Outplayed:
+* ==================
+#
+
+
+* GODS:
+* =====
+#

@@ -1,0 +1,44 @@
+# The Old Kingdom (262): 30-65, Unknown  (Thalos: es3nen)
+#
+#                            /--------\     Menkaure - o
+#                            |        |               /
+#                            o        |              o
+#                           /         |              |
+#                          o - o - o  |              o
+#                                  |  |              |
+#             /-------\            o  |              o
+#             |       |            +  |              |
+# o - o - o - o       |            o  |              o
+# |   |   |   |       |           /   |              |
+# o - o - o - o       |          o    |              o
+# |   |   |   |       |         /     |              |
+# o - o - o - o       |        o      |    o - o - o o
+# |   |   |   |       |       /       |    |   |   |/
+# o - o - o - o       |      o        |    o - o - o
+# |   |   |   |       |     /         |    |   |   |
+# o - o - o - o       |    o          |    o - o - o
+# |   |   |   |       |    |          |    |   |   |
+# o - o - o - o - o   |    o          |    o - o - o
+#                 |   |    |          |    |   |   |
+#                 o   |    o          |    o - o - o
+#                 |   |    +          |        |
+#             o - o   |    o          |        | a
+#             |       |    |          v        |/
+#             X       |    o    RIP - a--------o - a
+#             |       |   /                   /|
+#             o       \--o                   a a
+#             |
+#
+* Whole area is norecall, except Menkaure's room
+
+Old Kingdom:             Lvl    Xp ASWIDMX # agg     Hp        Gold      Special
+The black scorpion        10  900k E-xx--    G E  472-482       0-0      sitting
+The green scorpion        23 1265k G-xx--    -    555-564       0-0
+The little Sphinx         25 1900k G-x---    -    571-573       0-0      sitting
+The pyramid guide         25 2000k E-x---    G E  610-619    6506-11111  [human]
+The Old Guard             26 2340k G-----    -    602-621    4311-4625   sitting, [human]
+The Grey Mummy            50   42M Ex----    G E 1721-1800   1887-3010   [undead?], vuln heal/pure/light, immune unlife
+The White Mummy           50   45M Ex----    -   2616-2907   1999-2261   [undead?], vuln heal/pure/light, immune unlife
+The Female Deity          50   52M G--x--    GN  2190-2289  46841-50531
+The Grand Sphinx          52   49M Ex-xx-    -   1200-1661      0-0
+Pharaoh Menkaure          60  120M Gx-x x    -  ~7719-~8088  5369-5629   vuln pure/light, immune dark/unlife, flees

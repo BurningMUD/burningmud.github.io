@@ -1,0 +1,42 @@
+# S. S. Scurvy (58): 10-25, Mega  (Sundhaven: 2e4n2wn)
+#
+#                      o-o        o
+#                     /  |       /
+#        o---------- o   |    o o
+#       /|           |   |    |/
+#      o |           |   o    o  o+o
+#     /  |           |   |   /|    +
+#  o-o o-o---------- o---|--o-|--+-o
+#  |     |  o o     x|   |    o    +
+#  |     |  | +    / |   |       o+o
+#  |     |o+o-o---b-o|   |
+#  |     |  + |  x   |   |
+#  |     |  o o /  o |   |
+#  |     |     /   + |   |
+# -X     |  o+o-o--o |   |
+#  |     |         + | o-o
+#  |     |         o |/
+#  |     o-----------o
+#  |    /
+#  |   o
+#  |  /
+#  o-o
+#
+* Cabin and below deck is very bright.
+* Some aggies here and there.
+
+SS Scurvy:               Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+A rat                     10  110k E-x---    G    192-206       1-1
+A pelican                 12  156k E-x---    G    232-248       1-1    immune earth
+A slave                   15  255k G-----    -    291-309       1-1
+The deck swab             15  255k N-x---    -    292-307       1-1
+Cabin boy                 18  414k N-x---    -    382-400       1-1
+The pirate lookout        19  475k E--x--    -    413-429       1-1
+A sleepy pirate           20  600k E-----    -    438-447       1-1
+The pirate                21  735k E-x---    G    477-489       1-1
+Greasy the Pirate Chef    22  880k E-----    -    496-523       1-1
+The pirate doctor         22  880k E--x--    G E  499-507       1-1
+The pirate quartermaster  22  880k E--x--    -    518-519       1-1
+One Eye, the First Mate   23 1035k E--x--    GNE  540-549       1-1    backstab
+An ogre                   25 1500k E--x--    GNE  599-610       1-1    vuln fire
+Captain Black Beard       25 1500k Ex----    G    601-612       1-1    headbang, kick

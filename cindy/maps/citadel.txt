@@ -1,0 +1,65 @@
+# The Citadel (144): 50-100, Unknown (?/never)  (King's Castle: 6wnwn)
+#
+#   o                            o
+#  /                            /
+# o - o -- o -- o -- o -- o -- o
+# |                            |
+# o      o   o + o             o
+# |      |       |  o-Lady- o  |
+# o      o   o   o      +      o
+# |      +   +   |  o + D + o  |
+# o    Lord+ U   o      |      o
+# |      |   |   |  o + o + o  |
+# o      o + o   o      |      o
+# |          |   |  o + o + o  |
+# o      o + o   o      +      o
+# |      |   |   |  o + o + o  |
+# |      o   o + o      +      |
+# o     /    +          o      o
+# | Ceanyth  o                 |
+# | Dungeons |                 |
+# o - o - o -|- o -- o -- o -- o
+# |          |                 |
+# o  o - o - o - o - o         o
+# |  |   |   |   |   |         |
+# o  o - o - o - o - o         o
+# |  +   +   |   |   |         |
+# o  o + o - o - o - o         o
+# |  |   |   |   |   |         |
+# o  o + o - o - o - o         o
+# |  +   |   |   |   |         |
+# o  o - o - o - o - o         o
+# |          |                 |
+# o - o - o -|- o -- o -- o -- o
+# |          |                 |
+# |        o o-o     o         |
+# o       /| |      /|         o
+# | o    o | o     o |         | o
+# |/     | | |     | |         |/
+# o---o--|-o-|--o--|-o---o-----o
+#        |   |     |
+#      o-o---X-----o-o
+#            |
+#          - o -
+#
+* Whole area is very bright
+* Guards, sentries & archers are randomly aggressive.
+
+Citadel:                 Lvl    Xp ASWIDMX # agg      Hp        Gold     Special
+The horse                 20  550k N-----    --    454-457       0-0     [---]
+The reveller              22  770k G-x--x    --    508-516    2231-2266  [human], flees
+The bather                25 1050k G--x--    GN    603-606     375-415   [elf], sitting, no-summon
+The guest                 25 1050k G----x    --    606-608     366-402   [human], sitting
+The servant               25 1050k G----x    --    606-608     359-381   [elf]
+The cook                  30 3300k G----x    --E   750-772     690-820   [human]
+The wincher               45   23M G--x-x    --   1796-1803   5698-6149  [human], bash, kick, headbang, berserk
+The blacksmith            50   45M G----x    --   2297-2323   6343-6361  [human]
+The sleepy guard          52   44M G-4xx-    --   2774-2804   6683-6734  [elf], sleeping, bash, kick, headbang, berserk, random-agg-GN?
+The sentry                55   47M G-xx x    ---  3475-3565   6872-7112  [elf], bash, kick, headbang, berserk, random-agg-GNE
+The archer                57   57M G--x -    --   3956-3969   7345-7542  [elf], bash, kick, headbang, random-agg-GN?
+The guard                 60   72M G-xx x    ---  4760-4804   7757-8229  [elf], bash, kick, headbang, berserk, random-agg-GNE
+The elite guard           62   77M G--x x    --   5459-5508   8144-8198  [elf], bash, kick, headbang, berserk
+The laen golem            65  110M G--x -    --   6518-6530   8387-8631  [entity], bash, kick, headbang, no-summon, +750k coins
+The mithril golem         65  110M G--x -    --   6535-6918   8344-8880  [entity], bash, kick, headbang, no-summon, +750k coins
+Lady Nydethiel            70  140M Gx-x x    --               9462-9491  [elf], powerheal, blindness, wither, harm, +1.2M coins
+Lord Ceanyth              80  880M Gx-x x    --E 17980-18010 10984-11454 INFO, [elf], force bolt, mass pain, fireball, plasma ball, plasma bolt, 2-2 spells, +3M coins

@@ -1,0 +1,62 @@
+# The Citadel of the Order (341): 45-100, Arcane/Fanth  (Sundhaven: 6es2es3ese3n2e4s3es3wn)
+* FIND OUT: a pair of black steel leggings    Templar guard (exists?)
+* FIND OUT: Lvl 4 (templar part) has min level 0/2-0/37
+* FIND OUT: The Templar guard                    Xp
+* FIND OUT: The ghost of Irokis                  money
+* FIND OUT: The Dark Paladin Master-of-Arms      xp, money, money
+* FIND OUT: The Dark Paladin grand master        xp
+#
+# o - o - o - o - o - o - o - o - o               o                       o
+# |                               |              /                       /
+# o                 o - U - o     o             o                       o
+# |                 |   |   |     |            /                       /
+# o                 o - o - o     o           o - o - o - o - o - o - o
+# |      Lvl 1          +         |           |                       |
+# o                 o - o - o     o           o         Lvl 2         o
+# |                 |       |     |           |                       |
+# o                RIP  U   o     o           o   o   o +UD   o - o   o
+# |                     |         |           |   |       |   |   |   |
+# o             U - o - o - o - U o           o   o - o   o + o - o   o
+# |                     |         |           |   |   |   |   |   |   |
+# o                 U - o - U     o           o   o - o + o   o - o   o
+# |                     +         |           |           |           |
+# o                     X         o       o   D   o - o + D + o       D   o
+# |                     |         |        \  |                       |  /
+# o                     o -       o         o o                       o o
+# |                    /          |          \|                       |/
+# o - o - o - o - o - o - o - o - o           o - o - D - o - D - o - o
+#
+#       Lvl 3                    Lvl 4
+# o - o +UD + o - o        o -GM  UD MoA - o           o   Lvl 5       o
+# |   |   |                +       |       +          /               /
+# o - o   o + o - o        o + o   o   o - o         o   o - D - o   o
+#         |       +        +       +   +             |   |   |   |   |
+# o - o - o + o   o        o - o - o - o - o         o - o - o - o - o
+#     |   |                |   |   |   |   |         |   |       |   |
+# o - o   o + o - o        o - o - o - o - o       o o - o   o   o - o o
+#         +                        +                \|   |   +   |   |/
+#     o - o - o                    o                 o   o - o - o   o
+#
+* Almost all are vuln slay human.
+* Lvl 4 (templar part) has min level 0/2-0/37
+
+Citadel of Order:                 Lvl    Xp ASWIDMX # agg      Hp        Gold     Special
+A slimy leech                       5   10k N-x--     GNE    79-84        2-2     [amphibian], energy drain
+A hunting falcon                   10  110k N-x---    GNE   198-202       2-2     [bird]
+A big crocodile                    30 4500k N-x-x-    GNE  1087-1136      2-2     [animal]
+An initiate of the order           36   14M E-x-x-    GN   1921-1965   2032-2053  [human]
+A Dark Paladin of the first ring   41   16M E-xxx-    --   2253-2431   5031-5045  [human]
+A Dark Paladin of the second ring  46   23M E-xxx-    --   2186-2506   7028-7052  [human], harm, blind
+A Dark Paladin of the third ring   50   42M E-xxx-    --   2376-2650  20037-20044 [human], harm, powerheal, powerharm, blind, str=14
+A Dark Paladin of the third ring   51   48M E-xxx-    --   3251-3398  20038-20058 [human], fireball, Meteor Swarm, Blindness, Harm (does NOT cast healing spells)
+An evil paladin knight             52   52M E-xxx-    --   3399-3428  30225-30232 [human], powerharm, blind (does NOT cast healing spells)
+A Dark Paladin of the fourth ring  56   69M E-xxx-    --   4455-4716  50093-50104 [human], powerharm, blind, powerheal
+A bronze golem                     57  114M Nx-xx-    --   4055-4940      1-1     [magical], bash, kick, headbang
+A Dark Paladin knight              62  122M Exxxx-    --              65765-65765 [human], powerheal, powerharm, blind
+A Paladin knight                   65  130M Ex-xx-    --   3048-3301  30209-30258 [human], blocker, powerharm, blind
+A steel golem                      68  258M Nx-xx-    --  13779-14249     2-2     [magical], bash, kick, headbang, berserk
+A templar                          71  234M Exxx      GNE 12010-12011 65751-65888 [human], blocker, powerheal, harm
+The Templar guard                  75       Ex x      GNE 12585-14295 66551-67120 INFO, [human], bash, kick, headbang, berserk
+The ghost of Irokis                87       Gx-x x    ---                 2       INFO, [insubstantial], shrugger, mira
+The Dark Paladin Master-of-Arms    90       Exxx      GN                          INFO, [human], harm, blindness, powerheal, wither, 1-1 spells
+The Dark Paladin grand master      95       Exxx  3   GNE   ~40k      66874-66884 INFO, [human], blocker, harm, wrath of god, trueheal, area wither, 1-2 spells

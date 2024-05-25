@@ -1,0 +1,218 @@
+
+Leronah the Questmaster @ temple cities (walk-path: Karandras-5s -> Ofcol-4s -> Solace-n -> Kerofk-3s4e -> Karandras, moves to a new town every 6 ticks
+  # 1      Daily-quest
+
+Sleeping with pathweaver wielded (random time)
+  # 1 (PW5)Soulweavers                                
+
+Phorius Gobee             - Lumberjack Forest
+  # 1         A journey in time   (S)                 
+  # 2         Banish the demons   (G)                 
+  # 3         Hero                (G)
+
+The Duchess of Alchor @ Alchor
+  # 1      A song for somber eyes                     
+
+Allanon the Priest @ Karandras
+  # 1      We suck young blood (*) (S)                
+
+Skinner, the skinner @ TradeRoad
+  # 1      Snakes for the Bitten (G)                  
+  # 2      Snake Lubricant     (S)                    
+
+Mr Toad                   - Faery Forest
+  # 1     The Lab Rat's Lament (*)                    
+  # 2     Fillet o' Fly        (*)                    
+  # 3     Egg Exchange         (S)                    
+
+Ourip, Priest of the Righteous Order - walking around in New Thalos
+  # 1      The Pride of the Fallen (G)                
+  # 2      Bringing out the Lazy                      
+  # 3      And man did covet what he saw              
+  # 4      Feast until you Drop                       
+  # 5      That which is yours should be mine!        
+  # 6      All your gold are belong to me             
+  # 7      The Wrath of the Fallen Angel              
+  # 8      Psalms of the Forgotten Gods (S)           
+
+The Elderly Drow Herald   - Guallidurth
+  # 1      The Uninvited Guest (G)                    
+
+Blenok the mechanical goblin - Drakyri
+  # 1      Paranoid Android    (S)                    
+  # 2         Life Assurance           (S)
+
+Lord Eowaran the banished K'ta'viiri druid - Druid Forest
+  # 1      Come Home           (*)                    
+
+Mulak                     - Daycare
+  # 1      The Strange Weapon  (G)                    
+  # 2      The strange ring    (S)                    
+  # 3      The strange gauntlets (S)                  
+  # 4      The strange bug     (S)                    
+  # 5      The strange shield  (S)                    
+  # 6      The strange breastplate (G)                
+  # 7      The strange boots   (G)                    
+
+Haebeth                   - Myrridon, Commoners House
+  # 1      My sweet prince     (G)                    
+  # 2      Where I end and You begin (G)
+
+The Lieutenant of the Karandras cityguard    - Karandras, 2 west of FS
+  # 1      Express Mail        (S)                    
+  # 2      An Urgent Message   (S)                    
+  # 3      Safe Storage        (S)                    
+  # 4      A Cityguards Duties (S)                    
+  # 5      Lunchtime!          (S)                    
+  # 6      Important Errands   (G)                    
+
+Kue                       - Inside house in northern Ofcol
+  # 1      Diamonds are Forever (*) (S)               
+  # 2      You Only Live Twice (*) (S)                
+
+Professor Gazinki         - HT
+  # 1      Midget Magic        (*) (S)                
+  # 2      They Shined so Bright (S)                  
+  # 3         Which Book?              (S)
+
+Quimon                    - High Tower of Sorcery
+  # 1      The Archmage's brew (S)                    
+  # 2      My Precious         (S)                    
+  # 3      Hail to the Thief   (*) (S)                
+  # 4      Tired young man     (*) (S)                
+
+Sir Jarrod Edgeworth      - High Clerists Tower
+  # 1      Terrors from the Past (*) (S)              
+
+Evilyn Shae-Veynslith     - Darkfriends
+  # 1      The Darkeye Assignment (*) (S)             
+  # 2      The Chalice of Death (*) (S)               
+
+The Kings servant         - walking around in Sundhaven
+  # 1      Rebirth of a King   (*) (G)                
+
+Rasmuss the Court Mage    - King's Castle
+  # 1      Hit the Jackpot     (*) (G)                
+
+Zagr K'fel                - Darkfriends
+  # 1      Dire Reflections    (*) (S)                
+  # 2      Erid Reflections                           
+  # 3      Black Milk                                 
+
+Iglaus                    - Kerofk
+  # 1      Jambalaya that goes bump in the night (S)  
+
+Relyar Aspenwind          - New Thalos
+  # 1      An Air for Yesterdays (S)                  
+  # 2      Trial by Fire       (S)                    
+  # 3      Peace of mind       (S)                    
+
+A wise alchemist          - Elven Village
+  # 1      The deserted room   (S)                    
+  # 2      The missing ingredient (S)                 
+
+Gryshk                    - Entrance to the Reception @ Karandras
+  # 1      Destroy the threat from the skeletons (S)  
+  # 2      The gods are punishing us! (S)             
+  # 3      The World is my Canvas (S)                 
+  # 4      The Green Thumb     (S)                    
+  # 5      The Killer Bee      (S)                    
+  # 6      A Heart of Stone    (S)                    
+  # 7      Payback             (*) (G)                
+
+Mulwig Knotheels          - Humblin
+  # 1      The spaghetti incident? (S)                
+  # 2      Knockin' on Heaven's Door (S)              
+  # 3      Hair of the Dog     (S)                    
+
+The Herald                - walking around in Palanthas
+  # 1      Bandit Country           (S)
+  # 2      Daughterly Decisions    (S)                
+
+Gribbons                  - Mob Factory
+  # 1      Chickenlover        (S)                    
+  # 2      Good Night          (S)                    
+  # 3      Don't Let the Bed Bugs Bite (G)            
+
+Samuel                    - The lodge @ entrance to Taon
+  # 1      Teaching an old warrior new tricks (S)
+  # 2      The Sword in the Stone (S)                 
+
+Sir Kayodin               - Northern Plains
+  # 1      The Unicorne's Brew (*) (S)                
+  # 2      Release the hounds! (S)                    
+
+Eindenlal                 - Museum
+  # 1      End thy life.       (S)                    
+
+Sexrex the fisherman      - Oceania
+  # 1      It's a dogs life         (S)
+  # 2      Floating away...    (S)                    
+  # 3      Catch a Bloater     (S)                    
+
+Deidra                    - Small House in Ofcol
+  # 1      The missing love    (S)                    
+  # 2      The Mother of Wolves (G)                   
+  # 3      A Troubled Childhood (S)                   
+  # 4      Theft of a Memory   (S)                    
+
+Dr Olrik Seppelbaum       - Ofcol
+  # 1      Son of Satan        (G)                    
+
+Archibald Jolten          - walking around in Shaolin Temple/Crystamir Lake
+  # 1      Retribution         (S)                    
+
+Riddling Rover            - Random
+  # 1      Another One Bites the Dust  (S)            
+  # 2      Pirates delight             (S)            
+  # 3      The Sea Spider's Web        (S)            
+  # 4      Seasonal Weaponry           (S)            
+  # 5      Riddle in a Bottle          (S)            
+  # 6      A Sandstorm of Memories     (S)            
+  # 7      Hymn for the Hearth (S)                    
+  # 8      A Broken Neck       (S)                    
+  # 9      Blue Blood          (S)                    
+  #10      Marie's Meal        (S)                    
+  #11      Treasure of the Blind (S)                  
+  #12      Toads in the Hole   (S)                    
+
+Taylor the farmer         - A small farm @ outside Palanthas
+  # 1      Rainbow after the Rain (G)                 
+
+Fravir the Mkbqxtpqxbf    - The Demonslayer Inn @ Palanthas
+  # 1      The eternal night   (G)                    
+
+Demeter                   - Olympus
+  # 1      Chicken of the Sea       (G)
+  # 2      To the shores of Hell and back. (G)        
+
+Hianor the town crier     - Solace
+  # 1      Serve the Queen     (G)                    
+  # 2      Twisting by the Pool (S)                   
+  # 3      Ride Across the River (S)                  
+  # 4      Retrieve The Relic  (G)                    
+  # 5      Hunters hunted      (S)                    
+  # 6      Crisis at Inglestone (S)                   
+
+Salik the covert assassin - Underdark
+  # 1      Expose the Outlaw   (G)                    
+  # 2      Smuggle the Symbol  (G)                    
+
+Thanalos Stormfeld        - Kerofk
+  # 1      The Captured Leader (G)                    
+  # 2      Shadowy Encounters  (G)                    
+  # 3 (PW1)Weavers of Destiny   (G)
+  # 4 (PW3)Weavers of Knowledge (G)                   
+  # 5 (PW4)Stormweavers         (G)                   
+
+Haldur son of Haldir      - near King's Castle
+  # 1      The book of immortality (*) (G)            
+  # 2      the Son of the King (G)                    
+
+Nerwren                   - King's Castle
+  # 1      Return the crown jewels (S)                
+  # 2      Peters Big Meal     (S)                    
+  # 3 (PW2)Unweaving Secrets   (G)                    
+
+Halewig Thorvan           - Tournament
+  # 1         The Living Curse         (S)

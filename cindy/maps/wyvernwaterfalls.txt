@@ -1,0 +1,51 @@
+# Wyvern waterfalls (425): 10-35, Stryder  (Karandras: 10e10n2e8n2w)
+#
+#                       o - o   o - o   o
+#                           |   |   |   |
+#                       o - o - o   o - o   o
+#                       |       |   |       |
+#              Parang + o - o - o - o - o - o
+#                           |              /
+#                           o             v
+#                          /              o
+#                     o - o              /
+#                    /                  v
+#                   o                   o
+#                  /                   /
+#                 o--o--o             v
+#                /      |             o
+#           o-o-o       o            /
+#           |          /            v
+#   o   o - o       o-o             o
+#   |   |   |      /                |
+#   o - o   |     /             o - o - o
+#           o    /                  |   |
+#          /    o-o ------ o ------ o - o
+#         v       |
+#         o       o --- o --- o
+#        /       /           /
+#       v       v           /
+#       o       o          o
+#      /       /          /
+#     v       v          /
+#     o   o - o - o     o
+#     |   |   |   |    /
+# o - o - o - o - o-o-o
+#     |       |   |
+#     o       o - X -
+#             |
+#     Faery - o
+#     Forest
+#
+* Nice & safe lowbie area. All are vuln to slay dragon.
+
+Wyvern Waterfalls:       Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+A baby firedrake           5   13k N-x---    -     97-98      144-148  [dragon]
+A shy baby dragon          7   36k N-x---    -    141-141     334-334  [dragon]
+A fluffy baby griffon     10  110k N-x---    -    191-194     402-402  [dragon]
+A baby wyvern             14  277k E-x---    -    283-286     877-883  [dragon]
+A red-skinned firedrake   17  484k E-x---    -    356-356     434-434  [dragon]
+An elderly dragon         20  870k N-x---    -    415-449    1000-1007 [dragon]
+A friendly griffon        22  496k G-x---    -    507-509    1067-1074 [dragon]
+A fully grown wyvern      25 1871k N-x---    -    604-605    1541-1546 [dragon]
+An ancient firedrake      35 8400k N-x---    -    885-889    3343-3346 [dragon]

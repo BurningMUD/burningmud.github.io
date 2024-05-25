@@ -1,0 +1,24 @@
+# Burning Towers: 1-100, Bane  (Karandras: 3nws3dnu)
+#
+#              o                                               o
+#             /                                               /
+#            o                  CRIMSON                      o
+#           /                                               /
+#          o  GRAY                 o                BROWN  o
+#          |                       |                       |
+#   o  o - o - o - o   o - o - o - o - o - o - o   o - o - o - o      o
+#  /   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |     /
+# X -> o - o - o - o + o - o - o - p - o - o - o + o - o - o - o <- X
+#      |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+#      o - o - o - o   o - o - o - o - o - o - o   o - o - o - o
+#                                  +
+#                                blue p
+#                                   * ^
+#                                   | |
+#                                   v*
+#                            blue-cloud-red
+#                                   |
+#                                 green
+#
+* Must join a team to be allowed in the arena. Player killing allowed here.
+* No xp loss when dying. Made to look like Doom.

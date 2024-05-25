@@ -1,0 +1,112 @@
+# Astral Plane/Githyanki (212): 50-100, Andi/Klaaw (?/never?)  (Olympus: e3n2unu, enter portal)
+* FIND OUT: Map the maze
+* FIND OUT: Supposedly 7x7 (or 10x10) square at bottom, 3x3 (or 6x6) at lvl 2 and ?x? at lvl 3.
+* FIND OUT: Each level loops in all directions. Room 2n from entry has a bad exit south.
+* FIND OUT: unenenun also works as path through the maze?
+* FIND OUT: A huge boulder of glistening ice    elemental?
+* FIND OUT: A githyanki protector               hp
+* FIND OUT: A githyanki knight                  hp, money
+* FIND OUT: The enslaved red dragon             xp, hp, hp
+* FIND OUT: An evil gish                        xp, hp, hp
+* FIND OUT: The evil Mistress                   xp, hp, hp, irv:s
+#
+#                                Mistress
+#                                /   |
+#                               x   prot
+#                              o     +
+#                             x     warl
+#                         Torture    |
+#                         Master    warl    warl
+#                                    +       +
+#                        o       o - o - o - o
+#                        +       |       +   |
+#                        o - o + o + o   o   o + o    /--\
+#                        +       |           |   |   |    |
+#                    githzerai   |       o   o   o + o    |
+#                                |       +   |   |   |    |
+#                                o + o + o - o + o    \--/
+#                                    +
+#                                    o                        .
+#                                  |/                        .
+#                                - o -                        .
+#                                 /|                        .
+#                              |   |                        .
+#                            - o - o -                        .
+#                              |   |                          .
+#                          |   |                             .
+#                        - o - o -                            .
+#                          |   |                              .
+#                          |/                                .
+#                        - o -                                .
+#                         /|                                 .
+#                        /                                   .
+#                       /                                   .
+#                     |/  |                                  .
+#                   - o - o -                                 .
+#                    /|   |      |               |            .
+#                         |     -o-            - o -          .
+#                         |      |   |           |    |/     .
+#                       - o ---- o - o -       - o -- o -     .
+#                         |      |\  |     |     |   /|      .
+#                                | \     - o --- o -          .
+#                          |    /  |       |     |            .
+#                         -o------ |       |     |             .
+#                          |       |       |     |               .
+#                                  |       |     |                 .
+#                      |     |     |       |     |     |     |        .
+#                    - o --- o --- o ----- o --- o --- o --- o -         .
+#                      |     |     |       |     |     |     |          .
+#                      |     |     |       |     |     |     |          .
+#           |     |    |     |     |       |     |     |     |   |      .
+#         - o --- o -- o --- o ----o------ o --- o --- o --- o - o -    .
+#           |     |    |     |     | \     |     |     |     |   |      .
+#           |     |    |     |     |  *    |     |   - o -            .
+#           |     |    |     |     |   X   |     |     |            .
+#           |     |    |     |     |  /|   |     |                .
+#           |     |    |     |     |       |     |                .
+#         - o --- o -- o --- o --- o ----- o --- o -            .
+#           |     |    |     |     |       |     |            .
+#                      |     |     |       |     |         .
+#                     -o-   -o --- o ----- o --- o -       .
+#                      |     |     |       |     |        .
+#
+* Messy maze with loads of aggressive mobs.
+* Entrance to Giths: 2nwnwunenenun
+* large floating mass - electricity, glowing celestial particles - dark
+* warlock - magic, githzerai - unlife, dragon - slay dragon
+* Torture Master - pure/light/silver/wood, vampiric bat - ONLY area spells!
+
+Astral Plane:                               Lvl    Xp ASWIDMX # agg      Hp         Gold      Special
+An Immense guardian                          60  120M N--xx-    --   4001-4001  130224-130264 [astral], vuln bleed, aware
+A colossal body of hardened celestial matter 65  132M N-xx      GNE             192717-193751 [elemental], vuln electricity, immune earth/wood, ignore-cop, meteor swarm, meteor blast, low AC
+A huge boulder of glistening ice             65  131M G-xx  1   GN              188633-189579 [elemental?], vuln fire/light, immune ice, resist dark/mental/water, 7-7 attacks, ignore-cop, ice storm, triad of ice, 1-1 spells
+A massive blast of fire                      70  228M E-xx  1   GNE             196491-196568 [elemental], vuln ice, immune fire, resist water, ignore-cop, 7-7 attacks, hell storm, triad of fire, 0-1 spells, sneak
+A warlock of the Gith                        70  700M Exxx      GNE 28743-28750 290051-290060 [---], vuln magic/bleed, dodge, area hell fire, triad of fire, 1-1 spells, invis
+An imprisoned githzerai                      75  376M N-xx       N                   1-1      [---], vuln unlife/bleed, harm, wither, meteor blast, blindness, powerheal, confusion, mass pain, powerword pain
+A tortured mindflayer prisoner               75  376M N--x -2    -                   1-1      INFO, [---], vuln unlife/bleed, blindness, mass pain, powerword pain, confusion, meteor blast, wither, harm, powerheal, flees
+A cluster of glowing celestial particles     80       Nxxx  3    -              164116-164119 [entity], vuln dark, immune light, sun arrow, sun ray, ignore-cop, sneak
+A githyanki guardian                         80 1440M E--x x    --- 30030-30033 200079-200120 [---], vuln bleed, backstab (60), 1-2 skills
+A githyanki protector                        80 1920M Exxx  2   GNE 37107        11179-11411  INFO, [---], vuln bleed, immune magic, resist fire/ice/earth, dodge, kick, whirlwind, 1-2 skills, ignore-cop
+  +3 ser.scim:   29 hits out of 29:100%  (hr 11+34+3=48)
+  +3 hammer:     22 hits out of 23: 96%  (hr 12+34+3=49)
+A large floating mass                        80 1281M Nxxx  2   ---             164116-166066 [elemental], vuln electricity, immune earth, earth damage, meteor blast, meteor swarm, ignore-cop, sneak
+A githyanki knight                           90 1800M E-xx x    --  48133.5      12989        INFO, [---], vuln bleed, immune magic, resist fire/ice/light, parry, shrugger, ignore-cop, kick, whirlwind, 0-2 skills
+The enslaved red dragon                      95       Ex-x x3   --              600121-600124 INFO, [dragon], parry, area hell fire, triad of fire, mass pain, 2-2 spells, 7-7 attacks
+  +3 hammer:     12 hits out of 13: 92%  (hr 12+34+3=49)
+An evil gish                                 95       Exxx x    G-              430146-430151 INFO, [---], vuln bleed, resist electricity, area hell fire, area lightning bolt, 1-1 spells
+  +3 hammer:     30 hits out of 30:100%  (hr 12+34+3=49)
+The evil Mistress of the Gith                95       Ex-x       NE             890715-890796 INFO, [???], resist spells?, area wither, mass pain, area vampiric touch, hurricane (67), powerword kill, area blindness, 1-2 spells
+  +3 ser.scim:   29 hits out of 35: 83%  (hr 11+34+3=48)
+  +3 hammer:      8 hits out of  9: 89%  (hr 12+34+3=49)
+                                                obli anni vapo pulv atom ultr
+  Plain:   WEAPON                     avg 22          
+  ???:     SLASH, BLEED               avg 22               19   10
+  Hammer:  CRUSH  NORMAL SLAY Dragon  avg 24           8
+The Torture Master of the Gith              100       Ex   -4   ---             701454-701528 INFO, [vampire], dodge, backstab, area wither, area powerword pain, area hell fire, area blindness, 2-2 spells/skills, 9-? attacks, ???/70 dam per attack, negate sanc 3/7 times (43%), imp, special-transform-to-bat
+  2 backstabs + 3 ***U*L*T*R*A*** = 908 dam
+  +3 ser.scim:      1 hits out of  5: 20%  (hr 11+34+3=48)
+  +3 Deathbringer:  2 hits out of  4: 50%  (hr 11+34+3=48)
+  +3 Deathbringer:  8 hits out of 27: 30%  (hr 11+34+3=48)
+  +8 rod:           4 hits out of 11: 36%  (hr 12+34+8=54)
+  +3 WoJ:          13 hits out of 27: 48%  (hr 12+34+3=49)
+A vampiric bat with HUGE wings              100 6001M Ex   -3   ---                         powerword pain, transformed from Torture Master, transforms back after a while, immune WEAPON, immune single-target spells, immune light?, (plasmaball, hellstorm & masspain does normal damage against him), dodge, triad of ice, area vampiric touch, area hell fire, area powerword pain, 3-3 spells

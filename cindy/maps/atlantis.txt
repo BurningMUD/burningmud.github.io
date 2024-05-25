@@ -1,0 +1,66 @@
+# Atlantis (53): 5-50, Torain  (Atlantis: -)
+#
+#             o + o - o
+#            /    |   |
+#           o     o - o         King
+#           |     |   |           |
+#       o - o - o o - o      Gs - o - Ms
+#       |       | |   |           |
+#       o Velya+o |   |       o - o - Ws
+#       |       | o - o           |
+#       o       o |   |           X
+#                 |   |           |
+# o - o - o - o - o - o - o - o - o - o
+# |   |   |   |   |   |   |   |   |   |
+# o - o - o - o - o - o - o - o - o - o
+# |   |   |   |   |   |   |   |   |   |
+# o - o - o - o - o - o - o - o - o - o         X
+# |   |   |/  |   |   |   |   |   |   |        /|
+# o - o - a - o - o - o - o - o - o - o       a o
+# |   |   |   |   |   |   |   |   |   |         |
+# o - o - o - o - o - o - o - o - o - o       - o -
+# |   |   |   |   |   |   |   |  /|   |
+# o - o - o - o - o - o - o - o-/-o - o
+#                              /
+#                       o - o-/-o
+#                       |   |/  |
+#                       o - o-Clam
+#                       |  /|   |
+#                       o-/-o - o
+#                        /
+#                       o-o-Neptunus
+#
+* Shops open at 5 am and close at 10 pm.
+* There are a few aggies in the area.
+
+Atlantis:            Lvl    Xp ASWIDMX # agg     Hp         Gold        Special
+The sea urchin         3  3000 N-----    --    59-64         0-0        [fish]
+The bright fish        5   12k G-x---    --    98-99         0-0        [fish], flees
+The small fish         5   12k G-x---    --    97-102        0-0        [fish]
+The anemone            6   24k N-----    --   117-121        0-0        [fish]
+The eel                6   24k E-x--     --   122-123        0-0        [snake]
+The nymph              7   35k G-x---    --   137-143      544-634      [fairie], flees
+The stingray           7   35k E-x---    --   137-145        0-0        [fish]
+The seahorse           8   60k G-x---    --   156-165        0-0        [---]
+The big fish          10  110k G-x---    --   196-202        1-1        [fish], flees
+The electric eel      10  110k E-x---    --   195-208        1-1        [snake]
+The mermaid           10  110k G-x--x    --   193-210     1001-1001     [---], flees
+The sea zombie        10  110k E-----    GN   191-206        1-1        [undead]
+The giant eel         12  156k E-x---    GN   239-243        1-1        [snake]
+The giant lobster     12  156k E-x---    GN   237-245        1-1        [fish]
+The giant clam        15  255k N-----    GN   291-309        1-1        [fish]
+The manta             15  255k E-x---    --   294-308        1-1        [fish]
+The triton            15  255k G-x--x    --   292-306     1501-1501     [---]
+The octopus           18  414k G-x---    --   381-399        1-1        [fish]
+The great white shark 20 1500k E-x---    GN   437-608        1-1        [fish]
+The hammerhead shark  20  600k E-x---    GN   437-463        1-1        [fish]
+The squid             20  600k E-x---    --   439-457        1-1        [fish]
+The dolphin           22  880k G-x---    --   501-513        1-1        [fish], flees
+The giant squid       25 1500k E-x---    GN   607-611        1-1        [fish]
+The triton king       25 1500k Gx-x-x    --   614-625    20001-20001    [---], flees
+The velya             35 7700k E--x-x    GN   913-915    10001-10001    [vampire], energy drain
+The blue whale        40   13M G-x---    --  1280-1323       1-1        [fish], save 7
+The shopkeeper        50       G--       --                             shopkeeper
+The weaponsmith       50       G--       --                             shopkeeper
+The nymph mage        55       G--       --                             shopkeeper
+Neptunus              80  960M G--xxx0   -- 17810-17820 1000001-1000001 INFO, [mythical], hide, poisoned, lightning breath (60), 5-5 attacks, thac-39 11, 14248+ hp withered

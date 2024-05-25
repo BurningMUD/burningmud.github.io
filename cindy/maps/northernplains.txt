@@ -1,0 +1,31 @@
+# Plains of the North (100): 1-25, Copper  (Ultima: 3ndne2n2ene)
+#
+#                                 |
+#                                 o
+#       Upper                     |
+#       Argo                  o - X
+#         |                   |   |
+#     o - o - o - Q ----- o - o-o-o
+#     |   |       |       |       |
+# o - o - o       o - o - o       |
+#     |   |       |               o
+#     o - o ----- o ----- o       |
+#     |   |       |       |       |
+#     |   |Ultima o       |       o-Mustaine
+#     |   |/      |       |       |   |
+#     o - o ----- o - o - o       o   |
+#     |   |       |   |           |   |
+#     o - o - o - o  RIP          o-o-o-o-o
+#                                        /
+#                            Shudde-o-o-o
+#                            M'ell      |
+#                                       o
+#
+* Just watch out for that little DT
+
+Northern Plains:         Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+The cute rabbit            1   116 N-x--     --    28-34       21-21   [animal]
+Sorbus the Hermit          5  9150 N----     --    99-140      38-41   [human], sitting
+Aruncus the Druid         15  260k E-xx--    --   301-308    2954-2960 [human], flees
+Shudde-M'ell              25 1444k E--x--    GN   616-650    4912-4938 [dragon]
+Sir Kayodin               60       N--x x    ---             4701      questmaster, no-attack, imp, hell storm, wither

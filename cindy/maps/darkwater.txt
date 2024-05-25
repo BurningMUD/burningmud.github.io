@@ -1,0 +1,52 @@
+# The darkwater dungeons (360): 30-100, Stryder  (Sundhaven: 2w4n3wnu3w2n4d)
+* FIND OUT: The Kracken     xp, hp, hp, gold, resist unlife?/earth?/air?
+#
+#         o
+#        /|
+#       o o                            o - o
+#      /  |                                |
+#     o   o -                              o   o
+#    /                                     |  /|*
+#   o                              o - f <-|-/ | \
+#  /                               |       |   +  \
+# X - o - o ------- h -------- o - o - o - o   |   \
+#         |                    |       |       |    \
+#         o                    |       | o o - o     \
+#        /                     |       |/|x           \
+#       o - o     o            |       o o             \
+#           |    /|            o                        \
+#       o - o o o |            |                        |
+#           |/| | |      /-----|------------------King--/
+#           o o---o---o  |     |                   /
+#               |     |  |     o --+-- o       |   |
+#         RIP - o   o-o  |     |      x    RIP-o-o |
+#               |   |    v     o  Kracken        | v
+#               o --|--- o     |              -Oceania-
+#                   |   x  o - o - RIP
+#              o <- o  /       |
+#             /     |  \-> o - o
+#            v      o
+#            h      |
+#                   o
+#                  /
+#        f <-*o <--
+#
+* Whole area is very bright
+* Some aggies, but they don't see invis. Most are vuln slay human.
+* Kracken is vuln acid if using "Hide of the Kracken"
+
+Darkwater Dungeon:Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+A Merman           25 1975k N-x---    --   601-610     400-400   [human], flees
+An urchin          27 2565k N-x---    --   661-670     384-386   [human], sitting, poisoned
+A Nautilus         29 3335k N-x---    --   711-748       1-1     [human], flees, sneak
+An aquatic         31 4340k N-xx--    --   794-817    2000-2000  [human], sitting
+A green argonaut   33 5940k E-xx-x    --   826-828    3000-3000  [human], imp
+A blue argonaut    35 7875k E-xx-x    --   910-924    2500-2500  [human], imp
+A red argonaut     37   11M N-xx-x    --  1016-1024   6000-6000  [human], imp
+A black argonaut   39   13M E-xx-x    --  1182-1205  11000-11000 [human], imp
+A giant squid      41   16M N- - -    --  1249-1250      1-1     [fish], sitting, poisoned, water-living, blindness
+An Argrok          44   23M E-x---    GNE 2128-2164  15000-15000 [human], bash, kick, headbang
+A Fabled argonaut  46   25M Exxx-x    --  2201-2201  22000-22000 [human], imp, sneak
+Argotann           50   44M Ex---x    GNE 2293-2319  40000-40000 [human], imp, hide
+The Argonaut King  75  450M Ex-x x    -- 12215-12393 65619-65679 [human], NOT sitting, imp
+The Kracken        99       Ex-x      GN             65536       INFO, [mythical], resist unlife?/earth?/air?, vuln acid if using "Hide of the Kracken", blocker, special-tail-strike

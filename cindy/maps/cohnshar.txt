@@ -1,0 +1,87 @@
+# The Oasis of Cohn Shar (285): 20-100, Faunus  (Crossroad: 2nen2en3en2en2es2es2en3enwnw3nw6ne2ne2ne2nenwn)
+* FIND OUT: A Frog                      Level,       irvs, xp, align, sanc, walk, di, see dark, agg, hp, hp             and desc
+* FIND OUT: A Gnat                      Level,       irvs, xp, align, sanc, walk, di, see dark, agg, hp, hp, gold, gold and desc
+* FIND OUT: A Locust                    Level(1-77), irvs, xp,              walk, di, see dark, agg, hp, hp             and desc
+* FIND OUT: Medjai Warrior (summoned)   human?, vuln light?/iron?, immune unlife?, resist magic?/dark?, circlestab?, revenger?, berserk?, adrenal focus?
+* FIND OUT: Ghalotiri                   xp, hp, hp, money, sumout?, hunt?, irv:s (especially unlife?/magic?/dark?)
+* FIND OUT: Tirises the Pharaoh         xp, walk, hp, hp, type, irvs, locust plague name, frog plague name, nr of frogs summoned
+* FIND OUT: Key to Et. of Bliss: Dissolves?
+#
+#             _________________
+#            /                 \
+#   o       o           o      |               Tirises
+#  /        |          /       |                 +
+# o--o-o-o--o--o-o-o--o        |             Ghalotiri
+# |         |         |        |                x
+# o    As - o - Ws    o        |       o---o-o-o---o-o-o
+# |         |         |        |       |   |   |       |
+# o-o-o-o-o-o-o-o-o-o-o        |       o o-o-o o-o-o   o
+# |         |         |        |       |   |   |   |   |
+# |    Ts - o - Cs    |        |       o   o   o o-o-o o
+# |         |         |        |       |   |   |   |   |
+# o     o-o-o - Fs    o        |       o   o-o-o o-o-o o
+# |         |         |        |       |       |       |
+# | o       o         | o      |       o---o-o-o--o-o--o
+# |/        |         |/       |               +
+# o--o-o-o--o--o-o-o--o        |               o
+#           |                  |               |
+#           o                  |               o
+#           |                  |               |
+#           o                  |               o
+#           |                  |               |
+#         o-o                  |               m
+#         |                    |               |
+#         o                    |               o
+#         |                     \_____________/
+#         X
+#         | |
+#         o-o
+#           |
+#
+* Whole area (except entrance path) is very bright
+* Warriors are vuln slay human/iron/light
+
+Cohn Shar:                         Lvl    Xp ASWIDMX # agg     Hp        Gold       Special
+The Shopkeeper                       1       N--       ---                          shopkeeper
+The Trader                           1       N--       ---                          questmaster, no-attack, sitting, walk-path (east, wait 10-100 seconds, west, wait 257 seconds, ...)
+A Frog                               ?                                    1-1       [???], summoned
+A Gnat                               ?                                              [???], summoned
+A Locust                          1-77       N-                           1-1       [???], summoned
+A sleepy traveller                  30 3466k N-x---    --   780-790    4790-4798    [human], sitting
+A tired shopper                     30 3466k N-x---    --   772-781    4793-4816    [human], sitting
+A tired trader                      30 3466k N-x---    --   784-789    4797-4803    [human], sitting
+A Distant Trader                    35 7805k N-x---    --   902-906    4241-4276    [human]
+An Eastern Trader                   35 7805k N-x---    --   890-903    4181-4213    [human]
+An Egyptian Trader                  35 7805k N-x---    --   888-894    4172-4379    [human]
+A Local Shopper                     35 7805k N-x---    --   914-915    4430-4382    [human]
+A Northern Trader                   35 7805k N-x---    --   904-921    4192-4230    [human]
+A Southern Trader                   35 7805k N-x---    --   903-906    4214-4363    [human]
+A Western Trader                    35 7805k N-x---    --   905-929    4328-4425    [human]
+A Sneaky Thief                      40   16M E-x---    --  1399-1403  14760-14810   [human], hide, sneak, backstab (200)
+A Medjai Warrior (summoned)         69                                    1-1       [human?], vuln dark/light?/iron?, immune blind/unlife?, resist magic?/dark?, summoned, whirlwind, assassinate, circlestab?, 6-6 attacks?, revenger?, berserk?, adrenal focus?
+                                         Obli Anni Vapo Pulv Atom
+    WEAPON DARK           avg 23:                         6    6
+A Medjai Warrior (looking)          80 1153M N--xxx2   ---           251115-251285  [human], vuln iron/light, immune blind/unlife, resist magic/dark, 6-6 attacks, revenger, berserk
+A Medjai Warrior (overseeing)       80 1153M N--xxx2   --- ~25k      251110-251313  [human], vuln iron/light, immune blind/unlife, resist magic/dark, 6-6 attacks, revenger, adrenal focus, AC -50
+A Medjai Warrior (prot.gates)       80 1153M N--xxx4   ---           251200-251558  [human], vuln iron/light, immune blind/unlife, resist magic/dark, 6-6 attacks, revenger, berserk, adrenal focus, special-block-north (throw to m)
+A Medjai Warrior (prot.palace)      80 1153M N-xxxx4   ---           251117-251467  [human], vuln iron/light, immune blind/unlife, resist magic/dark, 6-6 attacks, revenger, berserk
+A Medjai Warrior (resting)          80 1153M N--xxx2   ---           251174-251367  [human], vuln iron/light, immune blind/unlife, resist magic/dark, 6-6 attacks, revenger, NOT sitting, berserk
+Ghalotiri, the leader of the Medjai 95       N--x -    ---           165535         INFO, [human?], NOT vuln iron, NOT immune unlife, how about unlife?/magic?, dodge, shrugger, backstab, circle, murder, 3-5 skills, 7-7 attacks, summons 5-9 Medjai Warriors when he dies, room is noflee but recallable
+  +3 unknown:    14 hits out of  16: 87%  (hr 11+34+3=48)
+  +3 dark:       17 hits out of  19: 89%  (hr 12+34+3=49)
+                                         Obli Anni Vapo Pulv Atom
+    PIERCE IRON,          avg 20:                    3
+    CRUSH  SLAY Human     avg 25:                    6   14
+    PIERCE IRON           avg 20:                   99
+    PIERCE UNLIFE         avg 26:                        14
+    WEAPON DARK           avg 23:                   10    7
+Tirises the Pharaoh                100       E- x  1 1 GNE          4498511-4505049 INFO, vuln pure if using "malicious leggings of torment", resist ice if using "defiled body of a paladin", dodge, area powerword blind, special-plague: (draw blood = 5 x vampiric mist, boils = 4 x burning hands, hail = 3 x ice storm, flies = 2 x deadly swarm, ??? = summon 3-4 Locusts, ??? = ? x summon ?-? Frogs, gnats = summon 7 Gnats, death = 3 x deathspell), 1-2 plague per round, casts plague of death only when he dies
+  +3 unknown:     0 hits out of   4:  0%  (hr 11+34+3=48)
+  +8 unknown:    14 hits out of  23: 61%  (hr 11+34+8=53)
+  +3 unknown:     3 hits out of  36:  8%  (hr 11+34+3=48)
+  +3 WoJ:         6 hits out of  22: 27%  (hr 12+34+3=49)
+                                         Obli Anni Vapo Pulv Atom
+    WEAPON                avg 22                    14
+    WEAPON PURE           avg 22.5                        3      (leggings)
+    WEAPON PURE, LIGHT    avg 21                          4    2 (leggings)
+    WEAPON PIERCE UNLIFE  avg 26

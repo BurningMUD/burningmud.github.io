@@ -1,0 +1,40 @@
+# HAON-DOR-DARK (61): 1-100, DikuMUD  (Karandras: 10wn3wswswn12w)
+* FIND OUT:   A huge, ancient oak tree      xp, hp, hp, money, irv:s
+#
+#                             o--o+o
+#                             |   /
+#                             |  o
+#                             o  |
+#                             | Druid
+#                             |
+#    Yggdrasil  Arachnos      X-o-o-o-
+#        |         /          |   |
+# Secret |    RIP-o-o----o----o   o
+# Garden |          |         |   |
+#    +   |          o         o-o-o
+#    o   | Dragon   | Earthsea  |
+#    |   |   |      |   |       |
+#    o---o-o-o   o--o---o     o-o------o
+#          |     |      |     |        |
+#          o-o-o-o  o---o-----o        o
+#                |  |                  |
+#                o--o---o       o------o
+#                |  |   |       |      |
+#                     Troll  Ancalador
+#                      Den
+#
+* Trees are vuln acid
+
+Haon-Dor:                   Lvl    Xp ASWIDMX # agg      Hp         Gold     Special
+A fat worm                    3  3000 N-x---    --     59-62         0-0     [animal], flees
+The large, black wolf         3  3300 E-x---    --     59-64         0-0     [canine]
+The large, grey wolf          3  3300 E-x---    --     55-64         0-0     [canine]
+The ferocious warg            5   14k E-x--     GNE    96-109        0-0     [canine]
+The vicious warg              5   14k E-x--     GNE    92-101        0-0     [canine]
+Shargugh                     10   90k G-xx--    ---    49-59      1001-1001  [fairie], invis
+The Elder Druid              17  476k N--x--    GNE   212-221     5001-5001  [elf]
+The huge, green dragon       21  735k E--x--    GNE   429-430     3311-3413  [dragon], gas breath
+A horde of skeletons         45   36M E-----    --   1447-1606   20001-20001 [demon]
+Kazham the warlock           51   33M E--xx-    --   2182-2221   14086-14100 [human], flees, entropy, nether bolt, fire bolt, life blood
+A huge, ancient tree         80 1201M N-xxxx    --- 18638-18910  50003-50009 [botanic], earthquake, 0-1 spells, 7-7 attacks, looter
+A huge, ancient oak tree     95       Nxxxxx    ---     ?       600989       INFO, [botanic], entangle, burst of life, looter

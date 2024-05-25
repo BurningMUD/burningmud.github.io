@@ -1,0 +1,39 @@
+# The Dungeons of Lord Ceanyth (243): 50-85, Tjaden/Amaranth  (King's Castle: 6wnw11nwsd)
+* FIND OUT: The monster Hp
+#
+#                            /
+#                           X
+#                          /
+#          o    o    o    o  o        o
+#          |    |    |    |  |        |
+#       o--o----o----o----o--o--------o--o--o
+#          |    |    |    |  |        |  |
+#          |    o    o    |  o  o  o  o  |
+#          |              |     |  |     |
+#       o--o--o        o--o-----o--o-----o-o  o     o
+#          |              |     |  |     |    |     |
+#    o     o--o  o  o  o--o--o  o  o  o--o----o-----o--o
+#    |     |     |  |     |              |    |     |
+# o--o-----o-----o--o-----o--o           o    o  o--o--o
+#    |           |  |     |                         |
+# o--o--o  o     o  o  o--o--o   o   o   o   o   o--o--woman
+#    |     |              |      |   |   |   |      |
+# o--o-----o--o        o--o------o---o---o---o------o--o
+#    |     |              |      |   |   |   |      |   
+#    o     o              o      o   o   o   o      o   
+#    |                    |
+#    o                    o
+#
+* Beasts and monsters are vuln pure/light/fire. Guards are vuln fire.
+
+Ceanyth Dungeons:     Lvl    Xp ASWIDMX # agg      Hp         Gold      Special
+A guard                70  210M N-xx x    ---  7433-8208   56446-63080  [troll]
+An orc                 65  107M N--x -    ---  7427-7656   37603-41473  [orc]
+An orc fighter         65  127M E--x -    ---  6255-6387   42856-51409  [orc]
+A prisoner             60   84M N--x x    ---  4206-4273    4304-5495   [human]
+Orc prisoner           65  120M N--x -    ---  6111-6129   87076-155858 [orc]
+The prisoner (skinny)  60   78M N--- -    ---  3237-4533    4037-4102   [human], sitting, flees
+The prisoner (woman)   60   78M N--x x    ---  4862-5914    3325-6192   [human], sitting, flees
+An alert guard         75  338M E-xx x    --- 11352-11776 196045-248964 [troll]
+A hairy beast          80 1225M E-xx      GNE 18243-18609  16001-16001  [lugroki], immune poison
+A creepy monster       80 1240M E-xx      GNE 17883        16001-16001  [lugroki]

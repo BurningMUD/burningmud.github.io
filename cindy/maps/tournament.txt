@@ -1,0 +1,75 @@
+# The Tournament (153): 40-100, Sanders (?/50-73min)  (Myrridon: 24ws2ws2w2ses2e3n2e)
+#
+#        Torturer
+#           |
+#         o+o+o
+#           |    o--o--o
+#         o+o+o  |     |
+#           |    | G-o |
+#         o+o+o  o | | o
+#           |    | o-G |
+#         o+o+o  | |   |
+#           |    o-o---o
+#           o ____/|
+#           |/     |
+#           o      |           o - o - o - o - o
+#                  |           |               |
+# Bookie - o - o - Q - o - o - o - o          RIP
+#                  |
+#             Cs - o - Ss
+#                  |
+#             As - o - Gs          o
+#                  |               |
+#             Ws - o - Fs      o - o - o
+#                  |           |       |
+#             Ss - o - Ms      o       o
+#                  |           |       |
+#             Ss - o - Rs      o    Paladin
+#                  |           |       |
+#          o - o - X - o - o - o       o
+#          |               |   |       |
+#          o       o - o - o   o     Knight
+#          |       |   |   |   |       |
+#                  o   o   o   o       o
+#                              |       |
+#                              o - o - o
+#                                  |
+#                                  o
+#
+* Whole area is very bright (except near the Bookie)
+* Most are vuln to slay human. Careful with the agg Gladiators ("G")
+* Kill Silver Paladin before Black Knight, since you need damage-mana for
+* paladin while the knight is a shrugger.
+
+Tournament:              Lvl    Xp ASWIDMX # agg      Hp        Gold     Special
+A customer                35       G--       -                           nofight-room
+A female spectator        35 7700k G----x    -     871-895    3000-3000  [human]
+A peasant                 35 7700k G-x--x    -     900-900    3000-3000  [human]
+A Spectator (stands)      40   14M G----x    -    1309-1359   4000-4000  [human]
+A Torture victim          40   13M G-----  2 -    1301-1301   1300-1300  [human]
+The dungeon guard         40   13M Nx x-x  2 -    1300-1300   3000-3000  [human], sleeping
+The Stable Hand           40   13M G----x  1 -    1293-1332   4000-4000  [human]
+A prisoner                45   24M N-x-xx    -    1200-1200   1199-1199  [human]
+A Spectator (sits)        45   24M G----x    -    1769-1842   4000-4000  [human], sitting
+A Horse                   50   40M G-----  2 -    2300-2300   2299-2299
+The Black Squire          50   42M E----x  1 G E  2300-2300  10000-10000 [human]
+The Silver Squire         50   40M G----x  1 -    2300-2300  10000-10000 [human]
+An Archer                 55   45M G--x x    -    3354-3384  23000-23000 [human]
+A Henchman                65  144M E--xxx  3 -    6000-6000  60000-60000 [human], bash, kick, headbang
+The Gladiator             75  315M N--x    2 G E 12000-12000 50000-50000 [human], bash, kick, headbang
+The Bookie                80 1200M Ex-xxx  1 -   18000-18000 65536-65536 [human], hide, backstab (400), blocker
+The Torturer              80 1360M E--x x  1 -   18000-18000 50000-50000 [human], powerword pain
+Halewig Thorvan           99       Gx        ---                         no-attack
+Arnold the armourer      100       G--     1 ---                         shopkeeper
+Catty                    100       G--     1 ---                         shopkeeper
+Elroy                    100       G--     1 ---                         shopkeeper
+Herb the Herbalist       100       G--     1 ---                         shopkeeper
+Macros the Black         100       G--     1 ---                         shopkeeper
+Martin                   100       G--     1 ---                         shopkeeper
+Pat the potter           100       G--     1 ---                         shopkeeper
+Savy                     100       G--     1 ---                         shopkeeper
+Sliver                   100       G--     1 ---                         shopkeeper
+The Silver Paladin       100       Gx-x x3 1 ---             65536-65536 INFO, [human], parry, hard to hit, trueheal, 1-2 spells, special-stun-blast-of-goodness, special-steed-trample, walk-path (6s6n, slow or broken), ~200/70 dam per attack, negate sanc 2/4 times (50%)
+  +3 deathbr:     3 hits out of  96:  3%  (hr 12+34+3=49)
+The Black Knight         100       Ex-x x2 1 ---             65536-65536 INFO, [human], shrugger, walk-path (6n6s, every 50-270s)
+Warric the weapon smith  100       G--     1 ---                         shopkeeper

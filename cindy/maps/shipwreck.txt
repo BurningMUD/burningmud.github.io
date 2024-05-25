@@ -1,0 +1,45 @@
+# The Shipwreck (470): 30-60, Vortex  (Kerofk: s2e2nd2e3de2n2e2ne2n3wn)
+#
+#                              o
+#                              |
+#                        o --- o ----- o    _
+#                        |     |       |   | \
+#                        o --- o ----- o---o---RIP
+#                        |    /|       |   |_/
+#                        o ----o ----- o
+#                       /|  /  | ___   |
+#                ______/_|_/   |/ | \  |
+#               /     /  |     |\-o-RIP|
+#        o - o-/-o   X   |     | /|_/  |
+#        |   |/  |   |   |     |/      |
+#        o - o - o       o --- o ----- o
+#            |           |     |       |
+#        o   o   o       |   o-----o-------o
+#        |   |   |       |  /| |   |   |  /|
+#        o - o - o       | / o-----o-------o
+#        |       |       |/    |       |/
+#        o - o - o       o --- o ----- o
+#            |                 +
+#        o   o   o             o
+#        |   |   |
+#        o - o - o
+#       x
+#      /
+# o-o+/-o+o
+# |  /
+# o-/-o
+# |/  |
+# o   o
+#
+* Min level 0/40 (Valley of Kings)
+* Nice & safe lowbie-exp area. Just watch the DT:s
+* Zombies & Spectre are vuln heal/pure/light/silver
+
+Shipwreck:               Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+The Zombie                45   18M E-x---    -   1726-1759   5000-5000  [undead?], vuln heal/pure/light/silver, resist earth/water/air/mental, immune unlife/dark
+A Pirate's Ghost          45   22M E-x---    -   1727-1769   5000-5000  immune unlife, NOT immune blind, NOT vuln heal
+The Ghoul                 45   18M E-x---    -   1777-1795   5000-5000  vuln unlife, NOT immune blind, NOT vuln heal/silver
+The Sea Troll             50   25M E-x---    -   2229-2257   8000-8000  [troll], vuln mental?, resist earth?/poison?/crush?
+The Spectre               50   26M E-x---    -   2247-2267   8000-8000  [undead?], vuln heal/pure/light/silver, resist earth/water/air/mental, immune unlife/dark
+The Water Serpent         60   90M E-   -    -   3932-3965  20000-20000 sleeping, vuln unlife
+Egg Rim Jack              65  195M E--xx-    -  ~6200-~6257 50000-50000 vuln energy, immune unlife, resist weapon, flying, headbang, bash, kick

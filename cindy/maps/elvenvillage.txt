@@ -1,0 +1,49 @@
+# Elven Village (108): 1-100, Sandman  (Elven Village: -)
+* FIND OUT: Dechromacy: Whereto / Held / Dissolves
+#
+#             o   o
+#             |   |
+#             o - o - RIP
+#            /|   |
+#           o o   o
+#          /
+#     o - o - o   Galaxy
+#         |         | o
+# Elven   |         |/
+# Lands - o ------ Bar
+#         |
+#    Gs - o - Ms
+#         |
+#    Ws - o - As
+#         |
+#         o
+#         |
+#  Taon - Q o
+#         |/
+#         o - o - o
+#         |
+#         X
+#         |
+#         o -
+#         |
+#
+* Same area as Dwarven Daycare
+* Lowbie area. Nothing aggressive. Beware the DT on top floor.
+* Elves are vuln iron, unlife & dark
+
+Elven Village:              Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+The Elven guard (playing)    10  110k G--x--    --   194-205     655       [elf], sitting
+The Elven guard (walking)    10  110k G-xx--    --   191-206     655       [elf]
+The Elven soldier            10  110k G-xx--    --   193-206     655       [elf]
+The old Druid                10  110k Gx-x--    --   199-204   10001       [elf], hide, cure critic, burning hands
+The Elven guardian           19  475k G--x--    --   421-432    1001       [elf]
+The Elf named Quintor        23       G--       ---                        shopkeeper
+The Elven armoursmith        23       G--       ---                        shopkeeper
+The Elven bartender          23       G--       ---                        shopkeeper
+The Elven mage               23       G--       ---                        shopkeeper
+The Elven receptionist       23       G--       ---                        nofight-room
+The Elven weaponsmith        23       G--       ---                        shopkeeper
+A Huge Fire Elemental        25 1500k G-xx--    --   587-613    1001       [elemental], shrugger
+The Chief of the elven guard 25 1500k Gx-x--     -   592-614     501       [elf], sleeping, bash
+Kofar the lonely alchemist   51       N--       ---                        questmaster, no-attack
+The Champion                 99 2970M Gxxxxx    -- 61491-64002 45001-45001 INFO, [elf], shrugger

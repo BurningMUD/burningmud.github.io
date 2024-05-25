@@ -1,0 +1,39 @@
+# The Chessboard of Karandras (381): 20-50, CircleMUD  (Sundhaven: 2w5nwn2un, enter chess)
+#
+# o - o - o - D - o - o - o - o
+# |   |   |  x|   |   |   |   |
+# |   |   | o |   |   |   |   |
+# |   |   |   |   |   |   |   |
+# o - o - o - o - o - o - o - o
+# |   |   |   |   |   |   |   |
+# o - o - o - o - o - o - o - o
+# |   |   |   |   |   |   |   |
+# o - o - o - o - o - o - o - o - X -
+# |   |   |   |   |   |   |   |
+# o - o - o - o - o - o - o - o
+# |   |   |   |   |   |   |   |
+# o - o - o - o - o - o - o - o
+# |   |   |   |   |   |   |   |
+# o - o - o - o - o - o - o - o
+# |   |   |   |   |   |   |   |
+# o - o - o - o - o - o - o - o
+#            x
+#           o
+#
+* Entrance from Sundhaven
+* All npc:s except pawns attack npc:s of opposite color
+* Area respawns sometimes when a king has been killed.
+
+Chessboard:                Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+The Pawn of the Black Court  6   18k E-xx-x    --   109-171     349-420   [human], flees, ignore-cop
+The Pawn of the White Court  6   18k G-xx-x    --    92-145     308-329   [human]
+The Black Bishop            24 1224k E-xx-x    G-   400-547    3959-4155  [human], powerheal, curse, blindness, harm
+The White Bishop            24 1224k G-xx-x    --   573-538    3839-5208  [human], confusion, harm, blindness
+The Black Rook              27 1890k E-xx-x    G-   678-704    3203-3756  [human], bash, headbang
+The White Rook              27 1890k G-xx-x    --   715-837    3241-5036  [human], bash, kick
+The Black Knight            40   12M E-xx-x    G-  1275-1543   6610-7874  [human], bash, kick, headbang
+The White Knight            40   12M G-xx-x    --  1434-1467   6747-8242  [human], bash, kick, headbang, berserk
+The Black Queen             45   23M Exxxxx    G-  1609-1683  20248-22188 [human], powerword pain, fireball, meteor blast, meteor swarm
+The White Queen             45   23M Gxxxxx    --  1619-1874  21584-22325 [human], powerword pain, fireball, meteor blast, meteor swarm, mass pain
+The Black King              55   49M Exxxxx    G-  3408-3511  21144-22911 [human], bash, kick, headbang, berserk
+The White King              55   49M Gxxxxx    --  3738-3864  22051-22093 [human], bash, kick, headbang, berserk

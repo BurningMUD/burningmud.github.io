@@ -1,0 +1,307 @@
+
+http://www.lysator.liu.se/~tomca/burning/lowbie_eq.txt
+
+A smaller eq list with useful lowbie items obtainable by a solo player or a
+reasonably small group:
+
+USED AS LIGHT: (Item type: LIGHT + Item is: LIGHT + Affects : LIGHT By 1 ==> +3 light)
+Ma Pr Ro Fi Wa An Nb Te    name            we value   h d Special  Mob
+46 36 32 28 37 35 37 33 Glowing Pearl       5 13050  +2+1 ac-6, dex+1  Inner Muscles @ Reef
+15 10  8  6 10  8  9  8 jawbone of Lord Suz. 5 8750  +1+1 str+1    Deep Dragon @ Ghenna
+14  9  7  5  9  7  8  7 (i)Sceptre of Might 4  6250  +1+1          Cepheus @ Galaxy
+14  7  6  6 11  6  7  - eye of the hydra    1 15200       ac-2, str+2, dex+2, hp+15, Ag  Beldar @ Unholy Darkness
+ 1  1  1  1  1  1  1  1 lava lamp           4  3750       con+1    Lava beast @ Canyon
+
+WORN ON HEAD: (x2)
+Ma Pr Ro Fi Wa An Nb Te    name            we value ac  h d Special  Mob
+ - 22 17 16  - 24  - 20 black steel helmet  8 13620  7 +1+1 con+1    Paladin knight @ Citadel of Order
+33 33 46 65 28 32 36 40 Bl. visor of omnis. 1 33750  0 +2+1 m+20, save+6, int+2, wis+2  Zelboth @ Museum
+18 15 11 11 17 17 18 13 white dr. scale helm 6 7300  2      ac-6, str+2  White Dragon @ Dragonspyre
+12 23 37 57 17 23 26 31 Glasses of Arcanist 2 22550  -      int+2, wis+2, m+20  Librarian @ Plains Of Dust
+ 2  2  2  2  2  2  2  2 professors glasses  1  7550  -      wis+1, int+2  Professor @ Narnia
+ 1  1  1  1  1  1  1  1 leather helmet      2   500  2      str+1, dex+2  leather shop @ Karandras
+
+AROUND NECK: (x1)
+Ma Pr Ro Fi Wa An Nb Te    name              we value ac  h d Special  Mob
+ -  -  - 39  -  -  -  - c. dr. scale pendant  5 13120  0   +3 ac-10, save-1  Dragon Spirit @ Dragonspyre
+ - 30 27 36  - 32  - 29 Amulet of Talislanta  6 15700  4      ac-7, m+10, hp+20, AGE+3  Keeper @ Reef
+ - 20 16 16  - 22  - 18 galvorn neckguard     4 12000  4 +1+1 ac-5, hp+15  chest @ Alchor
+44 37 30 30 39 39 40 33 embroidered mantle   12 13700  2   +2 ac-8, str+2  chest @ EF
+39 46 64 91 40 47 53 57 mage cloak            2 19320  2      ac-8, m+25  Prax @ UD
+36 54 76  - 45 55 61 66 orb on a rope         1 26250  -      ac-7, int+1, wis+1, m+30  Black Dragon @ Underground
+34 24 21 15 25 20 21 20 necklace of eyeballs  4 10000  0   +2 hp+20    Balrog shaman @ Kerjim
+33 30 23 23 32 31 31 26 spiked collar         9  8200  0   +1 ac-8, dex+1  Chalico cat @ HT
+26 33 48 68 29 35  - 41 (i)Amulet of Ra       1 17300  2      ac-6, hp+10, m+20, Ae  Ra @ Olympus
+26 21 17 17 24 23 24 19 green shim. necklace  2  6800  0 +1+1 ac-6     Guard dog spirit @ Lorchid
+19 16 12 12 19 19 19 14 Neckl. of Prayer Beads 3 6800  0      ac-6, int+1, wis+1, AGE+5  Witch Doctor @ Amber Keep
+14 11  7  7 12 12  -  9 cloak of Tramon       5  5850  - +1+1 ac-4, Ae Tramon @ Toormail
+12  7  5  3  7  5  6  5 heart of Rathark      4  7550  - +1+1 str+1    chest @ Toormail
+ 1  1  1  1  1  1  -  - oak leaf symbol     1  7500       Age, para+5, rod+5, neck  Druid & Apprentice druid @ EF
+ 1  1  1  1  1  1  1  1 (i)ornate broach     10  5000  0      int+1, wis+1  Effreeti @ Scubdu's
+ 1  1  1  1  1  1  1  1 small bronze cowbell  3  4120  1      str+1, hp+6  Cow @ Humblin
+
+WORN ON FINGER: (x1)
+Ma Pr Ro Fi Wa An Nb Te     name             we value ac  h d Special  Mob
+ -  -  - 30  -  -  -  - emerald ring          1 10000  0 +1+3          Tomaaukkhen @ Tomaaukkhen
+52 47 41 44 50 51 51 44 order signet ring     1 16300  - +2   ac-10, m+10  Grand master & Master-of-Arms @ Citadel of Order
+47 40 33 33 45 44 45 37 golden dwarven ring   1 10000  0 +1+1 ac-10    Mazekeeper @ Dw. Kingdom
+32 24 21 17 24  ? 24 21 (i)ring of the panther 1 10000 0 +1+2 dex+1    Nyxi @ Drakyri
+31 23 20 16 23 20 22 20 carved wooden ring    3  7500  0 +2+1          Belrak @ Mahn-Tor
+30 22 20 16 22 20 20 20 earth ring            5 12550  -   +2 str+2, wis+1  Earth Ruler @ Canyon
+21 18 14 14 21 21 21 16 flame ring            1  9359  -      ac-6, str+1, con+2, DARK  Fire lizard @ Toormail
+14  9  6  4  9  7 10  7 golden dwarven ring   1  5570  1 +1+1 ac-3     Guard @ Dw. Kingdom
+ 5 14 27 43 10 14 18 21 (i)Ring of Dignity    3 11870  0      int+1, m+15  Cassiopeia @ Galaxy
+ 3  1  1  1  1  1  3  1 banded agate ring     1  8000  2      str+1, con+1, wis+1  Snarg @ Goblik
+
+WORN ON ARMS: (x1)
+Ma Pr Ro Fi Wa An Nb Te    name              we value ac  h d Special  Mob
+ -  -  - 45  -  -  -  - spiked bracers       10 18000  8 +1+3          Grand master @ Citadel of Order
+ - 49 41 40  - 52  - 44 bl. adm. mesh armpl. 20 23750 10 +1+1 str+1, hp+15, DARK  Huge sentry @ Myrridon Mines
+ - 44 37 36  - 46  - 40 Eng. ivory armplates 20 18000  8 +1+2 str+1    King Rok @ Inglestone
+ - 37 29 29  - 39  - 33 black steel sleeves   8 13200  8 +1   ac-2, str+1  Paladin knight @ Citadel of Order
+ - 27 16  7  - 31  - 21 golden sleeves        8 15120  9      m-25, str+2  Garlok's ghost @ Toormail
+ - 14 11  9  - 17  -  - bone splintmail sleeves 8 8120 5      age+1, dex+1, str+1, Ag  Rtorg @ Goblik
+ -  8  5  5  - 10  -  7 copper armband        1  4500  4      mv-5, con+1  Zombie @ Tower of Training
+48 36 31 26 36 32 37 32 dark leather sleeves  6 10500  2 +2+2          chest @ EF
+33 27 22 22 30 29 31 24 drakyri arm guards    4  9800  2 +1+1 ac-6, dex+1  Knight protector @ Drakyri
+26 21 17 17 24 24 26 19 Pixie armplates       3  4800  2      ac-6, dex+1  Pixie Guard @ Dragonspyre
+16 10  8  5 10  9 11  - Assassin's sleeves    3  5500  2 +1+1 Ag       Assassin @ UD
+13  7  6  4  7  6  8  6 Arm plates of Herc.  10  5500  2   +1 str+1    Hercules @ Galaxy
+ 4  1  1  1  1  1  4  1 strongman's bracers   8     0  2      str+1    chest @ Circus
+
+WORN ON ELBOW: (x1)
+Ma Pr Ro Fi Wa An Nb Te    name              we value ac  h d Special  Mob
+ -  -  - 15  -  -  -  - Demonskin elbow patch 1  3000  2   +1 Ag       Henchdemon @ Unholy Darkness
+ - 36 29 29  - 39  - 32 silver wyrmskin       2  4870  3      dex+1, hp+5, breath-2  Silver dragon @ Black castle
+44 22 17 14 26 24 42 19 black steel elbowpad  2  4250  2      hp+15    Grand master @ Citadel of Order
+15  3  1  1  5  4 13  2 burnt larch elbow guard 1 2120 1      hp+8     Malcor @ Turvagar
+ 1  1  1  6  1  1  1  1 elbowguard of pain    1  3120  0      m+5      Beast @ Hobgoblin Camps
+
+WORN ON HANDS: (x1)
+Ma Pr Ro Fi Wa An Nb Te    name              we value ac  h d Special  Mob
+ -  -  - 36  -  -  -  - allosaurian claws     8 15500  8   +3          Allosaurus @ Ancient Lands
+ - 46 39 38  - 49  - 42 black steel gauntlets 5 20000 10 +1+2          Grand master & Templar & Templar guard @ Citadel of Order
+ - 36 30 27  - 38  - 32 Gauntl. of Ogre Power 10 18000 8   +2 str+2    Nahual @ Tomaaukkhen
+33 25 21 17 25 21 24 21 black velvet gloves   3  7700  0 +2+1 ac-2     Bodyguard @ DarkFriends
+28 22 18 18 25 24 26 20 black steel gauntlets 5  9800  2 +1+1 ac-6, str+1  Paladin 4 @ Citadel of Order
+26 39 58 84 31 38  - 48 gloves of casting    10 25620  0      int+1, wis+1, hp+20, m+25, Ae  Tomarin @ Museum
+24 18 16 14 18 16 19 16 gloves of nightfall   3 10500  2 +1+1 str+2    Rtorg @ Goblik
+21 34 55 81 27 33 39 45 Celestial gauntlets   0 18170  -      m+25, hp+10  Uldor @ Taon
+13 16 24 37 14 16 20  - Runesmiths gloves     4 13800  2      ac-4, str+1, wis+1, m+12, Ag   Runesmith @ Zorn Uzkul
+12 10  6  6 12 11 11  8 brown leather gauntlets 3 5800 0   +1 ac-4, dex+1  Goatherder @ HerdArea
+11  7  6 10  9 10  -  7 silver gauntlets     20  6920  2      ac-4, con+1, m+5, Ae  Derrick @ Ofcol
+11  6  4  3  6  4  5  4 pirate's hook hand    5  5000  0 +1+1          Captain @ SS Scurvy
+ 7  3  1  1  3  2  3  2 white calfskin gloves 2  3670  1 +1   ac-1, hp+4  Theodorus @ Humblin
+
+WORN ON WRIST: (x1)
+Ma Pr Ro Fi Wa An Nb Te    name              we value ac  h d Special  Mob
+ -  -  - 33  -  -  -  - black steel bracelet  0 20120  9 +1+3          Grand master @ Citadel of Order
+ -  -  - 29  -  -  -  - stone bracelet        3 17000  6   +3 str+2    Sw Tower Guardian @ Toormail
+ -  -  - 21  -  -  -  - Dragon tattoo         1 10000  0 +1+3 Ag       Guildmaster @ UD
+ - 32 44 63  - 34  - 38 i. s. -(+)- bracelet  2 25500  8      wis+1, con+1, m+20  Jorinne @ Drakyri
+52 44 37 36 48 46 47 40 Hero Bracelet        10 20050  - +2+2 ac-10, con+2  Remorhaz @ Ice Wall
+50 40 34 32 46  -  - 36 ivory wrist guard     2 25000  0 +2+2 ac-10, hp+40, Ane  King Rok @ Inglestone
+37 31 25 25 33 33 33 28 bracelet of the order 1 10700  0 +2+1 ac-8     Grand master & Master-of-Arms @ Citadel of Order
+26 19 16 13 19 16 17 16 Wyvern tattoo         1  7500  0 +1+2          Assassin @ UD
+25 21 17 17 24 23 24 19 prismatic bracelet    3  7450  0 +1+1 ac-7     Efreeti @ Ghenna
+17 17 26 39 13 15 21 21 drakyri wrist guard   2 14870  2      m+15, hp+20  Healer @ Drakyri
+11  9  7  7 10 10 11  8 Bracer of strength    3  8800  2      ac-4, str+3  Jarre @ UD
+ 9  7  5  5  9  9  9  6 bracelet of Virgo     4  3750  0      ac-5, wis+1  Virgo @ Galaxy
+ 9  5  3  1  5  5  5  5 spiked leather bracer 2  5950  2   +1 ac-3, con+1  Goatherder @ HerdArea
+ 9  4  2  1  4  3  5  3 leather wristguard    1  5700  2 +1   ac-2, dex+1  Cowherder @ HerdArea
+ 1  1  1  1  1  1  1  1 leather wristband     1  3000  2      str+1    Goblin @ Tower of Training
+
+WORN AS SHIELD: (x2)
+Ma Pr Ro Fi Wa An Nb Te    name              we value ac  h d Special  Mob
+ - 21 17 15  - 23  - 19 Narnian shield       10 10620  5 +1+1 dex+1    Peter @ Narnia
+42 35 29 29 39 38  - 32 brazen shield         7 11200  2 +1+1 ac-8, con+1, Ae  Perseus @ Underworld
+38 32 26 26 35 34 36 29 (i)Shield 'Askari'   10 10450  2 +1+1 ac-7, dex+1  Garatza @ Krashkarand
+27 22 18 18 25 25 27 20 Shield o/t South Wind 8  7300  2      ac-6, dex+1, con+1  Snow Queen @ Little Haven
+11  7  5  4  8  8  8  - shield of human bone  3  5500  -   +1 ac-3, dex+1, DARK, Ag  Skeleton @ Haunted Keep
+ 4  1  1  1  1  1  4  1 bronze shield         9  3000  2      con+1    Grand Druid @ Druid forest
+
+WORN ON WAIST: (x1)
+Ma Pr Ro Fi Wa An Nb Te    name              we value ac  h d Special  Mob
+ - 39 34 29  - 37  - 34 belt o.t. lindskiarn  5 19500  6   +2 hp+30, con+1  Warchief @ Alchor
+ - 35 29 29  -  ?  - 32 large Solamnic girdle 6 15500  8 +1+1 str+1, Ae  Lord Knight @ Clerists
+ - 31 25 25  - 34  - 28 Girdle of Dwarven Kind 32 13000 8     str+1, con+1  Fire Giant @ Amber Keep
+ - 19 18 18  - 20  - 19 girdle of g. strength 1 12000  4      str+4    Fire Giant @ Elemental Plain
+ - 13 10  9  - 14  - 12 r. belt a.w.p. skulls 5  7000  4   +1 str+1    Rtorg @ Goblik
+52 46 38 38 51 50 50 42 (c)purple belt        4 12500  0   +1 ac-10, str+2  Umber hulk @ EF
+48 36 31 26 36 32 36 32 dark leather belt     8 10500  2 +2+2          chest @ EF
+39 27 24 18 29 24 27  - jeweled belt          4 13000  2   +2 str+1, hp+20, Ag  Lilith @ Kerjim
+33 54 80  - 43 54 61 69 (i)Belt o/t Adv. Wizard 4 23950 0     ac-2, str+2, m+30  chest @ Karandras
+25 20 15 15 23 22 24 18 black steel belt      6  6750  2 +1   ac-5, dex+1  Paladin knight @ Citadel of Order
+24 36 52 76 29 35 41 45 magical belt          2 18000  2 +1   int+1, m+20  Raistlin @ Kender Village
+19 16 24 36 13 15 19 20 drakyri girth         4 11750  2 +1+1 m+10     Mage protector @ Drakyri
+15  8  7  5  9  8 11  7 belt of wyvern scales 6  5700  2 +1   ac-2, con+1  Grown wyvern @ Wyvern Waterfalls
+ 9  7  4  4  9  9  9  6 black metallic belt   1  5850  1      ac-4, str+2, save-2  Zombie @ Haunted Keep
+ 2  2  2  2  2  2  2  2 woven straw quiver    4  5050  -      dex+1, str+1, about  Archer @ Goblik
+
+WORN ON BODY: (x3)
+Ma Pr Ro Fi Wa An Nb Te    name              we value ac  h d Special  Mob
+ -  -  - 43  -  -  -  - ][+][ platemail      10 28620 13   +3 Ae       Xaek & Dyana @ Drakyri
+ - 52 42 41  -  -  - 47 black breastplate    37 24870 13      hp+15, RESISTANT fire, VULNERABLE ice  ground @ Caverns
+ - 49 42 37  - 54  -  - L.l. encrusted pl.m. 14 25500 12 +2+1 RESISTANT unlife, Age  Soldier @ Dark Spawn
+ - 48 40 39  - 50  - 43 b.a. mesh field pl.  30 23750 10 +2+1 wis-1, hp+15  Huge sentry @ Myrridon Mines
+ - 48 39 36  - 52  - 43 Plate of Invulnerab.  4 22570 11      ac -7, con+2, save-5, breath-5, petri-5, rod-5, para-5  Jogath @ Museum
+ - 46 38 36  - 48  - 40 black steel br.pl.   35 25120 11      hp+20, con+1, str+1  Paladin knight @ Citadel of Order
+ - 42 35 32  - 47  - 39 golden breastplate   25 22620 11      con+2, dex+1  Garlok's ghost @ Toormail
+ - 39 31 31  - 42  - 35 (i)The Aegis         50 20000 10 +1+1 str+1, Ae  Zeus @ Olympus
+ - 32 28 22  - 29  - 28 Hide of the Kracken   0 14500  6 +2+2 dex-3, VULNERABLE acid  Kracken @ Darkwater
+ - 29 23 21  - 30  - 26 black steel br.pl.   35 13000  8 +1+1          Master-of-Arms & Templar guard @ Citadel of Order
+ - 27 22 19  - 25  - 23 rusty ringmail        1  9500  6   +2          Commander @ Lahresin
+ - 21 16 16  - 23  - 19 black bear's fur      1 11120  7      str+1, con+1, about  Bear @ Huge forest
+ - 10  8  7  -  9  -  8 light ringmail armor  15 3620  3   +1          Gate guard @ Goblik
+ -  9  5  5  - 10  -  7 b. iron breast plate 125 4500  4 +1            Gordon @ New Thalos
+50 42 35 34 46 45 47 39 vest of black. armor 40 12050  2 +2   ac-9, hp+10  Knight @ Astral Plane
+46 39 31 31 44 43 45 35 tfgd scale shirt      9  8000  2 +1   ac-10    MoM @ HT
+32 29 22 22 31 31 32 26 red serpent sc. mail 10  8700  2      ac-8, dex+2  Nebuchadnezzar @ Krashkarand
+31 49 72  - 39 49 57 62 cloak of intellect    0 20050  2      ac-4, m+30  Talented apprentice @ Taon
+28 22 18 18 25 24 26 20 green breastplate    30  7300  2 +1+1 ac-6     Ni'hachbin warrior @ Desolate Plains
+23 18 13 13 21 21  - 15 golden dragonsc. torso 25 4800 2 +1   ac-6, Ae Dragonlord @ Dragonknight @ Ofcol
+21 22 33 49 21 23 28 30 dragon's wings       10 13620  2      ac-5, str+1, m+15  Gorgimera @ Ghenna
+11  7  4  4  9  9 11  6 light leather armour  6  3800  2      ac-4, dex+1  Archer @ Dunheim
+ 5  3  1  1  4  4  5  2 spiked leather vest   6  5950  2      ac-3, str+2  Father @ HerdArea
+ 3  1  1  1  1  1  3  1 ornate robes         20  3200  2      ac-2, wis+1  Priest @ Dragon Cult
+
+WORN ABOUT BODY: (x1)
+Ma Pr Ro Fi Wa An Nb Te    name              we value ac  h d Special  Mob
+ - 51 43 38  -  -  -  - Alien cloak           2 20120  9 +2+2 Agn      Plasma dragon @ Desolate Plains
+ - 40 33 33  - 43  - 36 (i)-=+)> shroud       1 17620  9 +1+1 dex+1    Katyre @ Drakyri
+52 46 38 38 51 50 51 42 translucent tunic     5 12500  - +1   ac-10, dex+1, str+1  Maedar master @ Ghenna
+47 41 34 33 44  - 43  - Medusan cloak        10 10700  0 +1+2 ac-8, Agn  Medusa @ Solom
+44 43 44 62 45 47 48 43 red robe              5 88420  -      ac-9, m+15, container  Red mage @ Toormail
+38 32 26 26 35 34 36 29 shamans robe          2  7950  2 +1+1 ac-7     Shaman Troll King @ Myrridon
+29 45 67 97 37 46 52 58 forest green robe     2 16870  0      ac-5, m+25  Lord & Caerlin @ Mirror Realm
+19 15 11 10 17 16 17  - blood soaked cloak    5  5850  - +1+1 ac-4, Ag Torturer @ Mustaine
+14  9  7  5  9  7  -  7 pegasi wings          7  5050  - +1+1 Ae       Pegasus @ EF
+13 13  6 10 13  - 12  - Great Taurus wings    7  6470  -      ac-4, dex+1, mv+25, breath-5, Agn, Permanent level 1 fly  Taurus @ Zorn Uzkul
+ 9  6  5  5  6  6  9  6 hooded sh. robe of mag.3 10700 2      ac-2, int+2, wis+2  Father @ HerdArea
+ 9  3  2  1  3  3  4  3 green-m. scale armor 30  3000  2   +1          Sea Serpent @ Oceania
+ 5  5  5  5  5  5  5  5 leather apron         2 12750  -      wis+1, str+1, con+1, int+1, dex+1  Fisherman's wife @ Fishing Village
+ 1  1  2  8  1  1  1  1 linen robe            5  5750  1      wis+1, m+5  Nanny @ Daycare
+ 1  1  1  1  1  1  1  1 re. buckskin quiver   6  2750  -      ac-2, con+1  Bowyer's apprentice @ Humblin
+
+WORN ON LEGS: (x2)
+Ma Pr Ro Fi Wa An Nb Te    name              we value ac  h d Special  Mob
+ - 51 43 42  - 55  - 47 black steel leggings 10 20000 10 +2   con+1    Master-of-Arms @ Citadel of Order
+ - 49 41 40  - 52  - 44 bl. a. mesh greaves  20 23750 10 +1+1 hp+15, str+1, DARK  Huge sentry @ Myrridon Mines
+ - 40 33 32  - 42  -  - Green alien leggings  4 15500  8 +1+2 str-1, hp-25, Ag  Carac'rin @ Desolate Plains
+ - 37 31 31  - 41  - 34 pair of golden leggings 9 15120 9     dex+2    Garlok's ghost @ Toormail
+ - 35 29 26  - 39  - 32 gelatinous leggings   5 15120  9      con+1, wis+1, int-1  Deepspawn @ Ghenna
+ - 34 27 27  - 36  - 30 black steel leggings 10 10500  8   +1          Paladin 3 @ Citadel of Order
+ - 25 19 20  - 27  - 23 steel leggings       35  9870  7      dex+1, mv+10  Lieutenant @ Solace
+ - 10  8  7  -  -  -  9 sarong of divine magic 5 7000  4   +1 con+1, Ane  Angel of dominations @ GoA
+ -  3  1  1  -  4  -  2 st. leather breeches  5  3620  3      dex+1    Gnome @ Tower of Training
+44 38 31 31 41 40 42 34 (i)Serpental leggings 0  8700  2 +1+1 ac-8     Fabled Argonaut @ Darkwater
+27 48 75  - 37 48 55 63 Celestial leggings    0 18800  -      m+30     Vidir @ Taon
+27 22 19 21 24 24 26 20 dark leggings of night 8 9870  2 +1+1 ac-5, m+5  Master hide @ Underground
+27 22 18 18 25 25 27 20 Pixie greaves         3  7300  2      ac-6, con+1, int+1  Pixie Guard @ Dragonspyre
+21 17 15 17 19 20 22 17 baggy purple pants    1  7370  2      ac-5, dex+1, m+5  Efreeti @ Ghenna
+16 12 11  9 12 11 12 11 Antharian trousers    5  5000  0 +1   con+1    Child @ Antharia
+15  8  6  4  9  6 10  6 black leather pants   6  5500  2 +1   hp+10    Korred @ EF
+13  7  5  2  7  6  9  6 leggings o/t firedrake 3 3050  2 +1   ac-1     Red-skinned firedrake @ Wyvern Waterfalls
+10  8  5  5 10 10 10  7 Some waterproofs     15  3300  0      ac-4, mv-5, con+1  Smuggler @ Smugglers Den
+ 6  1  1  1  1  1  6  1 Svirfneblin leggings  3  3200  2      ac-2, str+1  Svirfneblin @ UD
+ 2  1  1  1  1  1  1  1 blob of living armor  5  4250  2   +1 ac+5, neck, arms, wrist, waist, body, feet  Kervin @ Kerofk
+
+WORN ON KNEE: (x1)
+Ma Pr Ro Fi Wa An Nb Te    name              we value ac  h d Special  Mob
+ -  -  - 36  -  -  -  - Gold protector        1  4500  4   +1 Ane      treasury @ Desolate Plains
+ -  -  - 15  -  -  -  - Demonskin knee patch  1  3000  2   +1 Ag       Henchdemon @ Unholy Darkness
+ 1  6 14 27  2  6  8 11 Celestial knee protector 0 6250 0     m+10, mv-15  Celebros @ Taon
+ 1  1  1  1  1  1  1  1 Galvorn kneepad       2  2550  -      hp+10, save-1  Warchief @ Alchor
+ 1  1  1  1  1  1  1  1 (i)magical knee prot. 1  1870  0      m+3      Ogre magi @ Amber Keep
+
+WORN ON FEET: (x1)
+Ma Pr Ro Fi Wa An Nb Te    name              we value ac  h d Special  Mob
+ - 50 41 41  - 54  - 45 steel boots           6 17620 11   +1          Retired sergeant @ Myrridon
+ - 16 12 12  - 17  - 14 spectral boots        2  9500  4 +1+1 str+1    Skeleton @ Kaltor
+33 27 22 22 30 29 31 24 Lord Worchdo's boots  6  9800  2 +1+1 ac-6, dex+1  Worchdo @ Lorchid
+20 33 50 74 26 33 38 43 (i)tooled -(+)- boots 6 15500  2      con+2, m+20  Voryl @ Drakyri
+15 24 36 54 19 24 29 32 strange boots         2 12820  2      ac-3, int+1, m+15  Black enfan @ Orshingal
+14 10  7  6 13 11 12  8 boots of a h. lizard  13 5850  -      ac-4, hp+10, con+1  Master Brain @ Impact
+13  7  6  3  7  6  8  6 soft le. scouting boots 3 5500 2   +1 str+1    Ootr @ Goblik
+ 6  7  5  7  6  6  6  7 knee-high le. boots   1  9370  0      dex+3, mv+15  Cowherder @ HerdArea
+ 5  1  1  1  1  1  4  1 hardened leather boots 4 4000  2      dex+1, hp+4  Theodorus @ Humblin
+ 1  1  1  1  1  1  1  1 Stryder's boots       0    50  -      Permanent level 1 fly  Townguard @ Taon
+
+WIELDED:
+Ma Pr Ro Fi Wa An Nb Te    name            DamAt we value  roll h d Special     Mob
+92 82 60 50 73  -  - 60 diamond-edged sword SLsl 18 45560  9d5      Ane         Champion @ Elven Village
+                        ENCHANT
+90 80 57 47 71 79 62 56 cold-iron scimitar  SLsl 13 42250  7d5   +5 IRON, BLEED, hp-25  Great red wyrm @ EF
+88 78 56 45 70 77 61 55 Flametongue         SL   10 44060  5d7 +2+5 FIRE, SLAY Troll, hp-60  Korr @ Inglestone
+87 78 57 47 69 77 61 56 Fire sword          SL   12 43500 4d10 +3+2 FIRE, hp-25, LIGHT  ground @ Toormail
+81 75 56 48 66 75  - 56 bardic sword        SL   12 40250  6d5 +4+4 MENTAL, FORGED, Ae  (Black or White?) Guardian @ Toormail
+79 72 54 46 64 72 57 54 Mahn-Tor's Great AxeSL   25 37750  6d5 +3+4 LARGE, SUPERLARGE  Mahn-Tor @ Mahn-Tor
+79 71 51 42 62 71 54 51 (C,i)Sword of Tears SL    5 43500  8d5 +3  FORGED, SLAY Botanic, SLAY Animal, SLAY Human, AGGIE-flag!  Lord Soth @ Palanthas
+79 64 54 46 64 64 57 54 huge obsidian malletCRcr 30 37750  5d7 +3+2 save-5, SUPERLARGE  Huge sentry @ Myrridon Mines
+79 50 58 52 64 49  - 50 the assault maul    WEbg 30 44430  8d4 +3+1 m+15, hp-50, SUPERLARGE, SLAY Lugroki, Ae  ground @ Alterac
+77 70 53 45 63 70 56 53 huge dark blade     SLsl 18 37560 10d3 +3+1 dex+1, DARK-damage  Warchief @ Alchor
+77 52 56 44 65 52 58  - snake shaped hammer CRbg  1 30060  5d4 +3+7 SLAY Snake, DARK, Ag  Wizard @ Myrridon
+74 59 49 41 59 59 52 49 Thunderhammer       CRcr 15 37750  6d5 +3+4 ELECTRICITY King Rok @ Inglestone
+72 59 49 42 59 59 52 49 Claws of Darkness   WEcl  1 32500  5d6 +3+3 UNLIFE      Tarbor (quest) @ Unholy Darkness
+68 81 45 52 55 81 48 68 wick.sharp stiletto PI   20 43500 10d3 +3+4 POISON      Jaena @ Drakyri
+65 60 44 37 53 60  - 44 (i)Sword of the Sun SLsl 20 30060 3d11 +3+1 Ae, LIGHT-damage  Ra @ Olympus
+65 60 44 37 53 60 47 44 flowing blue longsw.WEsl  1 30060  4d7 +3+3 WATER, FORGED  Trainer @ Hobgoblin Camps
+65 40 44 33 53 40 47  - hammer of cold iron CRbg 25 30060  8d3 +3+3 Ag, IRON    Kostchtchie @ Yggdrasil
+64 58 43 36 52 58 46  - shadowblade         SLsl 16 32500  5d6 +3+3 DARK, DARK-damage, Ag  Dungeon Keeper @ Toormail
+61 55 41 34 49 55 43 41 p-b longsword tfb.  WEsl 15 27750  6d3 +3+6 SLAY Troll, FIRE  Dracula @ Graveyard
+56 45 37 31 45 45 40 37 (i)misty tra. leash CRwh  1 25560  7d3 +3+3 GAS, FORGED Coyote @ Venden
+52 47 33 27 41 47 36 33 Sun Blade           SLsl 18 20560  6d4 +1+2 LIGHT-damage  Tomaaukkhen @ Tomaaukkhen
+51 61 34 39 41 61 36  - dagger red-hot lava PI    6 35060  5d7 +3+1 FIRE, Ag    Bustibieren @ Lorca
+49 60 32 37 39 60 34 50 (i)Mast. Chefs Kris PIpi25  30060 10d2 +3+4 ACID        Master Chef @ Gorm
+47 57 31 36 38 57 38 48 Snake Dirk          PIpi 25 27750  9d2 +3+5 POISON      Black Stalker @ Demoncity
+45 55 29 34 36 55  - 46 (i)Poseidon's Trid. PI   16 27750  3d9 +3+3 WATER, Ae   Poseidon @ Olympus
+42 51 26 30 33 51 28 41 fiery dagger        PIpi  2 20250 3d10   +2 FIRE        Fire ruler @ Canyon
+31 23 18 14 23 23 20 18 avalanche           CRcr 15 10560 2d12      EARTH       Rock Monster @ Canyon
+                        ENCHANT
+25 32 14 17 19 32 16 25 flame lance         PIpi 10 13060  3d8 +1   FIRE        Blue flame @ Canyon
+24 29 13 15 17 29 14 23 (i)ghostly spear    WEpi 12 10560  9d2      MAGIC ENERGY  Guard @ Toormail
+                        ENCHANT
+24 35 52 75 28 35 38 44 ice staff           CR   13 20060  3d5 +1   m+20, ICE   Nasturn @ Mahn-Tor
+23 29 13 16 17 29 14 23 PathWeavers blade   PIpi 16 13060  8d2 +1+1 SLAY Magical  Fayador @ Lorca
+                        Everyone seems to need this one. Add a few so we have handy.
+20 24 12 13 15 24 13 19 dagger of wind      PIpi  1  6250  3d6      AIR         Master @ Hobgoblin Camps
+                        ENCHANT
+17 23 15 15 15 22 15  - (c,i)Blade of Sin   PI   10 27750  5d3 +3+2 FORGED, SUPERLARGE, ac+15, hp-15, Ag  Master Brain @ Impact
+16 14  9  7 12 14 10  9 A sharp cutlass     SLsl 30 14000  2d4 +3+3 dex+1       Pirate @ Smugglers Den
+14 19  6  8  9 19  7 14 Royal ice dagger    PIpi 10  7560 11d1      ICE         Queen @ Ice Area
+                        ENCHANT
+14 19  6  8  9 19  7 14 pilfered parang     PIpi 20  7569 11d1      IRON, DARK  Firedrake @ Wyvern Waterfalls
+                        ENCHANT
+ 1  1  1  1  1  1  1  1 short dagger        PIpi  5    60  1d1                  blade shop @ Karandras
+                        ENCHANT (use all sorts of enchants, to be used as newbie weapon)
+
+
+HELD:
+Ma Pr Ro Fi Wa An Nb Te    name              we value ac  h d Special  Mob
+ -  -  - 31  -  -  -  - pnakotic manuscripts  1 12550  - +2+3 Agn      Shub-Niggurath @ Abandoned Caves
+ - 55 50 45  - 51  - 51 Gjallar              22 12000  4 +2+2 save-2, breath-2, petri-2, rod-2, para-2, Permanent level 1 detect invisibility  Heimdal @ Ragnarok
+65 59 50 50 65  -  - 54 pendant of eternity   2  1000  -      ac-15, str+1, dex+1, int+1, wis+1, con+1, Ane  Eternity Dragon @ Dragonspyre
+53 46 37 37 51 50 52 42 cane of foresight     4  8000  2 +1   ac-10    Blind man @ VoK
+45 34 30 25 34 30 33 30 Beholder's eyestalk 3  72500  5  +2+2               Beholder @ UD
+31 52 79  - 41 52 59 67 huge eye of justice 3  88750  5       m+30, int+1, wis+1, con+1  Huge beholder @ UD
+28 21 19 15 21 19 19  - Great Taurus horn     8 10350  -   +2 str+1, con+1, Ag  Taurus @ Zorn Uzkul
+19 26 39 56 21 25 30  - humanoid skull        2 16870  0 +1+1 str+1, m+15, Ag  Sorina @ Drakyri
+18 30 48 72 23 30 36 40 crystal shard         2 13000  2      m+20     Orb @ Kerofk
+16 16 16 16 16 16 16 16 golden pen          2  31250  1       int+3, wis+3  Astinus @ Palanthas
+14  9  8  5  9  8  9  - Lammasu horn         10  7750  - +1+1 str+1, Ag  Lammasu @ Zorn Uzkul
+14  9  7  5  9  7  8  7 (i)ice tusk          10  5000  0 +1+1          Mastadon @ Ice Area
+13  8  8  8  8  8 13  8 a green gem          10  5500  2      dex+1, str+1  Fish @ Antharia
+12 22 36 54 17 22 26 30 Chancellor's medallion 2 19620 -      int+2, wis+2, m+15  Chancellor @ Mustaine
+ 3  3  3  3  3  3  3  3 book of history       2  7550  -      int+1, wis+2  Professor @ Narnia
+ 1  1  1  1  1  1  1  1 dazzl. c. decanter    0  5150  -      dex+1, con+1, AGE-1, drink  Purple gremlin @ Turvagar
+ 1  1  1  1  1  1  1  1 book of knowledge     0  5050  -      wis+2    Scholar @ Taon
+ 1  1  1  1  1  1  1  1 telescope             4  5050  -      int+2    ground @ Clerists
+
+DRINK:
+Ma Pr Ro Fi Wa An Nb Te    name            we value hold Mob
+ 1  1  1  1  1  1  1  1 the everful mug     3    20 X    Satyr @ EF
+
+TRASH:
+Ma Pr Ro Fi Wa An Nb Te    name              we value Sp. Mob
+ 1  1  1  1  1  1  1  1 oak staff             2   250     Druid @ EF
+ 1  1  1  1  1  1  1  1 Soul Crystal          0     0     Most mobs @ Well  (to have handy)

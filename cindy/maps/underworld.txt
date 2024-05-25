@@ -1,0 +1,230 @@
+# Hades' Underworld (335): 20-100, Faunus (?/never)  (Olympus: find Hermes and "ask Hermes death")
+* FIND OUT: Level on Campe (63-65)
+* FIND OUT: Level on Erebus (90+)
+* FIND OUT: Level on Eurynomus (returning) (85+)
+#
+#                            o-o--o-o-o--o-o
+#                            |             |     Hades
+#                            o             o       +
+#                            |             |    Cerberus
+#                            o             o       |
+#                            |             |       o
+#                            |             v      /
+#                            o        Tantalus   o
+#                            |    Nyx      |     |
+#       Eurynomus            |     |       v   o-o-o
+#       (noflee)      /------|----*o  Sysiphous  |
+#          +          |      |     |      /| E+o-o-o+G
+# Cyclopse+o+Gyes     |      o     o     / o     |
+#          |          |      |     |    /  |   o-o-Odysseus
+# Cyclopse+o+Cottus   |      o     o   /   o     |
+#          |          |      |     |  /    | Gua-o-Guards  o-o-o-o-o
+# Cyclopse+o+Briareus |      o-o-o-o-/-o-o-o     +         |   |   |
+#          |          |             /            o         o o-o-o o
+#          |   o-o-o--|o-o-o-o     /             |         | |   | |
+#          |   |      |      |    x              o         o o U o o
+#          |   o      v      o   /               |         | | | | |
+#          |   |             |  /            o-o-o-o-o-o-o-o o o o o
+#          o lava     o-o    o /      mv     |             | | | | |
+#          |   |      | |    |/T      reg    |             o o o o o
+#          | lava+o-o-o-o    o+i-o-o-o-o-o-o-o             | | | | |
+#          |   |             | s      /|                   o o-o-o o
+#          |   o  Tartarus   o       o o                   |       |
+#          |   |             |         |                   o-t-o-o-Nomag
+#          o   o             o         o
+#          |   |             |         |
+#          |   o-o-o-o-o-o-Erebus      o-mvdrain
+#          |  /           (noflee)          |
+#          | /                           mvdrain
+#          |/                               |
+#        Campe                           mvdrain       Odysseus
+#                                           |             /
+#                                      o-mvdrain  Jason  o     Theseus
+#                                      |            /    |      /
+#                                      o           o --- o - hpreg
+#                  | | | | | | | | | | |           |     |     |
+#                 -o-o-o-o-o-o-o-o-o-o-o    Arcane |     |     |  Orpheus
+#                  | | | | | | | | | |        /    |     |     |    /
+#                 -o-o-o-o-o-o-o-o-o-o-    hpreg - o --- D --- o-hpreg
+#                  | | | | | | | | | |             |    x|     |
+#                 -o-o-o-o-o-o-o-o-o-o-    Perseus |     |     | Achilles
+#                  | | | | | | | | | |            \|     |     |/
+#                 -o-o-o-o-o-o-o-o-o-o-            o --- o - hpreg
+#                  | | | | | | | | | |                   |
+#                 -o-o-o-o-o-o-o-o-o-o-                  | Agamemnon
+#                  | | | | | | | | | |                   |/
+#                 -o-o-o-o-o-o-o-o-o-o-                  o
+#                  | | | | | | | | | |
+#                 -o-o-o-o-o-o-o-o-o-o-
+#                  | | | | | | | | | |
+#                 -o-o-o-o-o-o-o-o-o-o-
+#                  | | | | | | | | | |
+#                 -o-o-o-o-o-o-o-o-o-o-
+#                  | | | | | | | | | |
+#                 -o-o-o-o-o-o-o-o-o-o-
+#                  | | | | | | | | | |
+#                            |
+#                          barge
+#                            |
+#                            w
+#                            |
+#                        w - w
+#                        |
+#                        w - w
+#                            |
+#                            w
+#                            |
+#                          barge
+#                            |
+#                            X
+#
+* "ask Hermes death" to enter
+* From barge to kings: 10n5e2ne3nw3n
+* "enter stone" to leave, bringing followers, "touch stone" to leave alone
+* Whole area is nosum/norecall
+* All parts except Asphodel Fields, Vale of Mourning, Towers of Paradise,
+*   outer ring of Elysium Fields, Tartarus and Mountain are very bright
+* Passing to/from bridge before Nyx may make you fall down to the area below
+* To get past door to Hades: evil    lvl 55+ nb/nb:  touch door
+*                            good    lvl 55+ te/te:  touch door
+*                            neutral lvl 55+ leader: touch door
+*                            Left Hades: vuln fire. Right Hades: vuln ice.
+* Robe of blood: First kill Tisiphone, then Hades. Then the robe is in either
+* evil(E) or good(G) room. The key to these rooms dissolves on use, and robe
+* is no-locate, so it's 50% chance to get it.
+* Soldiers & most other xp-mobs are vuln pure/dark
+
+Underworld:                       Lvl    Xp ASWIDMX # agg      Hp         Gold      Special
+Charon                              1       N--       ---                           walk-path (barge makes a round in approx 110 sec), no-attack
+Mulciber                            1       N--                                     nofight-room
+A soul of a young boy              20  578k N-x---    -     451-457     5001-5001   [human], flees
+A soul of a young girl             20  578k N-x---    -     452-462     5001-5001   [human], flees
+A soul of a woman                  25 1444k N-x---    -     615-616     3158-3198   [human], flees
+A soul of a man                    27 2338k N-x---    -     663-667     5001-5001   [human], flees
+The Left Hades                     50             2   GNE                           vuln fire, immune ice/blindness(dark?), imp, triad of fire, 2-2 spells, shrugger
+  +3 Slay myth:  29 hits out of 37: 78%  (hr 11+34+3=48)
+  +3 deathbr.:   17 hits out of 25: 68%  (hr 12+34+3=49)
+  +3 deathbr.:   25 hits out of 29: 86%  (hr 12+34+3=49)
+                                                   Anni Vapo Pulv Atom 
+  Gig.maul: CRUSH  LARGE GAS SLAY Myth.    avg 26   10   19
+  Deathbr:  CRUSH            SLAY Human    avg 25        12   29    1
+The Right Hades                    50             2   GNE                           vuln ice, immune fire/blindness(dark?), dodge, imp, triad of fire, 2-2 spells, shrugger
+  +3 Slay myth:  24 hits out of 35: 69%  (hr 11+34+3=48)
+  +3 deathbr.:   16 hits out of 23: 70%  (hr 12+34+3=49)
+  +3 deathbr.:   19 hits out of 31: 61%  (hr 12+34+3=49)
+                                                    Anni Vapo Pulv Atom 
+  Gig.maul: CRUSH  LARGE GAS  SLAY Myth.    avg 26   10   14
+  Deathbr:  CRUSH             SLAY Human    avg 25         5   30
+A soul                             60  150M N-xxx-    -    6099-6174       1-1      vuln light, ignore-cop
+King Aeacus                        60   68M Nx-x -    -    4835-4840   41287-41428  [ktv], bash, kick, headbang, berserk
+Rhadamanthys                       60   68M Nx-x -    -    4784-4816   41287-41423  [ktv], bash, kick, headbang, berserk
+Sysiphous                          60   63M N--xx-    ---  4554-4561     101-101    [human], flees
+Campe                              65   98M Nx-x -    --E  6877-6970   50048-50079  vuln light, resist fire/ice/unlife/earth/air
+A Demonic Guard of Evil            75  394M E--x      G   15290-15398      1-1      vuln silver/stun, immune pure/light/iron/fire, resist unlife/dark/poison, bash, kick, headbang, berserk, hide, flying/special-standing before being in battle - standing after
+The Angelic Guard of Hades (female) 75 394M Gx-x      G   15216-15374      1-1      vuln unlife, resist magic/energy, flying/special-standing before being in battle - standing after, bash, kick, headbang, berserk
+The Angelic Guard of Hades (male)  75  394M Gx-x      G   15188-15338      1-1      vuln unlife, resist magic/energy, flying/special-standing before being in battle - standing after, bash, kick, headbang, berserk
+A member of the Trojan Royal House 80 1112M Gxxxx-    -   18616-18702 204896-205170 [ktv], vuln dark/unlife, headbang, 2-2 skills
+A brave soldier                    80 1200M G-xxx-    --- 25175-25269 100075-100301 vuln dark/pure, sun arrow, 2-2 spells
+A heroic soldier                   80 1120M G--x -    --- 25266-25383  73523-73981  vuln dark/pure, sun arrow, headbang, whirlwind
+Briareus                           80  560M N--x -    -   17273-17501  52855-53270  vuln pure/light/iron, immune fire, resist dark/unlife/poison
+Cottus                             80  560M N--x -    -   17277-17351  53011-53117  vuln pure/light/iron, immune fire, resist dark/unlife/poison
+Cronos                             80  704M N-xxx-    -   18158-18270 120185-120435 [human], bash, kick, headbang, berserk, ignore-cop
+Cyclopse                           80  560M N--x -    -   22862-22952  51221-51307  vuln unlife/energy/iron/ice
+Ephialtes                          80  608M E-xxx-    -   16284-16452      1-1      [human], bash, kick, headbang, berserk, ignore-cop
+Eurynomus                          80       E--x      GNE                  1        [demon?], vuln pure/light/iron, immune fire, resist dark/unlife?/poison?, dodge, transforms into entity of life + void of death when killed. They, in turn, divide into 2 shatters each when killed. When first shatter dies, Eurynomus returns. Room is noflee
+  +3 WoJ:         1 hits out of 14:  7%  (hr 12+34+3=49)
+  +3 WoJ:         1 hits out of 16:  6%  (hr 12+34+3=49)
+  +3 WoJ:         1 hits out of 16:  6%  (hr 12+34+3=49)
+  +3 WoJ:         8 hits out of 11: 73%  (hr 12+34+3=49)
+A light entity of life             80                                               dodge, sun arrow, 0-1 spells, summoned, divides into shatter of life + shatter of light when killed.
+  +3 WoJ:         9 hits out of  9:100%  (hr 12+34+3=49)
+  +3 WoJ:        13 hits out of 13:100%  (hr 12+34+3=49)
+  +3 WoJ:        12 hits out of 12:100%  (hr 12+34+3=49)
+                                          Obli Anni Vapo Pulv
+  WoJ:     WEAPON PURE LIGHT     avg 21         32    1
+A dark void of death               80                                               summoned, area vampiric mist, 0-2 spells, 8-9 attacks (vaporize) divides into shatter of darkness + shatter of death when killed.
+  +3 WoJ:         9 hits out of  9:100%  (hr 12+34+3=49)
+                                          Obli Anni Vapo Pulv Atom
+  WoJ:     WEAPON PURE LIGHT     avg 21                    8    1
+A shatter of life                  80                                               dodge, burst of life, 7-7 attacks (anni/vapo), summoned
+  +3 WoJ:         3 hits out of  4: 75%  (hr 12+34+3=49)
+  +3 WoJ:        10 hits out of 13: 77%  (hr 12+34+3=49)
+  +3 WoJ:         6 hits out of  8: 75%  (hr 12+34+3=49)
+                                          Obli Anni Vapo Pulv Atom
+  WoJ:     WEAPON PURE LIGHT     avg 21         18    1
+A shatter of light                 80                                               summoned, sun arrow, 7-7 attacks (anni/vapo)
+  +3 WoJ:         8 hits out of  8:100%  (hr 12+34+3=49)
+  +3 WoJ:         8 hits out of  9: 89%  (hr 12+34+3=49)
+  +3 WoJ:        11 hits out of 11:100%  (hr 12+34+3=49)
+                                          Obli Anni Vapo Pulv
+  WoJ:     WEAPON PURE LIGHT     avg 21         25    2
+A shatter of darkness              80                                               summoned, blindness
+  +3 WoJ:         8 hits out of 10: 80%  (hr 12+34+3=49)
+                                          Obli Anni Vapo Pulv Atom
+  WoJ:     WEAPON PURE LIGHT     avg 21                    7    1
+A shatter of death                 80                                               summoned, soulsteal
+Gyes                               80  560M N--x -    -   17273-17274  53022-53447  vuln pure/light/iron, immune fire, resist dark/unlife/poison
+Ixion                              80  608M E-xxx-    -   16268-16288      1-1      [human], backstab, ignore-cop, takes 7.5-second rests every 10-60 second
+Mnemosyne                          80  608M N-xxx-    -   17355-17383  40056-40057  [human], resist pure, sitting, powerword pain, meteor blast, mass pain
+Oceanus                            80  608M N-xxx-    --- 16137-16302  60197-60355  [human], bash, kick, headbang, berserk, ignore-cop
+Otus                               80  608M E-xxx-    -   16293-16321      1-1      [human], bash, kick, headbang, berserk, ignore-cop
+Rhea                               80  608M N-xxx-    -   16292-16303 600234-600352 [human], bash, kick, headbang, ignore-cop
+Salmoneus                          80  608M E-xxx-    -   16209-16429      1-1      [human], backstab, ignore-cop, takes 7.5-second rests every 10-60 second
+Tantalus                           80  608M N--xx-    --- 16272-16285    101-101    [human], walk-path (4s6w6n6e3s, every 75-150s)
+The Statue of Odysseus             80  583M Nx-x x    -   19392-19426      1-1      vuln dark/unlife, resist mental, bash, kick, headbang, berserk
+Themis                             80       N-xxx-    -                             [human], resist pure, sitting, powerheal, powerword pain, mass pain, wither, meteor blast, harm, confusion, blindness, ignore-cop
+Tityus                             80  608M E-xxx-    -   16305-16399      1-1      [human], backstab (400), ignore-cop, takes 7.5-second rests every 10-60 second
+Alecto                             85 1190M G-xxx-    -   24346.25         1        INFO, vuln pure/light, immune fire, resist dark/unlife, berserk
+Ajax the Greater                   85 1361M Gxxxx-1   -   24064-24246 105048-105574 INFO, vuln dark/unlife
+Eurynomus (returning)             85+                                               [demon?], vuln pure/light/iron?, immune fire, resist dark?/unlife?/poison?, 10-10 attacks (pulverize), corpseless
+  +3 WoJ:         5 hits out of 23: 22%  (hr 12+34+3=49)
+  +3 WoJ:         2 hits out of 12: 17%  (hr 12+34+3=49)
+                                          Obli Anni Vapo Pulv Atom
+  WoJ:     WEAPON PURE LIGHT     avg 21                         7
+Megaera                            85 1190M G-xxx-    -   24172.5      60124-60224  INFO, [demon], bash, kick, berserk
+Musaeus of Athens                  85 1488M Gxxxx-1   -   24190-24322 104604-104920 INFO, vuln dark/unlife
+Jason the Argonaut                 85 1361M G--xx-1   -   27225-27357  74131-74237  INFO, vuln dark/pure, resist unlife, confusion
+Orpheus the Charmer                85 1445M G--xx-0   -   27140-27435  74072-74114  INFO, vuln dark/pure, resist unlife, confusion
+Perseus the Legendary              85 1530M G--xx-    -   27082-27443  74044-74080  INFO, vuln dark/pure, resist unlife, confusion
+Theseus the Founder                85 1536M G--xx-1   -   27169-27406  27169-27406  INFO, vuln dark/pure, resist unlife, confusion
+Achilles the Swift Footed          85 1361M G--xx-    -   27065-27393  73679-73925  INFO, vuln dark/pure, resist unlife, confusion
+Agamemnon the Steadfast            85 1530M G--xx-    -   27233-27277 114646-114850 INFO, vuln dark/pure, resist unlife, confusion
+King Minos                         90 1800M Nx-x -    -   36872-37114 231130-231402 INFO, [ktv], bash, kick, headbang, berserk
+A blessed guard                    90       Gx-xxx    -                             [human], vuln dark, resist light, kick, revenger
+A valiant soldier                  90 1620M G--x -    --- 35278.5     104976        vuln dark/pure, headbang, bash
+Tisiphone                          90       Gx-x -    --E                  0-0      [demon], vuln unlife/iron?, immune fire/dark, resist pure/light/poison?, dodge, 6-6 attacks, blindness, area confusion, wither, area hell fire, mass pain, area harm, powerheal, 1-2 spells, blocker, moves robe to Hades when killed, special-open-door, ? before being in battle - standing after
+  +3 DoS:       6 hits out of  6:100%  (hr 12+34+3=49)
+  +3 DoS:       6 hits out of  7: 86%  (hr 12+34+3=49)
+                                             Obli Anni Vapo Pulv Atom
+  DoS:   PIERCE UNLIFE             avg 26                     5    7
+Cerberus                           95       E--x  3   GNE                  1-1      INFO, [canine], dodge, 8-8 attacks, negate sanc 1/15 times (7%), special-headrip(?), special-bite(2400), room is noflee
+  +8 flail:     14 hits out of 14:100%  (hr 12+34+8=54)
+  +8 flail:     17 hits out of 18: 94%  (hr 12+34+8=54)
+Erebus                            90+        x-   3   ---             225988-230074 INFO, unlife or dark damage, resist unlife, dodge, ultra-hide, area blindness, harm, wither, powerheal, 1-1 spells, 8-8 hits, 200-250/68 dam per attack, negate sanc xx/yy times (zz%), he is not evil, room is noflee, at lvl 92 blood mirror kicked in 1 out of 1 times (100%), with ac -302 he hit me 3 out of 5 times (60%), at lvl 93 blood mirror kicked in 12 out of 45 times (27%), with ac -294 he hit me 45 out of 49 times (92%)
+Lvl 96:ish
+  +3 deathbr.:   13 hits out of 37: 35%  (hr 12+34+3=49)
+  +8 plain:      10 hits out of 37: 27%  (hr 12+32+8=52)
+  +3 DoS:        12 hits out of 20: 60%  (hr 12+34+3=49)
+  +8 plain:       6 hits out of 15: 40%  (hr 12+34+8=54)
+                                               Obli Anni Vapo Pulv Atom
+   WEAPON                   avg 20                        16
+   CRUSH        SLAY Human  avg 25                        11    2
+   PIERCE UNLIFE            avg 26                   12
+   WoJ (demon/devil?)
+   fire/ice/earth/air (entity/mythical?)
+Arcane the defiler                100       Nx-       -                             no-attack
+Odysseus the Cunning              100       Gx-xx-1   -               690564        INFO, [mythical], vuln dark, resist ice?/unlife?/earth?/air?, dodge, 7-7 attacks, bash, kick, berserk, blocker
+  +3 maul:      5 hits out of 21: 24%  (hr 12+34+3=49)
+Hades                             100             3   GNE            3001209-3001394 INFO, [mythical], resist fire?/ice?/unlife?/earth?/air?, immune blind(dark?), parry, 8+ attacks, 400/225/70 dam per attack, negate sanc 4/17 times (24%), imp, transforms into Left Hades -> Right Hades -> back to self before you can kill him, backstab (70), 1-2 skills, high AC
+  +3 Slay myth:   9 hits out of 107:  8%  (hr 11+34+3=48)
+  +3 deathbr.:    6 hits out of  50: 12%  (hr 12+34+3=49)
+  +3 deathbr.:    0 hits out of  19:  0%  (hr 12+34+3=49)
+  +3 deathbr.:    1 hits out of  27:  4%  (hr 12+34+3=49)
+                                                    Anni Vapo Pulv Atom Ultr
+  Gig.maul: CRUSH  LARGE GAS  SLAY Myth.    avg 26              2    8
+  Deathbr:  CRUSH             SLAY Human    avg 25         4    3
+Nyx                               100 5000M Nx-x  2   GNE                  1-1      INFO, dark damage, [mythical], resist fire?/ice?/unlife?/earth?/air?, dodge, mass pain, powerheal, area confusion, area harm, area hell fire, area blindness, wither, 1-2 spells, room blinds you on entry. Nyx disbands group and blinds everyone on entry. Room before Nyx can teleport you to Tartarus on entry/exit, and so can Nyx during battle
+  +3 Deathbr.:      2 hits out of 38:  5%  (hr 12+32+3=47)
+  +3 Deathbr.:      3 hits out of 39:  8%  (hr 12+32+3=47)
+                                               Obli Anni Vapo Pulv Atom
+  Deathbr: CRUSH         SLAY Human    avg 25              2    3

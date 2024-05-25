@@ -1,0 +1,199 @@
+; irv.tf
+
+/def -F -p999 -mregexp -t"^([^ ]+) tell(s|) the group, '(use|Use|USE|:use|:dam) (plain|slash|crush|pierce|normal|norm|horgar|iron|trueiron|fire|ice|acid|silver|poison|poisononly|wood|earth|electricity|energy|unlife|water|light|dark|mental|magic|large|superlarge|stun|bleed|pure|air|gas|spell|Normal|Horgar|Iron|Trueiron|Fire|Ice|Acid|Silver|Poison|Poisononly|Wood|Earth|Electricity|Energy|Unlife|Water|Light|Dark|Mental|Magic|Large|Superlarge|Stun|Bleed|Pure|Air|Gas|Spell|NORMAL|HORGAR|IRON|TRUEIRON|FIRE|ICE|ACID|SILVER|POISON|POISONONLY|WOOD|EARTH|ELECTRICITY|ENERGY|UNLIFE|WATER|LIGHT|DARK|MENTAL|MAGIC|LARGE|SUPERLARGE|STUN|BLEED|PURE|AIR|GAS|SPELL)'$" irvuseweapontell = \
+    /if (autoassist & ({P1} =~ groupleader | {P1} =~ "You")) \
+      /let slask=$[tolower({P4})]%; \
+      /set vuln %{slask}%; \
+      /if ((area =~ 'Laboratory' | area =~ 'Well') & slask =~ 'iron' & !classRo) \
+        usew pure%; \
+      /elseif (slask =~ 'pure' & area =~ 'Well' & classRo & mylevel < 80) \
+        usew iron%; \
+      /elseif (slask =~ 'acid' & area =~ 'Well') \
+        usew acid%; \
+      /elseif (slask =~ 'ice' & (area =~ 'Guallidurth' | area =~ 'Inferno')) \
+        usew slaydrowelf%; \
+      /elseif (area =~ 'DragontailIsle' & (name =~ 'Chocolate' | name =~ 'Sue' | name =~ 'Jane' | name =~ 'Ginger')) \
+        usew slaymagical%; \
+      /elseif (area =~ 'DragontailIsle' & name =~ 'Lulu') \
+        usew mental%; \
+      /elseif (slask =~ 'mental' & area =~ 'DragontailIsle' & align !~ 'E') \
+        usew silver%; \
+      /elseif (slask =~ 'silver' & area =~ 'DragontailIsle' & align =~ 'E') \
+        usew mentalonly%; \
+      /elseif (slask =~ 'mental') \
+        usew mentalonly%; \
+      /elseif ((slask =~ 'water' | slask =~ 'magic') & area =~ 'Inglestone') \
+        usew slaydwarf%; \
+      /elseif (slask =~ 'fire' & (area =~ 'CeanythDungeons' | area =~ 'Citadel')) \
+        usew pure%; \
+      /elseif (slask =~ 'fire' & area =~ 'Lorchid') \
+        usew slaytroll%; \
+      /elseif (slask =~ 'fire' & area =~ 'AbandonedCaves') \
+        usew slayorc%; \
+      /elseif (slask =~ 'horgar') \
+        /set vuln fire%; \
+        usew horgar%; \
+      /elseif (area =~ 'CohnShar' & (name =~ 'Sweety' | name =~ 'Chocolate' | name =~ 'Cindy' | name =~ 'Ginger' | name =~ 'Mthead')) \
+        usew slayhuman%; \
+      /else \
+        usew %{slask}%; \
+      /endif%; \
+    /endif
+
+/def -F -p999 -mregexp -t"^([^ ]+) tell(s|) the group, '(use slay|USE SLAY|use |USE )[ ]?(amphibian|animal|astral|beholder|bird|botanic|canine|demon|devil|dinosaur|dragon|drow|drowelf|dwarf|elemental|elf|entity|fairie|feline|fish|giant|gnome|goblin|halfelf|halforc|hobbit|human|insubstantial|jelly|ktv|lizardman|lugroki|magical|mythical|orc|reptile|rodent|skeleton|snake|spider|troll|undead|vampire|AMPHIBIAN|ANIMAL|ASTRAL|BEHOLDER|BIRD|BOTANIC|CANINE|DEMON|DEVIL|DINOSAUR|DRAGON|DROW|DROWELF|DWARF|ELEMENTAL|ELF|ENTITY|FAIRIE|FELINE|FISH|GIANT|GNOME|GOBLIN|HALFELF|HALFORC|HOBBIT|HUMAN|INSUBSTANTIAL|JELLY|KTV|LIZARDMAN|LUGROKI|MAGICAL|MYTHICAL|ORC|REPTILE|RODENT|SKELETON|SNAKE|SPIDER|TROLL|UNDEAD|VAMPIRE).*'$" irvuseweapontell2 = \
+    /if (autoassist & ({P1} =~ groupleader | {P1} =~ "You")) \
+      /let slask=$[tolower({P4})]%; \
+      /if (slask =~ 'drow') \
+        /let slask drowelf%; \
+      /endif%; \
+      /set vuln slay%{slask}%; \
+      /if (slask =~ 'goblin' | slask =~ 'troll' | slask =~ 'orc' | slask =~ 'dinosaur' | slask =~ 'lugroki' | slask =~ 'spider') \
+        /set vuln fire%; \
+      /elseif (slask =~ 'drowelf') \
+        /set vuln ice%; \
+      /endif%; \
+      /if (slask =~ 'magical' & area =~ 'DragontailIsle' & align =~ 'E') \
+        usew mentalonly%; \
+      /elseif (slask =~ 'magical' & area =~ 'DragontailIsle' & name !~ 'Cindy') \
+        usew silver%; \
+      /elseif (slask =~ 'dragon' & area =~ 'Well-SKIPTHIS') \
+        /set vuln fire%; \
+        usew fire%; \
+      /else \
+        usew slay%{slask}%; \
+      /endif%; \
+    /endif
+
+/def -F -p999 -mregexp -t"^([^ ]+) tell(s|) the group, '(horgar|Horgar|HORGAR).*'$" irvuseweapontell3 = \
+    /if (autoassist & ({P1} =~ groupleader | {P1} =~ "You")) \
+      /let slask=$[tolower({P3})]%; \
+      /set vuln fire%; \
+      usew %{slask}%; \
+    /endif
+
+/alias usew \
+    /eval /set temp=%%{weapon%{*}}%; \
+    /if ({*} =~ 'elec') \
+      /eval /set temp=%%{weaponelectricity}%; \
+    /endif%; \
+    /if (temp =~ 'pathweaver fire') \
+      /set temp pathweaver%; \
+      /set temp2 baru goth deathflame%; \
+    /endif%; \
+    /if (temp =~ 'pathweaver ice') \
+      /set temp pathweaver%; \
+      /set temp2 bwaihna cur hailstrike%; \
+    /endif%; \
+    /if (temp =~ 'pathweaver energy') \
+      /set temp pathweaver%; \
+      /set temp2 cuntoh magu%; \
+    /endif%; \
+    /if ({*} =~ '') \
+      /tfshow Damage types: plain, slash, crush, pierce, norm, normal%; \
+      /tfshow pure, light, large, superlarge, energy, magic, poison, acid, dark, unlife, fire, ice, iron, mental, gas, bleed, earth, electricity, silver, stun, water, air, wood%; \
+    /elseif (temp =~ '') \
+      /tfshow UNKNOWN WEAPON TYPE: %{*}%; \
+    /elseif (wieldedweapon !~ temp) \
+      /if (position =~ 'sleep') \
+        wake%; \
+      /endif%; \
+      /tfshow Using %*: %{temp}%; \
+      /eval gb %{temp}%; \
+      /if (classRo & fighting & mylevel > 90) \
+        /eval quickdraw %{temp}%; \
+      /else \
+        unwield%; \
+      /endif %; \
+      /eval wi %{temp}%; \
+      /eval pb %{wieldedweapon}%; \
+      /eval /set wieldedweapon %{temp}%; \
+      /if (position =~ 'sleep') \
+        sleep%; \
+      /endif%; \
+    /endif%; \
+    /if (wieldedweapon =~ 'pathweaver' & temp2 !~ currentPW) \
+      /if (position =~ 'sleep') \
+        wake%; \
+      /endif%; \
+      /tfshow Invoking: %{temp2}%; \
+      /eval ' %{temp2}%; \
+      wi pathweaver%; \
+      /if (position =~ 'sleep') \
+        sleep%; \
+      /endif%; \
+    /endif%; \
+    /purge slask
+
+/alias slay usew slay%{*}
+
+/set currentPW unknown
+/def -F -msimple -t"You wield PathWeaver Deathflame." PWfiretrig = \
+    /set currentPW baru goth deathflame
+/def -F -msimple -t"You wield PathWeaver HailStrike." PWicetrig = \
+    /set currentPW bwaihna cur hailstrike
+/def -F -msimple -t"You wield PathWeavers blade." PWenergytrig = \
+    /set currentPW cuntoh magu
+
+/def -F -mregexp -t"^The magic missile penetrates the air miles above (.*)\.$" irvtrigMmair = \
+    /tfshow Magic missile useless against %{P1}%; \
+/def -F -mregexp -t" bathes in the warmth of the hellish flames.$" irvtrigbathe = \
+    /tfshow Fire useless against %{PL}%; \
+    /set firenogood 1
+/def -F -mregexp -t" seems unphazed by your attack." irvtrigunphazed = \
+    /tfshow That spell (PowerPain/NetherBolt) useless against %{PL}%; \
+    /set ppnogood 1
+/def -F -mregexp -t"^Water doesn't seem too effective, maybe try again?!$" irvtrigwaterbad = \
+    /tfshow Water useless against this mob!%; \
+    /set waternogood 1
+/def -F -mregexp -t"^As I told ya, nothing can't do anything\.\.\.$" irvtrigunlifebad = \
+    /tfshow Unlife useless against this mob!%; \
+    /set unlifenogood 1
+/def -F -t"You slam * with your meteor bolt, bullseye!" irvtrigmb = \
+    /set mbscreamwanted 0%; \
+    /if ({PL} =~ 'Malius the drow-elf imposter' | {PL} =~ 'The cloaker') \
+      /set fightingcloaker 1%; \
+    /endif
+/def -F -t"* shrugs off your pathetic magic\." irvtrigshrug = \
+    /if (hfscreamwanted) \
+      /set hfscreamwanted 0%; \
+      /substitute -p @{BCred}HELL FIRE@{n}: @{Ccyan}SHRUG!%; \
+    /elseif (ppscreamwanted) \
+      /set ppscreamwanted 0%; \
+      /substitute -p @{BCred}POWER PAIN@{n}: SHRUG!%; \
+    /elseif (plasmaboltscreamwanted) \
+      /set plasmaboltscreamwanted 0%; \
+      /substitute -p @{BCred}PLASMA BOLT@{n}: SHRUG!%; \
+    /else \
+      /tfshow SHRUGGED!!!%; \
+    /endif%; \
+    /set mbscreamwanted 0
+/def -F -msimple -t"A blurred figure stands here." irvtrigblurfig = \
+    /set firenogood 1
+/def -F -msimple -t"A great soulcrusher stands here." irvtrigsoulcrusher1 = \
+    /set firenogood 1
+/def -F -msimple -t"A mystical soulcrusher (invisible)" irvtrigsoulcrusher2 = \
+    /set firenogood 1
+/def -F -msimple -t"The soulcrusher glances at you with fear." irvtrigsoulcrusher3 = \
+    /set firenogood 1
+/def -F -t"The soulcrusher is here, fighting *" irvtrigsoulcrusher4 = \
+    /set firenogood 1
+/def -F -t"The Terrorite Demon is here, fighting *" irvtrigterrdemon = \
+    /set firenogood 1
+/def -F -t"The Sword Demon is here, fighting *" irvtrigsworddemon = \
+    /set firenogood 1
+/def -F -t"Eraditor is here, fighting *" irvtrigeraditor = \
+    /set firenogood 1
+/def -F -t"The pyrohydra is here, fighting *" irvtrigpyrohydra = \
+    /set firenogood 1
+/def -F -t"The Efreeti Sultan is here, fighting *" irvtrigsultan = \
+    /set firenogood 1
+
+/def -F -t"A dark stairway" irvtrigDrTa1 = \
+    /if (area =~ 'DragontailIsle' & wieldedweapon !~ weaponslaymagical & (name =~ 'Cindy' | name =~ 'Ginger')) \
+      usew slaymagical%; \
+    /endif
+
+/def -F -t"Before a huge set of dark doors" irvtrigDrTa2 = \
+    /if (area =~ 'DragontailIsle' & wieldedweapon =~ weaponslaymagical & (name =~ 'Cindy' | name =~ 'Ginger')) \
+      usew silver%; \
+    /endif

@@ -1,0 +1,56 @@
+# Goblik Warcamps (460): 5-20, Rengrave/Gildae (?/10-40min)  (Karandras: 10e10n2e7n2en)
+#
+#                        Snarg            o - o
+#                          |              |   |
+#     o -Ootr-o            o              o - o
+#     |   |   |            |              |
+# o - o - o - o o          o ---- o - o - o
+# |   |   |   |/           |      |
+# o - o - o - o + o ------ H ---- o
+# |           |   |        |      |
+# X       o   o   o        o ---- o       o - o - Geech
+# |       |       |        |   \  |       |   |
+#         o - o - o - o    |    \-o - o - o - o
+#         |       |        |      |   |
+#         o       o-Rtorg Dromk-Zlomb-o
+#                 |                   |
+#               Kmod        o-o-o-o   o
+#               Smezz        /        |
+#                           o ------- o
+#
+* Entrance from Faery Forest
+* Vuln pure/light/fire/slay lugroki
+
+Goblik:                             Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+Weef, the sycophantic goblik retainer 1   120 E---x-    --    20-24        1-1    [lugroki], flees, +20 starthp
+A giant war ant                       5   11k N-x-x     GNE   90-94        9-12   [insect]
+A goblik herald                       5       E--       ---                       no-attack
+A goblik scout (mapping)              5   12k E-x-x-    --    99-108     442-459  [lugroki], sneak, flees
+A goblik scout (searching)            5   12k E-x-x-    --    97-104     440-456  [lugroki], sitting, sneak, flees, backstab
+Ootr, the goblik scout master         6   45k E-x-xx    GNE  121-123    1200-1200 [lugroki], sneak, +117 starthp
+A goblik worker (break)               7   45k E---x-    GN   140-144     727-758  [lugroki], sitting
+A goblik worker (lumber)              7   45k E---x-    GN   141-141     735-772  [lugroki], bash
+A goblik worker (securing)            7   45k E---x-    GNE  141-144     727-775  [lugroki]
+A giant warspider                     8   66k E---x-    GNE  160-161      10-16   [insect], resist poison
+Snarg, the goblik surveyor            9   95k E-x-x-    GN   180-180    1800-1800 [lugroki], +180 starthp
+A goblik watchtower guard            10  115k E---x-    GNE  196-201    1106-1140 [lugroki]
+A goblik archer                      12  180k E-x-x-    GN   205-213    1256-1333 [lugroki]
+A goblik gate guard                  14  252k E---x-    GNE  288-291    1582-1611 [lugroki], headbang
+A goblik guard (falling)             14  252k E---x-    GN   288-291    1561-1635 [lugroki]
+A goblik guard (post)                14  252k E---x-    GN   289-293    1545-1655 [lugroki]
+A goblik skirmisher (pitching)       16  336k E---x-    GN   333-333    1767-1854 [lugroki]
+A goblik skirmisher (waiting)        16  336k E---x-    GN   328-330    1793-1803 [lugroki]
+A goblik marauder (campfire)         18  413k E---x-    GN   389-396    1990-2035 [lugroki]
+A goblik marauder (honing)           18  413k E-x-x-    GN   386-389    1981-1033 [lugroki]
+A goblik marauder (sleeping)         18  413k E---x-    GN   389-391    1953-2009 [lugroki], sleeping
+A goblik marauder (waiting)          18  413k E---x-    GN   387-392    1968-2037 [lugroki]
+A goblik berserker (eating)          20  700k E---x-    GN   399-400    2106-2170 [lugroki], sitting
+A goblik berserker (glares)          20  700k E-x-x-    GN   399-401    2055-2181 [lugroki], 4-6 attacks
+A goblik berserker (preparing)       20  700k E---x-    GN   399-400    2057-2162 [lugroki], 3-6 attacks
+A goblik tent guard                  20  600k E---xx    GN   450-451    2151-2186 [lugroki]
+Dromk, the burly goblik warrior      20  720k E---xx    GN   475-475    2500-2500 [lugroki], sitting, +475 starthp
+Geech, the greasy goblik cook        20  500k E---x-    GN   550-550    2500-2500 [lugroki], +550 starthp
+Kmod, the goblik strategist          20  720k E---xx    G-   500-500    2500-2500 [lugroki], +500 starthp
+Smezz, the goblik advisor            20  800k E---x-    GN   475-475    2500-2500 [lugroki], +475 starthp
+Zlomb, the scarred goblik warrior    20  800k E---x-    GN   500-500    2500-2500 [lugroki], sitting, +500 starthp
+Rtorg, the goblik warlord            25 1750k E---xx    GN   700-700    3000-3000 [lugroki], kick, headbang, whirlwind, +700 starthp

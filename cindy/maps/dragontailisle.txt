@@ -1,0 +1,189 @@
+# Nefertum's Dragontail Isle (304): 50-100, Nefertum  (Myrridon: 24ws2ws2w2se2swseses)
+* FIND OUT: A Lich of Sarakesh         xp, hp, hp, money, money
+* FIND OUT: A Templar of Sarakesh      xp, hp (approx)
+* FIND OUT: An Emerald Draconian       xp, hp (approx)
+* FIND OUT: A Ruby Draconian           xp, hp (approx)
+* FIND OUT: A Sapphire Draconian       xp, hp (approx)
+* FIND OUT: A Topaz Draconian          xp, hp (approx)
+* FIND OUT: Lord Sarakesh (all forms)  xp, hp (approx), gold, type, irvs
+* FIND OUT: The Draconian Jailor       xp, hp (approx), agg-N, type (magical?)
+* FIND OUT: An imprisoned bodak        xp, hp (approx)
+* FIND OUT: Lord Tarashakan            xp, hp (approx)
+#
+#                                                        |
+#                                                      Dragon
+#                                                        |
+#                                                        w
+#                                                        |
+#                                                        w
+#                                                        |
+#                                                      w-w
+#                                      o-----o         |
+#                o--o-o-o--o           |    /          w
+#                |  | |    |           | o-o-o-o-o-o-o-|-o-o
+#                |  o o    |           |               w   |
+#                |         |           |               |   |
+#              o-o---o   o-o---o       o            Dragon o
+#              | |   |   | |   |       |              /    |
+#              | o o | o | o o |       |       o-o-o-o     o
+#              |   | | | |   | |       |       |           |
+#      o-----o-o---o-o-o-o---o-o-o+o-o-o-f-o-o-o     Whale-o
+#      |     | |   | | | | o | | |       |             |
+#      |     | o   | o | o | | o o       o-o-o--o-o--o-o
+#      o-o o o---o-o   o---o-o
+#      |   |     |         |
+#      o---o     o---o-o-o-o-o
+#          |               |
+#          o-o-o   o o     o-o
+#            | |   | |       |
+#            o o-o-o-o-------o-o
+#              |   |
+#              o o o o            Lvl 2               Lvl 3
+#                | + |
+#              o-o-X-o-o        t-o-o-o-t             o-o-o
+#              | |   | |        | | | | |             | | |
+#              o-o   o-o        o-o U o-o           o-o-o-o-o
+#              | |  /| |        | |   | |      D    | | | | |
+#            o-o-oRIPo-o-o    o-o-t   t-o-o    |    o-o T o-o
+#            | |       | |    | |       | |    q    | |   | |
+#            o-o-o U o-o-o    o-o-t D o-o-t    |    o-o   o-o
+#              | | | | |        | | | | |      U    | |   | |
+#              o-o-o-o-o        o-o-o-o-o           o-o D o-o
+#                | | |            | | |               | | |
+#                o-o-o            t-o-o               o-o-o
+#                  |
+#                  o
+#                  +
+#                  o
+#                 /
+#        o-RIP   o
+#        +       |
+#   Ruby-o-o-----o----o-o-Topaz
+#     |          +      +   |
+#     o+o        o      o   o+o
+#     |          |          |
+#     o       o--o--o       o
+#     |       |  |  |       |
+#   o+o--+--o-o-Jai-o-o--+--o
+#   | |       |  |  |       |
+# RIP o       o--o--o     o+o RIP
+#     |          |          | |
+#     o+o        o   o      o+o
+#     |          +   +      |
+# o+Sapphire-o-o-o-o-o---Emerald
+#              + + +
+#              o o o              o
+#                +                |
+#                o      o-o Lord  o
+#                +        |   |   |
+#                o        o   o   o
+#                +        |   +  /
+#                o        o---o-o
+#                +            |
+#                \-> o*-----> o
+*
+* Draconians, acolytes & bodaks are vuln silver/mental/slay magical
+* The Draconian Jailor picks up <Name> and runs away from battle: SUMMON <name>
+* Bodak cells are norecall but fleeable
+* Lord Sarakesh: Room is noflee/nosummon but recallable
+
+Dragontail Isle:            Lvl    Xp ASWIDMX # agg       Hp        Gold       Special
+A small rat                  10  499k N-xxx-    ---    473-486       1-1       [rodent], sneak
+A seagull                    50   50M N-xx--    ---   2779-2786      1-1       [bird], invis
+A wild rabbit                50   50M N-xx--    ---   2775-2781      1-1       [animal], invis
+A blue draconian             60  120M E-xxx-1   ---    ~5.6k     21488-21579   [magical], vuln silver/mental, immune unlife, random-delayed-agg-G-?, invis, sneak, hurricane
+A Draconian gatekeeper       60  270M E--xx-    ---    ~5.5k     51087-51107   [magical], vuln mental, immune unlife/blind (not dark), invis, backstab (300)
+An orange draconian          60  120M E-xxx-1   ---    ~5.6k     21493-21565   [magical], vuln silver/mental, immune unlife, random-delayed-agg-G-?, invis, sneak, forcewave, aware
+A white draconian            60  114M E-xxx-1   ---    ~5.6k     21471-21573   [magical], vuln silver/mental, immune unlife, random-delayed-agg-G-?, invis, sneak, sun ray
+A yellow draconian           60  108M E-xxx-1   ---    ~5.6k     21369-21582   [magical], vuln silver/mental, immune unlife, random-delayed-agg-G-E, invis, sneak, bash
+An acolyte of Sarakesh (lich)80 1280M E-xx -    ---  18475-18495 23845-23937   [entity], vuln silver/mental, immune dark, invis, sneak, assist-equals, 5-5 attacks, powerharm, 0-1 spells
+An acolyte of Sarakesh (skel)80 1120M E-xx -    ---  18458-18540 23586-25397   [entity], vuln silver/mental, immune dark, invis, sneak, assist-equals, 4-5 attacks
+A cleric of Sarakesh         80 1360M E-xx -    ---  27648-27830 22229-25438   [entity], vuln silver/mental, immune dark, invis, sneak, assist-equals, 4-5 attacks, wrath of god, 0-1 spells
+A Lich of Sarakesh           85       Ex-x -    ---                            [entity], vuln silver/mental, immune dark, invis, assist-equals, blindness, vampiric mist, wrath of god, 2-3 spells
+A Templar of Sarakesh        85       E--x      GN               24651-26983   [entity], vuln silver/mental, immune dark, invis, bash, 6-6 attacks
+An Emerald Draconian         90       E--x      GNE              50972-51095   INFO, [magical], vuln silver/mental, immune blind/unlife, invis, 8-8 attacks, attack, kick, whirlwind, 1-2 skills
+A Ruby Draconian             90       E--x      GNE              50930-51116   INFO, [magical], vuln silver/mental, immune blind/unlife, invis, 8-8 attacks, attack, kick, whirlwind, 1-2 skills
+A Sapphire Draconian         90       E--x      GNE              51002-51036   INFO, [magical], vuln silver/mental, immune blind/unlife, invis, 8-8 attacks, attack, kick, whirlwind, 1-2 skills
+A Topaz Draconian            90       E--x      GNE              51022-51037   INFO, [magical], vuln silver/mental, immune blind/unlife, invis, 8-8 attacks, attack, kick, whirlwind, 1-2 skills
+Lord Sarakesh                90       Ex-  -3   ---                            vuln mental?, vuln gas if using "skeletal boots", dodge, parry, imp, trueheal, area blindness, backstab (49), 1-2 spells/skills, first form, items are equipped, changes into Draconian Lord Sarakesh when killed
+  +8 ??:         9 hits out of  9:100%  (hr  9+35+8=52)
+  +8 ??:        17 hits out of 18: 94%  (hr 10+35+8=53)
+  +7 ??:        21 hits out of 21:100%  (hr 10+34+7=51)
+  +8 bl. mace:  11 hits out of 11:100%  (hr 11+34+8=53)
+  +3 icestorm:   6 hits out of  6:100%  (hr 11+34+3=48)
+  +8 lance:      8 hits out of  9: 89%  (hr 11+34+8=53)
+                                         Anni Vapo Pulv Atom ultr
+  Plain:    WEAPON               avg 22         8    1
+  Slash:    SLASH                avg 24         4   12
+  Crush:    CRUSH                avg 24              8    3
+  Mental:   CRUSH MENTAL         avg 21              7
+  Silver:   PIERCE SILVER        avg 25         2   23
+  Wood:     WEAPON WOOD          avg 27             21
+  Icestorm: CRUSH ICE            avg 26         2         3    1
+The Draconian Lord Sarakesh  90       Ex-  -2   ---                  1         imp, vuln mental?, mass pain, trueheal, area blindness, 1-2 spells, dim_red_haze_spell, changes into Lich of Lord Sarakesh when killed
+  +8 ??:        10 hits out of 10:100%  (hr  9+35+8=52)
+  +8 ??:        17 hits out of 18: 94%  (hr 10+35+8=52)
+  +7 ??:        16 hits out of 16:100%  (hr 10+34+7=51)
+  +8 bl. mace:  11 hits out of 11:100%  (hr 11+34+8=53)
+  +8 lance:     10 hits out of 11: 91%  (hr 11+34+8=53)
+                                              Obli Anni Vapo Pulv Atom Ultra+
+  Plain:   WEAPON                avg 22                   9    1
+  Slash:   SLASH                 avg 24                   5   12
+  Crush:   CRUSH                 avg 24                   5    6
+  Mental:  CRUSH MENTAL          avg 21                  13
+  Silver:  PIERCE SILVER         avg 25                       17    8     2
+  Wood:    WEAPON WOOD           avg 27                        6   10
+The Lich of Lord Sarakesh    90       Ex-x -2   ---                            imp, vuln crush/wood/silver?, immune dark, dodge, hell storm, plasma ball, area ice-damage spell, trueheal, 2-2 spells, changes into lvl 100 Lord Sarakesh when killed
+  +8 ??:        21 hits out of 24: 88%  (hr  9+35+8=52)
+  +8 ??:        17 hits out of 18: 94%  (hr 10+35+8=53)
+  +7 ??:        26 hits out of 27: 96%  (hr 10+34+7=51)
+  +8 bl. mace:  10 hits out of 11: 91%  (hr 11+34+8=53)
+  +8 lance:     14 hits out of 14:100%  (hr 11+34+8=53)
+                                              Obli Anni Vapo Pulv Atom
+  Plain:   WEAPON                avg 22                  21
+  Slash:   SLASH                 avg 24             22    2         1
+  Crush:   CRUSH                 avg 24                        7    3
+  Mental:  CRUSH MENTAL          avg 21                       13    1
+  Silver:  PIERCE SILVER         avg 25                   5   26
+  Wood:    WEAPON WOOD           avg 27                   2   24
+The Draconian Jailor         95       Ex-  -2   -                50950-51103   INFO, vuln silver/mental, resist WEAPON/magic/energy, immune unlife, invis, shockwave, plasma ball, mass pain, force bolt, area blindness, wrath of god/vampiric touch, 2-2 spells, teleport-opponent-to-random-cell-and-self-to-outside-that-cell
+  +8 Spear of the Seas:  26 hits out of 27: 96%  (hr 11+34+8=53)
+An imprisoned bodak          95       E- x  3   GNE                  1-1       INFO, [magical], vuln slash/silver/mental, immune unlife/pure/dark/energy/wood, invis, rooms are norecall but fleeable
+                                           vapo pulv atom ultr
+  plain (avg 22):                           XX
+  slash (avg 24):                                  XX
+  crush (avg 24):                             XX
+  pierce (avg 25):                            XX
+  mjollnir (avg 24), CRUSH, MAGIC:   annihilate
+  Mind flail (CRUSH MENTAL, avgdam 21):          27         5
+  Silver lance (PIERCE SILVER, avgdam 24):      101   12   11
+  Wooden staff (WOOD, avgdam 22):                -----
+  Notorych (LIGHT, avgdam 20):              12    2
+  iron    PIERCE IRON   avg 20              XX
+  ice     CRUSH ICE     avg 24               6   17
+  fire    SLASH FIRE    avg 23                   41   14
+  large   SLASH LARGE SLARGE  avg 22             29    3
+  acid    SLASH ACID    avg 22                   13    5
+  poison
+  earth
+  electricity
+  water
+  stun
+  bleed
+  air
+  gas
+Lord Tarashakan              95       E--x -1   -               377012         INFO, [magical], vuln crush/mental, immune unlife, resist normal, imp, 6-6 attacks, hell fire, vampiric mist, shockwave, powerword blind, 1-3 spells
+Lady Eleonora               100       Gx-       ---                            transporter, no-attack
+Lord Sarakesh               100       Ex-  -3   ---            1249315-1251267 INFO, vuln mental/wood, immune unlife/fire/ice/powerpain, dodge, imp, mass pain, area ritual of pain, nether ball, trueheal, area ice-damage spell, area fire-damage spell, area wither, area blindness, special-handgrab, 1-3 spells, last form, items are carried, room is noflee/nosummon but recallable
+  +8 ??:        21 hits out of 24: 88%  (hr  9+35+8=52)
+  +7 ??:        39 hits out of 60: 65%  (hr 10+34+7=51)
+  +8 bl. mace:  33 hits out of 47: 70%  (hr 11+34+8=53)
+  +8 lance:     17 hits out of 25: 68%  (hr 11+34+8=53
+                                              Obli Anni Vapo Pulv Atom
+  Plain:   WEAPON                avg 22                  21
+  Crush:   CRUSH                 avg 24                        
+  Slash:   SLASH                 avg 24             46    3
+  Mental:  CRUSH MENTAL          avg 21                            21 (RoP?)
+  Wood:    WEAPON WOOD           avg 27                       18   21
+  Silver:  PIERCE SILVER         avg 25                   1   16
+The Stranded Whale          100  300M N--xx-1   --- 130487-132472    1-1       [???], vuln pure/ice, immune water/light, invis, sleeping, cake, 1-4 attacks, crap ac

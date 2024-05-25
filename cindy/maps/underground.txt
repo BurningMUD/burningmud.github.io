@@ -1,0 +1,48 @@
+# The Underground (516): 50-100, Barre  (Myrridon: 2w2nwnd)
+#
+#       o - o + o Murderer  Hide   Bob
+#       |   |   |    |       |      |
+# - o - o -Bar  o    o       o      o       o - o   o - D1
+#       |   |   |    |       |      |       |       |
+#       o - o   o    o       o      o       o   o - o   o
+#              x|    |       |      |       |   |   |   |
+#             X-|-+--o ----- o ---- o - o + o - o   o - o
+#               |    |       |      |       |       |
+#               +    o       o      o       o   o   o - o
+#               o -  |       |      |       |   |       |
+#                    o       o      o       o - o  D2<+ o
+#                    |       |      |
+#                 Spell-  Fighter  Bar
+#                 weaver
+#
+* To get down: pull crate
+* Whole area is very bright. Bar opens at 1 am and closes at ? ?m.
+* Bob is aggressive & dangerous.
+* Carrion Crawlers (vul gas) in east part has nasty stun.
+
+Underground:             Lvl    Xp ASWIDMX # agg     Hp          Gold       Special
+A beggar                  25 1900k E----x  6 -    558-645         1-1       [human], sitting
+The Disfigured Boy        35 9800k Ex-x--  1 -    877-953      6000-6000    [human], delayed-agg-GNE, backstab, murder, revenger?
+The Failing Student       35 7700k E--xxx  3 -    837-845      4000-4000    [human]
+The rowdy drunk           35 6300k N-----  5 -    967-888        20-20      [human]
+The Apprentice Fighter    40   18M Ex-x-x  8 -   1250-1281    10001-10001   [human], bash, kick, headbang
+The Apprentice Hide       40   18M Ex-x-x 10 -   1258-1290    10001-10001   [human], hide, murder, backstab
+The Apprentice Murderer   40   18M E--x-x  8     1306-1340    10001-10001   [human], murder
+The Apprentice Spellweaver40   18M Ex-x-x 10 -   1298-1341    10001-10001   [human], sitting, attack, adrenal focus, spell (unknown - 'gszrr')
+The Minstrel              40       G-        -                              sitting, nofight-room
+The Carrion Crawler       45   30M E-xxx-    GNE 1413-1437        1-1       vuln gas, special-stun
+The Cloaked Figure        45   30M N--x-x  1 -   1694-1765    10000-10000   [human], sitting, backstab
+A Board Member            50   47M Ex-x-x 10 -   2018-2071    50000-50000   [human], sitting, backstab, assist Bob
+A Board Member (summoned) 50   50M Ex-x-x    G   2131-2275    30000-30000   [human], summoned, backstab
+The Coffer Guard          50   46M Ex-x--  2 -   2236-2328    20000-20000   [human], bash, kick, headbang, berserk
+The Gelatinous Cube       50   46M N-x-x-    GNE 2100-2100        1-1       resist WEAPON
+The Stone Minotaur        50   47M E--xx-  6 G E 2236-2253        1-1       [---], bash, kick, headbang, berserk
+The Barkeeper             60  108M Ex-x x  1 -   4119-4206    65536-65536   [human], backstab (300)
+The Black Dragon          60  108M Ex-x -    -   4688-4708    65536-65536   [dragon], special-drop-key-and-telp at pretty hurt
+The Master Fighter        60  120M Ex-x -  1 -   4806-5107    65536-65536   [human], bash, kick, headbang, berserk, blocker
+The Master Hide           60  150M Ex-x -  1 -   4410-4756    65536-65536   [human], hide, backstab
+The Master of Murder      60  150M Ex-x -  1 -   4616-4804    65536-65536   [human], murder, backstab
+The Master Spellweaver    60  150M Ex-x -  1 -   4584-4665    65536-65536   [human], adrenal focus, murder
+The Waitress              80       Ex-     1 -                              shopkeeper
+The Ancient Black Dragon  81 1215M Ex x x1 1 -  17436-18327   65536-65536   [dragon], imp/invis, acid breath
+Bob, the Man of the Night 92       Ex-x      G E            3000001-3000001 INFO, [human], vuln silver (when shadowformed), blocker, summon Board Member (either all non-sleeping ones from nearby rooms, or 2 from nowhere), area fire bolt, shadowform, fireball, adrenal focus, heal, 2-2 spells, Summons you back if you sneak in and out of his room

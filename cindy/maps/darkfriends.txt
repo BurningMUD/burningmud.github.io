@@ -1,0 +1,53 @@
+# Guild of DarkFriends (95): 30-100, Kelvik  (Karandras: 3s2en3es)
+#
+#               /----------> o - o    o-->-\ altar /-------------\
+#              /                 |    |     \ +   x              |
+#           M o+o        o Jaix  |    |  /-<--o--o               v
+#           + |          |   +   |    |  |    |         b - o -- b
+#   +       o-o-o        o - o - o    |  |    v         |
+#   X       | | |        |            |  |    /---\     o + b -- b
+#   |       o o o        o - o + o    |  |    |   v         |    |
+# Q+o-o+o   |   |                |    o-------o---o     b-GMoDF->o
+#     |     o-o-o    Fence+o-o   |       | /  |   |      (hinge)
+#   o-o-o    /               |   |       | \--o---o
+#   | |     /        o - o - o   |       \        ^
+#   o o--o /             +   +   |        \       |
+#   + |  +/          o   o   o --|----------------/
+#   o |  /           |   |   |/  |
+#     | /|       --> o + o   o   |
+#     |/ v      /                |
+#     o<+a     Q --------- o --- o
+#
+* Min level 0/8
+* Whole area is very bright
+* The Guild fence (2.fence) has key for Cabinet, Mirror door & lvl 2 door
+* Most are vulnerable to slay human
+
+Darkfriends:                               Lvl    Xp ASWIDMX # agg      Hp         Gold      Special
+The pilferer                                25 1444k N-x---    --    601-601     5000-5000   [human], sneak, flees
+The Guild chef                              30 3450k N-----    --    751-751     5000-5000   [human]
+The juggler                                 30 1444k N-x---    --    751-751     5000-5000   [human], flees
+The Guild trainer                           35 8750k N- x--    GNE   901-901      500-500    [human]
+The sneak                                   35 8400k N-x---    --    901-901     5000-5000   [human], sneak, flees
+The clerk                                   40   16M N--x--    GN   1401-1401   15000-15000  [human]
+The legbreaker                              40   16M N-----    GNE  1401-1401   15000-15000  [orc]
+The Lieutenant Cityguard                    45   21M N-x---    --   1601-1601   15000-15000  [human], flees
+The merc                                    45   21M E-----    GN   1601-1601   17000-17000  [human]
+The rogue                                   45   18M N-----    --   1601-1601   20000-20000  [human], sneak, flees
+The shady character                         45   22M N-----    GNE  1601-1601       2-2      [human], hide
+The smuggler                                45   21M N-xx--    GN   1601-1601   17000-17000  [human], hide
+Vastin                                      45   21M N-----    --   1601-1601   15001-15001  [human], sneak, flees
+The beardog                                 50   29M N-xx--4   GN   2501-2501       1-1      [canine]
+The burglar                                 50   21M N-----    --   2501-2501   30001-30001  [human]
+The Guild fence                             50   29M N-----    --   2501-2501   17000-17000  [human]
+A killer                                    50   29M Nxx---    GN   2501-2501   35000-35000  [human], imp, sneak
+A knifer                                    50   30M Nxx---    GN   2501-2501   17000-17000  [human], imp, backstab, sneak
+The assassin                                55   49M Nxxx  1   GN   3501-3501   35000-35000  [human], hide, backstab (550)
+The DarkFriends assassin                    60  120M Nxxx -    --   4501-4501   50000-50000  [human], hide, backstab (550)
+The huge snarling panther                   60   63M Nx-x      GN   4501-4501   50000-50000  [feline], hide, special-claw
+The DarkFriends bodyguard                   65  130M Nx-x      GN   6501-6501   60000-60000  [human], kick
+The Nightblade                              70       E--       ---                           nofight-room
+Zagr K'fel, the dark-elf fence              84       E--  -    ---                           questmaster, [drow-elf], no-attack, sitting, cake, unaffected by magic
+Evilyn Shae-Veynslith, the Darkeye Assassin 85       E--       ---                           questmaster, nofight-room
+The Grandmaster of DarkFriends              85 2295M N--x      GN  38001-38001 100001-100001 INFO, [human], hide, backstab (560), 25334 hp withered
+Jaixhin of the Ghenna outlaws              100   16M Nx-x -    ---  ~10k        86141-86793  INFO, [undead], vuln electricity, immune slash, backstab (500), +10000 starthp

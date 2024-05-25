@@ -1,0 +1,56 @@
+# Darkenwood Mountain (349): 15-45, Jydara  (Solace: 9sws)
+#
+#                               |
+#                               X - o
+#                               |
+#                               o
+#                               |
+#                               o
+#                               |
+#                               o-Muldorbrooke
+#                               |        |
+#                               o o   Hobgoblin
+#                               |/|     Camps
+#                               o o
+#                                 |
+#                                 o
+#                                 |
+#                WM               o
+#                 +               |  mana    o
+#             o - o   o - o - o + o+drain   x+
+#             |      /            |        o o
+#             o --- o             o          |
+#             |                   |          o
+#             o                   o + o --------- o - o
+#             |                   |          +       /
+#     o - o - o - o   o           o          hp-o-o-o
+#     |           |   |           |        regen
+# o - o - o       o   o - o + o - o - o
+# |   |   |                   |   |   |
+# o - o - o                   o - o - g
+#     +                           +
+#     o                           o
+#     |                           |
+#     o                           o
+#     |
+#     o
+#     +
+#     o
+#
+* g: Greasy floor. Entering might place you in the room north or west of it.
+* Only two aggies. Fire works against most npc:s (gas against rats & insects)
+
+Darkenwood:    Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+A rat           15  262k N-x---    --   303-307     106-116   [rodent]
+A spider        15  262k N-x---    --   324-335       2-4     [spider], flees
+An insect       20  580k N-x---    --   467-486      12-14    [insect], shadow form, 0-1 spells, sitting before being in battle, flying after
+A small goblin  20  580k N-x---    --   479-483    5007-5022  [goblin]
+A snake         20  500k N-x---    --   330-336       4-6     [---], immune poison
+A bugbear       25 1450k E-x---    --   606-615    5024-5045  [goblin], bash, kick, headbang, berserk
+A goblin guard  25 1374k E-----    --   558-567    5011-5028  [goblin], kick, assist-equals and unequals
+Iggy            25 1450k E-xx--    G-   620-629     101-103   [spider]
+The cook        30 3450k N-----    --   762-765    5006-5009  [goblin]
+Bones           35 7804k N--x--    --   939-947    5009-5012  [skeleton]
+Sammy           35 7875k E-xx--    G-   825-827    1020-1030  [---], immune poison, sitting, invis, hide
+King Grognok    40   16M Nx-x--    --  1508-1510  15012-15014 [goblin], powerheal, harm, confusion, wither, blindness, 1-1 spell
+Syracue         40   20M E--x--    --  1478-1483  15017-15023 [goblin], powerword pain, mass pain, meteor swarm, meteor blast, fireball

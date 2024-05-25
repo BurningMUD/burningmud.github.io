@@ -1,0 +1,69 @@
+# New Thalos (57): 5-35, Unknown  (New Thalos: -)
+#
+#    o                           o
+#   /                           /
+#  o ----- o ----- o ----- o - o
+#  |               |       |   |
+#  |           o - o - o - o   o
+#  |               |           |
+#  |               |     o     |
+#  o               |    /      |
+#  |           o - o - o - Ws  |
+#  |               |           o
+#  |           o - o   o       |
+#  |           |   |   |       |
+#  o - o   o -NM - o - o ----- o - X -
+#  |   |       |   |   |       |
+#  o - o - Ms  o   o   |   o - o
+#  |   |           |   |       |
+# Ms - Ps  Smithy- o - o -- o  |
+#  |               |   |    |  |
+#  |               |   o -- o  |
+#  |               |      o    |
+#  |               |   Q /|    |
+#  |               |   |/ o    o
+#  o       o - o - o-Pub-o     |
+#  |               |   |       |
+#  | o             |   o       | o
+#  |/              |           |/
+#  o ----- o ----- o --- o --- o
+#                  |
+#                 As
+#
+* Safe place
+
+New Thalos:                          Lvl    Xp ASWIDMX # agg      Hp        Gold     Special
+A beautiful masseuse                   4  7000 G-----    --     78-84       52-135   [human], flees
+The pet lamia                          4  7000 G-x---    --     76-85        0-0     [magical], flees
+A citizen of Thalos                    5   12k G-x--     --     97-105     217-252   [human]
+A female citizen of Thalos             5   12k G-x---    --     98-105     244-275   [human], flees
+A man                                  5   12k G-----    --     97-241     239-259   [human]
+The baby beholder                      5   12k G--x-     --    101-102       0-0     [magical], flees, room is nomag
+The Guide (EOoN)                       5  4500 G-xx-x    --     64-70       48-48    [human], special-guide-commands, sneak
+A young scholar                        6   24k G-----    --    119-125     381-445   [human], flees
+Bard of Thalos (in tavern)             6   24k G-----    --    116-125     372-425   [human]
+Bard of Thalos (merry)                 7   35k G-x---    --    139-144     568-632   [human], looter
+The librarian                          8   60k G-----    --    156-160     761-824   [human], flees
+The fanatic priest                    10  116k E-----    --    191-207     101-101   [human], flees, magic missile
+An imperial cityguard (guarding gate) 17  357k Gx----    --    358-362    1501-1501  [human], protector
+An imperial cityguard (keeping peace) 17  357k Gxx---    --    356-367    1501-1501  [human], protector
+An imperial cityguard (overseeing)    17  357k Gx----    --    358-359    1501-1501  [human], protector
+The mayor of Thalos                   20  600k G-----    --    436-457    1001-1001  [human]
+The priest of Thalos                  20  600k Gx-       --     ~470       101-101   [human], blindness, heal, curse, room is nomag
+An old wizard                         30       G--       ---                         shopkeeper
+Ben the Smith                         30       G--       ---                         shopkeeper
+Dan the Barkeep                       30       G--       ---                         shopkeeper
+Farmer Betty                          30       G--       ---                         shopkeeper
+George the Butcher                    30       G--       ---                         shopkeeper
+Thaellor the dwarf                    30       G--       ---                         shopkeeper
+The stone golem                       30 3465k G-----    --    749-767    4251-4251  [entity], bash, kick, headbang
+Gordon the Brave                      35 7700k Gxx---    --    885-904   10001-10001 [human]
+Relyar Aspenwind, the half-elf ranger 84       N--                                   questmaster, nofight-room
+The auctioneer                        99   19k N--x x    --- 33255-33747     2-2     INFO, [human], 5-5 attacks, 396/69 dam per attack, negate sanc 30/333 times (9%), thac-40 11 or better, AC -53 or worse
+Ourip, Priest of the Righteous Order 100       Nxx       ---                         questmaster, no-attack
+The Cartographer                     100       N--       ---                         shopkeeper
+The Cryogenicist                     100       N--                                   nofight-room
+The Guildmaster                      100       N--                                   nofight-room
+The Item Store Clerk                 100       N--                                   nofight-room
+The Postmaster                       100       N--                                   nofight-room
+The Receptionist                     100       N--                                   nofight-room

@@ -1,0 +1,56 @@
+# The Amphitheatre (Grolim) (6): 51-100, Gobzilla  (Sundhaven: 6es2es3ese2n4w)
+* FIND OUT: Mordja: Description
+* FIND OUT: A Grolim warrior priest: xp, hp, hp (resists dark)
+* FIND OUT: Grolim high priest: xp, hp, hp
+#
+#                                 o
+#                                 ^
+#                /-----------*    |
+#                |            Zandramas
+#                |                ^
+#                |                *
+#        o-o-o   v  o--dragon-->drain
+#        |          |  Mordja   room
+#        o          o
+#        |          |       o-o-o-o 
+#        o          o        /    |
+#        |          |     o-o-o   o
+#        o    o--o--o         |   |
+#   o-o  |    |               o   o
+#   |    o    o               |   |
+#   o   /     |               o   o
+#  /|  /      o               |   |
+# o o /       |               o   o
+# | |/        o               |   |
+# | o o      /                o   o
+# | |/|     o  o-o            |   |
+# o o o    /     |  o-o-o-o-o-o   o
+# |   |   o      o                |
+# |   o--/--o--o-|--o--o---o---o--o
+# |     o        o  |
+# |    /         |  o
+# o   o--------o o  |
+# |   |        |/|  o
+# |   o--------o |  |   |
+# |              |  X---o--
+# o----o----o----o      |
+#
+* Zandramas' room is noflee/norecall
+* Grolims are vuln slay human/iron, except high priest who is vuln energy
+
+Amphitheatre:               Lvl    Xp ASWIDMX # agg      Hp        Gold      Special
+A fanatic Grolim priest      90 1260M E-xxx-    --- 36331.25    76917-81839  [human], vuln iron/light, resist dark/unlife/poison/acid, area blindness
+A Grolim warrior priest      94       Exxx  2   GNE             79100-82367  [human], vuln iron, immune fire/ice, resist dark
+Grolim high priest           95       Ex-x  1 1 GNE            210013-238057 INFO, [human], vuln energy, invis, area blindness
+Mordja the demon lord       100       Ex    2                   12444-13649  INFO, [demon], vuln energy, immune WEAPON, invis/imp, 6 attacks, 110/70 dam per attack, negate sanc 5/10 times (50%), can push you into drain-room
+The red dragon              100       E--x  2   GNE            506449-602804 INFO, [dragon], dodge, shrugger, hell storm, 1-1 spells, 5-6 attacks, 200/70 dam per attack, negate sanc 9/20 times (45%), summons Mordja on death
+  +3 hammer:     13 hits out of 28: 46%  (hr 12+34+3=49)
+  +3 hammer:     15 hits out of 39: 38%  (hr 12+34+3=49)
+Zandramas the child of dark 100       Ex-xx 3   GN-   ~100k         2-2      INFO, vuln light, resist fire?, resist dark if using "black crimson cape", parry/dodge, shrugger, plasma bolt (connected to special-horrible-scream?), special-push, slow-agg (enter and go north fast to avoid getting attacked), special-horrible-scream, invis, >=5 attacks, 180/70 dam per attack, negate sanc 3/8 times (38%)
+  +3 WoJ:         5 hits out of 74:  7%  (hr 12+34+3=49)
+  +3 WoJ:         2 hits out of 34:  6%  (hr 12+34+3=49)
+  +3 Gungner:     2 hits out of 17: 12%  (hr 12+34+3=49)
+                                               Obli Anni Vapo Pulv Atom
+  Parang:  PIERCE IRON                 avg 20              5
+  WoJ:     WEAPON PURE LIGHT           avg 21                   7
+  Gungner: WEAPON PURE SLAY Giant      avg 22.5            2    1

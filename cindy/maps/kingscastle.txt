@@ -1,0 +1,58 @@
+# King's Castle (320): 20-50, CircleMUD  (King's Castle: -)
+* FIND OUT: The cleaning woman          human?
+#
+#                                   o
+#                                  /
+#                                 o+o-Library   o
+#         _______________________/|            /
+#        /                        o - o - o - o
+#       o   o   o   o   o         |   |   |
+#      /|   +   +   +   |         o   o - o   o   o
+#   the o + o - o   o - o         |           +   |
+# Court |               |         o - o + o   o + o
+#       o - o - Q - o - o   o     |           |
+#       |   |   |   |   |  /      o - o - o - o
+#       o   o - o - Q   o o
+#       |       |       |/
+#       o - o + o - o   o
+#               |
+#         Q     |
+#        /      o
+#       o       |
+#       |       |
+#     - o - o - X
+#
+* Whole area is very bright
+* Most npc:s are vuln slay human. Most are protectors, assisting eachother.
+
+King's Castle:                       Lvl    Xp ASWIDMX # agg      Hp        Gold     Special
+The cleaning woman                     1   100 G-x--     --     14-15       10-10    [human?]
+James the butler                      20  475k G-x---    --    501-505     200-200   [human], corpse taker
+The cook                              24  600k G-----    --    452-457      50-50    [human], flees
+Brian                                 30 4500k G-----    --   1007-1008   4000-4000  [human], protector
+Jerry the royal guard                 30 4500k G-x---    --   1010-1012   4000-4000  [human], protector
+Jim the royal guard                   30 4500k G-x---    --   1008-1013   4000-4000  [human], protector
+Jochem the royal guard                30 4500k G-x---    --   1004-1013   4000-4000  [human], protector
+Matt the royal guard                  30 4500k G-x---    --   1012-1014   4000-4000  [human], protector
+Michael the royal guard               30 4500k G-x---    --   1009-1014   4000-4000  [human], protector
+Mick                                  30 4500k G-----    --   1011-1016   4000-4000  [human], protector
+The royal herald                      33 3960k G-x---    --    627-635     500-500   [human]
+Andrew the royal guard                35 7000k G-x---    --    909-915    4000-4000  [human], protector
+Anne the royal guard                  35 7000k G-x---    --    908-911    4000-4000  [human], protector
+Hans the royal guard                  35 5950k G-x---    --   1104-1113   4000-4000  [human], protector
+The chef                              39   12M G-----    --   1791-1792   1000-1000  [human], flees
+Bertram the royal guard               40   10M G-x---    --   1306-1309   4000-4000  [human], protector
+Boris the royal guard                 40   11M G-x---    --   1306-1312    400-400   [human], protector
+Jeanette the royal guard              40   10M G-x---    --   1310-1314   4000-4000  [human], protector
+Tim, the king's lifeguard             40   14M G-xx--    --   1510-1515  10000-10000 [human], protector, rescue, follows king Welmar
+Tom, the king's lifeguard             40   14M G-xx--    --   1510-1514  10000-10000 [human], protector, rescue, follows king Welmar
+The training master                   42   12M G-----    --   1211-1214   4000-4000  [human], protector
+Peter, the captain of the royal guard 45       G--       ---                         nofight-room
+David                                 50   34M G--x--    --   2238-2243  20000-20000 [human], protector
+Dick                                  50   34M G--x--    --   2239-2244  20000-20000 [human], protector
+The astrologer                        70  262M G--xx-    --   8679-8698  20000-20000 [human], sitting
+King Welmar                           80 1441M Gxxx -    -       ?       35000-35000 INFO, [human], protector, heal, powerheal, imp, chain lightning, wither, mass pain, special-blindness, 1-2 spells, walk-path (8am:throne-rest, 9pm:library-sleep)
+Haldur son of Haldir                 100       N--       ---                         questmaster, nofight-room, sitting
+Isengrim                             100       G--       ---                         nofight-room
+Nerwren                              100  158k N--  -    --  90567-91459 65600-65601 INFO, questmaster, [human]
+Rasmuss the Court Mage               100     0 Nxxx -    --  98232-98244     2-2     INFO, questmaster, [human], imp, cake, sitting, 2-2 attacks

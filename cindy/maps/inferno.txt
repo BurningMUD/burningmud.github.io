@@ -1,0 +1,56 @@
+# Inferno (167): 35-100, Arcane/Arbogastes  (Myrridon: 24wsw3n3w2nw5n7d)
+* FIND OUT: Jirikai the Methuselah     xp, hp (approx)
+* FIND OUT: King Toric                 xp
+* FIND OUT: tiny Crystal cube: Dissolves
+#                             
+#                o                             o - o - o
+#       o /--+--/|                             |       |
+#       +/       |                             o - o   o - o
+#     o+o+o    o-o o+o-o-o      _______________|__x|       |
+#      x+     /  | | |   |     /               |   |       |
+#  King o   RIP  o-o o+b o    /            o - o - o - o - o
+# Toric                  |   /                 |   |   |   |
+#                    o-o-o  /              o   o - o - o - o
+#                    | ____/              x|           |
+#                    |/                  o-|-----------o
+#                    o                     |
+#                            o - o       o-o
+#                            |   |       |
+#                        b - o - o       o-o
+#                            |   |       |
+#                        o - o - o - o - o    o-o
+#                        |               |    | |
+#                        |  M.Mines   Jirikai-o o
+#                        |    /                 |
+#                        | Sentry               o
+#                        |  /
+#                        | o
+#                        |/
+#                        o
+#
+* Entrance from Myrridon Mines
+* Only a couple of rooms are very bright. Marked "b"
+* Most mobs are vuln pure/light. Devils have delayed agg.
+
+Inferno:                   Lvl    Xp ASWIDMX # agg      Hp        Gold     Special
+A Feot                      36   11M E-x-x-    --    972-1039   3537-3591  [magical]
+A Grulch                    43   22M Exx-x-    GNE  1463-1566   9210-9700  [demon]
+A dead rotten head          55   47M E-xxx-    --     ~3k          2-2     [undead], 4-4 attacks, special-standing before being in battle - standing after
+The rampaging ghoul         60   91M E--xxx    ---    ~4.7k     1619-2615  [undead], 3-7 attacks
+A lost soul                 63  111M E-xxxx    ---    ~4.9k       10-33    [undead], 5-5 attacks, blindness, harm, vampiric touch, 0-1 spells, invis, shrugger, flees, special-standing before being in battle - standing after
+A SprecC demon              67  131M E--xxx    ---  8418-8612      2-2     [demon], 4-8 attacks, shrugger
+A fallen angel              70  263M E-xxxx    ---  7943-7965  37746-59539 [demon], 5-5 attacks, triad of ice, curse, plasma bolt, blindness, powerheal, 0-1 spells, sitting, invis, shrugger
+The minor devil             72  181M E-xxxx    --- 10195-10273  9304-32322 [devil], shrugger, bash, kick, headbang, berserk, pummel, blocker, random-delayed-agg-GN?
+The major devil             78  429M E-xxxx1   --- 15213-15321 58925-64939 [devil], resist iron, 10-10 attacks, invis, random-delayed-agg-GN?
+A huge sentry               93 1396M Ex-x x    --- 52268-52336 65662-66059 [dragon], immune fire, bash, kick, headbang, berserk, 7-7 attacks
+Nerfarim the elf ranger     99 4562M Gxxxxx3   ---  ~75k       65536-65536 INFO, [elf], resist WEAPON, vuln ice if using "an adamantine reinforced leather vest", resist unlife if using "an adamantine reinforced leather vest", imp, hide, sneak, flees, special-flee-damage, great ac, parry, 5-10 attacks, 240-260/69 dam per attack, negate sanc 32/570 times (5%)
+Jirikai the Methuselah     100       Ex-x x3   ---             68467-71773 INFO, [vampire], resist dark/unlife, invis, shrugger, special-feed-stun (410-620)
+King Toric                 100       Ex-x  0   GNE ~200k       66272-67051 INFO, [dragon], immune fire, mana shielded, dodge, hell storm (53/300), trueheal, 2-2 spells, shrugger, special-tailstrike (177), special-weapon-area-strike (70/189-212), -66 ac?
+  +4 unknown:    37 hits out of 63: 59%  (hr 34+4+ 8=46)
+  +3 hammer:      4 hits out of 13: 31%  (hr 34+3+11=48)
+  +3 windweaver:  9 hits out of 29: 31%  (hr 34+3+11=48)
+  +3 gig. maul:  14 hits out of 23: 61%  (hr 34+3+11=48)
+  +8 15t whip:   11 hits out of 19: 58%  (hr 34+8+11=53)
+  +8 bla. mace:   9 hits out of 11: 82%  (hr 34+8+11=53)
+
+

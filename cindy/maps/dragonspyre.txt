@@ -1,0 +1,62 @@
+# DragonSpyre (56): 45-75, Unknown  (Solace: 7seu2nw4ne)
+#
+#                         o
+#                        /+                      o+Ice
+#                     New o - RIP                +
+#                  Thalos |                      o
+#                         o                      +
+#                         |          White+o-o-o-o-o-o-o-o-o
+#                         o            |                   +
+#                         |            |           New     o
+#                         o            o          Thalos   +
+#                       o |            |            /      o
+#                      /| o<-o-o-o-o-o-o-o-o-o-o-o+o       +
+#             Abandoned | |      |                   o-o-o-o
+#               Caves   | o      o                   +
+#                       | |      |                   o
+#           f-o-o-o-o-o-o-o      o                   +   Gate-
+#          /              |      |                   o-o-keeper
+#         o               o-o--o-o                       +
+#        /                                               o
+#       o                                                |
+#      /                                                 o
+#     o                                                  |
+#     |                                                  o
+#     o                                                  |
+#     |                                                  o
+#     o                                 __               |
+#     |                                /  \  o-o-o-o-o-o+o-o-o-C
+# X-o-o                                |  |  |     |
+#                                      \->o<-/     o
+#                                                  +
+#                                                Time
+#                                                  +
+#                                                  o
+#                                       o+-----\   +
+#                                       ^      |   o
+#                                       |      V   |
+#                                       \-+o-o-o-o-o-o-o-o+P
+#                                                  |
+#                                                  o
+#                                                  |
+#                                                  o
+#                                                  |
+#                                                  o
+#                                                  |
+#                                                  o
+#                                                  |
+#                                                  o-> f
+#
+* Pixies are vuln unlife. Slay dragon on dragons. Slay human on gatekeeper.
+
+Dragonspyre:                    Lvl    Xp ASWIDMX # agg      Hp        Gold     Special
+A Pixie                          40   17M G-x--x    --   1302-1312     51-51    [fairie], flees, mass pain, meteor blast, powerword pain
+A Pixie Guard                    42   15M G-----    --   1404-1407    201-201   [fairie], hide, protector
+The Master Pixie Mage            44   39M Ex-x-x    --   1551-1580   2001-2001  [fairie], powerword pain, meteor blast, mass pain
+The Copper Dragon                45   21M Gx-x-x    GN   1586-1600      1-1     [dragon], no-group
+The Pixie King                   45   43M G--x-x    --   1600-1613      1-1     [fairie], powerheal, mass pain, confusion, harm, meteor blast, blindness, wither
+The White Dragon                 46   23M Ex-x-x    GN   1665-1691      1-1     [dragon], shadowform
+The Spirit of the Time Dragon    50   29M Nx-x-     GN   2425-2443  40001-40001 [dragon], no-group
+The GateKeeper                   50   29M N--x-x    GN   1985-2010      1-1     [entity], bash, kick, headbang
+The Spirit of the Ice Dragon     60   67M Nx-xx     GN   3974-3987  50001-50001 [dragon], invis, shadowform, aware
+The Eternity Dragon              95 4756M Nxxxxx    --  47958-48003 65536-65536 INFO, [dragon], shadowform, invis, shrugger, 5-5 attacks

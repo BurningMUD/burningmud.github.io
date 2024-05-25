@@ -1,0 +1,175 @@
+# The Darkunder (???): 45-100, Stryder  (Drow: 2wnwnd2nundnw2nw2d)
+* FIND OUT: Need ident: 2 specimens (Toormail & Myrridon Mines)
+* FIND OUT: Level on all mobs
+* FIND OUT: Rest of the map. And which areas are norecall/nosummon
+* FIND OUT: Primeval Worm: used as light   a semi-translucent cocoon (glowing)
+* FIND OUT: Primeval Worm: wielded         a primeval blade
+* FIND OUT: Hidden exit in Breeding chamber
+* FIND OUT: Learn more about cocoons:
+* FIND OUT:  A cocoon of larve twitches as if about to burst.
+* FIND OUT:   Some foul gas rises up from one of the translucent cocoons in the chamber.
+* FIND OUT:     -> Damage! (and powerword feebleblind?) (not deadly to get several)
+* FIND OUT: Loads more!
+#
+#      /-> Underdark
+#     /
+#    ? - ?
+#        |
+#        ?
+#        |
+#        ? - ? - ? - ? - ?
+#            |       |   |            /
+#            ?       ?   ?           X
+#            |       |   |           |
+#            ?   ? - ?   ? - ? - ? - ? - ? - ?
+#            |   |                           |       .
+#            ? - ?                           ?       .
+#  Under-    |   |                           |       .
+#   dark <-\ ? - ? -                         ?       .
+#           \|                               |       .
+#            ?                               ?       .
+#            |                               |/      .
+#            ? -                   - ? - ? - ? - ?   .
+#            |                       |           |   .
+#        ? - ?                       ?               .
+#        |                           |               .
+#        ?                          SpT- ?           .
+#        |                               |           .
+#        ?                               ?           .
+#        |                               |           .
+#        ? - ? - ? - ? -                             .
+#        |           |                               .
+#                    ?                               .
+#                    |                               .
+#                    ?                               .
+#                    |                               .
+#                    ?                               .
+#                    |                               .
+#                    ? -                             .
+#                    |                               .
+#                    ?                               .
+#                    |/                              .
+#                    ?                               .
+#                    |                               .
+#            C - ? - ?                               .
+#            |       |                               .
+#                    ? - ? - ? - ?                   .
+#                                |                   .
+#                                ? - ? - ? - ?       .
+#                                |           |       .
+#                                ?           ?       .
+#                                |           |       .
+#                                                    .
+#                                                    .
+#                                                    .
+#                                             |       .
+#                                             ?        .
+#                                           |/          .
+#                                           ?             .
+#                                   |       |              .
+#                               ? - ? - ? - ? -            .
+#                               |       |                  .
+#                               ?       ?                  .
+#                               |       |                   .
+#                               ? - ? - ? - ? -              .
+#            D ----- ? ----- D          |   |                .
+#           /|       |      /|      ? - ? - ?                .
+#          nosum   nosum     ?      |       |               .
+#            |       |       |  ? - ? - ?   ? - -          .
+#            ?       ?       ?  |       |                 .
+#            |      /        |  ? - ? - ?                .
+#            |     B   ______|_____/        inside      .
+#            |        /      |                ??        .
+#            D ----- ? ----- D               worm       .
+#           /               /                          .
+#                                                     .
+#                                                    .
+#             /               /                     .
+#          ?-U     ?       ?-U                     .
+#          |       |       |                       .
+#          ? - ? - ? - ? - ?                       .
+#                  |                  .
+#               ?-GrN  ?               .
+#               |  |   |    /         .
+#             ?-?  ? - ? - U          .
+#          /  |    |                 .
+#         U - ?    ?                 .
+#                                                 .
+#                                                 .
+* Careful! There might be several aggressive, huge worms just outside the
+* entrance, if they've been disturbed. And standing there will attract more.
+* Entry room is tunnel room - max 1(?) player, so if you walk in with a group,
+* the rest might get stuck in the nasty attract-worm room.
+* In some?/most? of the rooms you can trapdoor to "Grub Nest" at the bottom.
+* Whole bottom level (plus breeding chamber) is norecall? Whole next level too?
+* GrN: Grub Nest. wswsw room is recallable, nwwne too. Rest i don't know.
+* C: A strange corner. Might create new mobs (need to check more)
+*    'A hidden entrance opens, and A monstrous centipede arrives.'
+* B: The breeding chamber. Primeval Worm and tons of cocoons?
+* SpT: Spider trap: 3 trap spiders
+* Electricity seems to be good on the worms. Immunity to earth?
+
+The Darkunder:                Lvl    Xp ASWIDMX # agg     Hp        Gold       Special
+A parasite                   1-55        -x                       1244-1267
+A hungry grub                   ?          x       NE
+The frightened lizard man    1-55       E-        ---                          [reptile?]
+A lost slave trader          1-55       E-        ---                          [human?]
+The living roots             1-55       N-        ---             2655         [botanic?], vuln acid?, immune air?/gas?/light?/dark?
+The distressed revenant      1-67       E-        ---              101         [undead?], vuln pure?/light?/silver?/heal?, immune unlife?/dark?, resist earth?/water?/air?/mental?, flees
+The scared rogue             1-67       E-        ---                          [human?]
+A bewildered cutpurse        1-67       E-x       ---             1001         [human?]
+The apprehensive drow trader 1-67       E-x       ---                          [drow-elf?], vuln pure?/light?/ice?, resist unlife?/dark?/magic?
+The frantic svirfneblin      1-67       E-x       ---                          [gnome?], vuln large?/superlarge?, Immune ---, Resist Mental
+A terrified duergar          1-84       E-        ---                          [dwarf?], vuln superlarge?/water?/magic?, resist fire?/earth?/poison?
+A fearful floating eye       1-84       E-        ---                          [magical?], vuln unlife?, resist magic?/energy?, thief?, flees
+A partially-digested kobold  1-84       N-x       ---                          [lugroki?], vuln pure?/light?/fire?, resist ice?/dark?/poison?
+An anxious enforcer eye     47-65   40M N-x       ---                          [magical], flees
+A tiny purple worm             51       N-x       ---             3940         [snake?], vuln electricity?, resist fire?
+A newborn purple worm          65       N-        GN                 3-5       [snake?], vuln electricity?, resist fire?, sneak, revenger
+  +8 plain:      43 hits out of  46: 93%  (hr 12+34+8=54)
+                                      obli anni vapo pulv atom ultr ULTR
+   WEAPON                   avg 22               41    2
+A swarm of blackflies          80       N-x       ---                          [insect?], vuln gas?, hide
+A trap spider                 80+        --        N              7454-7476    [spider?], vuln fire?, immune poison?, poison, 0-1 spells, hide
+A monstrous centipede       81-82       N-xx  3    NE    ?-?         4-12      vuln dark?, dodge, acid breath, 0-1 spells, 6-7 attacks
+  +8 plain:     198 hits out of 207: 96%  (hr 12+34+8=54)
+                                      obli anni vapo pulv atom ultr ULTR
+   WEAPON                   avg 22              197    1
+A light purple worm         83-84       N-    2   ---                2-2       [snake?], vuln electricity?, resist fire?, dodge, 4-6 attacks, assist centipede/light purple worm
+  +8 plain:      97 hits out of 104: 93%  (hr 12+34+8=54)
+                                      obli anni vapo pulv atom ultr ULTR
+   WEAPON                   avg 22               97
+A deep violet worm          85          N-xx  1    NE               26-31      [snake?], NOT vuln electricity?, 4-5 attacks
+  +8 plain:     189 hits out of 202: 94%  (hr 12+34+8=54)
+  +8 fire:       52 hits out of  56: 93%  (hr 12+34+8=54)
+                                      obli anni vapo pulv atom ultr ULTR
+   WEAPON                   avg 22              124
+   SLASH   FIRE             avg 23               19   33
+A shadow moth               85-87       N- x  2    NE             7309-7923    [insect?], vuln gas?/fire?
+  +8 plain:     181 hits out of 194: 93%  (hr 12+34+8=54)
+                                      obli anni vapo pulv atom ultr ULTR
+   WEAPON                   avg 22              181
+An immense mauve worm       86-89       N-xx  3   GNE                4-11      [snake?], vuln acid?/electricity?, resist fire?, earthquake, gas breath, 1-1 spells, 5-6 attacks, ignore-cop
+  +8 plain:     281 hits out of 298: 94%  (hr 12+34+8=54)
+  +8 fire:       77 hits out of  81: 95%  (hr 12+34+8=54)
+  +3 deathbr:    25 hits out of  34: 74%  (hr 12+34+3=49)
+                                      obli anni vapo pulv atom ultr ULTR
+   WEAPON                   avg 22              280    1
+   SLASH   FIRE             avg 23               31   45         1
+   CRUSH   Slay human       avg 25(43)            6   19
+A gigantic indigo worm      86-89       N-x   3   ---                6         [snake?], vuln electricity?, resist fire?, dodge, assist immense mauve worm
+  +8 plain:      51 hits out of  53: 96%  (hr 12+34+8=54)
+                                      obli anni vapo pulv atom ultr ULTR
+   WEAPON                   avg 22               51
+An enormous millipede       88-89       N-x  x3   ---                2-7       [snake?], vuln fire?/electricity?, not vuln acid?, dodge
+  +8 plain:      65 hits out of  77: 84%  (hr 12+34+8=54)
+                                      obli anni vapo pulv atom ultr ULTR
+   WEAPON                   avg 22               65
+A Worm hunter                  95       Nx    3   ---          1500044         INFO, [human], dodge, powerword blind, 0-1 spell, backstab, 0-1 skills, hide
+  +8 plain:      32 hits out of  61: 52%  (hr 12+34+8=54)
+  +3 deathbr:    14 hits out of  37: 38%  (hr 12+34+3=49)
+                                      obli anni vapo pulv atom ultr ULTR
+   WEAPON                   avg 22               32
+   CRUSH   Slay human       avg 25(43)            6    3    5
+The Oligochaetologist         100       Nxx       ---                          questmaster, [human?]
+The Primeval Worm            120+        x-x      GNE                          [snake?], vuln pure?, immune acid?, parry, summon newborn purple worms?, swallows people?, special-blind

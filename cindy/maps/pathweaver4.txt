@@ -1,0 +1,33 @@
+# Quest Zone, Pathweaver 4: ?-?, Rafo/Faunus?  (High Tower: n2w, give gleaming diamond to Ezmerelda)
+#
+#            castle
+#            guards <-* HighTower
+#              +
+#        o-Greshmael-o
+#        |           |
+#        o --- o --- o
+#              |
+#            Cszim
+#              +
+#              o - o - o
+#                      |
+#                      o
+#                      |
+# Nokisus + Elites - Mlamin
+#    *
+# Jayson
+#
+* Everything is aggressive and can see you.
+* Room south of Cszim is one-person only.
+
+Quest Pathweaver:        Lvl    Xp ASWIDMX # agg      Hp        Gold       Special
+A castle guard            60   96M E- x      GN              49716-49860   [human], imp/invis
+An enthralled fighter     65  143M E-xx      GNE             54792-55110   [human]
+An enthralled priestess   70       Exx       G E                           [human?], blindness, wither, powerheal, harm
+A storm giant mage        70       E- x      G 
+Cszim                     70  176M E--x      GN  14982           1-1       [giant], vuln water, mana shielded, mass pain, powerword pain, meteor blast, 1-1 spells, 3-6 attacks
+An elite storm giant      90       E--x      GN              98271-98286   [giant], resist crush?/large?/superarge?/poison?, whirlwind
+Mlamin                    90       E  x      G               98278-98287   vuln water, whirlwind
+Greshmael                 90       E--x      GNE             97782-98286   vuln water, whirlwind
+Supreme Sorcerer Nokisus  95       E-          E           1127317-1128983 INFO, [giant], resist crush?/large?/superarge?/poison?, special-create-portal-on-death, room is norecall/nosumout
+Jayson Daryan            100       E-                                      sitting, no-attack

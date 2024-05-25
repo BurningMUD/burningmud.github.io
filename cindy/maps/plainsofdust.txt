@@ -1,0 +1,67 @@
+# Plains of Dust (118): 30-50, Trez  (Ofcol: 2w7s2w3s10w)
+#
+#                                                   |
+#                                                   o
+#                                                   |
+#                                                   o
+#                                                   |
+#            Inglestone         o         o         o
+#                +              |         |         |
+#                o---o          o         o         o   o-o
+#                    |          |         |         |   |
+#                    o          o         o         o   o
+#                    |          |         |         |   |
+#                    o          o         o         o   o
+#                    |          |         |         |   |
+#                    o       Ambush       o     o-o-o-o-o
+#                    |          |         |     |
+#                    o          o-Kender  o     o
+#                    |          | Village |     |
+#             o------o----o     o         o     o
+#            /|      |    |     |         |     |
+#           o |      |    o-X-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o
+#             |      |    |       |       |   |
+#      Bakery-o-Ms   o----o       |   o-o o o-o-o
+#             |      |    |       o   |   |   |
+#          As-o-Ws   o    |       |   o   o   o
+#             |     x     o       |   |   |   |
+#        o    |    o   o  |       o-o-o-o-o-o-o
+#       /|    |        |  |               |
+# o+o  o |  o-o--------o--o             Solom
+# +    + |                |
+# o----o-|----------------o-o
+#        |                |
+#      o+o+o              o
+#        |                |
+#      o+o+o              o
+#        |                |
+#      o+o+o              o
+#                         |
+#                         o
+#
+* Safe area, as long as you avoid the Ambush room, and entrance to Solom.
+
+Plains of Dust:           Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+A gully dwarf              20 1000k N-x---    - E  400-400     100-100   vuln water, resist earth, +300 starthp, agg-sleeper, flees
+A hill dwarf               30 4500k N-xx-x    -   1400-1400  20000-20000 vuln water, resist earth, +500 starthp
+A kender                   30 4500k N-xx-x    -    550-550    2000-2000  vuln large/superlarge, +500 starthp, assist-me (against bloodworm)
+A Silvanesti Elf           30 5700k N-xx-x    -    800-800   10000-10000 vuln iron, +700 starthp
+A draconian                35 7700k E--x--    -   1000-1000  20000-20000 sitting, +700 starthp
+A mountain dwarf           35   11M N-xx-x    -   1600-1600  30000-30000 vuln water, resist earth, +700 starthp
+A Qualinesti Elf           35 7000k N-xx-x    -    800-800   10000-10000 vuln iron, +700 starthp
+A Kapak Draconian          37 8140k E--x-x    G   1071-1114  20001-20001
+An Aurak Draconian         40   15M E--x-x    G   1384-1422  20001-20001
+Librarian of Tarsis        40 8000k N--x-x    -   1000-1000  12000-12000 [human], +900 starthp
+A Baaz Draconian           43   19M E--x-x    G   1443-2019  20001-20001
+A Bozak Draconian          43   20M E--x-x    G   1090-1103  20001-20001
+A Sivak Draconian          45   24M E--x-x    G   1488-1630  20001-20001
+A bandit                   50   25M E-xx-x    -    910-910   12000-12000 hide, [human], +900 starthp
+An innkeeper               50   29M N-xx-x    -   4100-4100  10000-10000 [human], +4000 starthp
+An old sailor              50   23M Nxxx-x    -   2501-2780  10000-10000 [human]
+Guard of Tarsis            50   27M N--x-x    -   2000-2000  12000-12000 [human], +900 starthp
+A Knight of Solamnia       70  154M G-xxx-    -   8001-8001  30000-30000 [human], +~7000 starthp
+Alhana Starbreeze          70  210M G--xxx    -   4919-4945  30001-30001 [elf]
+The Armourer of Tarsis    100       N--       -      ?           ?       shopkeeper
+The Weaponsmith of Tarsis 100       N--       -      ?           ?       shopkeeper
+The Baker of Tarsis       100       N--       -      ?           ?       shopkeeper
+The Wizard of Tarsis      100       N--       -      ?           ?       shopkeeper

@@ -1,0 +1,60 @@
+# The Ruins of Kaltor (401): 50-100, Vortex  (Elemental Canyon: us4dese)
+* FIND OUT: The Skeleton                   agg-N?
+* FIND OUT: The Charred Skeleton           xp, hp (approx)
+* FIND OUT: The Charred Skeleton (info)    xp, hp (approx)
+* FIND OUT: Balgroth the Lich-King         xp, hp (approx), walking, [undead?], vuln silver?/heal?, immune unlife?, resist earth?/water?/air?/mental?
+* FIND OUT: Kaltar the Paladin-King        xp, hp (approx), walking, see invis, memory, agg-G?
+#
+#             o + D                       U
+#             |                           +
+#         o   o   o   o               o   s   s
+#         |   |   |   |               |   |   |
+#     o - o - o - o - o           o - o - s - o - o
+#     |   |   |   |   |               |   |   |
+#     o   o   o   o   o           o - s - s - o - o
+#             |                       |   |   |
+#     o   o   o   o   o           s - o - o - s - s
+#     |   |   |   |   |               |   |   |
+# o - o - o - o - o - o               s   s   o
+#     |       |   |   |                   +
+#     o   o - o   o   o                   o
+#             |                           +
+#     o   o   o   o   o                   o
+#     |   |   |   |   |                  /
+# o + o - o - o - o - o                 o
+#             |                         |
+#             o                         o
+#             |                         |
+#             o                         o - o - o
+#             |                         |       |
+#             o         o - o - o   o - o   o - o
+#             |         |       |   |   |   |
+#             o         o   o - o - o   o - o - o
+#             |         |   |       |           |
+#           - X -       o - o   o - o   o - o   o - o
+#             |             |   |           |       |
+#                           o - o - o   o - o - o   o
+#                                   |   |       |   |
+#                                   o   o   o - o - o
+#                                   |   |       |
+#                                   o - o - o - o
+#                                       +
+#                                    Balgroth
+#                                       +
+#                                     Kaltar
+#
+* Min level 0/32
+* s = Serpents
+* Flaming Corpses and Charred Skeletons are vuln unlife.
+
+Kaltor:                      Lvl    Xp ASWIDMX # agg      Hp        Gold       Special
+The Fugitive                  60   75M E-xxx-    ---  4773-4797  30000-30000   [human], backstab (51)
+The Fugitive                  63   98M Exxxx-    ---  4472-4761  30000-30000   [human], backstab (51)
+The Flaming Corpse            66  132M E-xx  2   GNE  6520-6537  30000-30000   [magical]
+A Black Serpent               67  141M E-xx  1   GNE  6839-6840  30000-30000   [snake], special-standing & sentinel before being in battle - standing & walking after, bash
+The Skeleton                  70  245M E--x -    -   10808-10825 30000-30000   [skeleton], vuln silver
+The Insane Priest             75  450M G--x -    ---   ~12k      60000-60000   [human], wrath of god, trueheal
+The Charred Skeleton          85       E-xx  0   GNE             20000-20000   [magical]
+The Charred Skeleton (info)  100       E- x  0   GNE            507403-509553  INFO, [magical]
+Balgroth the Lich-King       100       Ex x  2 1 GNE           1000001-1000001 INFO, [undead?], vuln pure/light/silver?/heal?, immune dark/unlife?/wither, resist earth?/water?/air?/mental?, imp, blood mirror, area magic missile, 7-9 spells, blocker
+Kaltar the Paladin-King      100       Gx    2 1  -E           5000001-5000001 INFO, [human], wrath of god, invis, shrugger

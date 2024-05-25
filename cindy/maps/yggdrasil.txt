@@ -1,0 +1,49 @@
+# Yggdrasil (64): 20-100, Unknown  (Karandras: 10wn3wswswn12ws2w2sws3wnwn)
+#
+#                       Ragnarok
+#                   Garden | Scubdu
+#                     of   |/
+#                   Angels o
+#                      |  /
+#                      o /
+#                      |/
+#                  o - o - o
+#                     /|
+#                  o / o
+#                  |/
+#              o - o - o
+#                 /|
+#              o / o
+#              |/
+#          o - o - o
+#             /|
+#            o o
+#           /
+#          X
+#       o /|
+#       |/
+#   o - o - o
+#      /|
+#     o o
+#
+* Agg lvl 40 Gorgimera at the bottom. Otherwise pretty safe area.
+
+Yggdrasil:               Lvl    Xp ASWIDMX # agg     Hp         Gold      Special
+The demon skeleton         7   24k E-----    G    137-144        1-1      resist pierce/slash, summoned
+The demon zombie          10  100k E-----    G    196-203        1-1      [undead?], vuln pure/light/heal, summoned
+The lesser demon          15  225k E-----    G    298-310        1-1      vuln pure/light, immune fire, summoned
+A dretch                  20  500k E-xx--    -    391-407    15001-15001  energy drain, flees
+A wemic                   20  620k G-x---    -    391-409    10001-10001  cure critic, blindness
+A babau                   30 3000k Exx---    -   ~797-~799   17001-17001  immune fire/dark, no-charm, burning hands, fireball, summon lesser demon, summon demon skeleton, summon demon zombie
+A nabassu                 30 3300k E-xx--    -    692-703    18001-18001  vuln pure/light, immune fire, magic missile, lightning bolt, burning hands, blindness
+A Hollyphant              32 4480k G-xx--    -    823-837    20001-20001  curse, blindness
+A chasme                  40   12M E-xx--    -   1438-1463   25001-25001  lightning bolt, fireball, colour spray
+A gorgimera               40   14M E--x--    GN  1449-1459   25001-25001  gas breath
+A yagnodemon              45   23M E-xx--    -   2408-2412   40001-40001  vuln pure/light/iron, immune fire/blindness, resist dark, no-charm, meteor swarm, fireball, colour spray, meteor blast
+A frost giant             50   29M E--x--    -   2587-2599   40001-40001  [giant], resist crush?/large?/superarge?/poison?
+A Shedu                   50   32M G-x---    -   2186-2199   35001-35001  blindness, curse, heal
+A planetar                60   69M Gx-xx-    -   4531-4548   50001-50001  vuln unlife, resist magic/energy, harm, curse, confusion, powerheal, blindness
+Ratatosk                  60   72M Gxxxx-    -   5418-5436   45001-45001  meteor bolt, fireball, colour spray, powerheal, meteor swarm, curse, harm, blindness
+A cloud dragon            71  284M Nx-xx-    -      ?        40001-40001  [dragon], resist fire?/ice?/earth?/air?/gas?, powerheal, colour spray, confusion, blindness, fireball, curse, harm, meteor blast, meteor swarm
+A solar                   71  284M Gx-xx-    -      ?        60001-60001  resist unlife/ice/fire/earth/air, powerheal, curse, confusion, blindness, harm
+Kostchtchie               80 1200M Ex-xx-    -  24459-24508 100001-100001 vuln pure/light/iron, immune fire, resist unlife, sitting, burning hands, summon demon skeleton/demon zombie/lesser demon

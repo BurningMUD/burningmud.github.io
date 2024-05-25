@@ -1,0 +1,57 @@
+# The Revered Plateau (255): 1-8, Testify  (Elemental Canyon: s)
+#
+#                                 Elemental
+#            o -------------\      Canyon
+#            |              |        |
+#        o - o - o          |        o
+#        |   |   |          |        |
+#        o - o - o          |        o
+#        |  /|   |          |        |
+#        | o |   |          |        o - o - o - o
+#        |   |   |          |        |   |   |   |
+#        o - o - o          |        o - o - o - o
+#            |              |        |   |   |   |
+#    o-------o---o          |        o - o - o - o
+#    |       |   |          |        |   |   |   |
+#    | o-o-o |   | o-o-o    |        o - o - o - o
+#    |   |   |   |   |      |                    |
+#    |   o   |   |   o      |                    o
+#    |  /    |   |  /       |                   /
+#    | /     |   | /        |                  o
+#    |/      |   |/         |                 /
+#    o-------o---o          |                o
+#            |              |               /
+#    X - o - o              |              o
+#    |                      |             /
+#   /                       |            o     o - o
+#  / ^                      |           /      |   |
+# |  |                      |          o - o + o - o
+# |  o -                    |              |
+# |  |     Herdarea         |          o - o
+# \->o -                    |          |
+#    |                      \--------- o
+#
+* Most of the is very bright, though still outdoors
+* The faeries are immune pure/light
+
+Revered Plateau:         Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+A blithe faerie            1   142 G-----    -      32-32      21-21   immune pure/light
+A delightful faerie        1   150 G-----    -      16-17      21-21   immune pure/light, sleeping
+A joyful faerie            1   150 G-x---    -      15-16      21-21   immune pure/light
+A lighthearted faerie      1   150 G-x---    -      16-16      21-21   immune pure/light
+A lively faerie            1   150 G-x---    -      16-17      21-21   immune pure/light
+A playful faerie           1   150 G-x---    -      16-16      21-21   immune pure/light
+A sleepy faerie            1   150 G-----    -      15-16      21-21   immune pure/light, sleeping
+A teasing faerie           1   150 G-x---    -      16-16      21-21   immune pure/light
+A vivacious faerie         1   150 G-x---    -      16-17      21-21   immune pure/light
+A welcoming faerie         1   142 G-x---    -      32-32      21-21   immune pure/light
+A euphoric faerie          3  3000 G-x---    -      57-58      31-31   immune pure/light
+A jovial faerie            3  3000 G-x---    -      59-60      31-31   immune pure/light
+A monk                     3  3000 G-----    -      57-58      31-31   immune pure/light
+A relaxed faerie           3  3000 G-----    -      57-57      31-31   immune pure/light, sitting
+A tranquil faerie          3  3000 G-----    -      56-58      31-31   immune pure/light, sitting
+A feisty faerie            5   12k G-x---    -     105-108     41-41   immune pure/light
+A mischievous faerie       5   12k G-----    -      98-101     41-41   immune pure/light
+A spirit of light          5   12k G----     -     104-108     41-41   resist unlife
+A robust faerie            7   35k G-x---    -     155-156     71-71   immune pure/light
+A subdued faerie           7   35k G-----    -     151-153     71-71   immune pure/light, sitting

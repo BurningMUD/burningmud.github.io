@@ -1,0 +1,78 @@
+# The Keep of Mahn-Tor (23): 20-100, Chris  (King's Castle: 3wnwne2nw2nwne4swse3sd4se2s2u)
+* FIND OUT: The Harem Girl          type?, irvs?
+#
+#          |                                   Chieftain
+#          o                                       |
+#          | Turvagar                              o
+#          M   |                                   |
+#          |   | Black                             o
+#          o - o Castle                            |
+#          |   |   |                           o - o - o
+#      o - o   o - o - o - o - o               |   |   |
+#      |       |               |               o - o - o
+#      o - o - o               |                   |
+#          |                   |     ^   ^   ^     o    Ogre
+#      o - o - o               |     |   |   |     |   village
+#      |   |   |               |  <--o---|---o-->  o
+#      o - o - o - o           |     |   |   |     |
+#      |   |   |               o --- o - o - o --- X
+#      o - o - o                     |   |   |
+#     /   /   /                   <--o---|---o-->
+#    o - o - o                       |   |   |
+#    |   |   |          X            v   v   v
+#    o - o - o         /|
+#        |            / +
+#        o           /  |
+#        |          / o-o-o       o
+#    ^   o   6      | | | |       |
+#    |   |   |      | o-o-o - o - o + o - o - o - o + o + o - o
+# <--1 - 2 - 3-->   | | | |       |           |   |       |   |
+#    |   |   |      | o o o       o           o - o       o--Mahn
+# <--4 - 5 --|-->   |                         |              Tor
+#    |   |   |      |                       Keeper
+# <--7 - 6 - 8-->   /                         |
+#    |   |   |     o                  Gorak + o + Sumaron
+#    v   3   | ___/                           |
+#            |/                     Darkoth + o + Amyrok
+#            o                                |
+#            |                      Tyrgoth + o + Nasturn
+#           Ice                               |
+#         Castle                     Belrak - o + Dorgar
+#
+* Area past gatekeeper is very bright
+
+Mahn Tor:                Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+The Harem Girl             2  1000 G-----    --    32-40       11-11    [???]
+The Ogre Villager         10  110k E-x---    --   194-209     201-201   [lugroki], flees
+The Rock Toad             14  210k E-----    --   271-288    2551-2551  [amphibian], sitting
+The Cave Dweller          15  270k N-----    GN   293-301    2501-2501  [magical]
+The Mistling              15  255k N-----    GN   291-309    1001-1001  [insubstantial]
+The Ogre Warrior          15  255k E-x--x    --   291-306    5001-5001  [lugroki], bash, flees
+The White Yeti            16  320k E---x-    --   325-334    1001-1001  [---], flees
+The Ogre Guard            19  475k E----x    G-   412-417    5001-5001  [lugroki], kick, headbang
+The Minotaur Butler       20  600k G----x    --   448-460    5001-5001  [---], flees
+The Ogre Shaman           20  700k Ex-x-x    --   451-463    5001-5001  [lugroki], flees, colour spray, curse, blind, heal
+The Old Treant            20  600k G----x    --   438-463    5001-5001  [botanic]
+The Plains Barbarian      20  600k N----x    --   455-461    5001-5001  [---], flees
+The Swamp Wraith          20  600k E-----    GN   436-446    2501-2501  [insubstantial]
+The Minotaur Citizen      25 1675k G-----    --   593-607    4001-4001  [---], flees
+The Weeping Willow        25 1575k Gx-x--    --   587-609   20001-20001 [botanic]
+The Ice Worm              30 3600k N---x-    GN   941-960    3501-3501  [snake]
+The Minotaur Guard        32 5280k E----x    GN  1000-1024   5001-5001  [---], bash, headbang, kick
+The Minotaur Warrior      36 9000k E----x    GN  1476-1481  10001-10001 [---], bash, kick, headbang
+The Minotaur Gatekeeper   38 9006k E--x-x    --  1600-1614  15001-15001 [---]
+The Dark Ethereal Knight  40   13M Ex-x-x    --  1298-1300  15001-15001 [astral]
+The High Minotaur Guard   40   13M E----x    GNE 1588-1600   4501-4501  [---], bash
+The Royal Minotaur Guard  42   15M E----x    GN  1629-1644   5001-5001  [---], bash
+The Elite Minotaur Guard  45   18M E----x    GN  1689-1695  10001-10001 [---], bash, kick, headbang
+The Minotaur Ring-Keeper  47   24M Ex-x-x    --  1719-1726   5001-5001  [---], lightning bolt, heal, fireball, curse, colour spray, blindness
+Sumaron                   50   29M Gx-x-x    GN  4317-4331  20255-20469 [---], shrugger, wither, blindness, confusion, harm, powerheal
+The Ogre Chieftain        50   26M Ex-x-x    --  2601-2612  15393-15412 [lugroki], bash, kick, headbang, flees
+Belrak                    55   47M Gx-x      GN  4010-4038  15271-15471 [---], bash, kick, headbang
+Dorgar                    55   55M E--x      GN  3621-3630  25587-25595 [---], backstab
+Gorak                     55   47M Ex-x      GN  3732-3765  18583-18619 [---], bash, berserk
+Nasturn                   55   55M Gx-x x    --  3822-3834   4004-4027  [---], curse, fireball, meteor swarm, harm, confusion, blindness, powerheal, colour spray
+Amyrok                    60   84M Gx-x      GN  4014-4021  15001-15001 [---], meteor blast, powerword pain, mass pain, fireball, meteor swarm
+Darkoth                   60   72M Ex-x      GN  4014-4018  15605-15593 [---], blindness, powerheal, curse, confusion, harm
+Tyrgoth                   60   72M Gx-x x    --  4019-4030  15402-15412 [---], curse, confusion, harm, blindness, powerheal
+Mahn-Tor                  80 1120M Ex-x x1   -- 30243-30252 50072-50048 INFO, [mythical], resist WEAPON, invis, shrugger, bash, headbang, 3-3 skills

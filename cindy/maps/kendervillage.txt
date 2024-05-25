@@ -1,0 +1,71 @@
+# Kender Village (330): 20-100, Rafo/Bolt  (Ofcol: 2w7s2w3s8w2nen)
+* FIND OUT: The Ein Snower         level (38-40)
+#
+#               o                       Snowball land
+#               |                          o --- o
+#           o - o   o                      |    /
+#               |   |                     RIP  o
+#           o - o - o                          |
+#               |                              o
+#          Zara o - o                          |
+#           /   |                              o
+#     o o  o -- o - Bosk                       |
+#     |/        |                              o 
+# o - o    o    o                              |
+#     |    |    |                              o
+# o   o -- o -- o--o-o-o    o-o-o   o
+# |            /|  |          |     |
+# o --- o --- o |  | o        o-Inn-o + Likael - Brontar
+#               |  |/          /    |   Byron     Notur
+#           Ms- o  o          o     o
+#               | ___________/
+#               |/
+#           o - o - o
+#               |
+#           Ws- o - o
+#               |
+#               o
+#               +
+#               X
+#               |
+#             - o
+#
+* Min level 51 for Likael-room
+* Nice lowbie-xp-area, as long as you don't stumble into Bosk's workshop
+
+Kender Village:          Lvl    Xp ASWIDMX # agg      Hp         Gold      Special
+A receptionist             2     1 N--x-     --      1-1          1-1      [hobbit], +1 starthp
+A kender child            15  300k N-x---    --    291-337      529-783    [hobbit]
+A teenage kender          25 1850k N-x---    --    525-661     1496-1501   [hobbit]
+A traveller (weary)       25 1500k N-----    --    401-450     3146-7787   [human], flees
+A traveller (sleeping)    27 1890k Nx-x--    --    413-421     6154 8530   [human], NOT sleeping
+An adult kender           33 6270k N-xx--    --    836-847     2728-3990   [hobbit], flees
+A gambler                 38   12M N--x--    --    930-1090   18475-26070  [hobbit]
+A bodyguard               40   15M Nx-x--    GN   1323-1412       1-1      [human], bash, kick
+A rat                     40   14M N-x---    --   1280-1296       1-1      [rodent], flees
+Tasslehof                 45   35M N--x--    --   1880-1919   22238-22535  [hobbit], backstab (225)
+Bosk                      50   42M Nx-x--    GN   2201-2295    9268-10827  [hobbit]
+Byron the Thief           50   25M N--x-x    GN   2000-2000    9121-11023  [human], backstab
+Kazaar                    50       N--       ---                           shopkeeper
+Kint                      50       N--       ---                           shopkeeper
+Likael the Thief          50   25M N--x-x    GN   2000-2000   15823-21166  [human], backstab
+Musin                     50       Nx-       ---                           shopkeeper, imp
+Notur the Thief           50   25M N--x-x    GN   2000-2000   15352-22796  [human], backstab
+Poe                       50       N--       ---                           shopkeeper
+Sadi                      50       N--       ---                           shopkeeper
+The Judge                 50   40M N--x--    --   2325-2508   23896-25858  [hobbit]
+Tika                      50       Nx-       ---                           shopkeeper
+Tanis                     60  108M N--xx-    --   3138-3329   31009-31055  [half-elf]
+Brontar the Thief Master  65  163M N--x      GN   6471-6646       0-0      [human], backstab, powerblind, meteor swarm, entropy
+Goldmoon                  65  143M N--xxx    --    ~4.6k      55696-58005  [human], blindness, wither, harm, powerheal
+Caramon                   70  224M N--xx-    --   8337-8755   24386-26754  [human], invis, kick, bash, headbang
+Flint Fireforge           70  231M Nx-xx-    --   8667-8871   23370-24226  [dwarf], invis, kick, bash, headbang
+Sturm                     70  238M Nx-xx-    --   8537-8725   24221-27830  [human], bash, kick, headbang, berserk
+Raistlin                  75  412M Nx-xx-    --  12584-12618  44762-45911  [human], invis, powerword pain, mass pain, meteor blast
+Zara                      80 1200M Nx-xx-    --  16892-18812 108150-112516 [hobbit], invis, 4-4 attacks, 13828-15050 hp withered
+
+
+Snowball Land!:          Lvl    Xp ASWIDMX # agg      Hp         Gold      Special
+The Ein Snower         38-40   14M N-x--     ---   846-1098       1-1      [entity]
+The Kapak Snowconain      40   14M N-x--     ---   714-816        1-1      [lizardman]
+V'snowy Vair              40   14M N-x--     ---  1014-1095       1-1      [human]

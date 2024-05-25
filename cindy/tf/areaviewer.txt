@@ -1,0 +1,652 @@
+; areaviewer.tf
+
+; This script is intended to be used in a second screen. You use it in a
+; second window and log into Burning with the same character as the one
+; currently playing, but in a second Burning-window (see "help window" in
+; Burning for more info on Burning windows)
+; The desired effect is that this second window should show a map of the
+; area you are currently in. And when you change area, this window will
+; be updated at the same time, showing you the new area.
+; You will get a black&white map first (a lot faster to bring up), and if
+; you are in the same area 5 seconds later, it will be replaced by a
+; colored map. You'll notice the bonus of this when you follow a leader
+; moving fast through areas.
+; Mobs and their specials are not shown. If you want them shown, just add
+; an asterix before each line in the map files. Or edit the script.
+
+; To make it work:
+; Download all the files at http://www.lysator.liu.se/~tomca/maps/ to your
+; computer. Put them all in the same library.
+; Save this file somewhere as areaviewer.tf
+; Update the 3 variables below
+; Open a second window, and run tf -fareaviewer.tf
+; Enjoy the show
+
+; For updated triggers to recognize the latest areas, check out areas.tf
+; Now also handles updating the area when typing "where" (useful for getting
+; up the relevant map after random-telping/getting summoned/etc).
+
+
+/set name Cindy
+/set password MYPASSWORD
+/set mymapdir=/home/tomca/txt/burning/web/maps/
+
+
+
+
+/set wrapspace 0
+/test addworld("Burning", "diku", "burningmud.org", "4000", {name}, {password})
+/unset password
+/set TERM=vt100
+/set isize=2
+/require alias.tf
+/require tools.tf
+
+
+/def -F -mregexp -t"Welcome to Burning" lwindowtrig = %{name}%;/send 2%;window enable roomview
+/set status_fields=
+
+/def tfshow = /echo -paBCbgblue TF:@{BCbgblack} %*
+/alias trigonprompt \
+	/def -p15 -F -n1 -mregexp -t'[0-9]+[0-9]+' trigonprompt%{1}$[rand(100000)] = %*
+
+
+
+
+/set driverspeak 0
+/def -F -t"* driver says 'I am leaving for:" driverleaving = \
+        /set driverspeak 1%; \
+        trigonprompt /set driverspeak 0
+
+/def -Fp5 -msimple -t"Turn in the Road" areaKerofk4 = \
+	/if (area =~ 'Juargan' | area =~ 'Kerofk') \
+		setarea Kerofk Kerofk%; \
+	/else \
+		setarea OC Orhan (OC)%; \
+	/endif
+/def -Fp5 -msimple -t"Mountain Pass" areaKerofk = \
+        /if (area =~ 'OC' | area =~ 'Kerofk') \
+                setarea Kerofk Kerofk%; \
+        /else \
+                setarea NC Continent Ashinara (NC)%; \
+        /endif
+/def -Fp5 -msimple -t"The Treasury" areaDrowcity2 = \
+        /if (area !~ 'Gnome' & area !~ 'Sewer') \
+		setarea DrowCity Drow City%; \
+	/endif
+/def -Fp5 -msimple -t"The holy grove" areaHolygrove = \
+        /if (area !~ 'Catacombs') \
+		setarea HolyGrove Holy Grove%; \
+	/endif
+/def -Fp5 -msimple -t"A Dark Path" areaKrashkarand = \
+        /if (area !~ 'Gorm') \
+		setarea Krashkarand Krashkarand%; \
+	/endif
+/def -Fp5 -msimple -t"The Desert" areaCohnshar = \
+        /if (area !~ 'Ultima') \
+		setarea CohnShar Cohn Shar%; \
+	/endif
+/def -Fp5 -msimple -t"A Small Path" areaGorm = \
+        /if (area !~ 'HobgoblinCamps' & area !~ 'MyrridonMines') \
+		setarea Gorm Gorm%; \
+	/endif
+/def -Fp5 -msimple -t"In the Valley" areaOc25 = \
+        /if (area !~ 'RandsTower') \
+		setarea OC Orhan (OC)%; \
+	/endif
+
+/def -Fp5 -msimple -t"In the forest" areaDunheim2 = \
+        /if (area !~ 'AncientLands') \
+		setarea Dunheim The Castle Dunheim%; \
+	/endif
+/def -Fp5 -msimple -t"The Entrance." areaCourt = \
+        /if (area !~ 'Citadel') \
+		setarea Court The Court%; \
+	/endif
+/def -Fp5 -msimple -t"The hidden path." areaPlainsofdust3 =\
+        /if (area !~ 'DesolatePlains') \
+		setarea PlainsOfDust Plains of Dust%; \
+	/endif
+/def -Fp5 -msimple -t"A Path In The Mountains" areaSnakelair =\
+        /if (area =~ 'EnchantedForest') \
+		setarea SnakeLair White Snake Lair%; \
+	/endif
+/def -Fp5 -msimple -t"A small clearing." areaShadowgrove2 =\
+        /if (area !~ 'Ghenna') \
+		setarea ShadowGrove Shadow Grove%; \
+	/endif
+/def -Fp5 -msimple -t"A small path" areaKhronatio = \
+        /if (area =~ 'Lorchid') \
+		setarea Khronatio Khronatio%; \
+	/endif
+
+/def -Fp5 -msimple -t"You open a door into another dimension and quickly step through it." areaUnknown = /if (area !~ 'unknown') 2 drop setareaUnknown%;/endif%;setarea unknown unknown
+/def -Fp5 -t"{*} has summoned you!" areaUnknown2 = /if (area !~ 'unknown') 2 drop setareaUnknown%;/endif%;setarea unknown unknown
+/def -Fp5 -msimple -t"You pass through it. Good luck!" areaUnknown3 = /if (area !~ 'unknown') 2 drop setareaUnknown%;/endif%;setarea unknown unknown
+/def -Fp5 -msimple -t"You enter a red field of energy." areaUnknown4 = /if (area !~ 'unknown') 2 drop setareaUnknown%;/endif%;setarea unknown unknown
+/def -Fp5 -msimple -t"You follow your master through a red field of energy." areaUnknown5 = /if (area !~ 'unknown') 2 drop setareaUnknown%;/endif%;setarea unknown unknown
+/def -Fp5 -msimple -t"You leap up and drive your fingers into a handhold at the base of the Well," areaUnknown6 = /if (area !~ 'unknown') 2 drop setareaUnknown%;/endif%;setarea unknown unknown
+/def -Fp5 -t"{*} has transferred you!" areaUnknown7 = /if (area !~ 'unknown') 2 drop setareaUnknown%;/endif%;setarea unknown unknown
+/def -Fp5 -ag -msimple -t"You don't seem to have a setareaUnknown." areaUnknownW2 = setarea unknown unknown
+/def -Fp5 -msimple -t"A Scraggly Trail" area3ofswords = setarea 3ofSwords Three of Swords
+/def -Fp5 -msimple -t"The entrance to the caves" areaAbandonedcaves = setarea AbandonedCaves The Abandoned Caves
+/def -Fp5 -msimple -t"The road to the City of Alchor" areaAlchor = setarea Alchor The Ruined City of Alchor
+/def -Fp5 -msimple -t"A path off the road" areaAmazonia = setarea Amazonia Amazonia
+/def -Fp5 -msimple -t"Jungle path" areaAmazonia2 = setarea Amazonia Amazonia
+/def -Fp5 -msimple -t"The jungle" areaAmazonia3 = setarea Amazonia Amazonia
+/def -Fp5 -msimple -t"A path at the fringes of a light forest" areaAmberkeep = setarea AmberKeep Random's Amber Keep
+/def -Fp5 -msimple -t"Approaching the Forest" areaAmberkeep2 = setarea AmberKeep Random's Amber Keep
+/def -Fp5 -msimple -t"A path through the light forest" areaAmphitheatre = setarea Amphitheatre Amphitheatre
+/def -Fp5 -msimple -t"Muddy Riverbank" areaAncalador = setarea Ancalador Ancalador(stone dragon)
+/def -Fp5 -msimple -t"On the rocky path" areaAncientlands = setarea AncientLands The Ancient lands
+/def -Fp5 -msimple -t"Entrance Street" areaAntharia = setarea Antharia Antharia
+/def -Fp5 -msimple -t"A small dirt path across the plains" areaAntiriad = setarea Antiriad Antiriad
+/def -Fp5 -msimple -t"Up in the tree" areaArachnos = setarea Arachnos Arachnos
+/def -Fp5 -msimple -t"Entrance to the Cavern" areaArena = setarea Arena Arena
+/def -Fp5 -msimple -t"A mountain path" areaArgo = setarea Argo Upper Argo
+/def -Fp5 -msimple -t"A Strange Shimmering Room" areaAstralplane = setarea AstralPlane Astral Plane
+/def -Fp5 -msimple -t"Entrance to Atlantis" areaAtlantis = setarea Atlantis Atlantis
+/def -Fp5 -msimple -t"A small, untraveled path." areaAtlantis2 = setarea Atlantis Atlantis
+/def -Fp5 -msimple -t"In front of the castle" areaBlackcastle = setarea BlackCastle Fang's Black Castle
+/def -Fp5 -msimple -t"Entrance to Elemental Canyon" areaCanyon = setarea Canyon Elemental Canyon
+/def -Fp5 -msimple -t"A Mountain Path" areaCanyon2 = setarea Canyon Elemental Canyon
+/def -Fp5 -msimple -t"An Old Stone Road" areaCathedral = setarea Cathedral Abandoned Cathedral
+/def -Fp5 -msimple -t"Entrance to the Varak-ki caverns" areaCaverns = setarea Caverns The Varak-Ki Caverns
+/def -Fp5 -msimple -t"In the tunnel" areaCaverns2 = \
+        /if (area =~ 'Moria') \
+		setarea Caverns The Varak-Ki Caverns%; \
+        /endif
+/def -Fp5 -msimple -t"Entrance to the Dark Dungeons" areaCeanythdungeons = setarea CeanythDungeons The Dungeons of Lord Ceanyth
+/def -Fp5 -msimple -t"The Great Chessboard of Karandras" areaChessboard = setarea Chessboard Chessboard
+/def -Fp5 -msimple -t"A large knothole in a tree" areaCiqualaslair = setarea CiqualasLair Ciquala's Lair
+/def -Fp5 -msimple -t"The Path to the Circus" areaCircus = setarea Circus Circus
+/def -Fp5 -msimple -t"The Gatehouse of the Citadel" areaCitadel = setarea Citadel The Citadel
+/def -Fp5 -msimple -t"The Stairs." areaCitadel2 = setarea Citadel The Citadel
+/def -Fp5 -msimple -t"On a road in front of the drawbridge." areaCitadeloforder = setarea CitadelOfOrder The Citadel of the Order
+/def -Fp5 -msimple -t"Rock Outcropping" areaCrystalmirlake = setarea Crystalmir Crystalmir Lake
+/def -Fp5 -msimple -t"Solace East Woods" areaCrystalmirlake2 = setarea Crystalmir Crystalmir Lake
+/def -Fp5 -msimple -t"Entrance to the Town of Solace" areaCrystalmirlake3 = setarea Crystalmir Crystalmir Lake
+/def -Fp5 -msimple -t"Prayers Eye Peak" areaCrystalmirlake4 = setarea Crystalmir Crystalmir Lake
+/def -Fp5 -msimple -t"Road among the Vallenwoods." areaCrystalmirlake5 = setarea Crystalmir Crystalmir Lake
+/def -Fp5 -msimple -t"Entrance way" areaDarkfriends = setarea DarkFriends Guild of DarkFriends
+/def -Fp5 -msimple -t"As you wake up something seems different..." areaDarkspawn = /if (area !~ 'DarkSpawn') 2 drop setareaDarkSpawn%;/endif%;setarea DarkSpawn Dark Spawn
+/def -Fp5 -msimple -t"You don't seem to have a setareaDarkSpawn." areaDarkSpawnW2 = setarea DarkSpawn Dark Spawn
+/def -Fp5 -msimple -t"Atop a bluff of yellow flowers" areaDarkwater = setarea Darkwater Darkwater Dungeon
+/def -Fp5 -msimple -t"The Dwarven Drop Off" areaDaycare = setarea Daycare Dwarven Daycare
+/def -Fp5 -msimple -t"The entrance" areaDemoncity = setarea Demoncity Demoncity
+/def -Fp5 -msimple -t"The Great Eastern Desert" areaDesert = setarea Desert The Great Eastern Desert
+/def -Fp5 -msimple -t"A small oasis" areaDesert2 = setarea Desert The Great Eastern Desert
+/def -Fp5 -msimple -t"The top of a small hill." areaDesolateplains = setarea DesolatePlains The Desolate Plains
+/def -Fp5 -msimple -t"The huge forest" areaDharynnsforest = setarea DharynnsForest Dharynn's Huge Forest
+/def -Fp5 -msimple -t"The Reception Area" areaDragoncult = setarea DragonCult Dragon Cult
+/def -Fp5 -msimple -t"An Ancient Path through the dense forest" areaDragonspyre = setarea DragonSpyre DragonSpyre
+/def -Fp5 -msimple -t"Walking through DragonSpyre" areaDragonspyre2 = setarea DragonSpyre DragonSpyre
+/def -Fp5 -msimple -t"Silvery Gates" areaDrakyri = setarea Drakyri Drakyri Isle
+/def -Fp5 -msimple -t"Outside the City Gates" areaDrowcity = setarea DrowCity Drow City
+/def -Fp5 -msimple -t"Academy of Magic" areaDrowcity3 = setarea DrowCity Drow City
+/def -Fp5 -msimple -t"Entrance to Druid Forest" areaDruidforest = setarea DruidForest Druid Forest
+/def -Fp5 -msimple -t"Southern entrance to the catacombs" areaDwarvencatacombs = setarea Catacombs Dwarven Catacombs
+/def -Fp5 -msimple -t"North entrance to the catacombs" areaDwarvencatacombs2 = setarea Catacombs Dwarven Catacombs
+/def -Fp5 -msimple -t"Path to Dwarven Village" areaDwarvenkingdom = setarea DwarvenKingdom The Dwarven Kingdom
+/def -Fp5 -msimple -t"Back of Barracks" areaDwarvenkingdom2 = setarea DwarvenKingdom The Dwarven Kingdom
+/def -Fp5 -msimple -t"Bottom of mineshaft" areaDwarvenkingdom3 = setarea DwarvenKingdom The Dwarven Kingdom
+/def -Fp5 -msimple -t"The Entrance To EarthSea" areaEarthsea = setarea EarthSea EarthSea
+/def -Fp5 -msimple -t"Elemental Plain" areaElementalplain = setarea ElementalPlain Fire Elemental Plain
+/def -Fp5 -msimple -t"A Path from the Plains" areaElvenvalley = setarea ElvenValley Elven Valley
+/def -Fp5 -msimple -t"Entrance to the Elven forest." areaElvenvillage = setarea ElvenVillage Elven Village
+/def -Fp5 -msimple -t"Guarded path through the forest." areaElvenvillage2 = setarea ElvenVillage Elven Village
+/def -Fp5 -msimple -t"The end of the fine path." areaElvenvillage3 = setarea ElvenVillage Elven Village
+/def -Fp5 -msimple -t"Path around the side of the fine house" areaElvenlands = setarea ElvenLands Elven Lands
+/def -Fp5 -msimple -t"A Small Path In The Forest" areaEnchantedforest = setarea EnchantedForest Dharynn's Enchanted Forest
+/def -Fp5 -msimple -t"The Council Of Druids" areaEnchantedforest2 = setarea EnchantedForest Dharynn's Enchanted Forest
+/def -Fp5 -msimple -t"A Small, Slithering Path In The Mountains" areaEnchantedforest3 = setarea EnchantedForest Dharynn's Enchanted Forest
+/def -Fp5 -msimple -t"In the Forest" areaEnclave = setarea Enclave Enclave
+/def -Fp5 -msimple -t"River's Edge" areaEnclave2 = setarea Enclave Enclave
+/def -Fp5 -msimple -t"Forest Trail" areaEnclave3 = setarea Enclave Enclave
+/def -Fp5 -msimple -t"Entrance to the Feverish Swamps" areaFeverishswamps = setarea FeverishSwamps Feverish Swamps
+/def -Fp5 -msimple -t"Near the forest" areaFishingvillage = setarea FishingVillage Fishing Village
+/def -Fp5 -msimple -t"The landing-stage of the inter-continental ferry" areaFishingvillage2 = setarea FishingVillage Fishing Village
+/def -Fp5 -msimple -t"Inside the Crystal Ball" areaGalaxy = setarea Galaxy Galaxy
+/def -Fp5 -msimple -t"An overgrown hedge archway" areaGardenofangels = setarea GardenOfAngels Garden of Angels
+/def -Fp5 -msimple -t"A barrow mound." areaGhenna = setarea Ghenna Ghenna
+/def -Fp5 -msimple -t"Entrance to Gnome Village" areaGnome = setarea Gnome Gnome Village
+/def -Fp5 -msimple -t"On the Stream" areaGnome2 = setarea Gnome Gnome Village
+/def -Fp5 -msimple -t"Path To The Goblik Warcamps" areaGoblik = setarea Goblik Goblik Warcamps
+/def -Fp5 -msimple -t"Base of the Mountain" areaGoblincaves = setarea GoblinCaves Goblin Caves
+/def -Fp5 -msimple -t"On a vast grassy plain" areaGrasslands = setarea Grasslands Einstein's Grasslands
+/def -Fp5 -msimple -t"A Gravel Road on the Graveyard" areaGraveyard = setarea Graveyard Graveyard(plus)
+/def -Fp5 -msimple -t"Dimly Lit Path" areaGypsyvillage = setarea GypsyVillage Gypsy Village
+/def -Fp5 -msimple -t"Entrance to Gypsy Village" areaGypsyvillage2 = setarea GypsyVillage Gypsy Village
+/def -Fp5 -msimple -t"A hidden room" areaHaarvenu = setarea Haarvenu Haarvenu
+/def -Fp5 -msimple -t"A narrow trail through the deep, dark forest" areaHaondor = setarea HaonDor Haon-Dor
+/def -Fp5 -msimple -t"A small path in the deep, dark forest" areaHaondor2 = setarea HaonDor Haon-Dor
+/def -Fp5 -msimple -t"On the river bank in the deep, dark forest" areaHaondor3 = setarea HaonDor Haon-Dor
+/def -Fp5 -msimple -t"A dead end path on the river bank in the deep, dark forest" areaHaondor4 = setarea HaonDor Haon-Dor
+/def -Fp5 -msimple -t"A dead end path in the deep, dark forest" areaHaondor5 = setarea HaonDor Haon-Dor
+/def -Fp5 -msimple -t"A junction on the river bank in the deep, dark forest" area6 = setarea HaonDor Haon-Dor
+/def -Fp5 -msimple -t"A small path on the river bank in the deep, dark forest" areaHaondor7 = setarea HaonDor Haon-Dor
+/def -Fp5 -msimple -t"A dusty trail in the deep, dark forest" areaHaondor8 = setarea HaonDor Haon-Dor
+/def -Fp5 -msimple -t"A misty glade" areaHaondor9 = setarea HaonDor Haon-Dor
+/def -Fp5 -msimple -t"The Gatehouse" areaHauntedkeep = setarea HauntedKeep Haunted Keep
+/def -Fp5 -msimple -t"The Grasslands" areaHerdarea = setarea HerdArea Herd Area
+/def -Fp5 -msimple -t"On the Cart Path" areaHerdarea2 = setarea HerdArea Herd Area
+/def -Fp5 -msimple -t"The Edge of the Grasslands" areaHerdarea3 = setarea HerdArea Herd Area
+/def -Fp5 -msimple -t"Entrance to a Valley in the Highlands." areaHighlands = setarea HighLands HighLands
+/def -Fp5 -msimple -t"The Bog." areaHighlands2 = setarea HighLands HighLands
+/def -Fp5 -msimple -t"Entrance to the High Tower" areaHightower = setarea HighTower High Tower of Sorcery
+/def -Fp5 -msimple -t"A Trail In The Light Woods" areaHobgoblincamps = setarea HobgoblinCamps Hobgoblin Camps
+/def -Fp5 -msimple -t"A small gravel path" areaHumblin = setarea Humblin Humblin, the Hobbit Hamlet
+/def -Fp5 -msimple -t"Ice River Canyon" areaIcearea = setarea IceArea Starlet's Ice Area
+/def -Fp5 -msimple -t"The edge of the glacier" areaIcecastle = setarea IceCastle The Ice Castle
+/def -Fp5 -msimple -t"Inside a Small Earthen Cave" areaIcecaves = setarea IceCaves Ice Caves
+/def -Fp5 -msimple -t"Entrance to Ice Wall." areaIcewall = setarea IceWall Ice Wall
+/def -Fp5 -msimple -t"a deep hole" areaImpact = setarea Impact Point of Impact
+/def -Fp5 -msimple -t"The entrance to the great Dwarven kingdom, Inglestone" areaInglestone = setarea Inglestone Dwarven Kingdom of Inglestone
+/def -Fp5 -msimple -t"The hills" areaJuargan = setarea Juargan Dwarf Kingdom of Juargan
+/def -Fp5 -msimple -t"The Trail" areaKaltor = setarea Kaltor The Ruins of Kaltor
+/def -Fp5 -msimple -t"The Temple of Karandras" areaKarandras = setarea Karandras Karandras
+/def -Fp5 -msimple -t"Okay, you have surrendered from the arena. Wuss." areaKarandras2 = /if (area !~ 'Karandras') 2 drop setareaKarandras%;/endif%;setarea Karandras Karandras
+/def -Fp5 -msimple -t"You don't seem to have a setareaKarandras." areaKarandrasW2 = setarea Karandras Karandras
+/def -Fp5 -msimple -t"Inside the South Wall" areaKarandras3 = setarea Karandras Karandras
+/def -Fp5 -msimple -t"Northern City Entrance" areaKarandras4 = setarea Karandras Karandras
+/def -Fp5 -msimple -t"Western City Entrance" areaKarandras5 = setarea Karandras Karandras
+/def -Fp5 -msimple -t"Eastern City Entrance" areaKarandras6 = setarea Karandras Karandras
+/def -Fp5 -msimple -t"South-East City Entrance" areaKarandras7 = setarea Karandras Karandras
+/def -Fp5 -msimple -t"Cemetary Lane" areaKarandras8 = setarea Karandras Karandras
+/def -Fp5 -msimple -t"North Marketplace" areaKarandras9 = setarea Karandras Karandras
+/def -Fp5 -msimple -t"Southeast City Entrance" areaKarandras10 = setarea Karandras Karandras
+/def -Fp5 -msimple -t"South-West City Entrance" areaKarandras11 = setarea Karandras Karandras
+/def -Fp5 -msimple -t"Dark alley" areaKarandras12 = \
+        /if (area =~ 'DarkFriends') \
+		setarea Karandras Karandras%; \
+	/endif
+/def -Fp5 -msimple -t"The end of Cemetery lane" areaKarandras13 = setarea Karandras Karandras
+/def -Fp5 -msimple -t"Wall road, West" areaKarandras14 = \
+        /if (area =~ 'MobFactory') \
+		setarea Karandras Karandras%; \
+	/endif
+/def -Fp5 -msimple -t"On the Rooftop of Merchant's Tower" areaKarandras15 = setarea Karandras Karandras
+/def -Fp5 -msimple -t"The entrance to the Kender Village" areaKendervillage = setarea KenderVillage Kender Village
+/def -Fp5 -msimple -t"The Pit Of Kerjim" areaKerjim = setarea Kerjim Infernal Pit of Kerjim
+/def -Fp5 -msimple -t"Shrine to the Emperor" areaKerofk2 = setarea Kerofk Kerofk
+/def -Fp5 -msimple -t"Farmer's Stand" areaKerofk3 = setarea Kerofk Kerofk
+/def -Fp5 -msimple -t"Dirt Road" areaKerofk5 = setarea Kerofk Kerofk
+/def -Fp5 -msimple -t"Near the city Kerofk" areaKerofk6 = setarea Kerofk Kerofk
+/def -Fp5 -msimple -t"The Storms Eye Inn" areaKerofk7 = setarea Kerofk Kerofk
+/def -Fp5 -msimple -t"The CliffHanger" areaKerofk8 = setarea Kerofk Kerofk
+/def -Fp5 -msimple -t"Intersection at the Cliff's Edge" areaKerofk9 = setarea Kerofk Kerofk
+/def -Fp5 -msimple -t"On a road to the King's Castle" areaKingscastle = setarea KingsCastle King's Castle
+/def -Fp5 -msimple -t"The stair room" areaKingscastle2 = setarea KingsCastle King's Castle
+/def -Fp5 -msimple -t"Entrance to the King's Castle" areaKingscastle3 = setarea KingsCastle King's Castle
+/def -Fp5 -msimple -t"Entrance to the SoulCrusher's Laboratory" areaLaboratory = setarea Laboratory Soulstealer's Laboratory
+/def -Fp5 -msimple -t"Path leading to the northeast" areaLagamore = setarea Lagamore Lagamore
+/def -Fp5 -msimple -t"The Icy Waters" areaLittlehaven = setarea LittleHaven Little Haven
+/def -Fp5 -msimple -t"The Land Of Lorca" areaLorca = setarea Lorca The Land of Lorca
+/def -Fp5 -msimple -t"Near The Crater" areaLorca2 = setarea Lorca The Land of Lorca
+/def -Fp5 -msimple -t"On A Small Mound" areaLosttemple = setarea LostTemple Lost Temple
+/def -Fp5 -msimple -t"A trail through the dense forest" areaLumberjack = setarea Lumberjack Lumberjack Forest
+/def -Fp5 -msimple -t"The edge of the forest" areaLumberjack2 = setarea Lumberjack Lumberjack Forest
+/def -Fp5 -msimple -t"On the cliffside" areaMahntor = setarea MahnTor Mahn-Tor
+/def -Fp5 -msimple -t"The dark woods" areaMahntor2 = setarea MahnTor Mahn-Tor
+/def -Fp5 -msimple -t"In the dense forest" areaMahntor3 = setarea MahnTor Mahn-Tor
+/def -Fp5 -msimple -t"The swampy path" areaMahntor4 = setarea MahnTor Mahn-Tor
+/def -Fp5 -msimple -t"The edge of the frigid wastes" areaMahntor5 = setarea MahnTor Mahn-Tor
+/def -Fp5 -msimple -t"Muddy Path" areaMarsh = setarea Marsh The Marsh
+/def -Fp5 -msimple -t"The road to the Citadel" areaMarsh2 = setarea Marsh The Marsh
+/def -Fp5 -msimple -t"The Trail to Miden'Nir" areaMidennir = setarea MidenNir Miden'Nir
+/def -Fp5 -msimple -t"Carnage" areaMidennir2 = setarea MidenNir Miden'Nir
+/def -Fp5 -msimple -t"a weathered monolith" areaMilorai = setarea Milorai Milo'rai
+/def -Fp5 -msimple -t"noisnemiD egnartS A" areaMirrorbeyond = setarea MirrorBeyond The Mirror Beyond
+/def -Fp5 -msimple -t"Beginning of the Path" areaMirrorrealm = setarea MirrorRealm Mirror Realm
+/def -Fp5 -msimple -t"Entrance to the Mob Factory" areaMobfactory = setarea MobFactory Mob Factory
+/def -Fp5 -msimple -t"a small path" areaMuldorbrooke = setarea Muldorbrooke Muldorbrooke
+/def -Fp5 -msimple -t"Information Office For The Museum Of Legends" areaMuseum = setarea Museum Museum of Legends
+/def -Fp5 -msimple -t"Western Drawbridge" areaMustaine = setarea Mustaine The Fortress of Mustaine
+/def -Fp5 -msimple -t"Southern Drawbridge" areaMustaine2 = setarea Mustaine The Fortress of Mustaine
+/def -Fp5 -msimple -t"Standing over 50 feet over your head is a yellow obelisk." areaNewthalos = setarea NewThalos New Thalos
+/def -Fp5 -msimple -t"Ascending Upwards Through Existence" areaNirvana = setarea Nirvana Nirvana
+/def -Fp5 -msimple -t"On the road to Sundhaven" areaNorthernplains = setarea NorthernPlains Northern Plains
+/def -Fp5 -msimple -t"The ancient path" areaNorthernplains2 = setarea NorthernPlains Northern Plains
+/def -Fp5 -msimple -t"The path intersection" areaNorthernplains3 = setarea NorthernPlains Northern Plains
+/def -Fp5 -msimple -t"The steep foothills" areaNorthernplains4 = setarea NorthernPlains Northern Plains
+/def -Fp5 -msimple -t"Gallow hill" areaNorthernplains5 = setarea NorthernPlains Northern Plains
+/def -Fp5 -msimple -t"A Wide Dirt Path" areaOc = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"A Narrow Pass through the Mountains" areaOc2 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"Stone Road" areaOc3 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"the Point of Impact" areaOc6 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"Intersection" areaOc7 = \
+        /if (area =~ 'Humblin' | area =~ 'KingsCastle') \
+		setarea OC Orhan (OC)%; \
+	/endif
+/def -Fp5 -msimple -t"South Trail" areaOc8 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"Daemon Road" areaOc9 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"The Turning Point" areaOc10 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"On the Sheol River" areaOc11 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"Great Dragon Road" areaOc12 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"A Narrow Pass through The Mountains" areaOc13 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"The Plains" areaOc14 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"Kings Road" areaOc15 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"A Small Path Along the Edge of the Forest" areaOc16 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"A wide tunnel" areaOc17 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"Hangmen Road" areaOc18 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"Great Southern Road" areaOc19 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"On the Ogris River" areaOc21 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"Great Gold Dragon Road" areaOc22 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"On the Vasson River" areaOc23 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"Great Eastern Road" areaOc24 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"On the Haon River" areaOc26 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"A Path Leading into The Valley" areaOc27 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"A Path leading into the Valley" areaOc28 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"South Caravan Road" areaOc29 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"On the Incendi River" areaOc30 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"The Great Eastern Road" areaOc31 = setarea OC Orhan (OC)
+/def -Fp5 -msimple -t"At the Source of the Ogris River" areaOc32 = \
+        /if (area =~ 'Moria') \
+		setarea OC Orhan (OC)%; \
+        /endif
+/def -Fp5 -msimple -t"A narrow stream" areaOceanfloor = setarea OceanFloor Ocean Floor
+/def -Fp5 -msimple -t"At cross-currents in the deep, wide ocean" areaOceania = setarea Oceania Oceania
+/def -Fp5 -msimple -t"At a sharp turn in the current" areaOceania2 = setarea Oceania Oceania
+/def -Fp5 -msimple -t"At the harbor to Timeless Island" areaOceania3 = setarea Oceania Oceania
+/def -Fp5 -msimple -t"At the entrance to a harbor" areaOceania4 = setarea Oceania Oceania
+/def -Fp5 -msimple -t"Ocean Pier" areaOceania5 = setarea Oceania Oceania
+/def -Fp5 -msimple -t"In the Ocean" areaOceania6 = setarea Oceania Oceania
+/def -Fp5 -msimple -t"In front of an island port" areaOceania7 = setarea Oceania Oceania
+/def -Fp5 -msimple -t"The Big Intersection" areaOfcol = setarea Ofcol Ofcol
+/def -Fp5 -msimple -t"Raff Way" areaOfcol2 = setarea Ofcol Ofcol
+/def -Fp5 -msimple -t"Outside the burial building" areaOldkingdom = setarea OldKingdom The Old Kingdom
+/def -Fp5 -msimple -t"Mountain" areaOlympus = setarea Olympus Olympus
+/def -Fp5 -msimple -t"The Portal" areaOlympus2 = setarea Olympus Olympus
+/def -Fp5 -msimple -t"Hall of Gods" areaOlympus3 = setarea Olympus Olympus
+/def -Fp5 -msimple -t"The Temple of Olympus" areaOlympus4 = setarea Olympus Olympus
+/def -Fp5 -msimple -t"New Orchard Entrance" areaOrchard = setarea Orchard Orchard
+/def -Fp5 -msimple -t"Ershteep Road" areaOrshingal = setarea Orshingal City of Orshingal
+/def -Fp5 -msimple -t"Entrance to Pixie Forest" areaPixieforest = setarea PixieForest Pixie Forest
+/def -Fp5 -msimple -t"West Pixie Forest" areaPixieforest2 = setarea PixieForest Pixie Forest
+/def -Fp5 -msimple -t"East Pixie Forest" areaPixieforest3 = setarea PixieForest Pixie Forest
+/def -Fp5 -msimple -t"The Road to Ofcol." areaPlainsofdust = setarea PlainsOfDust Plains of Dust
+/def -Fp5 -msimple -t"Base of the mountains." areaPlainsofdust2 = setarea PlainsOfDust Plains of Dust
+/def -Fp5 -msimple -t"The Entrance to the Plains of Dust." areaPlainsofdust4 = setarea PlainsOfDust Plains of Dust
+/def -Fp5 -msimple -t"At the Base of the Pyramid" areaPyramid = setarea Pyramid Pyramid
+/def -Fp5 -msimple -t"A small grassy mound." areaRabbitwarren = setarea RabbitWarren Rabbit Warren
+/def -Fp5 -msimple -t"Bifrost, the bridge to Asgaard." areaRagnarok = setarea Ragnarok Ragnarok
+/def -Fp5 -msimple -t"The Iron Woods" areaRagnarok2 = setarea Ragnarok Ragnarok
+/def -Fp5 -msimple -t"Mountain trail" areaRandstower = \
+        /if (area =~ 'Moria') \
+		setarea RandsTower Rand's Tower%; \
+        /endif
+/def -Fp5 -msimple -t"A Ruined Cottage" areaRatslair = setarea RatsLair Rat's Lair
+/def -Fp5 -msimple -t"Entrance to the Great Barrier Reef" areaReef = setarea Reef Great Barrier Reef
+/def -Fp5 -msimple -t"The Trail to the Highlands" areaReveredplateau = setarea ReveredPlateau The Revered Plateau
+/def -Fp5 -msimple -t"A fluffy white cloud." areaScubdu = setarea Scubdu Scubdu's Harpy Area
+/def -Fp5 -msimple -t"High and perilous cliff" areaScubdu2 = setarea Scubdu Scubdu's Harpy Area
+/def -Fp5 -msimple -t"Cliff Face." areaScubdu3 = setarea Scubdu Scubdu's Harpy Area
+/def -Fp5 -msimple -t"The Ocean" areaScurvy = setarea Scurvy S.S. Scurvy
+/def -Fp5 -msimple -t"A Secret Garden" areaSecretgarden = setarea SecretGarden The Secret Garden
+/def -Fp5 -msimple -t"The burned room" areaSewer = setarea Sewer Sewer
+/def -Fp5 -msimple -t"On the walls of the Abyss" areaSewer2 = setarea Sewer Sewer
+/def -Fp5 -msimple -t"The Quadruple Junction Under the Dump" areaSewer3 = setarea Sewer Sewer
+/def -Fp5 -msimple -t"On the walls of the Abyss" areaSewer4 = setarea Sewer Sewer
+/def -Fp5 -msimple -t"Entrance to the Shadow Grove" areaShadowgrove = setarea ShadowGrove Shadow Grove
+/def -Fp5 -msimple -t"Mountain Stairs" areaShaolintemple = setarea ShaolinTemple Shaolin Temple
+/def -Fp5 -msimple -t"The Ships Ladder" areaShipwreck = setarea Shipwreck The Shipwreck
+/def -Fp5 -msimple -t"The dirt path" areaSna = setarea Starlet Starlet's Newbie Area
+/def -Fp5 -msimple -t"The woods" areaSna2 = setarea Starlet Starlet's Newbie Area
+/def -Fp5 -msimple -t"End of the Main Road" areaSolace = setarea Solace Solace
+/def -Fp5 -msimple -t"Marketplace." areaSolace2 = setarea Solace Solace
+/def -Fp5 -msimple -t"Gateway to Solace" areaSolace3 = setarea Solace Solace
+/def -Fp5 -msimple -t"The Toll-Gate" areaSolom = setarea Solom Starlet's Lost City of Solom
+/def -Fp5 -msimple -t"Medusa's Lair" areaSolom2 = setarea Solom Starlet's Lost City of Solom
+/def -Fp5 -msimple -t"The Land of Beware" areaStormgiant = setarea StormGiant Joker's Storm Giant Castle
+/def -Fp5 -msimple -t"At the gallows" areaSundhaven = setarea Sundhaven Sundhaven
+/def -Fp5 -msimple -t"Standing at the brink" areaSundhaven2 = setarea Sundhaven Sundhaven
+/def -Fp5 -msimple -t"A sandy bend before the east gate" areaSundhaven3 = setarea Sundhaven Sundhaven
+/def -Fp5 -msimple -t"A stone path" areaSundhaven4 = setarea Sundhaven Sundhaven
+/def -Fp5 -msimple -t"A cobblestone road near Sundhaven" areaSundhaven5 = setarea Sundhaven Sundhaven
+/def -Fp5 -msimple -t"A wide cart path" areaSundhaven6 = setarea Sundhaven Sundhaven
+/def -Fp5 -msimple -t"A balcony of the tower" areaSundhaven7 = setarea Sundhaven Sundhaven
+/def -Fp5 -msimple -t"Atop a bluff of purple flowers" areaSundhaven8 = setarea Sundhaven Sundhaven
+/def -Fp5 -msimple -t"An overgrown woodland trail" areaTaon = setarea Taon The Forgotten Citadel of Taon
+/def -Fp5 -msimple -t"A forest trail" areaTaon2 = setarea Taon The Forgotten Citadel of Taon
+/def -Fp5 -msimple -t"An immense monument of some sort stands here, faded and chipped." areaThalos = setarea Thalos The City of Thalos
+/def -Fp5 -msimple -t"Temple Ruins" areaTomaaukkhen = setarea Tomaaukkhen The Temple of Tomaaukkhen
+/def -Fp5 -msimple -t"On the path to the castle of Toormail" areaToormail = setarea Toormail Castle Toormail
+/def -Fp5 -msimple -t"On the road" areaToormail2 = setarea Toormail Castle Toormail
+/def -Fp5 -msimple -t"The Petting Zoo" areaToweroftraining = setarea TowerOfTraining Tower of Training
+/def -Fp5 -msimple -t"Gatehouse" areaTraderoad = setarea TradeRoad Trade Road
+/def -Fp5 -msimple -t"Wastedump" areaTrollden = setarea TrollDen Troll's Den
+/def -Fp5 -msimple -t"In a dark boreal forest" areaTurvagar = setarea Turvagar Turvagar, the Dark Taiga
+/def -Fp5 -msimple -t"Entrance to Ultima" areaUltima = setarea Ultima Ultima
+/def -Fp5 -msimple -t"The New Magincia Moongate" areaUltima2 = setarea Ultima Ultima
+/def -Fp5 -msimple -t"Street of the Gods, Silence" areaUnderdark = setarea UnderDark The Underdark
+/def -Fp5 -msimple -t"The Hidden Way" areaUnderdark2 = setarea UnderDark The Underdark
+/def -Fp5 -msimple -t"Vast Corridor" areaUnderdark3 = setarea UnderDark The Underdark
+/def -Fp5 -msimple -t"He regains his composure and upon a mischievious grin you fall out of consciousness, and awaken on an eery path." areaUnderworld = /if (area !~ 'UnderWorld') drop setareaUnderWorld%;/endif%;setarea UnderWorld Underworld
+/def -Fp5 -ag -msimple -t"You don't seem to have a setareaUnderWorld." areaUnderWorldW2 = setarea UnderWorld Underworld
+/def -Fp5 -msimple -t"Port of the Styx Marsh" areaUnderworld2 = setarea UnderWorld Underworld
+/def -Fp5 -msimple -t"Blackened Churchyard" areaUnholydarkness = setarea UnholyDarkness Unholy Darkness
+/def -Fp5 -msimple -t"The Onion Patch." areaValleyofkings = setarea ValleyOfKings The Valley of the Kings
+/def -Fp5 -msimple -t"Deep in the Ocean" areaValleyofkings2 = setarea ValleyOfKings The Valley of the Kings
+/def -Fp5 -msimple -t"A windswept beach" areaValleyofkings3 = setarea ValleyOfKings The Valley of the Kings
+/def -Fp5 -msimple -t"A rocky shore" areaVenden = setarea Venden Venden
+/def -Fp5 -msimple -t"Outside the Wayhouse" areaWayhouse = setarea Wayhouse Werith's Wayhouse
+/def -Fp5 -msimple -t"Main Eastern Road" areaWyverntower = setarea WyvernTower Wyvern Tower
+/def -Fp5 -msimple -t"The Entrance to Yggdrasil" areaYggdrasil = setarea Yggdrasil Yggdrasil
+/def -Fp5 -msimple -t"An Upper Branch of Yggdrasil" areaYggdrasil2 = setarea Yggdrasil Yggdrasil
+/def -Fp5 -msimple -t"The Crest of Yggdrasil" areaYggdrasil3 = setarea Yggdrasil Yggdrasil
+/def -Fp5 -msimple -t"Abandoned shaft" areaZornuzkul = setarea ZornUzkul Zorn Uzkul
+/def -Fp5 -msimple -t"As the swirling essaences dissipate, you find yourself materialising" areaWell = /if (area !~ 'Well') 2 drop setareaWell%;/endif%;setarea Well The Well
+/def -Fp5 -msimple -t"You straddle the side of The Well, inhale deeply, take a last look around at" areaWell2 = /if (area !~ 'Well') 2 drop setareaWell%;/endif%;setarea Well The Well
+/def -Fp5 -msimple -t"A Glittering Passage" areaWell3 = setarea Well The Well
+/def -Fp5 -msimple -t"A Shimmering Room" areaWell4 = setarea Well The Well
+/def -Fp5 -msimple -t"An Icy Passage" areaWell5 = setarea Well The Well
+/def -Fp5 -msimple -t"A Frozen Pool" areaWell6 = setarea Well The Well
+/def -Fp5 -msimple -t"An Ice-Covered Cavern" areaWell7 = setarea Well The Well
+/def -Fp5 -msimple -t"An Underground Lake" areaWell8 = setarea Well The Well
+/def -Fp5 -msimple -t"A Narrow Underground Stream" areaWell9 = setarea Well The Well
+/def -Fp5 -msimple -t"A Deep Pool" areaWell10 = setarea Well The Well
+/def -Fp5 -msimple -t"A Wide Pool" areaWell11 = setarea Well The Well
+/def -Fp5 -msimple -t"A Deep Eddy" areaWell12 = setarea Well The Well
+/def -Fp5 -msimple -t"A Fiery Lavafall" areaWell13 = setarea Well The Well
+/def -Fp5 -msimple -t"A Hot Lava Flow" areaWell14 = setarea Well The Well
+/def -Fp5 -msimple -t"A Magical Waterfall" areaWell15 = setarea Well The Well
+/def -Fp5 -msimple -t"In the Essence Flows" areaWell16 = setarea Well The Well
+/def -Fp5 -msimple -t"A Pool of Quicksand" areaWell17 = setarea Well The Well
+/def -Fp5 -msimple -t"You don't seem to have a setareaWell." areaWellW2 = setarea Well The Well
+/def -Fp5 -msimple -t"On the ship's deck" areaShip = setarea Ship Ship
+/def -Fp5 -msimple -t"An unnaturally dark alley." area3mages = setarea 3Mages 3 Mages
+/def -Fp5 -msimple -t"A heavily used supply route" areaAlterac = setarea Alterac Stronghold of Alterac
+/def -Fp5 -msimple -t"A hastily erected look-out" areaAlterac2 = setarea Alterac Stronghold of Alterac
+/def -Fp5 -msimple -t"Rubble and debris" areaBattlefields = setarea Battlefields Alterac Battlefields
+/def -Fp5 -msimple -t"Entrance to the Apocalypse" areaApocalypse = setarea Apocalypse The Apocalypse
+/def -Fp5 -msimple -t"Outside the High Clerist Tower" areaClerists = setarea Clerists High Clerists Tower
+/def -Fp5 -msimple -t"Worn Path" areaDunheim = setarea Dunheim The Castle Dunheim
+/def -Fp5 -msimple -t"Path between the two forests" areaFaeryForest = setarea FaeryForest Faery Forest
+/def -Fp5 -msimple -t"A junction in the forest" areaFaeryForest2 = setarea FaeryForest Faery Forest
+/def -Fp5 -msimple -t"Dazzling Lights" areaFaeryForest3 = setarea FaeryForest Faery Forest
+/def -Fp5 -msimple -t"Path through the fields" areaFaeryForest4 = setarea FaeryForest Faery Forest
+/def -Fp5 -msimple -t"A Corner of the Forest" areaFaeryForest5 = setarea FaeryForest Faery Forest
+/def -Fp5 -msimple -t"Mountainside Stream" areaFaeryForest6 = setarea FaeryForest Faery Forest
+/def -Fp5 -msimple -t"A road across the highlands" areaGuallidurth = setarea Guallidurth Guallidurth
+/def -Fp5 -msimple -t"The statues" areaGuallidurth2 = setarea Guallidurth Guallidurth
+/def -Fp5 -msimple -t"Inside Castle Guallidurth" areaGuallidurth3 = setarea Guallidurth Guallidurth
+/def -Fp5 -msimple -t"The dark portal" areaGuallidurth4 = setarea Guallidurth Guallidurth
+/def -Fp5 -msimple -t"A hallway in Castle Guallidurth" areaGuallidurth5 = setarea Guallidurth Guallidurth
+/def -Fp5 -msimple -t"An Obscure Trail" areaLahresin = setarea Lahresin Lahresin
+/def -Fp5 -msimple -t"A dusty path" areaLorchid = setarea Lorchid Lorchid City
+/def -Fp5 -msimple -t"The mausoleum" areaLorchid2 = setarea Lorchid orchid City
+/def -Fp5 -msimple -t"The Temple Altar of Myrridon" areaMyrridon = setarea Myrridon The City Of Myrridon
+/def -Fp5 -msimple -t"A Ferry Dock in Myrridon" areaMyrridon2 = setarea Myrridon The City Of Myrridon
+/def -Fp5 -msimple -t"Wharf Road" areaMyrridon3 = setarea Myrridon The City Of Myrridon
+/def -Fp5 -msimple -t"Rockleigh Street" areaMyrridon4 = setarea Myrridon The City Of Myrridon
+/def -Fp5 -msimple -t"The end of Friedman Street." areaMyrridon5= setarea Myrridon The City Of Myrridon
+/def -Fp5 -msimple -t"The West Gate of Myrridon" areaMyrridon6 = setarea Myrridon The City Of Myrridon
+/def -Fp5 -msimple -t"Entrance to the Mines" areaMyrridonmines = setarea MyrridonMines Myrridon Mines
+/def -Fp5 -msimple -t"The entrance to a huge mansion" areaNarnia = setarea Narnia Narnia
+/def -Fp5 -msimple -t"Ensor Road" areaNc = setarea NC Continent Ashinara (NC)
+/def -Fp5 -msimple -t"Dirt Trail" areaNc3 = setarea NC Continent Ashinara (NC)
+/def -Fp5 -msimple -t"Myrridon Road" areaNc4 = setarea NC Continent Ashinara (NC)
+/def -Fp5 -msimple -t"The Esplanade" areaNc5 = setarea NC Continent Ashinara (NC)
+/def -Fp5 -msimple -t"A path through the plains" areaNc6 = setarea NC Continent Ashinara (NC)
+/def -Fp5 -msimple -t"Road to Palanthas" areaNc7 = setarea NC Continent Ashinara (NC)
+/def -Fp5 -msimple -t"Below the Celestial Peaks" areaNc8 = setarea NC Continent Ashinara (NC)
+/def -Fp5 -msimple -t"Grand Crossroads" areaNc9 = setarea NC Continent Ashinara (NC)
+/def -Fp5 -msimple -t"A rarely travelled road" areaOblivion = setarea Oblivion Oblivion
+/def -Fp5 -msimple -t"The Temple of Palanthas" areaPalanthas = setarea Palanthas The City of Palanthas
+/def -Fp5 -msimple -t"A small farm" areaPalanthas2 = setarea Palanthas The City of Palanthas
+/def -Fp5 -msimple -t"The South Gate of Palanthas" areaPalanthas3 = setarea Palanthas The City of Palanthas
+/def -Fp5 -msimple -t"Road to the Tournament" areaTournament = setarea Tournament The Tournament
+/def -Fp5 -msimple -t"Room of Beggars" areaUnderground = setarea Underground The Underground
+/def -Fp5 -msimple -t"In The Doorway" areaUnderground2 = setarea Underground The Underground
+/def -Fp5 -msimple -t"A cliff face of waterfalls" areaWyvernwaterfalls = setarea WyvernWaterfalls Wyvern Waterfalls
+/def -Fp5 -msimple -t"Outside the eastern wall" areaWyvernwaterfalls2 = setarea WyvernWaterfalls Wyvern Waterfalls
+/def -Fp5 -msimple -t"Mountainside" areaWyvernwaterfalls3 = setarea WyvernWaterfalls Wyvern Waterfalls
+/def -Fp5 -msimple -t"The large pool at the foot of the cliffs" areaWyvernwaterfalls4 = setarea WyvernWaterfalls Wyvern Waterfalls
+/def -Fp5 -msimple -t"The Ashinara Outpost" areaDragontailisle = setarea DragontailIsle Dragontail Isle
+/def -Fp5 -msimple -t"Eastern Sanctuary" areaBurningtowers = setarea BurningTowers Burning Towers
+/def -Fp5 -msimple -t"Western Sanctuary" areaBurningtowers2 = setarea BurningTowers Burning Towers
+/def -Fp5 -msimple -t"Road into Darkenwood" areaDarkenwood = setarea Darkenwood Darkenwood
+/def -Fp5 -msimple -t"Moonlight Inn" areaSmugglersden = setarea SmugglersDen Smugglers Den
+/def -Fp5 -msimple -t"A secret passage!!!" areaSmugglersden2 = setarea SmugglersDen Smugglers Den
+/def -Fp5 -msimple -t"The cellar" areaSmugglersden3 = setarea SmugglersDen Smugglers Den
+/def -Fp5 -t"The PathWeavers blade glows with simmering power.... there is a sudden boom *" areaPathweaver = /if (area !~ 'Pathweaver') 2 drop setareaPathweaver;/endif%;setarea Pathweaver Pathweaver Quest Area
+/def -Fp5 -msimple -t"You don't seem to have a setareaPathweaver." areaPathweaverW2 = setarea Pathweaver Pathweaver Quest Area
+/def -Fp5 -msimple -t"The Lane" areaMoria = \
+        /if (area =~ 'OC' | area =~ '3ofSwords') \
+		setarea Moria Moria%; \
+	/endif
+/def -Fp5 -msimple -t"The large cave" areaMoria2 = \
+        /if (area =~ 'Caverns') \
+		setarea Moria Moria%; \
+        /endif
+/def -Fp5 -msimple -t"The valley" areaMoria3 = \
+        /if (area =~ 'RandsTower') \
+		setarea Moria Moria%; \
+        /endif
+/def -Fp5 -msimple -t"A trail up the mountain" areaMoria4 = \
+        /if (area =~ 'Caverns') \
+		setarea Moria Moria%; \
+        /endif
+/def -Fp5 -msimple -t"Path through the plains" areaMoria5 = \
+        /if (area =~ 'Goblik') \
+		setarea Moria Moria%; \
+        /endif
+/def -Fp5 -msimple -t"Mountain streams" areaMoria6 = \
+        /if (area =~ 'WyvernWaterfalls') \
+		setarea Moria Moria%; \
+        /endif
+/def -Fp5 -msimple -t"Ogris lake" areaMoria7 = \
+        /if (area =~ 'OC') \
+		setarea Moria Moria%; \
+        /endif
+/def -Fp5 -msimple -t"On the Huge Chain" areaRedferne = setarea Redferne Redferne's Residence
+
+
+
+
+
+
+
+/alias setarea \
+	setarea2 %{*}%; \
+	/repeat -5 1 setarea2Color %{*}
+
+/alias setarea2 \
+	/if (area !~ {1}) \
+		/set usemapcolors 0%; \
+		/set areashowall 0%; \
+		/set linecounter 0%; \
+		/eval /set totallines=$[lines()]%; \
+		/set areafull %{-1}%; \
+		/eval /set areafilename=$[tolower({1})]%; \
+		/echo -paBCgreen ===============================================================================%; \
+		/quote -S /parsemap !cat %{mymapdir}%{areafilename}.txt%; \
+		/set area %{1}%; \
+		/addlines%; \
+	/endif
+
+
+/alias setarea2Color \
+	/if ((area =~ {1}) & (!usemapcolors)) \
+		/set usemapcolors 1%; \
+		/set areashowall 0%; \
+		/set linecounter 0%; \
+		/eval /set totallines=$[lines()]%; \
+		/set areafull %{-1}%; \
+		/eval /set areafilename=$[tolower({1})]%; \
+		/echo -paBCgreen ===============================================================================%; \
+		/quote -S /parsemap !cat %{mymapdir}%{areafilename}.txt%; \
+		/set area %{1}%; \
+		/addlines%; \
+	/endif
+
+/def addlines = \
+	/while (linecounter < totallines-3) \
+		/echo%; \
+		/set linecounter=$[{linecounter} + 1]%; \
+	/done
+
+/def parsemap = \
+	/set linecounter=$[{linecounter} + 1]%; \
+	/if ((linecounter > totallines-2) & (!areashowall)) \
+	/elseif ((linecounter == totallines-2) & (!areashowall)) \
+		/echo -a -p @{Cwhite}Type 'all' to see all...%; \
+	/elseif ({1} =~ '#') \
+		/if (linecounter == 1) \
+			/xtitle %{-1}%; \
+		/elseif (linecounter > 1) \
+			/if (usemapcolors) \
+				/set coloredline=$[replace("#", "@{Cblack}#@{BCred}", {*})]%; \
+				/set coloredline=$[replace("o", "@{BCgreen}o@{BCred}", {coloredline})]%; \
+				/set coloredline=$[replace("-", "@{Ccyan}-@{BCred}", {coloredline})]%; \
+				/set coloredline=$[replace("|", "@{Ccyan}|@{BCred}", {coloredline})]%; \
+				/set coloredline=$[replace("/", "@{Ccyan}/@{BCred}", {coloredline})]%; \
+				/set coloredline=$[replace("<", "@{Ccyan}<@{BCred}", {coloredline})]%; \
+				/set coloredline=$[replace(">", "@{Ccyan}>@{BCred}", {coloredline})]%; \
+				/set coloredline=$[replace("^", "@{Ccyan}^@{BCred}", {coloredline})]%; \
+				/set coloredline=$[replace("V", "@{Ccyan}V@{BCred}", {coloredline})]%; \
+				/set coloredline=$[replace("+", "@{BCmagenta}+@{BCred}", {coloredline})]%; \
+				/set coloredline=$[replace("x", "@{BCmagenta}x@{BCred}", {coloredline})]%; \
+				/set coloredline=$[replace("X", "@{BCbgyellow}@{BCred}X@{BCred}@{BCbgblack}", {coloredline})]%; \
+				/set coloredline=$[replace("RIP", "@{BCbgred}@{BCyellow}RIP@{BCred}@{BCbgblack}", {coloredline})]%; \
+				/echo -a -p %{coloredline}%; \
+			/else \
+				/echo %{*}%; \
+			/endif%; \
+		/endif%; \
+	/elseif ({1} =~ '*') \
+		/if (usemapcolors) \
+			/set coloredline=$[replace("*", "@{BCblack}*@{nCwhite}", {*})]%; \
+			/echo -a -p %{coloredline}%; \
+		/else \
+			/echo %{*}%; \
+		/endif%; \
+	/else \
+		/set linecounter=$[{linecounter} - 1]%; \
+	/endif
+
+
+/alias all \
+	/set areashowall 1%; \
+	/set linecounter 0%; \
+	/echo -paBCgreen ===============================================================================%; \
+	/quote -S /parsemap !cat %{mymapdir}%{areafilename}%; \
+	/echo -a -p @{Cwhite}Type 'top' to see top...%; \
+	/set linecounter=$[{linecounter} + 1]%; \
+	/addlines
+
+/alias top \
+	/set areashowall 0%; \
+	/set linecounter 0%; \
+	/echo -paBCgreen ===============================================================================%; \
+	/quote -S /parsemap !cat %{mymapdir}%{areafilename}%; \
+	/set linecounter=$[{linecounter} + 1]%; \
+	/addlines
+
+/def -F -p99999 -ag -mglob -t"*" totalgag
+
+; (IF strlen > $wrapsize THEN) only print $wrapsize chars
+;	/eval /set coloredline=$[substr("{coloredline}", 0, 10)]%; \
+; Doesn't work. Why not?
+;
+;Check dokeys: /dokey REDRAW%; \

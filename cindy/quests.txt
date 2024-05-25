@@ -1,0 +1,965 @@
+QUESTS:
+=======
+
+<Questmaster> tells you 'You are not experienced enough yet to attempt that quest.'
+  -> Not high enough level
+<Questmaster> tells you 'That quest is not for someone such as you.'
+  -> Wrong alignment
+<Questmaster> tells you 'That quest is not for one of your profession.'
+  -> Wrong class/classes? (check the exact wording)
+<Questmaster> tells you 'You are too common blooded to join that quest.'
+  -> Ktv only
+<Questmaster> tells you 'I need someone more famous than you!'
+  -> Need higher rep
+
+EXPLORE the world
+-----------------
+Every 19 rooms gives 0.1% (now and then only 18 needed).
+So all in all you need to find almost 19000 rooms to get to 100%
+Doesn't count: Arena, Well
+Does count: All the rest, including Burning Towers, Uriah's tomb, DT:s &
+closed areas.
+Every percent explored gives 1 qp the first time you reach it with one of
+your characters.
+Every 5% explored is shown as INFO, and gives reputation.
+
+
+Leronah @ temple city
+---------------------
+ 1 Daily-quest
+   Kill a specific mob
+   S, 0/1-100, Solvable once per boot & account.
+   Reward: xp (up to lvl 55) or 1-2 qp (lvl 56+), rep
+
+Sleeping with pathweaver wielded (random time)
+--------------------------------------------
+ 1 Soulweavers (PW5)
+   Sleep with pathweaver to get a dream. Get to statue @ Museum (3d3w2s),
+     exa statue, go kill Grell (65).
+   S, 60-100, must have solved PW4
+   Reward: 10M xp, rep, pathweaver group-recall skill ("say "val keyum",
+           recalls the whole group, putting some members close to 0 hp/mana
+           (WITHOUT recalling them), usable once every... 3-5 hours? (random).
+
+Phorius Gobee             - Lumberjack Forest
+--------------------------------------------
+ 1 A journey in time
+   Get to wrinkle in Ghenna.
+   S, ?/50-100, anti-Nb
+   Reward: 1M xp (MC), rep
+ 2 Banish the demons
+   Kill Giran (92) @ Alterac.
+   G, ?/50-100, anti-Nb, must have solved journey, Need rep 5%
+   Reward: 2M xp, 1k fire, rep
+ 3 Hero
+   Get to Thor @ Ragnarok
+   G, ?/50-100, anti-Nb, must have solved banish, Need rep 10%
+   Reward: rep, 1M xp (MC), the Ray of Hope
+
+The Duchess of Alchor @ Alchor
+--------------------------------------------
+ 1 A song for somber eyes
+   Kill Warchief (76) @ Alchor. Give letter. Kill Bard (70) @ Black Castle
+   Undef, 55-100
+   Reward: 1.5M xp, 500k gold, 10 qp, rep
+
+Allanon the Priest @ Karandras
+--------------------------------------------
+ 1 We suck young blood
+   Kill The lich Ciquala (52) @ Ciquala's Lair. Kill HasHut (21-56) @ Zorn Uskul
+   S, 52-100, Pr & Te only
+   Reward: 1M xp, 5 qp, rep
+
+Skinner, the skinner @ TradeRoad
+--------------------------------------------                                   
+ 1 Snakes for the Bitten
+   Fetch glimmering snakeskin from snake (lvl 75-90, many agg) @ Snake Lair
+   G, 55-100
+   Reward: 2M xp, 500k gold, rep
+ 2 Snake Lubricant
+   Fill vial with blood from Snake Lair pool & give to Skinner
+   S, 55-100
+   Reward: 2M xp, 500k gold, rep, thin vial of snake blood
+gt Snakes for the Bitten: Recall, 11s3w2s4eswn, join 1, give skin skinner.
+gt Then join 2, get back here, e, recall, 11s3w2s4eswn, give vial skinner.
+
+Mr Toad                   - Faery Forest
+--------------------------------------------                                   
+ 1 The Lab Rat's Lament
+   Kill Scientist (23) in Rand's Tower
+   G, 0/15-?/30
+   Reward: rep
+ 2 Fillet o' Fly
+   Fetch haunted steak knife from Haunted Keep
+   G, 0/15-?/30
+   Reward: rep
+ 3 Egg Exchange
+   Fetch griffon egg from Griffon @ Wyvern Waterfalls
+   S, 0/2-50/30(+) (joinable several times)
+   Reward: translucent blue potion / large brown sack / wand of invisibility /
+           dark purple potion
+
+Ourip, Priest of the Righteous Order - walking around in New Thalos
+--------------------------------------------
+ 1 The Pride of the Fallen
+   Fetch head from Azrael (100) @ Sin
+   G, 60-100
+   Reward: 3M xp (MC), 2M gold, 5 qp, rep, Pride
+ 2 Bringing out the Lazy
+   Fetch dogtags from Detrom (97) @ Mirror Beyond
+   G, 60-100, must have solved Pride
+   Reward: rep, 5 qp, 16k earth, Sloth
+ 3 And man did covet what he saw   
+   Fetch Kama Sutra from Crowley (100) @ Sin
+   G, 60-100, must have solved Lazy
+   Reward: rep, 5 qp, 5k water, Lust
+ 4 Feast until you Drop
+   Fetch Gigantic spoon of Feast from Feast (100) @ Sin (only pops on boot)
+   G, 60-100, must have solved covet
+   Reward: 2M gold, 5 qp, rep, Gluttony
+ 5 That which is yours should be mine!
+   Get the killing blow on GMoDF (85) @ Darkfriends
+   G, 60-100, must have solved Feast
+   Reward: 2M xp, 5 qp, Envy
+ 6 All your gold are belong to me
+   Get the killing blow on Great red wyrm (85) @ EF
+   G, 60-100, must have solved That which is yours
+   Reward: 5 qp, Greed
+ 7 The Wrath of the Fallen Angel
+   Fetch head from Palladrus (100) @ Sin
+   G, 60-100, must have solved All your gold
+   Reward: 16k earth, 9k water, 4k air, 1k fire, 5qp, rep, Anger
+ 8 Psalms of the Forgotten Gods
+   Fetch dusty psalmbook from ground @ Dragontail Isle. Must "join 8" to join.
+   S, 55-100
+   Reward: 500k gold (SC/MC), rep, a wand of improved regeneration
+
+The Elderly Drow Herald   - Guallidurth
+--------------------------------------------                                   
+ 1 The Uninvited Guest
+   Fetch Heart from Pardus (100) @ Guallidurth
+   G, 55-100
+   Reward: 5M xp, 10M gold, rep
+
+Blenok the mechanical goblin - Drakyri
+--------------------------------------------
+ 1 Paranoid Android
+   Kill the golem maker (80) @ HighTower
+   S, 55-100
+   Reward: 2k water, 3M gold, rep
+ 2 Life Assurance
+   Fetch small wizard ring from King (100) @ Storm Giant
+   S, ?/50-100
+   Reward: 10M xp (MC), 10M gold, 20 qp, rep
+
+Lord Eowaran the banished K'ta'viiri druid - Druid Forest
+--------------------------------------------
+ 1 Come Home
+   Charm Ceng (45) @ Dunheim, bring to Eowaran, disband and say: "Ceng is back"
+   S, ?/50-100, An only (SC Animist works?)
+   Reward: 2M xp, 2M gold, 5 qp, rep
+
+Mulak                     - Daycare
+--------------------------------------------
+ 1 The Strange Weapon
+   Fetch Holy Avenger from Diana (65) @ Ofcol
+   G, 51-100
+   Reward: rep, 2M xp
+ 2 The strange ring
+   Fetch golden ring from Dwarf guard (30) @ Dw. Kingdom
+   S, 0/15-100
+   Reward: rep, 250k xp (SC/MC)
+ 3 The strange gauntlets
+   Fetch gauntlets of ogre power from Chieftain (50) @ MahnTor (Ogre village)
+   S, 0/45-100
+   Reward: rep, 2M xp (SC/MC)
+ 4 The strange bug
+   Fetch scarab of protection from Ogre mage (30) @ Tomaaukkhen
+   S, 0/15-100
+   Reward: rep, 1M xp (SC/MC)
+ 5 The strange shield
+   Fetch spiked buckler from Gnoll leader (50) @ Amber Keep
+   S, 0/45-100
+   Reward: rep
+ 6 The strange breastplate
+   Fetch golden breastplate from Golden Titan (80) @ Solom
+   G, 51-100
+   Reward: rep, 1M xp, 250k gold
+ 7 The strange boots
+   Fetch boots of the ancients from Grand master (95) @ Citadel of Order
+   G, 51-100
+   Reward: 500 fire, 1000 air, 1500 water, 2000 earth, rep
+
+Haebeth                   - Myrridon, Commoners House
+--------------------------------------------
+ 1 My sweet prince
+   Kill prince Tramon (63) @ Toormail
+   G, ?/50-100
+   Reward: rep, 3M xp (MC), Essence of a pure soul
+ 2 Where I end and You begin
+   Get to It's room (PG task) @ Apocalypse
+   G, 51-100
+   Reward: rep, 15M xp     
+
+The Lieutenant of the Karandras cityguard    - Karandras, 2 west of FS
+--------------------------------------------
+ 1 Express Mail
+   Fetch a letter from post office
+   S, 0/1-100
+   Reward: rep, 500 xp (SC/MC), 50 gold (SC/MC)
+ 2 An Urgent Message
+   Say 'the eagle has landed' to the Grand Knight of Paladins
+   S, 0/10-100
+   Reward: rep, Lvl 85 armor
+ 3 Safe Storage
+   Bring a sword to the item clerk
+   S, 0/1-100
+   Reward: rep, 3k gold (SC/MC)
+ 4 A Cityguard's Duties
+   Go to Daycare
+   S, 0/2-100
+   Reward: rep, 3k xp (SC/MC)
+ 5 Lunchtime!
+   Fetch a bread
+   S, 0/1-100
+   Reward: rep, 300 gold (SC/MC)
+ 6 Important Errands
+   Go to Gressford @ Myrridon
+   G, 0/30-100
+   Reward: rep, 100k gold (SC/MC)
+
+Kue                       - Inside house in northern Ofcol
+--------------------------------------------
+ 1 Diamonds are Forever
+   Fetch glittering diamond from chest or Dracolich (50) @ Desert (River)
+   S, ?/40-51, Fi only (SC Fighter works?)
+   Reward: 120k xp (MC), 100k gold, rep
+ 2 You Only Live Twice
+   Kill Phoenix (50) @ Mirror Realm
+   S, ?/50-60, Fi only (SC Fighter works?)
+   Reward: 200k gold (MC), rep 
+
+Professor Gazinki         - HT
+--------------------------------------------
+ 1 Midget Magic
+   Kill Sorcerer (40) @ Zorn Uzkul
+   S, ?/50-80, Ma & Wl only (SC Ma or Wl works?)
+   Reward: 1.2M xp, 300k gold, rep
+ 2 They Shined so Bright
+   Kill Polaris (30) @ Galaxy
+   S, 50/30-80
+   Reward: 100k xp, rep
+ 3 Which Book?
+   Fetch Malleus Maleficarum from strongbox (99+ High-priestess) @ Coven
+   S, ?/50-100
+   Reward: 15M xp, 20 qp, rep, 5k fire, 5k air, 5k water, 5k earth
+
+Quimon                    - High Tower of Sorcery
+--------------------------------------------
+ 1 The Archmage's brew
+   Fetch bottomless bottle in Unholy Darkness
+   S, 0/20-100
+   Reward: 3M gold, rep, a slice of pizza
+ 2 My Precious
+   Fetch copper ring from Bodyguard @ Darkfriends
+   S, 60-100, Ktv-only
+   Reward: 5M gold, 5M xp, rep
+ 3 Hail to the Thief
+   Fetch jade moon from Vrashnak (74) @ VoK
+   S, ?/50-100, Ro only (SC Rogue works?)
+   Reward: 2M gold, 2M xp (MC), 5 qp, rep
+ 4 Tired young man
+   Get to Kirvon in Gorm, say Quimon sent me, build outpost, say ready,...
+   S, 52-100, Fi only
+   Reward: 500k gold, 1M xp, 5qp, rep
+
+Sir Jarrod Edgeworth      - High Clerists Tower
+--------------------------------------------
+ 1 Terrors from the Past
+   Kill Ghostly Troin (55) @ Lorchid
+   S, 50/50-100, Te only
+   Reward: 1.25M xp, 300k gold, rep
+
+Evilyn Shae-Veynslith     - Darkfriends
+--------------------------------------------
+ 1 The Darkeye Assignment
+   Kill Ghenna Swordmaster (55) @ Ghenna
+   S, 0/50-80, Nb only
+   Reward: 1M xp, 1M gold, rep
+ 2 The Chalice of Death
+   Get to room in Storm Giant Castle
+   S, 0/40-80, Nb only
+   Reward: 500k xp (SC), 250k gold, rep
+
+The Kings servant         - walking around in Sundhaven (where proud)
+--------------------------------------------
+ 1 Rebirth of a King
+   Get chalice from Skeleton warrior (12) @ HT and give to King in Sundhaven.
+     Then kill Daemon (34) @ Ultima (lvl 8).
+   Note: CAN BREAK!
+   Note: Need to walk there and get the chalice with a joined char (probably
+     just need to enter the cellar and get some message before returning the
+     chalice).
+   G, 0/25-50/49(-)
+   Reward: 300k/500k xp, 325k gold, rep
+
+Rasmuss the Court Mage    - King's Castle
+--------------------------------------------
+ 1 Hit the Jackpot
+   Kill Zara (80) @ KenderVillage
+   G, 50/40-100, non-good only
+   Reward: 1M/2M gold, rep
+
+Zagr K'fel                - Darkfriends
+--------------------------------------------
+ 1 Dire Reflections
+   Get to Detrom (nwws) @ Mirror Beyond
+   S, ?/50-90, Ro only (single _and_ multi?)
+   Reward: 1M xp (MC), 1.2M gold, rep
+ 2 Erid Reflections?
+   Get to room nwwn @ Mirror Beyond
+   S, 0/25-100
+   Reward: 200k xp (SC/MC), rep
+ 3 Black Milk
+   Kill Yak (50) @ Turvagar
+   S, 0/25-100, evil only
+   Reward: 500k gold (SC/MC), 500k xp (SC/MC), rep
+
+Iglaus                    - Kerofk
+--------------------------------------------
+ 1 Jambalaya that goes bump in the night
+   Fetch sapphire, Kill Minky (25) @ Wayhouse
+   S, 0/25-50/49
+   Reward: 55k xp (SC)/27.5k xp (MC), 145k gold (SC)/72.5k gold (MC), rep, naughty ghost cane
+
+Relyar Aspenwind          - New Thalos
+--------------------------------------------
+ 1 An Air for Yesterdays
+   Get to north part of Elven Valley
+   S, ?/50-100
+   Reward: 50k xp (MC), 120 air, rep
+ 2 Trial by Fire
+   Kill Fire Giant (55) @ Fire Elemental Plain
+   S, ?/50-100
+   Reward: 750k xp (MC), 100 fire, rep
+ 3 Peace of mind
+   Kill Crazed elven mage (60) @ Alchor and give his corpse to Relyar.
+     Note: Need to kill him with a joined char.
+   S, ?/50-100
+   Reward: 5M xp (MC), 5M gold, rep
+
+A wise alchemist          - Elven Village
+--------------------------------------------
+ 1 The deserted room
+   Fetch almanac in Taon
+   S, 0/20-60, anti-Ro, anti-Nb
+   Reward: rep, 23567 xp (SC), 17897 gold, worm birchwood staff
+ 2 The missing ingredient
+   Fetch very muddy branch from Jermlaine (33) @ UnderDark
+   S, 50/1-60
+   Reward: rep, 25k gold, 13546 xp (MC)
+
+Gryshk                    - Entrance to the Reception @ Karandras
+--------------------------------------------
+ 1 Destroy the threat from the skeletons
+   Kill Kazham (51) @ HaonDor (entrance to Ancalador)
+   S, 50/25-50/49(-), non-evil only
+   Reward: 500k xp (MC), 100k gold, +8 rep
+ 2 The gods are punishing us!
+   Fetch shimmering black object from Druid Forest (weighs 800 - need str 21)
+   S, 0/40-100
+   Reward: rep, stardust helmet
+ 3 The World is my Canvas
+   Get to room @ Taon (sw of portcullis DT)
+   S, 0/35-65
+   Reward: 200k xp (SC/MC), 100 gold, rep
+ 4 The Green Thumb
+   Get to Nasturn @ Mahn Tor
+   S, 0/30-70(+)
+   Reward: 120k xp (SC/MC), 55k gold (SC/MC), rep
+ 5 The Killer Bee
+   Kill Bee (51) @ Humblin
+   S, 0/30-55
+   Reward: 100k xp (SC/MC), 55k gold (SC)/50k gold (MC), rep
+ 6 A Heart of Stone
+   Kill Earth Ruler (60) @ Canyon
+   S, ?/50-70(+)
+   Reward: 500k xp (MC), 3k earth, rep
+ 7 Payback
+   Kill Pixie queen (10) @ Pixie Forest
+   G, 0/2-0/7(-)
+   Reward: rep
+
+Mulwig Knotheels          - Humblin
+--------------------------------------------
+ 1 The spaghetti incident?
+   Fetch a plate of spaghetti from Werith's Wayhouse.
+   S, 0/1-50/15(+)
+   Reward: 5.5k xp (SC)/1833 xp (MC), 5.5k gold (SC)/1833 gold (MC), rep
+ 2 Knockin' on Heaven's Door
+   Go to Garden of Angels
+   S, 0/5-?/25, non-evil only
+   Reward: 12k xp (SC)/4k xp (MC), rep
+ 3 Hair of the Dog
+   Kill Foxhound (10) @ Lagamore
+   S 0/5-50/20
+   Reward: 20k gold (SC)/6666 gold (MC), 10k xp (SC)/3333 xp (MC), +3 rep
+
+The Herald                - walking around in Palanthas
+--------------------------------------------
+ 1 Bandit Country
+   Fetch Regent Diamond from random mob (1: Monster @ Ceanyth Dungeons,
+     1: Drow archer @ Guallidurth, 1: Archangel @ GoA, 1: Templar @ Dragontail,
+     1: Charred skeleton @ Kaltor, 1: A Brettonian man-at-arms @ Alterac,
+     1: Aries @ Galaxy, 1: Vermai @ Oblivion, 1: Soldier of Khron @ Khronatio,
+     1: A small bug @ Impact, 1: Draconian @ EarthSea, 1: Youth @ Daycare,
+     1: Grolim warrior priest, 1: Militia guard @ Karandras,
+     1: Good Mage @ 3mages, 1: Star spawn @ Abandoned caves)
+   S, ?/25-100
+   Reward: rep, 5M gold, 10M xp, 50 qp
+ 2 Daughterly Decisions
+   Find Gwenlyn outside Castle Dunheim, say 'hagrath xu amothus'
+   S, 0/10-100
+   Reward: rep, 50k gold (SC/MC), ruby ring, 100k gold (SC?/MC)
+
+Gribbons                  - Mob Factory
+--------------------------------------------
+ 1 Chickenlover
+   Kill Poltergeist (70) @ Antiriad
+   S, ?/50-100
+   Reward: 3k air, 500k gold, rep
+ 2 Good Night
+   Fetch poem from Jethro (5) @ Humblin
+   S, 0/1-50/30
+   Reward: 15k xp (SC)/ 5k xp (MC), rep
+ 3 Don't Let the Bed Bugs Bite
+   Fetch Head of a drow elf from Rebure (70, pyrolisk danger!) @ Graveyard
+   G, 50/40-100
+   Reward: rep, 10M gold, 6M xp, penguin shaped dice
+
+Samuel                    - The lodge @ entrance to Taon
+--------------------------------------------
+ 1 Teaching an old warrior new tricks
+   Fetch Jiuyingzhenjing manual from ground (need lockpicker) @ Shaolin Temple
+   S, 0/15-50/50(+)
+   Reward: rep, 200k xp (SC/MC-50)/100k xp (MC-59), 100k gold (SC/MC-50)/50k gold (MC-59)
+ 2 The Sword in the Stone
+   Fetch Excalibur @ Dwarven Catacombs
+   S, 0/15-50/40
+   Reward: rep, 500 air (SC)/166 air (MC)
+
+Sir Kayodin               - Northern Plains
+--------------------------------------------
+ 1 The Unicorne's Brew
+   Fetch horn from Unicorn (39) @ Mirror Realm
+   S, ?/35-70, non-evil Pr or Te only (SC works?)
+   Reward: rep, the unicorn's brew
+ 2 Release the hounds!
+   Get to Dogpen @ Ice Wall (inside castle, door pickable by lvl 49+)
+   S, 0/25-52
+   Reward: 200k xp (SC/MC)/100k xp (MC-61), rep
+
+Eindenlal                 - Museum
+--------------------------------------------
+ 1 End thy life.
+   Kill Inner demon (21) @ Shaolin
+   S, 0/25-65, non-evil only
+   Reward: rep, forest green potion
+
+Sexrex the fisherman      - Oceania
+--------------------------------------------
+ 1 It's a dogs life
+   Fetch "Dogshank" knot from Sea-dog (8) @ Smuggler's Den
+   S, 0/1-50/30
+   Reward: 25k xp (SC/MC-10)/12.5k xp (MC-78), 10k gold (SC/MC-10)/5k gold (MC-78), rep
+ 2 Floating away...
+   Fetch lucky float from cheeky fish (10) @ Oceania
+   S, 0/15-50/50
+   Reward: 10k xp (SC)/3333 xp (MC), 300 gold (SC)/100 gold (MC), +2 rep, huge fish sack
+ 3 Catch a Bloater
+   Kill Actual Mother (18) @ Oceania
+   S, 0/15-50/50
+   Reward: 15k xp (SC)/5k xp (MC), 7k gold (SC)/2333 gold (MC), +4 rep
+
+Deidra                    - Small House in Ofcol
+--------------------------------------------
+ 1 The missing love
+   Fetch locket from Tribe chief (70) @ Ocean Floor
+   S, 65-100
+   Reward: 2M xp, 2M gold, 2k water, rep
+ 2 The Mother of Wolves
+   Fetch head from Angerboda (95) @ Ragnarok
+   G, 65-100
+   Reward: 10M xp, 10k earth, perfect diamond
+ 3 A Troubled Childhood
+   Kill Bosk (50) @ Kender Village
+   S, 50/40-100
+   Reward: 500k gold, rep
+ 4 Theft of a Memory
+   Fetch diamond engagement ring from Bride (25) @ Mirror Realm
+   S, 0/25-100
+   Reward: 5000 earth, rep
+
+Dr Olrik Seppelbaum       - Ofcol
+--------------------------------------------
+ 1 Son of Satan
+   Find a Bugbear @ Solom (normally north of the ghosts)
+   G, 0/49-70(-)
+   Reward: 300k xp (SC), rep
+
+Archibald Jolten          - walking around in Shaolin Temple/Crystamir Lake
+--------------------------------------------
+ 1 Retribution
+   Kill Xaren (62) @ UnderDark
+   S, 0/38-100
+   Reward: 100k gold, 500k xp (MC), rep
+
+Riddling Rover            - Random
+--------------------------------------------
+ 1 Another One Bites the Dust
+   Get to room in northwest part of Tomaaukkhen
+   S, 0/30-70(+)
+   Reward: 250k xp (SC/MC) / 125k xp (lvl 71), rep
+ 2 Pirate's delight
+   Get pearl from Clam (15) @ Atlantis (do NOT give)
+   S, 0/5-70(+)
+   Reward: 50k xp (SC/MC) / 25k xp (lvl 71), rep
+ 3 The Sea Spider's Web
+   Buy net from shop @ Traderoad (do NOT give)
+   S, 0/10-70(+)
+   Reward: 75k xp (SC/MC) / 37.5k xp (lvl 71), rep
+ 4 Seasonal Weaponry
+   Get Icicle from Ice bandit (45) @ Elemental Canyon (do NOT give)
+   S, ?/50-80
+   Reward: 333.333 xp, 9 water, rep
+ 5 Riddle in a Bottle
+   Get to Scurvy
+   S, 0/1-70(+)
+   Reward: 20k xp (SC/MC), 10k gold, rep
+ 6 A Sandstorm of Memories
+   Get Hourglass from Timelord (39) @ Ultima (lvl 8) (do NOT give)
+   S, 0/40-70(+)
+   Reward: 333.333 xp (SC/MC), 3 air, rep
+ 7 Hymn for the Hearth
+   Get to room in Ultima (lvl 4)
+   S, 0/20-70(+)
+   Reward: 40k xp (SC/MC) / 20k xp (lvl 71),
+           200 fire (SC/MC) / 100 fire (lvl 71), rep
+ 8 A Broken Neck
+   Get to room in Ice Caves
+   S, 0/20-70(+)
+   Reward: 100k xp (SC/MC), rep, 2k water
+ 9 Blue Blood
+   Get to room in Demoncity
+   S, 0/40-80(+)
+   Reward: 200k xp (MC), 50k gold, rep
+10 Marie's Meal
+   Get donut from ground @ Dragon Cult
+   S, 0/10-70(+)
+   Reward: 20k xp (SC/MC) / 10k xp (lvl 71), rep
+11 Treasure of the Blind
+   Get Occluded Lens from chest @ Rand's Tower (do NOT give) (need lockpicker)
+   S, 0/10-70(+)
+   Reward: 250k xp (SC/MC) / 125k xp (lvl 71), rep
+12 Toads in the Hole
+   Get to Phadela (Ws) in Sundhaven
+   S, 0/10-70(+)
+   Reward: 150k xp (SC/MC), rep
+
+Taylor the farmer         - A small farm @ outside Palanthas
+--------------------------------------------
+ 1 Rainbow after the Rain
+   Go to Finbar, say 'leprechaun', say 'yes', kill Leprechaun (65) and give
+     his head to Taylor. Leprechaun flees and aggies are nearby.
+   G, 50/40-70(-)
+   Reward: 1M gold, 6M xp (MC), rep
+
+Fravir the Mkbqxtpqxbf    - The Demonslayer Inn @ Palanthas
+--------------------------------------------
+ 1 The eternal night
+   Fetch Wand of Life from Ancient Ghost (85) @ Solom. 3 agg ghosts in the
+     same room.
+   G, ?/50-100
+   Reward: 9M xp (MC), rep, an arcane necklace
+
+The Trader                - walking around in Cohn Shar
+--------------------------------------------
+   Total of 0 quests available.
+
+Demeter                   - Olympus
+--------------------------------------------
+ 1 Chicken of the Sea
+   Kill Neptunus (80) @ Atlantis
+   G, ?/50-100
+   Reward: rep, 10k water, 5 qp, can of Chicken of the Sea tuna
+ 2 To the shores of Hell and back.
+   Fetch Persephone's necklace from Hades (100) @ Underworld
+   G, ?/50-100
+   Reward: 10M xp, 5M gold, rep, fire???.
+           If solved in group, gold & xp is split, 0 fire (unknown about rep)
+
+Hianor the town crier     - Solace
+--------------------------------------------
+ 1 Serve the Queen
+   Kill Mazekeeper (71) @ Dwarven Kingdom and give pills to Queen
+   G, 0/30-70(-), non-evil only
+   Reward: 50k xp (SC/MC), +10 rep
+ 2 Twisting by the Pool
+   Get to Drakyri entrance
+   S, 0/30-80(+)
+   Reward: 75k xp (SC/MC) / 37.5k xp (lvl 86), 250 water (SC/MC) / 125 water (lvl 86), rep
+ 3 Ride Across the River
+   Get to a room a few north from entrance to Ancient Lands (nasty & norecall)
+   S, ?/50-80(+)
+   Reward: 500k xp (MC), 1k water, rep
+ 4 Retrieve The Relic
+   Get relic from Cloaked Ghast (100) @ Ghenna (Maedars) or nw UnderDark. Do NOT give.
+     Ghast only has 10k hp, but several aggies are around him.
+   G, ?/50-80(-)
+   Reward: rep, The Arcane Hammer of Magic
+ 5 Hunters hunted
+   Kill Rampgruff (50) @ OC. ("A mean looking troll is standing here.")
+     Usually Antiriad <-> Elven Village, has 2422hp, no memory
+   S, 0/25-50/45(+)
+   Reward: 300k gold (SC/MC), 250k xp (SC/MC), rep
+ 6 Crisis at Inglestone
+   Get onion behind Kerofk stand and give to Inglestone cook
+   S, 0/15-70(+)
+   Reward: 50k xp (SC/MC), 40k gold (SC/MC), rep
+
+Salik the covert assassin - Underdark
+--------------------------------------------
+ 1 Expose the Outlaw
+   Fetch belt from Jaixhin (100) @ Darkfriends (outlaw @ Sundhaven has key)
+   G, 50/50-70(-)
+   Reward: 300k xp (MC), 1.5M gold, rep
+ 2 Smuggle the Symbol
+   Get the symbol of storms from Goluk (100) @ Storm Giant Castle and give to
+     smuggler @ Taon:3es3en.
+   G, 50/50-70(-)
+   Reward: 450k xp (MC), 300k gold, rep, sleeves of valour
+
+Thanalos Stormfeld        - Kerofk
+--------------------------------------------
+ 1 The Captured Leader
+   Kill Bergron (60) @ Kerjim (beware of nasty summoners!)
+   G, ?/50-100
+   Reward: rep, 1k fire
+ 2 Shadowy Encounters
+   Kill Tarbor (93, hidden) @ Unholy Darkness. If leader is joined, all joined
+     gets quest solved.
+   G, ?/50-100
+   Reward: 19.5M xp (MC), rep
+ 3 Weavers of Destiny (PW1)
+   Fetch PathWeavers blade from Fayador (95) @ Lorca
+   G, 55-100
+   Reward: +40 rep, better Pathweaver
+ 4 Weavers of Knowledge (PW3)
+   Get to Ezmerelda @ High Tower, have Pathweaver wielded, say 'normu cayoria',
+     get crystal ball from Garoth (95, ball is carried), find Celestial Bird,
+     give pathweaver bird, get tome, give ball bird, wait.
+   Note: Dangerous area. Every player in the room will be teleported inside!
+   G, 55-100, must have solved PW2
+   Reward: 1.5M xp, rep, improved Pathweaver
+     Fire  : baru goth deathflame
+     Energy: cuntoh magu
+     Ice   : bwaihna cur hailstrike
+ 5 Stormweavers (PW4)
+   Give gleaming diamond to Ezmerelda @ HT, kill Nokisus, enter portal,
+     give blade to Jayson
+   Note: Every player in the room will be teleported inside!
+   G, 55-100, must have solved PW3
+   Reward: rep, 25M xp, pathweaver spy skill ("say moathma <name>", only works
+           on group members)
+
+Haldur son of Haldir      - near King's Castle
+--------------------------------------------
+ 1 The book of immortality
+   Fetch book from Cain (80) @ Unholy Darkness
+   G, 55-100, non-good Ktv only
+   Reward: 8M xp, rep, 500 fire, 2000 air, bejewelled shield
+ 2 the Son of the King
+   Get small hot ball of fire from Efreeti (20) @ Pyramid. Get A large chunk
+     of Adamantium from ground @ MM/ZU/Am. Give these to Blacksmith @
+     Mustaine. Kill the Prince of Evil (75) @ Black Castle
+   Note: CAN BREAK!
+   G, 55-100
+   Reward: 3M xp, 3M gold, 10 qp, rep
+
+Nerwren                   - King's Castle
+--------------------------------------------
+ 1 Return the crown jewels
+   Get key from Gaultor (50) @ Kerofk (tavern). Get crown jewels from Brontar
+     (65) @ Kender Village and give to Peter @ King's Castle.
+     2 agg lvl 50 thieves before Brontar. One agg lvl 50 thief with Brontar.
+   S, 51-100
+   Reward: 200k xp, 100k gold, rep
+ 2 Peters Big Meal
+   Get spice jar @ Holygrove and give to Peter @ King's Castle.
+   S, 0/5-50/40
+   Reward: 30k gold (SC) / 15k gold (MC), rep
+ 3 Unweaving Secrets (PW2)
+   Give Pathweaver to Gretta @ Crystalmir, kill the Chaos Entity (90), give
+     Pathweaver to Gretta again.
+   Note: If leader kills the entity the whole group may get the quest solved,
+         which might be bad).
+         If joined member kills the entity, anyone joined might get the quest
+         solved, which could be good).
+         NOT sure how it works with a group now.
+   G, 55-100, must have solved PW1
+   Reward: 11M xp (killing) + 3M xp, +40 rep, better Pathweaver
+
+Halewig Thorvan           - Tournament
+--------------------------------------------
+ 1 The Living Curse
+   Kill Accursed spirit, somewhere in the world.
+   S, 50/25-100
+   Reward: 10M xp, 5M gold, 50 qp, rep
+
+
+Unknown quest:
+White Lotus Quest Part 1                   0-100   No         Yes
+Quest Name                                 0-100   No         Yes
+The neverending guardian.                  1-10    No         Yes
+The punishers punishment.                  1-10    No         Yes
+The Sinister Plague                       50-100   No         No
+Rescue the Family                          0-15    No         Yes
+
+The Oligochaetologist     - Darkunder (and/or Underdark?)
+--------------------------------------------
+ 1 The lost specimen
+   Fetch Specimen from Anxious enforcer eye @ Darkunder
+   S, 51-100
+   Reward: 500k gold, rep, bread for your journey
+ 2 Blood sample please
+   Fetch Specimen from Bloodworm @ Inglestone
+   ?, 51-100
+   Reward: 750k gold, rep, bread for your journey
+ 3 The rockworm files
+   Fetch Specimen from Rockworm @ Toormail
+   ?, 51-100
+   Reward: ?
+ 4 The Psionic chapter
+   Fetch Specimen from Psionic Worm @ Myrridon Mines
+   ?, 51-100
+   Reward: 10M xp, 5M gold, 30 qp, rep, trusty machete
+
+-------------------------------------------------------
+
+(+): Quest can be joined at higher levels
+(-): Quest can NOT be joined at higher levels
+ 0/10 means singleclass lvl 10
+50/10 means multiclass  lvl 10
+   10 means single- or multiclass lvl 10
+ 0/5- 0/25 means solvable single 5-25
+50/5-50/25 means solvable                 multi 5-25
+   5-   25 means solvable single 5-25 and multi 5-25
+SC    means single class only
+MC    means multi class only
+
+MinLv-MaxLv(?) Xp(SC) Xp(MC) Restrictions Name
+    1-100           0      0              Lunchtime!
+    1-   15(+)   5500   1833              The spaghetti incident?
+    1-   30(+)   15k    5000              Good Night
+    1-   30(?)   25k    12k               It's a dogs life
+    1-   70(+)   20k    20k               Riddle in a Bottle
+    1-  100       500    500              Express Mail
+    1-  100         0      0              Safe Storage
+SC  2-    7(-)      0   ----              Payback
+    2-   30(+)      0      0              Egg Exchange
+    2-  100      3000   3000              Cityguard's Duties
+    5-   20(+)   20k    6666              Hair of the Dog
+    5-   25(+)   12k     4k  non-evil     Knockin' on Heaven's Door
+    5-   40(+)      0      0              Peters Big Meal
+    5-   70(+)   50k    50k               Pirate's delight
+   10-   70(+)   20k    20k               Marie's Meal
+   10-   70(+)   75k    75k               The Sea Spider's Web
+   10-   70(+)  150k   150k               Toads in the Hole
+   10-   70(+)  250k   250k               Treasure of the Blind
+   10-  100         0      0              An Urgent Message
+   10-  100      50k    50k               Daughterly Decisions
+   15-  100     250k   250k               The strange ring
+   15-  100    1000k  1000k               The strange bug
+   15-   30(-)      0      0              Fillet o' Fly
+   15-   30(-)      0      0              The Lab Rat's Lament
+   15-   40(+)      0      0              The Sword in the Stone
+   15-   50(+)   10k    3333              Floating away...
+   15-   50(+)   15k    5000              Catch a Bloater
+   15-   50(+)  200k   200k               Teaching an old warrior new tricks
+   15-   70(+)   50k    50k               Crisis at Inglestone
+   20-  100         0      0              The Archmage's brew
+   20-   60(+)   24k     ?   non-Ro, nonNb  The deserted room
+   20-   70(+)   40k    40k               Hymn for the Hearth
+   20-   70(+)  100k   100k               A Broken Neck
+   25-  100         0      0              Theft of a Memory
+   25-  100     200k   200k               Erid Reflections?
+   25-   49(+)   55k    27k               Jambalaya that goes bump in the night
+   25-   45(+)  250k   250k               Hunters hunted
+   25-   49(-)  300k   500k               Rebirth of a King
+   25-   52(+)  200k   200k               Release the hounds!
+   25-   65(+)      0      0 non-evil     End thy life.
+   25-  100     500k   500k  evil only    Black Milk
+   30-  100         0      0              Important Errands
+   30-   55(+)  100k   100k               The Killer Bee
+   30-   70(-)   50k    50k  non-evil     Serve the Queen
+   30-   70(+)  120k   120k               The Green Thumb
+   30-   70(+)  250k   250k               Another One Bites the Dust
+   30-   80(+)   75k    75k               Twisting by the Pool
+   35-   65(+)  200k   200k               The World is my Canvas
+   38-  100       ?    500k               Retribution
+   40-  100         0      0              The gods are punishing us!
+   40-   70(+)  333k   333k               A Sandstorm of Memories
+   40-   80(+)  200k   200k               Blue Blood
+   40-   80(?)  500k     ?   evil Nb only The Chalice of Death
+   40-   51(?)    ?    120k  Fi only      Diamonds are Forever
+   45-  100         0      0              The strange shield
+   45-  100    2000k  2000k               The strange gauntlets
+   49-   70(-)  300k     ?                Son of Satan
+   50-   70(+)    ?    500k               A Heart of Stone
+   50-   80(?)    ?   1000k  evil Nb only The Darkeye Assignment
+   50-   90(?)    ?   1000k  Ro only      Dire Reflections
+   50-  100       ?   1000k  non-Nb       A journey in time
+   50-  100       ?   2000k  An only      Come Home
+   50-  100       ?   2000k  Ro only      Hail to the Thief
+   50-  100       ?        0              Chicken of the Sea
+MC  1-   60(+)   ----   14k               The missing ingredient
+MC 25-   49(-)    ?    500k  non-evil     Destroy the threat from the skeletons
+MC 25-  100       ?    10M                The Living Curse
+MC 25-  100       ?    10M                Bandit Country
+MC 30-   80(?)    ?    100k               They Shined so Bright
+MC 35-   70(?)    ?        0 non-evil Pr or Te only   The Unicorne's Brew
+MC 40-  100       ?        0              A Troubled Childhood
+MC 40-  100       ?        0 non-good     Hit the Jackpot
+MC 40-  100       ?   6000k               Don't Let the Bed Bugs Bite
+MC 40-   70(-)    ?   6000k               Rainbow after the Rain
+MC 50-   60(?)    ?        0 Fi only      You Only Live Twice
+MC 50-   70(-)    ?    300k               Expose the Outlaw
+MC 50-   70(-)    ?    450k               Smuggle the Symbol
+MC 50-   80(+)    ?    500k               Ride Across the River
+MC 50-   80(-)    ?        0              Retrieve The Relic
+MC 50-   80(+)    ?    333k               Seasonal Weaponry
+MC 50-   80(?)    ?   1200k  Ma or Wl only   Midget Magic
+MC 50-  100       ?     50k               An Air for Yesterdays
+MC 50-  100       ?    10M                Life Assurance
+MC 50-  100       ?    10M                To the shores of Hell and back.
+MC 50-  100       ?    15M                Which Book?
+MC 50-  100       ?    20M                Shadowy Encounters
+MC 50-  100       ?   1000k  non-Nb       Hero
+MC 50-  100       ?   1250k  Te only      Terrors from the Past
+MC 50-  100       ?   2000k  non-Nb       Banish the demons
+MC 50-  100       ?   3000k               My sweet prince
+MC 50-  100       ?   5000k               Peace of mind
+MC 50-  100       ?   9000k               The eternal night
+MC 50-  100       ?        0              Chickenlover
+MC 50-  100       ?        0              The Captured Leader
+MC 50-  100       ?    750k               Trial by Fire
+   51-  100      ----      0              The strange boots
+   51-  100      ---- 1000k               The strange breastplate
+   51-  100      ----  15M                Where I end and You begin
+   51-  100      ----  200k               Return the crown jewels
+   51-  100      ---- 2000k               The Strange Weapon
+   51-  100      ----    ?                The lost specimen
+   51-  100      ----    ?                Blood sample please
+   51-  100      ----    ?                The rockworm files
+   51-  100      ----    ?                The Psionic chapter
+   52-  100      ----   1M   Fi only      Tired young man
+   52-  100      ---- 1000k  Pr or Te only  We suck young blood
+   55-  100      ----      0              Paranoid Android
+   55-  100      ----      0              Psalms of the Forgotten Gods
+   55-  100      ----      0              Weavers of Destiny (PW1)
+   55-  100      ----  14M                Unweaving Secrets (PW2)
+   55-  100      ----  25M                Stormweavers (PW4)
+   55-  100      ---- 1500k               A song for somber eyes
+   55-  100      ---- 1500k               Weavers of Knowledge (PW3)
+   55-  100      ---- 2000k               Snake Lubricant
+   55-  100      ---- 2000k               Snakes for the Bitten
+   55-  100      ---- 3000k               the Son of the King
+   55-  100      ---- 5000k               The Uninvited Guest
+   55-  100      ---- 8000k  non-good Ktv The book of immortality
+   60-  100      ----      0              All your gold are belong to me
+   60-  100      ----      0              And man did covet what he saw
+   60-  100      ----      0              Bringing out the Lazy
+   60-  100      ----      0              Feast until you Drop
+   60-  100      ----      0              The Wrath of the Fallen Angel
+   60-  100      ----  10M                Soulweavers (PW5)
+   60-  100      ---- 2000k               That which is yours should be mine!
+   60-  100      ---- 3000k               The Pride of the Fallen
+   60-  100      ---- 5000k  Ktv only     My Precious
+   65-  100      ----  10M                The Mother of Wolves
+   65-  100      ---- 2000k               The missing love
+
+-------------------------------------------------------
+
+Quest points:
+Gain  Total  Action
++  1     1   Participation in the get400Mxp quest
++250   251   Selling a traded quest-item
++ 10   261   Solving the weaponflag quest
++ 25   286   Winning the create-a-blackknight quest
++ 45   331   4:th group in Klaaws Kill Shadow Master quest
++ 50   381   Found 8 stones in Cain's quest
++ 40   421   Kill and scalp cold-hearted monsters (20 for the group part)
++ 15   436   Kill a few whoopass cans and stuff in well
++ 30   466   Saving Cain from Zeus and his minions
++  7   473   Find-the-Imm quest by Gildae
++  4   477   Torain's Where-am-I quest
++ 19   496   Kill the Assholes, by Torain
++ 25   521   Selling my quest leggings
++ 22   543   Kill-all-dragons-on-well-lvl-20 quest by Baltorg
++ 20   563   Winning fetch A-Z scalps quest by Baltorg
++ 20   583   Collecting eggs for Gildae's dragon omelet.
++ 13   596   6:th place in Gildae's trivia 10
++  8   604   7:th place in Gildae's trivia 11
+-155   449   3 orbs for Oret, for his Leggings of the ancients.
+- 55   394   regen orb for oret, for a molten mantle of lava
++ 21   415   2:nd place in Rafo's Russian Roulette quest
++ 30   445   Won Gildae's "Kill 10 of these highbie mobs" merc quest
++ 10   455   Solving Son of the King (game-quest)
++ 35   490   Bane's Get-stuff-in-lvl-20-well quest
+-385   105   Sold orbs for 720M
++  5   110   1 point of 3 in Rafo's Find-the-mob quest
+- 50    60   Sold orb for 100M
+- 50    10   Sold orb for 100M
++ 30    40   Won Chandos' quest killing evil guys for his beloved Lady Sarah
++ 10    50   ???
++ 15    65   Quest by Baltorg/Blase: Kill Marids in the well
++ 15    80   Won Baltorg's quest: Get scalps from mobs
++ 12    92   2:nd place in Chandos' russian roulette quest
++ 25   117   Won Chandos' russian roulette quest
++  5   122   MtHead - Hail to the Thief
++  8   130   Solving Coyote's quest to save the baby draco-angel
+- 30   100   Buying Potion of Righteousness for trade with Amida
++ 10   110   Solving Moralis' Who-murdered-King-Welmar quest
+- 55    55   Quickness to Ghodris as payment for Flexis
+- 10    45   Triad scroll to kill Pixie Queen
+- 10    35   Scriptures scroll to kill Pixie Queen
++  7    42   Winning Jydara's scavenger quest
+- 20    22   Bought orb of ice
++  5    27   Solved Pride of the Fallen
++  5    32   Solved Bringing out the Lazy
+- 25     7   Bought orb of fire
++  5    12   Solved And man did covet what he saw
++  1    13   Daily quest
++ 15    28   Helping Moralis gather bits of information
++  9    37   Daily quests
++ 10    47   Helping Angharad (and Morgoth) kill strange fishes in Well
++ 20    67   Daily quests
++ 10    77   Helping Angharad (and Morgoth) kill dark assassins in Well
++ 20    97   Daily quests
++  5   102   Solved Feast until you Drop
++  5   107   Solved That which is yours should be mine!
++  8   115   Daily quests
++ 25   140   Helping Lord of Sundhaven (Moralis) defend Alterac against lugrokis
++  4   144   Daily quests
++ 15   159   Angharad:s find-the-flags quest
++  4   163   Daily quests
++ 15   178   Won Angharad's roulette quest
++ 21   199   Daily quests
++  5   204   Solved All your gold are belong to me
++ 10   214   Daily quests
++ 15   229   Holding a music quest
++ 20   249   Daily quests
++  5   254   2:nd (last) place in Angharad's kill-fidos-in-well quest
++ 12   266   2:nd (last) place in Angharad's roulette quest
++ 19   285   Daily quests
+-110   185   2 regen orbs for Kerish

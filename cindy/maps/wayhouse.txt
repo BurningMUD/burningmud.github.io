@@ -1,0 +1,47 @@
+# Werith's Wayhouse (11): 5-25, CAW  (King's Castle: 3wnwne2nw2nwne2nw3nws)
+#
+#            |
+# o--------- X ----------- o - o
+# |          +             |   |
+# |          |   o o o     |   o - o
+# |          |   + + +     |   |   |
+# |          |   o-o-o---o |   o - o
+# |          |   + + +  /  |
+# |          |   o o o /   |
+# |          |        /    |
+# |  o - o - o - o   /     |
+# |  |   |   |   |  /      |
+# |  o - o - o - o-o       |
+# o  |   |   |             o
+# |  o - o - o - o         |
+# |  |   |   |   |         |
+# |  o - o   o - o         |
+# |          |             |
+# o -------- o ----------- o
+#                          |
+#                          o
+#
+# Lowbie area. Nothing aggressive, but they all have memory.
+# Minky is vuln energy
+
+Werith's Wayhouse:                Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+Koofy                               1   200 N----     -     28-35        1-1    sitting, flees
+A dog                               5   12k N----     -     99-99        1-1    sitting
+A waiter                            5   12k N-x--     -     97-103     501-501
+A waitress                          5   12k N-x--     -     99-101     501-501
+A horse                             6   21k N----x    -    117-123       1-1    flees
+A farmer                            7   35k N-x--x    -    140-144     101-101
+Seemie                              7   35k G----x    -    137-144      51-51
+An adventurer                       8   56k N-x--x    -    158-163    2001-2001
+Eshiay                              8   56k G----x    -    157-161       9-9    sitting
+Airden the Wanderer                 9   90k G-x--x    -    178-184    2501-2501 bash
+A chef                             10  110k G----x    -    192-207    3001-3001
+Alerka                             10  110k E----x    -    195-207    4001-4001 backstab
+A bartender                        12       G--       -      ?           ?      shopkeeper
+Desslok                            12  156k N--x-x    -    242-244    4001-4001 magic missile, burning hands
+Jordo                              12  156k N----x    -    233-250    3001-3001
+Drogo                              15  255k N----x    -    303-308    6001-6001 sitting, kick, headbang
+The woman                          18       E--       -      ?           ?      shopkeeper
+Farlenian                          24 1200k G----x    -    556-572    7001-7001 kick, headbang
+Minky the troublesome little ghost 25     0 Nxx---    -    559-582    7001-7001 [insubstantial], save 15, sneak, shrugger
+Werith                             26       G--       -      ?           ?      shopkeeper

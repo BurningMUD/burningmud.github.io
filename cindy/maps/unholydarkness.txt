@@ -1,0 +1,82 @@
+# Unholy Darkness (176): 25-100, Stile/Acheron  (King's Castle: 6wn3wswnd)
+* FIND OUT: Level on A shadow mage/thief/... for different levels
+#
+#                            o - o - o - o
+#                                |       +
+#  o   o ---------- o ---------- o - o - o
+#  |   |                         +
+#  o - o   o                     o - o --- o - o
+#  |   |   |                     |   |     |   |
+#  o   o - o  Damien-o           o-Drakith-o - o
+#          +    x|               |  x|     |   |
+# o-o ---- X <-/ |               o-/-o --- o - o
+# | |            |                 |
+# o o-o-o Shop+o-o-o               v
+#   |   |        |                 o
+#   o   o+Shop o-o-o               |
+#                |       Shop  o-o+o-RIP
+#                o o       +   |
+#                |/|     o-o---o-o   o---o
+#                X |       |   |     |   +
+#                  |       o Cain--o-o   v
+#                - o -             |     o - o - o -- o
+#                                  o-o   |   |   |    |
+#                                  |     o - o - o -- o
+#                                  o     |   |   |    |
+#                                        o - o-Beldar-o
+#                                               x
+#                            o - o    o - o <--/
+#                                |    |
+#                        o - o - o-Tarbor+o - o
+#                        +                |
+#                        v        o - o - o - o
+#                   /-<- o ->-\           +   |
+#          RIP  RIP/           \RIP     Shop  o - o
+#           |    |/             \|
+#     RIP - o -- o ------------- o - RIP
+#           |                    |          Home
+#     RIP - o -- o      Infernos-o - RIP    /           (nomag)
+#           |    |         x|    |         o <+ o -> o +> o
+#     RIP - o    o        o o -- o - RIP        ^         |
+#           |    |       /  |    |              |         v
+#          RIP  RIP     o  RIP  RIP             o   RIP + o + RIP
+#                      /                        ^         +
+#                     o                         |         | /->Home
+#                    /                          |         v/
+#                    \------> o -----> o +----> o   o + GHANZ
+#
+* Min level 0/20
+* Whole area, except level 2, is very bright
+* Only evil aligned can go west from Ghanz.
+* Shop: All four shops are the same. Entrance locked and no-pick. No key.
+*       One-player-only, noexit/nomag. Exa mirror = recall.
+*       Every zone reset, there's a chance one of the doors will be unlocked.
+*       Shop on lvl 4 is sometimes open just after or just before reboot.
+*       If before, it opens when you see "[NOTICE] Rebooting in 3 minutes..."
+
+Unholy Darkness:         Lvl    Xp ASWIDMX # agg     Hp           Gold       Special
+The beautiful maiden       1     1 G----     -      1-1            0-0       sitting, +1 starthp
+A black-robed priest      25 1500k E-x---    G    672-695       2560-2565    [human], poison, cause critic, cure serious, cause serious, cure critic
+The acolyte               25 1250k E-x---    G    609-619          1-1       [human]
+Father Damien             30 3600k Ex--      G    788-831      10033-10042   [human], no-charm, confusion, poison, harm, cure critic
+A shadow wraith           35 8663k E-x---    G E  903-911          0-0       vuln energy, resist weapon, immune unlife, energy drain
+An archpriest             35 8663k E-x---    G E  877-884       1983-2018    [human], poison, cause critic, confusion, harm, heal, cure critic
+Drakith                   40   13M Ex-x--    G E 1334-1343      9946-10197   [undead?], vuln pure/light, immune unlife/dark, energy drain
+A dark beast              45   27M E-x---    G   1785-1798     10110-10118   vuln pure/light/iron, resist dark, immune fire
+A succubus                45   30M E-x---    G   1809-1821     10103-10119   vuln pure/light/iron, resist dark, immune fire, colour spray
+A shadow mage  (lvl 74) 1-63          x      G                               summoned, hell fire, destroyed by Ghanz when you leave the room
+A shadow thief (lvl 56)47-51       Ex         N                              summoned, hide, backstab, destroyed by Ghanz when you leave the room
+Beldar                    50   47M Ex-xx-    GNE 2314-2318     24284-24291   [dragon], resist ice?/earth?/air?/gas?, NOT resist fire, 2-7 attacks
+A gloom raven             55  ~55k N--x      GN  3501-3501     20000-20000   [human], summoned
+A hell knight             55   60M E-xx -    -   3180-3208      4028-4034    [human], whirlwind, flying & sentinel before being in battle - standing & walking after
+A stone statue            55   60M E--x -    -                     0-0       sitting, vuln unlife, poor hitroll, good ac, turns into hell claw after 15-25 seconds (fully healed, dropping eq, time is random?)
+The hell claw             55       E--x -    -                     n/a       sitting, vuln unlife, turns into stone statue around pretty hurt (keeping damage, dropping eq)
+Infernos                  65  150M Ex-x      G   6403-6458     50036-50069   vuln pure/light/iron, resist unlife/dark/poison, immune fire, fireball, hell fire
+A shadow fiend            70  ~69k E--x  1   GN  8447-8502     65895-66178   [human], summoned
+Cohen the veteran         70  350M Gxxx x    - E 9804-9879         0-0       INFO, [human]
+Henchdemon (screams)      70  231M Ex x      G ~14155              0-0       vuln pure/light, resist dark
+Henchdemon (stands)       70  231M Ex-x -0   -  10199-10236        0-0       vuln pure/light/iron
+Cain                      80  640M E--- x0   -  12006-12009  1000001-1000001 [human], bash, kick, headbang
+The shopkeeper            80       E-        ---                             shopkeeper
+Ghanz                     90       Ex x      GNE                             INFO, [human], special summon mirror images of everyone entering (shadow mage/thief/...), room is norecall but fleeable
+Tarbor the Shadow Mage    93  186k E--x x1   ---   ~40k        65629-65647   INFO, [human], mana shielded, hide, summon gloom ravens (5), summon shadow fiend (1), shadow spray (182)

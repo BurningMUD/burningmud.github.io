@@ -1,0 +1,83 @@
+# City of Ofcol (14): 1-100, Alfa  (Ofcol: -)
+#
+#                    o o
+#                    |/
+#     o   o   Q      Q      o   o   o                                    o
+#     |   |   |      +      |   |   |                  /                /
+# o - o - o - o ---- o ---- o - o - o - o             o              o o
+#     |   |   |      |      |   |   |              / /|    /        /|/
+#     o   o   o  o + o + o  o   o   o             o - o - o      o - o - o
+#                |   |   |                       /    |/ /      /    |  /
+#                o   |   o                            o              o
+#                    |                               /              /
+#            o --+-- M --+- o
+#            |       |      |   Dragon
+#            o  Ms - o - o  o    Cult         o ----- o ----- o
+#                    |   |        +           |       |/      |
+#                    | Store  o   o           o       o       o
+#                    |        |   |           |    /  |    /  |
+#                  - X ------ o - o - o + o - o - o - o - o - o
+#                    |        |   |           |       |/      |
+#               Ws - o - Ls   Q  Post         o       o       o
+#                    |                        |       |       |
+#               Ps - o - Fs                   o ----- o ----- o
+#                    |
+#              Pub - o - Fs
+#                    |
+#            o + o   |
+#                |   |
+#            o - o - o ----- o - o
+#            |   |   |       |
+#            o - o  [FS] o   |
+#                        |   |
+#                    o - o - o - o
+#                        |   +
+#                        o   o
+#
+* Safe area. Most are humans.
+
+Ofcol:                       Lvl    Xp ASWIDMX # agg     Hp         Gold    Special
+A hen                          1   116 N-x---    -     12-17        0-0     immune earth, flees
+The boy                        3  3000 G-x--     -     57-59      234-271
+The girl                       3  3000 G-x--     -     61-64      230-285   flees
+The pig                        4  7000 N-----    -     79-83        0-0     vuln slay mental
+A page                         5   12k G-x--     -     96-101     419-431   [human]
+Farmer Sara                    5  9000 G----     -     98-103     435-490   [human], flees
+The citizen                    5   12k G-x--     -     99-102     441-465   [human]
+The cow (munching)             5   12k N-x--     -    100-102       0-0     vuln mental
+The cow (waiting)              5   12k N----     -     98-99        0-0     vuln mental
+The Guide (GDGF)               5  4500 N-xx-x    -     66-71       48-48    [human], special-guide-commands
+The maid                       5   12k G-x--     -     98-101     429-436   [human], flees
+A fanatic monk                 6   24k N-xx-     -    121-123     261-370   [human]
+A servant                      6   15k G-x--     -    120-124     525-567
+Granny Jenkins                 6   15k G-----    -    119-122     555-573   [human]
+The young horse                6   24k N-x---    -    120-123       0-0     flees
+A squire                       7   35k G-x---    -    140-144     651-698   [human]
+Jack                          12  168k G-----    -    237-248    1118-1150  [human], flees
+A bard                        13  195k G-----    -    254-265    1248-1271  [human]
+The Ofcol cityguard (posted)  19  532k G-----    -    417-428    1868-1873  [human], protector
+The Ofcol cityguard (standing)19  532k G-x---    -    422-431    1801-1805  [human], protector, looter
+Chaplain Jerrold              20  600k Gxxx--    -    443-456    1953-1973  [human], heal, blindness
+An attendant of the dragon    21  630k G--x--    -    476-478    2016-2055  [human]
+The Priestess of Ofcol        50   33M Gx-x--    -   2082-2142  25697-26557 [human], confusion, curse, blindness, powerheal, harm, very hard to charm
+A Dragonknight                55   43M G-xxx-    -   3417-3486   4839-5162  [human], bash, kick, headbang, berserk
+A Dragonlord                  60   75M Gx-x -    -   4413-4516  13824-16599 [human], bash, kick, headbang
+Captain Derrick               60   75M Gxxx x    -   4491-4656  40446-40819 [human], bash, kick, headbang
+Captain Jacklyn               60   63M G--xxx    -   4455-4518  40442-41308 bash, kick, headbang
+Marshall Diana                65  114M Gx-xxx    -  ~6500-~7500 28628-32664 [human], shrugger, wither, powerheal, blindness, harm
+The Ancient Gold Dragon       70  154M Gx-x x    -   8646-8683  58332-60788 [dragon], shrugger, gas breath
+The Guildmaster               80  320M G--x x    --  3573       65536       [human]
+The auctioneer                99       N--x x    -      ?           ?       auctioneer
+Deidra                       100       N--       -                          questmaster, no-attack
+Dr Olrik Seppelbaum          100       N--       -                          nofight-room
+Farmer Elizabeth             100       G--       -      ?           ?       shopkeeper
+Jim the Blacksmith           100       G--       -      ?           ?       shopkeeper
+Kue                          100       G--x -    -  30000-30000     1-1     INFO, questmaster, [human], sitting, cake, great ac, +~75000 starthp, 5-5 attacks
+Madam Tracy                  100       G--       -      ?           ?       shopkeeper
+Marty                        100       G--       -      ?           ?       shopkeeper
+Nyles the Bartender          100       G--       -      ?           ?       shopkeeper
+Sam                          100       G--       -      ?           ?       shopkeeper
+The Cartographer             100       N--       -      ?           ?       shopkeeper
+The Item Clerk               100       N--       -                          no-attack
+The Postmaster               100       N--       -                          no-attack
+The Receptionist             100       N--       -                          nofight-room

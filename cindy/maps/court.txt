@@ -1,0 +1,37 @@
+# The Court (417): 35-65, Solo/Static  (King's Castle: 4n2w2nds)
+#
+#                                 /
+#                                X
+#                                +
+#                     o -------- o ------- o
+#                     |          +         |
+#         o - o - o - o          o         o - o - o - o
+#         |       |   |          |         |   |       |
+#         o + o   o - o          o         o - o   o + o
+#         |  /    |   |          |         |   |  /    |
+#         o---o - o - o          o         o - o---o - o
+#          /                     +              /
+#     o - o - o          o       |             o
+#     |       |          |       |             |
+#     o       o       WM---o - o |         o - o - o
+#     |       |        | |x    | |             |
+# o - o       o - o    o c     o |             o
+#     |       |        |       | |             |
+#     o       o        o - o - o |         o - o - o
+#     |       |            +     |             |
+#     o - o - o            o <---/             o
+#         |         
+#         o
+#
+* "crash" mirror to enter it.
+* Most are vulnerable to slay human
+
+Court:           Lvl    Xp ASWIDMX # agg     Hp         Gold     Special
+A Hemlock         36   11M G-x---    --   939-946      215-216   [human], imp
+Aruso             40   15M G-----    --  1221-1227     682-694   [human], imp
+Astebeth          40   12M G-x---    GN  1237-1245    5014-5016  [drow-elf], sitting
+Insomniac         40   12M N-x--x    --  1134-1146    6243-6578  [troll], imp
+The boozer        45   18M G-x---    --  1785-1791    5014-5018  [drow-elf], imp
+A convict         45   20M G-----    --  1728-1736     116-118   [human], imp
+Old fellow Jack   55   47M G--xx-    --  3462-3546   10005-10005 [human]
+Judge Cahjaani    75  412M G--x -    -- 11057-11058  66074-66101 INFO, [human], imp, earthquake, wrath of god, standing before being in battle - flying after, room is norecall but fleeable

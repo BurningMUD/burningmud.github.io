@@ -1,0 +1,102 @@
+# Dharynn's Enchanted Forest (280): 10-100, Dharynn  (Slithering: -)
+* FIND OUT: A blue faerie dragon      resist fire?/earth?/air?/gas?
+* FIND OUT: The elven ranger          [elf?]
+* FIND OUT: The pegasus               [animal?], vuln mental?/gas?, resist earth?
+* FIND OUT: A black faerie dragon     resist ice?/earth?/air?/gas?
+* FIND OUT: The unicorn               [animal?], resist earth?
+* FIND OUT: Transformation mobs + levels for west, north and east druid
+* FIND OUT: irvs and stuff for all druids and their transformations
+#
+#                                      por
+#            f   f   f             f    ^    f
+#            |   |   |             |    |    |
+#        f---o---o---o---f     f---o-> -o-> -uni--f
+#        |      /|   |   |     |   |  / |  / |    |
+#        |     |  \  |   |     |   | /  | /  |    |
+#    f o+tree-app----o---o---rang--o----o----o----o---f
+#    |   |     |     |   |     |   |    |    |    |
+# f--o---f     |     |   |     |   |    |    |    |
+#    |   |     |     |   |     |   |    |    |    |
+# f--o---o-----o-----o---o-----o---o---por---o----o---f
+#    |   |     |     |   |     |   |    |  \ |
+# f--o---o----\v     |   |     |   |  __|__ \v   /\     o--o---o
+#    |   |     \     |   |     |   | /  |  \ \  / |     |  |   |      tree
+#    |\--|-----o-----o---o-----o---o----o-> -o----o--o--o--RIP /       x
+#    |   |     |     |   |     |   |    |    /       |        o       o
+#    |   |     |     |   |     |   |    |   /^       o       /       /
+#    |   |     |     |   |     |   |    |  / |            hulk      o
+#    f---o-----o-----o---o-----o--boar--o----o---o         /       /
+#        |     |     |   |     |   |    |    |   |        o       o
+#        |     |     |   |     |   |    |/\  |   |       /       /
+#        |     |     |   |   /\|   |    v |  |   |      o       o
+#        f-----o-----f---o-> \-o---f--queen--o---f     /       /
+#              |         |     |        |    |        o       o
+#              |         f     f        f    f       /       /
+#              |                                    o       o
+#          F---o--F  F  F  F  F  F  F              /       /
+#              |  |  |  |  |  |  |  |             o     o o
+#          F---o--o--o--o--o--o--o--o--          /      +x
+#                 |                         TAR o     o+o+o
+#                 o            White          +/       x+
+#                 | o-o--o--X--Snake          o       / o
+#                 |  /         Lair          /        |
+#                 | /                       o         v
+#                 |/                                Dark
+#                 o                                 Spawn
+#
+* F = Forest. All dirs leads back to F. Same for f.
+* All rooms in tree and cave are norecall, but summonable.
+* Druid rooms at the bottom of the tree and the Tarrasque room are noflee.
+
+Enchanted Forest:                    Lvl    Xp ASWIDMX # agg      Hp         Gold      Special
+A black beetle                         2   300 E-xxx-    --     21-26         0-0      [insect]
+A carrion crawler                      2   300 E-x--     --     19-22         0-0      [insect], corpse eater
+A mountain goat                        9  104k N-x--x    GNE   143-153      649-1766   [animal]
+The spikey hedgehog                    9   90k E-xxx-    --    161-168        0-0      [animal]
+A giant bear cub                      10  150k G--xxx    ---   157-169        0-0      [animal], assist-equals
+The brownie                           10  120k G-xxxx    --E   207-208     2000-2000   [fairie]
+A little sprite                       12  199k G-xxxx    --    137-142     2567-2576   [fairie]
+A pysk                                12  246k G-xxxx    --    129-132     2000-2000   [fairie]
+The satyr                             15  300k G-xxxx    --    314-316     1000-1727   [---]
+The giant porcupine                   16  272k E-xxx-    --    457-466        0-0      [animal], flying & sentinel before being in battle - standing & walking after
+A centaur                             17  425k G--xxx    --E   432-438     1000-1000   [magical]
+The giant squirrel                    18  360k E-xxx-    --    658-662        0-0      [animal]
+The large satyr                       20 1000k E-xxxx    --    452-457     4872-4951   [---]
+The korred                            20  700k G-xxxx    --    455-457     7785-7862   [---], teleport-to-stuck-room
+The nymph queen                       22 1100k G--xxx    --E   365-486     2106-2290   [fairie], no-charm, powerblind (even if you aren't fighting her)
+The dryad                             23 1725k G--xxx    --E   567-591     2234-2300   [fairie]
+The giant bear                        24 2040k G--xxx    GNE   776-790        0-0      [animal], special-hug-stun
+A blue faerie dragon                  25 5000k Ex--xx    --   2437-2509    6000-6000   [dragon], resist fire?/earth?/air?/gas?, teleport-within-area (if they can see you or are fighting you), teleport-self-within-area
+An apprentice druid                   25 2500k Gx--xx    --    493-501        0-0      [human]
+The elven ranger                      25 2500k G--xx-    --E   524-529     7348-7989   [elf?], vuln iron/unlife/dark, resist pure/light/magic, rescue-pegasus
+The pegasus                           27 3240k G---xx    --E   793-806        0-0      [animal?], vuln mental?/gas?, resist earth?, not irv energy/magic, assist-ranger
+A black faerie dragon                 30 7800k Gx--xx    --   2541-2561    8000-8000   [dragon], resist ice?/earth?/air?/gas?, teleport-within-area (if they can see you or are fighting you), teleport-self-within-area
+The giant badger                      35 7000k G-xxx-    --   1873-1990       0-0      [animal], special-bite-attack
+The giant boar                        38   13M G--x--    --   1655-1656       0-0      [animal]
+The unicorn                           40   22M Gx--x     --   2122-2150       0-0      [animal?], vuln mental/gas, resist earth?, teleport-self-within-area, flees
+An old druid, with a long white beard 68  306M Gx-x x    --E               9946-11695  [human], heals to full if alone (reverts back to this form), transforms into The huge worm -> The giant rhino -> The darkenbeast -> Back to self before you can kill him. Each transformation takes place around pretty hurt, room is norecall but fleeable/sumout
+The huge worm                         68     - Gx x                                    [snake?], immune poison, transformed from An old druid.
+The giant rhino                       68     - Gx x                                    [animal?], vuln mental/gas, resist earth, transformed from An old druid.
+The darkenbeast                       68     - Gx x                                    [magical?], vuln unlife, resist magic?/energy?, transformed from An old druid.
+The great grand druid (w)             71       G--       -                             [human?], transforms into The giant fire lizard -> The huge owlbear -> The giant vulture -> Back to self(?) before you can kill him. Each transformation takes place around pretty hurt, room is noflee/norecall but sumout
+The giant fire lizard                  ?
+The huge owlbear                       ?
+The giant vulture                      ?
+The great grand druid (s)             73       G--       -                13124        [human], transforms into 2 x The dire wolves -> The giant anaconda (73) -> The pterandon -> Back to self before you can kill him. Each transformation takes place around pretty hurt, room is noflee/norecall but sumout
+The dire wolf                          ?       Gx x                                    transformed from south grand druid
+The giant anaconda                    73                                               transformed from south grand druid
+The pterandon?                         ?                                               transformed from south grand druid
+The umber hulk                        75  436M Ex-x      GN  14538-14564  32694-36546  [magical], hide, forceflee, special-claw-attack (57)
+The great grand druid(e)              77       G--       - E                           [human?], transforms into The yeti -> The remorhaz -> The roc -> Back to self before you can kill him. Each transformation takes place around pretty hurt, room is noflee/norecall but sumout
+The yeti?                              ?
+The remorhaz?                          ?
+The roc?                               ?
+The huge redwood tree                 78  469M Nxxxxx    --- 16364-16593      0-0      [botanic], assist trees, blocker
+The great grand druid(n)              80       G--       -                             [human?], transforms into ? -> ? -> ? -> Back to self before you can kill him. Each transformation takes place around pretty hurt, room is noflee/norecall but sumout
+?                                      ?
+?                                      ?
+?                                      ?
+A hydra with twelve heads             82 1264M Exxx      GN  23916-24199 164189-176512 [dragon], hide, sneak, 8-11 attacks
+A treant                              85 1870M Nxxxxx    --- 22307-22681      0-0      [botanic], sneak, assist trees
+A great red wyrm                      85 1955M Ex-xxx    G   28326-28492 700000-700000 INFO, [dragon], sleeping, hide, room is noflee/norecall/nosumout, goes to sleep after a while
+The Tarrasque                         95 1900M Nx x      GN    ~52k       65535-65535  INFO, [mythical], wither, can VAPE about, destroys sanc, 10-15 attacks, special-claw-attack, special-stun, shrugger, room is noflee/norecall but sumout, has around 41.5k hp when withered

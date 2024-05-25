@@ -1,0 +1,102 @@
+# City of Solace (102): 5-50, Strahd  (Solace: -)
+#
+#       o -- o -- o --- o
+#       |    +    +     +
+#       o    o    o  o  o  o + o -- o --- o -- o - o
+#       |            |     +   |    +          |   |
+#       o - o ------ o     o   o    o      o   o   |
+#           +       /      +   |           +   |   o
+#       o - o    o /       o   o ----- o - o   o   |
+#                |/        +           |       |   o
+#           o - Otik --+-- o       o   o   o   o   |
+#                          |       +   |   +   |   o
+#                      o - o - o   o - o - o - o   |
+#        Molin   Lexie     |                   |   o
+#          | Rashan|  Crob |   o - o           +   |
+# Elven    |   |   |   |   |   |               |   |
+# valley - o - o - o - o - X - o ----- o + o + o + o
+#          |   |   |   |   |   |           |   +
+#          | Krista|  Nisi | Post  o + o + o - o - o
+#        Jhen    Janni     |
+#                          |           o
+#                          |           |
+#                     Ms - o - Map     o - o
+#                          |           |
+#          o - o - o - o - Q - o - o - o - o
+#          |   |   +   +   |   +   |       |
+#          o  Bar  o   o   o   o   o       o
+#          |               |               |
+#          o + o   o + Cs- o       o   o + o
+#          |               |       +       |
+#        o o-Bs  o  o  o + o + o - o -Bar+ o o
+#         \|    X|  +      |       +       |/
+#          o---/-o- o- o - C - o - o - o - o
+#             /            |
+#  LostSoulsCatacombs  Crystalmir
+#
+* Safe town, almost everywhere.
+* Most npc:s are humans, and vulnerable to slay human.
+
+Solace:                         Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+A bat                             5   12k E- x--    G     97-99       35-35
+A child                           5   12k G-x--     -     96-104      35-35
+A large rat                       5   12k E-x--     -    102-105       1-1
+A woman                           5   12k G-x--     -    100-105      35-35
+The Guide (TCoN)                  5  4500 G-xx-     -     65-70       48-48   special-guide-commands
+A boy                             7   35k G----     -    139-145     501-501
+An old lady                       8   56k G-x---    -    156-164      35-35
+A bratty boy                     10  110k G-----    -    197-205     501-501  [human]
+A citizen of solace              10  110k G-x---    -    193-210      35-35
+A field rat                      10  110k G-x---    -    193-205     501-501
+The ghost of a gambler           10  110k E-----    -    193-200     501-501
+A thief                          12  156k G-----    -    243-246     501-501  backstab
+The macaw                        12  155k N-----    -    241-247       1-1    immune earth, can't go to the room
+A tired adventurer               13  182k G-----    -    257-265      35-35   [human], sitting
+An old man                       13  182k G-----    -    261-270     501-501
+The ghost of a barkeeper         13       G--       -      ?           ?      shopkeeper
+A mage                           14  210k G-----    -    276-287     501-501  burning hands, magic missile
+The Foreign Trade Representative 14  210k G-----    -    272-290      35-35
+A Secretary (Sergeant's)         15  255k G-----    -    301-309      35-35   [human]
+A townguard (on patrol)          15  255k G-x--x    -    295-302     501-501  [human], protector
+A townguard (stands)             15  255k G----x    -    299-310      51-51   [human], protector
+A townguard (stands, in tower)   15  255k G----x    GN   295-305      51-51   [human], protector
+The ghost of a waiter            15  255k G-----    -    293-307    4001-4001 vuln energy, resist WEAPON, immune unlife
+The Ghost of Jander              15  255k G-----    -    305-308    1201-1201 vuln energy, resist WEAPON, immune unlife
+The raven                        15  255k N-----    -    295-302       1-1    immune earth, can't go to the room
+A bodyguard                      16  304k G-----    -    322-336      35-35   [human]
+A treasury guard                 16  304k Gx-x--    -    325-340     501-501
+A warrior                        16  304k G-----    -    327-338     501-501  berserk, bash
+Tika the barmaid                 16  304k G-----    -    324-337    5001-5001 [human]
+A thief (cloaked)                17  357k G-----    -    356-365     501-501  backstab
+The Town Clerk                   17  357k Gx----    -    354-361     501-501
+Lord Doom                        18  414k G--x-x    -    400-414      35-35   [human]
+The hunting hawk                 18  414k N-----    -    385-391       1-1    immune earth, can't go to the room
+A cleric                         19  475k G-----    -    415-428     501-501  blindness, cure critic, curse
+Magnus the wizard                19  475k G-----    -    414-420      35-35   sitting, m-missile, blindness, burning hands, lightning bolt
+A Secretary (Lieutenant's)       20  600k G-----    -    458-464      35-35   [human]
+The Cookie's Helper              20       G--       -      ?           ?      shopkeeper
+Rashan the farmer                21       G--       -      ?           ?      shopkeeper
+The battle falcon                21  735k N-----    -    472-476       1-1    immune earth, can't go to the room
+Janni                            22       G--       -      ?           ?      shopkeeper
+Jhen the farmer                  23       G--       -      ?           ?      shopkeeper
+The Mcbaker                      23       G--       -      ?           ?      shopkeeper
+Krista the fruit peddler         24       G--       -      ?           ?      shopkeeper
+Molin the brewer                 24       G--       -      ?           ?      shopkeeper
+Nisi the grocer                  24       G--       -      ?           ?      shopkeeper
+A Secretary (Captain's)          25 1500k G-----    -    590-613      35-35   [human]
+Croben                           25       G--       -      ?           ?      shopkeeper
+Lexie                            25       G--       -      ?           ?      shopkeeper
+Matt the brewmaster              25       G--       -      ?           ?      shopkeeper
+Otik Sandath                     27       G--       -      ?           ?      shopkeeper
+The Lieutenant Commander         27 2160k Gx---x    -    659-673    1001-1001 [human], bash
+Marilyn                          30 3600k Gx----    -    746-760     121-121
+The Sergeant at Arms             40 9600k Gx---x    -   1518-1527   1001-1001 [human], bash, kick, headbang
+The Captain of the Guard         50   26M Gx-x-x    -   1901-1942   1001-1001 [human], bash, kick, headbang
+The auctioneer                   99       N--x x    -      ?           ?      INFO?, [human]
+The Postmaster                   99       G--x x    -      ?           ?      INFO?, [human], can do 1.5k damage per round
+The Receptionist Goddess         99       G--       -      ?           ?      nofight-room
+The Storekeeper                  99       G--x x    -      ?       65591      INFO, [human], can do 1k damage per round
+Hianor                          100       N--x -    -      ?           ?      INFO?, questmaster, [human]
+The Cartographer                100       N--       -      ?           ?      shopkeeper
+The guildmaster                 100       N--       -      ?           ?      no-attack
+The Wizard                      100       N--       -      ?           ?      shopkeeper

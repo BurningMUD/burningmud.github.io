@@ -1,0 +1,52 @@
+# The Plane of Nirvana (62): 25-75, Forstall/Alander  (Olympus: e3n2un, enter hole, s2u)
+* FIND OUT: Primus          hp, hp
+#
+#                      o ---- o
+#                      |      |
+# o ---- o ---- p ----/       |
+# |             |             |
+# |     h   o   +   o   h     |
+# |     |   |   |   |   |     |
+# | S - o - o - o - o - o - S |
+# |     |   |   |   |   |     |
+# |     h   s   q   s   h     |
+# |             |             |
+# |             T             |
+# |             |             |
+# o   q - T - Primus - T - q  o
+# |             |             |
+# |     h   o   T   o   h     |
+# |     |   |   |   |   |     |
+# | S - o - o - q - o - o - S |
+# |     |   |   |   |   |     |
+# |     h   d   o   n   o     |
+# |             |             |
+# o + o -- o -- p -- o -- o + o
+# |                           |
+# o                           o
+# |                           |
+# o ---- o ---- o ---- o ---- o
+#               ^
+#               |
+#               X
+#              /
+#             o
+#           |/
+#           o
+#
+* Whole inside area is very bright
+* Most mobs are aggressive and can see you. All but Primus are magical (vuln unlife).
+
+Nirvana:                 Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+A tridrone                18  414k N-x---    --   384-395       1-1     [magical]
+A quadrone                21  735k N-xx--    GNE  483-495       1-1     [magical]
+A pentadrone              23 1035k N--x--    GNE  545-555       1-1     [magical]
+A decaton                 25 1500k N--x--    GNE  602-602       1-1     [magical]
+A nonaton                 27 2160k Nx-x--    GNE  650-652       1-1     [magical]
+An octon                  29 2900k N--x--    GNE  727-735       1-1     [magical]
+A septon                  31 4340k G--x--    GNE  780-791     151-151   [magical]
+A hexton                  33 5940k Nx-x--    GNE  846-856    2001-2001  [magical]
+A quinton                 35 7700k N--x--    GNE  904-908     501-501   [magical]
+A tertian                 40   13M N--x--    GNE 1293-1321   1001-1001  [magical], fireball, meteor swarm, colour spray, meteor blast
+Secundus                  45   19M Nx-x--    GNE 1620-1621   2501-2501  [magical], blindness, confusion, curse, powerheal, harm
+Primus                    70  287M Nx-x      GNE   ~8k      10001-10001 [mythical], shrugger, wither, meteor blast, harm, powerheal

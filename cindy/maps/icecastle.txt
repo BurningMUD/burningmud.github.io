@@ -1,0 +1,50 @@
+# The Ice castle (47): 45-100, Solo/Static  (King's Castle: 3wnwne2nw2nwne4swse3sd4se3s)
+* FIND OUT: King Aryan                    hp, money
+* FIND OUT: The Spring Ruler              hp, money
+* FIND OUT: The Evil Witch of Greyscale   hp, money
+#
+#             |                                        WM
+#             X                     ___________________/|
+#             |                    /                    |
+#         o - o - o               /                 o-o-o-o-o
+#         |       |              /                  |   |   |
+#         o - o - o             /                   o   o   o
+#             |                /   o-o-o            |   |   |
+#             o               /    |   |            o-o-o-o-o
+#             +              /     o-o o-o+Light-       |
+# o - o - o - o-o-o-o       /        |     beam         o
+# |       +         |      /         o                  |
+# o       o - F     o     /          |          o-o-o-o-o-o-o+King
+# |           |     |   WM --------- o          |       |       +
+# |         /-----------/            |          o       o       o
+# |        /  |     |                |          |       |       |
+# o      WM   o     o    Lady        |   Spring+o-o   o-o-o   o-o
+# |       +   +     |     of--+o-o   o   Ruler    |   |   |   |
+# o - o - o - o --- o   Summer   |   |            o   o   o   o
+#                                o   |            |   |   |   |
+#                                |   |            o-o-o   o-o-o
+#                                o-o-o              |       |
+#                                                   o       o
+#                                                   |       |
+#                                                   o-o-o-o-o
+#                                                       |
+#                                                       o
+#                                                       +
+#                                                     Witch
+#
+* Whole area is very bright
+* Many aggressive guards - vuln fire/slay human
+
+Ice Castle:                Lvl    Xp ASWIDMX # agg      Hp        Gold     Special
+An Icicle                    5   50k N--x--    GN     14-21      213-217   [magical], imp
+The Paper Boy               25 1375k N-xx--    --    592-602    8013-8016  [human], flees
+The Polar Bear              39   14M G-x---  5 --    965-988    3120-3161  [animal], bash, kick, headbang, imp
+The Snowman                 45   27M N---x-    --   1782-1787   5010-5017  [insubstantial], imp, save 5
+The Guard of Ice            55   52M Exxx      GNE  3383-3396  40703-41847 [human], vuln fire, immune ice, magic missile, triad of ice
+The Guardian of the Stair   55   47M E--x x    --   1997-2023  20492-20626 [magical], immune ice, triad of ice
+The Ice Guard               60   90M Exxx      GN   4055-4059  50418-50540 [human], vuln fire, immune ice, magic missile, triad of ice
+The dancing lightbeam       85 1190M Ex-x      GN  10230-10330 67628-68829 [magical], immune ice, powerword pain, mass pain, meteor blast
+King Aryan                  95 2090M Gx-x x    --  33246       76627       INFO, [human], immune ice, imp, fireball, meteor swarm, meteor blast, colour spray, 1-1 spell, shrugger, 7-11 attacks
+The Lady of Summer          95 1995M Gx-x x    --  33224-33330 77274-85550 INFO, [botanic], immune fire, powerword pain, mass pain, meteor blast, imp, 1-1 spells, special-standing before being in battle - standing after, 6-8 attacks
+The Spring Ruler            95 1444M Gx-x x    --- 25320       68870       INFO, [botanic], immune fire/ice, special-standing before being in battle - standing after, 5-7 attacks
+The Evil Witch of Greyscale 95 2090M Exxx      GN  34874       68697       INFO, [magical], immune ice, shrugger, mass pain, powerword pain, meteor blast, 1-1 spells, special-standing before being in battle - standing after, 5-9 attacks

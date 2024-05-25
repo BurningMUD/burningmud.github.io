@@ -1,0 +1,60 @@
+# The Dark Land of Gorm (146): 50-100, Arbogastes  (Elemental Canyon: us4des2e)
+#
+#                          Beast-
+#                          master  o + o - o
+#                              |   |   |   |
+#                              o - o   o - o
+#                                      |   |
+#                                  o - o - o - o
+#                                  |
+#                          o   o - o
+#                          +   |                      o-o-o-+-o--o----o
+#                          o - o - o - o              |   |   |  |    +
+#                          |       |   |              o   o   o-Chef  o
+#                          |       +   +              |   |           |
+#                          |       | o-|-o            o-o-o           |
+#                          o       | | | |                |           |
+#                          |       o---K o ------- o      +  o-o ---- o
+#                          |         |x            |      |    |     /
+#                          |         o         o o-o-o  o-o    o    o
+#                          |                  /| | | |  |      |   /|
+#     Kirvon-o     o - o   o - o - o - o-o-o / + | | |  o+o+HH-o  / |
+#        |   |     |   |               +    /King| | |           /  |
+#        o   o --- o   o               o   o-----o-o-o          / o+o + o
+#        |             |               |                       o    |
+#    o - o ->key - o - o - o -WM       o                       |    o + o
+#    |        |            |   |       |                       o    |
+#    o - o -- o -- o   o   o -WM       o - o                        o + o
+#        |         |   |       |           |                        |
+#        o   o --- o - o - o   o           o                    o + o
+#        |   |     |   |   |   |           |                    |
+# Statue o - o     o - o - o - o - o-o-o - o ------- o -------- o
+#    +       |    /|   |   |   |           |
+#    o - o   o RIP o   o - o - o - o       o
+#        |         |   |       |   |       |
+#        o --- o + o<- o - o   o   o       o
+#                  |   |       |   |       |
+#                  o   o - o - o - o     - X
+#
+* Min level 0/16
+* Whole area is NOT very bright
+* K: King. Flees when someone enters the room.
+* Most are trolls, so vuln slay troll/fire/acid/mental. But all are also vuln poison!
+
+Gorm:                    Lvl    Xp ASWIDMX # agg       Hp        Gold     Special
+Kirvon the mage apprentice 1       Nx        ---                          invis, sitting, no-attack
+A gorm mage               65  130M E-xxxx    --    6600-6603  60047-60051 [troll], vuln poison, shrugger, meteor blast, powerword pain, mass pain
+A gorm priestess          67  134M G-xxxx    ---     ~7.5k    60053-60070 [troll], vuln poison, random-delayed-agg-all, powerheal, harm, wither, blindness
+A small beast             67  134M E-xxx-    --    8403-8418  50057-50071 [animal], vuln fire/poison, immune superlarge, resist magic, imp, shrugger
+A gorm warrior            72  198M E-xxxx    ---   9582-9645  60049-60066 [troll], vuln poison, random-delayed-agg-all, bash, kick, headbang, berserk
+A gorm warrior (inside)   72  202M E--xxx    GNE   9603-9628  60044-60073 [troll], vuln poison, bash, kick, headbang, berserk
+A dragon guard            75  337M E--xx     GNE  12569-12586  9042-9059  [human], vuln poison, imp, bash, kick, headbang, pummel, berserk
+The beastmaster           75  375M Ex-xx     GNE  12582-12603 65583-65593 [animal], vuln fire/poison, imp, sitting, shrugger
+The hedgehog              75  375M E--xx 0   GN   12615-12630 65581-65588 [animal], vuln poison, shrugger, imp, sleeping
+The statue                75  337M E--xx     GNE  12634-12602 65581-65604 [magical], vuln poison, imp, shrugger, bash, kick, headbang, pummel
+The Master Chef           78  468M E--xxx    ---  15603-15607 65583-65598 [troll], vuln poison, shrugger, imp, hide, random-delayed-agg-all, backstab (59)
+King Gorm                 95       Ex-xx 3 1 GNE  ~100k       65719-65771 INFO, [troll], vuln poison, dodge, imp, special-walks-to-hideout-when-someone-sneaks-in, shrugger, mana shielded, area wither, mass pain, area confusion, powerheal, area hell fire, area blindness, area harm, 1-3 spells, >=6 attacks, ~165/67 dam per attack, negate sanc 1/3 times (33%)
+  +3 WoJ:        14 hits out of 47: 30%  (hr 12+34+3=49)
+  +3 DoS:         4 hits out of 16: 25%  (hr 12+34+3=49)
+  +3 WoJ:         3 hits out of 13: 23%  (hr 12+34+3=49)
+  +2 Flametongue: 2 hits out of  6: 33%  (hr 12+34+2=48)

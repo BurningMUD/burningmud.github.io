@@ -1,0 +1,36 @@
+# Kingdom of Juargan (109): 10-30, Anon  (Kerofk: s7wne)
+* FIND OUT: Grimdale the ancient king     hp
+#
+#             o-----------o-----------o o---o
+#            /                       /  |   |
+#           o       o--o  o-o-o-o   o---o   o
+#          /        |  |  |   | |          x
+#         o         o  o--o   o o----o----o
+#        /          |     |
+#       o   o-o--o--o     o-o-o o o
+#      /      |     |     |   | | |
+#     o   o-o-o   o-o-o   o-o o o-o
+#    /    |   |   |   |   | | |   |
+# o-X     o-o o   o o o   o o o-o-o
+# |       |   |   | | |     |     |
+#         o-o-o   o-o-o   o-o-o-o o
+#           | |           |   | | |
+#           o o-o-o       o-o w o o
+#             | | |         |   |
+#        o+o  o o |         o   o
+#          |      |
+#          o------o
+#
+* Whole mine area is very bright
+* Dwarves are vuln water/magic/superlarge
+
+Juargan:                   Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+The small dwarf (on watch)   5   12k G-x--     --    97-102     101-101  [dwarf]
+The small dwarf (mining)     7   35k G-x--     --   139-145      51-51   [dwarf]
+The duergar dwarf            8   56k E-xx--    GNE  164-165     101-101  [dwarf]
+The dwarf guard             10  110k G-----    --   192-209     151-151  [dwarf]
+Yentle the dwarf            10  110k G--x--    --   194-210     301-301  [dwarf], sitting
+A dwarven spirit            15  255k Ex-x--    GN   296-297       1-1    [insubstantial]
+The dreaded rock worm       20  600k N--x--    GN   451-464    4001-4001 [snake]
+Juargan the Dwarven King    27 2160k G--x--    --   652-656    1001-1001 [dwarf], sitting, bash, kick, headbang, berserk
+Grimdale the ancient king   27 2160k E--x      GN   654           1-1    [undead]

@@ -1,0 +1,266 @@
+
+SKILLS:
+=======
+Rogue:                  Ro/Ro:
+Sneak              95
+Hide               95
+Steal              95
+Backstab           95 ->  more damage
+Pick lock          95
+Dodge              50 ->  65
+Second attack      95
+Third attack       80
+Fourth attack      65
+Negate sanctuary   50
+Extra damage      250 -> 300
+Slashing           30
+Piercing           70
+Bludgeoning        20
+Track                     95
+Disarm trap        80 -> 100
+Detect traps       40 ->  80
+Peek                      95
+Read runes         60
+Use items          70
+Perception         90
+Critical wounds           60 (lvl 55)
+Quickdraw                 35 (lvl 55)
+Circle             75
+
+Fighter:                Fi/Fi:
+Kick               95
+Bash               95
+Rescue             95 -> 100
+Headbang           95
+Berserk            50 ->  60
+Parry              40 ->  60
+Second attack      95
+Third attack       90
+Fourth attack      85
+Negate sanctuary   25 ->  30
+Extra damage      150
+Slashing           50
+Piercing           50
+Bludgeoning        50
+Fifth attack              80
+Protect            90
+Whirlwind attack          90
+Block              50
+Switch             90
+Read runes         50
+Use items          60
+Perception         70
+Forge              90
+Death dance              100
+Build outpost      95     95
+Riposte            15
+Pummel                    95
+Fast healing               ? (lvl 55?)
+
+Warlock:                Wl/Wl:
+Dodge              10 ->  15
+Headbang           70
+Parry              10 ->  15
+Second attack      90
+Third attack       70
+Fourth attack      50
+Negate sanctuary   60
+Extra damage      250
+Slashing           30
+Piercing           30
+Bludgeoning        30
+Read runes         75
+Use items          80
+Perception         65
+Recharge           80
+
+Nightblade:             Nb/Nb:
+Sneak              90
+Hide               80
+Dodge              15
+Kick               95
+Parry              15
+Second attack      90
+Third attack       70
+Fourth attack      50
+Negate sanctuary   40
+Extra damage      200
+Slashing           30
+Piercing           50
+Bludgeoning        30
+Read runes         70
+Use items          80
+Assassinate        95
+Murder             95
+Perception         70
+
+
+
+NWD = Normal Weapon Damage (damdice plus damroll)
+
+BACKSTAB, INITIAL: (Ro)
+==================
+Sneak up on target and place your weapon in his back, doing big damage.
+Can only be done with weapons where "Damage type is Piercing".
+Wait:   1 rounds
+Chance: Affected by:   * Skill?
+                       * Dex.
+                       * Victim's dex?
+                       * Level difference between stabber and victim?
+                       * ?
+Fail:   ---?
+Succ:   
+Backstab damage is NOT affected by dex nor by strength-bonuses.
+Lvl 50 Ro/Ro deals [DR+15+diceroll] * 14 in backstab damage, where
+  DR = Damroll, not counting the +DR bonus given by strength.
+Or, to put it easier: 14 * NWD (assuming your strengh gives you +15 dr)
+Backstab damage is capped by 2*(maxdamage).
+
+
+BACKSTAB, IN COMBAT: (Ro)
+====================
+Sneak around your opponent and place your weapon in his back, doing big damage.
+Can only be done with weapons where "Damage type is Piercing".
+Can only be done if opponent is engaged with another character.
+Wait:   2 rounds
+Chance: Affected by:   * Skill?
+                       * Dex?
+                       * ???
+Fail:   ---?
+Succ:   Damage = 7 * NWD (for lvl 50 Ro/Ro).
+  * Check again: Does standard strength bonus really apply?
+
+
+BASH: (Fi/Te)
+=====
+Attempt to 'knock' a person over.
+Wait:   2 rounds?
+Chance: ?% chance of success
+Fail:   You become resting?
+        Next blow dealt to you will do more damage?
+Succ:   3 damage. (always?)
+        Opponent loses 1 or more attacks.
+        Cumulative bashes do have an effect.
+        Pure fighters gain better effects
+
+
+BERSERK: (Fi)
+========
+Go berserk, to get extra hr/dr
+Wait:   1 round if fail?
+Chance: Depends on skill. ?% chance of success
+Fail:   1 round waistate (?)
+Succ:   Can't recall, flee, rescue, switch, quaff, recite.
+        +14 damroll, +2 hr (for lvl 63 Fi/Fi)
+Does not affect nr of attacks, parry, dodge, damage taken, defence (ac)
+
+
+CIRCLESTAB: (Ro)
+===========
+Similar to backstab, but can be used both as battle initiator and in battle,
+regardless of whether your opponent is engaged with you or not. Damage and
+chance of success is not affected by these factors.
+Wait:   2 rounds
+Chance: Affected by:
+          * Skill (according to help file)
+          * Hitroll (according to tests). Each HR adds one percent to your
+            success chance, and your chance _can_ reach 100% (0% risk of
+            failing)
+          * Hr bonus from strength applies normally.
+          * Dex seems to apply, slightly. Half a percent per step?
+          * Thac0?
+          * Opponent: Major dependency, but I don't know what. Dex? Level?
+            Ac, ...?
+              King Elchor,  lvl 100, great ac: 100% chance of success
+              GoA Cherubim, lvl  35, poor ac:   65% chance of success
+              So what does apply? I don't know, but something!
+              Guess: Dex and only dex.
+Fail:   ---?
+Succ:   Damage = 2 * NWD (for lvl 50 Ro/Ro). Normal str-bonus applies.
+        IRV:s are ignored.
+
+HEADBANG: (Fi/Wl)
+=========
+Damage your opponent by headbanging him.
+Wait:   1 rounds
+Chance: ?% chance of success
+Fail:   ---?
+Succ:   <level>/2 damage?
+
+
+KICK: (Fi/Nb)
+=====
+Damage your opponent by kicking him.
+Wait:   2 rounds
+Chance: Depends on skill. ?% chance of success
+Fail:   ---?
+Succ:   <level> damage
+
+
+PARRY: (Fi/??)  DODGE: (Ro/Wl/Nb)
+======          ======
+Avoid an attack from your enemy. For parry you must wield a weapon.
+Wait:   ---
+Chance: Special. See below.
+Fail:   ---
+Succ:   No damage received
+
+Chance to dodge/parry does not depend on the level of the opponent.
+Chance to dodge/parry strike 1: skill %
+Chance to dodge/parry strike 2: skill/2 %
+Chance to dodge/parry strike 3: skill/3 %
+Chance to dodge/parry strike 4: skill/4 %
+Chance to dodge/parry strike 5: skill/5 %
+Bonuses from items are added after chance has been calculated (see tests below)
+When attacked by more than one mob, dodge/parry is calculated separately for
+each mob.
+It is possible, but unverified, that the chance to dodge/parry can never go
+below 5%, no matter how many attacks your opponent has (provided you have the
+skill)
+
+
+PUMMEL: (Fi)
+=======
+Push your opponent to make him lose his balance.
+Wait:   2 rounds
+Chance: ?
+Fail:   ---?
+Succ:   Next strike will always hit and do extra damage
+
+
+QUICKDRAW: (Ro-55?)
+==========
+Switch weapon without losing any time.
+Wait:   Instant if successful?
+Chance: Depends on skill. <skill>% chance of success?
+Fail:   2 round waistate (?), previously wielded & target weapon both in inv.
+Succ:   Weapon switched instantly(?)
+
+Can be trained up to 35%, but can be brought up to 100% with practice.
+Can only be improved if you practice it while fighting?
+Time to switch weapon the conventional way, depending on if you are fighting
+or not, and whether you keep your weapons in a bag or not:
+  Notfighting (bag): 0-1s
+  Fighting    (bag): 8-9s 
+  Notfighting (inv): 0-1s
+  Fighting    (inv):   5s 
+So quickdraw is only of interest if you need to switch weapon during a fight.
+Keeping your weapons in your inventory will let you wield the new weapon one
+round faster, and saves one additional round in the end, for spells/skills.
+Quickdraw also lets you wield the weapon one round faster, and also save you
+an additional round in the end (if quickdraw is instant and without delay).
+But, only of interest when you have to switch weapon mid-fight.
+
+
+SLASHING/PIERCING/BLUDGEONING: (all)
+==============================
+Makes you skilled in that type weapons, adding damage to your attacks.
+In reality, though, they do not affect anything, or the bonus is neglegctible.
+                            Skill 0:                 Skill 50:
+Hit/total percentage:   504/888 = 56.76 %        503/871 = 57.75 %
+Special hits (>Mass):     0/504 =  0.00 %          6/503 =  1.19 %
+Avg damage per hit  : 11173/504 = 22.17 hp     11274/503 = 22.41 hp
+
+Conclusion: These skills might affect your chance of getting special hits,
+but even if they do, the bonus you get from the skill is so small it's hardly
+noticable.

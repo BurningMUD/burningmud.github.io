@@ -1,0 +1,266 @@
+# NewCont - Roads and Rivers (Ashinara): 1-100, Smack
+#
+#                                                          o-o-o-o
+#                                                          |     |
+#                                                    o-o-o-o     o-Apocalypse   o
+#                                                    |                         /                 Khronatio
+#                                                    o          o             X                      |
+#                                                    |  o----o /|             |                   Lorchid
+#                                                o-o-o /     |/ o o           o                    City
+#                                                |   |/      o  |/|          /                       |
+#                                                o   o          o o----o----o                        o
+#                                                |                          |                        |
+#                                              o-o                          o                        o
+#                                              |                           /                         |
+#                                            o-o                          o                          o
+#                                            |                            |                          |
+#                                   Oblivion-o                            o                        o-o
+#                                            |                           /                         |
+#                                          o-o         w                o                          o
+#                                          |           |                |                          |
+#                                      o-o-o           w                o-o o                    o-o
+#                                      |               |                 / /|                    |
+#                                    o-o               w                o---o                    o
+#                                    |                 |                 /                       |
+#                     Palanthas  o-o-o                 w                o-o-o-o-o              o-o
+#                      |         |                     |                        |              |
+#                      o-o-o   o-o                     w-w                      o-o            o Battlefields                        w
+#                          |   |                         |                        | Narnia     |    +                                |
+#                          o-o-o                         w-w-w                    o   |      o-o-Alterac                             w               o-Storm-
+#                              |                             |                    |   | Cohn |                                       |       Icewood | haven
+#                              o High                        w                    o-o | Shar o                                       w-w-w      Vale-o
+#                              | Clerists                    |                      | |  |   |                                           |        /  |
+#                              o Tower                       w                      o-o  | o-o                                           w-w---w /   |
+#                              | |                           |                        |  | |                                               |   |/    |
+#                              o-o-o                         w-w                      o  o-o                                               o---w     |
+#                                  |                           |                      |    |                                               +   |     o
+#                                  o-o                         w                      o--o-o                                               o   |     |
+#                                    |                         |                         |                                                 |   w     o
+#                                    o-o-o                     w                         o-o                                           o-o-o   |     |
+#                                        |                     |                         | |                                           |   |   |     |
+#                                        o                     w                       o-o o-o-o-o-o-o-o--o                            o   o   w   o-o
+#                                        |                     |                       |                  |                            |   |   |   |
+#                                        o                     w                       o                  |                      o-o-o-o   o-----o-o
+#                                        |                     |                       |                  |                      |         |   |  /|
+#                                        o-o               w-w-w                     o-o                  |                      o       o-o   w o-|---o
+#                                          |               |   |                     |                    |                      |       |     |   |  /
+#                                          o-o           w-w   w                     o                    o--o--o--o           o-o       o     w---o o Le
+#                                            |           |     |                     |                          |  |           |         |     |     +/
+#                                            o           w     w-w                 o-o                          |  o-o-o-o-o-o-o      o--o   w-w     o
+#                                            |           |       |                 |                            |                     |  |   |
+#                                            o           w       w-w-w             o                            |                     |  o   w
+#                                            |           |           |             |                        .  . .  .  .  .           |  |   |
+#                                            o           w           w-w-w         o                     .        .         .       w-w--|-w-w
+#                                            |           |               |         |                              .                 |    |
+#                                            o         w-w               w-w-w     o                   .             Graven  .      |    o-o
+#                                            |         |                     |     |                               .                w      |
+#                                            |         |                     w     o                  .                     .       |      o
+#                                            |         |                     |     |                                 .              w      |
+#                                            o     w-w-w                     w     o                  .    Mushroom    .  .         |      o-o
+#                                            |     |                         |     |                                                |        |
+#                                            o     w                         w     |                  .     Forest       .          w----w   o
+#                                            |     |                         |     |      Woods                                          |   |
+#                                          w-|-w-w-w                         w     o---o-  of          .                 .               w   o
+#                                          | |   |                           |         | Whispers                                        |   |
+#                                        w-w o---o                           w-w       o                 .             .                 w   o-o
+#                                        |   |                                 |       |                   .  .  .  .                    |     |
+#                                        w   o                                 w       o                           |                   w-w     o
+#                                        |   |                                 |       |                           |                   |       |
+#                                        w   o                                 w       o-o                         |                   w-o     o
+#                                        |   |                                 |         |                         |                   | |     |
+#                                        w   o-o                       o-o-o   w-o       o-o                       |           o-o-o-o---o-o-o-o-o
+#                                        |     |                       |   |   | |         |                       |           |       |   |
+#                                        w     o         Haarvenu      |   o-o---o   o-o-o-o                     o-o-o-o-o-o-o-o       w   o
+#                                        |     |            +          |       | |   |     |                     |                     |   |
+#                                        w     o-o     Guallidurth-o-o-o       w o-o-o     o                     o                     w   o-o
+#                                        |       |                 |           |           |                     |                     |     |
+#                                      o-w       o           o-o-o-o           w       w------w----Valheim     o-o                     w     o
+#                                      | |       |           |                 |       |   |           |       |                       |     |
+#                                o-o-o-o---o-ooo-o-o     o-o-o                 w-w-w-w-w   o           |     o-o                   w-w-w     o
+#                                |       |         |     |                     |           |           |     |                     |         |
+#                                |       w         o   o-o                     |           o--o--o     |     o                     w         o-o
+#                                o       |         |   |                       |                 |     |     |                     |           |
+#                                |     w-w         o   o                 w-w-w-w                 o-o-o-o-o-o-o                  w--w           o
+#          o*-\                  |     |           |   |                 |     |                       |                        |              |
+#         /^  |      o-o-o-o-o-o-o     w           o-o-X               w-w     w                       o                        |              o-o
+#          *  |      |                 |               |               |       |                       |                        w                |
+#          o  |    o-o             w-w-w               |           w-w-w       w---w                   o                        |                o
+#         /^  |    |               |   |               o           |               |                   |                        w                |
+#          *  |    o         w-w-w-w   w-w             |         w-w               w-w-w               o                        |                o-o
+#          o  |    |         |           |             |         |                     |               |                        |                  |
+#  |      /^  |    o       w-w           w             o         w                     w---w-+-w-w-w-w-|-w-w-w-w--w--w--w-+-w---w                  o-o-o-o
+#  o     o *  |    |       |             |             |         |                     |               |                        |                        |
+#  |    x  o<-/  o-o       w           w-w             |       Azure                   w               o                        |                        o
+#  o---o  /     /|         |           |               o       Lake                    |               |                        |                        |
+#  |     o     o o       w-w     w-w-w-w               |                    .  .       w-w           o-o                        |                        |
+#  o-o  x     /  |       |       |                     |               .         .       |           |                          w                      .   .
+#      o-o-o-o   o-o-w-w-w     w-w                     o          .                ------w-w-w       o                          |                    .         .
+#                  | |         |                       |                           .         |       |                          |                   .             .
+#              w-w-|-w         w                       o      .                              w       o                          |                                    .
+#              |   |           |                       |                           .         |       |                          w                  .                  .
+#            w-w   o           w                       o    .                                w       o----o-o-o-o-o-o-o         |                                      .
+#                  |           |                       |             Land          .         |       |  \             |         |        Village  .                     .
+#                  |           w                       o   .                                 w-w     o   \            o         |        of Lost                         .
+#               . . .          |                       |              of                       |     |    \           |         |         Souls   .                       .
+#            .        .        w                       o                           .           w-w-w o-o   \          o       w-w            |                            .
+#                              |                       |   .        Giants                         |   |    \         |       |              |     .                      .
+#         .             .      w                       o                                           w   |     \      o-o   w-w-w          .  .  .  .                       .
+#                              |                       |    .                     .                |   o      \     |     |            .             .       Kultheas     .
+#        .               .   w-w                       o-o--                                       w   |       \--o o     w-o         .                                    .
+#            Stonewell       |                           |   .                  .                  |   |          + |     | |         .                .                   .
+#        .               .   w                           o    .             .                  w---w   o          o-o-o-o---o--o-o--o  . . .   Desolate                    .
+#                            |                           |      .   .   .                      |       |            |     |         |   |    .           .                  .
+#         .             .    w                       o---o                                     w       o            o     w         o-o-o-o     Steppes    .                .
+#                            |                       |   |                                     |       |            |     |               |   .              .               .
+#           .        .     w-w                    Castle o                                     w       o            o     w-w             o                                  .
+#              .  .        |                     Dunheim |                                     |       |                    |             |     .              .             .
+#                |         w                       |     o-o-o-o-o-o-o-o-o-o                   w-w     o                    w-w-w         o-o     .          .  .            .
+#                |         |                   Lahresin  |                 |                     |     |                        |           |       .   .  .                 .
+#                o         w                             o                 | o-o-o-o-o           w-w   o                      w-w           o-o-o-o   |          .           .
+#                |         |                             |                 | |       |           | |   |                      |                   |   |           .          .
+#                o       w-w                             o                 o-o       o-o-o-o-o-o---o---o          . . . . . . . . .               o-o-o-o           .        .
+#                |       |                               |                   |                   |              .                   .                   |             .      .
+#           Bs---o   w-w-w                             o-o                   o-o                 w            .                      .                  o               .   .
+#            |   |   |                                 |                       |                 |          .                         .                 |                 +
+#            w-w-|-w-w                                 o                       o               w-w         .                           .                o                 o
+#            |   |                                     |                       |               | |        .                             .               |                 |
+#          w-w   o                                   o-o                       o         w-w-w-w w      .                                .            o-o                 o-o
+#                |                                   |                         |         |       |     .       Whitebridge               .            |                     |
+#                o-o                               o-o                       o-o   o-w---w o-o   w-w  .                                  .            o                     o
+#                  |                               |                         |     | |     | |     | .           Estuary                .             |                     |
+#                  o                             o-o                         o   o-o---ooo o o    . .                              . . .  o-o-o-o-o-o-o                 o-o-o
+#                  |                             |                           |   |   |   | | |   .                              ..    |   |           |                   | |
+#                o-o                         o-o-o                         o+o   o   w   o-o o    .                         . .     o---o-o           o-o                 o-o
+#                |                           |                               |   |   |       |      .                   . .         | |/                |                   |
+#          o-o-o-o                       o-o-o                               o-o-o   w       o-o-o-o .              . .       o-o-o-o w                 o                   o
+#          |                             |                                  ____/|   |             |  .         . .           |       | Dead            |                   |
+#        o-o                             o                                 /     o-o w             o    .  .  .             o-o       w-Man's           o-o                 o
+#        |                Myrridon       |                                o-o      |               |     |                  |           Cove              |                 |
+#        o                 Mines   o-o-o-o                                 /  Ls   |               o     |                  |                             o               o-o
+#        |                 / |     |                                      o  x     o               |     |                  o                             |               | |
+#        o-Ragerian       /  o-o   o                                      | o      |               o-o   |                  |                             o         o-o-o-o o  Lse
+#        | Village       /     |   |                                      +/       |                 |   |                  |                             |         |     |    /
+#        o            Inferno  o   o                                      o        |                 o-o---o-o            o-o                             o-o-o-o-o-o     o   o
+#        |                     |   |                                               o                  /  |   |            |                                 |             |  x
+#        o                     o-o-o-o                                 o-o-o-o     |                 o---w   o-o-White--o-o                                 o             o-o
+#        |                           |      . . . . . . . . . .        |     |     |                     |       bridge                                     |             |
+#        o                           o                                 o     o-o-o-o                     w                                                  o             o-o
+#        |                           |      .                 .        |                                 |                                                  |
+#        o                           o o-o--     Myrridon      --o-o-o-o                                 w                                                o-o
+#        |                           | |    .                 .                                                                                           |
+#        o                         o-o-o                                                                                                              o   o
+#        |                         |        . . . . . . . . . .                                                                                      /    |
+#        o                     o-o-o                                                                                                                o-o o-o
+#        |                     |                                                                                                                     /  |
+#        o                 o-o-o  Tournament                                                                                                        o---X
+#        |                 |   |     |                                                                                                                  |
+#      o-o-o         o-o-o-o   |     |                                                                                                                Ravens
+#          |         |         o-o   o                                                                                                                Point
+#          o   o-o-o-o           |   |
+#          |   |     |           o-o-o
+#          o-o-o     o           |
+#                              o-o
+#                              |
+#                              o-o
+#                                |
+#                                o-o
+#                                  |
+#                              Dragontail
+#                                 Isle
+#
+# FIXME: Lighthouses: Connected by going through the lenses
+#
+* New Continent, Ashinara
+
+NC (Ashinara):                Lvl    Xp ASWIDMX # agg      Hp        Gold    Special
+A damselfly                     2  1536 N-x--      -     60-64      321-339  [insect]
+A mayflie                       2  1536 N-x--      -     63-64      320-336  [insect]
+A pondskater                    2  1536 N-x---     -     61-63      314-339  [insect]
+A dragonfly                     3  3296 N-x--      -     74-78      334-347  [insect]
+A butterfly                     4  5720 N-x--      -     89-92      355-373  [insect]
+A grasshopper                   4  5720 N-x--      -     89-89      365-376  [insect]
+A salmon                        4  5720 N-x---     -     90-92      356-374  [fish]
+A river rat                     6   21k N-x--      -    123-126     382-396  [rodent]
+A kingfisher                    8   58k N-x---     -    162-164     434-460  [bird]
+An otter                        8   58k N-x--      -    162-166     442-456  [animal]
+A duck                         11  133k N-x---     -    223-226     503-536  [bird]
+A beaver                    14-17  247k N-x---     -    303-306     679-745  [animal]
+A swan                      14-17  247k N-x---     -    303-303     721-744  [bird]
+A fisherman                    35 7699k N-xxx-     -    904-904    2354-2445 [human]
+The Boatseller                 99       N--       ---                        shopkeeper
+The Wolf Rock Lighthouse Keeper 99      Nxx       ---                        no-attack
+The Ghost of the Last Keeper   99       Nxx       ---                        no-attack
+Mad Jack Silver                99       Nxx       ---                        no-attack
+Portland Bill                  99       Nxx       ---                        no-attack
+
+
+NC (Ashinara):                Lvl    Xp ASWIDMX # agg      Hp        Gold    Special
+A farmer                        7     ? G-x        -    141        1001-1001 human
+A street vendor                 6     ? E-x        -    122         396      human?
+A silk trader                  11     ? N-x        -    227-230    1001-1001 human
+A peasant (poor)                3     ? G-x        -     62
+The Intercontinental trader  1-90       G-x        -                362      human
+A townsman                   1-90       G-x--      -                963      human
+A merchant of Myrridon          8     ? G-x--      -    165         415      human
+The Farmer                   1-90       G-x        -
+A beggar                     1-90       G-x        -
+A sheep                      1-90       G-x        -                151      earth: 1 ann
+A Snowy Owl                  1-90  673k N-xxx      -                         [bird]
+A horse                      1-10       N-x--      -                298
+A wild man                   1-90       E-x        -
+A farmer's wife              1-90       G-x        -
+A peasant (female)           1-90       G-x
+An odd man                   1-90   37M Nx                         3772      vuln slay human
+An Orhan trader              1-90       N-x
+A stray dog                  1-90       N-x
+A wealthy merchant of Palanthas  1-90   N-x
+A purple shore crab          1-90       N-
+A shrimp                     1-90       N-
+A gannet                     1-90       N-x
+A gull                       1-90       N-
+An albatross                 1-90       N-x
+A crayfish                   1-90       N-x
+A marsh frog                 1-90       N-x
+An orange toad               1-90       N-x
+A great blue heron           1-90       N-x
+The Werewolf of Maurique      102       N-
+Augustus DeWaat              1-90       Gx
+The Lock keeper of the western locks  100 Nx
+A woodland bandit            1-90       N-             invis, hide, backstab
+Tapio, the weathered hunter   100       N-             sitting? QM
+
+
+A Snowy Owl        A snowy owl is perched on a ice-covered branch here
+Tapio, the weathered hunter   A weathered hunter sits in the corner here.
+A woodland bandit  A woodland bandit is here preparing weapons for an ambush. (invisible) (hidden)
+The Lock keeper of the western locks  The lock keeper leans out of his cottage window to issue permits.
+Augustus DeWaat   An old man sits near the fire and watches for approaching vessels. (White Aura)
+The Werewolf of Maurique   A snarling werewolf stands here.
+A great blue heron  A great blue heron blooms its feathers majestically.
+A marsh frog      A marsh frog hops around amongst the long wet reeds.
+An orange toad    An orange toad hops between various small pools of water.
+A crayfish        You only just spot this crayfish because of its muddy appearance.
+An albatross      An albatross is busy cleaning its feathers.
+A gull            A gull flaps its wings and makes a loud squarking sound.
+A gannet          A gannet opens its beak and fills its face with fish.
+A purple shore crab   A purple shore crab peers around before snapping its pincers at you.
+A shrimp          A shrimp looks lost here.
+A street vendor   A street vendor stands here selling food to travellers. (Red Aura)
+The Intercontinental trader  An intercontinental trader travels to his next destination.  (White Aura)
+A peasant         A poor peasant slowly makes his way towards Myriddon. (White Aura)
+A peasant         A young female peasant happily strolls about here. (White Aura)
+A farmer          A farmer is here travelling home. (White Aura)
+A wealthy merchant of Palanthas   A wealthy merchant hailing from the city of Palanthas travels here.
+A merchant of Myrridon    You see a merchant of Myriddon standing here. (White Aura)
+A townsman        A townsman passes you on his journey. (White Aura)
+A silk trader     A silk trader travels the continent looking for business.
+A wild man        A man of the wilderness jumps out at you. (Red Aura)
+An odd man        An odd man is here doing odd things!
+An Orhan trader   A trader from distant lands is here travelling across the continent.
+A beggar          A beggar is here with his hand out. (White Aura)
+The Farmer        A farmer travels along here, hoping to get to the market on time. (White Aura)
+A sheep           A fluffy sheep has escaped from nearby fields and is running around here. (White Aura)
+A stray dog       A stray dog is running around here causing a nuisance.
+A horse           A horse is here, trotting slowly along.
+A farmer's wife   A farmer's wife sells some fresh farm produce at a pop-up stall here. (White Aura)
+

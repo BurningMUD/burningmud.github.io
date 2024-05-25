@@ -1,0 +1,219 @@
+
+Beginners Guide to Mapping.
+
+I'm an explorer. My main goal is to map every area. I hope there are
+others like me out there and by this note I'm hoping to get a few
+more hooked.
+Most places are easy to map, but as an explorer you will encounter a few
+obstacles. Here are a few tips for newbie explorers:
+
+Starter tips:
+Most areas have some sign at the entrance, telling you which area
+you're about to enter. Or it may be shown just by looking at the
+room description. Check with the "help area" before entering. If it
+says 50+++, be vewy, vewy careful or you'll end up vewy, vewy dead.
+ALWAYS bring recall scrolls (recall potions/herbs are even better,
+since if you are in a fight you may fail to read a scroll, but you
+will rarely fail to put something in your mouth)
+GET A BOAT, GET A BOAT, GET A BOAT! Boats are cheap and not very heavy.
+There is _no_ reason not to bring a boat, _even_ if you have the
+fly-spell.
+----------
+
+Mazes:
+Pretty easy once you get the hang of it. Just drop 1 coin in the first
+room you enter, 2 coins in the next _empty_ room you enter, and then
+keep increasing the amount. Remember that going north then south
+doesn't always take you back to where you were before.
+If the maze is really messy, here's an example of an easy way to
+record it:
+
+Room  n  s  w  e  u  d
+1     1 OUT 2  1  -  -
+2     1  1  -  -  2  3
+3     -  -  3  4     5
+4           5     -  -
+5     4  5     -  1  -
+
+Interpretation:
+The first room entered has been named "1". I have dropped one coin there
+to mark the room. The room has exits in all four directions but no
+up or down exit. Going north or east from room 1 leads back to the same
+room. South leads out and west leads to room 2 (guess how many coins
+I've dropped there :-)
+Room 2: Has exits north and south (leading back to room 1), up (leading
+to itself) and down (leading to room 3).
+Room 3 has exits west, east, up and down. The up exit has not been
+explored yet.
+Room 4 has four exits and only the west exit has been checked.
+Room 5 has four exits, with only the west exit unexplored.
+
+Let's say you are standing in room 1 atm (you see 1 coin on the ground)
+and want to continue your mapping. Let's start with the up exit in room
+3. Go w to room 2, then d to get to room 3 and finally up. This room
+has a pile of coins in it. Great! We've been here before. Pick up the
+coins to see how many they were and then drop them again. Let's say
+there were two coins. That means you are in room 2, and so the line
+3    -  -  3  4     5
+...will now be complete:
+3    -  -  3  4  2  5
+Next: Go down to room 3, east to room 4 then north. The room you now
+entered is a room with only north and south exit. No money on the ground.
+Change the line:
+4          5     -  -
+...into:
+4    6     5     -  -
+Also drop 6 coins in the room to "mark" it. Add the line
+6          -  -  -  -
+...then go south and check out that room.
+Keep doing like this until the map is complete.
+This method is simple and safe, and when done you will be certain that
+no obvious exit has been missed.
+
+Unfortunately more than one coin on the ground is shown as  "a small
+pile of coins",... so the only way to know the exact number is to pick
+them up and then drop them again. Still, its much easier than dropping
+different items in each room. If you feel rich, you can instead buy
+eg recall scrolls and drop 1 of them in the first room, 2 in the next
+etc. Then, when looking in a room you will be able to see the number
+of scrolls without picking them up.
+
+Some mobs pick up stuff left on the ground, which may make things
+a bit harder, but keep working and you'll eventually get your map.
+The Great Eastern Desert is a perfect place to practice this method
+When finished, you'll have found the Ruins of Thalos, lair of a brass
+dragon, a nomad camp, the Pyramid, a DT and a few other nice places.
+Don't try Astral Plane if you're new to this. That's a _tough_ place
+to map.
+----------
+
+Locked doors:
+Kill and loot all mobs you see (if you can). Once you've explored the
+whole area you will hopefully have found the key. If not, you could
+try asking a rogue for help.
+If none of this works works (like the locked, unpickable door in
+Mob Factory), then i don't know. Any suggestions?
+----------
+
+Aggressive mobs: 
+Being invisible may help, but some mobs will still see you and attack.
+If they are small, kill & loot!
+If they are too tough, recall and check out the other rooms in the
+area.
+If they move around. Try again later. Maybe they've moved away from
+those unexplored rooms?
+If you can sneak, try getting past the mob that way.
+If all else fails, you can always enter the room, check "exits" and
+flee, hoping to flee into another unexplored (and hopefully safe) room.
+With some luck you will be able to determine which way you fled by
+checking out the names on the exits and the room name.
+BEWARE! When you flee you will get a small waitstate before you can
+do anything, so this method is risky. If the room you flee into also
+has an aggressive mob, you may die. But in the name of discovery... :-)
+----------
+
+Death Traps:
+Wonderful little rooms that makes life so much more interesting. For
+those of you still in the dark, a death trap (DT) is a room where you
+are instantly killed, with no chance of survival.
+Luckily, this death isn't as "real" nor as painful as the real(?) ones.
+You lose less xp and you get to keep all your equipment. If you hit
+a DT, DON'T ask people for a corpse retrieval ;-)
+Note: A room with 20 aggressive mobs is NOT a DT - only very painful.
+
+If you, when checking "exits", find a room called "Eaten alive", "Killed
+by stupidity" or "Burning death", it might be a good idea to slow down
+a bit and start using those braincells of yourse. Does that exit lead to
+a DT or not? Here are some ways on how to find out:
+
+1. Look at the room description again (you _do_ read those descriptions,
+right?). You might get some indications by descriptions like: "In the
+center lies a bottomless hole - it would be VERY unwise to enter it". 
+2. If it's "too dark to see" it's _not_ a DT (unless someone with a
+wicked mind has created a room with that room name). The room name of a
+DT is _always_ shown when you do "exits".
+3. If you have seen "[INFO] Cindy hit a death trap at (...that room name)"
+it is probably a DT.
+4. Look in that direction. You may get a hint from the response.
+5. Peek into the room. No exits means it's probably a DT.
+6. (Make someone else) Enter the room. This is, as far as I know, the
+only way to be sure.
+----------
+
+Secret exits:
+This is, as I see it, the worst problem you face as a mapper. How to
+make sure you don't miss any of those hidden places. Some are easy to
+find. Others are a real pain to figure out. And maybe (hopefully) there
+are a few left undiscovered.
+
+Earlier you could do: open "" north   to open any exit north. Doing this
+would open any hidden door north or tell you that the exit was locked.
+So doing this for each direction would reveal all secret exits except
+those you had to "enter" to get inside (like tree, well etc). And
+those could usually be found by doing "get all".
+Nowadays those hard-to-find places have been hidden better, the "get all"
+strategy seldom works and trying to open "" in any direction will
+always fail. So, what to do now?
+
+Here are a few tips.
+* Check "exits". That will show you all non-hidden exits.
+* Try "get all". Any item you can't pick up may be possible to "enter"
+* Walk in all other directions (n, s, u, d, e, w) and see if you bump
+into something closed. This will show any not-so-hidden exit.
+* Try "open secret", "open hidden", trap, door, ...  You may get lucky.
+* Look at your map. Does it look like a room or two is "missing"?
+* Look at the room description and objects in the room. Any clues?
+* Get a general idea of the area by looking at every room description.
+Does it look like something is missing? Castles usually has a "queen"
+and a "king". Low-life scum holdouts often has some kind of "leader".
+A mage tower should have some "mage" inside. Use the "where" command and
+see if you've missed any mob"
+
+If you still believe there is an exit here and haven't found it:
+Try  open a, open b, open c, open d,... It might help. Eg, if there's a
+"trapdoor" in the room, the "open t" command will make you open that
+trapdoor. Unfortunately this will not work if you are carrying eg a
+"trident" (you will then try opening your trident :-)
+
+Really stubborn:
+open a north, open b north, open c north,..., open a east, open b east,...
+
+Really, really stubborn:
+Do all of the above, plus enter a, enter b, enter c,...
+
+Simple solution that seems to work on burning: Look n, look s, look e,
+look w, look u, look d. If there is a doorway in any direction, it will
+say "\<door\> is open/closed."
+----------
+
+I will NOT be held responsible for any deaths due to accidentaly (yeah,
+right!) entering homes of demons, tree lords, Death Traps etc.
+Nor will I replace lost money, eq, limbs, minds or souls.
+In the end it's all up to your own bad judgement.
+Don't be afraid: There are NO mobs that can kill you instantly... almost
+no mobs... not more that three or four... per area... hopefully?
+Be curious. Lionheart is your best friend.
+
+/Cindy
+
+PS. Have I missed anything? Please tell me if you have any smart ideas.
+I still have a lot to learn in this area.
+
+///////////////////////////////////////////////////////
+
+More good things:
+* If you can't pick up an item because it's "too heavy", try bury it. If you
+can't, the item has no-take flag.
+
+* If you find lots of eq on the grund, it may belong to a player. To find out
+if this is the case and whom the owner is, try sacrificing/donating a useless
+item (scroll or potion, eg). If it says "You can't do that, the <item> belongs
+to <name>!" your questions have been answered.
+
+* Rooms _can_ have hidden items that you can't see, even when using "get all",
+eg "hidden compartment" in Graveyard (holds a key) and "drawers" in Amber Keep
+(also holds a key)
+
+* If you see a mob but can't figure out his name, try using 'exa 2.""'.
+Normally exa 1."" will examine yourself, exa 2."" will examine first mob in
+the room, exa 3."" will examine next, etc.

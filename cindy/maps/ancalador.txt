@@ -1,0 +1,41 @@
+# Ancalador/Necromancers' Guild (29): 10-25, CAW  (Karandras: 10wn3wswswn10w2swse2sws)
+* FIND OUT: Bloodstone: Levels (or anti-align)
+#
+#  |
+#  X-o-f-o-o   o                                          o - o   o - o
+#         /   /                                           |   |   |   |
+#        o   o                                          o---o o   o   o - o
+#       /    |                                          | | | |   |       |
+#      o --- o - o - o ----- o - o - o - o + o -------- o | o o - o       V
+#            |      /       /   /   /   /    +            | |             f
+#            | o o-/o-o   RIP RIP RIP  /     o -- o       o o
+#            |/  |/ | |               /     /    /        |/
+#            o   o--o-o <------------/     o o --- o + o  o
+#                |  | |                    |/  /  /
+#                o--o-o                o + o  o  /
+#                                     x       | /
+#                                    o        |/
+#                                             o
+#
+* Whole area is very bright
+
+Ancalador:               Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+The zombie                 5   14k E-x--     GN    94-105       0-0     [undead], summoned
+The green slime            6   26k N-----    GN   117-125       0-0     [jelly]
+The yellow crystal spider  7   38k E-x---    GN   137-141       0-0     [insect]
+The green crystal spider   8   60k E-x---    --   156-165       0-0     [insect], flees
+The hermit                10  110k G-----    --   196-201      24-24    [human]
+The spectre               10  100k E-x---    GN   191-210       1-1     [insubstantial], summoned
+The undead riding beetle  11  132k E-----    --   212-230       1-1     [insect]
+The deadly asp            12  156k N-x---    GN   241-248       1-1     [snake]
+The Petrified Warden      12  156k E-----    --   238-250    1010-1010  [human]
+The putrid zombie         13  182k N-----    --   263-269       1-1     [undead]
+The flame dweller         14  210k E-----    --   272-286    1801-1801  [elemental], sitting
+The wraith                15  225k E-x---    GN   293-304       1-1     [insubstantial], summoned
+The wraith knight         15  255k E-----    GNE  293-310    1556-1556  [undead], bash, kick
+The ochre jello           16  304k E-x---    GN   323-338    1577-1577  [jelly]
+The Necromancer           17  357k E----     --   354-369    6667-6667  [human], flees, blindness, feeblemind, summon spectre, summon zombie, summon wraith, chill touch, cure critic, curse, edrain, shocking grasp, 1-2 spells
+The umber hulk            18  414k E-x---    GN   385-394       1-1     [magical]
+Lazarus                   19  475k Ex----    --   420-427   13239-13239 [undead], backstab (95)
+Morticia                  23 1035k Ex-x--    --   527-537    9787-9787  [human], fireball, lightning bolt, colour spray, 1-1 spell
+The Crypt Keeper          25 1500k E--x      GNE  ~0.6k     15226-15226 [undead], shocking grasp, chill touch, summon spectre, summon zombie, blindness, feeblemind, cure critic (damages him), summon wraith, energy drain, curse, 1-2 spells

@@ -1,0 +1,37 @@
+# Starlet's Newbie Area (160): 1-10, Starlet  (Sundhaven: 6en)
+#
+#                 o
+#                 |
+#         o - o   o
+#             |   |
+#         o   o - o - o - o   o
+#         |       |           |
+# o - o - o - o - o --------- o - o - o - o
+#     |   |       |               |
+#     |   o       |               o - o
+#     o   |       |                   |
+#     |   o - o   |          Rabbit - o
+#     |           |          Warren
+#     |           |
+#     o - o - o - o - o ----- o - X
+#             |       |       |   |
+#             o       o - o   o
+#                         |
+#                         o
+#
+* Nice and safe newbie area
+
+Starlet's Newbie Area:   Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+The bird                   1   100 G-x--     -     13-16       51-51   immune earth
+The chicken                1   100 G----     -      5-10       51-51   immune earth
+The mouse                  1    50 G-x--     -      4-13       51-51
+The cow                    3   600 G----     -     16-22      101-101
+The squirrel               3   600 N----     -     19-21      151-151
+The goat                   4  1800 G-x--     -     29-33      151-151  +20 starthp
+The rabbit                 4  1200 N-x--     -     27-32      101-101
+The sheep                  4  1400 G----     -     34-37      151-151  +20 starthp
+The bear                   5  2500 E-x--     -     54-59      151-151
+The fox                    5  1500 N-x--     -     61-63      101-101
+The horse                  5  1500 G-x--     -     65-65      101-101  +60 starthp
+The pig                    5  2000 N-x--     -     55-57      151-151
+The lion                   6  3000 N-x--     -     86-89      401-401

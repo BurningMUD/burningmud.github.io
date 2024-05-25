@@ -1,0 +1,39 @@
+# Khronatio (354): 45-99, Zendrax  (Crossroad: 2nen2en3en2en2es2es2en3enwnw3nw6ne2ne2ne2ne2ne2ne2ne2ne2ne6n7w4n5ene)
+* FIND OUT: A ghost of a decapitated woman   xp, hp, hp,
+* FIND OUT: Khronatian Gatehouse Guard       xp, hp, hp, money, money
+* FIND OUT: A Guard of Khron                 xp, hp, hp, money, money,       irvs
+* FIND OUT: Soldier of Khron                 xp, hp, hp, money, money
+* FIND OUT: The late Captain of Khron        xp, hp, hp, money, money
+* FIND OUT: Does the fountain have any powers? (healing once every ... ticks?)
+#
+#             Captain
+#               /                                 o+o
+#              o  NM     o-w-w---o--o-w-o-w-w-o   + |
+#             /+   +     |   +   |  | + |     |   D o
+#          RIP hp-hp  o  W o o-+-o  o o+w   __w__/
+#              |   |  |  | | |   |      |  /  |
+#              hp-hp  o  W o o   w  o o w U+o w
+#              |   |  +  | + +   |  | | | +   |
+# -o-X-drain-o+mv--f--w--w-w-w---o--w-w-o-w-w-o
+# /|     mv    |   |  +  | + +RIP|  |   |     |
+#              hp-hp  o  W o o | o  o+o w     w
+#              |   |  |  | | | o | o    |     |
+#              |   |  |  | | |/  | +    |     |
+#              hp-hp  o  W o o   o-S  o-w     w
+#              +   +     |       | |  + |     |
+#              o  NM     o-w-w---o-w--w-o-w-w-o
+#
+* Entrance from Lorchid
+* hp: hp regen room
+* f:  Fountain. H
+* w:  decapitated woman (the westmost ones, marked "W", are also noflee rooms)
+* All npc:s are vulnerable to water.
+
+Khronatio:                      Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+A ghost of a decapitated woman   84 1470M E--x  2   GN                 2-2    [NOT human/undead/magical], vuln water, immune large/superlarge/poison/acid/unlife/fire/ice/iron/gas/bleed/earth/electricity/air, resist energy/mental/silver/wood, light damage, 2-4 attacks, sun ray, area vampiric mist, 0-1 spells, backstab, murder, imp, hide
+Khronatian Gatehouse Guard       85       N--xxx    ---                       [human], vuln water, immune large/superlarge/acid/dark/unlife/ice/iron/mental/gas/bleed/earth/electricity/silver/stun/air/wood, SUMMONER, 1-4 attacks, miracle, 0-1 spells, special-standing before being in battle - standing after
+A Guard of Khron                 92       N--xxx    ---                       [human], vuln water, immune pure/large/poison/acid/dark/unlife/fire/iron/mental/gas/bleed/earth/electricity/stun/air/wood, 5-5 attacks, headbang, special-standing before being in battle - standing after
+Soldier of Khron                 94       Nx-xxx    ---                       [human], vuln water, immune pure/large/superlarge/magic/poison/acid/dark/unlife/fire/ice/iron/gas/bleed/earth/electricity/silver/stun/air/wood, resist light/mental, 5-6 attacks, bash, headbang, backstab, murder?, special-standing before being in battle - standing after
+The late Captain of Khron        95       N--xxx    --                        [human], vuln water, immune pure/large/superlarge/poison/acid/unlife/fire/ice/iron/mental/gas/bleed/earth/electricity/stun/air/wood, 5-5 attacks, kick, headbang, backstab (67), murder, vampiric mist, 0-1 spells, flying
+a Ghostly Shopkeeper is here, floating in the air.
+Ghostly shopkeeper               99       N--       ---                       flying, nofight-room

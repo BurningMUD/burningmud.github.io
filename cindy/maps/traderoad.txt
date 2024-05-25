@@ -1,0 +1,55 @@
+# Trade Road (115): 1-100, Burning Staff  (Karandras: 5s3w2se)
+#
+#                                     o
+#                                     |
+#                                 o   o   o
+#                                 |   |   |
+#                 brewery o - o - o - o - o
+#                     |   |   |       |   |
+#         o ---- o -- o - o   o       o   o
+#         |      |    |               |
+#         o  Bs  o  o-o    o          o
+# |       |  |        |    |          |
+# o - X - o--o ------ o -- o --- o -- M ---- o -> OSeG
+# |       |  |        |               |      |
+#         |  Js    Q  |               o-o    v
+#         |        |  |               |     OSeG
+#         o        Ls-o-Ceran      Ss-o
+#         |           |               |
+#         o --- o --- o - o - o  Tav  |   o
+#                             |   |   |   |
+#                             o - o - o - o
+#                                         |
+#                                         o
+#                                         |
+#                                         v
+#                                       river
+#
+* Nice and safe lowbie area
+* Butcher shop opens at 7 am and close at ? pm.
+* Leather shop opens at 8 am and close at ? pm.
+
+Trade Road:              Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+The Cityguard              1   200 N-x---    --    27-35       16-16
+The rat                    1   100 N-x--     -     16-19        1-1
+The Young Boy              1   100 N----     -     17-21        3-3    sitting
+The Bachelor               4  6400 N----     -     76-84      101-101  sitting
+The Boarder                4  6400 N----     -     77-84       26-26
+The Brewery Worker         4  6400 G----     -     81-82      101-101  [human]
+The Citizen                4  6400 N-x---    --    76-80      201-201
+The Housewife              4  6400 N----     -     80-81      101-101
+The Old Man                4  6400 N-----    --    80-85      101-101  sitting
+The Old Woman              4  6400 N----     -     77-83      101-101  sleeping
+The Slob                   4  6400 N----     -     82-83      101-101  sleeping
+The Landlord              15       N--       -      ?           ?      no-attack
+Grebe                     20       E--       ---                       shopkeeper
+Ceran                     18  414k G-----    -    392-399    1201-1201 [human]
+Sakifan                   18  414k G-----    -    385-391     801-801  [human]
+The Brewermaster          18  414k G-----    -    384-390    1201-1201 [human]
+The Madman                18  414k E--x--    -    383-383      12-12   [human]
+The Trader                18  414k G-----    -    390-393    1801-1801 [human]
+The Butcher               18       G--       --     ?           ?      shopkeeper
+The Jeweller              18       G--       --     ?           ?      shopkeeper
+The Leatherworker         18       G--       --     ?           ?      shopkeeper
+The Sailor-Merchant       18       N--       --     ?           ?      shopkeeper
+Skinner, the skinner     100       G--       ---    ?           ?      questmaster, no-attack

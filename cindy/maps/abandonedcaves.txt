@@ -1,0 +1,41 @@
+# The Abandoned Caves (332): 50-95, Solo/Static  (Solace: 7seu2nw4n3e3n3u6en)
+* FIND OUT: Are hunting horrors flying or special-standing before being in battle
+* FIND OUT: Shub-Niggurath: Xp, hp, hp, gold
+#
+#             o - o
+#             |   |
+#           Shub- o
+#             ^
+#             |
+#             o
+#             ^                                    o-o-o
+#             +                                    |   |
+#           o-p-o                                  o   o
+#           | | |                                  |
+#         o-o-o-o-o                            o-o-o       o
+#           | | |                              |   |      /|
+#           o-o-o                              o   o   RIP +
+#             |                                |   |/      |
+#     o----o--|--o                             o-o-X-o-o - o
+#     |       |  |                             |   |   |
+#     o       o  o-o       o-o-h               o   o   o
+#     |       |  | |       | | |               |   |   |
+#     o-p-o-o-o  o-o-o-o-o-o-o-o-o-o-o-o-o+o-o-o   o-o-o
+#     |          | |       | | |
+#     o          o-o       h-h-h
+#     |          |
+#     o----o-----o
+#
+* h: hunting horrors
+* p: proto shoggoth
+* The orcs are vuln pure/light/fire. The rest have no vulns
+
+Abandoned Caves:         Lvl    Xp ASWIDMX # agg      Hp        Gold     Special
+The orc                   55   51M E-xxx-    --   4061-4099  10044-10045 [orc]
+Far'nachtar the orc       58   58M E-xxx-    --   5532-5590  40001-40001 [orc]
+Mor'balach the orc leader 70  280M E-xxx 1   GNE 15063-15094 50001-50001 INFO, [orc]
+The deep one              75  375M N-xx  1   GNE 12011-12079     0-0     [---], resist water
+The hunting horror        75  375M N--x      GNE 12404-12862     0-0     [entity], flying/special-standing before being in battle - standing after
+The star spawn            80 1200M N-xx      GNE 15623-15970     0-0     [entity]
+The proto shoggoth        85 1955M Nx-x  3 2 GNE 24789-28912     0-0     INFO, [entity], shrugger
+Shub-Niggurath           100       Nxxx    1 GN                  0       INFO, [entity], shrugger

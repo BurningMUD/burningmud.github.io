@@ -1,0 +1,199 @@
+# The Underdark (84): 40-100, Silence  (Underdark: -)
+* FIND OUT: Eyed - are they [magical]?
+#
+#        o-o-o-o-o-W-Y-R-M-o-o-S-T-R-E-E-T-o-o-o         o+o     -R-
+#        | jade dwell. |gemst|       warehouse |  demon  |       /
+#        o o-o-o-o-o   U o-o M o+o o o o-o-o+o o  clan   o+o    o
+#        |   + |   |   | | | |   | + + |   |   |         |      |
+#        o o-o o o+o+o B o-o O+o-o-o-o o+o o-o o   o-o   o+o   WORMS-o-2+
+#        | | | +   |   |   + |   | + | |   + | |   | |   |            /
+#        o o-o o o+o+o Y-o-o-O o+o o o-o+o o o S o+o-o   o+o    Darkunder
+#        |     |       |     |   +           + | |       |
+#        o-S-U-N-S-o-o-o o-o N   o o-o-o-o o+o U o-o-o---o+o
+#        + + + + | Bodak | | |     | | | |     | +   |   +   Sewers
+#        o o o o E o+o+o o-o L-o-D-I-A-o-o-N-D-N o-o o /-o-o   /
+#                |   |   + + |whore| trav. den | | | | |   |  o
+#                T o+o-o o o I o-o o o o-o o   R o-o o o---o /
+#                |   | + + | | | | | + | | +   |     +      o
+#                o o+o o-o o G o-o o o-o-o+o-o I     UD..../
+#                |   |     | | +   | | + + + + |    /
+#        o o o   o o-o-o-o-o H o+o o o o o o o S   o
+#        + + + + | +         | +   | +         |  /
+#        o-o-o-5-L-A-V-E-R-S-o-o-R-O-U-T-E-o-o-E+X
+#        + + + | |  market | |  prison +       |
+#        o o o o-o o-o-o-o o-o o-o-o-o-o+o     o
+#              | | +     + | | + + +   |       |
+#        o o o o-o o-o-o-9-o-o o o o o+o+o o-o-o       T----E
+#        + + + | |       | | |         |   |   +cages  |    |
+#  ----> X-S-T-o-O-F-o-T-H-E-o--G--O o+o+o S o+o       T    N
+#            | | | | | | | | shad. D   |   |   +       |    |
+#        o-o-S B J A W M o o o+o-o S+o-o-o+U o-o       O o  o
+#        |   |           | |   | | | + + + |           | |  |
+#        o+o U   SHOPS   A o-o-o-o o o o o N-o-o-F-O-R-G o  |
+#        |   |           |         |       |             +  o
+#        o+o N-R-O-A-D-o-Z-#-o-S-H-A-D-O-o-R  Eurandus+o-o  |
+#   Drow |   |           |     +         | |           | |  o
+#   City o+o S           U o o+o+o o o o I-o--o-o--o o+o-o  |
+#     /      |          <f>+   |   + + + |         |   |    |
+# -o-2-+-T-R-A-V-E-L-L   R+o-o-o-o-o-o+o S o o o o A o+o+o-<f>
+#   /    |           |   | +   | +   |   | + + + + |        |
+# Dark-  o o o o Bar E   I o o+o o-o o+o E o-o-o-o L        o
+# under  | + + +     |   |     | | | |   |ass|guild|        |
+#        C o-o-o+Q-o R   | o+o+o o-o o+o o   | o-o+L-E-Y-o--o
+#        | + + + | | |   T               |   o |
+#        R o o o o-o+S   | thieves guild o   | o o o o
+#        |           |   |               |   | | + + +
+#        E-S-C-E-N-T-o   E-o-D-E-A-T-H-S-o   o-o+o-o-o+o-o
+#                                        |   +   + + + | |
+#                                        L-A-N-E o o o o-o
+#                                              |
+#                                              o
+* 5: going north takes you east
+* 9: going south takes you southwest
+* #: 4 nasty mobs
+* <f>: The left one is a normal room if you come from the south. If you go
+* from the north, it is instead the <f> room in the southeast you will get to.
+* WORMS: Standing here will summon worms to hunt you (they walk n-u, and if
+*        nobody there, they return back to their hideout again)
+* 2: Standing here did summon worms to hunt you (once here they'll just stay
+*    here and wait). That special seems to have been removed.
+* Many aggressive, unavoidable, walking eyes. Vuln unlife.
+
+Underdark:               Lvl    Xp ASWIDMX # agg      Hp         Gold     Special
+The zombie                 5   14k E- ---          108-109        0-0     [undead?], immune unlife/dark, summoned
+The servant               10  110k N-x---    -     192-195       11-11    [human]
+The spectre               10  100k E-x---    -     191-197        1-1     vuln energy, immune unlife, resist WEAPON, summoned
+A granter of pleasure     11  132k N-x---    -     211-217      101-101   [human]
+The duergar patron        11  132k E-x---    -     225-229      101-101   [dwarf?], vuln water, sitting
+The female human slave    11  132k N-----    -     216-229        1-1     [human]
+The half-orc              11  132k E-----    -     215-229      101-101   vuln pure/light, sitting
+The skeleton warrior      12  168k E-xxx-    GNE   175-186        4-15    [skeleton], summoned
+The svirfneblin patron    12  156k E-----    -     244-250      101-101   sitting
+The worker of the night   12  156k N-x---    -     236-242      101-101   [human]
+A maid of passion         13  182k N-x---    -     263-272     1001-1001  [human]
+The drow patron           13  182k E-----    -     261-267      101-101   [drow-elf], vuln pure?/light?, resist dark?/unlife?/magic?, sitting
+The halfling patron       13  182k E-----    -     251-266      101-101   sitting
+The narauk                13  247k E-xxxx    GN    162-171      323-894   [demon], summoned
+The serving wench         13  182k N-----    -     253-266      101-101   [human]
+A preferred customer      14  210k N-x---    -     275-285     1001-1001  [human]
+The human patron          14  210k N-x---    -     280-287      101-101   [human], sitting
+The wraith                15  225k E-x---    G     300-300        1-1     vuln energy, immune unlife, resist WEAPON, summoned
+The goblin slave          16  304k N-----    -     332-333        1-1
+The pimp                  16  304k E-----    -     329-332    10001-10001 [human], sitting
+The svirfneblin dignitary 16  304k E-x---    -     335-340     1001-1001
+The caretaker             17  357k E-----    -     356-358      101-101
+The svirfneblin (hatred)  17  357k E-x---    -     353-368      101-101
+The orc slave             18  414k N-----    -     381-391        1-1     vuln pure/light/fire, resist poison/ice/dark
+The prisoner              18  414k E-----    -     394-395        1-1     [human]
+A male human slave        19  475k N-----    -     424-430        1-1     [human]
+The huge rat              19  475k N-x---    -     416-427        1-1     vuln gas
+The kobold                20  600k N-----    -     437-448        1-1
+Shillikif                 22  858k E-----    -     434-436     1001-1001  [drow-elf], resist magic?, sitting, backstab
+The elven slave           24 1200k N-----    -     560-568        1-1     vuln unlife/dark/iron, resist pure/light/magic
+The lizard man            24 1176k E-xx--    -     724-728      101-101
+Anmictes                  25  851k E-----    -     692-709     1001-1001  vuln large/superlarge, resist mental, sitting, backstab
+Emba                      25 1525k E-----    -     751-770     1001-1001  vuln water/large/superlarge, resist fire, sitting, bash, kick, headbang
+The drow trader           25  475k E-xxx-    GNE   621-623      501-501   [drow-elf?], vuln ice?, resist unlife?/magic?
+The footpad               25 1225k E-x---    -     528-530      101-101   [human]
+The dwarven slave         26 1820k N-----    -     616-619        1-1     vuln water/superlarge, resist fire
+The gremlin               26 1586k E-x---    -     351-364      101-101   vuln unlife
+The demon clan member     27 1647k E-xxx-    GN    566-570     1001-1001  [human]
+The floating eye          27 1674k E-xxx-    GNE   791-796       51-51    [magical?], vuln unlife, resist magic/energy
+The cutpurse              28 1988k E-x---    -     661-665     1001-1001  flees
+Snaromba                  29 3451k E--xx-    -     630-634     1001-1001  vuln large/superlarge, resist mental, magic missile, lightning bolt, burning hands, blindness
+The svirfneblin (warily)  29 2755k E-x---    -     614-625     1001-1001
+The celebdel              30 5400k E-xxxx    GN    792-842    21755-26211 [demon], summoned, fireball, heal, colour spray, blindness, lightning bolt, curse
+The filcher               30 2700k E-xxx-    -     687-697     1001-1001  flees
+The bravo                 30 3450k E-xxx-    GNE   836-838     1001-1001
+The slime creature        30 3000k N-x---    -     841-845        1-1     resist WEAPON
+A demon clan mage         31 4185k E--xx-    GN    689-691     1001-1001  [human], colour spray, fireball, lightning bolt
+The rogue                 32 4000k E-xx--    -     718-718     1001-1001  [human], flees
+A demon clan fighter      33 5775k E--xx-    GN   1029-1053    1001-1001  [human], bash, kick, headbang
+The duergar               33 6600k E-xxx-    GNE  1088-1095    1001-1001  [dwarf?], vuln water
+The jermlaine             33 4620k E-x---    -     799-812      101-101   vuln unlife, sitting
+The jinxkin               33 4620k E-x---    -     801-823      101-101
+The murderer              33 5115k E-xxx-    GN    966-968     1001-1001  vuln pure/light, resist dark
+The sharper               34 4930k E--xx-    GN    973-977     1001-1001  vuln pure/light, resist dark
+The hezron                35 7000k E-x---    G     794-802    10001-10001 vuln pure/light/iron, immune fire, resist unlife/dark/poison, hell fire, mass pain, cloudkill, summon skeleton warrior, summon narauk, summon celebdel
+A slaver buyer            35 5075k E-x---    -    1045-1048    1001-1001  [human]
+Antryg                    35 7000k N-----    -    1110-1119     501-501   [human], sitting, colour spray, lightning bolt, fireball
+Caris                     35 7000k N-----    -    1106-1114     501-501   [human], sitting, bash, kick, headbang
+The slave trader          35 5075k E-x---    -    1034-1048    1001-1001  [human]
+An eye of fear and flame  36 6480k E-xxx-    GNE   789-797      101-101   [magical?], vuln unlife, fire breath, can VAPE eq!
+Hangharid                 36 6120k E-----    -    1262-1268   10001-10001 vuln large/superlarge, sitting, bash, kick, headbang
+The eye killer            36 1800k E-xxx-    GNE   869-879        1-1     irvs?
+The magsman               36 6600k E--x--    -    1038-1051   10001-10001 vuln pure/light, resist dark, sitting
+The thug                  36 7200k E-xxx-    GNE  1103-1123    1001-1001  vuln pure/light, resist dark
+Endolar                   37 8251k E-----    -     918-927    10001-10001 [drow-elf], sitting, backstab
+The demon summoner        37 7363k E--- -    -    1048-1057    1001-1001  vuln pure/light, immune blind, resist unlife/dark, cure critic, chill touch, blindness, curse, shocking grasp, energy drain, feeblemind, summon spectre, summon zombie, summon wraith, 2-2 spells, no-charm
+The revenant              37 7030k E-x---    -    1003-1013     101-101   [undead?], vuln pure/light/silver/heal, immune unlife/dark, resist earth/water/air/mental, save 10
+Lord Rygar                38 9120k E-----    -    1586-1595   10001-10001 [human], sitting, bash, headbang
+Sifrim                    38 7600k E-----    -     997-1011   10001-10001 [drow-elf], sitting, blindness, heal, curse
+The killer                38 8474k E-xxx-    GN   1134-1145   10001-10001 vuln pure/light, resist dark
+The master thief          38 2280k E--xx     GN   1186-1193   10001-10001 [human], sitting
+Cedrena                   39   10M E-----    -    1306-1306   10001-10001 [human], sitting, bash, kick, headbang
+Orak                      39 7683k E-----    -     916-936    10001-10001 vuln pure/light, resist dark, sitting, backstab, NOT vuln fire/slay orc
+The imp                   39   12M E-xx--    -    1211-1211     101-101   vuln unlife, invis
+Thespan                   39   12M E-----    -    1618-1620   10001-10001 [drow-elf], resist dark?/unlife?/magic?, sitting, bash, kick, headbang
+Sabrakarn                 40 8400k E-----    -     836-840    10001-10001 vuln pure/light, resist dark, sitting, lightning bolt, colour spray, fireball
+Satori                    40       E--       -        ?            ?      shopkeeper
+The assassin              40   12M E-xxx-    GN   1288-1292   10001-10001 [human]
+Wismarel                  41   11M E-----    -    1631-1641   10001-10001 vuln water/superlarge, bash, kick, headbang, berserk
+Methuen                   43   14M E-----    -    1047-1059   10001-10001 [human], colour spray, fireball, lightning bolt
+Prax                      43   15M E--xx-    -    1092-1101   10001-10001 [drow-elf], resist dark?/unlife?/magic?, sitting, lightning bolt, fireball, colour spray
+The expert assassin       44   17M E-xxx-    GN   1348-1359   10001-10001 vuln pure/light, resist unlife/dark
+Geg                       45   21M E-----    -    1535-1569    1001-1001  vuln large/superlarge, resist earth/mental, sitting, meteor swarm, meteor blast, fireball, colour spray
+Jarre                     45   14M E-----    -    1943-1960    1001-1001  vuln light, resist dark, sitting, bash, kick, headbang
+The cambion (watching)    45   29M E-xxx-    GN   1535-1544    1001-1001  vuln pure/light/iron, immune fire, resist unlife/dark/poison, cloudkill, hell fire, hell storm, blindness, teleport, mass pain, summon skeleton warrior, summon narauk, summon celebdel
+Jiestis                   49       N--       -                            shopkeeper
+Gulthac                   46   20M E-x---    -    1669-1678   10001-10001 vuln water/magic/superlarge, resist fire/earth/poison, bash, kick, headbang
+The senior assassin       46   18M E-xxx     GN   1413-1420   10001-10001 [human]
+Drevlin                   47   21M E-----    -    1063-1084    1001-1001  [drow-elf], sitting, bash, kick, headbang
+Limbeck                   48   24M E-----    -    1855-1858    1001-1001  vuln water, resist fire, sitting, bash, kick, headbang, berserk
+Raesarnt                  50       N--       -        ?            ?      shopkeeper
+The Bar Tender            50       N--       -        ?            ?      shopkeeper
+The Barkeep               50       N--       -        ?            ?      shopkeeper
+The beholder's underling  50   42M E-xxx-    GN   2487-2513    1001-1001  [human]
+The enforcer eye          50   40M N-xxx-    GNE  2507-2526     101-101   [magical?], vuln unlife, resist magic/energy
+The inn keep              50       N--       -        ?            ?      shopkeeper
+The inn keeper            50       N--       -        ?            ?      shopkeeper
+The prime assassin        50   29M E-xxx-    G    2001-2001   10001-10001 vuln pure/light, resist unlife/dark
+Yie'Stei                  50       N--       -        ?            ?      shopkeeper
+Zae'tres                  50       N--       -        ?            ?      shopkeeper
+The mage                  52   35M E--x      GN  ~2150-~2153   2001-2001  vuln pure/light/heal, immune unlife/dark, colour spray, meteor swarm, meteor blast, fireball
+A noble cambion (stares)  53   69M E-xxx-    GN   2888-2892   10001-10001 vuln pure/light/iron, immune fire, resist unlife/dark/poison, cloudkill, hell fire, hell storm, blindness, teleport, mass pain, summon skeleton warrior, summon narauk, summon celebdel
+The dretch                54   59M E-xx -    -    2658-2677    1001-1001  vuln pure/light, resist unlife/dark
+Irmugar                   55   43M Ex-x -    -    3062-3072   10001-10001 vuln pure/light, resist unlife/dark, confusion, harm, meteor swarm, meteor blast, powerheal, fireball, colour spray
+Meliadus                  55   51M Ex-x      G    2283-2290   10001-10001 vuln pure/light, resist unlife/dark, sitting, meteor blast, meteor swarm, fireball, powerword pain, mass pain
+The babau                 55   56M E-xx      GN               10001-10001 vuln pure/light/iron, immune fire, resist unlife/dark/poison, cloudkill, hell fire, hell storm, blindness, teleport, mass pain, summon skeleton warrior, summon narauk, summon celebdel
+The stone golem           56   66M N--x -    -    3230-3240       1-1     resist unlife/fire/ice/air/earth
+The behir                 57   79M E--x      GN   3158-3160       1-1     [dragon], lightning breath
+The darken beast          58   72M E-xx -    -    3520-3541       1-1     vuln unlife
+The gibbering mouther     59   77M E-xx      GN   4343-4353       1-1     [jelly]
+The iron golem            60   84M N--x -    -    5278-5313       1-1     resist unlife/fire/ice/air/earth
+The trainer (assassin)    60   78M N--x      GN   4015-4028   10001-10001 vuln pure/light, resist unlife/dark
+The head thief            61  107M E--x      GN   4740-4755   10001-10001 vuln pure/light, resist dark/unlife, backstab
+The skyzorr'n             62  102M E-xx -    -    4581-4608    1001-1001  vuln gas
+The xaren                 62   65M E--x -    -    4827-4834     101-101   [elemental]
+The cloaker               63   57M E--x -    -    3820-3848     101-101   vuln unlife
+The grell                 63  126M Exxx      GN   2675-2692       1-1     vuln unlife
+The great enforcing eye   64  128M N--x      GN   3488-3496   10001-10001 [magical?], vuln unlife, shrugger, confusion, powerword kill, powerharm, special-blind
+Itreres                   65   92M E--x -    -    6501-6502   10001-10001 [human], sitting, bash, kick, headbang, berserk
+The trainer (thief)       65  117M N--x      GN   6984-7005   10001-10001 [human]
+The beholder legionnaire  65  130M E-xx      GN   5658-5662    1001-1001  [---], bash, kick, headbang, berserk
+The fighter               65  114M E--x      GN   6510-6519   10001-10001 [human], bash, kick, headbang
+A high priest of Xevior   66  132M Ex-x      GN   5439-5487   10001-10001 [human], summon zombie, summon wraith, curse, energy drain, chill touch, cure critic, feeblemind, shocking grasp, blindness, 2-2 spells
+The necromancer           66  132M E--x -    -    5465-5500   10001-10001 vuln pure/light, resist unlife/dark, shrugger, summon spectre, summon zombie, summon wraith, curse, feeblemind, blindness, chill touch, cure critic, shocking grasp, 2-2 spells
+The guildmaster           67  134M E-xx      G    5664-5692   10001-10001 [human], backstab
+The bodak                 68  136M Ex-x -    -                 1001-1001  vuln pure/light/iron, immune fire, resist unlife/dark/poison, cloudkill, hell fire, hell storm, blindness, teleport, mass pain, summon skeleton warrior, summon narauk, summon celebdel
+The platinum golem        70  262M Nx-x -    -    8740-8745       1-1     resist unlife/fire/ice/air/earth
+The purple worm           71  165M?E--x    1 GN   9521-9550   30279-30350 [snake], vuln electricity, resist fire
+The supreme attendant     71  319M E--x      GN               10001-10001 blindness, harm, meteor blast, meteor swarm, powerword pain, mass pain, powerheal, confusion, wither, fireball
+The Keeper                75  172M Nx-x -    -    7902-7932   10001-10001 [human]
+The Slave Dealer          75  412M G--x -    -   14012-14019  10001-10001 vuln pure/light/fire/superlarge, resist ice/poison/dark
+The beholder              76  380M Exxx x    --- 14927-14934  65536-65536 vuln unlife, shrugger, powerword blind, energy drain, powerword pain, powerword kill, fireball, poison, 1-2 spells
+The huge beholder         76  418M Nx-x x    -   14992-15020  65536-65536 vuln unlife, shrugger, confusion, powerword kill, powerharm, blindness, energy drain, wither, fireball, mana drain, feeblemind, 1-2 spells
+Eurandus                  80 1280M Ex-x x    --  20768-20773  65536-65536 [human], meteor swarm, meteor blast, mass pain, powerword pain, fireball
+The huge purple worm      90 2700M?E-xx   10 GN  50952        74053-81121 [snake], vuln electricity, resist fire, hunt, gas breath (49), earthquake (63)
+Salik the covert assassin 100    0 Nx-x -0   -   50001-50001      7-9     INFO, questmaster, [orc], 1-1 attacks, cake
+The cloaked Ghast        100  640M E--x -    -    9942-10080 65809-65847  INFO, [human], vuln fire, resist pure/light/ice, imp, not seen on "where", sometimes found in Ghenna

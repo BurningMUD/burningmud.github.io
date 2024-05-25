@@ -1,0 +1,36 @@
+# Oceania (82): 20-45, Questor  (Sundhaven: 2e4n2w2nd)
+#
+#             o--o---f
+#             |    / |  Ice      Ice
+#             |    | |  Area     Wall
+#  o- S.S.    |    o-o   |        |
+#  | Scurvy   f--o       o-----Leviathan
+#  |             |       |        |
+#  X--o          o   o---o        o
+#  |  |          |   |     /\     |  Ice
+#  |  o OCEANIA  o---o     \-f    o-Caves
+#  |  |          |   |       |    |
+#  |  o---f      o   o---o   o  Little
+#  |      |      |       |   |  Haven
+#  |  RIP-o---o  f   o---M---o
+#  |          |  |   |       |
+#  |     f----o--o   o---o   o
+# \|     |      /    |   |   |
+#  Q     | Antharia  |   |   |
+#        |           |   |   |
+#        o---o       o   o---o
+#            |       |   |
+#            o---o---f---f--RIP
+#
+* f = Rooms with aggressive Sea Serpents
+* Darkness will keep you from being attacked. Careful about the DT:s
+
+Oceania:                      Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+A vicious barracuda             9   90k E-x---    G    181-185       1-1     immune water
+The cheeky fish                10  100k N-xx--    -    192-193     192-209   no-charm, immune water
+A jumbo sized fish (mother)    15  240k N-xx--    -    291-296     315-317   immune water
+The jumbo fish (actual mother) 18  288k N-xx--    -    397-399     406-419   no-charm, immune water
+The huge, green Sea Serpent    22  880k E--x--    G E  506-508       1-1     NOT resist water
+The crusty old Captain         39   14M G--x--    -   1353-1383  25001-25001 flees
+The demigod Leviathan          44   19M G--x--    -   1526-1555  17001-17001 blindness, fireball, confusion, powerword pain, harm, meteor blast
+Sexrex the hopeless fisherman 100       N--       -      ?           ?       questmaster, no-attack

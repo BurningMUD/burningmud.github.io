@@ -1,0 +1,66 @@
+# Drow City (51): 15-50, Rorschach/Jess  (Drow: -)
+* FIND OUT: The Smithy         See dark, hp, hp
+* FIND OUT: Check the irvs on all drows again, and update text below map
+#
+#       o + Yochlol
+#      x       |
+#    UD    /-- o --\   o
+#          |  /    |   +
+#          o RIP   o + o
+#          |       |
+#          \-- o --/   o-o
+#              | _______/|
+#              |/        o+o
+#              o        /
+#                      o   o
+#                      |   +
+#          o - o - o - o-o-o-o    o
+#              |   ^   | ________/|
+#              |   |   |/         |
+#              \-> o   o    WM    |
+#                         HPreg   |
+#                           |     |
+#                       o + o - o |      o   o - Jenaria
+#                           |     |      +   +
+#                Anhara o - o --- o ---- o - o
+#                   +       |            |   |
+#                   o + o + o     o   o  o - o + X
+#                           |     |   |      |
+#                           o --- o - o ---- o
+#                           |     |   |
+#                 Shanara + o    WM   o
+#                                     +
+#                                  Mandara
+#
+* Min level 0/32 (Anhara's house)
+* Whole area is very bright
+* All drows are immune to pure/light/ice(?) No vulns(?) Careful with Anhara.
+*
+* Normal drow-elf irvs should be: Vuln Pure/Light/Ice, Resist Unlife/Dark/Magic
+
+Drow City:              Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+An abused Goblin Slave    5  8800 E-----    --   104-111      62-68    [---], sleeping
+The Captive Fairy         7   49k N---x-    --   140-142     301-319   [fairie]
+The Drow Scout           10  128k E-x-x-    --   201-227    1189-1490  [drow-elf], immune ice, sneak
+A Drow magician          15  750k E--xx-    --   202-215     944-2365  [drow-elf], no-group, lightning bolt, fireball
+Anhara's Consort         15  255k E---x-    GN   181-185     666-1555  [drow-elf]
+Jenaria's Consort        15  255k E---x-    GNE  182-185     879-1122  [drow-elf]
+Mandara's Consort        15  255k E---x-    GNE  181-184    1128-1334  [drow-elf]
+Sharana's Consort        15  255k E---x-    GNE  184-185    1066-1563  [drow-elf]
+Warrior Student          15  255k E---x-    --   303-307    2520-2527  [drow-elf], immune pure/light/ice
+Drow Slaver              20  550k N--- -    --   447-463    3026-3063  [drow-elf], immune blind, no-charm
+Minor Priestess of Lolth 17 1190k E--xx-    --   236-255    3179-3267  [drow-elf], blindness, curse
+An Angry Spider          25 2000k E-----    GN   777-790   10251-10343 [spider], bash, kick, headbang
+Drow Musician            25 1375k E---x-    --   596-604   10301-10356 [drow-elf], immune pure/light/ice, mana shielded
+Anhara's Pet Spider      28 2240k E-----    --   744-784   10311-10361 [spider], sleeping, magic missile, chill touch, armor, burning hands
+The Smithy               30 3300k E--- -    --  ~754-~759  30274-30304 [drow-elf], immune pure/ice/blind, save 14, no-charm, bash/kick/headbang
+Drow Master of Healing   31 3410k E---x-    GN   717-737   15028-15110 [drow-elf], immune pure/light/ice, heal, blindness, curse
+Drow Master of Magic     31 3410k E---x-    GNE  714-732   15076-15102 [drow-elf], immune pure/light/ice, lightning bolt, colour spray
+Drow Master of War       31 3410k E---x-    GNE  716-736   15068-15103 [drow-elf], immune pure/light/ice, bash
+The Old Drow Alchemist   31 3410k E--        NE  725-729   15114-15154 [drow-elf], immune pure/light/ice, lightning bolt, colour spray
+The weaponsmaster        33 4950k E---x-    GN   660-693   12686-17164 [drow-elf], bash, kick, headbang
+Jenaria                  34 5950k E--xx-    GN   508-514   21195-21386 [drow-elf], immune pure/light/ice, chill touch, cure serious
+Mandara                  34 5950k E--xx-    GN   537-542   20869-21011 [drow-elf], immune pure/light/ice, chill touch
+Sharana                  34 5950k E--xx-    GNE  530-547   20986-21188 [drow-elf], immune pure/light/ice, chill touch
+The yochlol              35 5950k Ex-x-x    --   438-442    3718-5015  [mythical]
+Anhara                   37 8325k E--xx-    GN   919-957   40094-40264 [drow-elf], immune pure/light/ice, powerheal, confusion, harm, fireball, curse, meteor blast, colour spray, meteor swarm, cure serious, blindness

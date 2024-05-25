@@ -1,0 +1,2137 @@
+
+http://www.lysator.liu.se/~tomca/burning/pg.txt
+
+
+Note: This page was written ages ago! Things may have changed, and players
+have grown more powerful, so use the page wisely and don't trust it blindly.
+
+
+!!! PG GUIDE !!!
+
+=======================================================
+
+Followers' guide:
+
+This note is for all newbies, ie 95% of the people on the mud (won't
+say 95% of people reading this, because only 5% of the ones who needs
+it actually reads help files).
+
+* Bring a BOAT, bring a BOAT, bring a BOAT!!!
+There is no need to waste priests' mana by having to ask for summon because
+the group walked over some water, or leader's time by returning and trying
+to find an ak mage to cast fly on you.
+
+* Set second in Myrridon. If it's your first trip to NC (NC=New Continent.
+You will notice when going there by grouptells about NC, waiting by a
+shore, boarding a ship and then standing still for some time while the
+boat takes you to the other continent) TELL the leader that you haven't
+been there before and he will hopefully help you set that place as
+second hometown. Second hometown means that whenever you are in NC and
+recall, you will end up in the Myrridon temple. If you haven't set
+hometown, you will recall to Karandras.
+
+* Bring a BOAT!
+
+* LISTEN to the leader. OBEY the leader. What he says is the LAW!
+Don't try to smalltalk with the leader. He's busy leading.
+It might be a good thing to have a trigger on "<Groupleader> tells the
+group, 'enter/drink Xxx'". That way he won't have to wait for you to
+get back to the screen when going to certain areas / fighting certain
+mobs.
+
+* Bring a BOAT!
+
+* Anchor means a guy who stays behind so people who die/contingency/gets
+teleported/... has some means to get back. The anchor is usually a priest,
+since he can "summon" you back. In some cases the anchor needs to do a bit
+more than just stay put and summon. Against Malius he'll have to take over the
+leadership and against Master Brain he has to create a gate.
+
+* Do NOT use single-spells in wild-magic rooms. Try to learn where these
+rooms are. There aren't really that many.
+
+* Teaming up to wither a mob: If you are a priest, find another priest in the
+group to team up with. Make sure this person KNOWS that you two are working
+together. Also make sure the group knows you are teamed up (You don't want the
+summoner to get lagged because others are using him for spells).
+Decide who is summoner and ho is witherer. Make sure the summoner is ready to
+summon. The witherer then moves into the room with the mob, tells the
+summoner "summon" and casts "wither" on the mob. IN THAT ORDER! Wither gives
+you a 10 second waitstate, so telling the priest "summon" after you've cast
+your spell means you
+ a) didn't need to be summoned this time.
+ b) are already dead.
+Make sure these three commands (move, ask for summon, wither) are sent with no
+delay. You can't type the commands by hand - you'll get summoned before you
+manage to cast wither. Use script-alias or mud-alias. Or copy the three
+commands into a buffer and paste them into the shell.
+
+* To get to the group, if it's not in Karandras, dimdoor (if you are a mage)
+or ask a priest. If unsure, ask someone in the group where the group is.
+You can't get summons to a different continent, into Apocalypse, DarkSpawn,
+Underworld and some other places.
+Before asking for a summon back into a battle who's killed several people,
+check on "where" first. Telling a priest who just died "summon" means you
+will just get summoned to sfs, spending valuable priest mana.
+Also, try to see if the group is at recall. If so, you don't need to
+ask for summon to get to the group.
+
+* Bring a BOAT!
+
+* If blinded, wait a little before complaining. Priests _should_ gheal after
+fights against mass-blinding mobs. Unfortunately nobody does, but some leaders
+actually asks the priests for groupheals when people get blinded.
+
+* If we are resting and you have full mana and heal ability, _spend_ some of
+that mana to heal someone. If you are highest level in the group and have
+access to the armor spell, cast it on the tank, rogues & nightblades. Casting
+regenerate on non-priest spellcasters, group blessing, recasting holyword,
+spelling up yourself,... Never hurts to do if you have full mana.
+
+* Turn OFF autoloot, but keep autogold ON. ALWAYS have autosplit ON.
+
+* Try to stay with the group. If you need to recall to buy onions/etc, do it
+fast.
+
+* Bring enough recall stuff to last you the whole pg. If you _do_ run out of
+them, try recalling the "normal" way before asking for summons to get to town.
+
+* Bring a BOAT!
+
+And finally...
+BRING A BOAT!!!
+
+
+=======================================================
+=======================================================
+
+Leaders' guide:
+
+This is how the information is given:
+The mobs are listed and sorted by area name (but divided into OC and NC
+areas). For each area there is a header, then the mob list and finally any
+area specific information.
+Directions are given only in a few, special cases. If you can't find the mob,
+or have trouble even finding the area, LEARN! EXPLORE! A PG leader should not
+have to ask for directions during the PG. Having speedies helps, but if you
+don't have any clue about the area it doesn't help if I give you the exact
+path and exact do:s and dont:s - you will still fail!
+
+
+Header info:
+<area name>: The name of the area
+Lvl: Mob level
+A  : Alignment (G/N/E)
+S  : Sanc ("x" if sanced, "-" if not)
+W  : Walking ("x" if walking, "-" if not)
+I  : Detect invis (x/-)
+D  : Sees in darkness (x/-)
+M  : Memory (x/-)
+agg: Aggressive (G/- N/- E/-). "G-E" means aggressive to good & evil, but not
+     to neutral. "G -" means aggressive to good, not aggressive to evil and no
+     knowledge about neutrals.
+Hp : Hitpoints. Given as range when possible. "873-1013" means the mob can
+     have as low as 873 and as high as 1013 hitpoints. NOTE: The range may be
+     wider (hard to know maxhp without killing the mob hundreds of times).
+     A "~" preceeding the hp means that this is just an estimation.
+Gold: How much gold the mob has
+
+Mob list info:
+Spec: Any special information about the mob, like vulnerabilities,
+      resistances, if it's an info mob (INFO), what spells it casts 
+      (powerblind, mass pain), etc.
+Info: Good-to-know about the mob
+Eq  : Sometimes omitting non-important items
+Size: Number of people needed (assuming "normal" group and giving a fair
+      chance to kill). Note that a size 20 mob might be soloable or might
+      slaughter a size 40 group, depending on the group composition). I'm
+      guessing quite a lot here.
+
+-----------------
+   Smaller  OC
+-----------------
+Abandoned Caves  Proto Shoggoth  Elder sign
+Abandoned Caves  Shub-Niggurath  Pnakotic manuscript
+Alchor           Warchief        Galvorn stuff
+Antiriad         Lord Sith       Money & stuff?      He can murder!
+Antiriad         Poltergeist     Thick black (POD)
+Atlantis         Neptunus        1M
+Black Castle     ?
+Citadel          Lady & Lord+    3M + 1.2M + 2x 750k
+Citadel of Order Grand master    quest ancients boots & more
+Dark Spawn       Lurk            skaven fang         vuln pure/light
+Dark Spawn       Olg             lawbringer          plate=vuln fire. AFeeble
+Dark Spawn       Uma             wolf staff          vuln fire. Deathspell
+Darkfriends      Grandmaster     the Dirk
+Darkwater        Kracken         Beryllium eye       hide=vuln acid
+Desolate Plains  Dark Rythsish   black hole          vuln energy, resist weapon
+Desolate Plains  Demigod         eq                  irv:s? 
+Desolate Plains  Plasma dragon   alien cloak         slay dragon
+Desolate Plains  Pred Yrric      eq                  irv:s?
+Dragonspyre      Eternity Dragon pendant             slay dragon
+Drakyri          Tons!           Just kill everything with eq
+Earthsea         Green dragon    dragon tailed whip  tough!
+Earthsea         Powerful Mage   Diamond ring        slay human
+Enchanted Forest 12-h hydra      eq                  slay dragon
+Enchanted Forest Red Wyrm        700k                slay dragon
+Enchanted Forest Tarrasque       eq                  slay dragon
+Fishing Village  Will            fishing rod         human
+Gorm             Chef            Master Chefs Kris   Need the buried key
+Gorm             Hedgehog        Skin & boots
+Haon Dor         Oak tree        Dead roots
+Hightower        MoM             ?                   Remember chest & backpack
+Ice Castle       ?
+Icewall          Remorhaz        Hero bracelet
+Icewall          Sleet           Dragon orb
+Inglestone       Bottom mobs     Eq
+Inglestone       King Rok        Eq & chest key
+Krashkarand      Garatza         Askari & Chakara & 650k
+Laboratory       SoulStealer     ball/hood/cape/book
+Lethriels Crypt  Demons          4x 1.5M             Only if area prepared
+Lorca            Bustibieren     lava dagger         slay human
+Lorca            Fayador         pathweaver          slay human
+Lost Temple      Statue          Telva-key           ring + 3M
+Mahn-Tor         Mahn-Tor        Axe                 resist weapon
+Mirror Beyond    Detrom          quest eq            slay human
+Museum           Jogath          Plate of Invulnerab.
+Museum           Tomarin         gloves of casting   resist weapon
+Museum           Zelboth         Black visor of omnis.
+Olympus          Hera            Sapphire ring
+Olympus          Poseidon        Poseidon's Trident
+Olympus          Ra              Sword of the Sun    First give all trash!!!
+Olympus          Shiva           Shiva's trident
+Olympus          Zeus            Thunder Bolt
+Pathweaver3      Garoth          Crystal ball        Give PW, tome, ball. Wait
+Redfernes        Grand Knight    Eq
+Reef             Keeper          Talislantan elbow   Octopus
+Sin              Azrael          quest head          Past tunnel room
+Sin              Crowley         quest Kama Sutra
+Sin              Feast           quest spoon
+Solom            Ancient ghost   quest wand of life  vuln energy, immune pierce
+Solom            Golden titan    quest breastplate
+Storm Giant      Goluk           quest symbol of storms
+Storm Giant      SgKing          quest ring          Need healers and areadam
+Taon             Embodiments     eq                  different specials
+Tomaaukkhen      Statue+Nahual+King  eq              Cake
+Toormail         Tons!           Just kill everything!
+Underworld       Odysseus        blaze of radiance   vuln dark. Tough?
+Unholy Darkness  Cain            1M + questbook      slay human
+Unholy Darkness  Ghanz           eq                  slay human
+Venden           Coyote          Leash
+Venden           Hermit          Void
+
+-----------------
+   Smaller  NC
+-----------------
+Apocalypse       Plenty          eq
+Battlefields     ...?
+Clerists         Skye            eq                  slay dragon (need orb)
+Dunheim          Lady Sarah      eq                  slay human, agg maids
+Dunheim          Lord Dareil     eq                  slay human
+Guallidurth      King            eq                  (vuln fire), murders
+Guallidurth      Pardus          Head                vuln pure/light, murders
+Haarvenu         Guardian        Runic spear         vuln pure/light
+Inferno          Jirikai         eq                  vuln pure/light
+Inferno          Sentry          eq                  no vulns
+Lorchid          MotROOTS        eq                  vuln acid? (fire)
+Lorchid          Worchdo         boots               resists tons
+Myrridon         Gatekeeper      belt                slay human
+Myrridon         Wizard          snake hammer        slay human
+Narnia           Aslan           eq                  mental?
+Oblivion         Freiza & other  Freiza's chains     
+Tournament       Paladin         eq                  human, great ac
+Tournament       Knight          eq                  human, shrugger
+Tournament       Torturer        whip                human, cake
+Underground      Bob             eq                  (vuln silver)
+
+
+
+-------------------------------------------------------
+                          O C
+-------------------------------------------------------
+
+Abandoned Caves:         Lvl ASWIDM agg     Hp        Gold
+The proto shoggoth        85 Nx x   G                  0-0
+Spec: 
+Info: Cake mob for PG. Just kill!
+Eq  : elder sign
+Size: 10
+AREA:
+
+Amber Keep:              Lvl ASWIDM agg     Hp        Gold
+Gandolf                  97+ Gx-xxx ---~57409      65969-66083
+Spec: INFO, vuln iron/unlife/dark, blindness, triad of fire, mass pain,
+      teleport, sleep
+Info: Path from entrance is: 2e2seu2e3su2s (kill guards, unlock gate) s (kill
+      aggies) s (kill aggies) e (kill aggies) nus (kill aggies) w (kill
+      aggies) wuw (kill aggies) s (kill magi) enter portal. Beware that
+      gandalf teleports people away. Ak priests should try summon teleported
+      people back.
+Eq  : scarab of protection, ring of sustenance, ornate glass shield, cloak of
+      the elvenkind, elven chainmail coif/sleeves/suit/leggings, holy avenger,
+      manual of "Stealthy Pilfering"
+Size: 20
+AREA:
+
+Amphitheatre:              Lvl ASWIDM agg     Hp        Gold
+The red dragon             96+ E--    G             554767-595062
+Spec: vuln slay dragon, shrugger, hell storm
+Info: Mordja will appear when dragon dies, so save some mana for that battle
+Eq  : cut of tail of the red Dragon
+Size: 15
+Mordja the demon lord      96+ Ex                    12850-13649
+Spec: immune weapon, can push you into drain-room
+Info:
+Eq  : huge bastard sword named "Cthrek-Goru"
+Size: 20
+Zandramas the child of dark96+ Ex-x   GN-                2-2
+Spec: shrugger, vuln light, push-special
+Info: Use energy on high priests and iron on warrior priests (NOT pure/light).
+      Once up the stairs, make some outpost and let people heal up a bit.
+      North of this is NOMAG! Have everyone spell up and go 3n2e3ne and kill
+      the dragon (warn people to save some mana for Mordja, who appears when
+      dragon is dead and who is immune to weapon). Once done, go back to the
+      outost and heal up. People who have been pushed east during battle will
+      be drained of all mana. Either have them wait there or have them enter
+      flames and hope to be pushed out by Zandramas. Once all ready, walk
+      back (3n2e3ne, and then go east and tell people to "enter flame". Then
+      enter yourself too. Warn people that if kicked out, they should go
+      3n2e3n2e and then enter flame to get back to Zandy. Zandy-room is noflee/
+      norecall
+Eq  : Shadow binded protectors, Black crimson cape, Blood spear, key to the
+      altar that holds sardien
+Size: 25
+AREA:
+
+Ancient Lands:           Lvl ASWIDM agg     Hp        Gold
+The tyrannosaurus rex    95+ Nxxx   GNE                1
+Spec:
+Info: Hits hard! Just track Rex and peek. When found, cop and rest up if
+      needed. His boots are pop-on-death
+Eq  : boots formed from a rexian hide
+Size: 30
+AREA: Area is norecall north of the entry point, so after battle, either pick
+      up all corpses, or go back to entry, summon those who died and lead them
+      back to their corpses.
+
+Astral Plane:            Lvl ASWIDM agg     Hp        Gold
+Torture Master
+Spec:
+Info: VERY tough guy! Switches into some bat form now and then, and when he
+      is, only area spells seem able to damage him.
+Eq  : Flexible blackened arm greaves, Nightwalker's buckler, Torture blade
+Size: 50
+Mistress
+Spec:
+Info: Has a couple of guardians, so areaspell until they are dead.
+Eq  : fanged tiara, heart of a tortured mind flayer, black pentagram (key for
+      the hole down)
+Size: 25
+AREA: First part of this place is a maze. You get in by killing the guardian
+      and entering the portal. Then go 2nwnwunenenun to get to the non-maze
+      area (walk slowly - aggies on the way) or have a rogue track "gith".
+
+Fang's Black Castle:     Lvl ASWIDM agg     Hp         Gold
+The silver dragon      82-85 Nx-x   G
+Spec: vuln slay dragon, resist fire/ice/earth/air/gas, forceflee-stun
+      (tailstrike)
+Info: Can stun you and can use its tail to whip you out of the room.
+Eq  : silver wyrmskin
+Size: 10
+The undead king        77-80 Ex-x   G
+Spec: resist slash/pierce, invis, wrath of god, energy drain, powerword kill,
+      entropy, powerharm, blindness, wither, 2 spells per sound
+Info: Powerword kill is never fun. And you should use crushing weapons on him.
+Eq  : golden helmet/combat platemail/leggings/broadsword
+Size: 15
+The prince of evil        75 Ex-x   G
+Spec: bash, kick, headbang, vuln pure/light/iron, immune fire, resist unlife
+      dark/poison
+Info: Hits hard for his level, but that's all.
+Eq  : red strip of leather, the royal rapier, sparkling prism
+Size: 5
+AREA: Some keys are needed to get inside. From entrance go n-w, kill captain,
+      get key, e, unlock iron, eu2w2ne (past aggies), kill commander,
+      w2n2edw3s (past aggies), unlock door, s, kill wraith, get key. Now go
+      back to entrance and go northwards instead. Unlock the door and you're
+      inside the castle
+
+Varak-Ki Caverns:        Lvl ASWIDM agg     Hp        Gold
+The Great Black Dragon    91 E--x   G  51078-51169     0-0
+Spec: vuln ice/slay dragon, resist fire, sitting, breathe acid, 7-9 attacks
+Info: Aggressive and sitting, so with aggie-flag turned off you can enter and
+      cast wither/curse/poison/... on him without danger. But probably is easy
+      enough to kill anyway
+Eq  : scaled black dragon hide, tail of a black dragon, dark key (for the door
+      north, to galvorn elbowpad, black breastplate, hammer of bogarden and
+      1400000 gold)
+Size: 10
+AREA:
+
+Citadel of Order:                 Lvl ASWIDM agg      Hp        Gold
+The Dark Paladin grand master   92-95 Exxx   G E~48343       66874-66884
+Spec: INFO, vuln slay human, blocker, harm, wrath of god, trueheal, mass-
+      wither, 1-2 spells per round
+Info: Some aggies on the way there, but apart from that, nothing special.
+Eq  : A load of half-decent stuff, including some interesting boots
+Size: 15
+AREA:
+
+Darkfriends:                  Lvl ASWIDM agg     Hp         Gold
+The Grandmaster of DarkFriends 85 N--x   G  38001-38001 100001-100001
+Spec: INFO, vuln slay human, hide, backstab
+Info: Simple mob for a PG. Just go straight up to him and kill. Lots of aggies
+      on the way. Need a lock picker and might also need some keys along the
+      way. He has a lvl 60 panther as a pet, but it doesn't make much
+      difference. Don't miss the band of shadow by the door and the band of
+      light from the hinge after killing him.
+Eq  : black eog bracers, huge Eog warshield, black dragon skin armor, bright
+      blue cape, black eog greaves, The Dirk
+Size: 15
+AREA:
+
+Cain's Dark Spawn:       Lvl ASWIDM agg     Hp        Gold
+Lurk                      95 Ex x   G -          2009446-2012132
+Spec: INFO  vuln pure/light
+Info:
+Eq  : Skaven Fang
+Size: 20
+Olg                      95+ Nx                  2012856-2013022
+Spec: INFO, feeblemind
+Info:
+Eq  : Plate of the seventh star, Runeblade 'Lawbringer'
+Size: 20
+Szeess                   95+ E--     N           3004428-3009668
+Spec: INFO, invis, shrugger, mass-wither
+Info: 
+Eq  : pitch black ring/gauntlets/boots, Morning star of the seventh
+Size: 30
+Uma                      95+ N-x    ---          3000152-3000161
+Spec: vuln fire
+Info:
+Eq  : Cloak of the seventh star, Wolf headed battle staff
+Size: 25
+Tixin'erto
+Spec:
+Info: The area around Tix drains moves, and corpses fall into DT:s after a
+      very short time. You might need fly, not sure. Doesn't hurt to give
+      everyone some revitalize-herbs, but that will only help AK players.
+      Better get some staves of revitalizing (oak staff), to make sure the
+      whole group is revitalized before you move. Also, it might be good to
+      ask others to help you loot too, so the corpse doesn't get lost before
+      you get tó loot it. Unprepared, this area will ruin your day. If going
+      for Tix, you might want to have a mage locate "phase". Phase spiders in
+      that vincinity can have Phase spider leggings, which is a really nice ac
+      piece.
+Eq  : Orb of twilight, Spider-shaped pendant, Spider-webbed wrist guard,
+      Spider-Webbed boots
+Size: 35
+AREA: To enter the area you have to enter the tree in Enchanted Forest (agg
+      evil druid just inside), then go all the way down and "drink well",
+      which blinds you and takes you to the area. The whole area is Nosum
+      Norecall. Only exit is to "drink well" at the exit point on the lower
+      level (past aggies).
+
+Darkwater Dungeon:       Lvl ASWIDM agg     Hp        Gold
+The Kracken              95+ Ex-x   GN             65536
+Spec: INFO, blocker, tail-special, vuln acid if using "Hide of the Kracken"
+Info: to get to Kracken you must first kill the king. Go all down, then
+      6esusuen (doors need to be opened), enter outflow, kill king, get his
+      key, go wde3n, unlock door east, go east, have someone "pick grill" and
+      then you'll find him one step down. Have a mage locate "kracken". If he
+      has the hide, use acid on him.
+Eq  : Hide of the Kracken, Beryllium eye
+Size: 20
+AREA:
+
+Demon City:              Lvl ASWIDM agg     Hp        Gold
+Solus:                       E      ---
+Spec: vuln slay mythical, mass-wither, mass-blind, summon Moloch
+Info: To get to him, go 3nwnw2nenunwn from entrance (some doors will need to
+      be picked) and Solus is up from there. If small pg, you might want to
+      wither him first. Have a mage powerblind him and then let the priests do
+      their work. If Solus flails he may summon molochs that will need to be
+      killed before resuming. He may also powerheal, in which case a new
+      powerblind may be needed (depending on if powerheal cures blindness for
+      mobs). When fighting him, priests should use gheal and NOT gpow, since
+      Solus has mass wither. And magic users should use area spells since he
+      summons molochs.
+Eq  : Celestial crown, bones of the Nexus beast, Mantle of the Kor-Skarn,
+      Ethereal Slayer
+Size: 30 (if 40+, don't bother withering)
+Ludvaraman               95+                      139019
+Spec: vuln silver
+Info: Cake mob
+Eq  : king-size boots
+Size: 10
+AREA:
+
+Desolate Plains:         Lvl ASWIDM agg     Hp        Gold
+Pred Yrric                90 E--xx  G              50399
+Spec: INFO, resist unlife, invis, shrugger, blindness, haste, plasma ball
+Info:
+Eq  : Has a key to the door south, where you can find the same eq as Demigod
+      has.
+Size: 20
+Dark Rythsish          92-95 E--x   G E                0
+Spec: INFO, vuln energy, immune unlife, resist WEAPON, shrugger, invis, hell
+      fire, powerheal, mass pain, harm, wither, blindness, confusion, 2 spells
+      per round, -50 ac
+Info:
+Eq  : black hole, large 2H sword
+Size: 15
+Demigod                  97+ G--xxx -              50634
+Spec: INFO, powerheal
+Info:
+Eq  : High-champions helmet/armplates/gloves/boots
+Size: 15
+AREA:
+
+Dragonspyre:                    Lvl ASWIDM agg     Hp        Gold
+The Eternity Dragon              95 Nxxxxx - ~48000
+Spec: vuln slay dragon, resist fire/ice/earth/air/gas, invis, shrugger
+Info: Walks around. Usually pretty close to the entrance
+Eq  : pendant of eternity
+Size: 20
+AREA:
+
+Drakyri:                 Lvl ASWIDM agg     Hp        Gold
+The Claw                 95+ Ex-    ---            57616-58165
+Spec: INFO, vuln pure/light, fireball, areaspells
+Info:
+Eq  : -
+Size: 20
+The Fist                 95+ Nx-  x ---            56881-58165
+Spec: INFO, areaspells, ? & sentinel before being attacked - moved s2ws and
+      flying after
+Info:
+Eq  : laerkai might
+Size: 20
+The Flame                95+ Nx-    ---            56500-57868
+Spec: INFO, vuln ice, immune fire, areaspells
+Info:
+Eq  : laerkai fury
+Size: 20
+The Hand                 95+ Nx-  x ---            56739-57894
+Spec: INFO, sitting, vuln fire, areaspells
+Info:
+Eq  : laerkai life
+Size: 20
+The Shadow               95+ Nx-    ---            57271-58030
+Spec: INFO, vuln iron/unlife, hide, backstab, 3 backstabs per round
+Info:
+Eq  : laerkai stealth
+Size: 20
+The Shield               95+ Gx-    ---            57500-59105
+Spec: INFO, vuln dark, forceflee
+Info:
+Eq  : laerkai justice
+Size: 20
+The Laerkai Master       96+ Nx-    G              59342-59667
+Spec: INFO, vuln fire, invis, hide
+Info: summons Hand/Flame/Fist/Claw/Shield/Shadow if alive, so kill them first.
+Eq  : Zedraikis
+Size: 25
+The Guardian             96+ Nx-x   G E            56166-57234
+Spec: INFO, vuln fire, miracle
+Info:
+Eq  : has the key to the mediator
+Size: 15
+The Mediator             95+ Nx-x   G E~67723      58845-62194
+Spec: INFO, vuln fire, invis, manashield, mira, trueheal, wrath of god, mass
+      wither, mass-blind, mass forcebolt
+Info: summons Hand/Flame/Fist/Claw/Shield/Shadow if alive, so kill them first.
+Eq  : flame of balance, laerkai power
+Size: 30
+AREA: Chake is an agg-good mob that moves between his home and the shop. Might
+      be good to keep an eye on where he is so he doesn't stumble into you
+      when you're fighting someone (or in the shop, since it's nomag). Many
+      other mobs here are also moving around.
+
+EarthSea:                Lvl ASWIDM agg     Hp        Gold
+Red Dragon
+Spec:
+Info:
+Eq  : helm of dragon kind
+Size: 15
+Green dragon
+Spec:
+Info: Nasty area damage
+Eq  : diamond brooch, dragon tailed whip
+Size: 25
+Powerful Mage
+Spec:
+Info:
+Eq  : diamond brooch, diamond ring
+Size: 15
+Holy Draconian
+Spec:
+Info:
+Eq  : holy symbol, platinum bracelet, white silk belt
+Size: 15
+King
+Spec:
+Info:
+Eq  : spiked gauntlets, crested shield, fur cloak, emerald sword
+Size: 15
+Queen
+Spec:
+Info: Flees a lot
+Eq  : dragon skin bracelet, black silk belt
+Size: 15
+White Dragon
+Spec:
+Info:
+Eq  : some scale mail
+Size: 15
+Black Dragon
+Spec:
+Info: Flees a lot
+Eq  : dragon scale leggings
+Size: 15
+Ged
+Spec:
+Info:
+Eq  : diamond dagger
+Size: 20
+AREA: When entering the are where red & green dragon is, you can't walk back,
+      so either leave someone outside or be prepared to recall and walk back.
+
+Fire Elemental Plains:   Lvl ASWIDM agg     Hp        Gold
+Fire Giant King           95 Ex-x   G      ?           ?
+Spec: INFO, hell storm, immune fire, call for guards (which ones?) summon
+      guards?
+Info: The king calls for/summons guards. Not sure which ones, but it doesn't
+      hurt to kill all guards in the area before attacking the king.
+Eq  : fiery elbow protector/bracelet/knee protector, Ethereal Platemail,
+      hammer of raging flame, Hammer of Thunderbolts
+Size: 35
+AREA: To get past the maze, from entrance, walk nnewwswsseeu (aggies on the
+      way)
+
+Elven Village:              Lvl ASWIDM agg     Hp        Gold
+The Champion                 99 Gxxxxx - ~50000           ?
+Spec: INFO?, vuln iron/unlife/dark, resist pure/light/magic, shrugger
+Info: Can walk out of the area. Often found in Galaxy.
+Eq  : mithril chainmail, diamond-edged sword
+Size: 20
+AREA:
+
+Enchanted Forest:        Lvl ASWIDM agg     Hp        Gold
+A great red wyrm       85-86 Ex-xxx G             700000
+Spec: INFO, sleeping, vuln slay dragon, resist fire/ice, hide
+Info: room is noflee/norecall. Xp-mob, but can just as well be killed on the
+      way to the Tarrasque
+Eq  : copper flask, cold-iron scimitar
+Size: 10
+The umber hulk         75-76 Ex-x   G  10923       32694-34070
+Spec: no vulns?, no resistances?, hide, forceflee, special-claw-attack
+Info: Just an obstacle on the way to the Tarrasque
+Eq  : -
+Size: 5
+A hydra with 12 heads  82-86 Exxx   G
+Spec: hide
+Info: Obstacle on the way to the Tarrasque
+Eq  : glowing ring, ring with a purple glowing stone, hydra skin sleeves,
+      hydra skin boots, glowing feather
+Size: 10
+The Tarrasque            95+  x      N             65535
+Spec: vapes worn about, destroys sanc, claw-special
+Info: vapes worn about eq, so gtell "rem about" etc before battle. Can destroy
+      sanc, so won't hurt to look now and then and ask for another holy if too
+      many without sanc,
+Eq  : helmet with one horn, embroidered mantle, dark leather sleeves/gloves
+      belt, heavy winter cloak, huge stone club
+Size: 15
+AREA:
+
+Gorm:                    Lvl ASWIDM agg     Hp        Gold
+King Gorm                 95 E -    GNE ~102652    65752
+Spec: vuln slay troll/fire/acid/poison/pure?/light?, manashield, mass-wither
+Info: To get to the king you need a set of keys. One is found buried on the
+      west side (blue), one is by the statue (red), one on dragon guard 
+      black), one on hedgehog (brown) and the final one is on beastmaster 
+      kill the Chef too, for his Master Chefs Kris). Getting the final key
+      will merge them into a master key. From beastmaster, go sene2swswse
+      unlock door-s. Then gtell "flee king east" (someone must enter the king
+      s room, to make him flee). He will then move to his hideout. Do "where
+      king" to make sure he has moved. Once outside his hideout, rest and
+      prepare.
+Eq  : beastmasters neckchain, Beastmaster ring, ring of Gorm, large grey hide,
+      Gorm's dragon slayer
+Size: 25
+AREA: Gorms are all trolls: vuln fire/slay troll. Most are vuln acid & poison
+      too.
+
+Graveyard:               Lvl ASWIDM agg     Hp        Gold
+Count Dracula          92-95 Ex-x   G             1000001
+Spec: vuln pure/light/wood/silver, immune unlife/dark, wields/unwields his
+      sword during fight
+Info: Need picker to get inside graveyard. Also need to kill a priest and
+      Snapper Joe (or pick) and a few agg mobs on the way.
+Eq  : dark black cape, pitch-black longsword that flames brightly
+Size: 20
+AREA:
+
+Haon-Dor:                   Lvl ASWIDM agg     Hp        Gold
+A huge, ancient oak tree     95 Nxxxxx -      ?       600989
+Spec: INFO, vuln acid
+Info: Rarely pops the eq. Have a mage locate "root" before bothering.
+Eq  : dead roots
+Size: 15
+AREA:
+
+High Tower of Sorcery:      Lvl ASWIDM agg     Hp        Gold
+The Grand Mistress        82-86 Nx-x - -
+Spec: vuln slay human, wither, blindness, harm, powerheal, confusion, hell
+      fire, mass pain, 1-2 spells per sound
+Info: Cake for a PG. Top floor. Some minor aggies on the way. Once mistress is
+      dead you can just as well kill her cat for a neat collar, then go n-e
+      and loot her chest and finally w-w to loot some backpack
+Eq  : small sapphire ring, sapphire bracelet, tight fitting green dragon scale
+      shirt, ebony kris
+Size: 10
+AREA:
+
+Ice Castle:              Lvl ASWIDM agg     Hp        Gold
+The Spring Ruler         94+
+Spec: vuln acid, immune fire
+Info:
+Eq  : Claw of Penetration
+Size: 20
+King Aryan               94+
+Spec: vuln slay human
+Info:
+Eq  : necklace of ice, large ice quiver
+Size: 20
+The Lady of Summer       94+
+Spec: vuln slay human/acid?
+Info:
+Eq  : spiked elbow protector, spiked knee protector
+Size: 20
+Evil Witch
+Spec:
+Info:
+Eq  : ice slippers, genocide book, handbook of Witch-knowledge
+Size: 20
+Lightbeam
+Spec:
+Info:
+Eq  : ice climbing boots
+Size: 20
+AREA: Ice guards seem vulnerable to slay human. Careful in the stairwell -
+      wild magic there. You must kill the guard at the bottom of the stairs,
+      get his key and loot the box there. It has the keys for all other
+      doors.
+
+Ice Wall:                Lvl ASWIDM agg     Hp        Gold
+Chief Wahoo              80?   x
+Spec: powerheal, summon indians
+Info: Need a lock picker to get to him. Watch out for the DT nearby
+Eq  : chief Wahoo's headpiece, Tribal Fur, Wahoo's spear
+Size: 5
+Sleet
+Spec:
+Info: Can stun people
+Eq  : Dragon Orb
+Size: 10
+Remorhaz
+Spec:
+Info: Need picker to get to him, 2 smaller aggies in the same room, so area
+      until they are dead.
+Eq  : Hero Bracelet
+Size: 10
+Feal Thas
+Spec:
+Info: 10
+Eq  : Dragon Helm, Dragon Armor, Sword of the Draco
+Size: 10
+AREA:
+
+Kaltor:                  Lvl ASWIDM agg     Hp        Gold
+Balgroth the Lich-King   95+ Ex x   G E          1000001
+Spec: invis, bloodmirror, magic missile (spam)
+Info: Casts area magic missile, so prepare for spam unless you have it gagged.
+      Good idea is to to tell people to "gag all all set" before messing with
+      this guy.
+Eq  : Lich's skull, Spectral shield, some tattered robes
+Size: 25
+Kaltar the Paladin-King  95+ Gx       E          5000001
+Spec: invis, vuln slay human
+Info:
+Eq  : incandescent helm of the gods, gauntlets of the righteous crusader,
+      blessed platemail
+Size: 30
+AREA: 
+
+Kerjim:                  Lvl ASWIDM agg     Hp        Gold
+Kerjim
+Spec: summons skeletons & celebdels and summons you back as well.
+Info:
+Eq  : glowing armplates, gothic kris
+Size: 20
+AREA: All balrogs are vulnerable to iron/pure/light. Both Kerjim and Balrog
+      shamans summon you back if you flee/recall from them, so if exploring
+      down here, be careful. And if attacking Kerjim, make sure you kill him!
+
+Laboratory:              Lvl ASWIDM agg     Hp         Gold
+The SoulStealer          96+ Ex-x x ---           2000000-2000000
+Spec: INFO, sitting, invis, hide, vuln pure/light/iron, resist dark, plasma
+      ball, wither, trueheal, plasma bolt, powerword blind, mass-blind, 2
+      spells per round
+Info: Since he is sitting to begin with, and not agg, you can go in and cast
+      all sorts of nasty spells on him to weaken him up (poison, curse,
+      wither, ...). Lots'a blindness and area damage here, so have priests
+      prepared.
+Eq  : shimmering ball of light, Soulstealer's hood, soulstealers black cape,
+      Soulstealer's book, Dark potion (mira)
+Size: 30
+AREA: DT on the first floor, irregular maze on the second and a few aggies on
+      floor 3 - nothing dangerous except the SoulStealer
+
+Lagamore:                Lvl ASWIDM agg     Hp        Gold
+The Master                85 Gxx  x -      ?           ?
+Spec: Throws you 1-2 rooms, sitting, vuln slay human, powerheal, INFO?
+Info: Sitting, so you can spell him down safely before attacking. Don't flee
+      from his room or you'll probably just enter a DT. When he throws you
+      away you will have to walk 25 or so steps to get back in, so make sure
+      you have summoners ready.
+Eq  : black lacquered guard/gauntlets, blue hakama, Ancient Katana
+Size: 5
+AREA: You will need a picker to get to the master.
+
+Lorca:                   Lvl ASWIDM agg     Hp        Gold
+Bustibirien
+Spec:
+Info: 
+Eq  : armplates of darkness, dagger of red-hot lava, staff of the plasma demon
+Size: 15
+Fayador                91-95
+Spec: vuln slay human
+Info: Often killed by xp groups, but worth the few extra steps on the way to
+      Busti or Rex. Pathweavers are always needed. DT south of him.
+Eq  : PathWeavers blade
+Size: 10
+AREA: Don't sleep in the marsh.
+
+Lost Temple:             Lvl ASWIDM agg     Hp        Gold
+The Statue                80 Nx-x x -  11780-11784  7403-7519
+Spec: resist fire/ice/unlife/earth/air, shrugger
+Info:
+Eq  : Key leading to Telva's ring
+Size: 5
+AREA: Easy aggies around, but move slow, since they aren't aggressive to
+      evil.
+
+Mahn Tor:                Lvl ASWIDM agg     Hp        Gold
+Mahn-Tor               79-80 Ex-x x -      ?
+Spec: INFO?, vuln bleed?, invis, shrugger, bash, headbang, 3 skills per round
+Info:
+Eq  : horned minotaur helm, studded ring, spiked buckler, black minotaur
+      chainmail, major globe of invulnerability, Mahn-Tor's Great Axe
+Size: 5
+AREA: 8 mobs (lvl 50-60) nearby with pretty neat eq. Not worth killing for a
+      PG, but might be interesting for a mini-PG or for soloing.
+
+Mirror Beyond:           Lvl ASWIDM agg     Hp        Gold
+Detrom                   97+ N--x   GN     ?           ?
+Spec: INFO, Only appears if someone enters his room. NOT vuln heal but starts
+      at awful and gains hp when you hurt him. Dies when on full hp.
+Info: Detrom is a corpse first but will soon jump up and attack you. He starts
+      off at "awful" condition and will die when he reaches "excellent".
+Eq  : tapered eog amulet, leggings of absorption, Detroms dogtags
+Size: 15
+AREA: There are 10 mirrors spread out in the world. Only one is possible to
+      enter at any given time. Which mirror to enter changes from time to
+      time. Don't know about time intervals nor if there is any specific order
+      in which they change. The area has a DT and all exits are reversed, so
+      if you eg want to go west, you should go east. Very small area.
+
+Museum:                  Lvl ASWIDM agg     Hp        Gold
+Tomarin                87-89 G--x x - ~55000
+Spec: resist weapon, agg-sleeper, hell storm, blindness, triad of fire, armor,
+      energy drain, teleport, blur, 2 spells per round
+Info:
+Eq  : gloves of casting
+Size: 15
+Jogath                 92-94 G--x x -
+Spec: agg-sleeper, blocker, bash
+Info:
+Eq  : Plate of Invulnerability
+Size: 10
+Zelboth                   90 G--x x -
+Spec: agg-sleeper, wrath of god, trueheal, noflee-room
+Info:
+Eq  : Black visor of omniscense
+Size: 10
+AREA: Getting to these mobs require you to getting an orb (key) close to the
+      door. If not on the ground, It's been picked up by one of the hidden
+      elite guards. Walking past any of these three mobs will take you back to
+      the center bottom of the area. All three mobs are there only
+      sporadically. If not there, I don't think they can appear until after
+      boot. Have a priest try to summon them to find out if they are there or
+      not. I _think_ their eq are pop-on-death, but not sure.
+
+Mustaine:                Lvl ASWIDM agg     Hp        Gold
+King Mustaine             94 Gx-x   - ~45254       65536-65536
+Spec: INFO, vuln slay human, invis, shrugger, blocker, kick
+Info: Room is safe and noflee, so when you attack him, make sure you have what
+      it takes to finish him.
+Eq  : steel spiked helm, "Electrum Plectrum" shield, steel capped boots, the King's sword
+Size: 10
+The Wraith               97+ Ex-x   GNE~75834          1-1
+Spec: INFO, invis, hide, immune weapon?, blocker, mass-blind, mass-wither
+Info: Jailor has key for his cell. Have priests prepared for area healing.
+      Since he withers and blinds I'd suggest having priests on gheal (since
+      gpow would drain them in a second and won't heal blindness)
+Eq  : death shroud, dagger of souls
+Size: 30
+AREA: Rooms near the king is norecall, so after killing him you must go out
+      into the courtyard before you can recall group.
+
+Ocean Floor:                           Lvl ASWIDM agg     Hp        Gold
+Kanaloa, Tropical God of the Seas       95 Nx-x x -             361017
+Spec: INFO, immune weapon, bash, kick
+Info: Need spellers for this one, obviously. Might help to wither first.
+Eq  : necklace of sharkteeth
+Size: 35
+O-Wata-Tsu-Mi, Serpent God of the Seas 97+ Nx-x x -             362038
+Spec: INFO, shrugger, burst of life
+Info:
+Eq  : piece of dragon skin
+Size: 25
+Sedna, Giant God of the Seas           97+ Nx-x x -             361338-362025
+Spec: INFO, shrugger, burst of life
+Info:
+Eq  :
+Size: 25
+Ixchel, Mayan God of the Seas          97+ Nx-x x -             360604-362627
+Spec: INFO, shrugger, ice storm, burst of life
+Info:
+Eq  :
+Size: 25
+Varuna, Beast God of the Seas          97+ Nx-x x -             360432-361150
+Spec: INFO, shrugger, burst of life
+Info:
+Eq  :
+Size: 25
+Aegir, Norse God of the Seas           97+ Nx-x x -             304374-305712
+Spec: INFO, shrugger, burst of life, triad of ice
+Info:
+Eq  : spear of the seas
+Size: 25
+Olokun, Desert God of the Seas         97+ Nx-x x -             360943-362071
+Spec: INFO, shrugger, water bolt
+Info:
+Eq  : the pelt of a lion
+Size: 25
+Priestess
+Spec:
+Info: Smaller mob near Oceanos. Her eq makes her worth killing if you're here.
+Eq  : coral scepter
+Size: 10
+Oceanos, Titan of the Seas             95+ Nx-                  95094
+Spec: INFO, shrugger, cloudkill-on-death
+Info: To get to Oceanos you need a coral key. The key is on one of the other
+      gods, but when killed will move to another one of them. Just kill all of
+      them and you'll get it.
+Eq  : ring of the Titans, leggings of the seven seas, gigantic maul from
+      ancient times
+Size: 35
+AREA: Most of (the whole?) underwater part of this area is norecall, but you
+      can summon people there. This makes withering mobs a pain. If priests
+      can't be summoned after casting wither (try if it's possible) you will
+      need to use wither scrolls.
+
+Ragnarok:                Lvl ASWIDM agg     Hp        Gold
+Thor                           x    ---
+Spec:
+Info: Does REALLY nasty damage and summons giants to help him. Prepare for
+      mass deaths. Cleaning up in all dirs around him and having a copper in
+      each room around him while preparing is a good idea. So is wither, I
+      think. Massive area damage is a must!
+Eq  : runed helmet forged from lightning, gloves of frost giant strength,
+      girdle of fire giant strength, Mjollnir
+Size: 50
+Odin                           x    ---
+Spec:
+Info: Raven bracelets is the important piece on him. Nolocate, so if you can
+      get a rogue to sneak off and have a peek at him, it may save you a lot
+      of trouble.
+Eq  : raven feather bracelet, spear "Gungner", the eye of Odin
+Size: 30
+AREA: The area is crowded with ice & fire giants with auras. They aren't
+      aggressive, but their auras pulse out damage, so when standing next to
+      one, you will be fighting within a second. These giants die fast, but
+      they do nasty damage for as long as they stand. Peeker & tracker is very
+      useful here.
+
+Snake Lair:              Lvl ASWIDM agg     Hp        Gold    Special
+AREA: Probably more suitable for a heavy xp group than for PG. Kill enough
+      snakes here (a LOT! Cleaning out the area isn't enough. You'll have to
+      do it several times) and their mommy will come to stop you. She's got a
+      key to a white snakeskin belt
+
+Storm Giant Castle:      Lvl ASWIDM agg     Hp         Gold
+The storm giant king     97+ Ex-x   G
+Spec: vuln slay giant, powerheal, wither, summon storm giant guard, 2 spells
+      per round, can do 1400 damage per round
+Info: Might want some area damage when he summons his guards.
+Eq  : small wizard ring, giant-sized cloud mail, The Cloudblade, bag of Power
+Size: 30
+AREA: A few locked doors, not sure if they are pickable. Guards have key for
+      the entrance gate and some captains have keys for the others. 2 steps up
+      in the tower are 2-5 commanders (usually 5). Aggressive lvl 60 mobs that
+      does some nice damage, so a few rounds of area spells and some quick
+      healing is helpful here. Goluk is nearby and a cake mob, if you feel it
+      s worth losing an extra 10 seconds.
+
+Taon:                                Lvl ASWIDM agg     Hp        Gold
+An Overlord of Taon                80-84 Nx     G             500001
+Spec:
+Info: 
+Eq  : quartz studded platemail
+Size: 15
+Atuan the Lordwizard               81-84 Nx-                 1000001
+Spec: hide, shrugger
+Info: 
+Eq  : globe of ancestral origin
+Size: 15
+Celebros, the Embodiment of Control   85 Nx-      -           500001-500001
+Spec: INFO, vuln slay human, Wild magic
+Info: 
+Eq  : Celestial knee protector
+Size: 15
+Saeros, the Embodiment of Thought     85 Nx-x   G E           500001-500001
+Spec: INFO, vuln slay human
+Info: 
+Eq  : voyager's orb
+Size: 15
+Vidir, the Embodiment of Anarchy   83-85 Nx-x   G E           500001-500001
+Spec: INFO, vuln slay human, summons 2 lvl 70 Vidirs during battle.
+Info: 
+Eq  : Celestial leggings
+Size: 15
+Uldor, the Embodiment of Calm         85 Nx-x   G E           500001-500001
+Spec: INFO, vuln slay human, Calms people
+Info: If you get calmed, the only thing you are able to do seems to be to
+      quaff potions. So quaff a recall potion and teleport back/get summon.
+      Probably not needed, since any decent PG would kill this guy easily
+      anyway and once dead you will be back to normal again.
+Eq  : Celestial gauntlets
+Size: 15
+Telemar, the Embodiment of Rage       85 Nx-      -           500001-500001
+Spec: INFO, vuln slay human
+Info: 
+Eq  : emerald-hilted dagger
+Size: 15
+Surak, the Embodiment of Water        85 Nx-x   G E           500001-500001
+Spec: INFO, vuln slay human, teleports wielded weapons to random room from
+      Surak to Traitor.
+Info: 
+Eq  : Celestial elbow protector
+Size: 15
+The Draconian traitor              91-94 Ex-      E          2000001-2000001
+Spec: INFO, NOT vuln unlife, vuln slay human?/slay dragon, looter, instakill-
+      special
+Info: 
+Eq  : sleeves of wrath, shield of stealth, thrice-woven canvas boots, dragon-
+      hilted stiletto
+Size: 25
+The Statue of the Ancient War Gods 91-94 Ex x   G E            60212-60989
+Spec: INFO
+Info: 
+Eq  : neckpiece formed from an ancient metal
+Size: 30
+Someone                               90 Ex-    ---              142-373
+Spec: INFO, vuln slay human
+Info: 
+Eq  : Chameleonic leggings
+Size: 20
+Jedah the Evil Arch-Sorcerer         96+ Ex-x   G E          3000001-3000001
+Spec: INFO, invis, vuln slay human
+Info: 
+Eq  : traitor's cowl, Ancient Shield, boots of arch-sorcery
+Size: 30
+AREA: Jedah will have the power of every embodiment still alive, so ill them
+      first. And make sure the area hasn't respawned when going for the big
+      ones. Kill Surak last, since he can teleport your weapons a few rooms
+      away and even into the Traitor's room. If this happens (or worse, if
+      the Traitor picks up the weapon), it's good to know that he's your next
+      target. The path for these mobs (starting at the centre, 2e2n-enter
+k      portal from Atuan) are:
+        s-portal-s-portal-KILL Celebros-portal
+        e-portal-d-w-KILL Saeros-e-portal-u-portal
+        e-portal-u-KILL Vidir-e-portal-n-e-KILL Uldor-w-s-portal
+        w-portal-KILL Telemar-portal-u-e-portal-e-d-KILL Surak-u-e-u
+      From here, you have the Traitor north. If you enter the portal instead
+      you will be back at the centre.
+      After killing the Traitor and looting his Celestial Key, use the key to
+      get past the door in Elven Village, killing the mobs and looting the
+      Ethereal key from the chest there (plus 5M cash).
+      From that chest, go: portal-w-portal-portal-u-e-portal-e-e-u-n
+      to get back to the Traitor's room. To make sure you don't mess this up
+      and have to take the long trip (and to reduce the risk of area pop),
+      have someone follow self and wait for you south of the Traitor room.
+
+Tomaaukkhen:             Lvl ASWIDM agg     Hp        Gold
+Nahual                    70 N--xxx -  16923-16998 15449-16244
+Spec: resist WEAPON/unlife/ice/fire/earth/air, sleeping, +~2000 starthp
+Info: If going for the king, it won't cost you much to take this one on the
+      way. Nice eq for his level.
+Eq  : blackened Helmet, Gauntlets of Ogre Power
+Size: 2
+The Titanium Statue    77-81 Gx-xx- -  32292-32371 25017-25019
+Spec: INFO, resist unlife/ice/fire/earth/air, kick
+Info: More of an xp mob now. Still, people have use for his eq.
+Eq  : titanium sleeves/elbow protector/shield/plate/leggings/knee protector/
+      boots
+Size: 5
+KING TOMAAUKKHEN       77-81 Ex x - -   ~24k        7491-7563
+Spec: INFO, vuln pure/light/silver/heal, immune unlife/dark, agg-sleeper,
+      poison, blindness, wither, energy drain, curse, mass pain, 4x"reaches
+      out and touches"
+Info: Some VERY easy aggies in his room, so kill them first without panicking
+      and starting to use area spells (unless you you're 10+, in which case
+      you can just as well area and get done faster.
+Eq  : emerald ring, Emerald belt, Sun Blade
+Size: 10
+AREA: Probably too easy for anything but mini-PG nowadays.
+
+Toormail:                Lvl ASWIDM agg     Hp        Gold
+Black Guardian            77 Ex-x   G  11828-11842     1-1
+Spec: INFO, vuln unlife, resist energy/magic, hell storm, shrugger, blocker
+Info: Around level 75 standing in the same room as White Guardian
+Eq  : black marble bracelet, bardic sword, bardic lute
+Size: 10
+White Guardian            77 Gx-x   G  11804-11816     1-1
+Spec: INFO, vuln unlife, resist energy/magic, mass pain, deathspell, shrugger,
+      blocker
+Info: Around level 75 standing in the same room as Black Guardian
+Eq  : white marble bracelet
+Size: 10
+Dungeon Keeper            67 E-xx   G  ~8041-~8076     1-1
+Spec: vuln energy, immune unlife, resist WEAPON
+Info:
+Eq  : shadowblade
+Size: 5
+Garlok's ghost         68-69 Nx-x   G  ~7517-~7529     1-1
+
+Spec: vuln energy, immune unlife, resist WEAPON, blocker, bash, kick, headbang
+Info:
+Eq  : golden helmet/sleeves/breastplate/leggings/boots, Garloks battleaxe
+Size: 5
+King Torsak               78 Nx-x   G
+Spec: INFO, vuln energy, immune unlife, resist WEAPON, norecall-room,
+      trueheal, wither, hell fire
+Info:
+Eq  : golden ring of King Torsak
+Size: 15
+Nw Tower Guardian         77 Ex-x x -  12794-12814 20900-20937
+Spec: vuln unlife, resist energy/magic, backstab(58), norecall-room
+Info:
+Eq  : hookpointed dagger, black boots
+Size: 10
+Ne Tower Guardian         77 Ex-x x -  12788-12848 20856-20876
+Spec: vuln unlife, resist energy/magic, powerword kill, mass pain, powerword
+      blind, meteor blast, hell storm, 1-1 spell, mana shielded, norecall-room
+Info:
+Eq  : some blue robes, cedar staff
+Size: 10
+Sw Tower Guardian         77 Nx-x x -  12798-12830 20925-20968
+Spec: vuln unlife, resist energy/magic, bash, kick, headbang, blocker,
+      norecall-room
+Info:
+Eq  : stone bracelet, huge stone club
+Size: 10
+Se Tower Guardian         77 Gx-x x -   ~13k       20810-20865
+Spec: vuln unlife, resist energy/magic, trueheal, powerheal, wrath of god,
+      wither, blindness, 1-2 spells, norecall-room
+Info:
+Eq  : holy necklace, mace of justice
+Size: 10
+Troll Skeleton            76 E-xx   G  10803-10863 13906-14038
+Spec: resist slash/pierce, blocker, 4-8 attacks, norecall-room
+Info: His room is norecall, but you can open the door and wait for him to come
+      out
+Eq  : shimmering sword
+Size: 5
+Blue dragon            90-94 Ex-x   G  39469.5     47627
+Spec: INFO, vuln slay dragon, blocker, norecall-room, lightning breath,
+      shrugger
+Info: His room is norecall, and he is a blocker
+Eq  : blue dragon scale, dragon tooth
+Size: 20
+Watch commander           90 Exxx   G  35363-35478 65888-65901
+Spec: INFO, vuln slay troll/fire/acid/mental, resist crush/poison/earth, bash,
+      kick, headbang
+Info:
+Eq  : troll gauntlets, diamond breast plate, stone leggings, boots of
+      striding, ring of might, serrated sword
+Size: 25
+So'rak, the mage          72 Exxx   G   9249-9285  15709-15897
+Spec: vuln slay troll/fire/acid/mental, resist crush/poison/earth, mass pain,
+      hell fire, meteor blast, curse, blindness, 1-2 spells
+Info:
+Eq  : black robe
+Size: 5
+The Kraken             81-82 Ex-x   G  16870-16898     1-1
+Spec: INFO, vuln slay mythical, immune water, resist fire/ice/air/unlife
+      earth, (room is norecall)
+Info:
+Eq  : heart of the Kraken, Kraken spine
+Size: 30
+The Fire Demon            92 Ex-    -
+Spec: INFO, blocker (and room is norecall), sitting, fireball
+Info: 
+Eq  : Sword of Thunder
+Size: 15
+A fire lizard             64 Exxx   G   6044-6063      1-1
+Spec: vuln mental/gas, resist fire/earth
+Info: 
+Eq  : flame ring
+Size: 5
+A red mage                65 Ex-x   G   6222-6271  13467-13481
+Spec: vuln slay troll/fire/acid/mental, resist crush/, hell fire, hell storm,
+      fireball, curse, 1-2 spells
+Info: 
+Eq  : red robe, red crystal staff
+Size: 1
+The black mage            65 Ex-x   G   6291-6306  13422-13543
+Spec: vuln slay troll/fire/acid/mental, resist crush/poison/earth, chain
+      lightning, sleep, mass pain, powerword pain, 1-2 spells
+Info: 
+Eq  : black robe, black crystal staff
+Size: 1
+K'rek Dhor                96 Ex-x x -   ~55k
+Spec: INFO, vuln slay troll?/fire?/acid?/mental?, resist earth?/poison?
+      crush?, sitting, bash, headbang, (room is norecall), can do 1k damage
+      per round
+Info: 
+Eq  : jade crown, stone ring, huge broad sword
+Size: 30
+AREA: Large area with lots of fun things! Great fun place to explore, even if
+      you can't get very far inside alone due to the removal of the Varak-Ki
+      entrance. Tons of keys (36), so I decided to make a walkthrough for this
+      one:
+      * Get to the Ofcol Obelisk
+      * 2w2n, kill gatekeeper, loot key, unlock gate
+      * 5n, kill doorguard, loot key, unlock door
+      * 3n2e2n (past aggies)
+      * open east, east, get key, west
+      * 2s2wn (past aggies)
+      * By now you should have bumped into and killed the Dungeon Keeper. If
+        not he's probably just one step down from you, so go kill and loot his
+        key.
+      * up, kill armor, up, north
+      * This is a square:ish area. You need 2 keys here. One from a Ghost
+        servant and one from a Ghoulish Guard. To cover the whole area here,
+        go 2w2en2w2en2s3en2wn2en4wsnen2e and kill & loot everyone you see.
+      * open door east, east, kill & loot if anything here, 3w
+      * OPTIONAL: open door west, 2w, kill the Black & White guardians here
+                  and loot keys, open (unlock?) door south, south, loot chest 
+                  has crown of Sokar, heart of Rathark & ring of Evos), n2e
+      * 5s2u, kill aggie, n2e2n, open door west, west, kill mobs and loot key
+      * e2s4wn, open door east, east, kill mobs and loot key
+      * wn, open door east, east, kill mobs and loot key
+      * w2n2e, kill 2 mobs and loot key
+      * unlock door south, south, kill mob, loot key
+      * open door west, west, kill if anyone there, east
+      * open door east, east, kill if anyone there, west
+      * OPTIONAL: open door south, south, kill & loot Garlok's ghost, open
+                  door south, south, kill & loot King Torsak, 2n
+      * n2w, unlock door west, west
+      * 12u (kill mobs in your path and loot - one key should be found)
+      * unlock door north, north, kill Tower Guardian, loot key
+      * s12d5e, unlock door east, east
+      * 12u (kill mobs in your path and loot - one key should be found)
+      * unlock door north, north, kill Tower Guardian, loot key
+      * s12dw4s, unlock door east, east
+      * 12u (kill mobs in your path and loot - one key should be found)
+      * unlock door north, north, kill Tower Guardian, loot key
+      * s12d5w, unlock door west, west
+      * 12u (kill mobs in your path and loot - one key should be found)
+      * unlock door north, north, kill Tower Guardian, loot key
+      * s12d3es5d, unlock door south, south
+      * cells east & west. Enter both & kill & loot, then go one south (repeat
+        4 times). All these cells are "OPTIONAL"
+      * OPTIONAL: open cell east, east, kill & loot, west
+      * open door south, south, kill troll, loot key, north (Note: Troll is a
+        blocker and the room is norecall).
+      * unlock door west, west, unlock door west, west
+      * unlock door down, down (repeat 4 times)
+      * OPTIONAL: 2nw2n, kill rockworm, loot, 2se2s
+      * 3d (mobs here? If so, kill & loot)
+      * unlock door west, west, 2d, kill 2 guards here & loot.
+      * 5w (past aggies)
+      * OPTIONAL: 3su2ese, kill & loot key, unlock door east, en2es2ws2ene
+                  (kill & loot all mobs for a key), unlock door east, 2ed,
+                  kill Blue Dragon, loot, u7wnwd3n
+      * 6w, pick gate west, 3w
+      * You will need to find & kill the Watch commander now. If you want to
+        get the Fire sword you will also want to find & kill So'rak. Both are
+        nearby but walking. If you know your way around, just go kill. If not,
+        I'd suggest using a rogue to track them down and then have him track
+        Kraken. Once you get to the locked grate down, go to next paragraph.
+        From where this paragraph started, the grate is 2n3ws2w (past a few
+        doors).
+      * unlock grate down, d3w
+      * north, kill Kraken, loot
+      * s2enu2en3e2s4w (may be aggies & doors on the way)
+      * OPTIONAL: en, open door north, 2n, kill & loot Fire Demon (I think he
+                  is here, at least), 3sw
+      * OPTIONAL: 2wnwden, kill & loot, get Fire sword, unlock door west,
+                  wsues2e. Do NOT do this unless you have So'rak's fire key,
+                  or you will get stuck in the fire room.
+      * 2n3wu (from here on you may encounter walking aggresive guards)
+      * OPTIONAL: east, open door south, south, open door east, kill & loot
+                  Castelain, wnw
+                  NOTE: Castelain's key is needed for some of the optionals
+                        below. These are marked "C OPTIONAL".
+      * C OPTIONAL: 2en, open door south, kill & loot red mage, n3w
+      * C OPTIONAL: 2en2e, open door south, 2se, kill & loot Master of
+                    Ceremonies, w2n5w
+      * 4s2e
+      * C OPTIONAL: unlock door north, nwnes (kill & loot all mobs in each
+                    room for trueheal potions), south
+      * 4en, kill guard
+      * up
+      * OPTIONAL: north, kill & loot troll, south, unlock door west, west,
+                  KZLC, west, KZLC, north, KZLC, east, KZLC, north, KZLC,
+                  west, KZLC, 2s2e
+                  KZLC = Kill & loot Zombie, use his key to Loot Coffin
+                  They should hold ghostly cloak & stone belt
+      * s3wn
+      * C OPTIONAL: north, unlock door west, west, kill & loot black mage, es
+      * wsw
+      * C OPTIONAL: west, loot white urn, east
+      * 2nws, kill guard, up
+      * C OPTIONAL: se, loot white urn, w4ne, loot black urn, w3s
+      * ne, kill guard
+      * e2s3e2n, open door west, 2w
+      * OPTIONAL: se, kill & loot courtiers, 2n, kill & loot courtiers. If any
+                  of them had a golden key, use it to loot the chest here, sw
+      * west, kill & loot K'rek Dhor
+      * east, recall!
+
+Underworld:              Lvl ASWIDM agg     Hp        Gold
+Tisiphone              90-94 Gx-      E                0-0
+Spec: vuln unlife, immune dark?, area confusion, wither, mass pain, area harm,
+      moves robe to Hades when killed
+Info: I think the room is noflee
+Eq  : robe of blood
+Size: 25
+Nyx                      95+ Nx-x   GNE                1-1
+Spec: INFO, vuln slay mythical, mass pain, powerheal, area confusion, area
+      harm, area hell fire, area blindness, wither, 1-2 spells
+Info: Room blinds you on entry. Nyx disbands group and blinds everyone on
+      entry. Room before Nyx can teleport you to Tartarus on entry/exit, and
+      so can Nyx during battle. If teleported there, go s4w3s6e3nu3s3w4n to
+      get back to Nyx. Upon entering, you need to have a couple of priests
+      equipped with healing staves, so they can heal themselves then use their
+      staff to heal everyone (so people get unblinded and can follow the
+      leader again). Also, you might want to have a 2:nd leader to take group
+      if you should drop when entering the room (or just get back to Nyx
+      fast). This place usually kills all afk:ers except the ones lucky enough
+      to be teleported, so try to get the group ak for this one.
+Eq  : Band of Nyx's Rage, Oblivion, Doom
+Size: 25
+Eurynomus              80-84 E- x   G E
+Spec: vuln pure?, immune fire
+Info: divides into three shatters when killed and when one of those are killed
+      he returns
+Eq  : Flesh of a Demon
+Size: 25
+Erebus                         -    ---           225988
+Spec: INFO, ultra-hide, noflee-room, blindness, harm, wither, powerheal
+Info: Since ultra-hidden, everyone will need to use area to join. Room is
+      noflee. Might be good top ask mages to create a few areadamage-scrolls
+      so rogues and anyone without areadamage can join.  And turn off rescues,
+      so rogues can stay in battle.
+Eq  : malignant wrap of Erebus
+Size: 25
+Cerberus                     E--x   GNE                1
+Spec: INFO, vuln mental?
+Info: Bites the head off innocent travellers. Room is noflee
+Eq  : 
+Size: 25
+Hades                               GNE          3001279
+Spec: INFO, vuln slay mythical?, invis, 1-2 backstab
+Info: To get past door to Hades, you need to have 3 people "touch door" in the
+      right order: nb/nb, te/te, neutral leader (lvl 55+). Hades switches
+      between Left Hades & Right Hades, who must be killed before the Real
+      Hades can be fought.
+      The Left Hades is vuln fire, immune ice
+      The Right Hades is vuln ice, immune fire
+      Both are invis, cast triad of fire twice per round and can shrug spells.
+      Hades will have a key that leads to 2 rooms, but the key dissolves when
+      used, so only one room can be tried. If Tisiphone has been killed, one
+      of these rooms has the robe of blood. I know of no way to find out which
+      room is the right one.
+Eq  : Invisible Helmet, poniard of supremacy
+Size: 40
+Odysseus
+Spec: 
+Info: 
+Eq  : amorphous blaze of radiance
+Size: 30
+AREA: The whole area is nosummon/norecall, so when people die you will
+      probably have to go back to the entrance to fetch them.
+
+Unholy Darkness:         Lvl ASWIDM agg     Hp           Gold
+Cain                      80 E--- x - ~13785-~14136 1000001-1000001
+Spec: vuln slay human, bash, kick, headbang
+Info: Cake mob. Easy even compared to other lvl 80 mobs. Kill him on the way to
+      Ghanz & Tarbor if you like, otherwise skip.
+Eq  : a book...
+Size: 5
+Tarbor the Shadow Mage 92-94 E--x x -                 65636
+Spec: hide, summon gloom ravens (5), summon shadow fiend, shadow spray
+Info: Hurts quite bad, especially if you let the number of gloom ravens build
+      up (lvl 54-59, 3501 hp, vuln slay human). Not sure about those shadow
+      fiends. Good area damage and good healing is important.
+Eq  : Claws of Darkness
+Size: 20
+Ghanz                  86-90 Ex x   G
+Spec: summon mirror images of everyone entering
+Info: For every person entering the room, a shadow mage/fighter/... of the
+      same level appeared, to help Ghanz. The old way of taking this guy was
+      to bring in a few select people at a time. Nowadays it's standard to
+      just gtell AREA a few times and then walk in. And it usually works. If
+      you need to rest up, do it in the room with the last mobs, NOT just
+      outside Ghanz (nomag and no way back). A few rounds of heavy area damage
+      and heavy healing is enough to clean things up, and then Ghanz himself
+      will be quite easy to handle. Once killed, loot the chest west of him 
+      (only evil-aligned people can do this)
+Eq  : unholy bracelet, Wrathbringer, burning crucifix (key). Chest has ebony
+      gauntlets, belt of thorns, Grand Grimoire
+Size: 20
+AREA: Locked doors between each level. The keyholders stand in the rooms
+      leading down.
+
+Valley of Kings:               Lvl ASWIDM agg     Hp         Gold
+Shadow                         95+ Nxxx   GNE           5000001-5000001
+Spec: INFO, hide, walk-path, mort-special, force you to hit friends
+Info: Hidden, so you want people with damage-auras to have them turned on,
+      and everyone that can't see hidden needs to use area attack to join.
+      A smaller king (lvl 77-79) is just above Shadow's hideout, so (due to
+      the auras) kill him first.
+      Shadow has a special that makes you start hitting on friends. This is no
+      problem for spell casters, since they do less melee damage and their
+      spells still go on the shadow, but pure fighters will just cause
+      trouble, so keep their number to a minimum (ask people to switch to
+      spellsrs if they can).
+      He moves in a path only he can walk (4 steps, I think) and is only
+      reachable in one of these rooms. When in any of the other rooms, he will
+      regenerate, so it might be a good idea to poison him. He is immune to
+      wither. To poison him, you need someone to sneak in and blind
+      him when he is in the room where you can reach him. And then you need
+      people to poison him. Hard & dangerous, but may be well worth the effort
+      if you are a smaller group.
+      Another special he has is to put people at -9 hp, which is bad. And even
+      worse when followed by an area attack. Priest healing is very important
+      here! I believe he also has a special that kills you instantly.
+      No matter what group you have, your possibility to kill this guy without
+      a single player death is close to nill, but since the shadow moves
+      around you will have time now and then to get your group in order again.
+      Normal tactic is to keep a summoner as anchor above the shadow's room. A
+      half-priest is probably best, since pure-priests will be needed in the
+      fight. Safest way of handling this is to give group to the anchor, wait
+      until shadow is NOT in his room, have the anchor go down (bringing the
+      group) and "leave up" (leaving the group there). When people die they
+      can get summoned back by the anchor, and by following him they'll be
+      back in the group again.
+      When shadow is in the room, give him your worst! When shadow is not in
+      the room, gossip to your dead team mates to GET BACK so group can heal
+      up and prepare for when he gets back. As PG leader you are probably a
+      good tank - it might be a bonus if you leave the room and go back in, so
+      you become the "last" person in the room, as that is whom the shadow
+      will attack when he returns.
+Eq  : eye of the Abyss, soul ring, sleeves of Eternity, Shadows, Darkness,
+      boots of searing shadow, soul potion
+Size: 25
+The Colossal Titan of the Kings95+ Gx-x   G E           3000001
+Spec: INFO, vuln slay human
+Info: Hits his target several times but also deals one hit on everyone else
+      fighting him, so you will see screens upon screens of ultraslay
+      messages. Tell people to "gag all all set" to avoid getting half the
+      goup linkdead due to spam. Also, his room is noflee/norecall, so either
+      kill him or die!
+Eq  : titan bracelet, shield of Colossus, Titan Blade
+Size: 25
+AREA: Lots of aggressive watchmen spread out in the area. Lvl 68, so no
+      problem for a PG to handle.
+
+Yggdrasil:               Lvl ASWIDM agg     Hp         Gold
+Kostchtchie               80 Ex-xx- -  18344-18381 100001-100001
+Spec: vuln pure/light/iron, immune fire, resting, burning hands, summon demon
+      skeleton/demon zombie/lesser demon
+Info: Summons only small (lvl 7 & 15) mobs, so a cloudkill now and then to
+      clean up might be nice, but nothing more needed.
+Eq  : hammer of cold iron
+Size: 5
+AREA:
+
+
+-------------------------------------------------------
+                          N C
+-------------------------------------------------------
+
+Stronghold of Alterac:   Lvl ASWIDM agg     Hp        Gold
+Malius
+Spec: 
+Info: Will grab people and use as shield, removing them from group. Set a
+      priest as leader&anchor, emote that you are leader and have anchor go up
+      and _leave_ down. When Malius escapes, he must be found and attacked 6
+      times before going back to starting point. When he has, rest up and use
+      anchor again, and this time he will die.
+      When looking for Malius, he will take on the shape of one of the other
+      npc:s in this area, but will not look exactly the same, so if you
+      highlight his descriptions, you can recognize him without having to look
+      at every npc. The descriptions he will have are (in random order):
+      * A female peasant is busy at work here  (White Aura)
+      * A merchant has stopped here briefly to trade goods
+      * A guard of Alterac defends the sanctity of his homeland (White Aura)
+      * A soldier of fortune waits here for instruction  (invisible)
+      * An elven ranger is scouting the surrounding hinterland (White Aura)
+      * A hero of the Alliance stands fully alert (White Aura)
+Eq  : gauntlets of deception, sinister jet black cape
+Size: 30
+Giran
+Eq  : dark-magic knee protector, dark-magic elbow protector
+Size: 20
+AREA:
+
+Apocalypse:              Lvl ASWIDM agg     Hp        Gold
+It
+Spec:
+Info: Quite tough. Has a fondness of sleeping people.
+Eq  : Catastrophe, sleeves/gauntlets/shield/leggings/boots of the Ancients,
+      holy staff
+Size: 40
+Shatan
+Spec:
+Info:
+Eq  : some fiery gauntlets, fiery breastplate, Adam's Apple
+Size: 30
+Yahweh
+Spec:
+Info:
+Eq  : glimmering neckchain, glimmering bracelet, Warhammer of Justice
+Size: 30
+Goliath
+Spec:
+Info:
+Eq  : armplates/gloves/greaves of power
+Size: 25
+Kinslaughter
+Spec:
+Info:
+Eq  : spiked helmet, flaming sai
+Size: 20
+Khondar
+Spec:
+Info:
+Eq  : spiritual belt, warhammer of sin
+Size: 20
+Gzora
+Spec:
+Info:
+Eq  : belt of vitality
+Size: 20
+Zorath
+Spec:
+Info:
+Eq  : mystical protector
+Size: 15
+Lorgon
+Spec:
+Info:
+Eq  : ring of Lorgon
+Size: 15
+Ragnarok
+Spec:
+Info:
+Eq  : dragon bracelet
+Size: 15
+Kjata
+Spec:
+Info:
+Eq  : translucent robes
+Size: 15
+K'intar
+Spec:
+Info:
+Eq  : jewelled helmet
+Size: 15
+Angel of Dominations
+Spec:
+Info:
+Eq  : scepter of domination
+Size: 25
+Angel of Seraphim
+Spec:
+Info:
+Eq  : saber of light
+Size: 25
+Angel of Cherubim
+Spec:
+Info:
+Eq  : virgin leggings
+Size: 20
+Angel of The Thrones
+Spec:
+Info:
+Eq  : boots of wrath
+Size: 20
+Angel of Virtues
+Spec:
+Info:
+Eq  : ring of virtue
+Size: 15
+Angel of Powers
+Spec:
+Info:
+Eq  : the Holy Cross
+Size: 15
+Angel of Principalities
+Spec:
+Info:
+Eq  : Aurora breastplate, some Aurora robes
+Size: 15
+Archangel              92-96
+Spec: plasma ball, mass wither, 1-2 spells per round
+Info:
+Eq  : Aurora neckguard
+Size: 15
+Lesser Angel
+Spec:
+Info:
+Eq  : Aurora protector
+Size: 15
+AREA: Evils can't enter west side. Good can't enter east side. So when going
+      to one side, have people of wrong alignment switch chars.
+      Many interesting mobs on each side (see the map). Most of the area is no
+      summon, but there are shortcuts to get back to the entrance, to fetch
+      people who has died. Room south of It is summonable and any alignment
+      can be there. Once It is dead, you might want to leave a priest south of
+      It for a while, to summon people who wants to solve a certain quest.
+
+Clerists:                Lvl ASWIDM agg     Hp        Gold
+Sturm
+Spec:
+Info: Summons knights to help him. Massive area spells are useful here.
+Eq  : Sturm's Starjewel, ancient Solamnic wristguard, Brightblade ancestral
+      sword, swirling platinum potion
+Size: 30
+Gunthar
+Spec: trueheal, mira, 1-2 spells per round
+Info:
+Eq  : embosed Solamnic helm, Solamnic shield, gold etched Solamnic cape
+Size: 20
+Alfred
+Spec:
+Info:
+Eq  : Solamnic gauntlets, Potion of Group Will
+Size: 20
+Derek
+Spec:
+Info:
+Eq  : Solamnic armplates, Companions Potion
+Size: 20
+Skye                     95+ Ex                    65536
+Spec: vuln slay dragon
+Info: Place Sleet's Dragon Orb in Stand to summon dragons (Skye plus a few
+      others). If fast, it's possible to blind Skye when he appears, before he
+      attacks anyone. Thus you'll only have to fight the other dragons and can
+      then rest up and take Skye when he's alone.
+Eq  : blue dragon's claw, lucky dragon's foot, Chaotic Concoction
+Size: 15
+AREA:
+
+Cohn Shar:               Lvl ASWIDM agg     Hp        Gold
+Tirises
+Spec:
+Info: Nasty guy! Summons loads of smaller mobs, and casts an area-deathspell
+      when he dies
+Eq  : coronet of carnage, striated cut of platinum, defiled body of a paladin,
+      malicious leggings of torment, halberd 'Eradication'
+Size: 40
+Ghalotiri
+Spec:
+Info: Summons some aggie warriors when he dies. Might want a decent tank in
+      the back, since he will take the first blast from them.
+Eq  : stygian cloak of gloom, poniard of jet
+Size: 25
+AREA:
+
+Dragontail Isle:         Lvl ASWIDM agg       Hp        Gold
+Lord Tarashakan          94+ E--    -
+Spec: invis
+Info: Found on top floor of the Temple
+Eq  : adamantium dagger
+Size: 10
+Lord Sarakesh             94 Ex-  - -
+Spec: invis, trueheal, mass-blind
+Info: To get to him you must first kill Ruby/Sapphire/Topaz/Emerald Draconian 
+      the 4 corners of the dungeon, vuln silver & mental) and get their keys.
+      Plus you must kill the Draconian Jailor, who can teleport people into
+      nasty cells (priests SHOULD have triggers to summon them back). Jailor
+      has same vulns. Lord Sarakesh is not agg, but his room is noflee and you
+      can't get summon to/from the room, but you can recall from it. When
+      killed, he transforms into Draconian Lord Sarakesh, then into Lich of
+      Lord Sarakesh (maybe vuln silver) and finally into (a nastier version
+      of) Lord Sarakesh (maybe vuln mental). Somewhere in the battle everyone
+      seems to get the spell "ritual of pain"
+Eq  : shimmering orb of many colors, multi colored dragon skin leggings,
+      skeletal boots, Karliik Llar, blackened dragon skull
+Size: 40
+AREA:
+
+Dunheim:                 Lvl ASWIDM agg     Hp        Gold
+Lord Dareil
+Spec:
+Info: Cake mob.
+Eq  : Sceptre of the Land, Crown of the Land, Great Sword of the Land,
+      key to Lady Sarah
+Size: 10
+Lady Sarah
+Spec:
+Info: Pretty easy, but hurts a bit, and has two agg maids with her.
+Eq  : crystal bracelet, virgin belt, a mirror
+Size: 10
+Evil Darkmage
+Spec:
+Info: Nasty mob that summons smaller mobs. Heavy area spells needed. To get to
+      him, kill the jailor and get his key. Have someone sneak in with a
+      pblind scroll and make a gate to him (rooms outside darkmage are single
+      person only). Darkmage also has key to the Monk (cake mob once you have
+      his key)
+Eq  : spiked leather knee protector, deadly looking dark hammer
+Size: 25
+AREA:
+
+Guallidurth:             Lvl ASWIDM agg     Hp        Gold
+King Kenafin Aleval of Guallidurth
+Spec:
+Info: He is not aggressive, but is guarded by a lot of aggressive guards.
+      Normal tactics is to use SINGLE spells until all guards are dead and
+      then rest up if needed before killing the king. If he has the globe, use
+      ice. If not, use ice/pure/light
+Eq  : globe of biting cold, crown of battered iron, shell of a lost turtle,
+      azur breastplate with silver ornaments, olplynir del chath
+Size: 20
+Pardus
+Spec: immune Crush?
+Info:
+Eq  : fangs of the ancient vampire, Nemesis, the Heart of Pardus
+Size: 15
+Priestess
+Spec:
+Info:
+Eq  : royal insignia of Guallidurth
+Size: 10
+Dot
+Spec:
+Info: Ultrahidden but really weak. Use sense hidden to find him. Clear the
+      nearby rooms and have everyone who can attack him. When he flees, turn
+      OFF auras & immolation, find him (fast) and have a mage areaspell (hell
+      storm or plasma ball). Find & repeat. 2-3 areaspells should be enough.
+      Note: You won't see when he flees, so keep looking until the "hidden"
+      mob isn't there.
+Eq  : a dot
+Size: 5
+Spirit of Pardus
+Spec:
+Info:
+Eq  : figment of your imagination
+Size: 15
+Queen
+Spec:
+Info:
+Eq  : spider whip
+Size: 15
+Minotaur
+Spec:
+Info:
+Eq  : severed head of the slain wood elf
+Size: 15
+AREA: Good aligned is not allowed to enter, so summon them after entering. Use
+      pure/light/ice against the drows
+
+Haarvenu:                Lvl ASWIDM agg     Hp        Gold
+Guardian
+Spec: vuln pure?/light?
+Info: Must be killed to get inside
+Eq  : a runic spear
+Size: 15
+Itindar
+Spec: vuln light if wearing his robe
+Info: Pretty hard mob that falls into a pile now and then. After a while he
+      gets himself together and starts fighting again. When he is in pile-form
+      he regenerates, and it's advisable that you do the same. Just be ready
+      to have your followers to stand when Itindar starts whacking on you
+      again.
+Eq  : rusting necklace, smooth wooden ring, bloodstained mirror shield,
+      midnight velvet robes
+Size: 40
+AREA: Most of the area is norecall but you can recall from the wildmag room
+      west of Itindar. There is a bag called "the Bag, Just Because" in a
+      chest. I believe it's by Itindar too but not sure
+
+Khronatio:               Lvl ASWIDM agg     Hp        Gold
+Captain
+Spec:
+Info:
+Eq  : Shimmering Girth of Khron
+Size: 20
+AREA: Some mobs here summon you back if you attack and don't kill them. Not
+      sure about the captain.
+
+Lahresin:                      Lvl ASWIDM agg     Hp        Gold
+Loreshi, the undead elf-king 90-94 E--    G
+Spec: meteor blast, mass pain, powerword pain, summon lost soul
+Info: Need massive area damage and some group healing
+Eq  : mithril elbow/knee protector, shortsword 'Windweaver', 3.5M gold
+Size: 40
+AREA: When you've killed the guard (next step is to go down), have someone
+      else move one step ahead of you and follow fast. Mobs here are
+      aggressive and if leader moves he will leave his group behind. The dirs
+      for getting past the maze is dnwsnneewn, then Loreshi is north, past a
+      door.
+
+Lorchid:                 Lvl ASWIDM agg     Hp        Gold
+Lord Worchdo
+Spec: seems resistant to most (less resistant to iron/pure/bleed/silver/
+      slay human)
+Info:
+Eq  : Lord Worchdo's boots, red and silver striped two handed sword
+Size: 5
+Master of the ROOTS                 G -
+Spec:
+Info:
+Eq  : thick root, suit of bark armor, magical tree
+Size: 20
+AREA: Use fire when moving around - most troins are vuln fire. You probably
+      need some key by the guard dog to get to Master of roots (not sure).
+
+Myrridon:                 Lvl ASWIDM agg     Hp        Gold
+The Thorn Demon           95+ Ex-    G -                1-1
+Spec: summons tumbleweed (lvl <= 59)
+Info: Massive area damage would be useful. demons are usually vuln pure/light
+      iron, but this one might have some odd resistances. wolf headed staff
+      works poorly but cold-iron scimitar works good. So either he resists
+      pure or light, or he resists crush. Good luck guessing.
+Eq  : Ring of Thorns, ring of thorns, Thorn club
+Size: 20
+The Knight              85-89 Nxx  x ---            65536
+Spec:
+Info: Teleports away (to safe-room) with one opponent to duel him. If that
+      person dies or chickens out, knight returns in random room. If opponent
+      survives, both come back after a few rounds. Id:"duelist"
+Eq  : helm of shining light, mystic shield
+Size: 20
+The Gatekeeper of Myrridon95+ Nx-    ---                2
+Spec:
+Info:
+Eq  : twisted rope belt
+Size: 20
+Behemoth
+Spec:
+Info: The rooms here are gas filled, so do NOT use fire spells or you will all
+      get very hurt very fast.
+Eq  : skin of the Behemoth
+Size: 15
+Greater Shard
+Spec:
+Info: Has some aggressive lesser shards as company. Some rounds of area damage
+      helps a lot!
+Eq  : Ancient hession leggings, glinting ruby stone
+Size: 20
+Wizard
+Spec:
+Info:
+Eq  : snake shaped hammer, staff of power
+Size: 15
+AREA: The thorn demon is in a "rift" that changes location to a random room in
+      the area now and then. Have a mage "locate rift" and ask people to go
+      search for it. To save time, locate it just before taking the boat trip
+      to NC and ask some KTV:s to take the Milorai shortcut and find it while
+      you're on the boat. That way you can go from the boat (all rested) and
+      take that demon first.
+
+Myrridon Mines:          Lvl ASWIDM agg     Hp        Gold
+Huge Sentry
+Spec:
+Info: His key leads to the doors around Toric
+Eq  : black admantine mesh armplates/field plate/mesh greaves, huge obsidian
+      mallet, yellow key
+Size: 15
+Jirikai the Methuselah   95+ Ex-    ---    ?-?     70868
+Spec: vuln silver/light/pure?
+Info:
+Eq  : ring made of human baby's umbilical cord, pulsating mass of living
+      arteries and veins, L-i-f-e-s-t-e-a-l-e-r, ornate runic chalice
+Size: 20
+Nerfarim the elf ranger  95+ Gxx  x ---            65536
+Spec: flees, flee-special
+Info: If Nerfarim has his vest, use ice. If not, use unlife. All demons/devils
+      around are immune to unlife. Nerfarim is hidden so many will need area
+      spells to join. And the mobs around are random-agg and has memory.
+      Therefore I suggest cleaning up those low-level mobs nearby to make the
+      Nerfarim-kill swifter (because he flees a lot). When Nerfarim flees he
+      does NASTY damage, so you don't want to mess about too much once he
+      starts running around.
+Eq  : leaf circlet, Rhianna's Pendant, adamantine reinforced leather vest,
+      cloak of camouflage, boots of silence, silver warbow, 'Artemis', belt
+      satchel sewn from fine doeskin, Archangel's feather
+Size: 25
+King Toric               95+ Ex-x   GNE~250k       67051
+Spec: INFO, shrugger, immune fire, hell storm, trueheal, -66 ac?
+Info: His weapon does ice damage and his spells does fire damage, so
+      resistance to these two will halp a bit. This guy is nasty, so you will
+      need the bonus you get from wither (I'd suggest to use poison too).
+      Since he is aggressive, you need mages to create powerblind scrolls and
+      some sneeker to get in and use them before priests can start their work.
+      Since he is a shrugger, you will need several of these scrolls. And
+      since he trueheals you should be prepared to powerblind him again. If
+      pblind is close to running out, any mage can go in and recast pblind,
+      but if he flails and trueheals... maybe he'll stay blind now, since
+      trueheals shouldn't heal blindness/wither. If so, the wither gives you a
+      great bonus when fighting him. Also, you can make tipis in the rooms
+      nearby, giving several people (witherers/pblinders) a chance to regen at
+      the same time.
+Eq  : Baelfyre, crown of Thorns, gauntlets of malice, Frostbite, Demonic wing,
+      staff of demolition
+Size: 50
+Elder-Brain
+Spec: vuln mental
+Info: Appears after you've killed some smaller brain. The elder-brain charms
+      people, having them work against you, so you will need to set up an
+      anchor that stays d2n from the reception. This MUST be a Pr/Pr, and MUST
+      be the same one that sets up the gate d2n from reception (that should
+      lead to the brain - make sure it's not a bad gate). When someone gets
+      charmed, that person MUST recall, then go 8w2su, rent, get back in, go
+      d2n, follow the anchor, make SURE he gets grouped and then enter the
+      field to get back in the fight. If the one setting up the gate dies, the
+      gate will stop working, so the Pr/Pr creating the gate can NOT join the
+      fight and thus makes the best choulce of also being the anchor. With a
+      good team of ak players, a lot less people is needed to kill him. And
+      with poor leader and/or afk players, even a group of 50 will get
+      slaughtered. If this is your first PG, don't bother trying this guy.
+Eq  : Sphere of Defence, Frontal Lobe of the Elder Brain
+Size: 30
+AREA: Many devils are random-timed-agg, so either walk fast and summon people
+      who get attacked or walk slowly and kill off any attackers.
+
+Narnia:                  Lvl ASWIDM agg     Hp         Gold
+Prince Caspian            70 Gxxxx- -  24241-24418 204746-204800
+Spec: vuln slay human
+Info: Cake mob, but his eq is wanted, so worth killing if you're here.
+Eq  : the of Narnia
+Size: 5
+Aslan - The great Lion   95+ G--x x -              220272
+Spec: NOT vuln mental?
+Info: Need to kill the pegasus to get the key for the castle (maybe gate is
+      pickable?)
+Eq  : Claws of the Lion, Mane of Aslan, Tail of Aslan
+Size: 25
+Witch
+Spec:
+Info: Maugrim guards this castle. Cake mob for a pg, and I _think_ he is
+      vulnerable to mental
+Eq  : Crown of the white Witch, ring of rooted evil, Staff of the winter
+Size: 20
+Demon Queen
+Spec: vuln pure/light/iron
+Info:
+Eq  : sleeves of death, Bracers of Fire, plate of the female demon, pair of
+      misty boots
+Size: 15
+Demon King
+Spec: vuln pure/light/iron
+Info: His room is norecall and has no exits, except a pile of bones you can
+      enter (NOT when fighting). This takes you back to oc, so do NOT go here
+      unless you want to get back to oc (if you do want to get back to oc this
+      is an excellent, fast shortcut to get there). If you fail to kill him
+      you will ALL die (except, maybe, people who retreat and enter bones), so
+      don't just "give it a try".
+Eq  : crown of rotten skulls, ring of eternal darkness, belt of human bones,
+      demonsword 'Zcobori'
+Size: 25
+AREA: Castle Paravel has an old king plus the 4 current rulers (Peter, Susan,
+      Edmund & Lucy). Their eq is decent, so probably worth killing them too,
+      since they are so easy preys. Edmund seems to have no eq, so you can
+      skip him. Most of the mobs here has WAY more hp than normal mobs at the
+      same level (pegasus is lvl 66 and has 24k hp, which is comparable to
+      mobs of lvl 80-85. Lvl 66 mobs usually has around 6k hp). So expect some
+      fights to be longer than expected, but not nessecarily harder. Goot area
+      to finish your NC tour with, since it has a speedie to OC
+
+Oblivion:                Lvl ASWIDM agg     Hp        Gold
+The Guardian of Oblivion 96+ Gx-    ---
+Spec: special-open-door
+Info: Any good-aligned char who isn't grouped can have the gate opened by just
+      saying "open" (while not being in a group).
+Eq  : 
+Size:
+A Sharn                78-80 E x    G E                1-1
+Spec: vuln unlife, backstab, switch (2)
+Info: 
+Eq  : 
+Size:
+Freiza                 91-95 Ex     GNE           277208-277691
+Spec: INFO, vuln dark, resist fire, invis, chill touch, switch (2)
+Info: 
+Eq  : Freiza's chains
+Size:
+The Spider Daedra      93-95 Nx-x   G
+Spec: invis, noflee-room (can recall), room drains moves
+Info: 
+Eq  : spiders eye
+Size:
+The Dremora              93+ E
+Spec: invis
+Info: 
+Eq  : some daedric leggings
+Size:
+The Daedra Seducer       93+ E
+Spec: invis
+Info: 
+Eq  : leather thong
+Size:
+The Tower Guardian     74-75 E--x - G -               53
+Spec: invis, powerheal, wither, hell fire, mass pain, area blindness, area
+      confusion, 1-2 spells, switch (1)
+Info: 
+Eq  : a spine 
+Size:
+The Chef               82-85 E--x - - -                1
+Spec: vuln pure/light/iron/silver/electricity/slay human, immune fire, blocker
+Info:
+Eq  : meat cleaver
+Size:
+Meridia                                           299295
+Spec: INFO, magic missile (17 times), area blindness
+Info: 
+Eq  : radiant star, green velvet sleeves, liquid star
+Size:
+The Daedra Lord Azimer   96+ Ex-    GNE           369898-375058
+Spec: INFO, vuln light, mira, forceflee(tailstrike), norecall-room
+Info: He has 4 friends, called Azimers <color> head of Electricity/Air/Fire/
+      Ice. These heads cast trueheal and some other spells. They also rescue
+      their Lord, and if killed they just reappear. So everyone should make
+      sure to cast their spells on "Lord" and switch to him if possible
+      ("target Lord")
+      Hmm... Possible to blind the heads before attacking Azimer? Is it
+      possible (are they blindable and can one do it and escape)? Will it
+      help (I think David helps Dick even if blinded, but protect-the-innocent
+      code may differ from the rescue code)?
+Eq  : daedric rose, daedric dragon claws, spell breaker, dragonhide boots,
+      Azimers razor talon, horns of the daedra lord
+Size:
+Nocturnal                96+ Ex-    ---           665358
+Spec: INFO, vuln pure/light, backstab, summon small shadow daedra, shrugger
+Info: 
+Eq  : Nocturnals black cape, soul in a bottle, silver feather
+Size:
+The imprisoned Deva      96+ G--    ---
+Spec: 
+Info: Give him a Nocturnal's silver feather and he'll give you the Deneb
+Eq  : Deneb, blade of light
+Size:
+AREA: Large area! Kill the Torturer to open a portal to the sharn area, which
+      is norecall. West side has fire daedras and east side has frost daedras.
+      One of the greater daedras on each side has a key you need to get to
+      Freiza.
+
+Palanthas:               Lvl ASWIDM agg     Hp        Gold
+Takhisis
+Spec:
+Info: Only mages can go to the tower where Takhisis (Kiki) is. Others take
+      damage when trying, losing 45-90% maxhp. It doesn't have to be a pure
+      mage. When inside, a smaller mob (Dalamar) is one step up and then a
+      bigger one (Raistlin Majere) is u-n from him. From there, you need a
+      good-aligned pr/pr and an evil aligned ma/ma to open the gate (NOT sure
+      about class and aligns). Entering will give you a short waitstate, and
+      it's possible that you can't bring the whole group. For whatever reason,
+      it's standard to have a fighter enter and then a priest gate to him.
+      Then make sure that the portal is good, and enter with the group. This
+      fight is a LONG one, so you should bring some planks/rocks and build an
+      outpost IN the room with Kiki and tell people to retreat and enter this
+      outpost when they are low on mana. Kiki has 5 heads with different
+      vulns, which shifts pretty often. My suggestion here is to NOT gtell 
+      use xxx" when the head changes, since it will make people spend most of
+      their time just switching weapons (even worse if you get lagged
+      yourself, when giving such orders). Instead tell them to be AK and just
+      gtell "fire", "ice", etc when the head changes and let people decide for
+      themselves if they want to change (this is just a suggestion - I'm
+      turning off weapon switches here so if you want to force people to switch
+      weapons it won't bother me). The most important thing is to make sure to
+      tell people to "heal her" when she has the purple head (immune to
+      weapon, takes damage only from healing spells). This head is the one
+      that drains priests and makes the outpost so valuable. The string for
+      changing head is:
+           The eyes of the <COLOR> head glow with a ...
+      ...and the colors you will encounter are:
+           purple: HEAL (immune weapon)
+           blue  : FIRE
+           red   : ICE
+           green : UNLIFE
+           orange: ENERGY
+      All heads apart from the purple one are vulnerable to slay dragon, so
+      probably best if people stick to such a weapon.
+      Once all heads are dead, things get real nasty. Kiki will start hitting
+      hard and use specials that puts people at -9 hp. Priests will be needed
+      even more now. If priests are somewhat ak and smart, they will make
+      sure (during the whole battle) that there's always some outside to keep
+      group healthy, and some in the outpost regenning mana. If not, it's your
+      job to organize things.
+      If everyone leaves room, Kiki will regenerate her heads. Might be enough
+      that leader leaves the room. But it is possible, once all heads are down,
+      to blind her, retreat and order everyone else to recall, thus ending
+      battle. Then, if you sleep her or keep her blind, you can bring group
+      back and have everybody regenerate before taking on that last form.
+Eq  : crown of misery, Multihued dragon scale mail, skimpy satin cloth, the
+      soul reaper, Soul of Innocence
+Size: 50
+AREA:
+
+Tournament:              Lvl ASWIDM agg     Hp        Gold
+The Silver Paladin       95+ Gxx    ---            65536-65536
+Spec: hard to hit, walk-path, blast of goodness, trueheal
+Info: Need spell damage to kill him, since fighters will have trouble hitting
+      him.
+Eq  : glittering platinum helm, shiny elbow guard, polished holy shield, razor
+      sharp silver lance
+Size: 25
+The Black Knight         95+ Exx    ---            65536-65536
+Spec: vuln slay human, shrugger, walk-path
+Info: Shrugs a lot, so you will melee damage to take him out
+Eq  : dark cape of evil thoughts, dark graphite knee guard, diamond inlaid
+      boots, sleek dark dufflebag
+Size: 20
+AREA: Good way: Rest up and kill the silver paladin first, mainly through
+      damage spells. Then take the black knight, on whom most spells will just
+      be a waste of mana anyway.
+      Bad way: Kill the black knight first, having mages waste all their mana
+      for no use. Then attack the silver paladin and watch how he doesn't die
+      as your fighters keep missing and your mages have too little mana to do
+      any real harm to him.
+
+Underground:             Lvl ASWIDM agg     Hp        Gold
+Bob
+Spec:
+Info: Board members will stand up and walk to Bob if he is attacked, so kill
+      them before entering. He will still summon more, so area damage needed.
+Eq  : Starlight Cowl, sleek black unadorned ring, dark flexi-guard (knee &
+      elbow), light absorbing padded gloves, the Nightblade, Bob's extremely
+      rare magic miracle remedy
+Size: 30
+AREA:
+
+Missing anything? Anything incorrect?
+=====================================
+If you feel a mob or area has been left out, please tell me.
+If you feel I have missed/misunderstood something vital, please tell me.
+If you feel sad, lonely, angry or unhappy, please tell moe.

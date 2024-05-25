@@ -1,0 +1,37 @@
+; Note: You _must_ stand on FS when you run this. 
+; Usage: shopsearch <item>
+; Example: shopsearch parang
+;
+; What is does: Goes through all shops, doing a "list <item>" (in this
+; example "list parang") and, once done, returns to FS and shows all hits.
+; If I find that a shop has the item I am looking for, I go 4w2s (to the tower
+; bottom) and then do "shopsearchx parang" (moves one step up and checks the 4
+; shops there) until I find the shop which had the item I was looking for.
+; Remember to go for the cheapest item if it's something sold in several
+; shops. Price can differ greatly!
+
+
+/alias shopsearch \
+	/def -F -ah -t'* in stock]' shopsearchtrig1 = \
+		/tfshow ============================================================%%; \
+		trigonnextline /tfshow ============================================================%; \
+	/def -F -ag -msimple -t"You don't seem to have a shopsearch." shopsearchtrig2 = \
+		/recall -mglob 0- *%{*}*%%; \
+		/purge shopsearchtrig*%; \
+	4w2su%; \
+        n%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;eu%; \
+        n%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;eu%; \
+        n%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;eu%; \
+        n%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;eu%; \
+        n%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;eu%; \
+        n%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;eu%; \
+        n%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;eu%; \
+        n%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;eu%; \
+        n%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;eu%; \
+        n%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;eu%; \
+        n%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;eu%; \
+        n%;list %{*}%;se%;list %{*}%;ww%;list %{*}%;e12d2n4e%; \
+	drop shopsearch
+
+/alias shopsearchx \
+        un%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;e

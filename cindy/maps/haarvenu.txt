@@ -1,0 +1,94 @@
+# Nefertum's Halls of the Haarvenu (359): 50-100, Nefertum  (Crossroad: 2nen2en3en4ws2w2n2wn)
+* FIND OUT: The Guardian of the Halls                     see invis, xp, hp (approx), memory, type, irvs
+* FIND OUT: A Haarvenu Blood Mage                                    xp, hp (approx)
+* FIND OUT: A Haarvenu Death Mage         level, walking, see invis, xp, hp (approx), memory, type, irvs
+* FIND OUT: A Haarvenu Elemental Mage                                xp, hp (approx)
+* FIND OUT: A Haarvenu Shadow Mage               walking, see invis, xp, hp (approx), memory, type, irvs
+* FIND OUT: The Zombie of a Haarvenu W.   level,          see invis, xp, hp (approx), memory, type, irvs
+* FIND OUT: The hound of dark             level,          see invis, xp, hp (approx),         type, irvs, description
+* FIND OUT: The hound of light                   align,   see invis, xp, hp (approx), sanc,   type, irvs, description
+* FIND OUT: Itindar                                                  xp, hp (approx), memory, type, irvs
+* FIND OUT: shadowy hieroglyph: Zombie Warrior @ Haarvenu (ID!)
+#
+#                       o-o-o-o-o
+#                       |       |
+#                   o-o-o       o-o-o
+#                   |               |
+#                   o     o-o-o     o
+#                   |     | | |     |
+#               o-o-o o-o-o o o-o-o o-o-o
+#               |     |     |     |     |
+#               o-o-o-o     o     o-o-o-o
+#                           |
+#     o----------o----------o-o-o
+#     |                     |   |
+#     |  o-o-o              |   o-o-o   o-o-o
+#     o  | |                |       |  /    |
+#     |  o-o-o              o       o+o     o         o
+#     |  | | |              +               |         |
+#   o-o  o o-o-o-o      X*->o*->Home        o-o+WM+Itindar
+#   +        | | |      +                     |
+#   o        o-o o-o   -o-                    o
+#  /         |   | |                          |
+# o-----o----o-o-o o-o                        o-o-o
+#              |   | |                            |
+#              o-o-o o                        o-o-o
+#                |   |
+#                o-o-o
+#
+* Entrance from Guallidurth
+* Whole area is norecall.
+* WM: WildMag. Recallable.
+* Whole area is very bright (sw & e part past doors unchecked)
+* Guardian has key to the gates. 2 hounds inside will hunt you once Guardian is killed.
+
+Haarvenu:                       Lvl    Xp ASWIDMX # agg     Hp        Gold      Special
+The Guardian of the Halls        90       Nx-   1 1 ---           124652-124652 INFO, [???], vuln pure/light, immune blind, vuln poison if using "a runic spear", shrugger, dodge, special-spearjab, can't enter the mist (get out) when fighting, summons hounds on death
+  Try: plain, slash, crush, pierce, norm, large, superlarge, energy, magic, (poison), acid, dark, unlife, fire, ice, iron, mental, gas, bleed, earth, electricity, silver, stun, water, air, wood
+  +3 PW ice:      4 hits out of  13: 31%  (hr 11+34+3=48)
+                                      obli anni vapo pulv atom ultr ULTR
+   PIERCE  ICE slaydrowelf  avg 23                2    2
+   PIERCE  ENERGY           avg 23                2
+A Haarvenu Blood Mage            90       Nxx x-2   ---           372351-373125 [NOT demon/dragon/elf/halfelf/human/magical/snake/undead], immune ALL but energy/mental, resist crush, dodge, vampiric mist, hell fire, plasma bolt, 2-3 spells, 3-3 attacks, ac <pretty poor>
+A Haarvenu Death Mage         89-90       Nx    1   ---           372560-372845 [???], immune fire, dodge, plasma ball, nether ball, 1-2 spells, special-explode-on-death (235)
+  Try: plain, slash, crush, pierce, norm, pure, light, large, superlarge, energy, magic, poison, acid, dark, unlife, ice, iron, mental, gas, bleed, earth, electricity, silver, stun, water, air, wood
+  +8 weapon:     17 hits out of  20: 85%  (hr 12+34+8=54)
+                                      obli anni vapo pulv atom ultr ULTR
+   WEAPON                   avg 22               17
+   Deathbringer: anni/vapo (resist)
+A Haarvenu Elemental Mage        90       Nxxx -2   ---           372582-373144 [NOT demon/dragon/elf/halfelf/human/magical/snake/undead], immune ALL but energy/mental, resist crush, dodge, gas/lightning breath, ice storm, plasma bolt?, spellfire, 1-2 spells + plasma bolt? + spellfire, ac <pretty poor>
+A Haarvenu Shadow Mage           90       Nx        ---           372408-372652 [???], hide
+  Try: plain, slash, crush, pierce, norm, pure, light, large, superlarge, energy, magic, poison, acid, dark, unlife, fire, ice, iron, mental, gas, bleed, earth, electricity, silver, stun, water, air, wood
+The Zombie of a Haarvenu Warrior 89-90    Nxx   2   ---           372605-373158 [???], immune dark, dodge, hide
+  Try: slash, crush, pierce, norm, pure, light, large, superlarge, energy, magic, poison, acid, unlife, fire, ice, iron, mental, gas, bleed, earth, electricity, silver, stun, water, air
+  +8 weapon:     22 hits out of  25: 88%  (hr 12+34+8=54)
+                                      obli anni vapo pulv atom ultr ULTR
+   WEAPON                   avg 22               21    1
+   Deathbringer:  vapo/pulv (std)
+The hound of dark             90-91       E-x                          2-2      [???], vuln pure/light, resist mental, hunt, summoned
+  Try: plain, slash, crush, pierce, norm, large, superlarge, energy, magic, poison, acid, dark, unlife, fire, ice, iron, gas, bleed, earth, electricity, silver, stun, water, air, wood
+  +3 PW energy:   3 hits out of   4: 75%  (hr 11+34+3=48)
+  +3 WoJ:         8 hits out of   9: 89%  (hr 12+34+3=49)
+                                      obli anni vapo pulv atom ultr ULTR
+   WEAPON                   avg 22
+   SLASH                    avg 24
+   PIERCE  ENERGY           avg 23                3
+   WEAPON  PURE LIGHT       avg 21                          8
+The hound of light               90         xx      GNE                2-2      [???], vuln pure/light, immune dark, resist mental, dodge, hunt, summoned
+  Try: plain, slash, crush, pierce, norm, large, superlarge, energy, magic, poison, acid, unlife, fire, ice, iron, gas, bleed, earth, electricity, silver, stun, water, air, wood
+  +3 PW energy:   2 hits out of   4: 50%  (hr 11+34+3=48)
+  +3 WoJ:         6 hits out of   6:100%  (hr 12+34+3=49)
+                                      obli anni vapo pulv atom ultr ULTR
+   WEAPON                   avg 22
+   SLASH                    avg 24
+   PIERCE  ENERGY           avg 23                     2
+   WEAPON  PURE LIGHT       avg 21                     1    5
+Itindar                         100       N--x      GN    ~75k    246670-246670 INFO, [???], mana shielded, vuln light if using "midnight velvet robes", resist pure?, resist ice if using "midnight velvet robes", special-transform-into-heap (167-295), area wither, lightning/acid breath, hell storm, trueheal
+  Try: plain, slash, crush, pierce, norm, pure, (light), large, superlarge, energy, magic, poison, acid, dark, unlife, fire, (ice), iron, mental, gas, bleed, earth, electricity, silver, stun, water, air, wood
+   hf: 37/277
+   pp: 28/208
+                                     Obli Anni Vapo Pulv
+  WEAPON                   avg 22      8
+  Purelight                avg 21     21   14
+hf: 46, 46, 300
+pp: 225, 187, 35

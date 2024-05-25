@@ -1,0 +1,181 @@
+# Castle of Toormail/Rock Troll City (520): 50-100, Arcane (2h/never)  (Ofcol: 2wn)
+#
+#               k                     k               Guardians-o+o-o-o+o
+#               +                     +                   +       |
+#               o                     o                   o     o-o-o-o-o
+#              /                     /                          | | | | |
+#           up 12                 up 12            keys:        o o o-o-o
+#          floors                floors        Ghost servant      | | | |
+#           /                     /            Ghoulish Guard o-o-o o-o-o
+#          o+o - o - k - o - o + o                                | | | |
+#      k     |       +       |        k                       o-o-o-o-o-o
+#      +     o   o + k + o   o        +                           | _
+#      o     |       +       |        o                           |/ \
+#     /      o+k   Garlok  k+o       /                            o  |
+#  up 12     |       +       |    up 12           _______________/___/
+# floors     o+k   Torsak  q+o   floors          /              /
+#  /         |               |    /             /              o o+k
+# o ----+--- o - o - o - o - o + o             /              /  |
+#                    |                        /     o------o+k o-o-o
+#                    o    ___________________/      |      _/| | | |
+#                   /    /                          o-o  _/  o-o-o-o
+#                  o    /                              _/    |
+#                 /    /    Rockworm        o--\      /  o-o o o+o
+#                 \___/         |          x   |     o     | | | |
+#                               o         o    |     +     o-o-o o
+#                               |        x     |  Hs+o+Hs    +
+#                               o - o   o      |     |       k
+#                                   |  x       |  Os+o+Hs    |
+#                                   o o        |     |       o
+#                                   |x         |  Os+o+Bp    |
+#                                   o          |     |     o-o-o
+#                                  /|          |  Os+o+Ogs | | |
+#                                 o o          |     |     o-o-o
+#                                /  |          \--+o+o+Ogs | | |
+#                               o   o                +     o-o-o+o
+#                              /   /               Troll     +
+#                           o+o  RIP              Skeleton   k
+#                          /                        (k)      |
+#                          \________________                 X
+#                                           \                |     |
+#                            o-o             \              -o-o-Diana-
+#                            | |              \              |     |
+#                            o-o-o-o    RIP    \______________________
+#                            |     |     |                            \
+#                  o -- o -- o     |     o-RIP   o     o o-g          |
+#                 x          |     |    /|       |     | | |          |
+#  Kraken-o   /- o           |     +   gRIP    o-o-o   o-o-o          |
+#     |   |   |      Fire    |     |  /          |     |              |
+#     o - o - o      Demon   |     | o         o-o-o-o-g---o-o-o-o    |
+#                      |     |     |/          | |     |   +   | |    |
+#   U - o - o - o-o-o  o   o |     o           o o o+o o   o-o o o    |
+#               |      +   | |     |           |     + |         |    /
+#    o-o    o - o      o o-o |     +           o o o+o o   o o o o   o
+#   /  |        |      | | | |     |           | |   | |   | | | |  /
+#  / o-o-So'rak-o------o-o-o-|---+-o-o-o-+-g-o-o-o-o-o-g---o-o-o-o-o
+#  | |      |   |      | | | |     |           |   | | |   | | | |
+#  | o-o    o   o------o | o |     | As above  |   o + |   o o o |
+#  |            |        o | |     +  /        o     | o         o
+#  |      o-o-o-o        | o |     | o         | o o+o |   o   o |
+#  |     /               |   |     |/          o |   + o   +   + o
+#  |    o    /---o       |   o     o       o-o | o   o | o+o o+o |
+#  |    |   /    |       |   |     +         | | |     |   +   + |
+#  |    o--/   o+o+o   o-o   o-o-o-o         o-o-o-o-o-U---o-o-o-o
+#  |             |    /   
+#  |           o+o+o o-o                               D-o-o   o-o-o
+#  |             |   | |                                 | |   | | |
+#  |             o---o-o                                 o-o-o+o-o-o+o-o
+#  |                                                           | | |  /
+#  |    5------1<--+BAD<-10                                    o-o-o Blue
+#  \____|______|_    ^    |                                          Dragon
+#       |      |/    |    |
+#       4 <----o --- 3 -> 9
+#       |   /  |     |    |   BAD: A very nasty room: Norecall/nomagic,
+#   /-> 6--/   2---> 8 - 11        only one exit and that's a locked door.
+#   |   |      |     |    |        So'rak has key to it. Aggie lvl 64 fire
+#   |  13 <--- 7 -- 12 --\|        lizards inside. Fire sword on ground.
+#   \_____________________/
+#
+#     /---o---o-o---o
+#     |   +     +   |        o---o---o   o-o-o--o       o-bl. o---o---o---o
+# D-o-o  Red  o-o   U            |   |   |      |       | urn |           |
+# | +    mage | |            U   o   o---o o-o-+D       D     o       o-o o
+# o |         o-o-Master     |   |       | | |  |       |     |       | | |
+# | o+Castel.       of       o---o Black+o o-o Troll    o---o-o K'rek-o-o+o
+# o               cerem.     |   | mage  | | |  |       |     | Dhor  | | |
+# | o-o priest               U   o   o---o o-o-+D       D     o       o-o o
+# | | |   |                      |   |   |      |       |     |           |
+# o o-o   o  Arm-o  U        wh.-o---o   o-o-o--o       o-wh. o---o---o---o
+# |   +   +      +  |        urn                          urn
+# o-o-o---o---o--o--o
+#
+* Min level 0/40
+* Whole area is very bright
+* Tons of keys!
+* Ghosts in the first area are vuln energy and resistant to weapon.
+* Trolls (and elite guards) are vulnerable to slay troll/fire/acid/mental.
+
+Toormail:                  Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+A Human prisoner             9   89k G----     -    155-158       1-1     [human], sitting
+The dwarven prisoner        11  153k G---x-    -    255-263       1-1     vuln water/superlarge/magic, resist poison/earth/fire, sitting
+The elven prisoner          15  300k G---x-    -    483-487       1-1     vuln unlife/dark, resist pure/light/magic, NOT vuln iron, sitting
+The Ghost Servant           28 2772k N-xxx-    -    699-715       1-1     vuln energy, immune unlife, resist WEAPON, flees
+A Rock Troll toddler        29 3335k E-xxx-         679-703       1-1     [troll], flees
+A Rock Troll child          30 4950k E-xxx-    G    702-703     561-563   [troll]
+The Maid ghost              30  3299 N-xxx-    -    842-855       1-1     vuln energy, immune unlife, resist WEAPON
+The Ghost Servant           34 6459k N-xxx-    -    855-856       1-1     vuln energy, immune unlife, resist WEAPON, flees
+A female Rock Troll         35 9100k E-xxx-    G    874-882     670-679   [troll]
+A Rock Troll nursemaid      35 8750k E--xx-    G    891-906    3568-3591  [troll]
+A male Rock Troll           40   14M E-xxx-    G   1367-1370   3709-3739  [troll]
+The ghost of the head butler 40  14M N-xxx-    -   3288-3294   3565-3602  vuln energy, immune unlife, resist WEAPON
+The Ghost of the Princess   40   19M N--xx-    -   1280-1289      1-1     vuln energy, immune unlife, resist WEAPON, 3-6 attacks, flees, save 7
+The Librarian Ghost         40   21M N--xx-    G   1351-1355      1-1     vuln energy, immune unlife, resist WEAPON
+The priest                  40   15M E--xx-    G   1393-1408   5987-6011  [troll], harm, blindness, wither, powerheal, confusion
+The Alchemist               41   16M E--xx-    G   1350-1354  15538-15637 [troll]
+The Armorer                 41   16M E--xx-    G   1356-1356  15391-15637 [troll]
+The Baker                   41   16M E--xx-    G   1354-1359  15475-15486 [troll]
+The Horrendous Ghoul        41   16M E-xxx-    G   1355-1358   1535-1647  [undead?], vuln pure/light/silver/heal, immune dark/unlife, resist earth/water/air/mental
+The Jeweler                 41   16M E--xx-    G   1346-1361  15432-16167 [troll]
+The Mage                    41   16M E--x--    G   1342-1352  15475-15549 [troll], mass pain, powerword pain, meteor blast
+The Weaponsmith             41   16M E--xx-    G   1347-1353  15595-16148 [troll]
+A fire newt                 42   16M E-x-x-    G   1397-1422      1-1     vuln mental/gas, resist fire/earth
+A Troll mummy               42   16M E-xx      G   ~1428-~1448 5827-5880  vuln pure/light/fire/heal, immune unlife/dark
+The Ghost of the Bartender  42   17M N-xxx-    G   1361-1373   3541-3560  vuln energy, immune unlife, resist WEAPON
+The Priest                  42   16M E--xx-    -   1463-1476   5062-5195  [troll]
+The Secretary               47   24M E--xx-    -   1805-1821   4076-4576  [troll]
+The Grocer                  48   26M E--xx-1   G   2531-2532   3938-4532  [troll]
+Ghost Guard                 49   27M N-xxxx    G   2031-2039      1-1     vuln energy, immune unlife, resist WEAPON
+The Leatherworker           49   28M E--xx-    G   2106-2120   3895-4088  [troll]
+Royal Guard Ghost           50   33M N--xx-    G   2063-2084      1-1     vuln energy, immune unlife, resist WEAPON
+The Rock Troll guard (town) 50   32M E--xx-4   G   2016-2018   4178-4188  [troll], bash, kick, headbang, berserk
+The Ghoulish Guard          54   37M E-xx      G  ~2578-~2747     1-1     vuln pure/light/silver/heal, immune unlife/dark, resist earth/water/air/mental, bash, kick, headbang, blocker
+The Tanner                  54   40M E--x  1   G   3030-3030   8088-8111  [troll]
+The armorer                 55   49M E--x      G   3107-3117   4731-4811  [troll], vuln acid?/mental?, resist poison?/crush?/earth?
+A troll courtier            57   66M E-xx -    -   3738-3784   8034-8184  [troll], sitting, flees
+The Castelain               57   63M E--x      G   3735-3802   8054-8180  [troll], sitting
+The Ghostly Doorguard       58   57M Nx-x -    -  ~3442-~3454     1-1     vuln energy, immune unlife, resist WEAPON, aware
+The Ghostly Gatekeeper      58   57M Nx-x      G  ~3448-~3473     1-1     vuln energy, immune unlife, resist WEAPON
+The Rock Troll guard (prison) 58 67M Ex-x      G   3914-3928   5108-5134  [troll]
+The Rock Troll guard (tower) 58  67M E--x      G   3906-3937   5179-5191  [troll]
+The torturers apprentice    59   77M Ex-x      G   4032-4062   7871-7897  [troll], powerword pain
+The Blacksmith              60   66M E--x  1   G   4050-4077  14898-15038 [troll], blocker, bash, kick, headbang
+The Ghastly Wight           60   84M Exxx      G  ~3572-~3633     1-1     vuln pure/light/silver/heal, immune unlife/dark, resist WEAPON/earth/water/air/mental, energy drain, chill touch
+The Ghost of the Chancellor 60   66M Nx-x      G  ~5268-~5309     1-1     vuln energy, immune unlife, resist WEAPON
+The High Priest             63  120M E--x  1   G   4339.5    27397-27525  [troll], harm, wither, blindness, powerheal
+The Ancient Armor           62   89M E--x      G   5036-5070  22542-22547 vuln unlife, resist magic/energy, bash
+A Human Skeleton            62   93M E-xx      G E 5670-5688   6407-6431  resist slash/pierce
+The Armsmaster              63   89M Ex-x      G   5045-5073   5457-5702  [troll], sleeping, blocker
+The Armsmaster Ghost        63   97M N--x      G  ~5104-~5114     1-1     vuln energy, immune unlife, resist WEAPON, bash, kick, headbang
+The ghost of prince Tramon  63   88M Nx-x      G  ~5703-~5711     1-1     vuln energy, immune unlife, resist WEAPON, bash, kick, headbang
+The Guard Commander         63   88M E--x      G   3650-4261  17696-17915 [troll], blocker, bash, kick, headbang, berserk
+A fire lizard               64  109M Exxx  1   G   6044-6063      1-1     vuln mental/gas, resist fire/earth
+A red mage                  65  143M Ex-x  1   G   6222-6271  13467-13481 [troll], resist poison?/earth?, hell fire, hell storm, fireball, curse, 1-2 spells
+The black mage              65  143M Ex-x  1   G   6291-6306  13422-13543 [troll], chain lightning, sleep, mass pain, powerword pain, 1-2 spells
+The Mayor                   65  110M E--x      G   4503-4509  18875-19128 [troll], blocker
+The Ghost of the Dungeon Keeper
+                            67  127M E-xx      G  ~8041-~8076     1-1     vuln energy, immune unlife, resist WEAPON
+An Orc Skeleton             67  134M E-xx      G   6957-6960   6395-6458  resist slash/pierce, blocker, 4-5 attacks
+General Garlok's ghost      69  159M Nx-x      G  ~7517-~7529     1-1     vuln energy, immune unlife, resist WEAPON, blocker, bash, kick, headbang
+The master of pain          71  185M Ex-x      G   9077-9202   9741-9754  [troll], blocker, powerword pain
+So'rak, the mage            72  166M Exxx      G   9249-9285  15709-15897 [troll], mass pain, hell fire, meteor blast, curse, blindness, 1-2 spells
+An Ogre Skeleton            73  328M E-xx      G   8849-8923   8068-8139  resist slash/pierce, blocker, 3-8 attacks
+The Troll Skeleton          76  494M E-xx      G  10803-10863 13906-14038 resist slash/pierce, blocker, 4-8 attacks, room is norecall
+The Black Guardian          77  397M Ex-x      G  11828-11842     1-1     INFO, vuln unlife, resist energy/magic, hell storm, shrugger, blocker
+The elite guard (standing)  77  462M Exxx  1   G  13083-13162 18116-18260 [troll], bash, kick, headbang, berserk
+The elite guard (walking)   77  385M Exxx  1   G  13091-13093 18325-18415 [troll], bash, kick, headbang
+The royal guard             77  462M Ex-x  1   G  13116-13171 18208-18227 [troll], bash, kick, headbang
+The Tower Guardian (se)     77  409M Gx-x x    -   ~13k       20810-20865 vuln unlife, resist energy/magic, trueheal, powerheal, wrath of god, wither, blindness, curse, 1-2 spells, room is norecall
+The Tower Guardian (sw)     77  385M Nx-x x    -  12798-12830 20925-20968 vuln unlife, resist energy/magic, 5-7 attacks, bash, kick, headbang, blocker, room is norecall
+The Tower Guardian (nw)     77  393M Ex-x x    -  12794-12814 20900-20937 vuln unlife, resist energy/magic, backstab (56), room is norecall
+The Tower Guardian (ne)     77  416M Ex-x x    -  12788-12848 20856-20876 vuln unlife, resist energy/magic, powerword kill, mass pain, powerword blind, meteor blast, hell storm, 1-1 spell, mana shielded, room is norecall
+The White Guardian          77  397M Gx-x      G  11804-11816     1-1     INFO, vuln unlife, resist energy/magic, mass pain, deathspell, shrugger, blocker
+The ghost of King Torsak    78  702M Nx-x      G                  1       INFO, vuln energy, immune unlife, resist WEAPON, trueheal, wither, hell fire, room is norecall
+A wizened old troll         79  490M Ex-x  1   G  14177-14287 23187-23232 [troll], mass pain, powerword pain, meteor blast
+The master of ceremonies    79       Exxx      G                          [troll], powerheal, harm, meteor blast, mass pain, powerword pain, wither, confusion
+The Kraken                  82 1476M Ex-x  1   G  16870-16898     1-1     INFO, [mythical], immune water, room is norecall
+The huge Rockworm           85 1258M Nx-x      G  23924-24130     1-1     INFO, vuln mental/gas, resist earth
+A Troll mummy               86       Ex-x x    -                          INFO, vuln pure/light/heal, immune unlife/dark, sleeping, blocker
+The watch commander         90 2520M Exxx      G  35363-35478 65888-65901 INFO, [troll], bash, kick, headbang
+The Fire Demon              92 2429M Ex-x      -  31880       45925       INFO, [demon?], vuln pure/light/iron, immune fire, resist unlife/dark/poison, 4-8 attacks, fireball, hell storm, hell fire, burning hands, 0-1 spells, shrugger, blocker, sitting, room is norecall
+The Blue Dragon             94       Ex-x  1   G  39469.5     47627       INFO, [dragon], 4-8 attacks, blocker, lightning breath, shrugger, room is norecall/nosumout
+K'rek Dhor                  96       Ex-x x    -   ~55k                   INFO, [troll], sitting, bash, headbang, can do 1k damage per round, room is nosum/norecall

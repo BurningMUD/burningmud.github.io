@@ -1,0 +1,134 @@
+# Ultima (16): 1-100, Casret  (Ultima: -)
+#
+#   Lvl 1               Lvl 2               Lvl 3                Guardian
+#     o                                   o - o - o                x
+#    /|           o - X - o - k - o       |   |   |           Blackthorn
+# o   o     m     |               |       o - X - o              x
+# |   |    x      m   o - o - o - o       |   |   |             o
+# o   o   o       |   |                   o - o - o            x
+# +   |   +       o   o - o - o - o      x                 Exodus
+# o - U - o       |               |     o - o - k            x
+#     |           o - o - o - o - o     |   |   |         Minax
+# o   o + k           +                 o - U - m          x
+# |   |   |           U                 |   |   |      Mondain
+# o + o   o                             o - o - o        x
+#                                                  Enlightenment
+#           Lvl 4                                       ^
+#    ^   ^   U   ^   ^               Lvl 5              +
+#    |   |   |   |   |           o   o   o - U       Humility
+# <- o - o - o - o - o ->        |   |   |              ^
+#    |   |   |   |   |           o   o - o   o          +
+# <- o - o - k - o - o ->        |   |       |     Spirituality
+#    |   |   |   |   |           o - m - o - o          ^
+# <- o - o - o - o - o ->        |   |   |              +
+#    |   |   |   |   |           o   o   o - k        Honour
+#    v   v   |   v   v              /                   ^
+#            o                     X                    +
+#            |                                      Sacrifice
+#  o-o - o - X - o - o - q                              ^
+#            +                                          +
+#        m   o   o                                   Justice
+#        |   |   |          Lvl 7                       ^
+#        o + o + o        m                             +
+#                         |                           Valor
+#                     o   o - o - o                     ^
+#      Lvl 6          |       |                         +
+#    ^   U   ^        o - o - o - U                 Compassion
+#    |   |   |            |                             ^
+# <- o - o - o ->     o + o + o                         +
+#    |   |   |            ^                          Honesty
+# <- o - m - o ->         |                             ^
+#    |   |   |            X - o - o + o                 |  o   o
+# <- o - o - o ->         +       +                    /   |   +
+#    |   |   |            o   o - o - o               o -- o - o
+#    v   |   v                    |       Lvl 8            |
+#        |                        k     m - o - o          o
+#        o - o - o - o - o - o          |   |   |          |
+#                    |                  o - o - o          M
+#                    X                      |  ___________/
+#                   x|                      | /
+#               As + o + Ws                 XU
+#                    |                     x|
+#           Bs + o - o - o + k          o - o - o
+#                +       +              |   |   |
+#                o       o              o - o - k
+#
+* Most of the area is very bright. Most creatures are humans.
+* m = moonstone location
+* k = key location (mantra)
+
+Ultima:                 Lvl    Xp ASWIDMX # agg     Hp        Gold      Special
+The insects               2  1000 E-x---    G E   27-32        0-0
+The girl                  3  3000 G-x---    -     63-63       23-29
+The sheep                 3  3000 G-----    -     59-60        0-0      vuln mental
+The bat                   4  7000 E-----    G     82-82        0-0      vuln mental
+The shepherd              4  7000 G-x---    -     77-77       28-75
+Katrina the Shepherd      5   14k Gxx--x    -    100-103     160-215
+The giant rat             5   14k E-x---    G E   96-96        0-0      vuln mental
+The mage                  6   24k G-x--x    -    116-118     349-476    [human]
+The demon skeleton        7   24k E-----    G E  142-143       1-1      summoned, vuln pure/light
+The slime                 7   36k E-x---    -    143-145       0-0      flees
+Mariah the Mage           8   64k Gxx--     -    156-159     763-768    magic missile, blindness, burning hands
+The beggar                8   60k G-x---    -    157-165       2-10     [human]
+The giant spider          8   64k E-----    G E  158-165       0-0
+The bard                  9   90k G-----    -    178-183     864-949    [human]
+The snake                 9   99k E-x---    -    181-182       0-0      immune poison, flees
+The townsman              9   90k G-x---    -    177-182     891-956    [human]
+The bartender            10  110k G-x---    -    192-205       1-1      [human]
+The demon zombie         10  100k E-----    G    197-204       1-1      [undead?], summoned, immune unlife, vuln heal/pure/light
+Iolo the Bard            11  132k Gx---x    -    212-221       1-1
+The dirty prisoner       11  132k E-----    -    215-216       1-1      flees
+The orc                  11  132k E-x---    -    211-227       1-1      [orc], vuln pure?/light?, resist ice?/poison?/dark?, flees
+The city druid           12  156k G----x    -    231-237       1-1      NOT [human]
+The forest druid         12  156k G-x--x    -    238-241       1-1      NOT [human]
+The citizen of yew       13  182k G-x---    -    258-267       1-1      flees, NOT [human]
+The pub owner            13  182k G-----    -    262-262       1-1      [human]
+The troll                13  182k E-x---    G E  254-260       1-1      [troll], vuln acid?/mental?, resist earth?/poison?/crush?
+The prisoner             14  210k E-----    G E  277-283       1-1      [human]
+Jaana the Druid          15  255k Gxx--x    -    293-308       1-1      magic missile, blindness, burning hands, lightning bolt
+The gremlin              15  255k E-x---    -    293-294       1-1      flees
+The lesser demon         15  225k E-----    G    305-309       1-1      summoned, vuln pure/light/iron, resist unlife
+The wisp                 15  255k Nxx---    -    295-301       1-1
+The ettin                16  304k E-x---    G E  328-331       1-1
+The fighter              18  414k G-x---    -    381-388       1-1      [human]
+The headless             19  475k E-x---    G    414-429       1-1
+Geoffrey the Fighter     22  880k Gxx--x    -    518-522       1-1      [human], bash, kick, headbang
+The gazer                23 1035k E-x---    G E  534-546       1-1
+A tinker                 25 1500k G-x---    -    588-588       1-1      [human]
+Mr. Smithy               25 1444k G-----    -    596-611       1-1      vuln mental
+The shark                25 1500k E-x---    G E  606-611       1-1      immune water, water-living
+The mimic                26 1820k E-x---    G E  633-640       1-1
+A seahorse               28 2520k G-x---    -    702-705       1-1      immune water, water-living
+Julia the Tinker         28 2520k Gx---x    -    681-702       1-1      [human]
+The sandtrap             29 3350k E-x---    -    712-728       1-1      flees
+Nystul the Librarian     30 3600k Gx---x    -    737-768       1-1      [human], meteor blast, fireball, meteor swarm
+The paladin              30 3465k G-x--x    - E  734-765       1-1      [human]
+The squid                30 3600k E-x---    G E  758-762       1-1      immune water, water-living
+Gwenno the Bard          31 4340k Gxx--x    -    776-786       1-1      [human]
+The reaper               31 3720k E-----    G    781-795       1-1      resist energy
+The dragon               32 5120k E----x    G    805-809       1-1      [dragon], resist fire?/ice?/earth?/air?/gas?, fire breath, can VAPE eq!, aware
+The ghost                32 5120k E-x---    G    802-804       1-1      resist WEAPON, vuln energy, immune unlife
+The Judge                32 5440k Gx---x    -    796-828       1-1      NOT [human]
+The spirit               32 5120k G-x---    -    795-800       1-1      immune unlife
+Chuckles the Jester      33 4637k Gx---x    -    831-845       1-1      [human]
+Dupre the Paladin        33 5610k Gx---x    - E  844-852       1-1      [human], bash, kick, headbang
+Lord Simon               33 5280k Gxx--x    -    792-834       1-1      [human], bash, kick, headbang
+The mourner              33 5940k G-x---    -    835-849       1-1      [human]
+The skeleton             33 5940k E-x---    G    823-846       1-1      resist WEAPON, vuln pure/light
+The daemon               34 8160k Exx---    G    867-888       1-1      vuln pure/light/iron, immune fire, fireball, burning hands, teleport, blindness, summon demon skeleton, summon lesser demon, summon demon zombie
+The Lady of Empath Abbey 34 7480k Gxx--x    -    886-889       1-1      [human], fireball, meteor blast, colour spray
+Draxthanum the Gargoyle  35 8750k Gxx--x    -    908-909       1-1      fireball, burning hands, summon demon zombie, summon demon skeleton, teleport, blindness
+Shamino the Ranger       35 8925k Gx---x    -    897-919       1-1      [human], powerheal, harm, blind, confusion, curse
+Batlin                   37 9620k Exx--x    -   1056-1060      1-1      [human], fireball, meteor blast, colour spray, meteor swarm, aware
+The Timelord             39   14M Nx---x    -   1276-1312      1-1
+Blackthorn               40   16M Ex---x    G E 1456-1465      1-1      bash, kick, headbang, aware
+The Guardian             43   19M Ex---x    G E 1592-1616      1-1      NOT [human], aware
+Mondain                  45   19M Ex-xxx    GNE 1952-1952      1-1      [human], meteor swarm, fireball, meteor blast, colour spray
+Exodus                   53   34M Ex-xxx    GNE 3489-3489      1-1      [human], mass pain, meteor blast, powerword pain, fireball
+Minax                    54   43M Ex-xx     GNE 3207-3232      1-1      [human], meteor blast, fireball, powerword pain, mass pain, meteor swarm
+Sentri                   70  147M G--xxx    -   8904-8916      1-1      [human], bash, kick, headbang
+Lord British             75  337M Gx-x x    -             100001-100001 [human], shrugger, blindness, wither, mass pain, powerword pain, harm, confusion, powerheal, meteor blast
+The Avatar               80 1120M Gx-x x    -                  1-1      [human], shrugger, confusion, powerword pain, mass pain, harm, powerheal, wither, blindness, meteor blast
+The armourer            100     0 G--x x    -  63978-64038     1-1      INFO, [human]
+The boatseller          100     0 G--x x    -  63972-64000     1-1      INFO, [human]
+The weaponseller        100     0 G--x x    -  64011-63999     1-1      INFO, [human]

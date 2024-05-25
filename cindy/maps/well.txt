@@ -1,0 +1,823 @@
+# The Well (551-552):
+* FIND OUT: LOTS!
+* FIND OUT: What is the chance of getting frags from a mob?
+* FIND OUT: What is the chance of the frags being type X (depending on level)
+* FIND OUT: Levels on: A boulder           (44-46)
+*                      The Dao Khan        (98-99)
+*                      The Djinni Caliph   (  99+)
+* FIND OUT: Gorgon            vuln to SLAY magical?
+*           Greater medusa    vuln to magic?
+*           Ice elemental     resists ice?
+*           Water elem (easy) resists crush?
+*           Water elem (hard) resists crush?
+*           Otyugh            vuln to magic?
+*           Otyugh            resists energy?
+*           Elementals        vuln to unlife?
+#
+* Moves every 6 hour. Can be tracked with a 'compass' (item found in well).
+* Being the first to enter the Well in a new location gives +1 rep and +1 qp,
+* and allows people to enter the well through Milo'rai.
+*
+* Compass: Points toward the well. Direction is shown by a number (0-359).
+*   0: Straight north
+*  90: Straight east (or not possible to walk to without portal/ship/dragon)
+* 180: Straight south
+* 270: Straight west
+* Compass looks for the closest route and then calculates the direction,
+* counting each step to be of equal length. Note that many areas overlap, so
+* even if you find the exact spot, you might not find it (then it's in another
+* area of the same longitude & latitude)
+*
+* Room names:
+* A Small Passage             : -
+* A Small Cavern              : -
+* A Glittering Passage        : Can't trapdoor!
+* A Shimmering Room           : Can't trapdoor!
+* A Magical Waterfall         : Wild Magic. Can't trapdoor!
+* In the Essence Flows        : Wild Magic. Can't trapdoor!
+* An Icy Passage              : May make you slip when walking/fighting.
+* A Frozen Pool               : May make you slip when walking/fighting.
+* An Ice-Covered Cavern       : May make you slip when walking/fighting.
+* An Underground Lake         : Sleep/rest will damage you.
+* A Narrow Underground Stream : Sleep/rest will damage you.
+* A Deep Pool                 : Sleep/rest will damage you.
+* A Wide Pool                 : Sleep/rest will damage you.
+* A Deep Eddy                 : Sleep/rest will damage you.
+* A Fiery Lavafall            : Damages you continously.
+* A Hot Lava Flow             : Damages you continously.
+* A Pool of Quicksand         : Will make you drop further down in the well.
+* Most room may have trapdoors opening randomly.
+* Any room may have raging tempests passing by.
+* Any room with Myst is no-magic.
+* Any room may be noflee, norecall and/or nosum
+*
+* Geyser (You can drink from it and gain random spells):
+* A small geyser of glimmering water has erupted here, you feel thirsty.
+* Geyser on lvl 10 gave lvl 40 blur
+*
+* Gond spawns at lvl 6. Moves randomly and can move down in the well but never
+* up. Has been seen as deep as level 13.
+* Give him a Soul Crystal to get "fused" (able to get frags).
+*
+* Any corpse may have frags. To get the frags, "butcher corpse"
+* Frags are split among all in the group who has been fused. Leader gets a
+* small bonus:
+* 18 ppl, butcher =  200  (leader  218)
+* 20 ppl, butcher = 1645  (leader 1810)
+* 18 ppl, butcher = 3316  (leader 3616)
+* Guess: Leader gets 0.5 percent extra per group member
+*
+* Ktv: permanent detect hidden, detect invis & darkvision, resistance to
+*      gas/poison/energy/mental.
+*
+* Ktv   : Earth: 1600000   Water:  900000   Air:  400000   Fire: 100000
+* Stat 1: Earth: 2000000   Water: 1125000   Air:  500000   Fire: 125000
+* Stat 2: Earth: 2500000   Water: 1406250   Air:  635000   Fire: 156250
+* Stat 3: Earth: 3125000   Water: 1757812   Air:  781250   Fire: 195312
+* Stat 4: Earth: 3906250   Water: 2197265   Air:  976562   Fire: 244140
+* stat 5: Earth: 4882812   Water: 2746581   Air: 1220702   Fire: 305175
+*  +++  : Earth: 6103515   Water: 3433226   Air: 1525877   Fire: 381468
+* RACE  : Earth: 1600000   Water:  900000   Air:  400000   Fire: 100000
+* ALIGN : Earth: 1600000   Water:  900000   Air:  400000   Fire: 100000
+*
+* Buying stats also costs money. Not sure how it works. This is what I know.
+* Sue:      strength            3392675 gold coins      27 -> 28   ( ?% disc.)
+* Sue:      intelligence        2737500 gold coins      21 -> 22   ( ?% disc.)
+* Sue:      wisdom              2816887 gold coins      22 -> 23   ( ?% disc.)
+* Sue:      dexterity           1976475 gold coins      20 -> 21   ( ?% disc.)
+* Sue:      constitution        3707031 gold coins      26 -> 27   ( ?% disc.)
+* Mthead 1: strength            2400000 gold coins      26 -> 27   (36% disc.)
+* Mthead 1: intelligence        1975680 gold coins      22 -> 23   (36% disc.)
+* Mthead 1: wisdom              1920000 gold coins      21 -> 22   (36% disc.)
+* Mthead 1: dexterity           1552320 gold coins      22 -> 23   (36% disc.)
+* Mthead 1: constitution        2396160 gold coins      25 -> 26   (36% disc.)
+* Mthead 2: intelligence        2739712 gold coins      22 -> 23   (45% disc.)
+* Mthead 2: wisdom              2662500 gold coins      21 -> 22   (45% disc.)
+* Mthead 2: dexterity           2152631 gold coins      22 -> 23   (45% disc.)
+* Mthead 2: constitution        3322800 gold coins      25 -> 26   (45% disc.)
+
+
+* MAP = Random but logical. Max 19 x 19 rooms per level. Map example:
+* X  Entrance         ICE Ice              W  Water
+* L  Lava             WM  Wild Magic       Q  Quicksand
+# Lvl 1:
+#                    ICE- o           o - 6 - W - o
+#                     |   |              /    |
+#                ICE- 5  WM - o   o           o  ICE
+#                 |  /    |   |   |           |   |
+#         L - o - 4   o   o -WM - o - o - o - L - o
+#         |   |  /|   |   |   |       |   |
+#         2   W - o - W - o   o - o   o - o
+#        /    |   |   |   |       |   |
+# o - o - o -WM - o - o -ICE  o - o - o
+#     |           |   |   |   |   |
+#     o - L - o   o - 3   o -WM   o - o
+#         |   |   |  /    |
+#        ICE- o - o - o   o
+#         |   |   |   |   |
+#         o -WM - o - o - o
+#             |       |   |
+#         o - X - o   o - o
+#             |   |   |   |
+#             1 - o  ICE  L
+#            /|   |       |
+#             o  WM  ICE- 9 -ICE
+#             |       |  /    |
+#            WM - o - o -10   o
+#                 |   |  /    |
+#                 8 -WM - o  WM
+#                /        |   |
+#                 o -ICE- o   o
+#                 |   |       |
+#                 7 -ICE-11 - o - o
+#                /|   |  /|   |   |
+#                 o   o   L - o - o
+#                         |       |
+#                         o       o - o
+#
+# Lvl 2:
+#                      o   o - o   o   o -WM -ICE- o - o
+#                      |   |       |       |   |   |   |    /
+#                      o - o - o - o - o - W - o   o - W   6
+#                          |       |   |/  |   |       |   |
+#                  o   o - o -ICE  o   5   o - o - o - o - o   o -ICE
+#                  |   |       |   |/      |   |  /|       |       |
+#              o -WM - o   o - o - 4       o - o   L - o   o -ICE  W
+#             /|   |   |   |/  |   |           |       |  /|       |
+#      W - o   o - o - o - 2 - o   o   o -WM   o - o -ICE- o - W - o
+#         /|           |   |  /|           |   |   |   |   |       |
+# ICE- L   o   o   o - W -ICE- o - o - o -ICE-ICE- o - W - o   o   o
+#      |   |   |   |       |            /  |   |   |       |   |
+#      o - o   o -WM - o - L - o   o - 3 - o   o  WM -ICE-WM - o - o
+#          |       |      /|   |           |   |   |           |   |
+#          o - W - o  WM - o - o   o - o - o - o - L - o   o   o   o
+#          |   |       |   |   |   |   |   |  /|   |   |   |   |   |
+#          o - o -ICE- o - o -ICE- o - o - o -WM - o - o - o - o   o
+#              |       |       |           |   |       |       |   |
+#  o - o - o - L - o - o - o - o - o - o - o - o - o - o   o - o   W
+#  |   |   |                   |/  |       |       |   |   |       |
+#  o - o   o - o - o   o - L - 1   o - o - W - o - o - o -ICE  o - o
+#  |       |   |   |   |       |   |   |   |/  |   |   |       |   |
+#  o       o - o   o - o - o - o - o  ICE  9 - o  WM  ICE- L  WM - o
+#              |               |       |   |/  |           |   |
+#              o   o -ICE-ICE- o  WM - o  10 - o - o - o - o -ICE- o
+#              |   |           |  /|/  |   |   |   |       |   |   |
+#              o - o       o - Q - 8 - o -ICE- o - o - o -WM - o   o
+#                          |   |   |       |       |   |   |   |   |
+#                          o - o -WM - o - o - Q - o   W - W  WM - o
+#                              |   |/      |/  |   |   |   |   |   |
+#                              L - 7 - o -11 - o   o   o - o -WM - o
+#                             /            |   |   |       |  /    |
+#                                          o - L - o   o -WM - o - o
+#                                          |  /|   |   |   |       |
+#                                          o -ICE- o - o - o   o  WM
+#                                          |   |       |   |   |   |
+#                                          o - o      WM - o   o - o
+#
+* Earth  1-20    Approx lvl^2*100 drops
+* Water  6-20    Approx (lvl-5)^2*100 drops
+* Air    11-20   Approx (lvl-10)^2*100 drops
+* Fire   16-20   Approx (lvl-15)^2*100 drops
+                                                   A=Agg, I=Detect invis
+1: Mob                  Gold  Earth            Lvl AI Special
+  +Ascomoid                -    101             41 A- Vuln pierce/acid
+  +Berbalang               -    114             55 Ax Vuln unlife
+  +Brown mold              -    106             46 Ax Vuln acid, Immune lots
+  +Cloaker                 -    112             53 Ax Vuln unlife, GRAB
+  +Crystal ooze            -    100             40 Ax Resist weapon
+  +Doppleganger            -    105             45 -x Vuln unlife
+  +Elder mind flayer       -    112             52 Ax ---
+  +Flail snail             -    104             44 A- Vuln mental/gas, refl.
+  +Gas spore               -    100             40 A- Vuln acid, SPORES
+  +Grey ooze               -    103             43 A- Resist weapon, VAPES
+  +Living web              -    109             49 -- SPLIT-ON-SLASH
+  +Mind flayer             -    107             47 Ax ---
+  +Roper                   -    110             50 A- Vuln unlife, drain str
+  +Sandling                -    100             40 Ax Vuln unlife
+  +Strider                 -    100             40 Ax Vuln air
+  +Taer                    -    100             40 A- ---
+  +Vampiric mist           -    108             48 Ax Vuln energy, Imm unlife
+  +Violet fungus           -    102             42 A- Vuln acid, DISEASE
+
+2: Mob                  Gold  Earth            Lvl AI Special
+   Ascomoid            20992    404
+   Berbalang           28160    459
+   Brown mold          23552    424
+   Cloaker             27136    451
+   Crystal ooze        20480    400
+   Doppleganger        23040    420
+   Elder mind flayer   26624    448
+   Flail snail         22528    416
+   Gas spore           20480    400
+  +Giant wolverine     23040    420             45 A- Vuln mental/gas
+   Grey ooze           22016    412
+   Living web          25088    436
+   Mind flayer         24064    428
+   Roper               25600    440
+   Sandling            20480    400
+   Strider             20480    400
+   Taer                20480    400
+   Vampiric mist       24576    432
+   Violet fungus       21504    408
+
+3: Mob                  Gold  Earth            Lvl AI Special
+   Ascomoid            41984    909
+   Berbalang           56320   1035
+   Brown mold          47104    954
+   Cloaker             54272   1016
+   Crystal ooze        40960    900
+   Doppleganger        46080    945
+   Elder mind flayer   53248   1008
+   Flail snail         45056    936
+   Gas spore           40960    900
+   Giant wolverine     46080    945
+   Grey ooze           44032    927
+   Living web          50176    981
+   Mind flayer         48128    963
+   Roper               51200    990
+   Sandling            40960    900
+   Strider             40960    900
+  -Taer                40960    900
+   Vampiric mist       49152    972
+   Violet fungus       43008    918
+
+4: Mob                  Gold  Earth            Lvl AI Special
+   Ascomoid            62976   1616
+   Berbalang           84480   1839
+   Brown mold          70656   1696
+   Cloaker             81408   1807
+   Crystal ooze        61440   1600
+  +Darkenbeast         87552   1872             57 Ax Vuln unlife
+   Doppleganger        69120   1680
+   Elder mind flayer   79872   1792
+   Flail snail         67584   1664
+   Gas spore           61440   1600
+   Giant wolverine     69120   1680
+   Grey ooze           66048   1648
+   Living web          75264   1744
+  +Memory web          90624   1904             59 Ax Res unlife, drain mana
+   Mind flayer         72192   1712
+  +Mist wolf           76800   1760             50 A- Vuln mental
+   Roper               76800   1760
+   Sandling            61440   1600
+  +Slithering tracker  86016   1855             56 -  Res weapon, ultra-hide
+  +Spirit naga         89088   1888             58 Ax ---
+  -Strider             61440   1600
+  +Tentamort           92160   1920             60 Ax Vuln unlife, TENTA!!!
+   Vampiric mist       73728   1728
+   Violet fungus       64512   1632
+
+5: Mob                  Gold  Earth            Lvl AI Special
+  -Ascomoid            83968   2525
+   Berbalang          112640   2875
+  -Brown mold          94208   2650
+   Cloaker            108544   2824
+   Crystal ooze        81920   2500
+   Darkenbeast        116736   2925
+  -Doppleganger        92160   2625
+   Elder mind flayer  106496   2800
+  +Fire toad          102400   2750             50 Ax Vuln ice
+  -Flail snail         90112   2600
+  -Gas spore           81920   2500
+  -Giant wolverine     92160   2625
+  -Grey ooze           88064   2575
+  -Living web         100352   2725
+   Memory web         120832   2975
+  -Mind flayer         96256   2675
+   Mist wolf          102400   2750
+  +Phycomid            92160   2625             45 A- Vuln acid, inject
+   Roper              102400   2750
+   Sandling            81920   2500
+   Slithering tracker 114688   2900
+   Spirit naga        118784   2950
+   Tentamort          122880   3000
+  -Vampiric mist       98304   2700
+  -Violet fungus       86016   2550
+
+6: Mob                  Gold  Earth  Water     Lvl AI Special
+  +Basilisk           158720  4392     122   62-63 Ax Vuln fire, PETRIFY
+   Berbalang          140800  4140     114
+  +Boulder                 0  3780     105   44-46 Ax Vuln fire
+   Cloaker            135680  4067     112
+  -Crystal ooze       102400  3600     100
+   Darkenbeast        145920  4212     117
+  +Dracolisk          161280  4428     123      63 Ax Vuln fire, PETRIFY
+   Elder mind flayer  133120  4032     112
+   Fire toad          128000  3960     110
+  +Galeb duhr         174080     ?     128      68 Ax Vuln ice, SPAWNER!
+  +Gorgon             156160  4356     121      61 Ax Vuln unlife, PARALYZIS
+  +Greater medusa     179200  4680     130      70 Ax Vuln unlife, PETRIFY
+  +Grell              168960     ?     126      66 Ax Vuln unlife, no-BM
+  +Ice toad           140800  4140     115      55 Ax Vuln fire
+  +Medusa             166400  4500     125      65 Ax Vuln unlife, PETRIFY
+   Memory web         151040  4284     119
+   Mist wolf          128000  3960     110
+   Phycomid           115200  3780     105
+   Roper              128000  3960     110
+   Sandling           102400  3600     100
+   Slithering tracker 143360  4176     115
+   Spirit naga        148480  4248     118
+   Tentamort          153600  4320     120
+  +Varrangoin (easy)  163840  4464     124      64 Ax Vuln pure/light/iron
+  +Varrangoin (hard)  176640     ?     129      69 Ax Vuln pure/light/iron
+  +Xorn               171520  4572       ?      67 Ax Eats money
+
+7: Mob                  Gold  Earth  Water     Lvl AI Special
+   Basilisk           190464   5978    488
+   Berbalang          168960   5635    459
+   Boulder                 0   5145    420
+   Cloaker            162816   5536    451
+   Darkenbeast        175104   5733    468
+   Dracolisk          193536   6027    492
+   Elder mind flayer  159744   5488    448
+   Fire toad          153600   5390    440
+   Galeb duhr         208896      ?    512
+   Gorgon             187392   5929    484
+   Greater medusa     215040      ?    520
+   Grell              202752      ?   ~510
+   Ice toad           168960   5635    459
+   Medusa             199680   6125    500
+   Memory web         181248   5831    476
+  -Mist wolf          153600   5390    440
+   Phycomid           138240   5145    420
+   Roper              153600   5390    440
+   Sandling           122880   4900    400
+   Slithering tracker 172032   5684    463
+   Spirit naga        178176   5782    472
+   Tentamort          184320   5880    480
+   Varrangoin (easy)  196608   6076    496
+   Varrangoin (hard)  211968   6321    516
+   Xorn               205824      ?      ?
+
+8: Mob                  Gold  Earth  Water     Lvl AI Special
+   Basilisk           222208   7808   1098
+  -Berbalang          197120   7359   1035
+   Boulder                 0   6720    945
+  -Cloaker            189952   7231   1016
+   Darkenbeast        204288   7488   1053
+   Dracolisk          225792   7872   1107
+  -Elder mind flayer  186368   7168   1008
+   Fire toad          179200   7040    990
+   Galeb duhr         243712      ?   1152
+   Gorgon             218624   7744   1089
+   Greater medusa     250880   8320   1170
+   Grell              236544      ?   1134
+  +Hell hound         215040   7680   1080      60 Ax Vuln unlife
+   Ice toad           197120   7359   1035
+   Medusa             232960   8000   1125
+   Memory web         211456   7616   1071
+   Phycomid           161280   6720    945
+  -Roper              179200   7040    990
+   Sandling           143360   6400    900
+   Slithering tracker 200704   7423   1044
+   Spirit naga        207872   7552   1062
+   Tentamort          215040   7680   1080
+   Varrangoin (easy)  229376   7936   1116
+   Varrangoin (hard)  247296   8256   1161
+  +Winter wolf        215040   7680   1080      60 A? Vuln fire/mental
+   Xorn               240128      ?   1143
+
+9: Mob                  Gold  Earth  Water     Lvl AI Special
+  +Air elemental      299008  10773   2128      73 Ax Vuln earth
+   Basilisk           253952   9882   1952
+   Boulder                 0   8505   1680
+   Darkenbeast        233472   9477   1872
+   Dracolisk          258048   9963   1968
+  +Earth elemental    294912  10692   2112      72 Ax Vuln air
+  -Fire toad          204800   8910   1760
+   Galeb duhr         278528  10368      ?
+   Gorgon             249856   9801   1936
+   Greater medusa     286720      ?   2080
+   Grell              270336  10206  ~2015
+   Hell hound         245760   9720   1920
+  -Ice toad           225280   9315   1839
+   Medusa             266240  10125   2000
+   Memory web         241664   9639   1904
+  +Otyugh             303104 ~10850   2144      74 Ax Vuln unlife, grapple
+   Phycomid           184320   8505   1680
+   Sandling           163840   8100   1600
+   Slithering tracker 229376   9396   1856
+   Spirit naga        237568   9558   1887
+   Tentamort          245760   9720   1920
+  +Thessaltrice       290816  10611  ~2100      71 A? Vuln unlife, PETRIFY
+   Varrangoin (easy)  262144  10044   1984
+   Varrangoin (hard)  282624  10449   2064
+  +Water weird        225280   9315   1840      55 Ax Remove poison!
+   Winter wolf        245760   9720   1920
+   Xorn               274432  10287   2032
+
+10:Mob                  Gold  Earth  Water     Lvl AI Special
+   Air elemental      336384  13300   3325
+  -Basilisk           285696  12200   3050
+   Boulder                 0  10500   2625
+  -Darkenbeast        262656  11700   2925
+  -Dracolisk          290304  12300   3075
+   Earth elemental    331776  13200   3300
+   Galeb duhr         313344  12800   3200
+  -Gorgon             281088  12100   3025
+   Greater medusa     322560  13000   3250
+   Grell              304128  12600   3150
+   Hell hound         276480  12000   3000
+  -Medusa             299520  12500   3125
+  -Memory web         271872  11900   2975
+   Otyugh             340992  13400   3350
+  -Phycomid           207360  10500   2625
+   Sandling           184320  10000   2500
+  -Slithering tracker 258048  11600   2900
+  -Spirit naga        267264  11800   2950
+  -Tentamort          276480  12000   3000
+   Thessaltrice       327168  13100   3300
+   Varrangoin (easy)  294912  12400   3100
+   Varrangoin (hard)  317952  12900   3225
+   Water weird        253440  11500   2875
+  +White pudding      299520  12500   3125      65 Ax VAPES
+   Winter wolf        276480  12000   3000
+   Xorn               308736  12700   3175
+
+11:Mob                  Gold  Earth  Water    Air  Lvl AI Special
+   Air elemental      373760      ?  ~4790      ?
+  +Beholder           404480      ?      ?      ?   79 Ax Vuln pure/light/iron?
+   Boulder                 0      ?      ?      ?
+   Earth elemental    368640      ?      ?   ~140
+  +Fire elemental     358400      ?  ~4680   ~130   70 Ax Vuln ice
+   Galeb duhr         348160 ~15500      ?      ?
+  +Gauth              424960      ?      ?      ?   83 Ax Vuln light, flee NESW
+   Greater medusa     358400      ?      ?      ?
+   Grell              337920      ?  ~4540      ?
+   Hell hound         307200      ?   4320   ~120
+  +Manticore          419840      ?      ?      ?   82 Ax Vuln unlife
+  +Neo-otyugh         414720      ?      ?      ?   81 Ax Vuln unlife, grapple
+   Otyugh             378880      ?      ?      ?
+  +Purple worm        399360      ?      ?      ?   78 Ax Vuln unlife
+   Sandling           204800  12100      ?    100
+  +Soul beckoner      394240      ?      ?   ~140   77 Ax Vuln energy/light
+  +Thessalgorgon      384000      ?      ?   ~140   75 Ax Vuln unlife, PETRIFY
+  +Thessalhydra       409600      ?      ?      ?   80 Ax Vuln unlife
+  +Thessalmera        389120  16456      ?      ?   76 Ax Vuln unlife
+   Thessaltrice       363520      ?      ?    131
+  +Umber hulk         430080      ?      ?      ?   84 Ax Vuln pure/light/fire
+   Varrangoin (hard)  353280      ?  ~4650    129
+   Water weird        281600  13914   4140      ?
+   White pudding      332800      ?      ?      ?
+  -Winter wolf        307200      ?      ?      ?
+   Xorn               343040      ?      ?   ~130
+
+12:Mob                  Gold  Earth  Water    Air  Lvl AI Special
+   Air elemental      411136 ~19150      ?      ?
+   Beholder           444928      ?      ?      ?
+   Boulder                 ?      ?      ?      ?
+   Earth elemental    405504      ?      ?      ?
+   Fire elemental     394240      ?      ?   ~520
+   Galeb duhr         382976      ?  ~6270      ?
+   Gauth              467456      ?  ~7000      ?
+   Greater medusa     394240      ?      ?      ?
+   Grell              371712      ?  ~6170   ~500
+  -Hell hound         337920      ?   5880   ~475
+  +Ice elemental      394240      ?      ?   ~520   70 Ax Vuln fire
+   Manticore          461824      ?  ~6950      ?
+   Neo-otyugh         456192      ?  ~6910      ?
+   Otyugh             416768      ?      ?      ?
+   Purple worm        439296      ?      ?   ~550
+   Sandling           225280      ?   4900    400
+   Soul beckoner      433664      ?  ~6685      ?
+   Thessalgorgon      422400 ~19440      ?   ~550
+   Thessalhydra       450560      ?      ?   ~550
+   Thessalmera        428032 ~19590      ?   ~550
+   Thessaltrice       399872      ?      ?      ?
+   Umber hulk         473088      ?  ~7060      ?
+   Varrangoin (hard)  388608      ?      ?   ~500
+   Water weird        309760  16560      ?   ~460
+   White pudding      366080      ?      ?      ?
+   Xorn               377344 ~18300  ~6220      ?
+
+13:Mob                  Gold  Earth  Water    Air  Lvl AI Special
+   Air elemental      448512      ?      ?  ~1195
+   Beholder           485376      ?   8896  ~1255
+   Boulder                 0      ?      ?      ?
+   Earth elemental    442368      ?      ?  ~1185
+   Fire elemental     430080 ~21970      ?  ~1180
+  -Galeb duhr         417792      ?      ?      ?
+   Gauth              509952      ?      ?   1287
+  -Greater medusa     430080      ?      ?      ?
+  -Grell              405504      ?      ?  ~1135
+   Ice elemental      430080      ?      ?  ~1170
+   Manticore          503808      ?      ?   1278
+   Neo-otyugh         497664      ?      ?  ~1270
+   Otyugh             454656      ?      ?      ?
+   Purple worm        479232      ?      ?      ?
+   Sandling           245760  16900   6400    900
+   Soul beckoner      473088      ?      ?      ?
+   Thessalgorgon      460800      ?   8640      ?
+   Thessalhydra       491520      ?  ~8960  ~1255
+   Thessalmera        466944 ~22985      ?  ~1230
+   Thessaltrice       436224      ?      ?      ?
+   Umber hulk         516096      ?      ?      ?
+  -Varrangoin (hard)  423936      ?      ?      ?
+   Water weird        337920      ?   7360   1035
+  -White pudding      399360      ?      ?      ?
+  -Xorn               411648 ~21465  ~8130  ~1140
+
+14:Mob                  Gold  Earth  Water    Air  Lvl AI Special
+   Air elemental      485888 ~25945      ?      ?
+   Beholder           525824      ? ~11200      ?
+   Earth elemental    479232      ?      ?  ~2100
+  +Eraditor           572416      ? ~11290      ?   86 Ax Vuln pure/light/iron
+   Fire elemental     465920      ? ~10525      ?
+   Gauth              552448      ?      ?      ?
+  +Horgar             599040      ?      ?      ?   90 Ax Vuln fire, VAPES
+   Ice elemental      465920      ?      ?      ?
+  +Lesser Eraditor    565760      ? ~11750  ~2320   85 -  Vuln pure/light/iron
+  +Major Eraditor     579072      ?      ?      ?   87 Ax Vuln pure/light/iron
+   Manticore          545792      ?      ?      ?
+   Neo-otyugh         539136      ?      ?      ?
+   Otyugh             492544      ? ~10850      ?
+   Purple worm        519168      ?      ?  ~2200
+  +Pyrohydra          532480      ?      ?      ?   80 Ax Vuln ice
+  +Remorhaz           532480      ?      ?  ~1595   80 Vuln slay dragon
+   Sandling           266240      ?      ?   1600
+   Soul beckoner      512512      ?      ?      ?
+  +Thassaloss         592384      ?      ?      ?   89 -  ---
+   Thessalgorgon      499200 ~26470      ?      ?
+   Thessalhydra       532480      ?      ?  ~2245
+   Thessalmera        505856      ?      ?  ~2175
+   Thessaltrice       472576      ? ~10565      ?
+   Umber hulk         559104      ?      ?      ?
+  +Water elemental (a)465920      ? ~10535      ?   70 Ax Vuln fire
+   Water weird        366080      ?  ~9270  ~1840
+
+15:Mob                  Gold  Earth  Water    Air  Lvl AI Special
+  -Air elemental      523264 ~29930 ~13300   3250
+  -Beholder           566272 ~31115  13899  ~3480
+  -Earth elemental    516096 ~29700  13200  ~3300
+   Eraditor           616448      ?  14600  ~3650
+  -Fire elemental     501760      ?  13000  ~3250
+   Gauth              594944      ? ~14300      ?
+   Horgar             645120      ?      ?  ~3750
+  -Ice elemental      501760      ? ~13000   3250
+   Lesser Eraditor    609280 ~32625  14500   3625
+   Major Eraditor     623616 ~33080 ~14700  ~3675
+   Manticore          587776      ? ~14200  ~3550
+   Neo-otyugh         580608      ?  14100   3525
+  -Otyugh             530432      ?  13400   3350
+  -Purple worm        559104      ? ~13800  ~3450
+   Pyrohydra          573440  31499      ?  ~3500
+   Remorhaz           573440      ? ~14000  ~3500
+   Sandling           286720  22500  10000   2500
+  -Soul beckoner      551936      ?  13700  ~3425
+   Thassaloss         637952      ?  14900   3725
+  -Thessalgorgon      537600 ~30375 ~13500   3375
+  -Thessalhydra       573440 ~31500 ~14000   3500
+  -Thessalmera        544768 ~30600      ?   3400
+  -Thessaltrice       508928      ? ~13100   3275
+   Umber hulk         602112      ? ~14400   3600
+   Water elemental (a)501760      ? ~13000   3250
+   Water weird        394240 ~25880      ?   2875
+
+16:Mob                  Gold  Earth  Water    Air   Fire  Lvl AI Special
+  +Anc. white dragon  652800      ?      ?  ~5220      ?   85 Ax Vuln fire
+   Eraditor           660480      ?      ?  ~5250   ~148
+   Gauth              637440      ?      ?  ~5140   ~140
+   Horgar             691200      ?      ?      ?      ?
+   Lesser Eraditor    652800      ? ~17540      ?      ?
+   Major Eraditor     668160      ?      ?  ~5295   ~150
+   Manticore          629760      ?      ?      ?   ~150
+   Neo-otyugh         622080      ?      ?      ?      ?
+   Pyrohydra          614400      ? ~16945      ?   ~140
+   Remorhaz           614400      ?      ?      ?      ?
+   Sandling           307200      ?  12100   3600    100
+  +Shadow Demon       698880      ? ~18270  ~5435      ?   91 -  V. pu/li/iron
+  +Shadow dragon      721920      ?      ?      ?      ?   94 -  V. slay dragon
+  +Storm Demon        714240      ?      ?  ~5505   ~150   93 -  V. pu/li/iron
+  +Sword Demon        698880      ? ~18270  ~5450   ~150   91 Ax V. pu/li/iron
+  +Terrorite Demon    714240      ?      ?      ?   ~150   93 Ax V. pu/li/iron
+   Thassaloss         683520      ?      ?      ?   ~150
+   Umber hulk         645120      ?      ?   5184   ~150
+   Water elemental (a)537600      ?      ?      ?   ~130
+  +Water elemental (b)614400      ? ~16950   5040    140   80 Ax Vuln fire
+   Water weird        422400 ~29440      ?  ~4135   ~120
+
+17:Mob                  Gold  Earth  Water    Air   Fire  Lvl AI Special
+   Anc. white dragon  696320      ? ~20880  ~7110   ~580
+  +Djinni Malik       778240      ? ~22210  ~7560   ~630   95 Ax Vuln earth
+  +Efreeti Emir       745472      ?      ?      ?      ?   91 -  Vuln ice
+   Eraditor           704512      ? ~21020  ~7160   ~590
+   Gauth              679936      ? ~20600  ~7010   ~575
+   Horgar             737280      ?      ?  ~7350      ?
+   Lesser Eraditor    696320      ? ~20890      ?   ~580
+   Major Eraditor     712704      ? ~21175  ~7205   ~590
+   Manticore          671744      ? ~20440  ~6960   ~565
+  +Marid Mufti        745472 ~43650 ~16570  ~7400   ~610   93 Ax Vuln fire
+   Neo-otyugh         663552  40749 ~20310      ?   ~570
+   Pyrohydra          655360      ?      ?  ~6860      ?
+  -Remorhaz           655360      ?      ?      ?   ~570
+   Sandling           327680      ?  14400   4900      ?
+   Shadow Demon       745472      ?      ?  ~7400   ~600
+   Shadow dragon      770048      ?      ?  ~7350      ?
+   Storm Demon        761856      ?      ?  ~7495   ~610
+   Sword Demon        745472 ~43630 ~21745  ~7400   ~603
+   Terrorite Demon    761856 ~44210 ~22030  ~7500   ~610
+   Thassaloss         729088      ?      ?  ~7305   ~595
+  +Thonis             778240 ~44790      ?  ~7580   ~620   95 -  V.pu/li/iron
+   Umber hulk         688128      ?      ?  ~7055   ~580
+   Water elemental (a)573440      ?      ?      ?      ?
+   Water elemental (b)655360      ? ~20155  ~6870   ~565
+  -Water weird        450560      ?      ?      ?   ~455
+
+18:Mob                  Gold  Earth  Water    Air   Fire  Lvl AI Special
+   Anc. white dragon  739840      ?      ? ~9285       ?
+ R+Balrog             852992      ?  26702 ~10070  ~1420   98 Ax Vuln earth?
+ R+Dao Hetman         844288      ? ~26400 ~10000  ~1400   97 Ax Vuln air
+   Djinni Malik       826880 ~49980      ? ~9875   ~1400
+ R+Djinni Vizier      844288      ?      ? ~10050      ?   97 Ax Vuln earth
+  +Efreeti Bey        809472      ?      ?      ?      ?   93 -  Vuln ice
+   Efreeti Emir       792064      ?      ?      ?      ?
+   Eraditor           748544 ~47310      ?      ?   1314
+  +Frost dragon       783360      ?      ?  ~9600   1350   90 Ax Vuln fire
+  -Gauth              722432      ?      ?      ?      ?
+   Horgar             783360      ?      ?      ?  ~1360
+   Lesser Eraditor    739840      ? ~24505  ~9275  ~1300
+ +-Lord Eraditor      765952 ~47950      ?      ?  ~1320   88 Ax V.pu/li/iron
+   Major Eraditor     757248 ~47635      ?  ~9415      ?
+  -Manticore          713728 ~46010      ?  ~9090      ?
+  +Marid Beglerbeg    809472      ?      ?      ?  ~1380   93 -  Vuln fire
+   Marid Mufti        792064      ?      ?  ~9660  ~1365
+  -Neo-otyugh         705024      ?      ?  ~9020  ~1270
+  -Pyrohydra          696320      ?      ?      ?      ?
+   Sandling           348160  32400  16900   6400    900
+   Shadow Demon       792064  48924      ?      ?      ?
+   Shadow Dragon      818176      ?      ?      ?      ?
+   Storm Demon        809472      ?      ?      ?  ~1375
+   Sword Demon        792064      ?      ?      ?  ~1355
+   Terrorite Demon    809472      ?      ?      ?  ~1380
+   Thassaloss         774656      ? ~25190      ?  ~1335
+   Thonis             826880      ?      ?  ~9920      ?
+  -Umber hulk         731136      ?      ?      ?  ~1295
+  -Water elemental (a)609280      ?      ?  ~8320  ~1170
+   Water elemental (b)696320      ?      ?      ?  ~1265
+
+19:Mob                  Gold  Earth  Water    Air   Fire  Lvl AI Special
+   -Anc. white dragon 783360      ?      ?      ?      ?
+ R Balrog             903168      ? ~30820 ~12735  ~2515
+ R Dao Hetman         893952 ~56450 ~30625 ~12650  ~2500
+   Djinni Malik       875520 ~55700 ~30250 ~12500  ~2450
+ R Djinni Vizier      893952      ?      ?      ?      ?
+   Efreeti Bey        857088      ?      ?      ?      ?
+   Efreeti Emir       838656      ?      ?      ?      ?
+  +Efreeti Malik      875520      ?      ?      ?      ?   95 -  Vuln ice
+ R+Efreeti Pasha      893952      ?      ?      ?      ?   97 Ax Vuln ice
+   Eraditor           792576      ?      ? ~11825  ~2325
+   Frost dragon       829440 ~54150      ? ~12150  ~2405
+   Horgar             829440      ? ~29400      ?  ~2400
+   Lesser Eraditor    783360      ?      ? ~11750  ~2310
+   Major Eraditor     801792      ?      ?      ?  ~2350
+  +Marid Atabeg       875520      ?      ?      ?      ?   95 -  Vuln fire
+   Marid Beglerbeg    857088      ?      ?      ?      ?
+   Marid Mufti        838656      ?      ?      ?      ?
+ R+Marid Shah         893952      ?      ?      ?      ?   97 Ax Vuln fire
+  -Sandling           368640      ?  19600   8100   1600
+   Shadow Demon       838656      ? ~29590      ?   2416
+   Shadow Dragon      866304      ?      ? ~12475      ?
+   Storm Demon        857088 ~54965      ? ~12385  ~2450
+   Sword Demon        838656      ? ~29600      ?  ~2410
+   Terrorite Demon    857088 ~55235 ~29990 ~12390  ~2445
+   Thassaloss         820224      ?      ? ~12070  ~2380
+   Thonis             875520      ? ~30375 ~12550  ~2480
+   Water elemental (b)737280      ? ~27440 ~11345  ~2240
+
+20:Mob                  Gold  Earth  Water    Air   Fire  Lvl AI Special
+ R Balrog             953344 ~62885 ~35360 ~15750  ~3942
+ R Dao Hetman         943616 ~62550 ~35150 ~15625  ~3910
+ R+Dao Khan           963072      ?      ? ~15820  ~3950 98-99 Ax Vuln fire
+ R+Djinni Caliph      963072      ?      ? ~15850  ~3970  99+ -  Vuln earth
+   Djinni Malik       924160 ~61800 ~34800 ~15450  ~3850
+ R Djinni Vizier      943616      ?      ?      ?      ?
+   Efreeti Bey        904704      ?      ?      ?  ~3830
+   Efreeti Emir       885248      ?      ?      ?      ?
+   Efreeti Malik      924160      ?      ?      ?      ?
+ R Efreeti Pasha      943616      ?      ?      ?      ?
+ R+Efreeti Sultan     963072      ?      ?      ?      ?   99 Ax Vuln ice
+   Eraditor           836608      ?      ?      ?   3650
+   Frost Dragon       875520      ?  33750  15000   3750
+   Horgar             875520      ?      ?  15000   3750
+   Lesser Eraditor    826880  58000 ~32625  14500   3625
+   Major Eraditor     846336      ?      ?  14700   3675
+   Marid Mufti        885248      ?      ?      ?      ?
+   Marid Atabeg       924160      ?      ?      ?  ~3870
+   Marid Beglerbeg    904704      ?      ?      ?      ?
+ R+Marid Padishah     963072      ?      ?      ?      ?  99+ Ax Vuln fire
+ R Marid Shah         943616      ?      ?      ?  ~3935
+ R+Morgoth            972800      ?      ?      ?      ?  100 Ax Vuln earth
+   Shadow Demon       885248      ?  33975  15100      ?
+   Shadow Dragon      914432      ?      ?      ?  ~2420
+   Storm Demon        904704      ?      ? ~15300   3825
+   Sword Demon        885248      ?      ?      ?   3775
+   Terrorite Demon    904704  61200      ? ~15300   3825
+   Thassaloss         865792      ?  33525      ?   3725
+   Thonis             924160      ? ~34700  15500   3875
+   Water elemental (b)778240 ~55725 ~31350 ~14000   3500
+
+
+Well:                    Lvl    Xp ASWIDMX # agg     Hp       Well  Special
+The Essaence Myst          1                 ---               1-20 sneak, no-attack, special-break-cop, special-no-magic
+The crystal ooze          40   26M N--xx-    G   1286-1357     1-6  [insubstantial?], vuln energy?, immune fire/ice/acid, resist WEAPON/crush/unlife?, 4-4 attacks, imp/invis, hide, special-paralyze, aware
+The gas spore             40   20M N-----    G   1277-1305     1-5  vuln acid, immune dark/light/air/gas, aware, 4-4 attacks, special-belch-spores (need true or mira to cure)
+The sandling              40   16M N--xx-    GNE 1315-1323     1-19 [magical], imp/invis, hide, aware
+The strider               40   21M E--xx-    G   1404-1434     1-5  vuln air, immune earth, 5-5 attacks, aware
+The taer                  40   15M N---xx    G   1306-1321     1-3  resist ice, 4-4 attacks, aware
+The ascomoid              41   19M E-x-x-    G   1402-1423     1-5  vuln pierce/acid, immune crush/dark/light/air/gas, resist slash, 4-4 attacks, special-spore-attack (18-70 + possible blind), special-roll-attack (27-61), aware
+The violet fungus         42   21M N---x-    G   1513-1520     1-5  vuln acid, immune dark/light/air/gas, 4-4 attacks, aware, special-fungal-disease (permanent, need true or mira to cure)
+The grey ooze             43   24M N---x-    G   1594-1655     1-5  [insubstantial?], vuln energy?, resist WEAPON/stun?/unlife?, 4-4 attacks, special-feet-attack (16-33), can VAPE boots, hide
+A boulder              44-46          x      G                 6-13 vuln fire, summoned, aware, if too many spawned from same galeb they stop being possible to butcher (max = 3-21)
+The flail snail           44   32M N-x-x-    G   1667-1702     1-5  vuln mental/gas, immune fire, resist earth, 4-4 attacks, special-spell-reflect, special-spell-fizzle, aware
+The doppleganger          45   39M E-xxx-    --- 1774-1795     1-5  [magical], , immune energy/poison/mental, 4-4 attacks, aware
+The giant wolverine       45   30M E---x-    G   1767-1775     2-5  vuln mental/gas, resist earth, 5-5 attacks, hide, aware
+The phycomid              45   30M N---x-    G   1795-1833     5-12 vuln acid, immune air/gas/light/dark, special-inject-phycomid-alien (6 ticks of illness, followed by spawning a new phycomid. Can affect mobs too. Can't have more than one. Spawned ones can't be butchered), aware (Is it cured by mira? can you have more than one injection? Does the spawned mob attack the spawner even if the spawner is a mob? Can the spawned one have frags? Does it have money?)
+The brown mold            46   30M N--x      G   1902-1911     1-5  vuln acid, immune dark/light/air/gas/poison, 4-4 attacks, heals by hellfire, immune powerpain/lightningbolt/mmissile/colspray, not immune to chilltouch/icestorm, special-suck-damage (18-42), aware
+The mind flayer           47   51M E-xxxx    G   1968-2061     1-5  immune mental, resist poison/energy, 4-4 attacks, special-mind-control
+The vampiric mist         48   93M N-xx      G  ~2274-~2285    1-8  vuln energy, immune unlife/blind/fire/ice/poison/acid/gas, resist WEAPON, 4-4 attacks, special-split (if it deals 2500+ total damage), no-charm, aware
+The living web            49   76M N-----    --- 2179-2268    1-5  immune fire/ice/mental, resist unlife/earth/air, 4-4 attacks, lightning bolt, 1-1 spells, special-split-on-slashing-damage (into 2 webs with same level, halved hp, lowered xp, all money on one web, both fragable), heals and increases maxhp by electricity, no-charm, no-attack
+The fire toad             50          x      G                 5-9  vuln ice, aware
+The mist wolf             50          -      G                 4-7  vuln mental, aware
+The roper                 50   67M E-x---1   G   2341-2352     1-8  [magical], special-drain-strength (never drains non-players)
+The elder mind flayer     52   76M E-xxxx    G   2685-2740     1-8  immune mental, resist poison/energy, 4-4 attacks, special-mind-control (can take up to 800 hp)
+The cloaker               53   80M E--xx-    G   2845-2894     1-8  [magical], 4-4 attacks, special-grab-as-shield, aware
+The water weird           55          x      G                 9-17 drain mana, dies by remove poison
+The ice toad              55          x      G                 6-10 vuln fire
+The berbalang             55  128M E-xx      G   3446-3480     1-9  [magical], 4-4 attacks, powerword pain, mass pain, meteor blast, hide
+the slithering tracker    56   74M  --  -    ---               4-10 resist WEAPON, 1-1 attacks, ultra-hide, NOT evil
+The darkenbeast           57  111M E-xx      G   4004          4-10 [magical], 4-5 attacks, aware
+The spirit naga           58  101M E-xx      G   4164          4-10 immune poison, 4-5 attacks, mass pain, powerword pain, meteor blast, 1-1 spells, sneak, aware
+The memory web            59  116M N--x      G   4470-4493     4-10 resist unlife/fire/ice/earth/air, hide, 4-5 attacks, special-mana-drain, special-area-damage-on-death, imp/invis, hide, aware
+The hell hound            60       E  x      G                 8-12 vuln unlife, hell fire/storm, aware
+The tentamort             60  118M E- x      G   4826          4-10 [magical], special-inject (need true or mira to cure, double inject = fatal in a tick), aware
+The winter wolf           60          x      G                 8-15 vuln fire/mental, hide, aware
+The gorgon                61          x      G                 6-13 [magical?], resist energy?/magic?, timed paralyzis
+The basilisk              62         xx      G                 6-13 vuln fire, petrify (some are named "the basilisk")
+The dracolisk             63       E  x      G                 6-10 vuln fire/ice, petrify, aware
+The varrangoin (easy)     64          x      G                 6-13 vuln pure/light/iron, immune fire, hide, wither, harm, mass pain, powerword pain
+The medusa                65          x      G                 6-10 vuln unlife, poison, timed petrify
+The white pudding         65          x      G                10-13 can VAPE shield, hide
+The grell                 66       E  x      G                 6-13 vuln unlife, immune electricity?, resist energy/magic, hide, sneak?, grapple, no-BM
+The xorn                  67       N  x      G                 6-13 vuln slay elemental, hide, special-eat-money
+The galeb duhr            68  331M    x      G                 6-13 vuln ice, immune electricity, resist dark, hide, summon boulder
+The varrangoin (hard)     69  213M    x      G                 6-13 vuln pure/light/iron, immune fire, hide, wither
+The fire elemental        70          x      G                11-17 vuln ice, immune fire, areaspells?, hide
+The greater medusa        70          x      G                 6-11 vuln unlife/magic?, resist energy, poison, hallucination, timed petrify
+The ice elemental         70          x      G                 8-15 vuln fire, resist ice?
+The water elemental (easy)70          x      GN               14-18 vuln fire, resist crush?, invis
+The thessaltrice          71       E  x      GN                9-15 [mythical?], resist fire?/ice?/earth?/air?, vuln unlife, petrify
+The earth elemental       72  269M   xx      G                 9-15 vuln air
+The air elemental         73       N- x      G                 9-15 vuln earth, areaspells?
+The otyugh                74         xx      G                 9-15 vuln unlife/magic?, resist energy?, poison, special-grapple
+The thessalgorgon         75          x      G                11-15 vuln unlife, resist energy/magic, petrify
+The thessalmera           76          x      G                11-15 [magical?], resist magic?/energy?
+The soul beckoner         77          x      G                11-15 unlife damage, vuln pure?/light/energy, immune unlife, resist WEAPON, imp, hide
+The purple worm           78          x      G                11-15 vuln unlife/magic?
+The beholder              79          x      G                11-17 vuln pure/light/iron?, powerword kill, powerword? blind, energy drain, feeblemind
+The pyrohydra             80          x      GN               14-18 vuln ice, immune fire
+The remorhaz              80          x      G                14-17 [dragon], resist fire?/ice?/earth?/air?/gas?, shrugger, damage on death
+The thessalhydra          80          x      G                11-15 INFO, vuln unlife, immune poison, poison?
+The water elemental (hard)80          x      GN               16-20 INFO, vuln fire, resist crush?
+The neo-otyugh            81       N- x      G                11-18 vuln unlife/magic?, resist energy?, hide, grapple, poison
+The manticore             82          x      GN               11-18 vuln unlife/magic?, resist energy?, stun, area-attack?
+The gauth                 83          x      GN               11-18 vuln light, special-forceflee (N-E-S-W), feeblemind
+The umber hulk            84 1220M   xx      GN               11-18 vuln pure/light/fire, can VAPE light, flees
+The ancient white dragon  85         -x      GN               16-20 vuln fire, immune ice
+The Lesser Eraditor       85 1264M E-x       ---              14-20 INFO, vuln pure/light/iron, immune fire/ice, resist unlife
+The Eraditor              86       E- x      GN               14-20 INFO, vuln pure/light/iron, immune fire/ice?/earth?, resist unlife
+The Major Eraditor        87 1570M E- x      GN               14-20 INFO, vuln pure/light/iron, immune fire/ice/eöectricity?, resist unlife/dark
+The Lord Eraditor         88         xx      G                18-18 vuln pure/light/iron/fire??, resist unlife?/fire??
+The thassaloss            89       E-        ---              14-20 INFO, [mythical?], resist fire/ice/unlife, confusion
+The frost dragon          90       Ex-x      GN               16-20 INFO, vuln fire, immune ice
+The horgar                90         x       ---              14-20 vuln fire, can VAPE weapon
+The Sword Demon           91 2202M E- x      GN               16-20 INFO, vuln pure/light/iron, immune fire
+The Shadow Demon          91                 ---              16-20 vuln pure/light/fire/iron/electricity, resist unlife, wither
+The Efreeti Emir          91         -       ---              17-20 vuln ice, resist fire
+The Storm Demon           93       E-        ---              16-20 INFO, vuln pure/light/iron, immune fire/water/electricity?, resist unlife
+The Terrorite Demon       93          x      GN               16-20 vuln pure/light/iron, immune fire, resist unlife/dark, special-stun
+The Marid Mufti           93         -x      GN               18-20 vuln fire, resist dark?/ice?/crush?, heals, ice storm, water attacks
+The Efreeti Bey           93         -       ---              18-20 vuln ice/slay elemental, resist fire
+The Marid Beglerbeg       93         -       ---              18-20 vuln fire
+The shadow dragon         94         x       ---              16-20 [dragon], resist fire?/ice?/earth?/air?/gas?, area blind
+The Marid Atabeg          95         -  x    ---              19-20 vuln fire
+The Thonis                95            -    ---              17-20 vuln pure/light/iron, immune fire, resist unlife
+The Efreeti Malik         95       Ex-  x    ---              18-20 vuln ice, resist fire
+The Djinni Malik          95        x-x      GN               17-20 vuln earth, resist dark, area confusion, areaspells?, teleport
+The Efreeti Pasha         97         -x      G                20-20 vuln ice, resist fire/dark, hell storm, fireball, 2 spells per round
+The Marid Shah            97         -x      G                19-20 vuln fire, resist water if using "Plate of the watery depths"
+The Dao Hetman            97         -x      G                18-20 vuln air/slay elemental, resist dark/unlife if using "mantle of malice", feeblemind
+The Djinni Vizier         97         -x      GN               18-20 vuln earth, immune air, resist fire, area-confuse?, areaspells?, teleport
+The Dao Khan           98-99         -x      G                20-20 vuln fire/air
+The Balrog                98 4273M    x      G                18-20 [mythical], resist ice?/unlife?/earth?/air?, vuln earth?, forceflee
+                                              Obli Anni Vapo Pulv
+  PW ice:     PIERCE ICE         avgdam 23.0:        3
+  Lawbringer: SLASH  SLAY Human  avgdam 22.5:        2   24    7
+The Efreeti Sultan        99         -x      G                20-20 vuln ice, immune fire?, resist fire?
+The Djinni Caliph        99+                 ---              20-20 vuln earth
+The Marid Padishah        99         -x      G                20-20 vuln fire
+Morgoth the Valar God    100          x      G                20-20 [mythical?], resist ice?/unlife?/air?, vuln earth, immune blind, areaspells?, forceflee, teleport
+                                              Obli Anni Vapo Pulv
+  Lawbringer: SLASH SLAY Human   avgdam 22.5:        1    3    1
+  Avalanche:  CRUSH EARTH        avgdam 22  :        4
+  Firestorm:  WEAPON FIRE        avgdam 26  :        2
+Gond                     100    0  N-xx -    ---               6-20 INFO, [magical], 256000 coins on lvl 6... 307200 coins on lvl 7, 5-6 attacks, great ac, special-give-crystal, special-transform-to-ktv, special-buy-stat/align/race, spawns on level 6 but may move down, ~7800 earth on lvl 7

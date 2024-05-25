@@ -1,0 +1,72 @@
+# Galaxy (104): 10-30, Doctor  (Elven Village: 6nend)
+#
+#                              o + o ---------------- o
+#                              |                      |
+#                              o                  o - o
+#                              |                  +
+#                              o              o - o
+#                              |              |   |
+#                              o          Cepheus-o
+#                              |              |
+#                              o          o - o
+#                             x           |
+#                            o          Ursa
+#                           x             |
+#           Sag - Sco - Lib/- Vir      Polaris
+#                        |/
+#           Leo - Can -- o -- Cap - Aqu
+#                       /|
+# RIP       Gem - Tau -/Ari - Pis
+#  |                  /
+#  o - o       o     /
+#  |   |       |    /
+#  o - o ----- o --/- o ----------- o
+#  |   |          /   |            /|
+#  |   |   o - o-/Herc|           / |
+#  |   |   |   |/  |  |          /  |
+#  o - o   o - o - o  o ----------- o
+#  |   |   |   |   |  |        /
+#  |   | Orion-o - o  |       v
+#  |   |       |      |   RIP/
+#  o - o ----- o ---- o    |/
+#      |               RIP-o-RIP
+#      |  Tavern           |
+#      |   /              RIP
+#      X<-/
+#
+* Entrance from Crystalmir Lake or Elven Village
+* Cancer, Libra, Capricorn & Aries carry the keys needed for the top level.
+
+Galaxy:                  Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+A poor mudder              4  3400 N-x---    --    76-84      101-101  [human]
+A baby draco               9   90k E-x---    --   177-185    2001-2001 [mythical], flees
+A speedy comet            10  110k E-x---    GNE  196-210     751-751  [magical]
+A young nebula            10  110k G-x---    --   192-194     501-501  [magical]
+The Pleiades              11  132k G-----    --   212-228    1501-1501 [mythical]
+A red supergiant          15  255k N-----    --   296-306    1001-1001 [magical], sleeping, flees
+A white dwarf             15  255k N-x---    --   293-300    1001-1001 [magical]
+Gemini (hiding)           15  255k Ex-x--    --   296-309    2001-2001 [mythical], flees
+The wild Pegasus          17  357k G-----    --   355-367    2501-2501 [mythical], flees
+A horsehead nebula        18  414k E-----    --   390-392    3001-3001 [magical], sitting
+Poor Andromeda            18  414k Gx----    --   386-393    2501-2501 [mythical]
+Orion the hunter          19  475k Gx----    --   413-428    2501-2501 [mythical], bash, kick
+The mighty Hercules       19  475k Gx----    --   412-428    2501-2501 [mythical], bash, headbang
+Aquarius                  22  880k Gx----    --   498-510    1001-1001 [mythical]
+Aries                     22  880k Gx----    --   500-503    3001-3001 [mythical], sitting
+Cancer                    22  880k Nx----    --   502-525    1201-1201 [mythical]
+Capricorn                 22  880k Gx----    --   497-517    1001-1001 [mythical]
+Gemini (looking)          22  880k Gx----    --   501-516    3001-3001 [mythical]
+Leo                       22  880k Ex-x--    GN   501-505    1001-1001 [mythical]
+Libra                     22  880k Gx----    --   489-514    1001-1001 [mythical]
+Pisces the fish           22  880k Ex----    GN   506-512    1001-1001 [mythical]
+Pisces the mermaid        22  880k Gx----    --   503-523    1001-1001 [mythical], sitting
+Sagittarius               22  880k Gx----    --   498-515    1001-1001 [mythical], bash, kick, headbang
+Scorpio                   22  880k Ex-x--    GN   517-519    1001-1001 [mythical]
+Taurus                    22  880k Ex-x--    GN   515-518    3001-3001 [mythical]
+Virgo                     22  880k Gx----    --   507-521    1001-1001 [mythical], sitting
+The Head of Draco         25 1500k Ex-x--    GN   589-601    1501-1501 [mythical]
+Cassiopeia the Queen      26 1820k Gx ---    --   618-622    1201-1201 [mythical], sitting
+Ursa Major the bear       27 2160k Nx-x--    GN   654-656    1501-1501 [mythical]
+A beautiful star          28 1556k G-----    --   717-725    1542-1575 [magical], cake
+Polaris, the polar star   30 3600k Gx-xx-    --   734-780    2001-2001 [mythical], invis, fireball, blindness, harm, colour spray
+Cepheus the King          36 5400k Gx----    --  1019-1035   1201-1201 [mythical], sitting, meteor blast, meteor swarm, colour spray, fireball

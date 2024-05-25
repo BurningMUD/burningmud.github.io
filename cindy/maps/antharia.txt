@@ -1,0 +1,49 @@
+# Antharia (141): 10-100, Unknown  (Sundhaven: 2e4n2w2ndne2sesesed)
+#
+#               o
+#              x
+#           o-o-o-o--o-o-o
+#           |     |  |   |
+#           |     Ms  \->o
+#           o            |
+# o o o o   |     Ws  As |
+# | | | |   |     |   |  |
+# o-o-o-o-o-o--o--o---o--o
+# | | | |   |     |      |
+# o o o o   |     o      |
+#           o     |      o
+#           |   o-o--o   |
+#           o   |    |   o+Fs
+#           |   o    o   |
+#           |   |    |   |
+#           o-o-o-NM-o-o-o
+#             |   |
+#             Rs  o
+#                 |/
+#                 X
+#
+* Nothing aggressive, but the whole place is under water - need boat or fly.
+* Shops open at 4 am and close at 9 pm.
+* Antharians have no irvs. Representatives (west) have standard racial irv:s
+
+Antharia:                  Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+An Antharian child           9   90k N-x---    --   176-181     203-217   [---]
+A sucker fish               10  110k N-x---    --   181-201       0-0     [fish]
+An Antharian citizen        15  345k N-x---    --   309-310    2042-2107  [---]
+An Antharian Peace Guard    27 2052k G-x---    --   590-597   10790-11037 [---]
+Ertuvia                     32 5120k G-----    --   796-800    2114-2118  [---]
+High Guard of Antharia      32 5120k G-xx--    --   826-838    2085-2124  [---]
+Suretin                     35 7875k G--  -    --  ~913-~940   2893-3701  [---]
+An antharian representative 40   14M N-----    --  1236-1313   7520-7749  [---]
+An avian representative     40   14M N-----    --  1274-1325   7039-7177  [bird]
+A druidic representative    40   14M N-----    --  1242-1271   2912-3024  [elf]
+A dwarven representative    40   14M N-----    --  1298-1304   6968-7551  [dwarf]
+An elven representative     40   14M N-----    --  1301-1320   6742-8142  [elf]
+A human representative      40   14M N-----    --  1317-1333   7140-7723  [human]
+An illithid representative  40   14M N-----    --  1269-1336   6886-7315  [---]
+A kender representative     40   14M N-----    --  1304-1308   5999-7562  [hobbit]
+An Antharian Knight         42   19M N-----    --  1497-1500   2089-2119  [---]
+Cyrtpea                    100       G--       --                         shopkeeper
+Heaustf                    100       G--       --                         shopkeeper
+Irghum                     100       G--       --                         shopkeeper
+Zaertses                   100       G--       --                         shopkeeper

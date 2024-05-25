@@ -1,0 +1,50 @@
+# The Ruined City of Alchor (269): 40-80, Arcane/Fanth  (Elven Village: 2sw2s2es2eses2en)
+#
+#               o - 2 - Warchief
+#              /|
+#             o o         o
+#             |           |
+#         o - o       o + o - o
+#            x       x    +
+#           o - o + o     o   o + o
+#                         |   |
+#               o     o + o + o
+#               +    /    |
+#           o - o - o     o - o + k
+#           +   +         +
+#          cem  o         o      o
+#                         |      |
+#                     o - o - o  o
+#                         |      |
+#                     o - o - o  o
+#                         |      |
+#                 RIP     o      o
+#                  |      |      |
+#                  o - o----o -- o
+#                         |/
+#                         o
+#                         +
+#                         o
+#                         |
+#                     Q + o
+#                         |
+#                         o                   o o
+#                         |                   |/+
+# o - o                   o                   o o
+# |   |                   |                   |
+# o - o - o - o - o - o - o - o - o - o - o + o
+#                 +       |               |
+#                 o       X               o - o
+#                         |
+*
+* Vuln unlife/poison/silver/slay magical, immune fire, resist magic/energy
+* 2: Max 2 in this room (npc:s count but are not affected by the limit)
+
+Alchor:                  Lvl    Xp ASWIDMX # agg      Hp        Gold     Special
+A lindskiarn              36   13M E-x-x-    GN    946-1034      1-1     [magical], vuln poison/silver, immune fire, bash, kick, headbang
+A lindskiarn              40   20M E-x-x-    GN   1199-1233  14052-14095 [magical], vuln poison/silver, immune fire, bash, kick, headbang
+A lindskiarn              45   36M E-x-x-    GN   2183-2213  14073-14080 [magical], vuln poison/silver, immune fire, bash, kick, headbang, berserk
+A lindskiarn artist       55   82M E-xx -    --   3239-3245    110-209   [magical], vuln poison/silver, immune fire, sitting
+A crazed elven mage       60  105M G--x      GNE  4998-5062      1-1     INFO, [elf], resist WEAPON, meteor blast, powerword pain, mass pain
+A lindskiarn warchief     76  456M Nx-x      GNE 12352-13732 50526-50787 INFO, [magical], immune fire, shrugger, blocker, bash, kick, headbang, berserk, aware, 6176 hp withered
+The Duchess of Alchor     99       G--       ---                         questmaster, nofight-room

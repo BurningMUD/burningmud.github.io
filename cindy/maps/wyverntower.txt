@@ -1,0 +1,50 @@
+# Wyvern's (27) Tower: 5-20, Tyrst  (Ofcol: 3wnwne)
+#
+#                              Laboratory
+#                                  +
+#                                  o - o - o - o - o
+#     o o                                         /
+#     | |                                  o     x
+# o-o-o-o-o-o-o                            |    /
+#     | |   |                        o +-- o - o
+#     o o   o       o               /      |
+#           |      /|              o  o  Captain
+#           o     o |             /   |
+#           |       |        o - o -- o -- o
+#           o     o-o-RIP             |   /
+#           |       |             o   o  o
+#           o       o o     o o  x| ____/
+#           |       | |     | | o |/
+#         o-X-o-o-o-o-o-o-o-o-o---o
+#         | |         |     | |   |
+#           o         o     o o   o
+#
+* Most of the tower is very bright
+* Some aggies, but all low-level. One DT.
+
+Wyvern Tower:            Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+A killer frog              5   14k E----     GN    96-105       0-0
+A trapper                  6   23k N-x---    -    116-119     261-433
+An old centaur             6   24k G----x    -    116-125     393-441
+A centaur (female)         7   35k G-x--x    -    138-140     562-617
+A centaur (male)           7   34k G-x--x    -    136-143     566-624
+A hunter                   8   58k N-----    -    157-164     780-838  sitting
+A carnivorous plant        9   99k N-----    GN   176-180       0-0
+An elder centaur           9   95k G----x    -    176-183     870-948  invis
+The stone gargoyle         9   99k E----x    -    177-185       0-0    flees
+A centaur guard           10  110k G----x    -    195-209       1-1    invis
+A gruesome ogre           10  110k E-----    GN   194-202    1201-1201 sitting
+A shadow                  10  110k E-xx--    GN   203-207     901-901  invis, energy drain, looter
+An angry gargoyle         10  110k E-x--x    GNE  197-210     501-501
+A ranger                  12  156k G--x--    -    242-250       1-1    sitting
+An evil wight             12  156k E--x--    GN   232-243    2201-2201 vuln energy, resist WEAPON, energy drain
+The centaur chief         12  156k G----x    -    239-249       1-1    invis, sitting
+The elite gargoyle        12  156k E----x    -    235-250     801-801
+The gargoyle shaman       13  182k E--x-x    -    254-262    3001-3001 lightning bolt, cure critic
+A burly minotaur          14  210k E-xx--    -    274-287    1501-1501
+The black pudding         15  255k E-x---    GNE  297-307       1-1
+The savage minotaur       15  255k E--x--    GN   292-307       1-1
+A lesser golem            16  304k N--x--    -    321-334       1-1
+The captain               17  357k E--x-x    GN   367-370       1-1    bash, kick
+The ancient wyvern        18  414k E-xx-x    GN   382-386       1-1    fire breath, can VAPE eq!
+The spectre               19  475k Exxx--    GN   427-428       1-1    invis

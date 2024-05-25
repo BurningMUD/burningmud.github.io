@@ -1,0 +1,228 @@
+; By modifying this script to fit your character, whenever you type "aff" to
+; see your affects, after seeing the affects you get a list of which spells
+; you are missing. Useful if you have several characters and have trouble
+; remembering which spells the character usually will be affected by.
+; It also has a "spellup" alias for cast all spells you are missing, some
+; highlighting of spells close to running out and automatic cure-casting if
+; affected by bad stuff.
+
+/set ihavearmor 1
+/set ihaveblur 1
+/set ihaveinvisibility 1
+/set ihavestrength 1
+/set ihavefly 1
+/set ihaveprotection 1
+/set ihavebless 1
+/set ihaveregeneration 1
+/set ihavebm 1
+/set ihaveprayer 1
+/set ihavehaste 1
+/set ihavesenselife 1
+/set ihavedetectalignment 1
+/set ihavepoison 0
+/set ihavecriticalwounds 0
+/set ihavecurse 0
+/set ihavewither 0
+
+/def -F -msimple -t"------ Affecting Spells ------" mytrig8 = \
+	/set affAr 0%; \
+	/set affBl 0%; \
+	/set affImp 0%; \
+	/set affStr 0%; \
+	/set affFly 0%; \
+	/set affCont 0%; \
+	/set affProt 0%; \
+	/set affBless 0%; \
+	/set affReg 0%; \
+	/set affBm 0%; \
+	/set affPray 0%; \
+	/set affSanc 0%; \
+	/set affHa 0%; \
+	/set affDv 0%; \
+	/set affSl 0%; \
+	/set affDa 0%; \
+	/set affPo 0%; \
+	/set affCw 0%; \
+	/set affCu 0%; \
+	/set affWi 0%; \
+	/def -F -p15 -mregexp -t'^(-|)([0-9]+)\\(([0-9]+)\\)H' affecttrig = \
+		/purge affecttrig%%; \
+		/showMissedSpells
+/def -F -p2 -t"Armor                   \[ ??day ??hour ??min \]" afftrig1 = \
+	/set affAr 1
+/def -F -p2 -t"Blur                    \[ ??day ??hour ??min \]" afftrig2 = \
+	/set affBl 1
+/def -F -p2 -t"Invisibility            \[ ??day ??hour ??min \]" afftrig3 = \
+	/set affImp 1%; \
+	/set ihaveinvisibility 1
+/def -F -p2 -msimple -t"Invisibility            Permanent." afftrig3b = \
+	/set affImp 1%; \
+	/set ihaveinvisibility 1
+/def -F -p2 -t"Strength                \[ ??day ??hour ??min \]" afftrig5 = \
+	/set affStr 1%; \
+	/set ihavestrength 1
+/def -F -p2 -t"Detect Alignment        \[ ??day ??hour ??min \]" afftrig6 = \
+	/set affDa 1%; \
+	/set ihavedetectalignment 1
+/def -F -p2 -t"Fly                     \[ ??day ??hour ??min \]" afftrig7 = \
+	/set affFly 1
+/def -F -p2 -t"Protection              \[ ??day ??hour ??min \]" afftrig8 = \
+	/set affProt 1
+/def -F -p2 -msimple -t"Contingency             Permanent." afftrig9 = \
+	/set affCont 1
+/def -F -p2 -t"Bless                   \[ ??day ??hour ??min \]" afftrig10 = \
+	/set affBless 1
+/def -F -p2 -msimple -t"Bless                   Permanent." afftrig10b = \
+	/set affBless 1
+/def -F -p2 -t"Regenerate              \[ ??day ??hour ??min \]" afftrig11 = \
+	/set affReg 1%; \
+	/set ihaveregeneration 1
+/def -F -p2 -msimple -t"Regenerate              Permanent." afftrig11b = \
+	/set affReg 1%; \
+	/set ihaveregeneration 1
+/def -F -p2 -t"Blood Mirror            \[ ??day ??hour ??min \]" afftrig12 = \
+	/set affBm 1
+/def -F -p2 -t"Prayer                  \[ ??day ??hour ??min \]" afftrig13 = \
+	/set affPray 1
+/def -F -p2 -t"Haste                   \[ ??day ??hour ??min \]" afftrig14 = \
+	/set affHa 1
+/def -F -p2 -msimple -t"Darkvision              Permanent." afftrig15 = \
+	/set affDv 1
+/def -F -p2 -t"Sanctuary               \[ ??day ??hour ??min \]" afftrig16 = \
+	/set affSanc 1
+/def -F -p2 -t"Sense Life              \[ ??day ??hour ??min \]" afftrig17 = \
+	/set affSl 1%; \
+	/set ihavesenselife 1
+/def -F -ah -p2 -t"Poison                  \[ ??day ??hour ??min \]" afftrig18 = \
+	/set affPo 1
+/def -F -ah -p2 -t"Curse                   \[ ??day ??hour ??min \]" afftrig19 = \
+	/set affCu 1
+/def -F -ah -p2 -t"Wither                  \[ ??day ??hour ??min \]" afftrig20 = \
+	/set affWi 1
+/def -F -ah -p2 -msimple -t"Critical Wounds         Permanent." afftrig21 = \
+	/set affCw 1
+
+/def showMissedSpells = \
+	/if (!affAr) /lacking Armor%;/set ihavearmor 0%; /endif%; \
+	/if (!affBl) /lacking Blur%;/set ihaveblur 0%; /endif%; \
+	/if (!affPray) /lacking Prayer%;/set ihaveprayer 0%; /endif%; \
+	/if (!affStr & autostrength) /lacking Strength%;/set ihavestrength 0%; /endif%; \
+	/if (!affFly) /lacking Fly%;/set ihavefly 0%; /endif%; \
+	/if (!affDv) /lacking Darkvision%; /endif%; \
+	/if (!affProt) /lacking Protection%;/set ihaveprotection 0%; /endif%; \
+	/if (!affBless) /lacking Bless%;/set ihavebless 0%; /endif%; \
+	/if (!affSl) /lacking Sense Life%;/set ihavesenselife 0%; /endif%; \
+	/if (!affReg) /lacking ***Regeneration***%;/set ihaveregeneration 0%; /endif%; \
+	/if (!affImp) /lacking **Invisibility**%;/set ihaveinvisibility 0%; /endif%; \
+	/if (!affCont) /lacking Contingency%; cont%; /endif%; \
+	/if (!affBm) /lacking Blood Mirror%;/set ihavebm 0%; /endif%; \
+	/if (!affHa) /lacking Haste%;/set ihavehaste 0%; /endif%; \
+	/if (!affDa) /lacking Detect Alignment%;/set ihavedetectalignment 0%; /endif%; \
+	/if (!affSanc) /lacking Sanc%; \
+		/if (autoholy) \
+			hw%; \
+		/endif%; \
+	/endif%; \
+	/if (affCw) \
+		/echo TF: Critical Wounds!%; \
+		/set ihavecriticalwounds 1%; \
+		cc%; \
+	/endif%; \
+	/if (affPo) \
+		/echo TF: Poisoned!%; \
+		/set ihavepoison 1%; \
+		/if (!fighting) \
+			rp%; \
+		/endif%; \
+	/endif%; \
+	/if (affWi) \
+		/echo TF: Withered!%; \
+		/set ihavewither 1%; \
+		/if (!fighting & currhp > 200 & currmana > 120 & currmv > 100) \
+			hhh%; \
+		/endif%; \
+	/endif%; \
+	/if (affCu) \
+		/echo TF: Cursed!%; \
+		/set ihavecurse 1%; \
+		/if (!fighting) \
+			rc%; \
+		/endif%; \
+	/endif
+
+/def lacking = \
+	/echo -pa @{Cred}Lacking:@{n} %*
+
+/alias spellup \
+	/if (ihavecriticalwounds) \
+		/echo TF: Removing critical wounds%; \
+		/set ihavecriticalwounds 0%; \
+		cc%; \
+	/endif%; \
+	/if (ihavepoison) \
+		/echo TF: Removing poison%; \
+		rp%; \
+	/endif%; \
+	/if (ihavewither & currhp > 200 & currmana > 120 & currmv > 100) \
+		/echo TF: Removing wither%; \
+		hhh%; \
+		/set ihavewither 0%; \
+	/endif%; \
+	/if (ihavecurse) \
+		/echo TF: Removing curse%; \
+		rc%; \
+		/set ihavecurse 0%; \
+	/endif%; \
+	/if (!ihavebless) \
+		/echo TF: Casting bless%; \
+		bl%; \
+	/endif%; \
+	/if (!ihaveregeneration) \
+		/echo TF: Casting reg%; \
+		reg%; \
+	/endif%; \
+	/if (!ihaveprayer) \
+		/echo TF: Casting pray%; \
+		pray%; \
+	/endif%; \
+	/if (!ihavehaste & autohaste) \
+		/echo TF: Casting haste%; \
+		haste%; \
+	/endif%; \
+	/if (!ihavebm & autobm) \
+		/echo TF: Casting bm%; \
+		bm%; \
+	/endif%; \
+	/if (!ihavestrength & autostrength) \
+		/echo TF: Casting str%; \
+		str $[xname]%; \
+	/endif%; \
+	/if (!ihaveblur) \
+		/echo TF: Casting blur%; \
+		blur%; \
+	/endif%; \
+	/if (!ihavearmor) \
+		/echo TF: Casting ar%; \
+		ar%; \
+	/endif%; \
+	/if (!ihaveinvisibility) \
+;		/echo TF: Casting imp%; \
+;		imp%; \
+	/endif%; \
+	/if (!ihavefly) \
+		/echo TF: Casting fly%; \
+		fly%; \
+	/endif%; \
+	/if (!ihaveprotection) \
+		/echo TF: Casting pr%; \
+		pr%; \
+	/endif%; \
+	/if (!ihavedetectalignment) \
+		/echo TF: Casting da%; \
+		da%; \
+	/endif%; \
+	/if (!ihavesenselife) \
+		/echo TF: Casting sense%; \
+		sense%; \
+		/set ihavesenselife 1%; \
+	/endif

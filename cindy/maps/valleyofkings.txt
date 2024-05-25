@@ -1,0 +1,71 @@
+# The valley of the Kings (361): 50-100, Stryder  (Kerofk: s2e2nd2e3de2n2e2ne2n3ws2w2d)
+#
+#                                                      Shipwreck
+#                                                          |
+#                                                          o--o--o--o
+#                                                          |        |
+#               King2                                  o-o-o    o   o
+#                 |                                   /        /|   |
+#                 o - o - o  King1       o-o-o-o-2   o    Great o-o-o
+#                         |    |         |       |  /    Barrier  |
+#             o - o - o - o    1 - o     o       o-X   o  Reef  o-o
+#            /           /         |     |       |    x|          |
+# King4-o   3           o -------- o-o-1-o--o-o--2   o-|---o-o    |
+#       |   |                                          +    /     |
+#       o - o - King3                                  |   o  o-o-o-o
+#       |   |                                             /   |
+#       1 - o                                            o    o
+#       |              King6                            /     |
+#       1-----o          |                             o------o
+#       |    /|          o - o - o
+#       |   o |          |       |     King7+1       2 ----- o   o-o
+#       |  /  |          |       v           |       |       |   | |
+#       | o---|- o - o   |   o - 1 - o - o - o - o - o King9 o-o-o King8
+#       |     |  |   |   |       |       |   |          x|     |
+#       o-----o  o - o - o   RIP-o    Urthel 4    Shadow +     o-o
+#            /                           |   |           |       |
+#           o                            3   o - o - o - o    Vrashnak
+#          /                             |   |
+#   King5-o                              o   o
+#                                        |   |
+#                                        o - o
+#                                        |
+#                                        1 - o - o - King10
+#                                        |
+#                                        o
+#                                        |
+#                                        o ---- o
+#                                        |     /
+#        o                               3    2
+#       /|                               |   /
+#      o |       King14  o - o - o - o - o  o - 1       o - o
+#     /  |           |   |      /           |   |       |
+#    o  KING         o - o     /            o - o - o - o
+#   /                         1                 |      x
+#  o - 4  RIP                /     o-King13  Harpy(3) o -------- o - o
+#      |   |                /      |            |               x   /
+#      o - 2 - o - 4 - o - o - o - o            o King12    3<-/  King11
+#          |                      /             |   |       |
+#          o                     o      o - o - o - o - o + o - o - o
+#          |                    /       |                       |
+# King15 - o                   2 ------ o               o + o - o
+#                                                       +
+#                                                       o
+#
+* Min level 0/40
+* Numbers indicate Valley Watchmen
+* The watchmen are aggressive, human. Kings are also human.
+* Shadow is vuln energy, immune unlife, resist WEAPON
+* In one Leronah quest, the watchman 2nwu from harpies worked (all but 6
+*   others tested and failed).
+
+Valley of Kings:               Lvl    Xp ASWIDMX # agg      Hp         Gold       Special
+The poor blind man              67  368M Nxxxx-    -    7611-7644  500050-500076  [human], he is blind, shrugger
+A Valley Watchman               68  238M G--xx 1   GNE  8252-8413   66692-70441   [human]
+A Bubonic Harpy                 70  280M E-xx      G    8493-8565   50000-50000   [human], flying & sentinel before being in battle - standing & walking after, poisoned
+An Elderly Sculptor             70       G--x -    -   ~9172-9691   86190-86865   [human], sitting, powerheal, harm, wither, blindness
+Urthel the Demon of the Dark    70  350M Ex-xx     G E  8353-8397       0-0       hide, vuln pure/light/iron, immune fire, resist dark/unlife/poison, shrugger, backstab (55)
+Vrashnak the Orc Shaman         74       N--x      G                              [orc], resist dark?, immune WEAPON, invis, shock bolt, mira, 2-3 spells, room is one-player-only
+A Titan of a King               78  430M Gx-xx-    --- 16724-16890 500001-500001  [human], blocker
+The Colossal Titan of the Kings 98       Gx-x  2   GNE  ~50k      3000001-3000001 INFO, [human], special-hit-on-everyone, room is noflee/norecall/nosumout
+Shadow                         100       Nxxx  1   GNE            5000001-5000001 INFO, [insubstantial], hide, walk-path (after being in battle), special-mort, special-force-you-to-hit-friends

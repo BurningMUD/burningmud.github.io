@@ -1,0 +1,37 @@
+# Fire Elemental Plain (120): 30-50, Porlan (?/25min)  (Olympus: e3n2u2n)
+#
+#       ______________________        King - o - o
+#      /                ____  \                 x
+#      |     /\        /    \ |                /
+#      |     \|        |     \|         o - o-/-o - o - o - o - o
+#  _   \--6---5--------4----\ |         |    /  |   |   |       |
+# / \     |   ^        |  \_/ |         o   o - o   o   o - o   o
+# | |     |   |        |\     |         |   |   |   |   |   |   |
+# \-8-----7-\ |        | \    |         o   o - o   o   o - o   o
+#   |     | | |        3-|--\ |         |   |       |   |       |
+#   |     \_/ |        | |   \|         o - o - o - o - o - o - o
+#   9         |       /| |    |         |           |   |       |
+#   |         |      / | |    |         o - o <-o   o   o <-o   o
+#   |         |      \-2-/    |         |   |   |   |   |   |   |
+#   |         |        |      |         o   o - o - o   o - o - o
+# /-10-------11--------|------|----\    |           |           |
+# | |         |        |      |    |    o - o - o - o - o - o - o
+# \_/         |    /---1 <----/    |                |
+#             \____\_/ ^           |                o
+#                      |           |               /
+#                      X           \------------- a
+#                      |                         /
+#                                               o
+#
+* From entrance: nnewwswsseeu, then north to get inside
+* Min level 0/16
+* Fire Giants and Royal Guards are agg and vuln ice
+
+Fire Elemental Plains:   Lvl    Xp ASWIDMX # agg      Hp          Gold       Special
+A Small Fire Elemental    20 1400k N-xx--    --    348-372      1008-1137    [elemental], looter
+A Fire Elemental          30 6000k N-xx--    --    521-539      2069-2164    [elemental]
+A Hell Hound              30 7500k E-xx--    GNE   808-833        13-27      [magical]
+A Large Fire Elemental    45   25M N-xx--    --   2011-2058    20085-20111   [elemental]
+Fire Giant                55   71M E-xx  0   GN   3438-3616    34343-48837   [giant], vuln ice, immune fire, fireball
+Royal Fire Giant Guard    58  101M E-xx  1 2 GNE  4470-4471    44034-58064   [giant], vuln ice, immune fire, fireball
+Fire Giant King           95 4750M Ex-x    1 GN  60410-60493 1009159-1010243 INFO, [giant], vuln ice, immune fire, hell storm, earthquake, mana shield, blood mirror, 1-2 spells, call for guards (which ones?) summon guards?

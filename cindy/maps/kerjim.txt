@@ -1,0 +1,62 @@
+# The Infernal Pit of Kerjim (220): 50-100, Rafo/Bolt  (New Thalos: 2en2e2n2wn2wn2wnd)
+* FIND OUT: Ralich              hp, hp
+* FIND OUT: Zedan               hp, hp
+* FIND OUT: The Grand Balrog    hp, hp
+* FIND OUT: Kerjim              vuln iron?, immune fire?, resist dark?/unlife?/poison?
+* FIND OUT: Gabriel Dreyid      INFO?, xp, hp, money
+#
+#                                         o
+#                                         |
+#                                       Lilith
+#                                         +
+#                                         o
+#                                         |
+#                                         o
+#                                         |
+#                             |     o   o-o-Bergron
+#                             o     |   |
+#                            /|   o-o-o-o
+#                           X         | |
+#                          /          o o-o
+#         Sin-            o           |
+#        Quests Kerjim   /        o - o   o
+#             * *       o         |   v   |
+#           o--Z    o<-/          o - o - o
+#           |      /                      |
+#       o   o     o           o - o - o - o
+#       |   |    /                |
+#       o   o   o                 o
+#       |   |  /                  +
+#       o   o o       o - o - o - o
+#       |   |/        |
+# o--o--o---o----o----o
+# |     +   |
+# o-o-o o o-o-o
+#           |
+#           o
+#           |
+#           o-RIP
+#
+* Min level 0/35
+* Pure/light/iron works on most mobs.
+* Whole area is NOT very bright (Kerjim not checked)
+* CAREFUL! Many mobs here will summon you back if you flee/recall!
+* CAREFUL! When entering the portal to Kerjim, group members will NOT follow
+*          you automatically.
+
+Kerjim:                  Lvl    Xp ASWIDMX # agg     Hp        Gold      Special
+The skeleton warrior      12  300k E-xxx     GN   181-193       3-15     [skeleton], summoned
+The narauk                13  352k E-xxx     GN   162-172     283-1021   [demon], summoned
+A human slave             20  869k G-----     -   352-463       0-0      [human]
+The celebdel              30 5400k E-xxx     GN   810-820   25482-26082  [demon], summoned, colour spray, heal, lightning bolt, fireball, blindness
+A small balrog            45   26M E-xxx     GNE 1902-1907  25173-34354  [devil]
+The corpse                50   47M E--x-      N   ~2.2k       683-2307   [undead]
+The Elder Balrog          50   48M E-xxx     GNE 2462-2491  35601-42357  [devil], harm, powerheal, confusion, meteor blast, powerpain, meteor swarm, blindness, wither
+Bergron                   60   84M Ex-xxx    --  3070-3125 134892-135561 [devil], SUMMONER
+Ralich                    60   85M Ex-xx     GNE           135087-135293 [devil], SUMMONER
+Zedan                     60   90M Ex-xxx    GNE           144943-145304 [devil], SUMMONER
+The Grand Balrog          60   97M Exxxx     GNE            71846-73504  [devil], SUMMONER
+A balrog shaman           65  143M Exxxxx0   GNE 4980-4998  81506-81598  [devil], SUMMONER
+Lilith                    75  325M Gx-xx     GN   ~10k      24929-26459  [human], powerheal, powerword pain, meteor blast, confusion, mass pain, wither
+Kerjim                    75  503M Ex xxx    GN             69424-70733  INFO, [devil], vuln iron?, immune fire?, resist dark?/unlife?/poison?, SUMMONER, teleport, hell fire, hell storm, mass pain, cloudkill, blindness, summon skeleton warriors, summon celebdels, summon narauks (8-16)
+Gabriel Dreyid           100       N--xx-    --  >1.4M          ?        INFO?, [human], 4-4 attacks, 400/70 dam per attack, negate sanc 70/942 times (7%), thac-38 11, great ac, no-where, NOT restored if alone in room

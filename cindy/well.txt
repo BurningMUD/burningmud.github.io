@@ -1,0 +1,191 @@
+
+http://www.lysator.liu.se/~tomca/burning/well.txt
+
+
+Note: I've never led any well groups myself, so don't trust this guide
+blindly.
+
+
+!!! WELL GUIDE !!!
+
+=======================================================
+
+The well entrance:
+==================
+A large Well adorns the ground here. You'd swear it's not normally here.
+
+The entrance to the well is located in a random room anywhere in the world.
+It teleports to a new room every 6 hours, exactly, so when "uptime" shows
+that "Current session has been running: 0 days, 6:00", the well entrance will
+move.
+
+The entrance can be found with a compass. "exa compass" will show a number,
+indicating degrees, clockwise from north. Ie, 0 means north, 90 means east,
+180 means south and 270 means west. If you have problem understanding the
+numbers in between, make a circle and add the numbers there, to help you
+better see what direction a number means.
+One special is that the number "90" can mean both "straight east" and "can't
+walk there", ie it's on the other continent or only reachable via a portal
+or other special means of transportation.
+
+Whoever enters the well first each reboot, will get a small reward: 1 qp and
+some rep. This is only given for the first person each reboot.
+
+Another way to enter the well is through an oasis in Milo'rai: This area can
+only be entered by Ktv:s, so until you become one, don't bother trying.
+And you can only enter through that oasis if someone has been in the well
+after the entrance last moved.
+Entering through the oasis will teleport you to a random level between lvl 1
+and the lowest level anyone's been at since the well moved.
+
+The area:
+=========
+The well is made of 20 levels, top one called "level 1" and bottom called
+"level 20". The rooms and exits are created randomly, but each level is max
+19 x 19 rooms, and contains ice, lava, quicksand, wildmag, traps and other
+nasty things. Plus a number of monsters. Each monster has a certain range of
+levels in which it can spawn, so the smaller ones are found on higher levels
+and larger ones are found on lower levels. Same with orbs - each type of orb
+can be found only on certain levels.
+Money increases the lower you go, even for the same mob. As does the number
+of frags.
+Earth frags can be found on any level. Water starts at level 6, air at lvl 11
+and fire at level 16. Collect enough and you can become Ktv and eventually
+increase your stats.
+For more information about this, have a look at the well area on the "MAPS"
+page.
+
+Things to remember as a well leader:
+====================================
+There are tons of things! Only way to learn and master this is by practice.
+Expect it to take time. And even as a perfect leader, things WILL go wrong.
+People WILL die in the well. It can't be avoided. Just try to keep the
+body count as low as possible. Here are some things that might be worth
+knowing:
+
+* Always bring a peeker (Ro/Ro) and use it to check each room before entering.
+  The first levels are usually safe to rush through, but some combinations
+  of mobs can quickly make things a lot worse than the average fight.
+* Useful to have a copper (Ma-combo) that can prevent mobs to come in when
+  you're busy fighting. Once fights get a bit interesting (longer and more
+  dangerous), consider putting someone on acop (tell some mage "acop").
+* Lvl 1-5 has "grey ooze", which can destroy boots, so when entering, make
+  sure everybody removes their boots:
+    gtell rem boots
+  Once you've hit lvl 6 they can put them on again:
+    gtell wear boots
+* Lvl 10-13 has "white pudding", which can destroy shields, so when reaching
+  lvl 10, make sure everybody removes their shields:
+    gtell rem shield
+  Once you've hit lvl 14 they can put them on again:
+    gtell wear shield
+* Lvl 14-20 has "horgar", which can destroy weapons. They are peaceful, so
+  no real bother. But when fighting them, make sure people are using weapons
+  they can lose without crying:
+    gtell horgar
+  Some scripts seem to need you to first tell them to switch to a fire weapon.
+  Not sure if this is actually needed or just an old habit:
+    gtell use fire
+    gtell horgar
+* Lvl 1-8 has "cloaker" which can grab team members, removing them from the
+  group and making others hit on them. Best avoid these, or send someone in
+  to solo them.
+* Lvl 1-19 has quicksand, which randomly drops people one level down, to a
+  random room. NEVER enter these with a group. NEVAHHH!
+  If you want to get down and have trouble finding a down, exit, you can have
+  an ak person enter the quicksand, kill off the mobs in there and then wait
+  until he/she drops. Once dropped and ok, gtell "dd cop <name>" to have
+  mages teleport to him and cop (to keep away any nasties). Next, tell a
+  priest to "gate <name>", then have someone checking the field to make sure
+  it's not a bad gate. If ok, enter it and then look for, and summon, people
+  missing.
+* Some rooms have "myst" - a lvl 1 mob that can't be killed, which causes
+  the room it is in to become nomag. Annoying and nasty. Avoid if possible.
+  If a myst tries to enter a room that has cop, it will fail, but the cop will
+  be removed. So if a cop runs out too fast, there's a myst trying to visit.
+* Some rooms are wildmag. Most people have ways to handle this (not casting
+  single-target spells), but still advisable to avoid if possible, since
+  fighting is a nuisance. Useful to ask for gpow in these fights. If you have
+  a priest that doesn't heal at all in wildmag, use him for gpows.
+* Some rooms have lava. Damages group a bit at a time. Usually not much of a
+  bother, as long as you don't stay in there too long. Just remember that most
+  healers only check the group when there's a fight, so if you stay long, you
+  may need to manually ask for gpows, or people might die with the priests
+  idly standing by.
+* Some rooms have water. Sitting will damage you and force you back to
+  standing again. this is only a bother if there's a wind coming (through
+  which you need to sit, to avoid damage). People handle wind automatically,
+  but if in a water room, many will sit and take damage, then wait for the
+  wind to damage them some more. If this happens, it helps if you can move the
+  group to another room and "gtell rest" before the wind comes. Just remember
+  to "gtell stand" afterwards.
+* Each time you move, there's always a risk that you or a follower will trip
+  on a stalagmite. This will sometimes remove them from the group. People
+  usually handle this automatically, but it doesn't always work (you can eg
+  trip several times in a row). So be prepared that members might get lost
+  here and there, which can be bad if you eg lose too many priests, and worse
+  if your peeker isn't in the same room as you are. Fetch if needed, by using
+  priests to summon them or by "leave <dir>" to walk back and fetch people
+  without dragging the whole group with you. Tell ungrouped people "exp" to
+  have them rejoin.
+* Some rooms have icy floors. When moving out of these, people may slip and
+  be left behind, or even slide of in another direction. And when fighting in
+  these rooms, people may also slip or slide away. So they are good to avoid,
+  and if you pick a fight in these rooms, it's a bonus if the surrounding
+  rooms have been cleared.
+* Some mobs force-flees people. Here it's also a bonus if the nearby rooms
+  are safe.
+* Some rooms are no-flee, some are no-summon, some are no-recall. If you
+  need to recall to fix something, it's advisable to first try getting
+  a summon from one of your priests, to make sure you can actually get
+  summoned back to the room once you are done.
+* Most rooms have holes opening up now and then, through which someone may
+  accidentaly drop. If you need to leave for a longer time, or have the
+  group rest to heal up, try finding one of the rooms that doesn't have
+  these holes. (Glittering Passage, Shimmering Room or WM-rooms)
+* Note: NOBODY has a trigger to keep cop & not sleep on "gtell keep cop", so
+  it's useless to try. Mages probably won't even stand to recop if resting,
+  nor stay awake when you gtell "sleep", even if they are on cop duty.
+  How you solve this is up to you. If you're lucky you might find an ak mage.
+* The well is dangerous. But fun. And rewarding. And fun.
+
+Orbs:
+=====
+Orbs are spread out in the well. Each time the area respawns, some new orbs
+may be added. So the best time to hunt for orbs is a bit before reboot, at
+a session where nobody's been welling. Orbs can be picked up by some mobs,
+so they can be found on mobs too. For a list of orbs and what level they can
+be found on, check "The EQ FILE" page. All orbs and all other well eq are
+nolocate.
+
+Mobs:
+=====
+Mobs have different irv:s and specialities, and they have certain levels they
+are limited to. For more detailed information on them, have a look at the well
+area on the "MAPS" page.
+For an easier handling of mobs, check the mobsubs.txt page on the "tinyFugue
+scripts" page. This file substitutes mob descriptions with the real mob name,
+plus some added information (irv:s and specials).
+
+
+Mob summons:
+============
+Finding the down exits in the well is sometimes very simple, and sometimes
+frustratingly hard. To make things a bit easier, you can summon a non-walking
+(sentinel) mob to the room once you find an exit, so it'll be easier to find
+next time (until reboot). Walking mobs work too, of course, but then you will
+have to sleep them.
+
+For simplicity, the best would probably be to find 2 kinds of mobs that are
+low level, non-walking, non-agg and preferably rarely killed. Then, if you are
+on eg level 12 by a down-exit, you have someone summon 12.downexitmob, and if
+you are at lvl 15 by an up-exit, you have someone summon 15.upexitmob.
+That way, you won't risk summon a mob that already is being used as a marker,
+and it's easy to remember what to summon. So whenever you need to find an
+up- or down exit, you just have someone track that upexitmob or downexitmob.
+Only question is, what mob would be good to use?
+
+I'm thinking maybe "fish" can be used as downexitmob? Haven't tested yet.
+If you find more than 40 of a suitable mob, you could summon
+  <well-level>*2.<mob>
+to make it a bit safer, not messing up even if one mob is killed or respawned.

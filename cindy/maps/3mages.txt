@@ -1,0 +1,85 @@
+# 3 Mages (390): 40-90, Barre  (Myrridon: 13w3sw2s3wn)
+#
+#                     o          o   o
+#                     |          +   +
+#                     o    hazy+ o - o + o
+#                     |     /    +   +
+#          Shop - o - o--o+o     o   o
+#                     |   /
+#                     | RoS   o+o - o
+#                     |         +   +
+#                     |         o - o
+#                     |         +   |
+#     o - o +Fantus   o --- o + o   o
+#     +   +           |         |   +
+# o - o - o + o + o - o         +  Fount
+# |                   |         | Evil Mage
+# |       Pool        o         |
+# o - o - Good        |         o - o + Neutral
+#         Mage        |         +   +   Mage
+#                     o   Henry+o - o
+#                     |
+#                o -- o -- o - o - o - o - o - o
+#                |    |    |   |   |   |   |   |
+#                o-Lahrohn-o - o - o - o - o - o     o   o-o
+#                |    |    |   |   |   |   |   |     |   | |
+#                o -- W -- o - o - o - o - D - o   o-U-o-o-o
+#                |    |    |   |   |   |  /|   |     |   | |
+#                o -- W -- W - W - o - o - o - o     o   o-o
+#                |    |    |   |   |   |   |               |
+#                o -- W -- W - W - o - o - o               o
+#                |    |    |   |   |   |   |
+#                o -- o -- W - W - W - o - o - o
+#                |    |    |   |   |   |   |   |
+#                o -- o -- o - o - o - o - o - o
+#                |    |            |
+#                o -- o            o
+#                                  |
+#                                  o
+#                                  |
+#                                  o
+#                                  |
+#                                  X
+#                                  |
+#                                 -o-
+#
+* Entrance alley, Burroughs and north houses are very bright.
+* W: Skeletal Warriors in these rooms. Agg if you stay >5 seconds.
+* Pool: Use "look <name>" to look at a player or mob (max your level, doesn't
+*   work on no_where mobs)
+* Fount: Full mana-restore & 1-3 ticks (75-225 s) paralyze
+* RoS: Room of Summoning - Its special has been removed.
+* hazy: A hazy vial pops on the floor (on boot only). When picked up, there's
+*   approximately 80% risk of it exploding, damaging you (random percent of
+*   current hp, so no risk of dying). If you succeed, you get the potion and
+*   also another try, so you can get more than one potion in the same boot.
+
+3 Mages:                 Lvl    Xp ASWIDMX # agg      Hp        Gold     Special
+The homeless bum          10  110k G-xx--    --    198-205       1-1     [human], sitting
+A large Rat               20 1200k G-x---    --    573-584    2813-2825  [animal], hide, flees
+The living one (1)        20  900k N-----     N    414-451       1-1     [entity]
+The living one (2)        25 1875k N--x--    GN    575-605       1-1     [entity]
+The living one (3)        30 4200k N--x--    GN    722-754       1-1     [entity]
+Fantus                    35 8400k G--x--    G-    857-920       1-1     [dragon]
+Henry the Bat             35 8400k G--x--    GN    858-877       1-1     [bird]
+A Lesser Demon            35 8750k E-xx-x    --    868-897    3100-3935  [demon], imp
+The living one (4)        35 8400k Nx-x--    GN    916-922       1-1     [entity]
+A wild wight              35 8750k E--x-x    --    868-928       1-1     [undead]
+The living one (5)        40   16M Nx-x--    GN   1262-1323      1-1     [entity]
+A Yugaloth                45   36M Nx---x    GNE  1758-1856      1-1     [magical], special-flames (45)
+The Good Mage             50   55M Gx-x--    -NE  2300-2300  50000-50000 [human], imp, powerword pain, hell fire, fireball, powerword blind
+The skeletal warrior      55   72M Ex-xx-    --    ~3.5k     30000-30000 [undead], immune pierce, delayed-agg-GN?, bash, headbang
+The Neutral Mage          60  120M Nx-x -    G-E  4800-4800  65536-65536 [human], plasma bolt, powerword blind, teleport, imp, (teleport pretty much every round)
+The Shopkeeper            70       N--       ---                         shopkeeper
+The Evil Mage             75  600M Ex-x      GNE 12000-12000 65536-65536 [human], deathspell, hell storm, plasma ball, powerword blind, fireball, imp, 2-2 spells
+Lahrohn                   75  525M Ex-xx     GN     ~15k     65536-65536 [undead], imp, plasma bolt, hell storm
+
+.Room of Summoning: Its special has been removed.
+.  Each tick, if room has less than 10 mobs, there's a chance of a mob being
+.  summoned.
+.  Mobs of max lvl 30 are cloned exactly, including money but without eq.
+.  Mobs of min lvl 100 get level/hp/money set to 1 and alignment set to
+.  neutral. Skills, spells, specials, shrug, detect-invis & pop-on-death are
+.  removed, but they keep their INFO-flag.
+.  Only mobs of lvl 1-30 and lvl 100 mobs are summoned to this room, it seems.
+.  Note: This room-special has been removed.

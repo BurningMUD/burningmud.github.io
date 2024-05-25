@@ -1,0 +1,51 @@
+# Ice Wall (117): 50-100, Trez  (Sundhaven: 2e4n2w2ndne2sesese3nenenen)
+#
+#                                                 o    Minotaur---\
+#                                                /        |\      |
+#                                               o <-------o \-o   |
+#                                              /          |   |   v
+#           ----> o                           o    o+Feal+o - o + p
+#          /     /|                           |          x^   |
+#         o  RIP/ |                           o   Remo  / |   |
+#         |   |/  |                           |    +   /  |   |
+#       o |   U   o      o - o - o         o--o---Mist----|---|--o
+#       | |   |  /|      |   |   |            |           |   |  |
+# Wahoo+o-o<--|-/ |      o - o - o            o   o+> o - o - o  |
+#       | |   |   |          |   |               /        +      |
+#       o o   o --|- o - o - o - o - o -- o     o         o      |
+#         +   |   |          |   |   |    |    /^                |
+#     o - o   |   o    o-o-o-o - o - o -- o   o |                |
+#     +   +   |  /           | __|___|____|__/  o ------ o       |
+#     o   o   | /            |/  |   |    |              |       |
+#             |/             s - o - o -> o              o - o - o
+#             o              |   |   |    |
+#                            |   |   ^\   |
+#                            |   |   | \  |
+#                      o-o-o-o - o - o -- o
+#                            |
+#                          - X
+#                            |
+#
+* Min level 0/32
+* West and upper parts are very bright, but not Wahoo's hut
+* Draconians are vuln unlife/slay magical. Beware of Sleet.
+
+Ice Wall:                Lvl    Xp ASWIDMX # agg      Hp         Gold     Special
+Kid                      20   440k N-----    --    547-568     1047-2905  [human], invis, +100 starthp, flees
+Puppy Dog                20   600k N-x---    --    404-462    10001-10001 [canine]
+Thanoi                   35  8750k N--x-x    GN   1150-1503   10001-10001 [magical], invis
+An Aurak Draconian       40    18M E-xxxx    GN   1306-1438   20001-20001 [magical]
+Harbor Guard             40    12M N--x-x    --E  1505-1578   20001-20001 [human], invis
+A Baaz Draconian         43    24M E-xx-x    GN    860-868    20001-20001 [magical]
+A Bozak Draconian        45    29M E-xx-x    GN   1234-1387   20001-20001 [magical]
+Indian's fan             45  2250k N-xx--    GN   1149-1182      37-52    [human], summoned
+A Kapak Draconian        47    35M E-xx-x    GN   1983-2195   20001-20001 [magical]
+A Sivak Draconian        50    42M E-xxxx    GN   2253-2338   20001-20001 [magical]
+Ice Minotaur             50    45M N--x--    GN   2000-2000   20000-20000 [---]
+The remorhaz hatchling   55    74M E--x      GN   3516-3516   10030-10041 [dragon]
+Reverend Beverage        60   102M Gx-xxx    --   9419-9580   20001-20001 [human]
+Feal Thas                70    84M Ex-x  1   GN   5302-6736   50020-50020 [elf], blocker
+The Mist                 75   375M Ex-x      GN    ~18k       65536-65536 [insubstantial]
+Chief Wahoo              80  1281M Gxxxxx    --    ~20k       50001-50001 INFO, [human], powerheal, summon Indian's fans
+Remorhaz                 80  1200M Ex-x  1   GN  20870-21279  65535-65535 INFO, [dragon], invis, bash, kick, headbang, berserk
+Sleet                    80  1921M Exxxx     GN   <25k        65536-65536 INFO, [dragon], invis, trueheal, special-freeze (which removes you from battle. Not used if he's blind)

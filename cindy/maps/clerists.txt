@@ -1,0 +1,112 @@
+# High Clerists Tower (154): 50-100, Sanders  (Palanthas: 5s2es2e3sen)
+* FIND OUT: A Fallen Knight (summoned)      [undead?], xp, comes from where?
+* FIND OUT: Skye                            hp
+#
+#   o - o   o - o         o                     /        o - o  Lvl 8
+#   |   |   |   |         |         Lvl 5-7    o         |   |
+#   o - o   o - o         o                   /      o - o - o - o
+#   +       +    /        |        o - o   o o       |   |  /|   |
+#   o - o - o - o Lvl 4   o        |   |   +/        o - o - o - o
+#   +       +  /          |    Gunthar-o - o             |   |
+#   o - o   o - o         o        |   |  /+             o - o
+#   |   |   |   |         |        o - o   o
+#   o - o   o - o         o
+#                         |
+#   o   o   o   o         o                   o - o - o   o
+#   +   +   +   +         |                   +       +   +
+#   o - o - o - o       o-|-o - o + o         o - o - o - o
+#   +   +   +   |       | |x|   |   |         +       +   |
+#   o   o   o   |       | o |   |   o         o - o - o   |
+#               |/      |   |   |                         |/
+#      Lvl 1    o       o - o - o               Lvl 3     o
+#              /|       |                                /|
+#   o   o   o   |       |   Lvl 2             o - o - o   |
+#   +   +   +   |       |            /        +       +   |
+#   o - o - o - o       o - o - o - o         o - o - o - o
+#   +   +   +   +       |   |   |  /|         +       +   +
+#   o   o   o   o       o - o - o - o         o - o - o   o
+#
+#             o ----------------- o ----------------- o
+#             |       o - o - o       o - o - o       |
+#             |       |   |   |       |   |   |       |
+#         o - o   o - o - o - o       o - o - o - o   o - o
+#         |       |    training        temple     |       |
+#     o - o   o - o   o - o - o       o - o - o   o - o   o - o
+#     |       |       |   |   |       |   |   |       |       |
+# o - o   o - o       o - o - o       o - o - o       o - o   o - o
+# |       |               +               +               |       |
+# |   o - o               o - o       o - o               o - o   o
+# |   |   |  armory       |   |       |   |      stables  |   |  /|
+# o   b - o   o - o   o - o - o       o - o - o   o   o   o - o / |
+# |\  |   |   |   |   |   |               |   |   |   |   |   |/  |
+# | \ o - o   o - o + o - Q      sky      o - o + o - o   o - o   |
+# |  \|   |   |   |   |   |               |   |   |   |   |   |   |
+# |   o - o   o - o   o - o               o - o   o   o   o - o   |
+# |   |   |           |   |        /      |   |           |   |   |
+# |   o - o       o + o - o ----stand---- o-> a + o       o - o   |
+# |   |   |       |   |   |      /|       |   |   |       |   |   |
+# |   o - o   o - o   o - o - o - o - o - o - o   o - o   o - o   |
+# |   |   |   |       |       |   |   |       |       |   |   |   |
+# |   o - o   o   o - o   o + o - o - o + o   o - o   o   o->/o   |
+# |       |       |       |   +   |   +   |       |       |  |    |
+# o - o   o - o <-o   o - o   o   o   o   o - o   o-> o - o  |    |
+#     |       |   |           |   |   |           |   | \    /    |
+#     o - o   o - o           o   o   o           o - o  -<--     |
+#         |   |   |               |               |   |           |
+#         |   o   o - o - o - o - o - o - o - o - o   o       o - o
+#         |   |       |   |/  |   |   |   |/  |/      |       |
+#         |   o - o   o - U - o - o - o - U - o   o - o   o - o
+#         |       |               |               |       |
+#         o - o   o - o - o - o - X - o - o - o - o   o - o
+#             |                   |                   |
+#             o --------- D - o --|------ D --------- o
+#                        /        |      /
+#                                 |
+#                             /
+#      Derek - 2 - 2        -o-
+#        |     |   |        /|
+#      Sturm - 1 - 1 + g - o   Cellar
+#        |     |   |
+#      Alfred- 2 - 2
+#
+* Whole area is very bright (check battlements)
+* a: Going west takes you 3 steps north.
+* b: Going south takes you 2 steps south.
+* g: Evil-aligned people cannot go west from this room.
+* sky: No-exit room where Skye and his friends are
+* Place Sleet's Dragon Orb in Stand to summon Skye + 2-3 Crazed blue dragons
+
+Clerists:                               Lvl    Xp ASWIDMX # agg       Hp        Gold     Special
+A cook                                   20  800k N-----    --     451-451    1000-1000  [human]
+The metalsmith's assistant               20  750k G-x---    --     451-451    2000-2000  [human]
+A Piranha                                20  960k N--x--    GN     450-450     450-450   [fish]
+A servant                                20  800k N-----    --     451-451    1000-1000  [human]
+The Honour Knight                        30 3300k Gx-x-x    - E    750-750    7000-7000  [human], bash, kick, headbang, berserk, appears after attacking someone on the bottom floor
+A Stable Hand                            30 3300k G-----    --     450-450     100-100   [human]
+A Dining Knight                          35 8750k G-----    --E    905-931    4000-4000  [human], bash, kick, headbang
+A Squire                                 35 9450k G-----    --     895-900    3000-3000  [human], bash, kick, headbang, berserk
+A Training Knight                        35 7700k G-----    --     900-900    2000-2000  [human], bash, kick, headbang, berserk
+A Rogue                                  40   13M E-x---    G-    1300-1300   1300-1300  [human], sitting
+A Sentry Knight                          40   14M G-----    --    1300-1300   4000-4000  [human], bash, kick, headbang, berserk
+A War-horse                              40   14M N-----  4 GN    1300-1300   1300-1300  [---]
+A Knight of Solamnia                     45   24M G-----    --    1800-1800   7000-7000  [human], sleeping, bash, kick, headbang, berserk
+A Minotaur                               45   25M E-----    --    1800-1800   1800-1800  [---], sitting, bash, kick, headbang, berserk
+A Cleric of Paladine                     50   46M Gx----    --    2300-2300  14000-14000 [human], wither, blindness, powerheal, harm, 1-1 spells
+A Knight of the Crown                    50   35M G-x--x    --E   2290-2485  20000-10000 [human], bash, kick, headbang, berserk
+A Knight of the Sword                    55   51M G-xx x    --E   3501-3501  28000-28000 [human], bash, kick, headbang, berserk
+A Unit Commander                         55   56M Gx-x x  2 --    3501-3501  20000-20000 [human], sitting, bash, kick, headbang, berserk
+The Tactical Advisor                     60   72M Gx-x x  3 --E   4764-4821  24000-24000 [human], bash, kick, headbang, berserk, makes honour guards move to Gunthar if attacked
+A Knight of the Rose                     65  130M Gxxx x    --E   6404-6474  65536-65536 [human], bash, kick, headbang
+The Honour Guard                         75  330M Gx-x x1 4 --E  12000-12000 65536-65536 [human], bash, kick, headbang, berserk
+A Lord Knight                            75  330M Gx-x x  4 --   12075-12405 65536-65536 [human], bash, kick, headbang, berserk
+A Crazed Blue Dragon                     80 1360M Ex-x  1   GNE  18000-18000 18000-18000 [dragon]
+A Fallen Knight                          80       Gx        --E              18000-18000 [undead?], summoned
+A Fallen Knight                          80 1362M Gx-x -1   --E              18000-18000 [undead], bash, kick, headbang, berserk
+The Instructor                           80 1520M Gx-x x  1 --   18000-18000 65536-65536 [human], bash, kick, headbang, berserk
+The Metalsmith                           80 1360M Gx-x x  1 --   17870-18183 65536-65536 [human]
+Sir Jarrod Edgeworth, the Knight of Tears 90    0 Gx-x -  1 --   12000-12000     1-1     questmaster, [human], sitting, cake, 2-4 attacks, great ac
+The spirit of Alfred MarKenin            90 1621M Gx-x x1 1 ---              32000       [insubstantial], NOT corpseless
+The Spirit of Derek Crownguard           90 1621M Gx-x x  1 ---                  0-0     [insubstantial], corpseless
+Gunthar Uth Wiston                       95       Gx-x x2 1 --E              65536       INFO, [human], wrath of god, trueheal, powerheal, area powerharm, prayer, miracle, 2-2 spells, 6-6 attacks, summons honour guards (but they don't assist him)
+Skye                                     95 2474M Ex-x    1 GN   59457       65536-65536 INFO, [dragon], chain lightning, lightning bolt, lightning breath, 2-2 spells, 6-7 attacks, flying/special-standing before being in battle - standing after
+The Spirit of Sturm Brightblade         100       Gx-x x1 1 --E              64000-64000 INFO, [insubstantial], mana shielded, summon Fallen Knight (either from nearby rooms, or from... nowhere? Maybe from one-way-exit rooms leading to some room a few east of Sturm? They don't assist him?), special-bright-light-stun, corpseless

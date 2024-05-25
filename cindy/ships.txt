@@ -1,0 +1,148 @@
+(Written by Anduin)
+The ship between Orhan and Ashinara:
+
+
+From Market place:
+16en2en3es3enwne2nw2nwne2nwn3en2es2enen5e
+Enter portal
+4e4s5e
+
+
+The ship stays in the port on oc for:  52 seconds
+The trip from oc to nc takes:          1 minute and 14 seconds
+The ship stays in the port on nc for:  52 seconds
+The trip from nc to oc takes:          1 minute and 14 seconds
+
+This for example means: If you wait for the ship in the port on oc,
+and the ship arrives, it will take you 2 minutes and 6 seconds
+before you can leave the ship in the port on nc.
+
+Another example is; When you enter the port and the ship leaves,
+you will have to wait for 2 minutes and 6 seconds before you can
+board, and 4 minutes and 12 seconds before you can leave it on
+the other side of the ocean.
+
+
+This map illustrates how the ship navigates, the N stands for
+the port on Nc, and the O stands for the port on Oc.
+
+
+                                                                   N
+                                                                   |
+                                                                   o
+                                                                   |
+                                                                   o
+                                                                   |
+                                                                 o-o
+                                                                 |
+                                                                 o
+                                                                 |
+                                                                 o
+                                                                 |
+                                                               o-o
+                                                               |
+                                                               o
+                                                               |
+                                                               o
+                                                               |
+                                                             o-o
+                                                             |
+                                                             o
+                                                             |
+O-o                                                        o-o
+  |                                                        |
+  o-o-o                       o-o-o-o                   o-o
+      |                       |     |                   |
+      o-o-o           o-o-o-o-o     o-o-o-o-o         o-o
+          |           |                     |         |
+          o-o-o-o-o-o-o                     o-o-o-o-o-o
+
+
+
+
+
+The Barge of the Dead:
+
+
+From Market place:
+Rub
+Transport Olympus
+Find Hermes
+Ask Hermes death
+North
+
+Stays on Styx Marsh for: 48 seconds
+From Styx Marsh to Lost Souls: 8 seconds
+Stays on Lost Souls for: 48 seconds
+From Lost Souls to Styx Marsh: 8 seconds
+
+This for example means: If you wait for the Barge in the port
+off Styx Marsh, and the barge arrives, it will take you 56 seconds
+before you can leave the barge in the port of lost souls.
+
+Another example is; When you enter the port and the barge leaves,
+you will have to wait for 56 seconds before you can
+board, and 1 minute and 52 seconds before you can leave it on
+the other side.
+
+This map illustrates how the barge navigates, the S stands for
+the Port of the Styx March, and the L stands for the Port off
+lost souls.
+
+
+               L
+               |
+               o
+               |
+             o-o
+             |
+             o-o
+               |
+               o
+               |
+               S
+
+
+A huge Silver Dragon:
+
+
+From The Temple Altar of Myrridon:
+20w
+Say open
+4w
+s2ws2w2se2swseses
+
+Stays on The Ashinara Outpost for: 48 seconds
+From The Ashinara Outpost to The Dragontail Outpost: 8 seconds
+Stays on The Dragontail Outpost for: 48 seconds
+From The Dragontail Outpost to The Ashinara Outpost: 8 seconds
+
+This for example means: If you wait for the Dragon in The Ashinara
+Outpost, and the Dragon arrives, it will take you 56 seconds
+before you can leave the Dragon in The Dragontail Outpost.
+
+Another example is; When you enter the port and the Dragon leaves,
+you will have to wait for 56 seconds before you can
+board, and 1 minute and 52 seconds before you can leave it on
+the other side.
+
+This map illustrates how the huge Silver Dragon navigates, the A stands
+for The Ashinara Outpost, and the D stands for The Dragontail Isle.
+
+  A
+  |
+  o
+  |
+  o
+  |
+o-o
+|
+o
+|
+o
+|
+D
+
+
+
+/Anduin

@@ -1,0 +1,205 @@
+
+; Tick warner
+; ===========
+; Usage: tickwarn <ticks> <message>
+; Will tell you when <ticks> ticks have passed, and warn you before it
+; happens (1 tick, 15 seconds)
+; Example: tickwarn 12 Pizza delivery guy should be here now (15 min)
+
+/set ticktime 75
+/alias tickwarn \
+	/repeat -$[trunc({1} * {ticktime} - {ticktime})] 1 /echo TF: %{-1}: 1 tick left!%; \
+	/repeat -$[trunc({1} * {ticktime} - {ticktime}/5)] 1 /echo TF: %{-1}: 15 seconds left!%; \
+	/repeat -$[trunc({1} * {ticktime})] 1 /echo TF: %{-1}: OUT!!!
+
+
+; Spell timers
+; ============
+; Triggers for warning when wither/blindness etc runs out.
+; Can also be useful for telling when you are able to create another scroll 
+; (1), when imp is about to run out, when injected Phycomid aliens can be
+; expected to pop out of you (6), when Mordenkainen's Sword is close to
+; running out (6.2 for me), etc, etc.
+
+/alias bli2 \
+	cast 'powerword blind' %*%; \
+	/def -F -n1 -mregexp -t" is blind\\.$$" bli2report = \
+		tickwarn 2 Blindness
+
+/def -F -msimple -t"You create a scroll of powerword blind." blindscrolltrig = \
+	/purge bli2reportScroll%; \
+	/def -F -n1 -mregexp -t" is blind.$$" bli2reportScroll = \
+		tickwarn 2 Blindness
+
+/alias wither \
+	cast 'wither' %*%; \
+	/purge witherreport%; \
+	/def -F -n1 -mregexp -t"^([A-z ,]+) appears brittle.$$" witherreport = \
+		tickwarn 24 Wither (%%{P1})%%; \
+		/if (pg) \
+			gt %%{P1} appears brittle.%%; \
+		/endif
+
+
+; Delayed action
+; ==============
+; Used if you eg want to have your /echo show up below the line it triggers on,
+; instead of above. Or if you want some fighting-trigger (like counting and
+; showing number off attacks a mob does each round) happen after a whole
+; battre lound has passed.
+; Note: The trigonprompt needs to be modified to match your prompt. It's made
+; to trigger on a prompt looking like this:
+; 723(2423)H 412(1160)M 603(608)V >
+; (...and anything after that ">" sign is accepted)
+; If you have trouble modifying the trigger, a simple one (only requiring your
+; prompt to start with a number) could be made like this:
+; /alias trigonprompt \
+; 	/def -p15 -F -n1 -mregexp -t'^(-|)[0-9]+' trigonprompt%{1}$[rand(100000)] = \
+; 	%*
+
+/alias tfpromptshow \
+	trigonprompt /echo TF: %*
+/alias tfnextlineshow \
+	trigonnextline /echo TF: %*
+/alias trigonprompt \
+	/def -p15 -F -n1 -mregexp -t'^(-|)[0-9]+\\\([0-9]+\\\)H (-|)[0-9]+\\\([0-9]+\\\)M (-|)[0-9]+\\\([0-9]+\\\)V >' trigonprompt%{1}$[rand(100000)] = \
+	%*
+/alias trigonnextline \
+	/def -p15 -F -n1 -t"*" trigonnextline%{1}$[rand(100000)] = \
+	%*
+
+
+; Item insurance
+; ==============
+; Not sure if the shatter thing can happen these days, but items burning up is
+; possible. It's always the top item in your inventory that goes first, so I
+; suggest you do as me: Always keep a homesick onion on top of your inventory,
+; and a boat as second.
+
+/def -F -ah -mregexp -t' burns up and disappears!$' somethingburnedup = \
+	bell 1%; \
+	/echo TF: %{PL} GOT DESTROYED!!!%; \
+	get homesick bag%; \
+	get homesick bag
+/def -F -ah -mregexp -t' freezes solid and breaks.$' somethingfrozeup = \
+	bell 1%; \
+	/echo TF: %{PL} GOT DESTROYED!!!%; \
+	get homesick bag%; \
+	get homesick bag
+
+
+; Repetition
+; ==========
+; Saves the last item you look at/identify/read/..., so if you want to look at/
+; identify/read 2.<item> you just need to type the command again, but this
+; time without an argument. Eg, if there are several paladins in a room, you
+; type "exa paladin" to look at the first one, then just type "exa" and you
+; will look at 2.paladin. Another "exa" will make you look at 3.paladin, etc
+
+/alias exa \
+	/if  ({*} !~ '') \
+		/set exaitem %*%; \
+		/set exacounter 1%; \
+		exam %*%; \
+	/else \
+		/set exacounter=$[{exacounter} + 1]%; \
+		/echo TF: exa %{exacounter}.%{exaitem}:%; \
+		exam %{exacounter}.%{exaitem}%; \
+	/endif
+/alias look \
+	/if  ({*} !~ '') \
+		/set lookitem %*%; \
+		/set lookcounter 1%; \
+		loo %*%; \
+	/else \
+		/set lookcounter=$[{lookcounter} + 1]%; \
+		/echo TF: look %{lookcounter}.%{lookitem}:%; \
+		loo %{lookcounter}.%{lookitem}%; \
+	/endif
+/alias read \
+	/if  ({*} !~ '') \
+		/set readitem %*%; \
+		rea %*%; \
+	/else \
+		/set readitem=$[{readitem} + 1]%; \
+		/echo TF: read %{readitem}:%; \
+		rea %{readitem}%; \
+	/endif
+/alias ident \
+	/if  ({*} !~ '') \
+		/set identitem %*%; \
+		iden %*%; \
+	/else \
+		/set identitem=$[{identitem} + 1]%; \
+		/echo TF: ident %{identitem}:%; \
+		iden %{identitem}%; \
+	/endif
+
+
+; Log shrinker
+; ============
+; The xplog, bleedlog etc are too large to fit in an 80-column screen.
+; These scripts make them a bit narrower so they become viewable at 80-col
+; width. You will need the "trigonprompt" alias for these to work.
+
+/def -F -msimple -t"Hitlog" hitlogshrinker = \
+	/def -F -mregexp -t"^Name                 Miss Tick Bare Hits Hard Very Extr Mass *" substhitlogshrink1 = \
+		/substitute -a -p Name      Miss ... Extr Mass %%{PR}%; \
+	/def -F -mregexp -t"^([^ ]+)            ([ ]+[0-9]+)[ ]+ ([0-9]+)[ ]+([0-9]+)[ ]+([0-9]+)[ ]+([0-9]+)[ ]+([0-9]+) " substhitlogshrink2 = \
+		/set smallsum=$$[pad(({P3}+{P4}+{P5}+{P6}+{P7}),3)]%%; \
+		/substitute -a -p %%{P1}%%{P2} %%{smallsum} %%{PR}%; \
+	trigonprompt /purge substhitlogshrink*
+
+/def -F -msimple -t"Bleedlog" bleedlogshrinker = \
+	/def -F -mregexp -t"^Name                 Miss Very Extr Mass Obli Anni *" substbleedlogshrink1 = \
+		/substitute -a -p Name      Miss ... Anni %%{PR}%; \
+	/def -F -mregexp -t"^([^ ]+)            ([ ]+[0-9]+)[ ]+ ([0-9]+)[ ]+([0-9]+)[ ]+([0-9]+)[ ]+([0-9]+) " substbleedlogshrink2 = \
+		/set smallsum=$$[pad(({P3}+{P4}+{P5}+{P6}),3)]%%; \
+		/substitute -a -p %%{P1}%%{P2}  %%{smallsum}%%{PR}%; \
+	trigonprompt /purge substbleedlogshrink*
+
+/def -F -msimple -t"Explog" explogshrinker = \
+	/def -F -mregexp -t"^Name                   Tot Exp Tot Gold Tot Kills Tot Deaths   Avg Exp Avg Gold Avg Kills Ticks$$" substexplogshrink1 = \
+		/substitute -a -p Name           Tot Exp  Tot Gold Kills RIP   Avg Exp  Avg Gold AvgKills Ticks%; \
+	/def -F -mregexp -t"^([^ ]+)         ([ ]+\-?[0-9]+)([ ]+[0-9]+)      ([ ]+[0-9]+)       ([ ]+[0-9]+) ([ ]*\-?[0-9\.]+)([ ]+[0-9\.]+)    ([ ]+[0-9\.]+) " substexplogshrink2 = \
+		/substitute -a -p %%{P1} %%{P2} %%{P3} %%{P4} %%{P5} %%{P6} %%{P7} %%{P8}   %%{PR}%; \
+	trigonprompt /purge substexplogshrink*
+
+/def -F -msimple -t"Heallog" heallogshrinker = \
+	/def -F -mregexp -t"^Name                  CLW  CSW  CCW HEAL  POW TRUE MIRA MIRAV  LAY  Total Average Ticks$$" substheallogshrink1 = \
+		/substitute -a -p Name        CLW  CSW  CCW HEAL  POW TRUE MIRA MIRAV  LAY  Total Average Ticks%; \
+	/def -F -mregexp -t"^([^ ]+)            " substheallogshrink2 = \
+		/substitute -a -p %%{P1}  %%{PR}%; \
+	trigonprompt /purge substheallogshrink*
+
+
+; Several commands in one
+; =======================
+; To send several commands in one line. Any line starting with a semicolon
+; will be split up by semicolon.
+; Example: ";north;tell zzz summon;cast 'wither' dragon"
+
+/alias ; /splitline %{*}
+/def splitline = \
+    /let args=%*%; \
+    /let i=0%; \
+    /while ((i:=strchr(args, ";")) >= 0) \
+        /eval $[substr(args, 0, i)]%; \
+        /let args=$[substr(args, i+1)]%; \
+    /done%; \
+    /eval %args
+/def -p3 -h"SEND ;*" expandhook = /splitline %{*}
+
+
+; Repeat a command
+; ================
+; To repeat a command several times, begin with a "#" followed by the number
+; of times you want to do it.
+; Example: "#10 tell norbul Stop spamming!"
+/def -p2 -h"SEND #*" loophook = /loop $[substr({*}, 1)]
+/def loop = \
+        /let arg1=%1%;\
+        /let arg2=%-1%;\
+        /if (arg1!~'' || arg2!~'') \
+                /for i 1 %arg1 %arg2%;\
+        /endif

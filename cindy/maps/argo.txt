@@ -1,0 +1,55 @@
+# the Upper Argo (18): 30-65, Unknown  (Ultima: 3nd5nund3n)
+* FIND OUT: Chektor     Hp, hp
+* FIND OUT: Vander      Hp, hp
+* FIND OUT: Kepabar     Hp
+* FIND OUT: Nesessitas  Hp
+#
+#                o           o
+#                |           |
+#            o - o       o - o
+#            |   |       |   |
+# Nesessitas-o - o - o - o - o
+#        |   |   |   |       |
+#    Kepabar-o - o - o       o
+#        |   |   |   |       |
+#      Bazil-o - o - o - o - o
+#        |   |   |   |       |
+#    Chektor-o - o - o       o
+#        |   |   |   |       |
+#     Vander-o - o - o - o - o
+#        |   |   |       |   |
+#        o - o - o       o - o
+#        |   |   |       |   |
+#        o - o - X - o - o - o
+#                |
+#                o
+#                |
+#                o o
+#                |/|
+#                o o
+#                 /
+#                o
+#                |
+#                o
+#                |
+#
+* Nothing aggressive. Trolls are vuln fire/slay troll.
+* The dragons damage themselves too, when fighting.
+
+Upper Argo:          Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+An Orgeem Imp         30 3300k E-x---    --   748-763       1-1    [---], bash, kick, headbang, flees
+Harcho                32 3840k G-----    --   807-819       1-1    [human]
+Kastrul               32 4160k G-----    --   819-820       1-1    [human]
+Marco Veli            32 4160k G-----    --   812-825       1-1    [human]
+Tomas                 32 4160k G-----    --   801-819       1-1    [human]
+Relkin Orphanboy      33 5940k G-----    --   821-830       1-1    [human]
+Dragoneer Rosen Jaib  47   25M G-----    --  1842-1857      1-1    [human]
+Dragoneer Heltifer    48   29M G-----    --  1855-1883      1-1    [human]
+Dragoneer Tetzarch    50   38M G-----    --  2447-2448      1-1    [human]
+A Black Troll         52   54M E-xxx-    --  2506-2540      1-1    [troll]
+Chektor               55   56M G--xx-    --   ~3300         1-1    [dragon], no-BM, 8-9 attacks, special-reduce-strength, special-stun
+Bazil Broketail       57   71M G--xx-    --  3204-3297      1-1    [dragon], no-BM, 8-9 attacks, special-reduce-strength, special-stun
+A Whitish Troll       61   76M E-xxx-    --  4379-4381      1-1    [troll]
+Vander                62   90M G--xx-    --   ~4000         1-1    [dragon], no-BM, 7-8 attacks, forceflee(tailstrike), special-reduce-strength, special-stun, shrugger
+Kepabar               64  102M G--xx-    --  5664           1-1    [dragon], no-BM, 7-9 attacks, forceflee(tailstrike), special-reduce-strength, special-stun, shrugger
+Nesessitas            64  103M G--xx-    --  5602.5         1-1    [dragon], no-BM, 7-9 attacks, forceflee(tailstrike), special-reduce-strength, special-stun, shrugger

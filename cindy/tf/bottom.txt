@@ -1,0 +1,124 @@
+; Bottom damlog script. Not as fun as a toplog, but useful for finding 
+; broken" players. It makes a bottom-damlog list, excluding Pr/Pr.
+; Usage: bottom <nr> <output>
+; <nr>:     Length of list. Any number higher than number of members will show
+;           the full list.
+; <output>: How to report. Default is "/echo TF:"
+; Example: "bottom 12 yell"
+; Needs the "trigonprompt" alias (found in useful.tf) and maybe more.
+
+/alias bottom \
+	/purge bottomXlist*%; \
+	/set bottomXchannel=%{-1}%; \
+	/set bottomXcounter=%{1}%; \
+	/if ({bottomXcounter} =~ '') \
+		/set bottomXcounter=5%; \
+	/endif%; \
+	gr%; \
+	/def -F -msimple -t"Your group consists of:" bottomXtriga = \
+		/def -F -mregexp -t"^[0-9]+\\\\. \\\\[([0-9]+) ([A-z/ ]+)\\\\] ([^ ]+) [^V]+V\\\\] (NotHere|[^ ]+)( \\\\(LD\\\\)|)" bottomXtriga2 = \
+			/set bottomXclass%%%{P3} %%%{P2}%%%; \
+			/set bottomXlevel%%%{P3} %%%{P1}%; \
+	damg%; \
+	/set b10counter=1%; \
+	/def -F -msimple -t"Damlog" bottomXtrigb = \
+		/def -F -mregexp -t"^([^ ]+).* ([0-9]+)[ ]+([0-9]+)$$$" bottomXtrigb2 = \
+			showus %%%{P1} bottomXlevel%%%{P1} bottomXclass%%%{P1} %%%{P2} %%%{P3}%%%; \
+		trigonprompt /purge bottomXtrig*%%; \
+		trigonprompt /showbottomXlist %{bottomXcounter}
+
+/alias showus /eval \
+	/if (%{b10counter} == 1) \
+		/set leaderticks=%{5}%%; \
+	/endif%%; \
+	/if ({%{3}} !~ 'Pr/Pr') \
+		/set b10counter=$[{b10counter} + 1]%%; \
+		/set excuse=%%; \
+		/if ((%{5} > leaderticks*2) | (%{5} < leaderticks/2)) \
+			/set excuse=%{5} ticks%%; \
+		/endif%%; \
+		/if (%{2} < 51) \
+			/if (excuse !~ '') \
+				/set excuse=%%{excuse},lvl %%{%{2}}%%; \
+			/else \
+				/set excuse=lvl %%{%{2}}%%; \
+			/endif%%; \
+		/endif%%; \
+		/if (excuse !~ '') \
+			/set excuse=-%%{excuse}%%; \
+		/endif%%; \
+		/set bottomXlist%{b10counter}name=%{1}%%; \
+		/set bottomXlist%{b10counter}avg=%{4}%%; \
+		/set bottomXlist%{b10counter}time=%{5}%%; \
+	/endif
+
+
+/!def showbottomXlist = \
+	/for bXi 1 %{1} \
+		/for bXj 1 $$[b10counter - bXi - 1] \
+			/eval /eval /if (%%%%{bottomXlist$$$[{b10counter} - {bXj}]avg} < %%%%{bottomXlist$$$[{b10counter} - {bXj} - 1]avg}) \
+				/set bottomXlistslask=%%%%{bottomXlist$$$[{b10counter} - {bXj}]avg}%%%%%; \
+				/set bottomXlist$$$[{b10counter} - {bXj}]avg=%%%%{bottomXlist$$$[{b10counter} - {bXj} - 1]avg}%%%%%; \
+				/set bottomXlist$$$[{b10counter} - {bXj} - 1]avg=%%%%%{bottomXlistslask}%%%%%; \
+				/set bottomXlistslask=%%%%{bottomXlist$$$[{b10counter} - {bXj}]name}%%%%%; \
+				/set bottomXlist$$$[{b10counter} - {bXj}]name=%%%%{bottomXlist$$$[{b10counter} - {bXj} - 1]name}%%%%%; \
+				/set bottomXlist$$$[{b10counter} - {bXj} - 1]name=%%%%%{bottomXlistslask}%%%%%; \
+				/set bottomXlistslask=%%%%{bottomXlist$$$[{b10counter} - {bXj}]time}%%%%%; \
+				/set bottomXlist$$$[{b10counter} - {bXj}]time=%%%%{bottomXlist$$$[{b10counter} - {bXj} - 1]time}%%%%%; \
+				/set bottomXlist$$$[{b10counter} - {bXj} - 1]time=%%%%%{bottomXlistslask}%%%%%; \
+			/endif%; \
+	/set bottomXresult=%; \
+	/set bXx=0%; \
+	/if ({bottomXchannel} =~ '') \
+		/for bXi 1 %{1} \
+			/eval /if (bottomXlist%%{bXi}name =~ '') \
+				/set bXx=1%%%; \
+			/else \
+				/set bottomXresult=%%{bottomXresult} @{Cwhite}%%{bXi}.@{Cgreen}%%%{bottomXlist%%{bXi}name}@{Cwhite}(@{Ccyan}%%%{bottomXlist%%{bXi}avg}/%%%{bottomXlist%%{bXi}time}@{Cwhite})%%%; \
+			/endif%%; \
+			/if (bXx == 1) \
+				/let bXi=%{1}%%; \
+				/eval /set bottomXresult=%%{bottomXresult} <end>%%; \
+			/endif%%; \
+			/set modfive=$$[{bXi} - ({bXi} / 5) * 5]%%; \
+			/if (modfive == 0) \
+				/eval /echo TF: @{Cmagenta}Bottom Avg:%%%{bottomXresult}%%%; \
+				/set bottomXresult=%%; \
+			/endif%; \
+		/if (bottomXresult !~ '') \
+			/eval /echo TF: @{Cmagenta}Bottom Avg:%%{bottomXresult}%; \
+		/endif%; \
+	/else \
+		/for bXi 1 %{1} \
+			/eval /if (bottomXlist%%{bXi}name =~ '') \
+				/set bXx=1%%%; \
+			/else \
+				/set bottomXresult=%%{bottomXresult} &+W%%{bXi}.&+G%%%{bottomXlist%%{bXi}name}&+w(&+C%%%{bottomXlist%%{bXi}avg}&+c/%%%{bottomXlist%%{bXi}time}&+w)%%%; \
+			/endif%%; \
+			/if (bXx == 1) \
+				/let bXi=%{1}%%; \
+				/eval /set bottomXresult=%%{bottomXresult} <end>%%; \
+			/endif%%; \
+			/set modfive=$$[{bXi} - ({bXi} / 5) * 5]%%; \
+			/if (modfive == 0) \
+				/eval %%{bottomXchannel} &+mBottom Avg:%%{bottomXresult}%%%; \
+				/set bottomXresult=%%; \
+			/endif%; \
+		/if (bottomXresult !~ '') \
+			/eval %%{bottomXchannel} &+mBottom Avg:%%{bottomXresult}%; \
+		/endif%; \
+	/endif%; \
+	/quote -S /unset `/listvar -s bottomX*
+
+/def -F -mregexp -t" tells the group, 'bottom[ ]?([0-9]*)'" bottomXask = \
+	/if ({P1} =~ '') \
+		bottom 5 gtf emote%; \
+	/else \
+		bottom %{P1} gtf emote%; \
+	/endif
+/def -F -mregexp -t"^([A-z]+) asks you 'bottom[ ]?([0-9]*)'" bottomXtell = \
+	/if ({P2} =~ '') \
+		bottom 5 tf %{P1} emote%; \
+	/else \
+		bottom %{P2} tf %{P1} emote%; \
+	/endif

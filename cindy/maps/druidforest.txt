@@ -1,0 +1,45 @@
+# Torain's Druid Forest (54): 1-10, Torain  (Karandras: 10wn3wswn)
+#
+#                      chief
+#                        |
+#                    o   o   o
+#                    |   |   |
+#                o - o - o - o - o
+#        grand           |
+#        druid - o   S - o - S - o
+#                |       |
+#            o   o - o - o - S - mage
+#            |           |
+#            o - o - o - o - o - o - o     o
+#            |   |   |   |   |   |   |     |
+#            o - o - o - o - o - o - o   o-o-o
+#            |   |   |   |   |   | __|____/|
+#            |   |   |   |   |   |/  |     o
+#            o - o - o - o - o - o - o
+#            |   |   |   |   |   |   |
+#            o - o - o - o - o - o - o
+#            |   |   |   |   |   |   |
+#            o - o - o - o - o - o - o
+#            |   |   |   |   |   |   |
+#            q - o - o - X - o - o - Q
+#                        |
+#
+* Shops open at 5 am and close at 11 pm.
+* Nothing aggressive.
+
+Druid Forest:         Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+The slave               1   200 N----     -     11-15        0-0    [human]
+The peasant             3  3000 G-x--     -     56-62       11-20   [human], flees
+The sanglier            3  3000 G-x--     -     63-65        0-0    [animal]
+The villager            7   35k G-x--x    -    141-144     589-651  [human]
+The Gallic warrior     10  110k G----x    -    192-198     501-501  [human]
+The Druid (helping)    12  156k G-x--x    -    231-247     901-901  [human], curse
+The Druid (picking)    12  156k G-x--x    -    236-249     901-901  [human]
+The Druid Mage         15  260k G----x    -    296-310     901-901  [human], lightning bolt, flees
+The Village Chief      18  414k G----x    -    387-399    1001-1001 [human]
+The Grand Druid        20  600k G----x    -    440-458    3001-3001 [human], magic missile, burning hands, blindness
+The apprentice         30       G--       -      ?           ?      shopkeeper
+The Armourer           30       G--       -      ?           ?      shopkeeper
+The Baker              30       G--       -      ?           ?      shopkeeper
+Lord Eowaran the banished K'ta'viiri druid
+                      100       N--       -                         questmaster, no-attack

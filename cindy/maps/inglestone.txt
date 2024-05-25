@@ -1,0 +1,88 @@
+# The kingdom of Inglestone (266): 30-100, Smack  (Ofcol: 2w7s2w3s11wnw5nwn)
+* FIND OUT: The Chaos Rogue                xp,                  agg-N, hp, hp, money, [human?], irvs
+* FIND OUT: The Dark Priest of Chaos       xp,                         hp, hp, money, [human?], irvs
+* FIND OUT: The Warlock of Chaos           xp,                  agg-N, hp, hp, money, [human?], irvs
+* FIND OUT: Korr, the Overlord of Chaos    xp, walk, see invis, agg-N, hp, hp, money
+#
+#     Priest                        o
+#        |                          |
+# Rogue-Korr-Warlock            o - o - o
+#        |                         /|
+#        o   Blood                / o
+#        |   worm                /  |
+#     o--o   Queen              /   o
+#     |        |             o /    |
+#    s10       o             |/     o               King+ o
+#     |        |           o-o-o    |                 |
+#    s10       o            /|      o             o - o - o
+#     |        |           / o      |                 |
+#    s10       o-o        /         o   o - o         o
+#     |        ^ |     o /          |   |             |
+#    s10       | |     |/           o - o         o - o - o
+#     |        o-o-o-o-o-o          |                 |
+#    s03              /|            o                 o
+#     |            o / o            |                /
+#     o + b        |/               o + a - o - o - o
+#     |          o-o-o-o-o-o                |
+#     |           /|            o - o - o - o - o - o
+#     |/---------/ o            |   |       |
+#     o                         o - o       o
+#                               |   |       |
+#                               o - o       o
+#                               |   |       |
+#                               o - o   o - o - o
+#                               |   |       |
+#                               o - o   o - o - o
+#                               +           |
+#                             safe          X
+#                             room          +
+#
+* a: break bar    (need strength sum 45)
+* b: push boulder (need strength sum 75 or 76). Boulder can't kill you.
+* s: spider rooms (3 spiders in the first room, 10 spiders in the other ones)
+* Whole area is very bright
+* Dwarves are vuln water/magic/superlarge
+
+Inglestone:                             Lvl    Xp ASWIDMX # agg      Hp         Gold      Special
+The chicken                               5   15k E-x---    --    201-201        1-1      [bird], flees
+A lonely dwarven child                   14  252k G-x---    --    285-290      436-607    [dwarf], flees
+A dwarven child                          15  375k G-x---    --    315-316      410-447    [dwarf], flees
+A dwarven shopper                        23  805k G-x---    --    460-461     3870-5369   [dwarf]
+A dwarven squire                         23 1127k G-x---    --    494-498     2030-2031   [dwarf]
+A fat dwarf                              23 1035k G-x---    --   2007-2008    6282-6391   [dwarf], flees
+A dwarven citizen                        25 1500k G-x---    --    613-616     2045-2092   [dwarf]
+A mountain goblin                        25 1500k E-x---    --    598-628     1243-1268   [lugroki], flees, assist-me (against bloodworm)
+The dwarven courier                      27 3780k G-x---    --    643-650     6501-6501   [dwarf]
+The dwarven peddler                      27 2133k G-x---    --    623-628     5501-5501   [dwarf]
+A bloodworm (drone)                      30 4200k N-----    ---   744-746      741-741    [snake], special-area-spike-strike (35, on mobs too)
+A bloodworm (flails)                     30 4200k N-x---    ---   753-763      741-741    [snake], special-area-spike-strike (27, on mobs too)
+A drow mercenary                         35 9100k E-x--x    --    873-940     8177-8513   [lugroki], fireball, lightning bolt, colour spray
+A dwarven dishwasher                     35 8400k G-----    --    871-889     3001-3001   [dwarf], flees
+A heavily armoured dwarven guard (curio) 35 9450k N-x---    --   1050-1148    9079-9353   [dwarf], bash, kick, headbang, berserk
+A heavily armoured dwarven guard (intru) 35 9100k N-x---    --   1056-1138   10596-11035  [dwarf], bash, kick, headbang
+A dwarven warrior                        36 8280k N-x--x    --   1118-1121   10001-10001  [dwarf], bash, kick, headbang
+A rogue apprentice                       36 8207k E-x--x    --   1006-1020    5601-5619   [human], backstab
+A warlock apprentice                     36 8280k E-xx--    --    958-980     9604-9616   [human], meteor blast, meteor swarm, colour spray, fireball, assist-me (against bloodworm)
+An orcish fighter                        36 8207k E-x--x    GN   1026-1030    5584-5602   [lugroki]
+The dwarven cook                         40       G--       ---                           no-attack
+A half-orc warrior                       42   14M E-x--x    GN   1553-1573   11809-12451  [lugroki], bash, kick, headbang
+A heavily armoured dwarven guard captain 42   16M N-x--x    --   1558-1566     914-8510   [dwarf], bash, kick, headbang, berserk
+An ogre                                  50   32M E-xx--    --   2264-2275    3501-3501   [lugroki]
+The Dwarven champion (blocking)          50   45M N--x-x    --   2068-2078    3501-3501   [dwarf], bash, kick, headbang, berserk, special-block-east
+A large brown troll                      50   30M E-xx-x    --   2266-2269    2501-2501   [troll], assist-me (against bloodworm)
+A big gray mountain giant                55   49M E-xxxx    --   3635-3670    2546-2734   [lugroki]
+A half-ogre with a huge set of lips      55   49M E-xxx-    --   3501-3675    3097-3117   [lugroki]
+A huge vampiric spider                   60   90M E--x      GN   8378-8611    1452-1566   [human], special-drain-blood (4-47)
+A bloodworm queen                        60   91M N--xx-    --   4037-4167   12060-12228  [snake], assist-me (against bloodworm)
+The half-giant sergeant                  60  107M E--xxx    --   3969-4002   11361-12183  [lugroki], sitting, bash, kick, headbang
+The Dwarven champion (stop)              60   84M G--x      GN   4104-4152    9296-10574  [dwarf], bash, kick, headbang, berserk
+A half-giant fighter                     61   76M E-xxxx    --   4116-4197   10470-10506  [lugroki], bash, kick, headbang, berserk
+A Chaos Knight                           75  350M E-xx x    --  12129-12192  12001-12001  [human], lightning bolt, colour spray, fireball
+Dwarven high champion                    75  337M G-xx x    --   8232-8289   10001-10001  [dwarf], bash, kick, headbang, berserk
+Dwarven warrior priest                   80 1321M Gx-x x    --   ~15k        69669-82587  [dwarf], 5-5 attacks, powerharm, blindness, powerheal, confusion, wither, 1-1 spells
+A Chaos Knight Sergeant                  85 1445M E--x x    --  24180-24333  12001-12001  [human], meteor swarm, meteor blast, mass pain, powerword pain, fireball
+The Chaos Rogue                          90       Exxx      G                76129        [human?]
+The Dark Priest of Chaos                 90       Exxx      GN               74941        [human?], wrath of god
+The Warlock of Chaos                     90       Exxx      G                80652        [human?], hell fire, hell storm
+Korr, the Overlord of Chaos              91       Ex        -                68373        INFO, [human]
+King Rok Thunderhammer                   92 1674M Gx-x x    --  37301-38412 500001-500001 INFO, [dwarf], special-lightning-strike (376)

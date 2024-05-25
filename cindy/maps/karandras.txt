@@ -1,0 +1,185 @@
+# The Free City of Karandras (500-501): 1-100, Torain   Redesign by: Stryder/Bane  (Karandras: -)
+#
+#        o-o                     Pixie                   o---o
+#       /| |                       |                     |  /|
+#      / o-o                       | Sanctuary           o---o
+#     /                            |     |                /
+#    o-o                     don---X-----Q             o-o  Item  Q Gambl 
+#    | +                           |                   + |    |   |    +
+#    o+o---o-o----o---Q------o-----FS--o--o-o--o---o---o+o  -Inn--o----o
+#      |   + |        +      +     |      | +  |   +   |      |   |    +
+#      o   o o MT o o-o+o o  o     o-Inn Js o Halv o o o    Recep Bar Eld
+#      |   | |/   +   |   +  |     |        | dan  | | |               |
+#      o o o o    o-o-o-o-o  o  CR-o  o     o      o o+o              Ora
+#      | |   |    +   |   +  +     |  |                |
+#      o+o  MeS   o o+o+o o  o  Ba-o----Ms           o+o       Meta Auct
+#      |                           |  +/             | |     |   |   |
+#      o                      Maps-o  o-+-o          o o    CR---o---o--
+#   .  |     WlG                   |     x       AnG   |  .  |   |   |
+#   .  |    MaG     Boats  Weapon  | Ls o  Food PrG    |  .  o Post Arena
+#  |.  |     |        |      |     |  |    |     |     |  .
+# -o-o+o--o--o---o----o------o-----MS-o----o--o--o---o-o+o-o-
+#   .  |     |        |      |     |  |    |     |     |  .
+#   .  o Mat RoG    Armor  Brewer  o Gs Herbs H FiG  o+o  .
+#   .  |  /   NbG                  |          |  TeG   |  .
+#      o-MobF     o   Juan   o     o      o-o-o-o  Pub-o
+#      |          +     |    +     |      |     +      |
+#      o          o-----o----o-----CS--o--o---o Dark   o   o-o
+# o-o  |          |                |   +      | fri.   |   | |
+# | |  o+o        o--------o       o+o o  o o+o      o o   o-o
+# o-o  |          |       /        |      +   |      + |    /
+#  \ o+o---o--o---o---o---|---o----o----o-o---o--o---o-o+o /
+#   \| +          +       v             |     +        + |/
+#    o-o          o     Sewers          o     o-       o-o
+#             ....|....                 |     |
+#                 o-                    o
+#                 |                     |
+#                                       \_____________
+#                                                     \
+#           Merchant's Tower                          |
+#    North     East      South      West              o
+#    =====     ====      =====      ====              |
+# 13 Aldur     Gnoth     ?          Hingolf           o
+# 12 Galmer    ?         Oogabooga  ?                 |
+# 11 ?         Jahve     Prowler    Cooli         Graveyard
+# 10 ?         Versatile ?          Gawyn
+#  9 Cold      ?         Mummelmann Kerish
+#  8 Yoggin    Sam       Woodiz     Karafred
+#  7 Brutus    Culloden  Sebastian  Keso
+#  6 Amida     Zephyr    Moe        Coward
+#  5 It        Cindy     Tsabu      Derfian
+#  4 Hazard    Tern      Gorog      Legolas
+#  3 Caesar    Danimal   Urkel      Kynd
+#  2 Cromwell  Bandolan  Tryien     Nikodemus
+#
+* Whole area is very bright
+* Max level 8 for sanctuary room
+
+Karandras:                                Lvl    Xp ASWIDMX # agg     Hp        Gold      Special
+A fat pig                                   1   116 N-x---    --    28-30        0-0      [animal]
+A playful child                             1   160 G-x---    --    32-33        2-3      [human?]
+A stray dog                                 1   116 N-xx--    --    30-30        0-0      [canine], corpse-eater
+The Bartender of the Animists Guild         1       N--       ---                         shopkeeper
+The Bartender of the Nightblades Guild      1       N--       ---                         shopkeeper
+The Bartender of the Templars Guild         1       N--       ---                         shopkeeper
+The Bartender of the Warlocks Guild         1       N--       ---                         shopkeeper
+The ginger cat                              1   116 N-x---    --    29-31        0-0      [feline]
+The Guardian Golem of the Animists Guild    1       Nx-       ---                         nofight-room
+The Guardian Golem of the Fighters Guild    1       Nx-       ---                         nofight-room
+The Guardian Golem of the Magicians Guild   1       Nx-       ---                         nofight-room
+The Guardian Golem of the Nightblades Guild 1       Ex-       ---                         nofight-room
+The Guardian Golem of the Priests Guild     1       Nx-       ---                         nofight-room
+The Guardian Golem of the Templars Guild    1       Nx-       ---                         nofight-room
+The Guardian Golem of the Thieves Guild     1       Nx-       ---                         nofight-room
+The Guardian Golem of the Warlocks Guild    1       Ex-       ---                         nofight-room
+The guildmaster (An)                        1       N--       ---                         nofight-room
+The guildmaster (Te)                        1       N--       ---                         nofight-room
+The guildmaster (Wl)                        1       N--       ---                         nofight-room
+The Janitor                                 1   150 G-x--     --    14-16       35-35     [human?], looter
+The pigeon                                  1   116 N-x---    --    27-32       15-16     [bird], special-fly
+A pilgrim (standing)                        2  1000 G-x---    --    23-37      191-198    [human?]
+A pilgrim (walks)                           2   900 G-x--     --    26-39      194-199    [human?], special-bury-corpse
+The duck                                    2   700 N-x---    --    28-30        0-0      [bird], special-fly
+The swan                                    2   900 N-x---    --    35-38        0-0      [bird], special-fly
+A spirit                                    2       S--       ---                         no-attack, special-newbiehelp-commands, summoned by lvl 1-7-players, autofollow, same align as the player, flying, ultra-super-hidden for all but its summoner
+A citizen of Karandras                      3  3750 G-x--     --    73-73      354-358    [human]
+A traveller (pauses)                        4  7000 N-x--     --    77-83      375-379    [human]
+A traveller (rests)                         4  7000 N-x---    --    81-86       74-80     [human]
+The riding horse                            4  6000 N----     --    90-91      344-367    [---], mountable
+A secretary                                 5       G--       ---                         no-attack
+A senior citizen of Karandras               5   10k G-x---    --   102-103     374-390    [human], special-bury-corpse
+The little scamp                            6   22k N-x---    --   122-125     475-478    [human], flees
+A patron                                    7       G--       ---                         no-attack
+The bearded bartender                       7       G--       ---                         shopkeeper
+The beggar                                  7   42k N-x---    --   143-144       1-1      [human]
+The drunk                                   8   71k N-x---    --   162-164     536-549    [human]
+A militia guard                            10  120k G-xx--    --   192-197     950-996    [human], protector
+An archer                                  10  120k G--x--    --   182-207     954-971    [human]
+The pickpocket                             12  174k N-x---    --   242-243    1700-1704   [human]
+A local bard                               13  197k N-xx--    --   264-264     845-854    [human]
+A city guard                               15  285k G-xx--    --   295-325    1420-1443   [human]
+The explorer                               17  374k N-x-x-    --   362-365     794-798    [human], looter, special-bury-corpse
+The adventurer                             18  441k N-xxx-    --   391-394     971-981    [human], looter
+A tower guard                              20  600k G--x--    --   494-497    5041-5047   [human], special-protect
+An attendant to the temple                 25       G--       ---                         nofight-room
+The Tourist Guide                          25       G-x       ---                         no-attack, special-guide-commands
+The mercenary                              22  880k E-x-x-    --   513-515    1466-1469   [human], bash, berserk
+The villain                                23 1092k E-x---    --   542-543    1570-1572   [human], hide, sneak
+A gate guard                               25 1500k G--x--    --   567-622    5003-5014   [human], protector
+A wall guard                               25 1900k N-x---    --   604-605    2956-2957   [human], protector
+The Potion-Brewing Apprentice              25 1000k Nx----    --   622-634    8427-8494   [human]
+The Scroll-Scribing Apprentice             25 1000k Nx----    --   585-591    8174-8269   [human]
+A high guard                               30 3750k G-xx--    --   739-749    2911-2984   [human], protector
+A hobbit traveler                          35       G--       ---                         no-attack
+A lone adventurer                          35       G--       ---                         no-attack
+A scout                                    35       G--       ---                         no-attack
+A troll bounty hunter                      35       G--       ---                         no-attack
+An elite guard (city hall)                 35 7700k Gx-x--    --   892-913    2940-3261   [human], protector
+An elite guard (post)                      35       Gx-       ---                         nofight-room
+The governor of the Fighters guilds        40       Gx-       ---                         nofight-room
+The governor of the Magician guilds        40       Gx-       ---                         nofight-room
+The governor of the Priest guilds          40       Gx-       ---                         nofight-room
+The governor of the Thieves guilds         40       Gx-       ---                         nofight-room
+The Guard Captain                          50       Gx-       ---                         nofight-room, special-jail-offender (attack Hammer or Elaxer and he'll hunt you down and, if finding you still fighting, put you in jail - 5 minute sentence)
+The Chimpanzee Librarian                   51   20M Nx-xxx    --  2007-2008  37356-37395  [---]
+The Wrinkled Old Mother of the Wizard      55   55M Nx-xxx    --  6000-6000  30826-32151  [human], +~6000 hp
+The high priest                            60       Gx-       ---                         nofight-room
+The Master Conjurer                        60   90M Nx-xxx    --  6336-6600  49913-49914  [human]
+The Karandras Jail Officer                 70  127M Nx-x -    --    ~8k       5532-5916   [human], can't be withered, special-pay-to-release-jailed-player
+Hammer, the Veteran                        70  246M G-xx x    --- 5934-6156      2-2      INFO, [human], special-hunt naked lowbies and give them newbie eq
+The Mayor                                  70       Gx-       ---                         no-attack, walk-path (6am:e2newn2e8s3wsews3e10n2w3sw, 3pm:e2newn2e4swes6w12e6w2nwe3n2w3sw)
+A villainous bartender                     99       N--       ---                         shopkeeper
+Uncle Juan                                 99       G--       ---                         shopkeeper
+A Blue Navigator                          100       Gx-       ---                         no-attack, special-transport
+A Green Navigator                         100       Gx-       ---                         no-attack, special-transport
+A Red Navigator                           100       Gx-       ---                         no-attack, special-transport
+Algoth, the meta wizard                   100       N--       ---                         shopkeeper
+Allanon the Priest                        100       Nx-       ---                         no-attack
+An ancient guardian                       100       N--       ---                         nofight-room
+Braveheart the Lion                       100       Nxx       ---                         no-attack, special-CR, flying
+Gryshk the Questmaster                    100       Nx-       ---                         questmaster, no-attack
+Halvdan the Quest shopkeeper              100       N--       ---                         shopkeeper
+Irmgarde                                  100       N--       ---                         shopkeeper
+Leowyn                                    100       N--       ---                         shopkeeper
+Lionheart the Brave                       100       Nxx       ---                         no-attack, special-CR, flying
+Palomir                                   100       N--       ---                         shopkeeper
+Sheila                                    100       N--       ---                         nofight-room
+The auctioneer                            100       N--       ---                         nofight-room
+The baker                                 100       N--       ---                         shopkeeper
+The Bartender of the Fighters Guild       100       N--       ---                         shopkeeper
+The Bartender of the Magicians Guild      100       N--       ---                         shopkeeper
+The Bartender of the Priests Guild        100       N--       ---                         shopkeeper
+The Bartender of the Thieves Guild        100       N--       ---                         shopkeeper
+The boatswain                             100       N--       ---                         shopkeeper
+The brewer                                100       N--       ---                         shopkeeper
+The cartographer                          100       N--       ---                         shopkeeper
+The grocer                                100       N--       ---                         shopkeeper
+The guild armourer (An)                   100       N--       ---                         shopkeeper
+The guild armourer (Fi)                   100       N--       ---                         shopkeeper
+The guild armourer (Ma)                   100       N--       ---                         shopkeeper
+The guild armourer (Nb)                   100       N--       ---                         shopkeeper
+The guild armourer (Pr)                   100       N--       ---                         shopkeeper
+The guild armourer (Ro)                   100       N--       ---                         shopkeeper
+The guild armourer (Te)                   100       N--       ---                         shopkeeper
+The guild armourer (Wl)                   100       N--       ---                         shopkeeper
+The guild librarian (An)                  100       N--       ---                         shopkeeper
+The guild librarian (Fi)                  100       N--       ---                         shopkeeper
+The guild librarian (Ma)                  100       N--       ---                         shopkeeper
+The guild librarian (Nb)                  100       N--       ---                         shopkeeper
+The guild librarian (Pr)                  100       N--       ---                         shopkeeper
+The guild librarian (Ro)                  100       N--       ---                         shopkeeper
+The guild librarian (Te)                  100       N--       ---                         shopkeeper
+The guild librarian (Wl)                  100       N--       ---                         shopkeeper
+The guildmaster (Ma,Pr,Ro,Fi)             100       N--       ---                         nofight-room
+The guildmaster (Nb)                      100       E--       ---                         nofight-room
+The herbalist                             100       N--       ---                         shopkeeper
+The innkeeper                             100       Nx-       ---                         shopkeeper
+The iron worker                           100       N--       ---                         shopkeeper
+The item store clerk                      100       N--       ---                         shopkeeper
+The Mercenary Shopkeeper                  100       N--       ---                         shopkeeper
+The Jeweller of Karandras                 100       Nx-       ---                         shopkeeper
+The Lieutenant of the Karandras cityguard 100       Gx-       ---                         questmaster, no-attack
+The Overseer                              100       N--       ---                         no-attack
+The postmaster                            100       N--       ---                         nofight-room
+The receptionist                          100       N--       ---                         nofight-room
+The wizard's assistant                    100       N--       ---                         shopkeeper

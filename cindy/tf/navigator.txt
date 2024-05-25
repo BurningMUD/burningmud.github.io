@@ -1,0 +1,72 @@
+; Usage: navigator  (get to the navigator)
+;        milorai    (get to the oasis inside milorai)
+;
+; This takes the best route I've managed to come up with, starting and ending
+; at the Thalos obelisk, covering every room the navigator can be in.
+; The navigator can still be missed, if he walks from a room you haven't been
+; in into a room you've already been in. If so, once the script has looked
+; through the whole desert, you will end up back at the Thalos entrance and
+; the script will tell you that it's failed, and that doing a "look" will make
+; it search again.
+;
+; If you have a different prompt than me, you may need to redefine the
+; "trigonprompt" alias. To see if it works, load it, and try eg "trigonprompt 
+; echo PROMPT". If you don't see the "PROMPT" message (should appear as soon
+; as anything happens), you'll need to modify it.
+; It's made to trigger on a prompt looking like this:
+; 723(2423)H 412(1160)M 603(608)V >
+; (...and anything after that ">" sign is accepted)
+; If you have trouble modifying the trigger, a simple one (only requiring your
+; prompt to start with a number) could be made like this:
+; /alias trigonprompt \
+; 	/def -p15 -F -n1 -mregexp -t'^(-|)[0-9]+' trigonprompt%{1}$[rand(100000)] = \
+; 	%*
+
+
+
+/alias trigonprompt \
+	/def -p15 -F -n1 -mregexp -t'^(-|)[0-9]+\\\([0-9]+\\\)H (-|)[0-9]+\\\([0-9]+\\\)M (-|)[0-9]+\\\([0-9]+\\\)V >' trigonprompt%{1}$[rand(100000)] = \
+	%*
+
+
+/alias MiloWalk \
+	/set walkstate=$[{walkstate} + 1]%; \
+	/if (navigatorfound == 1) \
+		NavigatorFound%; \
+	/elseif ({walkstate} < strlen(navigatorpath)) \
+		$[substr(navigatorpath, walkstate, 1)]%; \
+		/def -F -n1 -t"Obvious exits: \\[*" MiloWalktrig = \
+			trigonprompt MiloWalk%; \
+	/else \
+		/echo TF: Failed to find the navigator. "look" to try again.%; \
+		/def -F -n1 -msimple -t"The Grand Gate of Thalos" walkerslaskmilorai1 = \
+			/set walkstate -1%%; \
+			trigonprompt MiloWalk%; \
+	/endif
+
+/alias FindNavigator \
+	/marketSquare goto thalos%; \
+	/def -F -n1 -msimple -t"The Grand Gate of Thalos" walkerslaskmilorai1 = \
+		/set navigatorpath eennewwswswenwnnwsnnnseswwwenwwewssewnewnewnewswssssssw%%; \
+		/set navigatorfound 0%%; \
+		/set walkstate -1%%; \
+		trigonprompt MiloWalk
+
+/alias NavigatorFound donothing
+
+/alias navigator        FindNavigator%; \
+			/unalias NavigatorFound%; \
+			/alias NavigatorFound \
+				/echo TF: NAVIGATOR FOUND!
+
+/alias milorai          FindNavigator%; \
+			/unalias NavigatorFound%; \
+			/alias NavigatorFound \
+				ask navigator home%%; \
+				/purge walkerslask*%%; \
+				den%%; \
+				ask spirit bless
+
+/def -p2 -F -mregexp -t"^a desert guide battles through the sandstorms in search of a wondrous city." tfsubstmob4 = \
+	/set navigatorfound 1%; \
+	/echo TF: Navigator! Ask him 'home'

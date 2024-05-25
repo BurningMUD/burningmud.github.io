@@ -1,0 +1,475 @@
+; mobspecials.tf
+
+; Scripts for handling special mobs and situations. I'd suggest you don't just
+; copy this stuff, but instead read it carefully and copy & edit the stuff you
+; think you can handle.
+; Many things here use aliases defined in other places.
+
+
+/purge mobSpecial*
+/unaliasSilent enteroyster
+
+
+;;;; Guallidurth
+;/def -F -msimple -t"Deep down in the ravine" mobSpecialGuallidurthEntry1 = \
+;    s
+/def -F -msimple -t"Alas, your alignment forbids you to go that way..." mobSpecialGuallidurthEntry2 = \
+    /if (area =~ "Guallidurth") \
+      where%; \
+      /def -F -mregexp -n1 -t"^([A-z]+)[ ]+- The dark portal" walkerslaskGuallSpecial = \
+        /if (classMa) \
+          dd %%{P1}%%; \
+          whe%%; \
+        /else \
+          /tfshow Get summon from someone inside!%%; \
+          getsummon%%; \
+        /endif%; \
+    /endif
+
+
+;;;; Takhisis
+/def -F -msimple -n1 -t"The Shoikan Grove" mobSpecialTakhisis1 = \
+    /if (classMa & name =~ 'Cindy' & pg & groupleader !~ name) \
+      say I assume you want me to do my thing here?%; \
+      enwn%; \
+    /endif%; \
+    /def -F -msimple -n1 -t"The Tower of High Sorcery" mobSpecialTakhisis2 = \
+      /if (classMa & name =~ 'Cindy' & pg & groupleader !~ name) \
+        yell Ok! I'm inside the tower now!%%; \
+        yell Dalamar is one up from me, and Raistlin is up-north from him%%; \
+        yell I said: I'm inside the tower!%%; \
+        gt I'm inside the tower. *hint* *wink* *nudge* *nudge*%%; \
+        gtf nudge %{groupleader}%%; \
+        yell large I am inside!!!%%; \
+        tell %{groupleader} I am inside the tower now!%%; \
+        tell %{groupleader} Dalamar is one up from me, and Raistlin is up-north from him%%; \
+      /endif
+
+/def -F -ah -mregexp -t"^The eyes of the ([^ ]+) head glow with a " mobSpecialTakhisis3 = \
+    /if ({P1} =~ 'purple') \
+      /tfshow <<<HEAL the dragon!!>>>%; \
+      /tfshow <<<HEAL the dragon!!>>>%; \
+    /elseif ({P1} =~ 'blue') \
+      /eval /set wieldedweapon=%{weaponfire}%; \
+      /set vuln='fire'%; \
+      /tfshow <<<USE FIRE!!>>>%; \
+      /tfshow <<<USE FIRE!!>>>%; \
+    /elseif ({P1} =~ 'red') \
+      /eval /set wieldedweapon=%{weaponice}%; \
+      /set vuln='ice'%; \
+      /tfshow <<<USE ICE!!>>>%; \
+      /tfshow <<<USE ICE!!>>>%; \
+    /elseif ({P1} =~ 'green') \
+      /eval /set wieldedweapon=%{weaponunlife}%; \
+      /set vuln='unlife'%; \
+      /tfshow <<<USE UNLIFE>>>%; \
+      /tfshow <<<USE UNLIFE>>>%; \
+    /elseif ({P1} =~ 'orange') \
+      /eval /set wieldedweapon=%{weaponenergy}%; \
+      /set vuln='energy'%; \
+      /tfshow <<<USE ENERGY>>>%; \
+      /tfshow <<<USE ENERGY>>>%; \
+    /else \
+      /tfshow <<<UNKNOWN HEAD!!!>>>%; \
+      /tfshow <<<UNKNOWN HEAD!!!>>>%; \
+    /endif%; \
+    /if (autoassist) \
+      kill dragon%; \
+      assist%; \
+    /endif
+
+/def -F -ah -msimple -t"Takhisis is immune." mobSpecialTakhisis4
+
+;;;; Malius
+/set maliuscounter 7
+/def -F -ah -msimple -t"You seem unable to recognise your foe...." mobSpecialMalius1 = \
+    /set maliuscounter=$[{maliuscounter} - 1]%; \
+    /tfshow Malius fled! (%{maliuscounter})%; \
+    /if (maliuscounter == 0) \
+      /tfshow Malius is now back where he should be!%; \
+    /endif%; \
+    /set firenogood 0%; \
+    /if (autoassist) \
+      assist%; \
+    /endif
+
+;;;; Mediator
+;/def -F -ag -t"* is hit by a forcebolt sent by The Mediator\." mobSpecialMediator
+
+;;;; Colossal Titan of the Kings
+;/def -F -mregexp -ag -t"^(The |)(Colossal |)Titan of the Kings (\*\*\*ULTRASLAYS\*\*\*|\*\*\*U\*L\*T\*R\*A\*S\*L\*A\*Y\*S\*\*\*) " mobSpecialColossalTitan
+
+;;;; Zandramas the child of dark
+/def -F -mregexp -t"^([^ ]+) looks rather pale and shaken as (he|she|it) jumps through the Flames\." mobSpecialZandramas1 = \
+    /if ({P1} =~ groupleader & realpg) \
+      enter flames%; \
+      /if (autoassist) \
+        assist%; \
+      /endif%; \
+    /endif
+/def -F -ah -msimple -t"You are pushed into the claws of darkness, you feel a strange feeling." mobSpecialZandramas2 = \
+    3n2e3n2e%; \
+    /delay 3 /tfshow ;enter flame;assist
+
+;;;; Elder Brain
+/def -F -msimple -t"Your limbs move of their own accord, you have no control over your body." mobSpecialElderBrain = \
+    /tfshow >>> BRAIN CONTROLLED! <<<%; \
+    /tfshow Leader -----> %{groupleader}%; \
+    stand%;recall%;stand%;recall%;2w%;rev%;6w2su%;toggle play%;toggle play%;d2n%;fol %{groupleader}%;usew mental%; \
+    /def -F -n1 -t"You are now a member of *" mobSpecialElderBrain2 = \
+      /if (classMa) \
+        dam1 pp%%; \
+      /elseif (classRo) \
+        dam1 bs%%; \
+      /endif%%; \
+      delay 1 /tfshow To get back, enter field and maybe walk one west
+
+
+;;;; Ghalotiri
+/def -F -t"{*} gets a huge mound of gold coins from Corpse of Ghalotiri, the leader of the Medjai\." mobSpecialmobSpecial = \
+    /if (classMa) \
+      hs%;hs%; \
+    /endif
+
+;;;; Nyx
+/def -F -msimple -t"Nyx knocks you off her ledge into Tantalus' domain." mobSpecialNyx1 = \
+    s4w3s6e3nu3s3w3n%; \
+    delay 3 /tfshow To get back to Nyx, go north
+
+/def -F -msimple -t"As you cross the narrow ledge, you misplace your foot and take a plummet back to Tartarus." mobSpecialNyx2 = \
+    s4w3s6e3nu3s3w3n
+/def -F -p4 -t"Nyx has conjured up confusion and you lost your *" mobSpecialNyx3 = \
+    /tfshow Trying to refollow %{lastleader}!%; \
+    /if (classPr) \
+      /tfshow First healing myself%; \
+      hh%; \
+    /endif%;\
+    fol %{lastleader}%; \
+    /if (itemv =~ "Ciquala's staff") \
+      /tfshow Using Ciquala's staff!%;\
+      use ciquala%; \
+    /endif%; \
+    /if (autoassist) \
+      assist%; \
+    /endif%; \
+    /def -F -msimple -n1 -t"Your vision returns!" mobSpecialNyx4 = \
+      fol %{lastleader}%%; \
+      /if (autoassist) \
+        assist%%; \
+      /endif%; \
+    delay 30 /purge nyxspecial4
+
+;;;; Eurynomus
+/def -F -msimple -t"Eurynomus keels over and shatters into two pieces." mobSpecialEurynomus = \
+    /tfshow SPLIT! AREA! AREA! AREA! AREA!%; \
+    /if (autodamage & classMa) \
+      delay 10 ;/set autodamage 1;drop doseconddamage%; \
+      d0%; \
+      /if (classMa == 2) \
+        pba%;pba%;pba%;pba%; \
+      /else \
+        hs%;hs%;hs%;hs%; \
+      /endif%; \
+    /endif
+
+;;;; Chaos Entity
+/def -F -t"There is a sudden deafening roar and a swirling mass bursts from an*" mobSpecialChaosEntity = \
+    /if (classMa) \
+      bli2 entity%; \
+    /endif
+
+;;;; Detrom
+/def -F -msimple -t"Corpse of Detrom suddenly springs to life, and you find yourself confronted by Detrom." mobSpecialDetrom = \
+    /if (0 & classMa) \
+      bli2 detrom%; \
+    /endif%; \
+    /set attacker %{P1}: Detrom attack%; \
+    /maybeassist
+
+
+
+;;;; Torture Master of the Gith
+/def -F -t"The Torture Master of the Gith utters some strange words and transforms into a HUGE blood-suckying bat soaring overhead." mobSpecialTortureMaster = \
+    /substitute -p @{Cred}Torture Master@{n} -> @{nCbgred}@{Cblack}Vampiric bat%; \
+    /set opponentstring Vampiric bat%; \
+    d0
+/def -F -t"A vampiric bat with HUGE wings settles back to the room floor and bellows with anger!" mobSpecialTortureMaster2 = \
+    /substitute -p @{Cbgred}@{Cblack}Vampiric bat@{n} -> @{Cbgblack}@{Cred}Torture Master%; \
+    /set opponentstring Torture Master
+
+;;;; Shadow
+/def -F -ah -msimple -t"The Shadows reform." mobSpecialShadow =  \
+    /tfshow Shadow is back!!!%; \
+    /if (autoassist & pg) \
+      assist%; \
+      gl%; \
+    /endif
+
+;;;; Knight (in Myrridon)
+/def -F -t"{*} appears in a flash of light, appearing to have been beaten senseless\." mobSpecialMyrridonKnight = \
+    /if (autoassist) \
+      assist%; \
+    /endif
+
+;;;; Vidir
+/def -F -ah -msimple -t'Vidir, the Embodiment of Anarchy lets out a shriek of pain, and splits into three.' mobSpecialVidir = \
+    /if (pg & classMa) \
+      hs%;hs%; \
+    /endif
+
+;;;; Surak
+/def -F -ah -msimple -t'The force from the blow knocks your weapon from your hands, out of reach.' mobSpecialSurak = \
+    /tfshow ===== WEAPON LOST! =====%; \
+    yell NOOO! My weapon!%; \
+    say I lost my... %{wieldedweapon}?
+
+;;;; Itindar
+/def -F -ah -msimple -t"The pile of severed limbs suddenly starts moving, empowered by an arcane" mobSpecialItindar = \
+    upp%; \
+    /if (autoassist) \
+      assist%; \
+    /endif
+
+;;;; Draconian Jailor
+/def -F -ah -mregexp -t'^The Draconian Jailor picks up ([^ ]+) and runs away from battle.$' mobSpecialDraconianJailor = \
+    /if (classPr) \
+      su %P1%; \
+    /endif
+
+;;;; Lord Sarakesh
+/def -F -ah -msimple -t"Amazed by your strength Lord Sarakesh staggers" mobSpecialSarakesh1a = \
+    /substitute -p Lord Sarakesh  ==>  Draconian Lord Sarakesh%; \
+    /if (autoassist) \
+      assist%; \
+    /endif
+/def -F -ag -msimple -t"away from battle, hatred burning in his eternal" mobSpecialSarakesh1b
+/def -F -ag -msimple -t"eyes. He quickly mutters an incantation in a" mobSpecialSarakesh1c
+/def -F -ag -msimple -t"language you have never heard before, and suddenly" mobSpecialSarakesh1d
+/def -F -ag -msimple -t"he starts to writhe in agony. His body suddenly" mobSpecialSarakesh1e
+/def -F -ag -msimple -t"starts to transform, and before you stands a" mobSpecialSarakesh1f
+/def -F -ag -msimple -t"gigantic Draconian." mobSpecialSarakesh1g
+/def -F -ah -msimple -t"The Giant Draconian yells out a gigantic cry of anger as you" mobSpecialSarakesh2a = \
+    /substitute -p Draconian Lord Sarakesh  ==>  Lich of Lord Sarakesh%; \
+    /if (autoassist) \
+      assist%; \
+    /endif
+/def -F -ag -msimple -t"prove too strong for his current form. He gives you a quick" mobSpecialSarakesh2b
+/def -F -ag -msimple -t"glare of hatred before muttering something in a draconic" mobSpecialSarakesh2c
+/def -F -ag -msimple -t"language. Before you know it he falls to the floor in agony," mobSpecialSarakesh2d
+/def -F -ag -msimple -t"his flesh melting away from his body. A few seconds later" mobSpecialSarakesh2e
+/def -F -ag -msimple -t"he stands up as a Lich glowing with power." mobSpecialSarakesh2f
+/def -F -ah -msimple -t"The Lich looks horrified at the realization that your powers are" mobSpecialSarakesh3a = \
+    /substitute -p Lich of Lord Sarakesh  ==>  Lord Sarakesh (lvl 100)%; \
+    /if (autoassist) \
+      assist%; \
+    /endif
+/def -F -ag -msimple -t"still too immense for him. Hatred burns as a blue flame in his" mobSpecialSarakesh3b
+/def -F -ag -msimple -t"eyes, but the intensity is diminishing. Lord Sarakesh tries to" mobSpecialSarakesh3c
+/def -F -ag -msimple -t"stand up straight, but almost falls over. As he casts the final" mobSpecialSarakesh3d
+/def -F -ag -msimple -t"incantation on his own body, he is practically yelling the words." mobSpecialSarakesh3e
+/def -F -ag -msimple -t"As the last word leaves his bony mouth, he falls over, starting" mobSpecialSarakesh3f
+/def -F -ag -msimple -t"to transform. He lets out an immense scream of pain, causing you" mobSpecialSarakesh3g
+/def -F -ag -msimple -t"to shudder in fear. Then he stands before you as an immense bone dragon." mobSpecialSarakesh3h
+
+
+;;;; Skye
+/def -F -msimple -t"Skye flies in and roars defiantly!" mobSpecialSkye = \
+    /if (classMa & pg & owner =~ "Cindy") \
+      bli2 skye%; \
+    /endif
+
+
+;;;; Navigator
+/def -F -mregexp -t"^(A|a)n intrepid navigator leaves ([^\.]+)\." mobSpecialNavigator = \
+    trigonnextline /tfshow =============================================%; \
+    /tfshow =============================================
+
+;;;; Hell Claw
+/def -F -msimple -t"The hell claw retreats a little from the melee, drops to the ground, and turns" mobSpecialHellClaw = \
+    k claw
+
+;;;; Giant Oyster
+/def -F -msimple -t"The giant oyster sits here closed as it digests its latest meal." mobSpecialGiantOyster1 = tfnextlineshow type "enteroyster" to enter the oyster when it opens.
+/def -F -msimple -t"The giant oyster is opening in hopes of finding its next meal." mobSpecialGiantOyster2 = tfnextlineshow type "enteroyster" to enter the oyster when it opens.
+/alias enteroyster \
+    /def -F -msimple -n1 -t"Giant Oyster slowly opens its shell." mobSpecialGiantOyster3 = \
+    enter 1.giant%; \
+    enter 2.giant
+
+;;;; Guardian of Oblivion
+/def -F -t"A tall Divine warrior is here, guarding the Gates of Oblivion*" mobSpecialGuardianOO1 = \
+    /if (align =~ "G") \
+      fol self%; \
+      ' %{openMessage}%; \
+      /repeat -5 1 drop guardianoospecial%; \
+      /def -F -n1 -msimple -t"%{groupleader}'s group leaves south." mobSpecialGuardianOO2a = \
+        s%%; \
+        fol %{groupleader}%%; \
+        dam1 pp%%; \
+        /purge mobSpecialGuardianOO2*%; \
+      /def -F -ag -n1 -msimple -t"You don't seem to have a guardianoospecial." mobSpecialGuardianOO2b = \
+        fol %{groupleader}%%; \
+        dam1 pp%%; \
+        tell %{groupleader} If you still want to enter, just leave the room andgo back in, and I'll have him open up again (bot msg)%%; \
+        /purge mobSpecialGuardianOO2*%; \
+    /endif
+/def -F -ag -msimple -t"You don't seem to have a guardianoospecial." mobSpecialGuardianOO3
+
+;;;; Tisiphone gate
+/def -F -msimple -t"The gates seems to be closed." mobSpecialTisiphone = \
+    /if (area =~ 'UnderWorld') \
+      ' %{openMessage}%; \
+    /endif
+
+;;;; Cerberus & Hades
+/def -F -msimple -t"Top of the Ethereal Staircase" mobSpecialCerberus1 = \
+    /tfshow Cerberus! Turning off assists!%; \
+    /if (autoassist) \
+      /purge mobSpecialCerberus2%; \
+      /def -F -n1 -msimple -t"Bottom of the Ethereal Staircase" mobSpecialCerberus2 = ;agg;a1%; \
+    /endif%; \
+    noagg%; \
+    a0
+
+;;;; Pardus
+/def -F -p9999 -t"A man sits here in an armchair, reading a book.*" mobSpecialPardus1 = \
+    /tfshow Pardus! Turning off assists!%; \
+    /if (autoassist) \
+      /purge mobSpecialPardus2%; \
+      /def -F -n1 -msimple -t"Suddenly you notice something lying next to you." mobSpecialPardus2 = ;agg;a1%; \
+      /def -F -n1 -msimple -t"The Temple Altar of Myrridon" mobSpecialPardus3 = ;agg;a1%; \
+    /endif%; \
+    noagg%; \
+    a0
+
+;;;; Azimer
+/def -F -t"The Daedra Lord Azimer suddenly slams you with his tail. The force*" mobSpecialAzimer = \
+    5e3u2e
+
+;;;; Tixin'erto and friends
+;/def -F -msimple -t"Tixin'erto is dead! R.I.P." mobSpecialTixin1 = get all corpse
+;/def -F -msimple -t"A Warp spider is dead! R.I.P." mobSpecialTixin2 = get all corpse
+;/def -F -msimple -t"A Phase spider is dead! R.I.P." mobSpecialTixin3 = get all corpse
+
+;;;; Astral Plane
+/def -F -msimple -t"A massive blast of fire arrives blazing through the Astral Plane." mobSpecialAstralPlane1 = /tfShow WARNING: AGGIE ARRIVED!
+/def -F -msimple -t"A huge boulder of glistening ice arrives flying through the Astral Plane at high speeds!" mobSpecialAstralPlane2 = /tfShow WARNING: AGGIE ARRIVED!
+/def -F -msimple -t"A colossal body of hardened celestial matter arrives flying through the Astral Plane at high speeds!" mobSpecialAstralPlane3 = /tfShow WARNING: AGGIE ARRIVED!
+
+;;;; Phycomid
+/def -F -t"Suddenly you fall to the ground and start writhing around in agony,*" mobSpecialPhycomid1 = \
+    ;upp;ass
+
+;;;; Dragons Graveyard
+/def -F -msimple -t"Before your eyes the carcass has arisen in the form of a Zombie!" mobSpecialBGWyrm = \
+    /atrigSummons 1%; \
+    kill zombie
+
+;;;; Snake Lair
+/def -F -msimple -n1 -t'A menacing voice whispers... "You have slaughtered my minions... the White Snake never forgets."' mobSpecialWhiteSnake = \
+    /tfshow WHITE SNAKE COMING!%; \
+    whe white%; \
+
+;;;; Lorca
+/def -F -msimple -t"You flail about with your arms, trying not to sink further into the mud." mobSpecialLorca = stan
+
+;;;; Enchanted Forest
+/def -F -msimple -t"A great red wyrm is dead! R.I.P." mobSpecialEFWyrm = \
+    /if (!pg | groupleader =~ name) \
+      get treasure%; \
+    /endif
+
+;;;; Thorn Demon
+/def -F -msimple -ag -t"The Thorn Demon grins evilly as the hairs on its head grow into large thick" mobSpecialThornDemon1
+/def -F -msimple -ag -t"vines. They flail around the room briefly before they dart towards" mobSpecialThornDemon2 = \
+    /def -F -n1 -mregexp -ag -t"^([^ ]+) and bind (him|her|it).$$" mobSpecialThornDemon3 = \
+      /tfshow Bound: %%{P1}
+
+;;;; Darkunder
+/def -F -msimple -t"The earth crumbles beneath your feet and you plunge into the darkness below!" mobSpecialDarkunderDrop1 = \
+    /tfshow === DROPPED ===%; \
+    tfnextlineshow === DROPPED ===
+/def -F -msimple -t"You land face first in a putrid grub nest." mobSpecialDarkunderDrop2 = \
+    tfnextlineshow Probably 'seeuwu' to get to recallable room.
+/def -F -mregexp -t"^Suddenly the earth crumbles beneath ([^ ]+) who plunges into the darkness below\.$" mobSpecialDarkunderDropOther = \
+    tfnextlineshow %{P1} just dropped!!!
+/def -F -t"Some sudden squirming movements make you lose your footing, and you feel*" mobSpecialDarkunderWormFlee1 = ff
+/def -F -t"The Primeval Worm strikes with its slime-dripping maw, swallowing you whole!" mobSpecialDarkunderWormFlee2 = ff
+
+
+;;;; Shadowdwell
+/def -F -msimple -t"A mounted lizard-rider guardian loses control of his steed, and falls off!" mobSpecialMountedlizardrider = \
+    /tfshow SPLIT!
+
+
+
+; =========================  Xorn special start  =========================
+;;;; Xorn (in well)
+
+; If you have a variable that keeps track of what area you are in, you can
+; use it to make sure this trigger only works when you are in The Well.
+; Otherwise, just assume that you are in The Well.
+; /set area Well
+
+; If you have a variable that keeps track of group leader, use it, and adjust
+; the trigger to work for you. I'm checking that only groupleader may use this
+; trigger (unless groupleader is set to 'anyone'). I'm also making the aliases
+; work if you're soloing (when groupleader is set to 'none')
+; /set groupleader anyone
+
+; In the alias to deposit gold, I'm using "wor" to recall, which (for me) will
+; cast recall spell if available, otherwise quaff escape. Change to whatever
+; you like, eg:
+; /alias wor quaff escape
+
+
+/def -p9999 -F -mregexp -t"^([A-z]+) tells the group, 'xorn'$" dropGoldTrig1 = \
+    /if ({P1} !~ groupleader & groupleader !~ 'anyone') \
+      gt Only groupleader may use this.%; \
+    /elseif (area !~ 'Well') \
+      gt Only when in the Well%; \
+    /else \
+      dropgold%; \
+    /endif
+/purge dropGoldTrig1
+
+/alias dropgold \
+    score%; \
+    /def -F -p9999 -n1 -mregexp -t"^     Hits: [^ ]*[ ]*Needed: [^ ]*[ ]*Gold: ([^ ]*)" dropGoldTrig = \
+      /set gold $$[replace(',','',{P1})]%%; \
+      /if (groupleader !~ 'none' & gold > 10000000) \
+        gt Having too much gold - depositing.%%; \
+        depositgold%%; \
+      /else \
+        /if (groupleader !~ 'none') \
+          gt Dropping %%{gold} gold.%%; \
+        /endif%%; \
+        drop %%{gold}%%; \
+      /endif
+
+/alias depositgold \
+    recall%; \
+    wor%; \
+    /def -F -p9999 -n1 -msimple -t"The Temple of Karandras" depositGoldTrig1 = \
+      /set depositGoldNc=0%; \
+      2ses%%; \
+      score%; \
+    /def -F -p9999 -n1 -msimple -t"The Temple Altar of Myrridon" depositGoldTrig2 = \
+      /set depositGoldNc=1%; \
+      2n%%; \
+      score%; \
+    /def -F -p9999 -n1 -mregexp -t"^     Hits: [^ ]*[ ]*Needed: [^ ]*[ ]*Gold: ([^ ]*)" depositGoldTrig3 = \
+      /set gold $$[replace(',','',{P1})]%%; \
+      deposit %%{gold}%%; \
+      /if (depositGoldNc) \
+        2s2w%%; \
+      /else \
+        nw%%; \
+      /endif%%; \
+      /if (groupleader !~ 'none') \
+        gt Ready for summon back!%%; \
+      /endif%%; \
+      /purge depositGoldTrig*%; \
+    /repeat 30 1 /purge depositGoldTrig*
+
+; =========================  Xorn special  end   =========================

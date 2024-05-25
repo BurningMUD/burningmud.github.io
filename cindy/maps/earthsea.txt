@@ -1,0 +1,68 @@
+# EarthSea (22): 50-100, Wench  (Karandras: 10wn3wswswn12ws2w2sen)
+* FIND OUT: A Concubine                [magical?], resist magic?/energy?
+* FIND OUT: The Great White Dragon     description
+* FIND OUT: The Draconian              [magical?]
+* FIND OUT: The Dragon Master          description, [magical?]
+* FIND OUT: The Great Red Dragon       description
+* FIND OUT: The Holy Draconian         hp (approx), [magical?], resist magic?/energy?
+* FIND OUT: The Draconian King         [magical?], resist magic?/energy?
+* FIND OUT: The Draconian Queen        [magical?], resist magic?/energy?
+* FIND OUT: Ged                        hp
+* FIND OUT: The Ancient Green Dragon   description, agg-N, xp, hp, hp
+#
+#                                       o
+#                                      /|
+#                                     / o+o
+#                                    /  |
+#                                   o o+o+Mage     o Red
+#                                   |   |          |x |
+#                                   | King-Queen   o  o
+#                                   |                 |
+#                         o ---+--- o + o + o ------> o - o + Green
+#         Dragons        x          |
+#        Graveyard    Hydra  /----->o
+#            *          +   /       |
+#       o + o - o - o + o  /        o
+#      /                  /    Ged  +
+#     /     White        /      +   X
+#    /        |         /       o   |
+#   /         o        /       /
+#  /          |       /       o
+# o --------- o ---- o       /
+#                    |  o - o
+#                    o  |  /
+#                    | Bl /
+#                    o __/
+#                    |/
+#                    o
+#                   /
+#                 RIP
+#
+* Min level > 0/43
+* Same area as Dragons Graveyard
+* Many rooms are very bright
+* Many moving, aggressive bodyguards & draconians (vuln unlife)
+* Tip: Open the door east to Red & Green dragon, and eventually all aggressive
+*      draconians and bodyguards will gather there, making the rest of the
+*      area a lot safer (and the east part really nasty).
+
+EarthSea:                Lvl    Xp ASWIDMX # agg      Hp         Gold      Special
+A Human Slave             30 1200k E-----    --    701-701        5-5      [human]
+The Draconian Fool        30  240k N----x    ---   502-506      500-500    [magical]
+The Dragon Hatchling      40   17M Ex-x-x    --   1464-1508    2000-2000   [dragon], flees
+A Concubine               50   48M Ex-x-     GN   2488-2500   50001-50001  [magical?], vuln unlife, resist magic?/energy?, NOT resting
+A Draconian zombie        55  111M Ex-xxx    ---   ~6.5k       1500-1500   [undead], flees
+The Phase Dragon          60  120M Ex-x      GNE  5613-5623   50000-50000  [dragon]
+A Bodyguard               70  210M E-xx      GNE  8158-8190  100001-100001 [magical]
+A large hydra             70  281M Ex-x x    --  10170-10357   5000-5000   [dragon], 7-9 attacks, flees
+The Great White Dragon    70  210M Ex-x      GNE  9660-9706   35000-35000  [dragon]
+The Draconian             75  300M E-xx      GNE 12154-12220 100001-100001 [magical?], vuln unlife, resist magic/energy
+A Powerful Mage           80 1440M Ex-x x1   --- 20208-20257 300001-300001 [human], powerword pain, mass pain, meteor blast
+The Dragon Master         80 1361M Ex-x      GNE 17182-17200 150001-150001 [magical?], vuln unlife, resist magic/energy
+The Great Red Dragon      80 1280M Ex-x      GN  15363-15420  10000-10000  [dragon]
+The Holy Draconian        80 2041M Ex-x x    ---             300001-300001 [magical?], vuln unlife, resist magic?/energy?, powerheal, blindness, wither
+The Great Black Dragon    90 1620M Ex-xxx    --- 30347-30372  20000-20000  INFO, [dragon]
+The Draconian King        90 1800M Ex-x      GNE 40762-40786 500184-500247 INFO, [magical?], vuln unlife, resist magic?/energy?, avgdam 700, special-"The Draconian King bleeds profusely, his power weakening."(when he does this, the fools in the room just disappear)
+The Draconian Queen       90 1620M Ex-x x    --- 30170-30194  10000-10000  [magical?], vuln unlife, resist magic?/energy?, flees, NOT sitting
+Ged                       95 3800M Ex-x x3 1 --- 50619            4-4      INFO, [human], powerword pain, meteor blast, mass pain
+The Ancient Green Dragon  97       Ex-x      G    ~50k       600001-600001 INFO, [dragon]

@@ -1,0 +1,58 @@
+# Amazonia (46): 10-30, Leaf  (New Thalos: 2en2e2nes2en2eses4e)
+#
+#                                       NM   o->m
+#                                      /     |
+#                                     o      o
+#                                    /       |
+#                               Avalanche    o
+#                                  /         |
+#                             o---o---+------|-o
+#                            /               |/
+#                           /              o o
+#                          /             q |/
+#                         /              ^ o
+#                        /               |/
+#                       /                o
+#                      /                /        Feverish
+#                     o - o o   o   o  o-Aguirre  Swamps
+#                    /   /  |   |   |              |
+#                   o - o - o - o - o - NM         o ----- o - RIP
+#                   |       |   |   |              |      /
+#                   o - o   o   o   o          o - o     o
+#                       |                      |        /
+#                       C - o - o -- o -- o -- o RIP - o
+#                   o  /|   |                         /
+#                   ^ o |   |                        o
+#                   |  /    |    Amazonia           /
+# Krashkarand - o - o ----- o                      m - o - o - Spirit
+#               |                                      |
+#               o                                   fountain
+#               |
+#               o - o - o
+#               |      /
+#               o     o
+#               |
+#               o
+#               |
+#             - X
+#
+* Mine shaft and huts are very bright
+* C: Cairn. Has key needed to get to Aguirre
+
+Amazonia:            Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+The bat                5   12k N-----    --    94-106       0-0     [animal]
+The hummingbird        5   12k G-----    --    94-104       0-0     [bird], ? before being in battle - standing after
+The leech             10  100k N-xx--    --   205-209       0-0     [animal], pulsing-specialattack, drain blood, hide, flees
+The pig               10  110k G-x---    --   191-196      62-72    [animal], flees
+The village man       10  105k G-x---    --   187-196    1736-1838  [human]
+The village woman     10  116k G-x---    --   168-178    3197-3347  [human]
+The avalanche         15  225k N--x--    GN   302-307       0-0     [magical]
+The fat fish          15  255k N-----    --   298-307     299-334   [fish]
+The village chief     17  340k N-x---    --   327-338    6137-6482  [human]
+The dark fish         20  520k N-----    --   437-451     477-535   [fish], invis, looter
+The headhunter        20  580k E-x--x    --   429-448     202-288   [human], bash, kick, headbang, flees
+The native servant    20  540k Gx-       --  ~453-~463   9388-9467  [human], room is nomag/norecall/noflee
+A sailor's ghost      20  580k N--x--    --   446-453       0-0     [insubstantial], invis, hide
+The waterfall spirit  25 1300k G--x-x    --E ~605-~641      0-0     [insubstantial], room is nomag/noflee/norecall, colour spray, blindness, curse, lightning bolt, heal, fireball, ? before being in battle - standing after
+The priest            27 2025k Gx-  x    --  ~722-~727      0-0     [human], room is nomag/noflee/norecall, fireball, colour spray, heal, lightning bolt, curse
+Aguirre               30 3465k Gx-x      GNE ~801-~842    136-163   [human], backstab (147), room is nomag but fleeable

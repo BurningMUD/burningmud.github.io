@@ -1,0 +1,1593 @@
+; spells.tf
+
+
+/unaliasSilent usestaff
+/unaliasSilent usewand
+/unaliasSilent 3f
+/unaliasSilent 3i
+/unaliasSilent arm
+/unaliasSilent bless
+/unaliasSilent gimp2
+/unaliasSilent dsp
+/unaliasSilent ib
+/unaliasSilent pba
+/unaliasSilent prot
+/unaliasSilent sst
+/unaliasSilent sb
+/unaliasSilent withermore
+/unaliasSilent witherless
+/unaliasSilent wb
+/unaliasSilent cursemore
+/unaliasSilent curseless
+/unaliasSilent fb
+/unaliasSilent fof
+/unaliasSilent pbo
+/unaliasSilent scribe
+/unaliasSilent brew
+/unaliasSilent bad
+/unaliasSilent ad
+/unaliasSilent af
+/unaliasSilent aid
+/unaliasSilent air
+/unaliasSilent ans
+/unaliasSilent aot
+/unaliasSilent ar
+/unaliasSilent ass
+/unaliasSilent at
+/unaliasSilent bark
+/unaliasSilent bb
+/unaliasSilent berry
+/unaliasSilent bl
+/unaliasSilent bol
+/unaliasSilent br
+/unaliasSilent bt
+/unaliasSilent blur
+/unaliasSilent bm
+/unaliasSilent cb
+/unaliasSilent cbt
+/unaliasSilent cc
+/unaliasSilent askcc
+/unaliasSilent crf
+/unaliasSilent chain
+/unaliasSilent ck
+/unaliasSilent charm
+/unaliasSilent cont
+/unaliasSilent cos
+/unaliasSilent cp
+/unaliasSilent cw
+/unaliasSilent da
+/unaliasSilent dd
+/unaliasSilent deaths
+/unaliasSilent di
+/unaliasSilent dm
+/unaliasSilent dp
+/unaliasSilent dv
+/unaliasSilent earth
+/unaliasSilent ent
+/unaliasSilent ev
+/unaliasSilent ew
+/unaliasSilent ffire
+/unaliasSilent fly
+/unaliasSilent fbo
+/unaliasSilent fseed
+/unaliasSilent gaia
+/unaliasSilent garm
+/unaliasSilent gate
+/unaliasSilent gbl
+/unaliasSilent gheal
+/unaliasSilent askgheal
+/unaliasSilent gpow
+/unaliasSilent askgpow
+/unaliasSilent gfly
+/unaliasSilent gimp
+/unaliasSilent grhh
+/unaliasSilent ha
+/unaliasSilent haste
+/unaliasSilent hb
+/unaliasSilent de
+/unaliasSilent disp
+/unaliasSilent dispel
+/unaliasSilent edr
+/unaliasSilent growth
+/unaliasSilent gs
+/unaliasSilent hs
+/unaliasSilent hu
+/unaliasSilent hola
+/unaliasSilent hw
+/unaliasSilent id
+/unaliasSilent immo
+/unaliasSilent immolation
+/unaliasSilent imp
+/unaliasSilent inv
+/unaliasSilent is
+/unaliasSilent jd
+/unaliasSilent lbl
+/unaliasSilent link
+/unaliasSilent lo
+/unaliasSilent ms
+/unaliasSilent mi
+/unaliasSilent mira
+/unaliasSilent mh
+/unaliasSilent mp
+/unaliasSilent nb
+/unaliasSilent nbl
+/unaliasSilent pacify
+/unaliasSilent phoenix
+/unaliasSilent pharm
+/unaliasSilent pk
+/unaliasSilent plague
+/unaliasSilent po
+/unaliasSilent pr
+/unaliasSilent pray
+/unaliasSilent rc
+/unaliasSilent reg
+/unaliasSilent regen
+/unaliasSilent reimp
+/unaliasSilent rev
+/unaliasSilent rp
+/unaliasSilent rop
+/unaliasSilent sa
+/unaliasSilent sanc
+/unaliasSilent sat
+/unaliasSilent sense
+/unaliasSilent ser
+/unaliasSilent sg
+/unaliasSilent sh
+/unaliasSilent sle
+/unaliasSilent snake
+/unaliasSilent sphere
+/unaliasSilent str
+/unaliasSilent sua
+/unaliasSilent sur
+/unaliasSilent sf
+/unaliasSilent summon
+/unaliasSilent su
+/unaliasSilent swarm
+/unaliasSilent swarm2
+/unaliasSilent sword
+/unaliasSilent tranq
+/unaliasSilent tran
+/unaliasSilent tree
+/unaliasSilent tru
+/unaliasSilent true
+/unaliasSilent venom
+/unaliasSilent vent
+/unaliasSilent vm
+/unaliasSilent water
+/unaliasSilent wither
+/unaliasSilent tele
+/unaliasSilent telep
+/unaliasSilent wog
+/unaliasSilent wor
+/unaliasSilent cop
+/unaliasSilent bh
+/unaliasSilent bli
+/unaliasSilent bli2
+/unaliasSilent pblind
+/unaliasSilent cac
+/unaliasSilent ct
+/unaliasSilent col
+/unaliasSilent conf
+/unaliasSilent cu
+/unaliasSilent feeble
+/unaliasSilent fi
+/unaliasSilent togod
+/unaliasSilent harm
+/unaliasSilent lb
+/unaliasSilent mm
+/unaliasSilent mb
+/unaliasSilent pp
+/unaliasSilent hf
+/unaliasSilent grip
+/unaliasSilent cl
+/unaliasSilent sd
+/unaliasSilent hh
+/unaliasSilent hhh
+/unaliasSilent pow
+/unaliasSilent bli2scroll
+/unaliasSilent b2s
+
+/purge scrollcreate
+/purge potioncreate
+/purge scrollcreate2
+/purge potioncreate2
+/purge scrollcreate3
+/purge scrollcreate4
+/purge brewcreate4
+/purge scrollcreate5
+/purge scrollcreate6
+/purge potioncreate6
+/purge okcastspell
+/purge wmcastspell
+/purge mordenkeinreportStart
+/purge mordenkeinreportEnd
+/purge venomOut
+/purge venomOut2
+/purge witherreporttrig
+/purge summonsafe1
+/purge summonsafe2
+/purge summonsafe3a
+/purge summonsafe3
+/purge summonsafe4
+/purge stronstr
+/purge blindscrolltrig
+
+/alias scribe \
+    /if (position =~ 'sleep' | abouttosleep == 1) \
+      /set abouttosleep 1%; \
+      wake%; \
+      gb parchment%; \
+      scrib parchment %*%; \
+      /if (fighting) \
+        /set abouttosleep 0%; \
+      /elseif (!sleepdanger) \
+        sleep%; \
+      /endif%; \
+    /elseif (position =~ 'rest' | abouttosit == 1) \
+      /set abouttosit 1%; \
+      stand%; \
+      gb parchment%; \
+      scrib parchment %*%; \
+      /if (fighting) \
+        /set abouttosit 0%; \
+      /elseif (!sleepdanger) \
+        res%; \
+      /endif%; \
+    /elseif (position =~ 'stand') \
+      gb parchment%; \
+      scrib parchment %*%; \
+    /else \
+      /tfshow Bad position: {position}%; \
+      gb parchment%; \
+      scrib parchment %*%; \
+    /endif
+
+/alias bli2scroll scribe powerword blind
+
+
+/alias brew \
+    /if (position =~ 'sleep' | abouttosleep == 1) \
+      /set abouttosleep 1%; \
+      wake%; \
+      gb blessed%; \
+      bre blessed %*%; \
+      /if (fighting) \
+        /set abouttosleep 0%; \
+      /elseif (!sleepdanger) \
+        sleep%; \
+      /endif%; \
+    /elseif (position =~ 'rest' | abouttosit == 1) \
+      /set abouttosit 1%; \
+      gb blessed%; \
+      stand%; \
+      bre blessed %*%; \
+      /if (fighting) \
+        /set abouttosit 0%; \
+      /elseif (!sleepdanger) \
+        res%; \
+      /endif%; \
+    /elseif (position =~ 'stand') \
+      gb blessed%; \
+      bre blessed %*%; \
+    /else \
+      /tfshow Bad position: {position}%; \
+      gb blessed%; \
+      bre blessed %*%; \
+    /endif
+
+
+/def -F -t"You create a scroll of *" scrollcreate = /repeat -76 1 /tfshow You can create another scroll now!
+/def -F -t"You create a * potion." potioncreate = /repeat -76 1 /tfshow You can brew another potion now!
+/def -F -msimple -t"As you begin inscribing the final rune, the scroll violently explodes!" scrollcreate2 = /repeat -76 1 /tfshow You can create another scroll now!
+/def -F -msimple -t"You manage to brew a disgusting soup." potioncreate2 = /repeat -76 1 /tfshow You can brew another potion now!
+/def -F -msimple -p9 -t"You fail to scribe." scrollcreate3 = \
+    pb parch%; \
+    /repeat -76 1 /tfshow You can create another scroll now!
+/def -F -msimple -p9 -t"You are too tired to make another scroll, relax some." scrollcreate4 = \
+    pb parch
+/def -F -msimple -p9 -t"You are too tired to make another potion, relax some." brewcreate4 = \
+    pb vial
+/def -F -msimple -p9 -t"You don't have enough mana to scribe such a powerful spell!" scrollcreate5 = \
+    pb parch
+/def -F -msimple -p9 -t"Scribe what spell?!?" scrollcreate6 = \
+    pb parch
+/def -F -msimple -p9 -t"Mix what spell?!?" potioncreate6 = \
+    pb vial
+
+/alias usestaff \
+    /if ({*} =~ '') \
+      /let staffitem=staff%; \
+    /else \
+      /let staffitem=%{*}%; \
+    /endif%; \
+    /if (itemv !~ 'Nothing') \
+      rem %{itemv}%; \
+    /endif%; \
+    hold %{staffitem}%; \
+    use %{staffitem}%; \
+    rem %{staffitem}%; \
+    /if (itemv !~ 'Nothing') \
+      hold %{itemv}%; \
+    /endif
+
+/alias usewand \
+    /if ({1} =~ '') \
+      /tfshow Syntax: usewand <target> [<wand>]%; \
+    /else \
+      /if ({2} =~ '') \
+        /let wanditem=wand%; \
+      /else \
+        /let wanditem=%{2}%; \
+      /endif%; \
+      /if (itemv !~ 'Nothing') \
+        rem %{itemv}%; \
+      /endif%; \
+      hold %{wanditem}%; \
+      use %{wanditem} %{1}%; \
+      rem %{wanditem}%; \
+      /if (itemv !~ 'Nothing') \
+        hold %{itemv}%; \
+      /endif%; \
+    /endif
+
+/alias bad \
+    /tfshow pblind (2 hr), po (2*lvl hr), wither (24 hr), cu (7 days, hit -1), conf (2 hr, hit -2, no-spell), sle (4+1d4 hr), charm ([432+Lvl]/targetINT hr)
+
+
+/def okcastspell = \
+    /if ((position =~ 'sleep' | abouttosleep == 1) & owner !~ 'Valkyria69') \
+      /set abouttosleep 1%; \
+      wake%; \
+      cast %*%; \
+      /if (fighting) \
+        /set abouttosleep 0%; \
+      /elseif (!sleepdanger) \
+        sleep%; \
+      /endif%; \
+    /elseif ((position =~ 'rest' | abouttosit == 1) & owner !~ 'Valkyria69') \
+      /set abouttosit 1%; \
+      stand%; \
+      cast %*%; \
+      /if (fighting) \
+        /set abouttosit 0%; \
+      /elseif (!sleepdanger) \
+        res%; \
+      /endif%; \
+    /else \
+      cast %*%; \
+    /endif
+
+/def wmcastspell = \
+    /if (wildmagic) \
+      /tfshow Danger! Wild Magic!%; \
+    /else \
+      /okcastspell %*%; \
+    /endif
+
+/alias triad \
+    /if (manapercent > 90) \
+      3f %*%; \
+    /else \
+      3i %*%; \
+    /endif
+
+/alias 3f       \
+    /if (wildmagic) \
+      headbang%; \
+    /elseif (vuln =~ 'electricity' & area =~ 'Well') \
+      donothing%; \
+    /elseif (vuln =~ 'electricity') \
+      sb %*%; \
+    /elseif (vuln !~ 'fire' & area =~ 'Myrridon') \
+      3i %*%; \
+    /elseif (vuln =~ 'pure' & area =~ 'Well') \
+      3i %*%; \
+    /elseif (vuln =~ 'pure' & area =~ 'Shadowdwell') \
+      3i %*%; \
+    /elseif (area =~ 'Khronatio' & (opponentstring !~ 'A Guard of Khron')) \
+      wb %*%; \
+    /elseif (area =~ 'Khronatio') \
+      3i %*%; \
+    /elseif (vuln =~ 'unlife' & manapercent < 50) \
+      nb %*%; \
+    /elseif (area =~ 'DragonsGraveyard' | area =~ 'EarthSea') \
+      nb %*%; \
+    /elseif (manapercent <= savemana & pg & autodamage) \
+      headbang %*%; \
+    /elseif (firenogood | vuln =~ 'ice' | area =~ 'Laboratory' | area =~ 'Guallidurth') \
+      /wmcastspell 'triad of ice' %*%; \
+    /else \
+      /wmcastspell 'triad of fire' %*%; \
+    /endif
+
+/alias 3i       \
+    /if (wildmagic) \
+      headbang%; \
+    /elseif (vuln =~ 'electricity' & area =~ 'Well') \
+      donothing%; \
+    /elseif (vuln =~ 'electricity' & manapercent < 50) \
+      sb %*%; \
+    /elseif (vuln =~ 'unlife' & manapercent < 50) \
+      nb %*%; \
+    /elseif (area =~ 'Khronatio' & (opponentstring !~ 'A Guard of Khron')) \
+      wb %*%; \
+    /elseif ((area =~ 'DragonsGraveyard' | area =~ 'EarthSea') & manapercent < 50) \
+      nb %*%; \
+    /elseif (manapercent <= savemana & pg & autodamage & vuln =~ 'water') \
+      /wmcastspell 'water bolt' %*%; \
+    /elseif (manapercent <= savemana & pg & autodamage) \
+      headbang %*%; \
+    /elseif ((vuln =~ 'fire' | area =~ 'CeanythDungeons') & !firenogood) \
+      /wmcastspell 'triad of fire' %*%; \
+    /elseif (area =~ 'Well' & vuln !~ 'pure' & !firenogood) \
+      /wmcastspell 'triad of fire' %*%; \
+    /else \
+      /wmcastspell 'triad of ice' %*%; \
+    /endif
+
+/alias ad       \
+    /if ({*} =~ '') \
+      /okcastspell 'animate dead' corpse%; \
+    /else \
+      /okcastspell 'animate dead' %*%; \
+    /endif
+/alias af	/okcastspell 'adrenal focus'
+/alias aid	/okcastspell 'aid' %*
+/alias air	\
+    /if (currmana <= 95) \
+      /tfshow Need at least 95 mana!%; \
+    /else \
+      /okcastspell 'conjure air elemental'%; \
+    /endif
+/alias ans      \
+    /if (currmana <= 100) \
+      /tfshow Need at least 100 mana!%; \
+    /else \
+      /okcastspell 'animal summoning'%; \
+    /endif
+/alias aot      /okcastspell 'armor of thorns'
+/alias ar       \
+    /if (classAn & currmana <= 5) \
+      /tfshow Need at least 5 mana!%; \
+    /elseif (classPr | classTe | classWl | classNb | classMa | classAn) \
+      /wmcastspell 'armor' %*%; \
+      /purge castArmGag*%; \
+      /if ({*} =~ '') \
+        /def -F -msimple -ag -t"With the aid of your deity, you cast an armor spell!" castArmGag1 = \
+          /purge castArmGag*%; \
+        /def -F -msimple -ag -t"You pray to the Lords of Orhan for protection." castArmGag2 = \
+          /purge castArmGag*%; \
+        /def -F -msimple -ag -t"With a flick of your hand you call upon magic to protect you." castArmGag3 = \
+          /purge castArmGag*%; \
+        delay 2 /purge castArmGag*%; \
+      /endif%; \
+    /else \
+      gb amber%; \
+      quaff amber%; \
+    /endif
+/alias arm	ar %*
+/alias at	\
+    /if (wildmagic | (pg & manapercent < savemana)) \
+      /tfshow Murder!%; \
+      murder%; \
+    /else \
+      /tfshow %{manapercent}%%M: Attack!%; \
+      /okcastspell 'attack' %*%; \
+    /endif
+/alias bark     \
+    /if (currmana <= 15) \
+      /tfshow Need at least 15 mana!%; \
+    /else \
+      /okcastspell 'barkskin'%; \
+    /endif
+/alias bb berserk
+/alias berry    \
+    /if (currmana <= 10) \
+      /tfshow Need at least 10 mana!%; \
+    /else \
+      /okcastspell 'good berry'%; \
+    /endif
+/alias br       /okcastspell 'blood rite'
+/alias bt       /okcastspell 'bladeturn'
+/alias bl       \
+    /if (classPr | classTe) \
+      /wmcastspell 'bless' %*%; \
+    /else \
+      gb holy%; \
+      quaff holy%; \
+    /endif
+/alias bless    bl %*
+/alias blur	/okcastspell 'blur' %*
+/alias bm	/okcastspell 'blood mirror'
+/alias bol      /wmcastspell 'burst of life' %*
+/alias cb	\
+    /if (fighting) \
+      hh %*%; \
+    /else \
+      /wmcastspell 'cure blind' %*%; \
+    /endif
+/alias cbt      /okcastspell 'combat'
+
+/alias cc \
+    /if (classPr | classTe | classAn) \
+      /wmcastspell 'cure critic' %*%; \
+    /elseif (pg & !wildmagic) \
+      /set bestCaster 'none'%; \
+      /set bestPercent -99%; \
+      group%; \
+      /def -F -msimple -t"Your group consists of:" grprTrigStart = \
+        /def -F -mregexp -t"^([0-9]+). .[0-9]+ ([^/]+).([^\]]+). ([A-z]+)[ ]+.....H[ ]+([0-9]+).........." grprTrigGag = \
+          /if ({P1} =~ '01' | {P2} !~ 'Pr' | {P3} !~ 'Pr' | {P5} =~ 'someone' | {PR} =~ 'NotHere' | {PR} =~ 'NotHere (LD)') \
+            /substitute %%%; \
+          /else \
+            /if ({P5} > bestPercent) \
+              /set bestPercent %%%{P5}%%%; \
+              /set bestCaster %%%{P4}%%%; \
+            /endif%%%; \
+          /endif%%; \
+        trigonprompt ;/purge grprTrig*;askcc %%%{bestCaster}%; \
+    /elseif ({*} =~ '' & helditem != 'none') \
+      gb mistletoe%; \
+      rem %{helditem}%; \
+      hold mistletoe%; \
+      use mistletoe self%; \
+      rem mistletoe%; \
+      hold %{helditem}%; \
+      /def -F -n1 -msimple -t"No way. You cannot use this." ccTrigNoitem = \
+        /purge ccTrig*%%; \
+        /tfshow Lacking mistletoe. Can't cc%; \
+      /def -F -n1 -msimple -t"You cant seem to do that here!" ccTrigNomag = \
+        /purge ccTrig*%%; \
+        pb mistletoe%; \
+      /def -F -n1 -msimple -t"You feel somewhat better." ccTrigSuccess = \
+        /purge ccTrig*%%; \
+        sac mistletoe%; \
+      /def -F -n1 -msimple -t"a piece of mistletoe seems powerless." ccTrigNocharges = \
+        /purge ccTrig*%%; \
+        sac mistletoe%; \
+      /def -F -n1 -msimple -t"Impossible!  You can't concentrate enough!" ccTrigFailconc = \
+        /purge ccTrig*%%; \
+        pb mistletoe%; \
+    /endif
+
+/alias askcc \
+    /if ({*} =~ 'none') \
+      /tfshow nobody available for cc%; \
+    /elseif (wildmagic) \
+      /tfshow Danger! Wild Magic!%; \
+    /else \
+      ask %* cc%; \
+    /endif
+
+/alias crf	\
+    /okcastspell 'create food' %;get mushroom%; \
+    /if ({*} !~ '') \
+      give mushroom %*%; \
+    /endif
+/alias chain	/okcastspell 'chain lightning' %*
+/alias ck	/okcastspell 'cloudkill' %*
+/alias charm	\
+    /if (classAn) \
+      /if (currmana <= 20) \
+        /tfshow Need at least 20 mana!%; \
+      /else \
+        /wmcastspell 'charm creature' %*%; \
+      /endif%; \
+    /else \
+      /wmcastspell 'charm person' %*%; \
+    /endif
+/alias cont	\
+    /if (careful == -1) \
+      /tfshow No contingency! You are in brave mode!%; \
+    /else \
+      /okcastspell 'contingency'%; \
+    /endif
+/alias cos	/okcastspell 'circle of stone'
+/alias cp	 rp %*
+/alias cw	/okcastspell 'create water' %*
+/alias da	\
+    /if (classPr | classTe) \
+      /okcastspell 'detect alignment'%; \
+    /else \
+      gb wacky%; \
+      eat wacky%; \
+    /endif
+/alias dd	\
+    /if (classFi & !classMa) \
+      deathdance%; \
+    /else \
+      /okcastspell 'dimension door' %*%; \
+    /endif
+/alias deaths	/okcastspell 'deathshadow'
+/alias di	\
+    /if (classAn & currmana <= 5) \
+      /tfshow Need at least 5 mana!%; \
+    /elseif (classPr | classWl | classNb | classMa | classAn) \
+      /okcastspell 'detect invis' %*%; \
+    /else \
+      gb wacky%; \
+      eat wacky%; \
+    /endif
+/alias dm	/okcastspell 'detect magic' %*
+/alias dp	/okcastspell 'detect poison' %*
+/alias dv	/okcastspell 'darkvision' %*
+/alias earth	\
+    /if (classAn) \
+      /if (currmana <= 75) \
+        /tfshow Need at least 75 mana!%; \
+      /else \
+        /okcastspell 'conjure earth elemental'%; \
+      /endif%; \
+    /else \
+      /okcastspell 'earthquake'%; \
+    /endif
+/alias ent      /wmcastspell 'entangle' %*
+/alias ev	/okcastspell 'evade' %*
+/alias ew	/wmcastspell 'enchant weapon' %*
+/alias fbo	\
+    /if (area =~ 'DragontailIsle' | area =~ 'Khronatio') \
+      mm %*%; \
+    /else \
+      /wmcastspell 'force bolt' %*%; \
+    /endif
+/alias ffire    \
+    /if (currmana <= 25) \
+      /tfshow Need at least 25 mana!%; \
+    /else \
+      /wmcastspell 'faerie fire' %*%; \
+    /endif
+/alias fly \
+    /if (classMa) \
+      /wmcastspell 'fly' %*%; \
+    /else \
+      gb flight%; \
+      quaff flight%; \
+    /endif
+/alias fseed    /wmcastspell 'fire seeds' %*
+/alias gaia     \
+    /if ({*} !~ 'set' & {*} !~ 'recall') \
+      /tfshow Syntax: gaia set / gaia recall%; \
+    /else \
+      /okcastspell 'gaias beacon' %*%; \
+    /endif
+/alias garm \
+    /if (classPr == 2) \
+      /okcastspell 'group armor'%; \
+    /elseif (pg & !wildmagic) \
+      /set bestCaster 'none'%; \
+      /set bestPercent -99%; \
+      group%; \
+      /def -F -msimple -t"Your group consists of:" grprTrigStart = \
+        /def -F -mregexp -t"^([0-9]+). .([0-9]+) ([^\]]+). ([A-z]+)[ ]+.....H[ ]+([0-9]+).........." grprTrigGag = \
+          /if ({P1} =~ '01' | {P3} !~ 'Pr/Pr' | {PR} =~ 'NotHere' | {PR} =~ 'NotHere (LD)' | {P2} < 70) \
+            /substitute %%%; \
+          /else \
+            /if ({P2} > bestPercent) \
+              /set bestPercent %%%{P2}%%%; \
+              /set bestCaster %%%{P4}%%%; \
+            /endif%%%; \
+          /endif%%; \
+        trigonprompt ;/purge grprTrig*;ask %%%{bestCaster} garm%; \
+    /endif
+/alias gate	/okcastspell 'holy gate' %*
+/alias gbl \
+    /if (classPr == 2) \
+      /okcastspell 'group bless'%; \
+    /elseif (pg & !wildmagic) \
+      /set bestCaster 'none'%; \
+      /set bestPercent -99%; \
+      group%; \
+      /def -F -msimple -t"Your group consists of:" grprTrigStart = \
+        /def -F -mregexp -t"^([0-9]+). .[0-9]+ ([^\]]+). ([A-z]+)[ ]+.....H[ ]+([0-9]+).........." grprTrigGag = \
+          /if ({P1} =~ '01' | {P2} !~ 'Pr/Pr' | {PR} =~ 'NotHere' | {PR} =~ 'NotHere (LD)') \
+            /substitute %%%; \
+          /else \
+            /if ({P4} > bestPercent) \
+              /set bestPercent %%%{P4}%%%; \
+              /set bestCaster %%%{P3}%%%; \
+            /endif%%%; \
+          /endif%%; \
+        trigonprompt ;/purge grprTrig*;ask %%%{bestCaster} gbless%; \
+    /endif
+
+/alias gheal \
+    /if (classPr == 2) \
+      /okcastspell 'groupheal'%; \
+    /elseif (pg) \
+      /set bestCaster 'none'%; \
+      /set bestPercent -99%; \
+      group%; \
+      /def -F -msimple -t"Your group consists of:" grprTrigStart = \
+        /def -F -mregexp -t"^([0-9]+). .[0-9]+ ([^\]]+). ([A-z]+)[ ]+.....H[ ]+([0-9]+).........." grprTrigGag = \
+          /if ({P1} =~ '01' | {P2} !~ 'Pr/Pr' | {PR} =~ 'NotHere' | {PR} =~ 'NotHere (LD)') \
+            /substitute %%%; \
+          /else \
+            /if ({P4} > bestPercent) \
+              /set bestPercent %%%{P4}%%%; \
+              /set bestCaster %%%{P3}%%%; \
+            /endif%%%; \
+          /endif%%; \
+        trigonprompt ;/purge grprTrig*;askgheal %%%{bestCaster}%; \
+    /endif
+
+/alias askgheal \
+    /if ({*} =~ 'someone') \
+      emoteask gheal%; \
+    /elseif ({*} =~ 'none') \
+      /tfshow nobody available for gheal%; \
+    /else \
+      ask %* gheal%; \
+    /endif
+
+/alias gpow \
+    /if (classPr == 2) \
+      /okcastspell 'grouppowerheal'%; \
+    /elseif (pg) \
+      /set bestCaster 'none'%; \
+      /set bestPercent -99%; \
+      group%; \
+      /def -F -msimple -t"Your group consists of:" grprTrigStart = \
+        /def -F -mregexp -t"^([0-9]+). .[0-9]+ ([^\]]+). ([A-z]+)[ ]+.....H[ ]+([0-9]+).........." grprTrigGag = \
+          /if ({P1} =~ '01' | {P2} !~ 'Pr/Pr' | {PR} =~ 'NotHere' | {PR} =~ 'NotHere (LD)') \
+            /substitute %%%; \
+          /else \
+            /if ({P4} > bestPercent) \
+              /set bestPercent %%%{P4}%%%; \
+              /set bestCaster %%%{P3}%%%; \
+            /endif%%%; \
+          /endif%%; \
+        trigonprompt ;/purge grprTrig*;askgpow %%%{bestCaster}%; \
+    /endif
+
+/alias askgpow \
+    /if ({*} =~ 'someone') \
+      emoteask gpow%; \
+    /elseif ({*} =~ 'none') \
+      /tfshow nobody available for gpow%; \
+    /else \
+      ask %* gpow%; \
+    /endif
+
+/alias gfly \
+    /if (classMa == 2) \
+      /okcastspell 'magic carpet'%; \
+    /elseif (pg & !wildmagic) \
+      /set bestCaster 'none'%; \
+      /set bestPercent -99%; \
+      group%; \
+      /def -F -msimple -t"Your group consists of:" grprTrigStart = \
+        /def -F -mregexp -t"^([0-9])+. .[0-9]+ ([^\]]+). ([A-z]+)[ ]+.....H[ ]+([0-9]+).........." grprTrigGag = \
+          /if ({P1} =~ '01' | {P2} !~ 'Ma/Ma' | {PR} =~ 'NotHere' | {PR} =~ 'NotHere (LD)') \
+            /substitute %%%; \
+          /else \
+            /if ({P4} > bestPercent) \
+              /set bestPercent %%%{P4}%%%; \
+              /set bestCaster %%%{P3}%%%; \
+            /endif%%%; \
+          /endif%%; \
+        trigonprompt ;/purge grprTrig*;ask %%%{bestCaster} gfly%; \
+    /endif
+
+/alias getsummon \
+    /set bestCaster 'none'%; \
+    /set bestPercent -99%; \
+    group%; \
+    /def -F -msimple -t"Your group consists of:" grprTrigStart = \
+      /def -F -mregexp -t"^([0-9]+). .[0-9]+ ([^/]+).([^\]]+). ([A-z]+)[ ]+.....H[ ]+([0-9]+).........." grprTrigGag = \
+        /if ({P1} =~ '01' | ({P2} !~ 'Pr' & {P3} !~ 'Pr') | {P5} =~ 'someone' | {PR} !~ 'NotHere') \
+          /substitute %%%; \
+        /else \
+          /if ({P5} > bestPercent) \
+            /set bestPercent %%%{P5}%%%; \
+            /set bestCaster %%%{P4}%%%; \
+          /endif%%%; \
+        /endif%%; \
+      trigonprompt ;/purge grprTrig*;tell %%%{bestCaster} summon %*
+
+/alias gimp \
+    /if (classMa == 2) \
+      /okcastspell 'group invisibility'%; \
+    /elseif (pg & !wildmagic) \
+      /set bestCaster 'none'%; \
+      /set bestPercent -99%; \
+      group%; \
+      /def -F -msimple -t"Your group consists of:" grprTrigStart = \
+        /def -F -mregexp -t"^([0-9]+). .[0-9]+ ([^\]]+). ([A-z]+)[ ]+.....H[ ]+([0-9]+).........." grprTrigGag = \
+          /if ({P1} =~ '01' | {P2} !~ 'Ma/Ma' | {PR} =~ 'NotHere' | {PR} =~ 'NotHere (LD)') \
+            /substitute %%%; \
+          /else \
+            /if ({P4} > bestPercent) \
+              /set bestPercent %%%{P4}%%%; \
+              /set bestCaster %%%{P3}%%%; \
+            /endif%%%; \
+          /endif%%; \
+        trigonprompt ;/purge grprTrig*;ask %%%{bestCaster} gimp%; \
+    /elseif (classMa) \
+      /tfshow To simulate gimp use gimp2%; \
+    /endif
+
+/alias gimp2 \
+    /def -F -mregexp -t" the [^ ]*( \\(sanctuary\\)|) is " gimptrig1 = \
+      /tfshow ______%%; \
+      inv %%{PL}%; \
+    /def -F -p15 -mregexp -t'^(-|)([0-9]+)\\(([0-9]+)\\)H' gimptrig2 = \
+      /purge gimptrig*%; \
+    look
+
+/alias grhh	/okcastspellspel 'grouppowerheal'
+/alias ha	/okcastspell 'haste'
+/alias haste	ha
+/alias hb headbang %*
+/alias de	/wmcastspell 'dispel' %*
+/alias disp	de %*
+/alias dispel	de %*
+/alias dsp      /okcastspell 'deathspell'
+/alias edr	/wmcastspell 'energy drain' %*
+/alias growth	/okcastspell 'plant growth'
+/alias gs	/okcastspell 'giant size'
+/alias hs	/okcastspell 'hell storm' %*
+/alias hu	\
+    /if (currmana <= 20) \
+      /tfshow Need at least 20 mana!%; \
+    /else \
+      /okcastspell 'hurricane' %*%; \
+    /endif
+/alias hola     /okcastspell 'holy armor'
+/alias hw       \
+    /if (classPr) \
+      /okcastspell 'holyword'%; \
+    /elseif (pg) \
+      /set bestCaster 'none'%; \
+      /set bestPercent -99%; \
+      group%; \
+      /def -F -msimple -t"Your group consists of:" grprTrigStart = \
+        /def -F -mregexp -t"^([0-9]+). .[0-9]+ ([^/]+).([^\]]+). ([A-z]+)[ ]+.....H[ ]+([0-9]+).........." grprTrigGag = \
+          /if ({P1} =~ '01' | ({P2} !~ 'Pr' & {P3} !~ 'Pr') | {P5} =~ 'someone' | {PR} =~ 'NotHere' | {PR} =~ 'NotHere (LD)') \
+            /substitute %%%; \
+          /else \
+            /if ({P5} > bestPercent) \
+              /set bestPercent %%%{P5}%%%; \
+              /set bestCaster %%%{P4}%%%; \
+            /endif%%%; \
+          /endif%%; \
+        trigonprompt ;/purge grprTrig*;ask %%%{bestCaster} holy%; \
+    /endif
+
+/alias ib      \
+    /if (vuln =~ 'water' | area =~ 'Khronatio') \
+      wb %*%; \
+    /elseif (vuln =~ 'slayhuman' & area =~ 'Alterac') \
+      sb %*%; \
+    /elseif (vuln =~ 'unlife' | area =~ 'DragonsGraveyard' | area =~ 'EarthSea') \
+      nb %*%; \
+    /elseif ((vuln =~ 'fire' | area =~ 'CeanythDungeons') & !firenogood) \
+      fb %*%; \
+    /elseif (area =~ 'Amphitheatre') \
+      sb %*%; \
+    /else \
+      /if (manapercent <= savemana & pg & autodamage) \
+        /if (area =~ 'Alterac') \
+          donothing%; \
+        /else \
+          sb %*%; \
+        /endif%; \
+      /else \
+        /wmcastspell 'ice bolt' %*%; \
+      /endif%; \
+    /endif
+/alias id	\
+    /if (classMa) \
+      /okcastspell 'identify' %*%; \
+    /else \
+      gb ident%; \
+      recite ident %*%; \
+    /endif
+/alias immo     \
+    /if ({*} =~ 'ice' | {*} =~ 'cold') \
+      /set wantImmo -1%; \
+    /elseif ({*} =~ 'fire') \
+      /set wantImmo 1%; \
+    /elseif ({*} =~ 'off' | {*} =~ 'down') \
+      /set wantImmo 0%; \
+    /else \
+       /tfshow Syntax: immo cold/fire/off%; \
+    /endif%; \
+    spellup
+/alias immolation \
+    /tfshow Immolation: %{*}%; \
+    /if ({*} =~ 'ice' | {*} =~ 'cold') \
+      /if (iHaveImmo == 1) \
+        /okcastspell 'immolation cold'%; \
+      /endif%; \
+      /okcastspell 'immolation cold'%; \
+    /elseif ({*} =~ 'fire') \
+      /if (iHaveImmo == -1) \
+        /okcastspell 'immolation fire'%; \
+      /endif%; \
+      /okcastspell 'immolation fire'%; \
+    /elseif ({*} =~ 'off' | {*} =~ 'down') \
+      /if (iHaveImmo == 1) \
+        /okcastspell 'immolation cold'%; \
+      /elseif (iHaveImmo == -1) \
+        /okcastspell 'immolation fire'%; \
+      /else \
+        /tfshow immolation is already off%; \
+      /endif%; \
+    /else \
+       /tfshow Syntax: immolation cold/fire/off%; \
+    /endif
+/alias imp	\
+    /if (classMa | classWl | classNb) \
+      /okcastspell 'improved invisibility'%; \
+    /else \
+      /tfshow Can't cast imp. Just quaff invis potion.%; \
+;      gb garlic%; \
+;      eat garlic%; \
+    /endif
+/alias inv	/wmcastspell 'invisibility' %*
+/alias is	\
+    /if ({*} =~ '') \
+      /okcastspell 'ice storm' %*%; \
+    /else \
+      /tfshow The spell 'ice storm' is an area spell!%; \
+    /endif
+/alias jd	\
+    /if (classMa & (area =~ 'DragonsGraveyard' | area =~ 'CohnShar' | area =~ 'UnderWorld' | area =~ 'Alterac' | area =~ 'Coven')) \
+      pp %*%; \
+    /else \
+      /wmcastspell 'judgement' %*%; \
+    /endif
+
+/alias lbl	/okcastspell 'life blood'
+/alias link	/okcastspell 'link' %*
+/alias lo	/okcastspell 'locate object' %*
+/alias ms	/okcastspell 'mana shield'
+/alias mira	/wmcastspell 'miracle' %*
+
+/set castingMi 0
+/alias mi	\
+    /if (!castingMi) \
+      /okcastspell 'mirror image'%; \
+      /set castingMi 1%; \
+      delay 1 /set castingMi 0%; \
+    /endif
+
+/alias mh	/okcastspell 'mountain heart'
+/alias mp	/okcastspell 'mass pain'
+/alias nb	\
+    /if (manapercent <= savemana & pg & autodamage) \
+      headbang %*%; \
+    /elseif (pg & unlifenogood) \
+      headbang%; \
+    /else \
+      /wmcastspell 'nether bolt' %*%; \
+    /endif
+
+/alias nbl      \
+    /if (currmana <= 15) \
+      /tfshow Need at least 15 mana!%; \
+    /else \
+      /okcastspell 'natures blessing'%; \
+    /endif
+/alias pacify	/wmcastspell 'pacify' %*
+/alias pba      /okcastspell 'plasma ball'
+/alias pharm	/wmcastspell 'powerharm' %*
+/alias phoenix	\
+    /if (currmana <= 140) \
+      /tfshow Need at least 140 mana!%; \
+    /else \
+      /okcastspell 'conjure phoenix'%; \
+    /endif
+/alias pk	\
+    /if (owner =~ 'Valkyria69' & hppercent < 40) \
+      vm %*%; \
+    /elseif ((manapercent < savemana & pg & autodamage) | (manapercent <= 20 & pg & autodamage & autocop > 1)) \
+      fbo %*%; \
+    /else \
+      /wmcastspell 'powerword kill' %*%; \
+    /endif
+/alias plague	/wmcastspell 'insect plague' %*
+/alias po	/wmcastspell 'poison' %*
+/alias pr       \
+    /if (classPr | classTe) \
+      /okcastspell 'protection' %*%; \
+    /else \
+      gb garlic%; \
+      eat garlic%; \
+    /endif
+/alias prot pr %*
+/alias pray	/okcastspell 'prayer' %*
+/alias rc	\
+    /if (classPr | classTe) \
+      /wmcastspell 'remove curse' %*%; \
+    /elseif ({*} =~ '') \
+      gb holy%; \
+      quaff holy%; \
+    /endif
+/alias regen	reg %*
+/alias reg	\
+    /if (classPr) \
+      /wmcastspell 'regenerate' %*%; \
+    /elseif (pg & !fighting & !wildmagic) \
+      /set bestCaster 'none'%; \
+      /set bestPercent -99%; \
+      group%; \
+      /def -F -msimple -t"Your group consists of:" grprTrigStart = \
+        /def -F -mregexp -t"^([0-9]+). .[0-9]+ ([^/]+).([^\]]+). ([A-z]+)[ ]+.....H[ ]+([0-9]+).........." grprTrigGag = \
+          /if ({P1} =~ '01' | ({P2} !~ 'Pr' & {P3} !~ 'Pr') | {P5} =~ 'someone' | {PR} =~ 'NotHere' | {PR} =~ 'NotHere (LD)') \
+            /substitute %%%; \
+          /else \
+            /if ({P5} > bestPercent) \
+              /set bestPercent %%%{P5}%%%; \
+              /set bestCaster %%%{P4}%%%; \
+            /endif%%%; \
+          /endif%%; \
+        trigonprompt ;/purge grprTrig*;ask %%%{bestCaster} regen %*%; \
+    /endif
+
+/alias reimp	vis%;imp %*
+
+/alias rev	\
+    /if (classPr) \
+      /if (fighting) retreat%; /endif%; \
+      /okcastspell 'revitalize' %*%; \
+      /if (fighting & autoassist) assist%; /endif%; \
+    /elseif ({*} =~ '' & (!fighting | (itemw !~ 'aura of Madness' & !onberserk))) \
+      gb watery%; \
+      quaff watery%; \
+    /elseif (pg & !wildmagic) \
+      /set bestCaster 'none'%; \
+      /set bestPercent -99%; \
+      group%; \
+      /def -F -msimple -t"Your group consists of:" grprTrigStart = \
+        /def -F -mregexp -t"^([0-9]+). .([0-9]+) ([^/]+).([^\]]+). ([A-z]+)[ ]+.....H[ ]+([0-9]+).........." grprTrigGag = \
+          /if ({P1} =~ '01' | ({P3} !~ 'Pr' & {P4} !~ 'Pr') | {P6} =~ 'someone' | {PR} =~ 'NotHere' | {PR} =~ 'NotHere (LD)' | {PR} =~ '') \
+            /substitute %%%; \
+          /else \
+            /if ({P6} > bestPercent) \
+              /set bestPercent %%%{P6}%%%; \
+              /set bestCaster %%%{P5}%%%; \
+            /endif%%%; \
+          /endif%%; \
+        trigonprompt ;/purge grprTrig*;ask %%%{bestCaster} rev %*%; \
+    /endif
+
+/alias rp       \
+    /if (classPr | classTe | classAn | classNb) \
+      /wmcastspell 'remove poison' %*%; \
+    /elseif (pg & !wildmagic) \
+      /set bestCaster 'none'%; \
+      /set bestPercent -99%; \
+      group%; \
+      /def -F -msimple -t"Your group consists of:" grprTrigStart = \
+        /def -F -mregexp -t"^([0-9]+). .[0-9]+ ([^/]+).([^\]]+). ([A-z]+)[ ]+.....H[ ]+([0-9]+).........." grprTrigGag = \
+          /if ({P1} =~ '01' | ({P2} !~ 'Pr' & {P3} !~ 'Pr' & {P2} !~ 'Te' & {P3} !~ 'Te' & {P2} !~ 'An' & {P3} !~ 'An') | {P5} =~ 'someone' | {PR} =~ 'NotHere' | {PR} =~ 'NotHere (LD)') \
+            /substitute %%%; \
+          /else \
+            /if ({P5} > bestPercent) \
+              /set bestPercent %%%{P5}%%%; \
+              /set bestCaster %%%{P4}%%%; \
+            /endif%%%; \
+          /endif%%; \
+        trigonprompt ;/purge grprTrig*;ask %%%{bestCaster} rp%; \
+    /elseif ({*} =~ '') \
+      gb mulburry%; \
+      quaff mulburry%; \
+    /endif
+
+/alias rop	/okcastspell 'ritual of pain'
+
+/alias sa       \
+    /if (classPr | (classTe & mylevel > 40)) \
+      /if (fighting) retreat%; /endif%; \
+      /wmcastspell 'sanctuary' %*%; \
+      /if (fighting & autoassist) assist%; /endif%; \
+    /elseif (classAn) \
+      /wmcastspell 'sun shield' %*%; \
+    /elseif (pg & !wildmagic) \
+      /set bestCaster 'none'%; \
+      /set bestPercent -99%; \
+      group%; \
+      /def -F -msimple -t"Your group consists of:" grprTrigStart = \
+        /def -F -mregexp -t"^([0-9]+). .[0-9]+ ([^/]+).([^\]]+). ([A-z]+)[ ]+.....H[ ]+([0-9]+).........." grprTrigGag = \
+          /if ({P1} =~ '01' | ({P2} !~ 'Pr' & {P3} !~ 'Pr') | {P5} =~ 'someone' | {PR} =~ 'NotHere' | {PR} =~ 'NotHere (LD)') \
+            /substitute %%%; \
+          /else \
+            /if ({P5} > bestPercent) \
+              /set bestPercent %%%{P5}%%%; \
+              /set bestCaster %%%{P4}%%%; \
+            /endif%%%; \
+          /endif%%; \
+        trigonprompt ;/purge grprTrig*;ask %%%{bestCaster} sanc %*%; \
+    /else \
+      gb gold%; \
+      quaff gold%; \
+    /endif
+
+/alias sanc sa %*
+/alias sat      /okcastspell 'satiate' %*
+/alias sb      \
+    /if (currmana < 1) \
+      headbang%; \
+    /elseif (vuln =~ 'ice' | area =~ 'Guallidurth') \
+      /wmcastspell 'ice bolt' %*%; \
+    /elseif ((vuln =~ 'fire' | area =~ 'CeanythDungeons') & !firenogood) \
+      /wmcastspell 'fire bolt' %*%; \
+    /elseif (elecnogood) \
+      /tfshow Electricity no good: Headbanging!%; \
+      headbang%; \
+    /else \
+      /wmcastspell 'shock bolt' %*%; \
+    /endif
+/alias sense    \
+    /if (classPr | classNb) \
+      /okcastspell 'sense life'%; \
+    /else \
+      gb wacky%; \
+      eat wacky%; \
+    /endif
+/alias ser      /okcastspell 'serenity'
+/alias sf /okcastspell 'shadow form'
+/alias sg	/wmcastspell 'shocking grasp' %*
+/alias sh	/okcastspell 'shades' %*
+/alias sle	/wmcastspell 'sleep' %*
+/alias snake    \
+    /if (opponentstring =~ 'The Shadow Demon') \
+      fseed %*%; \
+    /elseif (vuln =~ 'pure' | vuln =~ 'light') \
+      sua %*%; \
+    /elseif (vuln =~ 'fire') \
+      fseed %*%; \
+    /else \
+      /wmcastspell 'sticks to snakes' %*%; \
+    /endif
+/alias sphere	/okcastspell 'major sphere of regeneration'
+/alias sst      /wmcastspell 'soulsteal' %*
+
+/set playertostrengthen none
+/alias str	\
+    /if ({*} =~ '') \
+      /set playertostrengthen none%; \
+    /else \
+      /set playertostrengthen %*%; \
+    /endif%; \
+    /if ({*} =~ '' & (mylevel < 4 | (!classMa & !classWl & !classTe))) \
+      gb porridge%; \
+      eat porridge%; \
+    /else \
+      /wmcastspell 'strength' %*%; \
+    /endif
+/def -F -msimple -t"You tense your hard muscles." stronstr = \
+    /if (playertostrengthen !~ 'none') \
+      tell %{playertostrengthen} I can't cast strength on you since you are already affected by a strength spell.%; \
+      /set playertostrengthen none%; \
+    /endif
+/alias sua      /wmcastspell 'sun arrow' %*
+/alias sur      /okcastspell 'sun ray'
+/alias summon	su %*
+/alias su \
+    /if (classPr) \
+      /if (fighting & owner !~ 'Valkyria69') retreat%; /endif%; \
+      /set playertosummon=$[replace("0.", "", {*})]%; \
+      delay 10 /set playertosummon none%; \
+      /okcastspell 'summon' %*%; \
+      /if (fighting & autoassist) assist%; /endif%; \
+    /elseif (pg) \
+      /set bestCaster 'none'%; \
+      /set bestPercent -99%; \
+      group%; \
+      /def -F -msimple -t"Your group consists of:" grprTrigStart = \
+        /def -F -mregexp -t"^([0-9]+). .([0-9]+) ([^/]+).([^\]]+). ([A-z]+)[ ]+.....H[ ]+([0-9]+).........." grprTrigGag = \
+          /if ({P1} =~ '01' | {P2} < 51 | ({P3} !~ 'Pr' & {P4} !~ 'Pr') | {P6} =~ 'someone' | {PR} =~ 'NotHere' | {PR} =~ 'NotHere (LD)') \
+            /substitute %%%; \
+          /else \
+            /if ({P6} > bestPercent) \
+              /set bestPercent %%%{P6}%%%; \
+              /set bestCaster %%%{P5}%%%; \
+            /endif%%%; \
+          /endif%%; \
+        trigonprompt ;/purge grprTrig*;tell %%%{bestCaster} summon %*%; \
+    /endif
+/alias swarm    \
+    /if (classAn < 2) \
+      /okcastspell 'meteor swarm'%; \
+    /elseif ({*} =~ 'SWARM') \
+      /okcastspell 'deadly swarm' %*%; \
+    /else \
+      /if (vuln =~ 'pure' | vuln =~ 'light') \
+        sua %*%; \
+      /elseif (vuln =~ 'fire') \
+        fseed %*%; \
+      /else \
+        /wmcastspell 'deadly swarm' %*%; \
+      /endif%; \
+    /endif
+/alias swarm2   swarm SWARM
+
+/alias sword	\
+    /if (fighting) retreat%; /endif%; \
+    /okcastspell 'mordenkainen' %*%; \
+    /if (fighting & autoassist) assist%; /endif
+/def -F -t"You wield a * force blade." mordenkeinreportStart = \
+    tickwarn 7.3 Sword (approx)
+/def -F -t"Your magical sword disappears." mordenkeinreportEnd = \
+    wield %{wieldedweapon}%; \
+    wield all
+
+/alias tranq    tran
+/alias tran     /okcastspell 'tranquility'
+/alias tree     /okcastspell 'treeform'
+
+/alias tru      true %*
+/alias true	\
+    /if (classPr == 2) \
+      /wmcastspell 'trueheal' %*%; \
+    /elseif (pg & !wildmagic) \
+      /set bestCaster 'none'%; \
+      /set bestPercent -99%; \
+      group%; \
+      /def -F -msimple -t"Your group consists of:" grprTrigStart = \
+        /def -F -mregexp -t"^([0-9]+). .[0-9]+ ([^\]]+). ([A-z]+)[ ]+.....H[ ]+([0-9]+).........." grprTrigGag = \
+          /if ({P1} =~ '01' | {P2} !~ 'Pr/Pr' | {PR} =~ 'NotHere' | {PR} =~ 'NotHere (LD)') \
+            /substitute %%%; \
+          /else \
+            /if ({P4} > bestPercent) \
+              /set bestPercent %%%{P4}%%%; \
+              /set bestCaster %%%{P3}%%%; \
+            /endif%%%; \
+          /endif%%; \
+        trigonprompt ;/purge grprTrig*;ask %%%{bestCaster} true %*%; \
+    /endif
+
+/alias venom	\
+    /if ({*} !~ '') \
+      /okcastspell 'venom' %*%; \
+    /else \
+      /okcastspell 'venom' %{wieldedweapon}%; \
+    /endif
+
+/alias vent	/okcastspell 'ventriloquate' %*
+/alias vm	/okcastspell 'vampiric mist' %*
+
+/alias water	\
+    /if (currmana <= 115) \
+      /tfshow Need at least 115 mana!%; \
+    /else \
+      /okcastspell 'conjure water elemental'%; \
+    /endif
+
+/alias wither	\
+    /wmcastspell 'wither' %*%; \
+      /purge witherreport%; \
+      /def -F -n1 -mregexp -t"^([A-z ,]+) appears brittle.$$" witherreport = \
+        tickwarn 24 Wither (%%{P1})%%; \
+        /if (pg) \
+          gt %%{P1} appears brittle.%%; \
+        /endif
+/def -F -t"You recite a xuhpzf*" witherreporttrig = \
+    /purge witherreport%; \
+    /def -F -n1 -mregexp -t"^([A-z ,]+) appears brittle.$$" witherreport = \
+      tickwarn 24 Wither (%%{P1})%%; \
+      /if (pg) \
+        gt %%{P1} appears brittle.%%; \
+      /endif
+
+/alias withermore \
+    /set withertarget %{*}%; \
+    wither %{withertarget}%; \
+    drop newwithermore%; \
+    /def -F -msimple -ag -t"You don't seem to have a newwithermore." keepWitherTrigAgain = \
+      /tfshow Another wither (witherless to stop)%%; \
+      wither %{withertarget}%%; \
+      drop newwithermore%; \
+    /def -F -t"* appears brittle." keepWitherTrigBrittle = \
+      /tfshow Stopping wither.%%; \
+      witherless%; \
+    /def -F -msimple -t"Nobody here by that name." keepWitherTrigNothere = \
+      /tfshow Stopping wither.%%; \
+      witherless%; \
+    /def -F -msimple -t"Your victim is immune to your spell." keepWitherTrigImmune = \
+      /tfshow Stopping wither.%%; \
+      witherless%; \
+    /def -F -msimple -t"You can't summon enough energy to cast the spell." keepWitherTrigNomana = \
+      /tfshow Stopping wither.%%; \
+      witherless%%; \
+      sl
+
+/alias witherless \
+    /purge keepWitherTrig*%; \
+    /def -F -msimple -n1 -ag -t"You don't seem to have a newwithermore." keepWitherTrig = \
+      /tfshow Stopped withering.
+
+
+/alias tele /okcastspell 'Teleport Without Error'
+/alias telep \
+    /if (classMa | classWl) \
+      cast 'teleport'%; \
+      whe%; \
+    /else \
+      gb rutabaga%;quaff rutabaga%; \
+      whe%; \
+    /endif
+
+/alias wb      \
+    /if (manapercent <= savemana & pg & autodamage) \
+      headbang%; \
+    /elseif (pg & waternogood) \
+      headbang%; \
+    /else \
+      /wmcastspell 'water bolt' %*%; \
+    /endif
+
+/alias wog	/wmcastspell 'wrath of god' %*
+
+/alias wor	\
+    /if (classPr) \
+      /okcastspell 'word of recall'%; \
+    /elseif (classMa | classWl | classNb) \
+      /okcastspell 'teleport without error'%; \
+    /else \
+      rr%; \
+    /endif
+
+/alias cop	\
+    /if (classMa) \
+      /if (fighting) \
+        /tfshow Retreating to Cop!%; \
+        retreat%; \
+      /endif%; \
+      /okcastspell 'circle of protection'%; \
+      /if (fighting & autoassist) assist%; /endif%; \
+    /elseif (pg) \
+      /set bestCaster 'none'%; \
+      /set bestPercent -99%; \
+      group%; \
+      /def -F -msimple -t"Your group consists of:" grprTrigStart = \
+        /def -F -mregexp -t"^([0-9]+). .[0-9]+ ([^/]+).([^\]]+). ([A-z]+)[ ]+.....H[ ]+([0-9]+).........." grprTrigGag = \
+          /if ({P1} =~ '01' | ({P2} !~ 'Ma' & {P3} !~ 'Ma') | {P4} =~ 'someone' | {PR} =~ 'NotHere' | {PR} =~ 'NotHere (LD)') \
+            /substitute %%%; \
+          /else \
+            /if ({P5} > bestPercent) \
+              /set bestPercent %%%{P5}%%%; \
+              /set bestCaster %%%{P4}%%%; \
+            /endif%%%; \
+          /endif%%; \
+        trigonprompt ;/purge grprTrig*;ask %%%{bestCaster} cop%; \
+    /endif
+
+/alias bh	\
+    /if (autocop > 1 & pg & manapercent < savemana) \
+      donothing%; \
+    /elseif (firenogood) \
+      /wmcastspell 'magic missile' %*%; \
+    /elseif (vuln =~ 'ice') \
+      ct %*%; \
+    /else \
+      /wmcastspell 'burning hands' %*%; \
+    /endif
+/alias bli	/wmcastspell 'blindness' %*
+/alias bli2	\
+    /if (fighting) retreat%; /endif%; \
+      /wmcastspell 'powerword blind' %*%; \
+      /def -F -n1 -mregexp -t" is blind\\.$$" bli2report = \
+        tickwarn 2 Blindness (%*)%%; \
+        /if (pg) \
+          gt %%{PL} is blind.%%; \
+        /endif%; \
+      /if (fighting & autoassist) assist%; /endif
+/alias pblind	bli2 %*
+/def -F -p99 -msimple -t"You recite a saxzfxafe nose scroll." blindscrolltrig = \
+    /purge bli2reportScroll%; \
+    /def -F -n1 -mregexp -t" is blind.$$" bli2reportScroll = \
+      tickwarn 2 Blindness (%%{PL})%%; \
+      /if (pg) \
+        gt %%{PL} is blind.%%; \
+      /endif
+
+/alias cac	/wmcastspell 'cause critic' %*
+/alias ct	\
+    /if (autocop > 1 & pg & manapercent < savemana) \
+      donothing%; \
+    /elseif ((area =~ 'CohnShar') | (area =~ 'Khronatio') | (area =~ 'DragontailIsle') | (area =~ 'Oblivion' & vuln !~ 'ice') | (area =~ 'Amphitheatre') | (vuln =~ 'pure'))  \
+      /wmcastspell 'magic missile' %*%; \
+    /else \
+      /wmcastspell 'chill touch' %*%; \
+    /endif
+/alias col	/wmcastspell 'colour spray' %*
+/alias conf	/wmcastspell 'confusion' %*
+/alias cu	/wmcastspell 'curse' %*
+
+/alias cursemore \
+    /set cursetarget %{*}%; \
+    cu %{cursetarget}%; \
+    drop newcursemore%; \
+    /def -F -msimple -ag -t"You don't seem to have a newcursemore." keepCurseTrigAgain = \
+      /tfshow Another curse (curseless to stop)%%; \
+      cu %{cursetarget}%%; \
+      drop newcursemore%; \
+    /def -F -p99 -t"* briefly reveal a red aura!" keepCurseTrigCursed = \
+      /tfshow Stopping curse.%%; \
+      curseless%; \
+    /def -F -t"* glows red." keepCurseTrigItem = \
+      /tfshow Item cursed! Stopping curse.%%; \
+      curseless%; \
+    /def -F -msimple -t"Nothing happens." keepCurseTrigItem2 = \
+      /tfshow Trying to curse an item. Stopping curse.%%; \
+      curseless%; \
+    /def -F -msimple -t"Nobody here by that name." keepCurseTrigNothere = \
+      /tfshow Stopping curse.%%; \
+      curseless%; \
+    /def -F -msimple -t"You can't summon enough energy to cast the spell." keepCurseTrigNomana = \
+      /tfshow Stopping curse.%%; \
+      curseless%%; \
+      sl
+
+/alias curseless \
+    /purge keepCurseTrig*%; \
+    /def -F -msimple -n1 -ag -t"You don't seem to have a newcursemore." keepCurseTrig = \
+      /tfshow Stopped cursing.
+
+
+/alias feeble	/wmcastspell 'feeblemind' %*
+/alias fb	\
+    /if (classWl) \
+      /if (manapercent <= savemana & pg & autodamage) \
+        /if (area =~ 'Alterac') \
+          donothing%; \
+        /else \
+          sb %*%; \
+        /endif%; \
+      /else \
+        /wmcastspell 'fire bolt' %*%; \
+      /endif%; \
+    /else \
+      /wmcastspell 'fireball' %*%; \
+    /endif
+
+/alias fof	/okcastspell 'force field'
+/alias togod    /wmcastspell 'touch of god' %*
+/alias harm	/wmcastspell 'harm' %*
+/alias lb	/wmcastspell 'lightning bolt' %*
+/alias mm	\
+    /if (autocop > 1 & pg & manapercent < savemana) \
+      donothing%; \
+    /else \
+      /wmcastspell 'magic missile' %*%; \
+    /endif
+/alias mb	\
+    /if (mbnogood) \
+      pp %*%; \
+    /else \
+      /wmcastspell 'meteor blast' %*%; \
+    /endif
+/alias pbo      \
+    /if (owner =~ 'Valkyria69' & hppercent < 40) \
+      vm %*%; \
+    /elseif (area =~ 'DragontailIsle' | area =~ 'Khronatio') \
+      pp %*%; \
+    /elseif ((vuln =~ 'fire' | area =~ 'CeanythDungeons') & !firenogood) \
+      hf %*%; \
+    /elseif (vuln =~ 'electricity' & area =~ 'Well') \
+      donothing%; \
+    /else \
+      /if ((manapercent < savemana & pg & autodamage) | (manapercent <= 20 & pg & autodamage & autocop > 1)) \
+        fbo %*%; \
+      /else \
+        /wmcastspell 'plasma bolt' %*%; \
+      /endif%; \
+    /endif
+/alias pp	\
+    /if (classNb == 2) \
+      /wmcastspell 'powerword stun' %*%; \
+    /elseif (classFi & !classMa) \
+      pummel%; \
+    /elseif (owner =~ 'Valkyria69' & classMa & hppercent < 40) \
+      vm %*%; \
+    /elseif ((vuln =~ 'fire' | area =~ 'CeanythDungeons') & !firenogood) \
+      hf %*%; \
+    /elseif ((area =~ 'Coven' | area =~ 'Guallidurth' | area =~ 'CohnShar' | area =~ 'Kaltor' | area =~ 'SnakeLair' | area =~ 'DragontailIsle') & manapercent > 70 & !firenogood) \
+      hf %*%; \
+    /elseif (area =~ 'Haarvenu') \
+      vm %*%; \
+    /elseif (vuln =~ 'electricity' & area =~ 'Well') \
+      donothing%; \
+    /else \
+      /if ((manapercent < savemana & pg & autodamage) | (manapercent <= 20 & pg & autodamage & autocop > 1)) \
+        /if (classMa == 2) \
+          fbo %*%; \
+        /elseif (owner =~ 'Valkyria69') \
+          mm %*%; \
+        /else \
+          ct %*%; \
+        /endif%; \
+      /else \
+        /wmcastspell 'powerword pain' %*%; \
+      /endif%; \
+    /endif
+/alias hf	\
+    /if (owner =~ 'Valkyria69' & classMa & hppercent < 40) \
+      vm %*%; \
+    /elseif (area =~ 'Haarvenu') \
+      vm %*%; \
+    /elseif (firenogood | area =~ 'Laboratory' | area =~ 'Khronatio' | vuln =~ 'slaydragon' | vuln =~ 'water') \
+      /wmcastspell 'powerword pain' %*%; \
+    /elseif (vuln =~ 'ice' & area !~ 'Guallidurth') \
+      pp %*%; \
+    /else \
+      /if ((manapercent <= savemana & pg & autodamage) | (manapercent <= 20 & pg & autodamage & autocop > 1)) \
+        /if (classMa == 2) \
+          fbo %*%; \
+        /else \
+          bh %*%; \
+        /endif%; \
+      /else \
+        /wmcastspell 'hell fire' %*%; \
+      /endif%; \
+    /endif
+/alias grip	\
+    /if ((vuln =~ 'fire' | area =~ 'CeanythDungeons') & !firenogood) \
+      hf %*%; \
+    /elseif (vuln =~ 'electricity' & area =~ 'Well') \
+      donothing%; \
+    /else \
+      /if ((manapercent <= savemana & pg) | (manapercent <= 20 & pg & autodamage & autocop > 1)) \
+        /if (classMa == 2) \
+          fbo %*%; \
+        /else \
+          ct %*%; \
+        /endif%; \
+      /else \
+        /send grip %*%; \
+      /endif%; \
+    /endif
+/alias cl	\
+    /if (classAn & currmana <= 5) \
+      /tfshow Need at least 5 mana!%; \
+    /else \
+      /wmcastspell 'cure light' %*%; \
+    /endif
+/alias sd	/okcastspell 'shadow displacement' %*
+/alias hh	/wmcastspell 'heal' %*
+/alias hhh	\
+    /if (classPr & {*} =~ '' & !iHaveWither & mylevel >= 75 & hppercent > 50) \
+      /wmcastspell 'touch of god'%; \
+    /else \
+      /wmcastspell 'powerheal' %*%; \
+    /endif
+/alias pow      hhh %*
+
+/def -F -msimple -t'That person is in a safe area!' summonsafe1 = \
+    /if (playertosummon !~ xname) \
+      gt $[playertosummon] is in a safe area.%; \
+      tell $[playertosummon] You are in a safe area. I can't summon you from there.%; \
+    /endif
+/def -F -msimple -t"You can't summon creatures to a safe area!" summonsafe2 = \
+    /set saferoom 1%; \
+    gt $[playertosummon] can't be summoned to a safe area.%; \
+    tell $[playertosummon] I failed to summon you. I seem to be in a safe area and can't summon people to this room. Area = %{areafull}%; \
+    /eval /def -n1 -F -msimple -t"You follow $[groupleader]'s group." summonsafe2b$[playertosummon]1 = \
+      tell $[playertosummon] We have moved now! (bot msg)%%%; \
+      /purge summonsafe2b$[playertosummon]*%; \
+    /eval /def -n1 -F -mregexp -t"^$[playertosummon]\('s group|\) \(arrives|flies in\) from " summonsafe2b$[playertosummon]2 = \
+      /purge summonsafe2b$[playertosummon]*%; \
+    /eval /def -n1 -F -msimple -t"$[playertosummon] arrives suddenly." summonsafe2b$[playertosummon]3 = \
+      /purge summonsafe2b$[playertosummon]*%; \
+    /eval /def -n1 -p5 -F -msimple -t"$[playertosummon] materializes in front of your nose grinning wildly." summonsafe2b$[playertosummon]4 = \
+      /purge summonsafe2b$[playertosummon]*
+
+/def -F -t"* shrugs off your feeble attempt." summonsafe3a = \
+    /def -p2 -n1 -msimple -t"You failed." summonsafe3b = \
+      donothing
+/def -F -msimple -t"You failed." summonsafe3 = \
+    /if (playertosummon != 'none') \
+      /tfshow Failed to summon $[playertosummon].%; \
+      tell $[playertosummon] I failed summon. Perhaps we are on different continents? Or you have summon protection toggled on? I am in $[areafull]%; \
+    /endif
+
+/def -F -msimple -t"You can't summon mobs to Karandras." summonsafe4 = \
+    /if (playertosummon !~ 'none') \
+      tell $[playertosummon] I'm in Karandras. Can't summon people here.%; \
+      /if (pg) \
+        gt I'm in Karandras. Can't summon $[playertosummon] here.%; \
+      /endif%; \
+    /endif

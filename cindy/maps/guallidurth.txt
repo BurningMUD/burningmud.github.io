@@ -1,0 +1,131 @@
+# Nefertum's Castle Guallidurth (345): 40-100, Nefertum  (Crossroad: 2nen2en3enw)
+* FIND OUT: The Dot                         Level? (55-64)
+* FIND OUT: A drow archer                   Level? (75-76)
+* FIND OUT: A small dark spider             walking?, see invis?, hp
+* FIND OUT: The gate guard of Guallidurth   Xp, vuln pure?/light?, resist dark?/unlife?/magic?
+* FIND OUT: The Royal Doorguard             Xp, hp (approx)
+* FIND OUT: The golem                       Xp, walking, see invis, agg-N, hp (approx), type? irvs?, immune energy?/earth?
+* FIND OUT: A priestess of Lloth            Xp, hp (approx)
+* FIND OUT: The queen of Guallidurth        Xp, hp (approx)
+* FIND OUT: King Kenafin Aleval of Gual.    Xp, walking, see invis, hp (approx), [drow-elf?], vuln pure?/light?/ice?, resist dark?/unlife?/magic?
+* FIND OUT: Pardus, the Ancient Vampire     Xp, walking, see invis
+* FIND OUT: The Minotaur                    Xp, hp (approx), [vampire?/undead?], irvs
+* FIND OUT: The spirit of Pardus            Xp, hp (approx), money, money, immune unlife?, 
+* FIND OUT: Check if the room close to king still gives manareg
+* FIND OUT: Need new ident: Priestess       cold key (dissolves?)
+* FIND OUT: large sapphire: Whereto / Held / Dissolves
+* FIND OUT: old book w.w.l.c.: Held / Dissolves
+* FIND OUT: In king's room, 3 guards are agg and 2 (sometimes 3?) are not. Do they differ in any other way?
+#
+#                      Haarvenu
+#                         +
+#                       o-o-o-o
+#                       |     |
+#                       o     o   o-o-o-o-o-
+#                       |     |   | ^     |
+#                   X-o-o     o-o-o |
+#                   |               |
+#                 (aG)*->hpreg*-----/
+#                          |
+#                          NF
+#                          +
+#                          o
+#                          |
+#                          o
+#                          |
+#                          o - o
+#                          |    
+#                          o - o
+#                          |
+#                          o                         pri
+#                          |                          |
+#                  o -dot- o - o - o              o - Q - o 
+#                  |               |                  +
+#  o + o           o               o                Guard
+#  |   |           |               |                  |
+#  o   o           o               o                  o
+#  |   |           |               |                  |
+#  o   o           o               o                  o
+#  +   |           |               |                  |
+#  o - o - o + o - o - o - o - o - o + NF - NF - NF + o
+#  |   |                   +
+#  o - o                   v
+#  |   |                   o - o - o - o
+#  o - o                               |          Home
+#  |   |                      o <---\  o           ^
+#  o - o                      |     |  |           | King
+#                     o - o - o     *  v           |  x|
+#                     +         /->Pardus          * / |
+#         Spirit- o - o        /      +             o  |
+#             |       |       /      mana___mana       |
+#       Minotaur- o - o      /      regen   drain*---->o
+#             *             /
+#              \___________/
+#
+* Min level 0/40, non-good (to enter the anti-good room)
+* NF: Noflee/norecall room
+* Area from Pardus to Minotaur is norecall
+* Some of the drows do ice damage. A couple do fire damage.
+* When Pardus is killed, you get teleported to the spirit-area. Get through
+*    that and back to Pardus, and the exit south will be available.
+* In King room, Zoebri (evil) was attacked by the top 3 (out of 8) royal
+* guards, plus golem. Cindy (neutral) didn't rush to attack any. Different
+* guards or how does it work there? Next time Zoebri (evil) was attacked by
+* the top 3 (out of 5) royal guards, plus golem.
+
+Guallidurth:                      Lvl    Xp ASWIDMX # agg       Hp         Gold       Special
+A dot                               1     0 E-x- -             1-2          1-2       [magical], hide, flying & walking before being in battle - standing & sentinel after, great ac
+The Dot                         55-64   60M  --  -    ---                   1-1       [magical], stun damage, ultra-hide, dodge, flees, sneak, judgement, 6-7 attacks, 0-1 spell, high ac, sentinel before being in battle - walking after
+A small dark spider                60   35M E-   -    ---   3084            1-1       [animal], summoned, attacking only when summoned
+A drow assassin                    75  413M E-xxx-     -   21139-21326 131657-135188  [drow-elf], invis, hide, sneak, murder, backstab (46)
+A drow archer                   75-76  371M E-xxx-    --   19088-19397 105250-105736  [drow-elf], ice damage
+A drow guard (sleeping)            80 1080M E-xx -     -   18196-18702 367220-399672  [drow-elf]fire damage, , sleeping, bash
+A drow guard (playing)             80 1152M E-xx -    --   18240-18476  67626-139293  [drow-elf], sitting, bash
+A drow guard (guarding)            80 1200M E-xx -    --   18733-18886 107093-108631  [drow-elf]fire damage, , bash, 5-9 attacks
+A drow warrior                     80 1152M E-xxx-    --   25217-25286 173418-173786  [drow-elf], bash, 5-6 attacks
+The gate guard of Guallidurth      80 1281M?Ex-       ---    ~18k      198496-198943  [drow-elf], vuln pure?/light?, resist dark?/unlife?/magic?, imp, room is noflee/norecall
+The Royal Doorguard                85       Ex-x      GNE               18108-20140   [drow-elf], imp, harm, powerheal, blindness, confusion, mass pain, wither, hell fire
+A royal guard                      90 1440M Ex-x -    ---  35988-36140 123755-126451  [drow-elf]ice damage, , dodge, 5-7 attacks, headbang, 1-1 skill, some by king are aggressive
+  +3 Hailstrike: 14 hits out of 14:100%  (hr 11+34+3=48)
+  +3 Hailstrike: 24 hits out of 25: 96%  (hr 11+34+3=48)
+A drow elite guard                 90 1440M Exxx -4   G--  35555-35662 122315-124214  [drow-elf], ice damage, dodge, 5-7 attacks, kick, 1-1 skill
+A drow instructor                  90 1800M Exxx -    ---  36379-36418 133497-133544  [drow-elf], ice damage, 5-7 attacks, headbang, 1-1 skill
+The golem                          90       Nx    1   G E                9894-10537   immune fire/ice/stun/energy?/earth?, immune magic missile, imp/invis
+A priestess of Lloth               92       Ex-x -1   ---              249405-250487  [drow-elf], mana shielded, imp, summon small dark spider on entry (one per person entering), wither, blindness, trueheal, powerheal, harm, special-hit-on-everyone
+  +3 Hailstrike: 17 hits out of 23: 74%  (hr 11+34+3=48)
+The queen of Guallidurth           95       Exxx  2   GN-              501827-501952  INFO, [drow-elf], parry, powerheal, harm, wither, blindness, curse
+King Kenafin Aleval of Guallidurth 100      Ex        ---             1046362-1067079 INFO, [drow-elf?], vuln pure?/light?/ice?, resist dark?/unlife?/magic?, vuln fire if using "globe of biting cold" or "olplynir del chath"?, resist ice if using "globe of biting cold"?, parry, sitting, invis, vampiric mist, entangle, shadow form, ~16 attacks, 1-3 spells, murder
+  +3 Hailstrike:  4 hits out of 29: 14%  (hr 11+34+3=48)
+  +3 WoJ:         4 hits out of 20: 20%  (hr 11+34+3=48)
+                                          Anni Vapo Pulv Atom
+  HailStr.: PIERCE ICE Slaydrow  avg 23    1    3             (globe & Olpl.)
+  Firebr.:  SLASH  FIRE          avg 23             12        (globe & Olpl.)
+  WoJ:      WEAPON PURE LIGHT    avg 21         4             (globe & Olpl.)
+Pardus, the Ancient Vampire       100       Ex   x4   ---     ~70k          0-0       INFO, [vampire], immune fire, parry/dodge, invis, hide, blood mirror, haste, vampiric mist, bloodlust, backstab (107), circlestab, murder, 10 attacks, 1-2 spells/skills, corpseless, teleports you when killed, AC ~-60
+  +8 lance:    6 hits out of  9: 67%  (hr 43+ 9=52)
+  +3 WoJ:      8 hits out of 26: 31%  (hr 38+ 9=47)
+  +3 Gungner: 13 hits out of 48: 27%  (hr 38+ 9=47)
+  +7 rod:     27 hits out of 80: 34%  (hr 42+ 9=51)  ???
+  +7 rod:     25 hits out of 43: 58%  (hr 42+ 9=51)
+  +3 Karliik   4 hits out of 38: 11%  (hr 37+10=47)
+  +3 Karliik   4 hits out of 29: 14%  (hr 36+10=46)
+  +3 Karliik  20 hits out of 48: 42%  (hr 36+10=46) (he had BM)
+  +3 WoJ:      9 hits out of 50: 18%  (hr 37+10=47) (no BM)
+  +3 Hailstr:  0 hits out of 17:  0%  (hr 37+11=48) (no BM)     immune ice?
+  +3 WoJ:      5 hits out of 30: 17%  (hr 37+11=48) (he had BM)
+  +3 Hailstr:  0 hits out of 45:  0%  (hr 11+34+3=48) (he had BM) immune ice?
+  Seems immune to pathweaver hailstrike (NORMAL WEAPON PIERCE ICE)
+  Not immune to SLASH
+  Most likely immune to "NORMAL"  (23 misses with +8 weapon)
+The Elderly Drow Herald           100       Ex        ---                             questmaster, no-attack
+The Minotaur                      100       E-xx  1    N                    1-1       INFO, vuln pure/light/energy/WEAPON, immune unlife/dark, whirlwind, blocker
+  +3 Hailstrike: 24 hits out of 25: 96%  (hr 11+34+3=48)
+                                               Vapo Pulv Atom
+  Hailstrike: PIERCE NORMAL ICE  avg 23         21    3
+  Undead?   Check irv heal/silver/Earth/Water/Air/Mental
+  Vampire?  Check irv Silver/Wood/wood
+The spirit of Pardus              100       E-xx -    ---                             INFO, [insubstantial], immune unlife?, imp, hide, shrugger, area force bolt, vampiric mist, soulsteal, assassinate, circlestab, 1-2 spells/skills, corpseless, drops his items in the sw corner when killed
+  +3 ghostly: 28 hits out of 43: 65%  (hr 11+34+3=48)
+
+
+

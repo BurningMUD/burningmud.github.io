@@ -1,0 +1,41 @@
+# Ciquala's Lair (25): 10-50, Unknown  (Solace: 9sesd)
+#
+#                     |
+#                     X
+#                    x
+#                   o
+#                  /
+#   o   o         o     o
+#   +   +        /      +
+#   o + o + o + o - o - o + o
+#  x+   +               +
+# o o   o               o
+#   |
+#   o
+#   +
+#   o
+#  x
+# o
+#
+* Min level 0/20
+* Same area as Olympus. most rooms are very bright
+
+Ciquala's Lair:                   Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+The vampire lab assistant          22  704k E--x-x    --   497-524       9-9    [vampire], flees
+The lurker above                   27 1755k E-----    --   648-652       9-9    [magical], flees
+The human automaton                30 4110k E-----    --   731-762       9-9    [entity]
+Guardian Lich                      33 7260k E----x    GNE  844-869       9-9    [undead], meteor swarm, meteor blast, fireball, colour spray, invis
+The human automaton                33 6831k E-----    --   852-858       9-9    [entity]
+A docile creature                  35 8050k Nx --x    --   891-905       9-9    [magical]
+The human automaton                36 9936k G-----    --   969-973       9-9    [entity]  
+The black pudding                  37   11M E-----    --  1057-1063      9-9    [jelly]
+Lich                               37 8177k E----x    G-- 1054-1110      9-9    [undead], invis
+A vampire servant                  37 8140k Ex-x x    G-   ~1.0k         9-9    [vampire]
+The human automaton                39   17M G-----    --  1210-1220      9-9    [entity]
+A warped creature from a nightmare 40   18M E-xx--    --  1297-1302      9-9    [magical], flees
+The torturer lich                  41   18M Ex---x    G-- 1338-1363      9-9    [undead]
+The undead guardian                45   25M E--x x    G--  ~1.6k         9-9    [undead], invis
+Vampire                            47   21M E----x    G-- 1745-1770      9-9    [vampire], invis
+Ciquala's undead pet dragon        50   42M Ex---x    --  1993-2024      9-9    [dragon], gas breath
+A gigantic automaton               50   39M Nx----    --  1983-2028      9-9    [entity]
+The lich Ciquala                   52   52M Ex-x x    GN-  ~2.4k         9-9    [undead]

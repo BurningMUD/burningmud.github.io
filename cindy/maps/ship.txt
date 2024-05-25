@@ -1,0 +1,46 @@
+# Ship: 1-100, Burning Staff  (Speedie information below the map)
+#
+#                                                                   NC
+#                                                                    |
+#                                                                    o
+#                                                                    |
+#               SHIP    o                                            o
+#                      /                                             |
+#                 o   o                                            o-o
+#                 |  /                                             |
+#               o-o-/-o                                            o
+#               | |/  |                                            |
+#               o-o - o                                            o
+#               | |   |                                            |
+#             o o-X - o                                          o-o
+#             |  /|                                              |
+#             o / o                                              o
+#             |/                                                 |
+#             o                                                  o
+#                                                                |
+#                                                              o-o
+#                                                              |
+#                                                              o
+#                                                              |
+# OC-o                                                       o-o
+#    |                                                       |
+#    o-o-o                       o-o-o-o                   o-o
+#        |                       |     |                   |
+#        o-o-o           o-o-o-o-o     o-o-o-o-o         o-o
+#            |           |                     |         |
+#            o-o-o-o-o-o-o                     o-o-o-o-o-o
+#
+* Part of Fishing Village/Sea Routes
+* 2 ships. Both built the same. One run by Nardogan and one by Nagodran.
+* Nagodran:s ship has no crew except the captain himself.
+* From OC: King's Castle: 3wnwne2nw2nwne2nwn3en2es2enen5e, enter portal,
+*          4e4s5e, board ship
+* From NC: Myrridon: 2w4sw2s2w2s, board ship
+* Each ship takes a little more than 3 hours to complete a round.
+
+Ship:                    Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+The cook                  20 3750k N---x-    -    745-       7390-7529 [dwarf], NOT vuln water
+The sailor                25 1900k N-x-x-    ---  613-637    5666-5845 [human], bash, kick headbang
+The lookout               30 3750k N---x-    -    698-726    7550-7852 vuln unlife/iron/dark, resist pure/light/magic
+Captain Nardogan          80       N--       ---                       walk-path, no-attack
+Captain Nagodran          80       N--       ---                       walk-path, no-attack

@@ -1,0 +1,54 @@
+# Uriah's Tomb: 60-100, Rafo, Nefertum  (Soulweaver quest area)
+* FIND OUT: Does the area ever respawn?
+* FIND OUT: Level on a Myconid Soldier (1-67)
+* FIND OUT: Level on The red worm (1-67)
+* FIND OUT: Level on A Behir (1-67)
+#
+#                Example 1                                 Example 2
+#  o - o - o - o - o - o - o - o - o-o     o- o - o - o - o - o - o - o - o - o
+#  |   |   |   |   |   |   |   |   | |     |  |   |   |   |   |   |   |   |   |
+#  o - o - o - o - o - o - o - o - o-o     o- o - o - o - o - o - o - o - o -WM
+#  |   |   |   |   |   |   |   |   | |     |  |   |   |   |   |   |   |   |   |
+# WM - o - o -WM - o - o -NM - o - o-o     o-GRE- o - F - o - o - o - o -WM - o
+#  |   |   |   |   |   |   |   |   | |     |  |   |   |   |   |   |   |   |   |
+#  o - o - o - o - o - o - o -WM - o-o     o- o - o - o -WM - o - o -WM - o - o
+#  |   |   |   |   |   |   |   |   | |     |  |   |   |   |   |   |   |   |   |
+#  o - o - o - o - o - o - o - o - o-o     o- o - o - o - o - o - o - o - o -NM
+#  |   |   |   |   |   |   |   |   | |     |  |   |   |   |   |   |   |   |   |
+#  o - o - o - o -XXX- o - o - o - o-o     o- o - o - o -XXX- o - o - o - o - o
+#  |   |   |   |   |   |   |   |   | |     |  |   |   |   |   |   |   |   |   |
+#  o -GRE- o - o - o - o - o - o -WM-o     o-NM - o - o - o - o - o - o - o - o
+#  |   |   |   |   |   |   |   |   | |     |  |   |   |   |   |   |   |   |   |
+#  o - o - o - o - o - o - o - o - o-o     o- o - o - o - o - o - o -WM -NM - o
+#  |   |   |   |   |   |   |   |   | |     |  |   |   |   |   |   |   |   |   |
+#  o - o - o - o - o - F - o -NM - o-o     o- o - o - o - o - o - o - o - o - o
+#  |   |   |   |   |   |   |   |   | |     |  |   |   |   |   |   |   |   |   |
+#  o - o - o - o - o - o - o - o -NM-o     o- o - o - o - o - o - o - o - o - o
+#
+* The area is created each time you enter, with random placement of Grell,
+* fountain and nomag/wildmag rooms. 3 mob types are randomly chosen and
+* distributed in the area. If you die or Burning reboots, you have to leave
+* the quest and rejoin it to be able to enter it again.
+* Mobs first time: 12 mages,  10 eaters,    8 grimlocks, 1 grell
+* Second time:     12 eaters, 10 grimlocks, 6 behirs,    1 grell
+* Whole area is nosum/norecall
+* Nomag rooms are always no-fight
+* F: The Fountain of the Gods: Gives full hp/mana/move. One time only.
+
+Quest Pathweaver:        Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+The black worm             ?
+A bulette                  ?                                            vuln hailstrike
+The green worm
+A jelly cube
+A Myconid Mage            60   90M N-xx      G  (6471-6486) 36656-36861 vuln acid, immune dark/air/gas/light, imp/invis, powerharm, powerheal, "oag gsafz", 1-1 spells, 3-5 attacks
+a Myconid Soldier       1-67   90M N- x      G              36752-36761 vuln acid, immune dark, powerheal, "oag gsafz", 0-1 spells, 3-5 attacks, imp/invis
+An Ettercap
+The Tall Mouther                                                        powerheal
+The red worm            1-67   90M N- x      G              36683-36771 immune fire, imp/invis, kick, powerheal, heal, 4-5 attacks
+Girallon                           N-xx      G                          kick
+The Grimlock              60   90M N-xx      G   6597-7449  36689-36806 [---], imp/invis, 4-5 attacks, berserk, powerheal, 0-1 spells
+A Spider Eater            60   90M N-xx      G   7647-7648  36698-36831 vuln gas, imp/invis, heal, powerheal, "ghix", 0-1 spells, 3-5 attacks
+A Behir                 1-67   90M N- x      G              36610-36802 imp/invis, heal, powerheal, harm, powerharm, 0-1 spells, 4-5 attacks
+A Wight                59-63
+A giant bat            59-63                                            murder
+Grell the undead lich     65     0 E--x    1 G   ~10k           0-0     INFO, vuln pure/light/silver/heal, immune dark/unlife, resist earth/water/mental/air, meteor swarm, meteor blast, mass pain, fireball, 1-1 spells, 4-5 attacks, no-where

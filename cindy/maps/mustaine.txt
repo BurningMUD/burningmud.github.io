@@ -1,0 +1,61 @@
+# The Fortress of Mustaine (395): 40-100, Vortex  (Ultima: 3ndne2n4e2se)
+#
+#                         o
+#                        /|                     o--o-o-o-o-o--o
+#                       / o                     |             |
+#                      /  +                     o    Lvl 2    o
+#                     / g-o-g                   |             |
+#    Captain         o  | | |                   o-----o       o
+#       |           /   g-o-g                   |    /        |
+#       |  o  o    /o     +                     o   o o-o-o-o o
+#       |  |  |   o |    King                   |  /  |     | |
+#     o-o--o--o--/--o-o                         o UD--o-o o-o o
+#       |  |    o   |       Black-   o o o   ___|/    |     | |
+#       |  o    +   o-o-o-o-Smith    | | |  /   |     o-o o-o |
+#     o-o     g-o-g       | |      o-o-o-o-/-o  |             |
+#       |     | | |       o-o        | | |/     o--o-o-o-o-o--o
+#       |     g-o-g         |        o o UD-o
+#  --X--o      _|___________|___________/
+#       |     / |           |
+#       |   UD--o           o
+#       |   /|  |           |
+# o o o |  / o--o-o         |
+# | | | |  |    +           |
+# o-o-o-o-------o----------well
+# | | |    |    |
+# o o o    |    o    Torturer
+#          |    |       |
+#          |        o + o + o
+#          |            |
+#          |        o   o + o
+#          /        +   |
+#         o----o----o - o + o
+#                   +   |
+#                   o   o + Wraith
+#
+* Whole area is very bright
+* The area around King and golems (the ones in the courtyard too) is norecall
+* Most are vuln slay human. Beware King! (agg-evil, blocker, norecall)
+* And the wraith in the cellar is immune to weapon and hurts quite bad.
+
+Mustaine:                Lvl    Xp ASWIDMX # agg      Hp        Gold     Special
+The servant                5   10k G-x--     --     76-121     300-346   [human]
+The Apprentice Blacksmith 35 7700k G-----    --    900-900    1557-2299  [human]
+The Castle Guard          35 7700k G-x---    --    900-900    6745-14431 [human]
+The Blacksmith            40   13M Nx-xx-    ---  1300-1300   4598-5753  no-attack
+The Captain of the Guard  40   13M Nx----    --   1300-1300  10820-12205 [human]
+The Stablemaster          40   13M Nx----    --   1300-1300   5616-13938 [human]
+The Warhorse              40   13M E-----    --   1191-1195      0-0     [---]
+The Keep Guard            47   22M G-xx-x    --   1500-1500  15120-19222 [human], bash, headbang
+The Chef                  50   27M N--x-x    --   2000-2000  21540-24007 [human]
+The Jail keeper           50   25M N--x-x    --   2000-2000  13572-24238 [human]
+The Kings Guard           50   27M G--x-x    --   2000-2000  10288-15979 [human], bash, kick, berserk, room is norecall
+The Kings Warhorse        50   25M E-----    --   1952-1997      0-0     [---]
+The Visiting Noble        50   27M G--x-x    --   2000-2000   9008-27145 [human], backstab (250)
+The General               55   49M Gxxxxx    --   2904-2971  39960-40273 [human], bash, kick
+The Prisoner              55   71M G--x      GNE  3800-3961      1-1     [human], backstab (47)
+The Kings Chancellor      60   96M Nx-xxx    --   4800-4800  13411-16564 [human]
+The Steel Golem           60  102M Nx-xxx    --   5520-5520  20000-20000 [entity], bash, kick, headbang, room is norecall
+The Torturer              65  107M N--x      GNE  5933-6123  65536-65536 [---]
+King Mustaine             94 3121M Gx-x x    --E 41001-41001 65536-65536 INFO, [human], shrugger, blocker, bash, kick, berserk, room is norecall
+The Wraith               100 5920M Ex-x  3 1 GNE  ~75k           1-1     INFO, [insubstantial], immune WEAPON, blocker, imp, hide, 7-8 attacks, 350/225/70 dam per attack, negate sanc 9/92 times (10%), area blindness, area wither, trueheal, 0-1 spells, no-steal

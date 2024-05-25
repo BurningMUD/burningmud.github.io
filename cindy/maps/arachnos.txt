@@ -1,0 +1,62 @@
+# Arachnos (63): 5-50, DikuMUD  (Karandras: 10wn3wswswn12ws3wu)
+#
+#                o <----------\
+#               /|             \
+#         o -- a o -------\     \
+#         |   /            \    |
+#     o - o -/       o-o   |    |
+#         |          | |   |    /
+#         o        o-o o - o --/   /-------> o
+#         |            |   |      /          |
+# o - o - X          o-o   v     /         _ v
+#        /          /|     a     |        / \
+#                  o o           o    d  o   \
+#                   /           /    /       |
+#                  o -- o ---- o     \---- base -----\
+#                                            |       |
+#                                            |       |
+#                         base<- k --\ <- o -/ <- o -/
+#      j --- o       i                |   |       |
+#     /|    /|      /                 v   v       v
+# base | ent. \--- i  <--- o -\ <---- o   d       k
+#      |           |       |   |     /|
+# o    |    base   |   j   v   v  basev
+# |    |      |    |   ^   d   o      o
+# o <-/   /-> h    |   |      /      /
+# |      |    |    \-> o   base    base
+# |      |    o          _
+# |      |    |         / \
+# |      |    o        |   |
+# |      |    |        o   o
+# |      |   RIP       ^   |
+# |      |             |   v
+#  \---> o ->base   /->o   o -> h
+#       /|          |
+#      /  \-------> o  o
+#     |                +
+#      \----> o -> o - o
+#                 /
+#              base
+#
+* Messy place with lots of tricky exits
+
+Arachnos:                 Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+The orc                     5  6500 E----     --   101-107     227-294   [orc]
+The young spider            5   12k N-xx--    --    98-113     244-257   [spider]
+The drone spider            6   24k E-x---    --   115-129     395-405   [spider]
+The Wolf Spider             6   26k E-----    GN   117-121     399-405   [spider]
+The huge, poisonous spider  8  440k E-----    GN   148-176       0-0     [spider]
+The ethereal spider        10   90k G-x--     --   124-134     970-2122  [spider]
+The quasit                 10   90k G-xx-     --    49-57     1264-2972  [magical], invis, hide
+The slave of Arachnos      10  100k N-x--     --   104-111    2003-2025  [human]
+The Bird Spider            14  196k E-----    GN   185-188    3449-5700  [spider]
+The Queen Wasp             14  294k E-----    GN   185-194    1423-2348  [insect]
+The Hermit                 15  180k E--x-x    --   237-252      19-22    [human]
+The guardian               17  408k G-----    G    212-217    1051-1968  [human], hide, sleeping
+The young dragon wormkin   23  920k G--x--    --   459-500    8801-11148 [dragon]
+Yevaud                     24 1386k E--x-x    --   470-518     613-798   [dragon]
+The Donjonkeeper           25 1444k G--xxx    --   639-654      19-24    [entity]
+The Queen Spider           25 1444k E--x--    G-   587-595    8070-8464  [spider]
+Arachnos                   29 2900k E--x--    GN-  686-687    5915-10860 [spider]
+The Ki-Rin                 40   16M G--x--    --  3515-3569  25702-31463 [bird]
+The elder dragon wormkin   49   25M G--xx-    --  2479-2520  13591-17305 [dragon]

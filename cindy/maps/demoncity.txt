@@ -1,0 +1,61 @@
+# Demonbyen (300): 20-100, Unknown  (New Thalos: 2en2e2n2wn2wn2wn)
+* FIND OUT: The skeleton warrior      looter?
+* FIND OUT: The narauk                looter?
+* FIND OUT: Ludvaraman                hp
+* FIND OUT: Solus, the ancient god    hp, hp, resist earth?/air?
+#
+#                      SOLUS!
+#                       x
+#                      o
+#                      +
+#                      o + o - o
+#                          +
+#                      q + o
+#                         /
+#                o   o   o
+#                |   |   |
+#       o        o - o - o
+#       |            |
+#     o+o-o--o  o    +    EW+o----o        o - o
+#     |     x   +    |       |    +           /|
+#     |    o--o+V+o  o       | o  o      o   / |
+#     |    +         |       |x|        x|  /  |
+#     |   RIP        +   o o+o |     o o + /   |
+#     |              |   |     +     +   |/    |
+# o - o ------+----- o - o   o+o+o   o + o-o   o           o
+#     |                  |     +               |           +
+#     o              o - o --- o ------------- o       o - o
+#                        |     |               |       |   |
+#                        o --- o - o       o - o - o - o - o - o + o
+#                              |                       |   |       +
+#                              o                       o   |       o
+#                              |                           |
+#                              X              Ludvaraman + o - o
+#                             /|
+#                        Kerjim
+#
+* Min level 0/10
+* Dangerous area! Most mobs are vuln pure/light
+
+Demon City:            Lvl    Xp ASWIDMX # agg     Hp         Gold      Special
+The hothedhel            6  9000 E-xx-x    GNE   82-82        31-31     [demon]
+The skeleton warrior    12  168k E-xxx-    GN   188-192        5-10     [skeleton], summoned, looter?
+The narauk              13  247k E-xxxx    GNE  161-166      669-881    [demon], summoned & not, looter?
+Belkor                  14  280k Gx-x-x    GN   379-380        2-2      [feline]
+The skeleton            14  2700 E-xx-x    GNE   31-33         1-1      [skeleton], energy drain
+The woman               20  280k N--x--    --   152-160      301-527    [demon], invis, flees
+The undead priest       25  775k E-xx-x     N   688-751        2-2      [undead]
+The sea serpent         27  756k Nx-x-x    GNE  536-555     6800-7397   [snake]
+The celebdel            30 5400k E-xxxx    GNE  818-820    23878-27188  [demon], summoned & not, blindness, heal, lightning bolt, fireball, curse, colour spray
+The idol                39 1170k N--x-x    --  1563-1811       2-2      [entity]
+The undead high priest  43   11M E-xx-x    GN  1039-1065       2-2      [undead]
+Moloch                  45   17M Ex-x-x    GNE  969-1127   19526-21669  [demon], no spells
+Moloch                  45   17M Ex-x-x    GN   942-1003    5969-28714  [demon], summoned, meteor blast, fireball
+Tiilak                  50   29M G--x-x    --  1409-1651    3893-7455   [---]
+The black stalker       60  120M E-xxx     GN  3935-3965       8-13     [demon], backstab (550)
+The ein flayer          70  280M Ex-xx     GNE 8532-8610   16680-18957  [entity]
+V'rama Vair             75  506M Ex-xx     GNE 7469-7604   80070-80936  [human], mass pain, blindness, hell storm, hell fire, cloudkill, teleport, summon skeleton warrior, summon narauk, summon celebdel
+The eternal witness     81   65M Gx-xxx    --   879-912    13519-20601  INFO, [human], fireball, meteor blast
+Ludvaraman              95 2471M Gx----    ---  ~34k      125853-139019 INFO, [undead], he is blind
+Solus, the ancient god 100       Ex-xxx2   ---                43-85     INFO, [mythical], resist earth?/air?, blocker, shrugger, parry, dodge, area wither, powerheal, hell storm, area blindness, 2-2 spells, summon moloch
+  HITROLL: +42+10: 14 hits out of 35: 40% hits (hr52)

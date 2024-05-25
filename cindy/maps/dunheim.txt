@@ -1,0 +1,81 @@
+# The Castle Dunheim (164): 40-100, Pakaka (?/36-60min)  (Crossroad: 10se2sws)
+* FIND OUT: A multicoloured bird      see invis, ? before being in battle
+* FIND OUT: A boar                    agg-N
+* FIND OUT: A small devil             post-fight desc, hp, hp, type & irv:s, see invis, ? before being in battle
+* FIND OUT: A dark dot                post-fight desc, hp, hp, type & irv:s, see invis
+* FIND OUT: A jade statue             hp (approx)
+* FIND OUT: The dark torturer         post-fight desc, xp, hp, hp, gold, gold, type (insubstantial?), irvs (immune unlife?)
+* FIND OUT: The Evil Darkmage         xp
+* FIND OUT: Aramon                    ALL
+#
+#     /--o--------\
+#     |  |  \     |
+#     | /    |    |
+#     o---hermit--o---\                      |
+#     |      |    |   |                      X   Aramon
+#     |      |   /    |                      |    /
+#     \------o--------o                      o <-/
+#                     |                      |
+#             o - o - o - o -------- o ----- o ---- o ----- o
+#                 |   |   |                  |              |
+#                 |   |   |              WM  |          WM  |
+#                 |   |   |              /   +          /   |
+#         o ----- o - o - o             o    |         o    |
+#         |       |   |   |            /     |        /     |
+#         o       |   |   |           o ---- o ----- o      | _
+#         +       |   |   |           |      +       |      |/ \
+#         |       |   |   |           o  o - o - o   o - o  o  |
+#         o       |   |   |Dark      x   |   |   |   |   |  |  |
+#        x        |   |   |Mage+t-t-J    o - o - o + o - o<-|--/
+#       /         |   |   |         |    |   |   |          |
+#      v          |   |   |       o+o+o  o Lord  o - o - o  |
+#      | o        o - o - o         |    |   |       +   +  |
+#       \|        |   |   |         o    o   o       o   o  |
+# RIP-o-hell--o   |   |   |                  |              |
+#        |    +   |   |   |              o + o + Lady       |
+#        o-+-Monk |   |   |                  +              |
+#                 |   |   |                  o              |
+#               Ceng--o - o ---------- o --------- o ------ o
+#                 |                    |
+#              Lahresin             Statues
+*
+* Area is very bright in castle and castle yard
+* t: Tunnel room. Max 2 livings.
+* Most are humans - vuln slay human. Careful with Dark Mage and Lady (hurts!)
+
+Dunheim:                   Lvl    Xp ASWIDMX # agg      Hp        Gold      Special
+A multicoloured bird         5   12k G--  -    --     92-97        0-0      [bird], flees, flying/special-standing & sentinel before being in battle - standing & walking after
+A rabbit                     5   10k N-x---    --     86-92        0-0      [canine], flees
+A small squirrel             7   35k N-x---    --    199-216       0-0      [animal], flees
+A gardener                  10  110k N----x  4 --    198-215      45-76     [human]
+A servant                   10  100k N-x--x    --    212-225      51-52     [human], flees
+A deer                      14  280k N-x---    --    272-287       0-0      [animal], flees
+A boar                      20  900k N-x---    -     448-449       0-0      [animal]
+A monk                      20  573k Gx-xx-  1 ---   916-916    5094-7338   [human], sitting, no-charm, miracle, 1-1 spells, save 15, ac -7, special-drop-eq-on-death (if killed without being moved)
+A prisoner                  20  800k E-x---  2 --    452-459       2-2      [human], sitting
+The hermit                  20  900k Gx----  1 --    463-466       2-2      [human], sitting
+A castle guard              30 4500k N-xx-x    --    798-803    1635-1841   [human], bash, kick
+A nobleman                  30 3750k N-x---    --    759-763    2074-2091   [human]
+An archer                   30 4500k N-xx-x    --    746-751     540-571    [human], bash, kick, headbang
+A courtier (wanders)        32 5120k N-x---    --    849-856    3459-3598   [human]
+A cook                      35 7000k Nx---x  1 --    898-908    3000-3000   [human], imp
+A courtier (sits)           35 7700k Nx----  2 --   1024-1032   4046-4049   [human], sitting
+A gateguard                 40   14M N--x-x  2 --   1426-1500   4442-4759   [human], bash, kick, headbang, berserk
+A small devil               40   16M Ex-     4 G                1800-1964   vuln pure/light, immune fire, flying/special-standing before being in battle - standing after
+A watchman                  40   14M N--x-x  2 --   1350-1372    998-1038   [human], bash, headbang
+A maid                      45   30M Gx-x--  2 GN   1827-1850   1133-1150   [human], 4-10 attacks, avgdam 26, thac-42 11
+Ceng, the friend of Eowaran 45   11M N--xx-  1 --   2100-2120      1-1      [canine], flees, 4-6 attacks
+The Darkmage's servant      50   45M E-xx       N   2163-2187      1-1      [devil], summoned, 5-6 attacks
+The jailor                  50   42M N--xxx  1 --   2237-2275    896-1099   [human], sitting, bash, kick, headbang
+A large bear                50   45M N-----    GN   2233-2250      0-0      [animal], sleeping
+The captain of the guard    60  105M Nx-x x  1 --   4854-4867   4883-6666   [human], blocker, whirlwind, 3-5 attacks
+A dark dot                  60  109M Nx-     4 G                   0-0      vuln energy, resist WEAPON, standing before being in battle - flying after
+A jade statue               70  140M Gx-xx-    --             204959-205331 [magical], invis, shrugger, sitting before being in battle - flying after, wither, powerheal, trueheal, grouppowerheal, poison
+The dark torturer           85       Ex-     1 G                            vuln energy, resist WEAPON, standing before being in battle - flying after
+Lord Dareil                 80 1440M Gx-x x  1 --- 20795-22047 65536-65536  INFO, [human], sitting, wither
+Lady Sarah                  85 2040M Gx-x    1 GN   ~25k       65536-65536  INFO, [human], trueheal, miracle, 1-1 spells
+The Evil Darkmage           95       Ex-x  3 1 GN   ~59k       65536-65536  INFO, [human], mana shielded, dodge, hell storm, hell fire, energy drain, 2-2 spells, 7-7 attacks, 165/67 dam per attack, negate sanc 4/47 times (9%), summon 2-2 servants if below 60% health.
+  +8 plain:   47 hits out of 50: 94%  (hr 34+8+11=53)
+  +3 deathbr: 49 hits out of 56: 88%  (hr 34+3+10=47)
+Aramon                       100     Nx                                    invis
+Gwenyln, daughter of Amothus 100   0 G--xx-  1 --- 22709-23001     0-0      INFO, [human], cake, great ac, 4-5 attacks

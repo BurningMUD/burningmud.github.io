@@ -1,0 +1,41 @@
+# The City of Thalos (52): 10-20, Rorschach  (Thalos: -)
+#
+#     o             o
+#    /             /
+#   o---o-o---o---o
+#   |     |   |   |
+#   |   o-o-o-o   o
+#   |     |       |
+#   |     |  RIP  |
+#   o     |  /    |
+#   |   o-o-o-o   o
+#   |     |       |
+#   |    -o-      |
+#   o-o / | \   o |
+#   | | | | |   | |
+#   o-o-o-o-o---o-o-X-
+#   | | | | |   | |
+#   o-o \ | /   | o
+#   |    -o-    |
+#   |     |     |
+#   |   o-o-----o-o
+#   o     |     | |
+# o |   o-o-o   o-o
+#  \|     |
+#   o--o--o-o
+#
+* Max level 20, unless the guardian is killed
+* Nice lowbie-exp area.
+
+Thalos:                  Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+The horned lizard          3  3000 N-x--     -     54-60        0-0     flees
+The lamia                 11  121k E-x--x    G -  116-122     567-2482  looter
+The mimic (planks)        11  154k N-----    -    111-120       1-1     sitting
+The mimic (shards)        11   99k G-----    -     96-97        1-1     sitting
+The mimic (skeletons)     11  127k E-----    -    126-132       1-1     sitting
+The mimic (chest)         11  121k G-----    -    237-241       1-1     sitting
+The mimic (floor)         11  116k E-----    -    113-116       1-1     sitting
+The Silver guardian       17  510k N-----    -    229-238    1902-2786
+The mighty beholder       25 1500k E--x-x    -    689-719    5001-5446  flees
+The stone golem           30 3465k G-----    -    602-606    5001-5001
+The Colossal Guardian     71  319M Ex-xx-    -              52511-53466 wither, powerheal, harm, blindness, confusion, looter

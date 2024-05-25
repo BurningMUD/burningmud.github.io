@@ -1,0 +1,51 @@
+# Gypsy Village (137): 1-10, Mort  (Karandras: 8wn)
+#
+# wolverine
+#    |
+#    o - o                      o             o
+#        +                      |             |
+#        o                      o + o + Inn-+-|-o
+#        |                      |             |x
+#        o                      o             o
+#        |                      |
+#        o ------- o ------ o - o
+#        |                  |   |
+#        o   Shop - o ----- o - o
+#                   +       |   |
+#                   o   o - o - o
+#                           |
+#                   o - o - o - o   o
+#                       |   |       |
+#                       o - o ----- o
+#                       |   |
+#                       o   o - Herd
+#                           |   Area
+#                           o
+#                           |
+#                           o - o - o
+#                           |      /
+#                           X     o
+#                           |
+#
+* Same area as Orchard
+
+Gypsy Village:           Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+A Gypsy kid (picking)      1   200 G-----    --    15-18       47-83   [human], flees
+A Gypsy kid (singing)      1   200 G-x---    --    15-18       47-83   [human], flees
+The small mouse            1   200 N-----    --    25-33        1-1    [animal]
+A young gypsy              3  3000 G-x---    --    56-57      242-267  [human], flees
+Barnabus Gypsy             3  3000 G-x---    --    59-60      252-269  [human], flees
+Father Gypsy               3  3000 G-x---    --    62-63      237-255  [human], flees
+Jonathan Gypsy             3  3000 G-x---    --    56-64      256-278  [human], flees
+Sammy Gypsy                3  3000 G-x---    --    57-61      250-266  [human], flees
+The Old Gypsy              3  3000 G-x---    --    56-64      243-256  [human], flees
+Veronica Gypsy             3  3000 G-x---    --    60-61      251-266  [human], flees
+The rabid rat              6   26k N-x--     GN   119-122       0-0    [animal]
+Spot the cat               8   60k E-----    --   160-163       0-0    [---]
+The giant maggot           8   66k N-----    GN   157-162       0-0    [animal]
+Grandpa Gypsy             10  110k G-x---    --   196-197     454-514  [human], flees
+The evil Gypsy            10  110k E-----    --   195-205     399-414  [human]
+The wolverine             10  121k E--x-     GN   197-201       0-0    [canine]
+The old sailor            15  255k E-----    --   304-309       1-1    [human]
+The Barmaid               30       G-x       ---                       shopkeeper
+The Gypsy Witch          100       E--       ---                       shopkeeper

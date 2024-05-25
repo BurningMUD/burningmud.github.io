@@ -1,0 +1,584 @@
+; Write stuff in larger letters. It's ugly but it's my own creation :-)
+; There is an "enlarge2" alias in the bottom, not used. Feel free to try it
+; out (just change the alias to "enlarge" and it will be used instead of the
+; first one)
+; Usage: When writing a message to be sent as yell, mt, gt, goss, say or tell,
+; if it starts with the word "large", that word is ommitted, and the rest is
+; translated into large letters and sent.
+; I've also kept a few specials here that are used if I have a charmie or
+; spectre.
+
+/set ihavespectre 0
+/set ihavecharmie none
+/alias yell \
+	/if ({1} =~ 'large') \
+		/set channel=/send yell%; \
+		enlarge %{-1}%; \
+	/else \
+		/send yell %*%; \
+	/endif
+/alias mt \
+	/if ({1} =~ 'large') \
+		/set channel=qt group%; \
+		enlarge %{-1}%; \
+	/else \
+		qt group %*%; \
+	/endif
+/alias gt \
+	/if ({1} =~ 'large') \
+		/set channel=gtell%; \
+		enlarge %{-1}%; \
+	/else \
+		gtell %*%; \
+	/endif
+/alias goss \
+	/if ({1} =~ 'large') \
+		/set channel=gossip%; \
+		enlarge %{-1}%; \
+	/else \
+		gossip %*%; \
+	/endif
+
+/alias say \
+	/if ({*} =~ '') \
+		/send say%; \
+	/elseif ({1} =~ 'large') \
+		/set channel=emote thinks%; \
+		enlarge %{-1}%; \
+	/elseif ({ihavespectre} > 0) \
+		whisper 1.spectre Tell him what I think%; \
+		order 1.spectre say Cindy says: %*%; \
+		/set abouttosay %*%; \
+	/elseif ({ihavecharmie} !~ 'none') \
+		whisper %{ihavecharmie} Tell him what I think%; \
+		order %{ihavecharmie} say Cindy says: %*%; \
+		/set abouttosay %*%; \
+	/else \
+		emote thinks '%*'%; \
+	/endif
+/alias tell \
+	/if ({*} =~ '') \
+		/send tell%; \
+	/elseif ({2} =~ 'large') \
+		/set channel=/send tell %1%; \
+		enlarge %{-2}%; \
+	/elseif ({ihavespectre} > 0) \
+		whisper 1.spectre Tell him what I think%; \
+		order 1.spectre tf %1 emote &+Gtells you, '&+CCindy says: %{-1}&+G'%; \
+		order 1.spectre tf cindy emote &+Gtells you, '&+CI have now told %1: Cindy says: %{-1}&+G'%; \
+		/set abouttotell %*%; \
+	/elseif ({ihavecharmie} !~ 'none') \
+		whisper %{ihavecharmie} Tell him what I think%; \
+		order %{ihavecharmie} tf %1 emote &+Gtells you, '&+CCindy says: %{-1}&+G'%; \
+		order %{ihavecharmie} tf cindy emote &+Gtells you, '&+CI have now told %1: Cindy says: %{-1}&+G'%; \
+		/set abouttotell %*%; \
+	/else \
+		tel %*%; \
+	/endif
+
+
+
+/alias enlarge \
+        /let message=%{*}%; \
+        /set result1=%; \
+        /set result2=%; \
+        /set result3=%; \
+        /for i 0 $[strlen({*})]-1 \
+                /set letter=$$[substr(message, i, 1)]%%; \
+                /if ({letter} =~ '') \
+                        /set result1=%%{result1}....%%; \
+                        /set result2=%%{result2}....%%; \
+                        /set result3=%%{result3}....%%; \
+                /elseif (({letter} =~ 'a') | ({letter} =~ 'A')) \
+                        /set result1=%%{result1}./\\\\\\\\..%%; \
+                        /set result2=%%{result2}/__\\\\\\\\.%%; \
+                        /set result3=%%{result3}|..|.%%; \
+                /elseif (({letter} =~ 'b') | ({letter} =~ 'B')) \
+                        /set result1=%%{result1}|"\\\\\\\\.%%; \
+                        /set result2=%%{result2}|-<.%%; \
+                        /set result3=%%{result3}|_/.%%; \
+                /elseif (({letter} =~ 'c') | ({letter} =~ 'C')) \
+                        /set result1=%%{result1}./".%%; \
+                        /set result2=%%{result2}(...%%; \
+                        /set result3=%%{result3}.\\\\\\\\_.%%; \
+                /elseif (({letter} =~ 'd') | ({letter} =~ 'D')) \
+                        /set result1=%%{result1}|"\\\\\\\\..%%; \
+                        /set result2=%%{result2}|..).%%; \
+                        /set result3=%%{result3}|_/..%%; \
+                /elseif (({letter} =~ 'e') | ({letter} =~ 'E')) \
+                        /set result1=%%{result1}|".%%; \
+                        /set result2=%%{result2}|-.%%; \
+                        /set result3=%%{result3}|_.%%; \
+                /elseif (({letter} =~ 'f') | ({letter} =~ 'F')) \
+                        /set result1=%%{result1}|".%%; \
+                        /set result2=%%{result2}|-.%%; \
+                        /set result3=%%{result3}|..%%; \
+                /elseif (({letter} =~ 'g') | ({letter} =~ 'G')) \
+                        /set result1=%%{result1}./"..%%; \
+                        /set result2=%%{result2}(.--.%%; \
+                        /set result3=%%{result3}.\\\\\\\\_|.%%; \
+                /elseif (({letter} =~ 'h') | ({letter} =~ 'H')) \
+                        /set result1=%%{result1}|..|.%%; \
+                        /set result2=%%{result2}|--|.%%; \
+                        /set result3=%%{result3}|..|.%%; \
+                /elseif (({letter} =~ 'i') | ({letter} =~ 'I')) \
+                        /set result1=%%{result1}o.%%; \
+                        /set result2=%%{result2}|.%%; \
+                        /set result3=%%{result3}|.%%; \
+                /elseif (({letter} =~ 'j') | ({letter} =~ 'J')) \
+                        /set result1=%%{result1}..|.%%; \
+                        /set result2=%%{result2}..|.%%; \
+                        /set result3=%%{result3}\\\\\\\\_/.%%; \
+                /elseif (({letter} =~ 'k') | ({letter} =~ 'K')) \
+                        /set result1=%%{result1}|./.%%; \
+                        /set result2=%%{result2}|<..%%; \
+                        /set result3=%%{result3}|.\\\\\\\\.%%; \
+                /elseif (({letter} =~ 'l') | ({letter} =~ 'L')) \
+                        /set result1=%%{result1}|...%%; \
+                        /set result2=%%{result2}|...%%; \
+                        /set result3=%%{result3}|__.%%; \
+                /elseif (({letter} =~ 'm') | ({letter} =~ 'M')) \
+                        /set result1=%%{result1}|\\\\\\\\./|.%%; \
+                        /set result2=%%{result2}|.V.|.%%; \
+                        /set result3=%%{result3}|...|.%%; \
+                /elseif (({letter} =~ 'n') | ({letter} =~ 'N')) \
+                        /set result1=%%{result1}|\\\\\\\\..|.%%; \
+                        /set result2=%%{result2}|.|.|.%%; \
+                        /set result3=%%{result3}|..\\\\\\\\|.%%; \
+                /elseif (({letter} =~ 'o') | ({letter} =~ 'O')) \
+                        /set result1=%%{result1}./"\\\\\\\\..%%; \
+                        /set result2=%%{result2}|...|.%%; \
+                        /set result3=%%{result3}.\\\\\\\\_/..%%; \
+                /elseif (({letter} =~ 'p') | ({letter} =~ 'P')) \
+                        /set result1=%%{result1}|"\\\\\\\\.%%; \
+                        /set result2=%%{result2}|_/.%%; \
+                        /set result3=%%{result3}|...%%; \
+                /elseif (({letter} =~ 'q') | ({letter} =~ 'Q')) \
+                        /set result1=%%{result1}./"\\\\\\\\..%%; \
+                        /set result2=%%{result2}|...|.%%; \
+                        /set result3=%%{result3}.X_/..%%; \
+                /elseif (({letter} =~ 'r') | ({letter} =~ 'R')) \
+                        /set result1=%%{result1}|"\\\\\\\\.%%; \
+                        /set result2=%%{result2}|_/.%%; \
+                        /set result3=%%{result3}|.\\\\\\\\.%%; \
+                /elseif (({letter} =~ 's') | ({letter} =~ 'S')) \
+                        /set result1=%%{result1}/"\\\\\\\\.%%; \
+                        /set result2=%%{result2}\\\\\\\\_..%%; \
+                        /set result3=%%{result3}__>.%%; \
+                /elseif (({letter} =~ 't') | ({letter} =~ 'T')) \
+                        /set result1=%%{result1}""T"".%%; \
+                        /set result2=%%{result2}..|...%%; \
+                        /set result3=%%{result3}..|...%%; \
+                /elseif (({letter} =~ 'u') | ({letter} =~ 'U')) \
+                        /set result1=%%{result1}|..|.%%; \
+                        /set result2=%%{result2}|..|.%%; \
+                        /set result3=%%{result3}\\\\\\\\__/.%%; \
+                /elseif (({letter} =~ 'v') | ({letter} =~ 'V')) \
+                        /set result1=%%{result1}|..|.%%; \
+                        /set result2=%%{result2}\\\\\\\\../.%%; \
+                        /set result3=%%{result3}.\\\\\\\\/..%%; \
+                /elseif (({letter} =~ 'w') | ({letter} =~ 'W')) \
+                        /set result1=%%{result1}|....|.%%; \
+                        /set result2=%%{result2}|....|.%%; \
+                        /set result3=%%{result3}.\\\\\\\\/\\\\\\\\/..%%; \
+                /elseif (({letter} =~ 'x') | ({letter} =~ 'X')) \
+                        /set result1=%%{result1}\\\\\\\\./.%%; \
+                        /set result2=%%{result2}.X..%%; \
+                        /set result3=%%{result3}/.\\\\\\\\.%%; \
+                /elseif (({letter} =~ 'y') | ({letter} =~ 'Y')) \
+                        /set result1=%%{result1}\\\\\\\\./.%%; \
+                        /set result2=%%{result2}.Y..%%; \
+                        /set result3=%%{result3}.|..%%; \
+                /elseif (({letter} =~ 'z') | ({letter} =~ 'Z')) \
+                        /set result1=%%{result1}""/.%%; \
+                        /set result2=%%{result2}./..%%; \
+                        /set result3=%%{result3}/__.%%; \
+                /elseif ({letter} =~ '0') \
+                        /set result1=%%{result1}/"\\\\\\\\.%%; \
+                        /set result2=%%{result2}|.|.%%; \
+                        /set result3=%%{result3}\\\\\\\\_/.%%; \
+                /elseif ({letter} =~ '1') \
+                        /set result1=%%{result1}/|.%%; \
+                        /set result2=%%{result2}.|.%%; \
+                        /set result3=%%{result3}.|.%%; \
+                /elseif ({letter} =~ '2') \
+                        /set result1=%%{result1}/"\\\\\\\\.%%; \
+                        /set result2=%%{result2}._/.%%; \
+                        /set result3=%%{result3}/__.%%; \
+                /elseif ({letter} =~ '3') \
+                        /set result1=%%{result1}/".%%; \
+                        /set result2=%%{result2}>-.%%; \
+                        /set result3=%%{result3}\\\\\\\\_.%%; \
+                /elseif ({letter} =~ '4') \
+                        /set result1=%%{result1}|_|.%%; \
+                        /set result2=%%{result2}..|.%%; \
+                        /set result3=%%{result3}..|.%%; \
+                /elseif ({letter} =~ '5') \
+                        /set result1=%%{result1}|"".%%; \
+                        /set result2=%%{result2}."\\\\\\\\.%%; \
+                        /set result3=%%{result3}._/.%%; \
+                /elseif ({letter} =~ '6') \
+                        /set result1=%%{result1}./.%%; \
+                        /set result2=%%{result2}/\\\\\\\\.%%; \
+                        /set result3=%%{result3}\\\\\\\\/.%%; \
+                /elseif ({letter} =~ '7') \
+                        /set result1=%%{result1}""/.%%; \
+                        /set result2=%%{result2}./..%%; \
+                        /set result3=%%{result3}/...%%; \
+                /elseif ({letter} =~ '8') \
+                        /set result1=%%{result1}/"\\\\\\\\.%%; \
+                        /set result2=%%{result2}>-<.%%; \
+                        /set result3=%%{result3}\\\\\\\\_/.%%; \
+                /elseif ({letter} =~ '9') \
+                        /set result1=%%{result1}/\\\\\\\\.%%; \
+                        /set result2=%%{result2}\\\\\\\\/.%%; \
+                        /set result3=%%{result3}/..%%; \
+                /elseif ({letter} =~ '!') \
+                        /set result1=%%{result1}|.%%; \
+                        /set result2=%%{result2}|.%%; \
+                        /set result3=%%{result3}o.%%; \
+                /elseif ({letter} =~ '?') \
+                        /set result1=%%{result1}/"\\\\\\\\.%%; \
+                        /set result2=%%{result2}../.%%; \
+                        /set result3=%%{result3}.o..%%; \
+                /elseif ({letter} =~ '.') \
+                        /set result1=%%{result1}..%%; \
+                        /set result2=%%{result2}..%%; \
+                        /set result3=%%{result3}o.%%; \
+                /elseif ({letter} =~ ':') \
+                        /set result1=%%{result1}o.%%; \
+                        /set result2=%%{result2}..%%; \
+                        /set result3=%%{result3}o.%%; \
+                /elseif ({letter} =~ '(') \
+                        /set result1=%%{result1}/.%%; \
+                        /set result2=%%{result2}|.%%; \
+                        /set result3=%%{result3}\\\\\\\\.%%; \
+                /elseif ({letter} =~ ')') \
+                        /set result1=%%{result1}\\\\\\\\.%%; \
+                        /set result2=%%{result2}|.%%; \
+                        /set result3=%%{result3}/.%%; \
+                /elseif ({letter} =~ '-') \
+                        /set result1=%%{result1}...%%; \
+                        /set result2=%%{result2}--.%%; \
+                        /set result3=%%{result3}...%%; \
+                /else \
+                        /set result1=%%{result1}..%%; \
+                        /set result2=%%{result2}..%%; \
+                        /set result3=%%{result3}%%{letter}.%%; \
+                /endif%; \
+        /set result1=.$[replace(".", " ", {result1})]%; \
+        /set result2=.$[replace(".", " ", {result2})]%; \
+        /set result3=.$[replace(".", " ", {result3})]%; \
+        /eval %{channel} %{result1}%; \
+        /eval %{channel} %{result2}%; \
+        /eval %{channel} %{result3}
+
+/alias enlarge2 \
+	/let message=%{*}%; \
+	/set result1=`%; \
+	/set result2=`%; \
+	/set result3=`%; \
+	/set lettercounter=0%; \
+	/for i 0 $[strlen({*})]-1 \
+		/set letter=$$[substr(message, i, 1)]%%; \
+		/if ({letter} =~ '') \
+			/set result1=%%{result1}````%%; \
+			/set result2=%%{result2}````%%; \
+			/set result3=%%{result3}````%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif (({letter} =~ 'a') | ({letter} =~ 'A')) \
+			/set result1=%%{result1}`/\\\\\\\\``%%; \
+			/set result2=%%{result2}/__\\\\\\\\`%%; \
+			/set result3=%%{result3}|``|`%%; \
+			/set lettercounter=$$[{lettercounter}+5]%%; \
+		/elseif (({letter} =~ 'b') | ({letter} =~ 'B')) \
+			/set result1=%%{result1}|*\\\\\\\\`%%; \
+			/set result2=%%{result2}|-<`%%; \
+			/set result3=%%{result3}|_/`%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif (({letter} =~ 'c') | ({letter} =~ 'C')) \
+			/set result1=%%{result1}`/*`%%; \
+			/set result2=%%{result2}(```%%; \
+			/set result3=%%{result3}`\\\\\\\\_`%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif (({letter} =~ 'd') | ({letter} =~ 'D')) \
+			/set result1=%%{result1}|*\\\\\\\\``%%; \
+			/set result2=%%{result2}|``)`%%; \
+			/set result3=%%{result3}|_/``%%; \
+			/set lettercounter=$$[{lettercounter}+5]%%; \
+		/elseif (({letter} =~ 'e') | ({letter} =~ 'E')) \
+			/set result1=%%{result1}|*`%%; \
+			/set result2=%%{result2}|-`%%; \
+			/set result3=%%{result3}|_`%%; \
+			/set lettercounter=$$[{lettercounter}+3]%%; \
+		/elseif (({letter} =~ 'f') | ({letter} =~ 'F')) \
+			/set result1=%%{result1}|*`%%; \
+			/set result2=%%{result2}|-`%%; \
+			/set result3=%%{result3}|``%%; \
+			/set lettercounter=$$[{lettercounter}+3]%%; \
+		/elseif (({letter} =~ 'g') | ({letter} =~ 'G')) \
+			/set result1=%%{result1}`/*``%%; \
+			/set result2=%%{result2}(`--`%%; \
+			/set result3=%%{result3}`\\\\\\\\_|`%%; \
+			/set lettercounter=$$[{lettercounter}+5]%%; \
+		/elseif (({letter} =~ 'h') | ({letter} =~ 'H')) \
+			/set result1=%%{result1}|``|`%%; \
+			/set result2=%%{result2}|--|`%%; \
+			/set result3=%%{result3}|``|`%%; \
+			/set lettercounter=$$[{lettercounter}+5]%%; \
+		/elseif (({letter} =~ 'i') | ({letter} =~ 'I')) \
+			/set result1=%%{result1}o`%%; \
+			/set result2=%%{result2}|`%%; \
+			/set result3=%%{result3}|`%%; \
+			/set lettercounter=$$[{lettercounter}+2]%%; \
+		/elseif (({letter} =~ 'j') | ({letter} =~ 'J')) \
+			/set result1=%%{result1}``|`%%; \
+			/set result2=%%{result2}``|`%%; \
+			/set result3=%%{result3}\\\\\\\\_/`%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif (({letter} =~ 'k') | ({letter} =~ 'K')) \
+			/set result1=%%{result1}|`/`%%; \
+			/set result2=%%{result2}|<``%%; \
+			/set result3=%%{result3}|`\\\\\\\\`%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif (({letter} =~ 'l') | ({letter} =~ 'L')) \
+			/set result1=%%{result1}|```%%; \
+			/set result2=%%{result2}|```%%; \
+			/set result3=%%{result3}|__`%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif (({letter} =~ 'm') | ({letter} =~ 'M')) \
+			/set result1=%%{result1}|\\\\\\\\`/|`%%; \
+			/set result2=%%{result2}|`V`|`%%; \
+			/set result3=%%{result3}|```|`%%; \
+			/set lettercounter=$$[{lettercounter}+6]%%; \
+		/elseif (({letter} =~ 'n') | ({letter} =~ 'N')) \
+			/set result1=%%{result1}|\\\\\\\\``|`%%; \
+			/set result2=%%{result2}|`|`|`%%; \
+			/set result3=%%{result3}|``\\\\\\\\|`%%; \
+			/set lettercounter=$$[{lettercounter}+6]%%; \
+		/elseif (({letter} =~ 'o') | ({letter} =~ 'O')) \
+			/set result1=%%{result1}`/*\\\\\\\\``%%; \
+			/set result2=%%{result2}|```|`%%; \
+			/set result3=%%{result3}`\\\\\\\\_/``%%; \
+			/set lettercounter=$$[{lettercounter}+6]%%; \
+		/elseif (({letter} =~ 'p') | ({letter} =~ 'P')) \
+			/set result1=%%{result1}|*\\\\\\\\`%%; \
+			/set result2=%%{result2}|_/`%%; \
+			/set result3=%%{result3}|```%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif (({letter} =~ 'q') | ({letter} =~ 'Q')) \
+			/set result1=%%{result1}`/*\\\\\\\\``%%; \
+			/set result2=%%{result2}|```|`%%; \
+			/set result3=%%{result3}`X_/``%%; \
+			/set lettercounter=$$[{lettercounter}+6]%%; \
+		/elseif (({letter} =~ 'r') | ({letter} =~ 'R')) \
+			/set result1=%%{result1}|*\\\\\\\\`%%; \
+			/set result2=%%{result2}|_/`%%; \
+			/set result3=%%{result3}|`\\\\\\\\`%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif (({letter} =~ 's') | ({letter} =~ 'S')) \
+			/set result1=%%{result1}/*\\\\\\\\`%%; \
+			/set result2=%%{result2}\\\\\\\\_``%%; \
+			/set result3=%%{result3}__>`%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif (({letter} =~ 't') | ({letter} =~ 'T')) \
+			/set result1=%%{result1}**|**`%%; \
+			/set result2=%%{result2}``|```%%; \
+			/set result3=%%{result3}``|```%%; \
+			/set lettercounter=$$[{lettercounter}+6]%%; \
+		/elseif (({letter} =~ 'u') | ({letter} =~ 'U')) \
+			/set result1=%%{result1}|``|`%%; \
+			/set result2=%%{result2}|``|`%%; \
+			/set result3=%%{result3}\\\\\\\\__/`%%; \
+			/set lettercounter=$$[{lettercounter}+5]%%; \
+		/elseif (({letter} =~ 'v') | ({letter} =~ 'V')) \
+			/set result1=%%{result1}|``|`%%; \
+			/set result2=%%{result2}\\\\\\\\``/`%%; \
+			/set result3=%%{result3}`\\\\\\\\/``%%; \
+			/set lettercounter=$$[{lettercounter}+5]%%; \
+		/elseif (({letter} =~ 'w') | ({letter} =~ 'W')) \
+			/set result1=%%{result1}|````|`%%; \
+			/set result2=%%{result2}|````|`%%; \
+			/set result3=%%{result3}`\\\\\\\\/\\\\\\\\/``%%; \
+			/set lettercounter=$$[{lettercounter}+7]%%; \
+		/elseif (({letter} =~ 'x') | ({letter} =~ 'X')) \
+			/set result1=%%{result1}\\\\\\\\`/`%%; \
+			/set result2=%%{result2}`X``%%; \
+			/set result3=%%{result3}/`\\\\\\\\`%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif (({letter} =~ 'y') | ({letter} =~ 'Y')) \
+			/set result1=%%{result1}\\\\\\\\`/`%%; \
+			/set result2=%%{result2}`Y``%%; \
+			/set result3=%%{result3}`|``%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif (({letter} =~ 'z') | ({letter} =~ 'Z')) \
+			/set result1=%%{result1}**/`%%; \
+			/set result2=%%{result2}`/``%%; \
+			/set result3=%%{result3}/__`%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif ({letter} =~ '0') \
+			/set result1=%%{result1}/*\\\\\\\\`%%; \
+			/set result2=%%{result2}|`|`%%; \
+			/set result3=%%{result3}\\\\\\\\_/`%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif ({letter} =~ '1') \
+			/set result1=%%{result1}/|`%%; \
+			/set result2=%%{result2}`|`%%; \
+			/set result3=%%{result3}`|`%%; \
+			/set lettercounter=$$[{lettercounter}+3]%%; \
+		/elseif ({letter} =~ '2') \
+			/set result1=%%{result1}/*\\\\\\\\`%%; \
+			/set result2=%%{result2}`_/`%%; \
+			/set result3=%%{result3}/__`%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif ({letter} =~ '3') \
+			/set result1=%%{result1}/*`%%; \
+			/set result2=%%{result2}>-`%%; \
+			/set result3=%%{result3}\\\\\\\\_`%%; \
+			/set lettercounter=$$[{lettercounter}+3]%%; \
+		/elseif ({letter} =~ '4') \
+			/set result1=%%{result1}|_|`%%; \
+			/set result2=%%{result2}``|`%%; \
+			/set result3=%%{result3}``|`%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif ({letter} =~ '5') \
+			/set result1=%%{result1}|**`%%; \
+			/set result2=%%{result2}`*\\\\\\\\`%%; \
+			/set result3=%%{result3}`_/`%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif ({letter} =~ '6') \
+			/set result1=%%{result1}`/`%%; \
+			/set result2=%%{result2}/\\\\\\\\`%%; \
+			/set result3=%%{result3}\\\\\\\\/`%%; \
+			/set lettercounter=$$[{lettercounter}+3]%%; \
+		/elseif ({letter} =~ '7') \
+			/set result1=%%{result1}**/`%%; \
+			/set result2=%%{result2}`/``%%; \
+			/set result3=%%{result3}/```%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif ({letter} =~ '8') \
+			/set result1=%%{result1}/*\\\\\\\\`%%; \
+			/set result2=%%{result2}>-<`%%; \
+			/set result3=%%{result3}\\\\\\\\_/`%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif ({letter} =~ '9') \
+			/set result1=%%{result1}/\\\\\\\\`%%; \
+			/set result2=%%{result2}\\\\\\\\/`%%; \
+			/set result3=%%{result3}/``%%; \
+			/set lettercounter=$$[{lettercounter}+3]%%; \
+		/elseif ({letter} =~ '!') \
+			/set result1=%%{result1}|`%%; \
+			/set result2=%%{result2}|`%%; \
+			/set result3=%%{result3}o`%%; \
+			/set lettercounter=$$[{lettercounter}+2]%%; \
+		/elseif ({letter} =~ '?') \
+			/set result1=%%{result1}/*\\\\\\\\`%%; \
+			/set result2=%%{result2}``/`%%; \
+			/set result3=%%{result3}`o``%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif ({letter} =~ '`') \
+			/set result1=%%{result1}``%%; \
+			/set result2=%%{result2}``%%; \
+			/set result3=%%{result3}o`%%; \
+			/set lettercounter=$$[{lettercounter}+2]%%; \
+		/elseif ({letter} =~ ':') \
+			/set result1=%%{result1}o`%%; \
+			/set result2=%%{result2}``%%; \
+			/set result3=%%{result3}o`%%; \
+			/set lettercounter=$$[{lettercounter}+2]%%; \
+		/elseif ({letter} =~ ';') \
+			/set result1=%%{result1}o`%%; \
+			/set result2=%%{result2}``%%; \
+			/set result3=%%{result3}9`%%; \
+			/set lettercounter=$$[{lettercounter}+2]%%; \
+		/elseif ({letter} =~ '.') \
+			/set result1=%%{result1}``%%; \
+			/set result2=%%{result2}``%%; \
+			/set result3=%%{result3}o`%%; \
+			/set lettercounter=$$[{lettercounter}+2]%%; \
+		/elseif ({letter} =~ ',') \
+			/set result1=%%{result1}``%%; \
+			/set result2=%%{result2}``%%; \
+			/set result3=%%{result3}9`%%; \
+			/set lettercounter=$$[{lettercounter}+2]%%; \
+		/elseif ({letter} =~ '>') \
+			/set result1=%%{result1}\\\\\\\\``%%; \
+			/set result2=%%{result2}`>`%%; \
+			/set result3=%%{result3}/``%%; \
+			/set lettercounter=$$[{lettercounter}+3]%%; \
+		/elseif ({letter} =~ '<') \
+			/set result1=%%{result1}``/%%; \
+			/set result2=%%{result2}`<`%%; \
+			/set result3=%%{result3}``\\\\\\\\%%; \
+			/set lettercounter=$$[{lettercounter}+3]%%; \
+		/elseif ({letter} =~ '(') \
+			/set result1=%%{result1}/`%%; \
+			/set result2=%%{result2}|`%%; \
+			/set result3=%%{result3}\\\\\\\\`%%; \
+			/set lettercounter=$$[{lettercounter}+2]%%; \
+		/elseif ({letter} =~ ')') \
+			/set result1=%%{result1}\\\\\\\\`%%; \
+			/set result2=%%{result2}|`%%; \
+			/set result3=%%{result3}/`%%; \
+			/set lettercounter=$$[{lettercounter}+2]%%; \
+		/elseif ({letter} =~ '-') \
+			/set result1=%%{result1}````%%; \
+			/set result2=%%{result2}---`%%; \
+			/set result3=%%{result3}````%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif ({letter} =~ '+') \
+			/set result1=%%{result1}``|```%%; \
+			/set result2=%%{result2}--+--`%%; \
+			/set result3=%%{result3}``|```%%; \
+			/set lettercounter=$$[{lettercounter}+6]%%; \
+		/elseif ({letter} =~ '&') \
+			/set result1=%%{result1}(*}``%%; \
+			/set result2=%%{result2}`x`/`%%; \
+			/set result3=%%{result3}(_/\\\\\\\\`%%; \
+			/set lettercounter=$$[{lettercounter}+5]%%; \
+		/elseif ({letter} =~ '/') \
+			/set result1=%%{result1}``/`%%; \
+			/set result2=%%{result2}`/``%%; \
+			/set result3=%%{result3}/```%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif ({letter} =~ '\\\\') \
+			/set result1=%%{result1}\\\\\\\\```%%; \
+			/set result2=%%{result2}`\\\\\\\\``%%; \
+			/set result3=%%{result3}``\\\\\\\\`%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif ({letter} =~ '"') \
+			/set result1=%%{result1}*`*`%%; \
+			/set result2=%%{result2}````%%; \
+			/set result3=%%{result3}````%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif ({letter} =~ '#') \
+			/set result1=%%{result1}_|_|_`%%; \
+			/set result2=%%{result2}_|_|_`%%; \
+			/set result3=%%{result3}`|`|``%%; \
+			/set lettercounter=$$[{lettercounter}+6]%%; \
+		/elseif ({letter} =~ '=') \
+			/set result1=%%{result1}___`%%; \
+			/set result2=%%{result2}___`%%; \
+			/set result3=%%{result3}````%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif ({letter} =~ '$$') \
+			/set result1=%%{result1}(|\\\\\\\\`%%; \
+			/set result2=%%{result2}`\\\\\\\\``%%; \
+			/set result3=%%{result3}\\\\\\\\|)`%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/elseif ({letter} =~ '_') \
+			/set result1=%%{result1}````%%; \
+			/set result2=%%{result2}````%%; \
+			/set result3=%%{result3}___`%%; \
+			/set lettercounter=$$[{lettercounter}+4]%%; \
+		/else \
+			/set result1=%%{result1}``%%; \
+			/set result2=%%{result2}``%%; \
+			/set result3=%%{result3}%%{letter}`%%; \
+			/set lettercounter=$$[{lettercounter}+2]%%; \
+		/endif%; \
+	/for i $[{lettercounter}/2] 32 \
+		/set result1=`%%{result1}`%%; \
+		/set result2=`%%{result2}`%%; \
+		/set result3=`%%{result3}`%; \
+	/eval %{channel} `````````````````` %{result1} %{result2} %{result3}

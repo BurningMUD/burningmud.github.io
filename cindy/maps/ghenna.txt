@@ -1,0 +1,137 @@
+# Ghenna (77): 30-70, Drip/Nosferatu  (Karandras: 5s3w3sw9s)
+* FIND OUT: A Man-Eating plant      hp (approx)
+* FIND OUT: The Efreeti             hp
+* FIND OUT: The Death Knight        hp (approx)
+* FIND OUT: a shoe: Dissolves?
+#
+#                            Medusa
+#                              +
+#                 j o------o---o
+#                /+ +     /
+#               o o-o    o  o-----------------------o
+#        ->t   /         |  |                       |
+#       /     o         /|  |                 o     |
+#      b     /         | |  |                 |     |
+#      ^    o-o<-\     o-o  |               o-o-o o-o
+#      |      +  |       +  | |             |  /  | |
+#     /       v  |  o    k--o X    o        o o---o |
+#  sword      o  |  +       |x     |                |
+# master     x   |  o ----- G--o---o----------------o
+#    | -<---/    |  |       |      |        o-o     |
+#    |/          |  o-o     |    o---o      | |     o
+#  /-o-o         |  |       |   x  | |      o o-o<-/
+#  \_____________/  o---o---t  p   | o      |
+#                   |      x|      |/       o
+#                   o   Pit |      o       /
+#                   +       v        /--> m <-\
+#                   \--->Hedges     /     |   |
+#                                  /      m   |
+#                          _______/       |   |
+#                         /               o   |
+#                        /   Pit          |   |
+#                        \    ^           o   |
+#                         \   |           |   |
+#                          \--o-> b <+o-o-o - o
+#                            /| \             |
+#                        Home v  \-----o      o
+#                             p        ^      |
+#                                      o <--- o -> b
+#                                             |
+#                                             v
+#                                            Pit
+#
+* m                : Lots of aggressive Maedars
+* Pit              : Exits in all dirs, leading to "Isn't this fun!??".
+* Isn't this fun!??: Exits in all dirs, leading back to "Isn't this fun!??".
+* OUT              : Back to the entrance room
+*
+* Hedges: (w-d-n-e to get to the wrinkle)
+#                            5
+#                            ^  _
+#                            | / \   ____
+#          Pit            /--4---/  /    \
+#           ^             | x|      |    |
+#           | G           |/  \---Hedges-|---\ <--------\
+#           |/            /  ^      |    |   |           \
+# Hedges <- p -> Wrinkle /|  |      \____/ <-3----> OUT  |\
+#           |           / |  |      ^        | |\        | \
+#           | G        /  \__|______|________/ | \       |  \
+#           |/        /      |      \----------5-/       |   \
+#           o <-------\      |                 |         |   |
+#           |          \     |                 \---------o-\ |
+#           v           \    |                          x| | |
+#          OUT           \___|_________________________/ \_|_/
+#                            |                             |
+#                            \_____________________________/
+#
+* Wrinkle:
+#                      OUT p
+#                        |/
+#           Hedges <- Wrinkle -> Hedges
+#                       /|
+#                      /LoB
+#                     /
+#                 j<-o->k
+#
+* Labyrinth of Bodies (no magic area. 2e2swes to get to room 9):
+*
+# Nr  n  s  e  w                             RIP b
+#  1  2  2  2  1                /-> b          |/
+#  2  1  2  3  2               x           o - o
+#  3  2  4  1  4              o            ^
+#  4  3  5  2  1             /      Pit <- o - o
+#  5  1  3  4  6            o   ______________/
+#  6  6  6  7  8            |  /
+#  7 Pit 9  p  4            o x
+#  8  1  8  3  3            |/
+#  9  See below      LoB(1) o
+#                        ^ /
+#                        |/
+#              LoB(1) <- o -> LoB(4)
+#                       /|\_________________
+#                    RIP |                  \
+#                        v                  |
+#                       LoB(3)    Medusa <- 9 - LoB(1)
+#                                           |
+#                                          OUT
+#
+* Min level 0/30
+* Nasty place with lots of aggies, confusing rooms and DT:s
+
+Ghenna:                  Lvl    Xp ASWIDMX # agg      Hp        Gold     Special
+The Dwarf                  1   200 G----     --     31-31      251-251   [dwarf], sitting, hide
+The Dragonet              25 1500k Gxxx--    ---   593-605     351-351   [dragon]
+A citizen of Ghenna       30 3600k G-x-x-    --E   733-740    2201-2201  [human]
+A Man-Eating plant        30 3600k E--xx     GN              12001-12001 [botanic]
+Leonardo                  30 3600k E--xxx    --    731-762    5001-5001  [human]
+The Avon lady             30 3600k G-xxx-    ---   750-763    9001-9001  [human]
+The cockroach             30 3600k E--xx-    GNE   745-752    7501-7501  [insect]
+The Orc                   30 3600k E-x-x-    GNE   741-755     251-251   [lugroki]
+The prostitute            30 3600k G---xx    --    758-761    5301-5301  [human], sitting
+The whore                 30 3600k E--xxx    -N    748-768   10001-10001 [human]
+The Bullywug              32 5120k E--xx-    GN    806-825    1001-1001  [amphibian], hide
+The claw fingered arm     35       N--                                   nofight-room
+The claw toed foot        35       N--                                   nofight-room
+The Bugbear               38   11M E-xx--    GNE  1142-1145    667-667   [---]
+The Derro                 40   13M E--x--    GN   1307-1308   6663-6663  [dwarf]
+The Argos                 42   15M Exxxxx    G--  1434-1445   7501-7501  [jelly], energy drain, harm, confusion, powerword kill, fireball, blindness, poison, teleport, 1-2 spells
+The Doll Golem            42   15M G--xx-    --   1413-1431   1201-1201  [entity]
+A Broken One              45   19M E-xxx-    G-   1591-1600   2501-2501  [magical], looter
+Roger the dodger          45   19M Gxxxxx    --E  1615-1615  25001-25001 [elf], hide, wither, blindness, harm, confusion, powerheal
+The barrow wight          45   19M Nx-xx-    --   1580-1612   1001-1001  [insubstantial], hide, energy drain
+The errant Elf            45   19M Gxxxx-    --   1577-1619   1501-1501  [elf]
+The Gorgimera             45   19M Gx-xx-    GN   1588-1588  25001-25001 [magical], imp
+The Medusa                45   19M Ex-xx-    GN   1583-1586  30251-30251 [magical]
+The Banshee               48   23M Exxx--    GNE  1829-1855   5001-5001  [insubstantial], energy drain
+The Deepspawn             48   23M Ex-xx-    GNE  1829-1830  45001-45001 [magical], fireball, blindness, energy drain, confusion, harm, powerword kill, feeblemind, powerharm, 1-2 spells
+Shamus                    50   27M G-xxxx    --E  1979-1999   9437-9437  [human], wither, harm, powerheal, blindness
+The barkeep               50   27M Ex-xx-    --   1973-2009  15001-15001 [human]
+The Maedar                50   27M E---x-    GNE  1996-2000    944-944   [---]
+The Efreeti               55   44M Nx-x -    --E  2974.5     49001-49001 [elemental], imp, fire breath, can VAPE eq!
+The Ghenna Swordmaster    55   55M Ex-xx     GN   3020-3021  40001-40001 [human]
+The Death Knight          60  210M Exxxx     G--             33001-33001 [entity], invis, blindness, wither, harm, powerword pain, mass pain, confusion, powerheal, meteor blast, mass pain
+The stone golem           60  126M N--xx     GNE  3990-4018  43568-43568 [entity], invis
+The Dominatrix            65  169M Ex-x      GN   6015-6024   4001-4001  [human]
+The Maedar master         65  169M E--x      GNE  6015-6030   2501-2501  [---]
+The Deep Dragon           75  412M E--x      GN  11976-12003 65536-65536 [dragon], fire breath, can VAPE eq!
+The cloaked Ghast        100  640M E--x -    ---  9942-10080 65809-65847 INFO, [human], vuln fire, resist pure/light/ice, imp, not seen on "where", sometimes found in UnderDark

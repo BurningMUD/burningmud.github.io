@@ -1,0 +1,64 @@
+# Turvagar, the Dark Taiga (148): 30-50, Rengrave  (King's Castle: 3wnwne2nw2nwne3sen)
+#
+#  o - o - o - o - o
+#  |   |   |   |   |
+#  o - o - o - o - o - o
+#  |   |   |   |   |   |
+#  o - o - o - o - o - o - o - o - o - o - o - o
+#  |   |   |   |   |   |   |   |   |   |   |   |
+#  o - o - o - o - o - o - o - o - o - o - o - o
+#  |   |   |   |   |   |   |   |   |   |   |   |
+#  o - o - o - o - o - o - o - o - o - o - o - o
+#  |   |   |   |   |   |   |   |   |   |   |
+#  o - o - o - o - o - o - o - o - o - o - o
+#  |   |   |   |   |   |   |   |   |   |   |
+#  o - o - o -RIP- o - o - o - o - o - o - o
+#  |   |   |   |   |   |   |   |   |   |
+#  o - o - o - o - o - o - o - o - o - o
+#  |   |   |   |   |   |   |   |   |   |
+#  o - o - o - o - o - o - o - o - o - o
+#  |   |   |   |   |   |   |   |   |   |
+#  o - o - o - o - o - o - o - o - o - o - o
+#  |   |   |   |   |   |   |   |   |   |   |
+#  o - o - o - o - o - o - o - o - o - o - o - o - o
+#  |   |   |   |   |   |   |   |   |   |   |   |   |
+# Yak- o - o - o - o - o - o - o - o - o - o - o - o
+#  |   |   |   |   |   |   |   |   |   |   |   |   |
+#  o - o - o - o - o - o - o - o - o - o - o - o - o
+#  |   |   |       |   |   |   |   |   |   |
+#  o - o - o       o - o - o - o - o - o - o
+#                  |   |   |   |   |   |
+#                  o - o - o - o - o - o
+#                      |   |   |   |   |
+#                      X - o - o - o - o
+#                      |
+#
+* Nice midbie xp-area. Gremlins are vuln fire/pure/unlife.
+* A few are aggressive, but none can see invis, except Malcor, who is
+* lvl 50 and agg-neutral.
+
+Turvagar:                                Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+A lazy maroon gremlin                     20  860k E---x-    -    444-444     887-910   vuln fire/pure/unlife, immune light/dark/ice, sitting
+An annoying scarlet gremlin               20  920k E-x---    -    454-455     753-764   vuln fire/pure/unlife, immune light/dark/ice
+A clumsy yellow gremlin                   21 1092k E-x-x-    -    482-484    1043-1059  vuln fire/pure/unlife, immune light/dark/ice
+A pale lavender gremlin                   21 1092k E-x-x-    -    475-475    1108-1111  vuln fire/pure/unlife, immune light/dark/ice
+A lanky ecru gremlin                      22 1276k E-x-x-    -    490-493     989-1001  vuln fire/pure/unlife, immune light/dark/ice, kick
+An arrogant magenta gremlin               22 1276k E-x-x-    -    509-509    1203-1203  vuln fire/pure/unlife, immune light/dark/ice
+A drooling brown gremlin                  23 1518k E-x-x-    -    534-535    1024-1026  vuln fire/pure/unlife, immune light/dark/ice
+A rude cyan gremlin                       23 1518k E-x-x-    -    555-556     864-893   vuln fire/pure/unlife, immune light/dark/ice, headbang
+A lithe pink gremlin                      24 1776k E-x-x-    -    580-581    1212-1244  vuln fire/pure/unlife, immune light/dark/ice, backstab
+A violent blue gremlin                    24 1776k E-x-x-    -N   593-597     591-624   vuln fire/pure/unlife, immune light/dark/ice, kick, bash, headbang
+A cruel orange gremlin                    25 2075k E-x-x-    -    620-621    1177-1211  vuln fire/pure/unlife, immune light/dark/ice
+A smelly beige gremlin                    25 2075k E-x-x-    -    610-611    1187-1201  vuln fire/pure/unlife, immune light/dark/ice
+A disgruntled mauve gremlin               26 2392k E-x-x-    -    644-646    1322-1334  vuln fire/pure/unlife, immune light/dark/ice
+A snobby purple gremlin                   26 2418k E-x-x-    -    660-661    2649-2761  vuln fire/pure/unlife, immune light/dark/ice
+An overbearing violet gremlin             27 2862k E-x-x-    -    691-693    1497-1535  vuln fire/pure/unlife, immune light/dark/ice, kick
+A crazy white gremlin                     28 3360k E-x-x-    -    720-721    1769-1787  vuln fire/pure/unlife, immune light/dark/ice, kick, headbang
+A vicious crimson gremlin                 28 3192k E-x-x-    -    711-712    1631-1641  vuln fire/pure/unlife, immune light/dark/ice, headbang
+A fleshy grey gremlin                     29 2781k E-x-x-    -    678-739    1391-1404  vuln fire/pure/unlife, immune light/dark/ice
+A gaunt khaki gremlin                     29 3799k E-x-x-    -    750-751    1813-1882  vuln fire/pure/unlife, immune light/dark/ice, kick
+A sneaky black gremlin                    29 3654k E-x-x-    -    739-741    1796-1821  vuln fire/pure/unlife, immune light/dark/ice, backstab, sneak
+A furious ochre gremlin                   30 4140k E-x-x-    GNE  759-759    1982-2029  vuln fire/pure/unlife, immune light/dark/ice, kick, bash, headbang
+A swarthy green gremlin                   30 4020k E-x-x-    -    775-776    2059-2101  vuln fire/pure/unlife, immune light/dark/ice, kick, bash, headbang
+A shaggy yak                              50     0 N-----    -   5000-5000      0-0     vuln mental/gas, resist earth, resist ice if using "thick shaggy yak hide", headbang, +5000 starthp
+Malcor, the merciless indigo gremlin king 50   42M E-xxxx    -N- 2200-2216  15000-15000 vuln fire/pure/unlife, immune light/dark/ice, kick, blocker, chill touch, +1984 starthp

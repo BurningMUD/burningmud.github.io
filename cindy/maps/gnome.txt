@@ -1,0 +1,50 @@
+# Gnome Village (15): 5-15, Vougon  (New Thalos: 2en2e4ne2nen2ene)
+#
+#                           o - o   o
+#                           |       |
+#             o ------- o - o - o - o                   o
+#            /          |   |       |                   |
+#           o + o - o   o   o - o   o                   o   o   o
+#               |                   |                  /|   |   |
+#           o - o - o           o - o - o             o o   o - o - o
+#               |                   |                   |   |
+#       o + o - o - o           o   |   o           o - o - o - o - o
+#      /        |               |   |   |           |   |   |   |   |
+#     o         o         - X - o - o - o - o - o - o   o   o   o   o
+#     |                             |   |               |       |   |
+# o - o ---- o                  o - o   o           o - o - o   o   o
+# |          |                      |                   |       |   |
+# o   o - o  o                  o - o - o           o - o - o   o   o
+# |   |      |                      |                   |
+# o - o ---- o              o - o - o                   o
+#                               |   |
+#                         - X - o - o   o
+#                           |       |   |
+#                                   o - o
+#
+* Probably Vuln large/superlarge
+
+Gnome Village:            Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+A field mouse               1   200 G----     --    11-14        0-0    [animal]
+A gnome child               3  2850 G-x--     --    61-63       75-78   [gnome vulns]
+A gnome prisoner            3  3000 G----     --    58-64        0-0    [gnome vulns]
+A human prisoner            3   300 G----     --    59-64        0-0    [human]
+The hobgoblin soldier       3  3600 E---      --    59-63       71-80   [lugroki], no-charm
+A large rat                 4   12k E-x---    --    76-86        0-0    [animal]
+A black bat                 5   12k E-x--     --    95-99        0-0    [animal]
+A gnome woman               5   12k G-x--     --    96-102     204-228  [gnome vulns]
+A hermit crab               5   14k E----     GN    93-96      191-238  [amphibian]
+A hobgoblin miner           5   12k E----     --    93-108     151-226  [lugroki]
+A giant rat                 6   24k E-x--     --   111-124       0-0    [animal]
+A gnome man                 6   15k G-x---    --   109-120     366-439  [gnome vulns]
+A gnome scientist           7   34k G-----    --   141-142     564-589  [gnome vulns]
+The cook                    7   35k E----     --   142-143     553-574  [lugroki]
+The hobgoblin bodyguard     7   32k E-----    --   132-143     578-643  [lugroki]
+The zombie gnome            7   35k E-x--     --   135-144     557-624  [undead]
+A gnome guard               8   56k G-----    --   154-161     758-842  [gnome vulns]
+A small troll               8   62k E-----    GN   142-153     783-842  [troll]
+The treasurer              10  110k E-----    --   199-202    6912-6992 [lugroki], looter
+The king of the hobgoblins 12  168k E-----    --   235-242    1102-1183 [lugroki], sitting
+The troll                  14  252k E-----    GN   279-279    1339-1395 [troll]
+The chief gnome            15  264k G-----    --   300-302    1437-1454 [gnome vulns]
+The fire bat               18  360k E--x--    GN   397-397    2729-2765 [magical]

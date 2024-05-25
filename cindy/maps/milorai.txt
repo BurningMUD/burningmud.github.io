@@ -1,0 +1,65 @@
+# The desert city of Milo'rai (295): 50-100, Stryder  (Speedie information below the map)
+#
+#                     o-o X   Well (ask spirit bless)
+#                       |/     |   (enter oasis)
+#                  ATM--o------o
+#      As _____________/|
+#       +/              |
+#   o---o-o    o        |
+#   |   | |    |        |
+# Item  o o  o+o--o-----o
+# Store        |     o  |
+#              |    /   |
+#              o   Gs-+-o  o
+#               \          |
+#              o-\+o----Fountain--Fs
+#                 \|\
+#                  o \  Ms+o
+#                     \___ |
+#                         \|
+#                          o
+#                          |
+#                          o
+#
+#
+* Whole area is nosum/norecall. Only way out is through the well or using the
+* obelisk at X. Obelisk navigator can take you NC obelisks as well.
+* Entrance from Navigator in Desert. Ask him "home" (you must be Ktv)
+* Path to find navigator, starting and ending at Thalos obelisk:
+*    eenne(w)wswswenwnnwsnnnseswwwe(nw)wew(s)s(ew)ne(w)ne(w)ne(wswss)sss(sw)
+* Directions within parentheses lead to rooms that have been passed before.
+* Entering the oasis (the Well) only works if someone has entered the well
+* through the real entrance at its current position. It will bring you to a
+* random room on level 1 to <maxExploredLevel>
+* You can enter the oasis only once every 360-383 seconds.
+
+Milo'rai:                       Lvl    Xp ASWIDMX # agg   Hp    Gold    Special
+A Milo'raian lady               100       Gxx       ---                 no-attack
+A Milo'raian lord               100       Gxx       ---                 no-attack
+A desert Rawun (telling)        100       Gx-       ---                 no-attack
+A desert Rawun (waits)          100       Gx-       ---                 no-attack
+A desert dweller (cant tear)    100       G--       ---                 no-attack
+A desert dweller (moves)        100       G-x       ---                 no-attack
+A desert merchant (hear)        100       G--       ---                 no-attack
+A desert merchant (peer)        100       G-x       ---                 no-attack
+A desert navigator              100       G-x       ---                 nofight-room
+A duskwalker disciple (chants)  100       G-x       ---                 no-attack
+A duskwalker disciple (homage)  100       Gx-       ---                 nofight-room
+A duskwalker mystic             100       G--       ---                 nofight-room
+A portly hobbit chef            100       G--       ---                 no-attack
+A voyager of the wilderness     100       Gxx       ---                 no-attack
+A warden of Milo'rai (defender) 100       Gxx       ---                 no-attack
+A warden of Milo'rai (guard)    100       Gx-       ---                 nofight-room
+An eager listener (girl)        100       G--       ---                 no-attack
+An eager listener (man)         100       G--       ---                 no-attack
+An eager listener (young male)  100       G--       ---                 no-attack
+An elven pioneer                100       Ex-       ---                 nofight-room, imp, hide
+An Essence Astrogater           100       Gx-       ---                 nofight-room, special-transport
+Gorshwen the hermit             100       G--       ---                 shopkeeper
+Lariq Houper'ak                 100       G--       ---                 shopkeeper
+Palinor of Thalos               100       G--       ---                 shopkeeper
+Sanq'il Calik                   100       N--       ---                 no-attack
+The clerk of the store          100       Gx-       ---                 nofight-room
+The curator of the mausoleum    100       Gx-       ---                 no-attack
+The roamer                      100       G--       ---                 shopkeeper
+The spirit form                 100       Gx-       ---                 no-attack, "ask spirit bless"->spirit armor (- lvl/2 ac, rounded up)

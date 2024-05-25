@@ -1,0 +1,24 @@
+# Miden'Nir (35): 5-30, Copper II  (Karandras: 5s3w3sw3s)
+#
+#              |
+#              X - o
+#              |   |
+#      o ----- o   o - o
+#      |       |   |   |
+#      o       o - o - o
+#      |       |   |
+#      o ----- o - o
+#      |       |
+# x <- o   x - o
+#      |   |   |
+#      | /-|---/
+#      | | |
+#      o-W-o
+#        |
+#      Ghenna
+#
+* Small, safe & low-level
+
+Miden'nir:               Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+The goblin                 4  7700 E-x---    GN    73-85      101-101   [lugroki]
+The wyvern                30 3000k E--x-x    --   752-760   12502-12505 [dragon]

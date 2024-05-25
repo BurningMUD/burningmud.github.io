@@ -1,0 +1,49 @@
+# Scubdu's Harpy Area (91): 20-40, Dylan  (Karandras: 10wn3wswswn12ws2w2sws3wnwn7u)
+#                                      ____________
+#                                     /            \
+#                                     |            |
+#                                     o<-o         v
+#   o ------- o --------- o          /   |\_____   /--------->o->o---o
+#   |         +\_______   |     o - o    |      \  |   o     /  /  / |
+#   |         |        \  |     __  |    |   o  |  o  /     /  /   \_/
+#  /          |  /-o-o  o |    /  \ |    |   |\-o-/  o--o--o  /
+# | ^         |  | | |   \|    |  | |    |   |  |            /
+# | |         |  o | | o  | o--o  o |    |\  v  \___________/  Witch
+# | o         v    | |/   |\|  |   \|    | \-o                 /
+# | | o o-o---o----/ o    | o--o    o    |  /       o---------o
+#  \|  \| |  /            o              |  |       |
+#   |   o o o             |              |  |       o
+#   |       |             |              |  v      /
+#   o ------|---o-------- o           o-Roc-o-----/--o
+#  /        |                         |  |       /   |
+# o ------- o                         o--o      o----o
+#                                        |           |
+#                                        o---o--o----/
+#                                         /     |  \
+#                                        / o    |   \ o--o--o
+#                                        |/|    |   |/|    /
+#                                        o-|----|---o |   / Olympus
+#                                          |    |  /  |  /  /
+#                                     X--->o<--/  o---|-o--o         o
+#                                    /     |          |    |         |
+#                                   o      o---o------o    o  Leader-o
+#                                  /                      /         /
+#                                                        M  Storm  /
+#                                                        |  Giant /
+#                                                        o      |/
+#                                                       /       o--o
+#                                                  o---o       /
+#                                                 /    | o----o
+#                                               RIP    |/
+#                                                      o
+#
+* Lots of aggies. Imp helps against some. With darkness you can avoid all.
+
+Scubdu's Harpy Area:        Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+The screaming, filthy harpy  20  400k E-x---    G    265-270    1008-1027  
+The ghostly air elemental    25 2125k N-xx--    G E  629-630    2009-2020  [elemental], hide
+The mysterious effreeti      27 2430k Exxx--    -    737-750    4011-4020  hide
+The gigantic roc (stares)    28 1120k G-x---    -    828-833   20016-20020 immune earth, vuln air
+The screaming harpy leader   28 2800k E--x--    G E  526-527    4018-4021
+The ugly, wicked witch       31 4960k Ex-x--    G E 1251-1256  30032-30034 
+The gigantic roc             50   20M G-x---    -   7481-8732   5014-5024  immune earth, vuln air

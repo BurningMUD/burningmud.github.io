@@ -1,0 +1,65 @@
+# Sewer (70-72, 300): 5-15, DikuMUD  (Karandras: 3s3wsed)
+#
+#           LEVEL 1                       LEVEL 2        rat    LEVEL 3
+#     o---o----o-->o->o-o-o               o->o---o        |  o <---o----o-o
+#     |   |    |      +   |             / |  |   |\  o<-o-o  |          |
+#   o o-o |    o--o+o o   o            /  |  |   v x    |    |   o-Red  |
+#   |   | |    |  + | |   |            |  o-RIP--o  \ o-o    o   +      |
+#   o-o o-|----o  o o o+o o            | /|      v   \|      | o-o+o----o-o-H2
+#   | | | |    |    | | | |            | |o-RIP--o    o      | | +      |   |
+#   o o-o |  o-o-o  v | o o-----o      | ||      v           o-o o-Blue o-Green
+#  /  |   | /    |  H+o | |     |      | |o-RIP--o   2       | |
+#  |  |   |o     |      | o     |      | |/      v  /      o-o o-o+o-o---o-o
+#  v  |   |      |      | |     |      | o--RIP--o-o       | | | |   |   | +
+#  5  | o-o---o--o  2   o o-----o      | |   |   |         o-o o-o o o 1 o o
+#     | |     |     |   | |    /  5-o  | o---o---o         |     | + |x  | +
+#   o-o-o   o<X---o o o o o   o     |  vx|   |             o     o-o o   o-o
+#  /  | |  /  |  /  | | | |  /   /  |  o |   |             |     |       |
+# 1   o-o-/---o-/---o-o-o-o o   1---o-/--3-4 |             o-o   o-o-----o
+#        /     /               x     o       |             | |   |
+#        |     |     o+o            /        o             o-o-o-o
+#        v     v       +       Underdark    /
+#        3     4       o-o                 /
+#                      | |                /
+#                      o-o               /
+#                      | |              /
+#                      o-o o o-o       /
+#                      +   | |        /
+#                      o-o-o-o  SEWER/MAZE
+#                          |        /
+#                          o       /
+#                          |      /
+#                          o     / o-o     o
+#                          |    /  |       |
+#                        o-o-o /   o-o-o-o-o
+#                        |    /            |
+#                        o---o------o------o
+#
+* A few rooms are very bright (including the mindflayer-area)
+* H & H2: Entrance from High Tower Bottom & Top
+* This area is actually several areas: Sewer level 1, Sewer lvl 2, Sewer
+* lvl 3 and SEWERMAZE (which includes the area with the demonic rat).
+
+Sewers:                   Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+The small spider            1   440 E-x---    G E   47-48      305-319
+The maggot                  3  3300 N-x---    -     73-77      332-360
+The slithering snake        4  5720 N-x---    G     89-89      344-368  immune poison, poison
+The small bat               4  5720 E-x---    -     88-90      347-357  sleeping
+The great sewer rat         5  8800 N-x---    G E  101-105     361-390
+Herald 'the mouse-killer' ettin
+                            6   22k G-x---    -    122-125     391-393
+The junior mindflayer       6   22k N-x---    -    121-123     395-416  flees
+The ugly wererat            6   22k E-x---    G    121-123     380-416
+The giant earth beetle      8   58k N-x---    -    161-163     442-447
+The senior mindflayer       8   75k N-x---    -    161-163     428-441
+Jones 'the cruncher' ettin 10  109k E-x---    -    204-205     453-471
+The gigantic rat           10  123k E-----    -    201-205     466-480
+The evil chr-eff'n         12  157k N-xx--    -    242-242     541-577  flees
+The horrifying mudmonster  12  157k E-x---    -    187-192     576-576  sitting
+The lemure                 13  185k E-x---    G    262-264     590-607
+The scaled basilisk        13  185k N-xx--    -    262-264     593-618
+The master mindflayer      14  248k N-xx--    GN   284-285     654-665
+The Green Dragon           21 2100k N--x-x    G    314-316       2-2    gas breath
+Clint, the blue dragon     23 3450k G--x-x    G    426-439       2-2    lightning breath
+The huge, demonic rat      25 1125k E--x-x    G    560-568       2-18   resist dark
+The red dragon             25 1375k E--x--    G    602-605    1378-1469 fire breath, can VAPE eq!(?)

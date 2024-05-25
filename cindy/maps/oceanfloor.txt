@@ -1,0 +1,102 @@
+# Nefertum's Ocean Floor (468): 40-90, Nefertum  (Elemental Canyon: us4dese2se2nwnw3nwne)
+* FIND OUT: Level on Oceanos' High Priestess (37-56)
+* FIND OUT: Can SC lvl 47 enter the God rooms? Or you need lvl 48?
+#
+#              o------o------o
+#              |             |
+#              |    Chief    |
+#              |      |      |
+#              |      o      |
+#              |      |      |
+#              o      o      o-o-o
+#      |       |      |      |   |
+#      o-X-o-o-o      o-o-o+bush |
+#      |                         |
+#                         RIP    o
+#                          |     |
+#        o----o---o        o     |
+#        |   /    |        |     |
+#        o Varuna o        o-o-o-o
+#        |        |            |
+#  Sedna o----o---o            o
+#    |        |                |
+#  o-o      shark   o----o---o o-o-o
+#  |          |     |        |    /
+#  a-o--a-o   o     o Ixchel-o   o
+#         |   |     |           /
+#         o   o o-o-o          o
+# Kanaloa |   | |             /
+#    |    o---o-o            o
+#  a-o        |    Home     /           o----o
+#  |          o    ^       o            |    |
+#  o          |   /       /    a-a-o  Aegir  |
+#  |     o----o--/---------o   |   |         o
+#  o-o   |      /       /  |   o   o--o--a   |
+#    |   |     *       o   |   |         |   o
+#    o-a-o    o<----* /    o-a-o   a-o-o o   |
+#    |   |    |      b     |   |   |   | |   |
+#    |   |    |            |   |   |   | |   |
+#  o-o   o----o------------o   o-o-o   o a-o-o
+#  |          |                        |
+#  o O-Wata-  o                 Olokun |
+#  | Tsu-Mi   |                    |   |
+#  |   |      o                    o---o
+#  o-o-o      |
+#         o-o-o
+#         |
+#         o-o-o-o-o
+#                 |
+#             o-o-o
+#             |
+#             | o-o-o
+#             o |/| |
+#             | o-o-o
+#             |x| | |
+#             o o-o-o
+#               | | |
+#               o-o-o
+#                 |
+#              Oceanos
+#              (altar)
+#
+* The whole underwater area is norecall, but you can summon people in.
+* Some rooms are very bright
+* bush: To get past it, have a friend open it while you keep trying to go west.
+*       Once it's been opened from the inside, it will stay open.
+* a: Aggressive mob in this room
+* Fishes are immune to water
+* God rooms have min level 0/47-0/48
+
+Ocean Floor:                           Lvl    Xp ASWIDMX # agg     Hp        Gold      Special
+A cannibal                               1       N-x--     -      1-1         1-1      +1 starthp
+Oceanos' High Priestess                 37       N-        ---                1-1      summons Oceanos on death
+A seahorse                              45   34M N--- -    -   2846-2881  12024-12027  immune water
+A starfish                              45   34M N--- -    -   2829-2862  12021-12026  immune water
+A bicolor angel                         50   42M N--- -    -   2852-2853  12020-12025  immune water
+A coral beauty                          50   42M N--- -    -   2838-2856  12022-12026  immune water
+A flame angel                           50   42M N-----    -   2856-2862  12022-12025  immune water
+A jewel moray                           50   60M N----     G E 2852-2874  12021-12029  immune water/blind
+An achilles tang                        50   42M N--- -    -   2862-2875  12019-12026  immune water
+An auriga butterfly                     50   42M N-----    -   2841-2859  12025-12028  immune water
+An emperor angel                        50   42M N--- -    -   2853-2856  12021-12025  immune water
+A blue spotted stingray                 55   69M N--x      G E~2970-~3854 12020-12028  immune water/blind
+A leopard shark                         55   69M N--x      GNE~3786-~3860 12020-12026  immune water/blind
+A cod                                   58  101M N--xx-1   -   4904-4950  19962-20074  immune water
+A mackerel                              58  101M N--xx-1   -   4893-4944  19987-20103  immune water
+A squid                                 58  116M N-xx -1   -   4926-4953  19985-20042  10-12 attacks
+The cannibal tribe chief                70  168M E--xx     G   8830-8859  26253-26253  [human]
+A great white shark                     85  595M N--x x    -   7722-7722      1-1      INFO, immune water
+Kanaloa, Tropical God of the Seas       95       Nx-x x    -             360860-361017 INFO, immune WEAPON, shrugger, bash, kick, whirlwind
+O-Wata-Tsu-Mi, Serpent God of the Seas 100       Nx-x x2   ---           361051-362038 INFO, [mythical?], resist fire?/ice?/unlife?/earth?/air?, shrugger, burst of life
+Sedna, Giant God of the Seas           100       Nx-x x2   ---           361338-362396 INFO, [mythical?], resist fire?/ice?/unlife?/earth?/air?, shrugger, burst of life
+Ixchel, Mayan God of the Seas          100       Nx-x x1   ---           360604-362627 INFO, [mythical?], resist fire?/ice?/unlife?/earth?/air?, shrugger, ice storm, burst of life
+Varuna, Beast God of the Seas          100       Nx-x x    ---           360432-361150 INFO, [mythical?], resist fire?/ice?/unlife?/earth?/air?, shrugger, burst of life, kick, 1-3 skills
+Aegir, Norse God of the Seas           100       Nx-x x2   ---           303118-305712 INFO, [mythical?], resist fire?/ice?/unlife?/earth?/air?, parry/dodge, shrugger, burst of life, triad of ice, 2-2 spells
+  +3 Gig. maul:  29 hits out of 33: 88%  (hr 12+34+3=49)
+  +3 Gig. maul:  26 hits out of 36: 72%  (hr 12+34+3=49)
+                                               Obli Anni Vapo Pulv Atom
+  Gig.maul:CRUSH  LARGE GAS Slay Myth  avg 26             20   15   20
+Olokun, Desert God of the Seas         100       Nx-x x1   ---           360943-362662 INFO, [mythical?], resist fire?/ice?/unlife?/earth?/air?, shrugger, water bolt, trueheal, 1-3 spells
+Oceanos, Titan of the Seas             100       Nx-x x4   -  ~150k       94922-99130  INFO, [mythical], immune unlife/dark/ice/water, parry/dodge, summoned, shrugger, trueheal, 0-2 spells, special-hit-on-everyone, special-cloudkill-on-death, 11-11 attacks, 400/70 dam per attack, negate sanc 13/41 times (32%), VERY poor ac
+  +3 Gig. maul:  75 hits out of 81: 93%  (hr 12+34+3=49)
+  +3 Gig. maul:  31 hits out of 32: 97%  (hr 12+34+3=49)

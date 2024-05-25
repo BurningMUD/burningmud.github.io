@@ -1,0 +1,62 @@
+# The Abandoned Cathedral (237): 10-30, CAW  (New Thalos: 2en2e2n2w2n)
+#
+#               o
+#               +
+#               o     o---- Isaac ----o
+#               +    /               /
+#             Esme. / o-o+o         /
+#               |  /    |          /
+#               o /   o-o-o       /
+#               |/      |        /
+#               /     o-o-o     /
+#              /|       |      /
+#             o---------o     o
+#            /  |       |    /
+#           / o+o+o   o+o-o /
+#          /    |          /
+#         /     o         /
+#        /      |        /
+#       o - o - o - o - o
+#      /        |      /
+#     o ---- o -|---- o
+#     |      |  o     |
+#     o ---- o -|---- o
+#     |         +     |
+#     o - o     X     o
+#         |     |
+#       Erich
+#         +     
+#         o - o - Wyrenthoth
+#             |
+#             o - o
+#                 |
+#         o + o - o
+#             |
+#             o
+#            /
+#           o
+#          /
+#         o
+#        /
+#       o
+#      /
+#    RIP
+#
+* Only Erich is aggressive. Mostly undeads here.
+
+Abandoned Cathedral:   Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+The human skeleton       6   24k Gx-x--    --   109-136     101-110   [skeleton]
+The zombie               7   35k Gx x--    --   132-161       0-0     [undead]
+The ghoul (attacking)    8   60k Gx-x--    --   162-163       0-0     [undead]
+The ghoul (plodding)     8   60k Gx-x--    --   162-163       0-0     [undead]
+The shadow               8   60k Ex-x--    --   147-166       0-0     [insubstantial]
+The wight                8   60k Ex-x--    --   150-180       0-0     [undead]
+The wraith               8   60k Ex x--    --   151-174       0-0     [insubstantial]
+The ghost of the Abbott 12  168k Gx x--    --   234-253       0-0     [insubstantial]
+The man                 13  243k Ex-x--    --   261-269    1264-1265  [human], flees
+The banshee             15  345k Gx x--    --   280-306       0-0     [undead]
+Esmerelda the priestess 17  561k Ex-x--    --   358-363    2010-2015  [human], flees
+Erich                   19  805k Ex-x--    GNE  427-443    7010-7011  [vampire]
+The giant zombie        25 1900k Gx x--    --   576-603       0-0     [undead]
+Isaac                   25 1900k G--x--    --   601-613    1004-1011  [human], hide
+Wyrenthoth              27 2822k Ex-x--    --   665-665   10005-10016 [dragon], flees

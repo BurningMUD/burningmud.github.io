@@ -1,0 +1,2005 @@
+; well.tf
+
+; Unedited copy of my own file. Don't expect things here to work for you
+; without some editing.
+
+/purge welltrig*
+/purge fragcount
+/purge wellfrags.calc
+/purge fragstate
+/purge spellbotautobutch
+/purge spellbotautobutchSkip
+/purge wellmoneycheck
+/purge fixdata
+/purge wellmoneyunknown
+/unaliasSilent checklevel
+/unaliasSilent wellevelcheckreport
+/unaliasSilent fragshow
+/unaliasSilent fragchange
+/unaliasSilent ab
+/unaliasSilent autobutch
+/unaliasSilent butch
+/unaliasSilent butcher
+/unaliasSilent welldown
+/unaliasSilent fc
+/unaliasSilent fs
+/unaliasSilent slipgetback
+
+
+/def -F -msimple -t"^As the swirling essaences dissipate, you find yourself materialising$" welltrigEnterSusseed
+/def -F -msimple -t"^You make a bold attempt to dive through the swirling essaences, but find$" welltrigEnterFailNotFound = \
+    /if (pg) \
+      gt Failed to enter the Milo'rai oasis (well entrance hasn't been found)." %; \
+      /purge followerTrig23%; \
+    /else \
+      /tfpromptshow Well entrance not found!%; \
+    /endif
+/def -F -msimple -t"^Your body can't sustain further travel through the essaences right now\.$" welltrigEnterFailTooSoon = \
+    /tfpromptshow /find As the swirling essaences dissipate%; \
+    /tfpromptshow Trying to reenter the well too soon. Approx 6 mins wait time. To see last time you entered, do a:
+
+;  ===========  WELL LEVEL  start  ===========
+
+; This is how the where-checks are done:
+;  known  do-where   found-on
+;  1-20: elemental   ( 9-20)  * (earth)
+
+;  1-8 : darkenbeast ( 4-8 )  *
+;  9-20: horgar      (14-20)  *
+
+;  1-3 : wolverine   ( 2-3 )  *
+;  4-8 : medusa      ( 6-8 )  * (normal & greater)
+;  9-13: beholder    (11-13)  * (normal, gauth)
+; 14-20: balrog      (18-20)  *
+
+;  2-3 : ?
+;  4-5 : toad        (    5)  * (fire)
+;  6-8 : hound       (    8)  *
+;  9-10: toad        (    9)
+; 11-13: hound       (12-13)  *
+; 14-17: terrorite   (16-17)  *
+; 18-20: manticore   (   18)  *
+
+;  6-7 : ooze        (    6)  * (crystal)
+; 12-13: ice         (   12)  * (elemental)
+; 14-15: ?
+; 16-17: thonis      (   17)
+; 19-20: god         (   20)
+
+/set checkForWellMob none
+/alias checklevel \
+    /if ({*} =~ '') \
+      /set checklevelshow tfpromptshow%; \
+    /else \
+      /set checklevelshow %*%; \
+    /endif%; \
+    /set checkForWellMob elemental%; \
+    whe elemental%; \
+    /def -F -ah -msimple -t"No-one around by that name." wellevelcheckNone = \
+      /if (checkForWellMob =~ 'elemental') \
+        /set checkForWellMob darkenbeast%%; \
+        whe darkenbeast%%; \
+      /elseif (checkForWellMob =~ 'darkenbeast') \
+        /set checkForWellMob wolverine%%; \
+        whe wolverine%%; \
+      /elseif (checkForWellMob =~ 'wolverine') \
+        welllevel 1%%; \
+        wellevelcheckreport Lvl 1 (No elemental, no darkenbeast, no wolverine)%%; \
+      /elseif (checkForWellMob =~ 'medusa') \
+        /set checkForWellMob toad%%; \
+        whe toad%%; \
+      /elseif (checkForWellMob =~ 'toad') \
+        welllevel 4%%; \
+        wellevelcheckreport Lvl 4 (No elemental, no toad but darkenbeast and medusa)%%; \
+      /elseif (checkForWellMob =~ 'hound') \
+        /set checkForWellMob ooze%%; \
+        whe ooze%%; \
+      /elseif (checkForWellMob =~ 'ooze') \
+        welllevel 7%%; \
+        wellevelcheckreport Lvl 7 (No elemental, no hell hound, no ooze but darkenbeast and medusa)%%; \
+      /elseif (checkForWellMob =~ 'horgar') \
+        /set checkForWellMob beholder%%; \
+        whe beholder%%; \
+      /elseif (checkForWellMob =~ 'beholder') \
+        /set checkForWellMob toad2%%; \
+        whe toad%%; \
+      /elseif (checkForWellMob =~ 'toad2') \
+        welllevel 10%%; \
+        wellevelcheckreport Lvl 10 (No horgar, no beholder, no toad but elemental)%%; \
+      /elseif (checkForWellMob =~ 'hound2') \
+        welllevel 13%%; \
+        wellevelcheckreport Lvl 13 (No horgar, no hell hound but elemental & beholder)%%; \
+      /elseif (checkForWellMob =~ 'balrog') \
+        /set checkForWellMob terrorite%%; \
+        whe terrorite%%; \
+      /elseif (checkForWellMob =~ 'terrorite') \
+        /if (welllevel < 14) \
+          welllevel 14%%; \
+        /elseif (welllevel > 15) \
+          welllevel 15%%; \
+        /endif%%; \
+        wellevelcheckreport Lvl 14-15 (No balrog, no terrorite but horgar and elemental)%%; \
+      /elseif (checkForWellMob =~ 'thonis') \
+        welllevel 16%%; \
+        wellevelcheckreport Lvl 16 (No balrog, no thonis but horgar and terrorite)%%; \
+      /elseif (checkForWellMob =~ 'manticore') \
+        /set checkForWellMob god%%; \
+        whe god%%; \
+      /elseif (checkForWellMob =~ 'god') \
+        welllevel 19%%; \
+        wellevelcheckreport Lvl 19 (No manticore, no Elvis but elemental, horgar & balrog)%%; \
+      /elseif (checkForWellMob =~ 'ice') \
+        welllevel 11%%; \
+        wellevelcheckreport Lvl 11 (No horgar, no ice elemental but elemental, beholder and Hell Hound)%%; \
+      /endif%; \
+    /def -F -ah -t"The giant wolverine       - *" wellevelcheckWolverine = \
+      /if (welllevel < 2) \
+        welllevel 2%%; \
+      /endif%%; \
+      /if (welllevel > 3) \
+        welllevel 3%%; \
+      /endif%%; \
+      wellevelcheckreport Lvl 2-3 (No elemental, no darkenbeast but wolverine)%; \
+    /def -F -ah -t"The darkenbeast           - *" wellevelcheckDarkenbeast = \
+      /set checkForWellMob medusa%%; \
+      whe medusa%; \
+    /def -F -ah -t"The *medusa      * - *" wellevelcheckMedusa = \
+      /set checkForWellMob hound%%; \
+      whe hound%; \
+    /def -F -ah -t"The hell hound            - *" wellevelcheckHound = \
+      /if (checkForWellMob =~ 'hound') \
+        welllevel 8%%; \
+        wellevelcheckreport Lvl 8 (No elemental but hell hound, medusa & darkenbeast)%%; \
+      /else \
+        /set checkForWellMob ice%%; \
+        whe ice%%; \
+      /endif%; \
+    /def -F -ah -t"The * ooze    * - *" wellevelcheckOoze = \
+      welllevel 6%%; \
+      wellevelcheckreport Lvl 6 (No elemental, no hound but darkenbeast, medusa and ooze)%; \
+    /def -F -ah -t"The * elemental   * - *" wellevelcheckElemental = \
+      /set checkForWellMob horgar%%; \
+      whe horgar%; \
+    /def -F -ah -t"The * toad     * - *" wellevelcheckToad = \
+      /if (checkForWellMob =~ 'toad') \
+        welllevel 5%%; \
+        wellevelcheckreport Lvl 5 (No elemental, no medusa but darkenbeast and toad)%%; \
+      /else \
+        welllevel 9%%; \
+        wellevelcheckreport Lvl 9 (No beholder, no horgar but elemental & toad)%%; \
+      /endif%; \
+    /def -F -ah -mregexp -t"(t|T)(he gauth                 -|he beholder              -) *" wellevelcheckBeholder = \
+      /set checkForWellMob hound2%%; \
+      whe hound%; \
+    /def -F -ah -t"The Horgar          * - *" wellevelcheckHorgar = \
+      /set checkForWellMob balrog%%; \
+      whe balrog%; \
+    /def -F -ah -t"The Ice elemental   * - *" wellevelcheckIce = \
+      /if (checkForWellMob =~ 'ice') \
+        welllevel 12%%; \
+        wellevelcheckreport Lvl 12 (No horgar, but elemental, ice elemental, beholder and Hell Hound)%%; \
+      /endif%; \
+    /def -F -ah -t"the Terrorite Demon       - *" wellevelcheckTerrorite = \
+      /set checkForWellMob thonis%%; \
+      whe thonis%; \
+    /def -F -ah -t"The Thonis            * - *" wellevelcheckThonis = \
+      welllevel 17%%; \
+      wellevelcheckreport Lvl 17 (No balrog but elemental, horgar, terrorite and thonis)%; \
+    /def -F -ah -t"The Balrog            * - *" wellevelcheckBalrog = \
+      /set checkForWellMob manticore%%; \
+      whe manticore%; \
+    /def -F -ah -t"The Manticore         * - *" wellevelcheckManticore = \
+      welllevel 18%%; \
+      wellevelcheckreport Lvl 18 (Elemental, horgar, balrog and manticore)%; \
+    /def -F -ah -t"Morgoth the Valar God     - *" wellevelcheckGod = \
+      welllevel 20%%; \
+      wellevelcheckreport Lvl 20 (No manticore but elemental, horgar, balrog and Elvis)
+
+/alias wellevelcheckreport \
+    %{checklevelshow} %*%; \
+    /set checkForWellMob none%; \
+    /purge wellevelcheck*
+
+;  ===========  WELL LEVEL   end   ===========
+
+
+;  ===========  FRAG SHOW   start   ===========
+/set earthfragstart 0
+/set waterfragstart 0
+/set airfragstart 0
+/set firefragstart 0
+
+
+/def -mregexp -t'^[ ]+(Earth|Air)\: ([ ]+)([0-9]+)\/([0-9]+)  ([ ]+)\(...\%\) .....\: ([ ]+)([0-9]+)\/([0-9]+) ([ ]+)\(' fragcount = \
+    /if ({P1} =~ 'Earth') \
+      /set earthfrag=%{P3}%;/set waterfrag=%{P7}%;\
+      /wellfrags.calc earthp %{P3} %{P4}%;\
+      /wellfrags.calc waterp %{P7} %{P8}%;\
+      /substitute -p @{Cgreen}    Earth@{Cwhite}:%{P2}%{earthfrag}/%{P4}%{P5}@{Cgreen}@{Cyellow}(%{earthp}%%)@{Cgreen}@{Cblue}   Water@{Cwhite}:%{P6}%{waterfrag}/%{P8}%{P9}@{Cgreen}@{Cyellow}(%{waterp}%%)@{Cgreen}%;\
+    /elseif ({P1} =/ 'Air') \
+      /set airfrag=%{P3}%;/set firefrag=%{P7}%;\
+      /wellfrags.calc airp %{P3} %{P4}%;\
+      /wellfrags.calc firep %{P7} %{P8}%;\
+      /substitute -p @{Ccyan}      Air@{Cwhite}:%{P2}%{airfrag}/%{P4}%{P5}@{Cgreen}@{Cyellow}(%{airp}%%)@{Cgreen}@{Cred}    Fire@{Cwhite}:%{P6}%{firefrag}/%{P8}%{P9}@{Cgreen}@{Cyellow}(%{firep}%%)@{Cgreen}%;\
+    /endif%; \
+    /if ((!earthfragstart | !waterfragstart | !airfragstart | !firefragstart) & {P1} =~ 'Air') \
+      /set earthfragstart %{earthp}%; \
+      /set waterfragstart %{waterp}%; \
+      /set airfragstart %{airp}%; \
+      /set firefragstart %{firep}%; \
+    /endif
+
+/def wellfrags.calc = \
+    /let Para1=%{2}%; \
+    /let Para1=$[{Para1} * 100]%; \
+    /let Para2=%{3}.%; \
+    /if (Para1 / Para2 > 100) \
+      /eval /set %{1}=$[substr(Para1 / Para2,0,5)]%; \
+    /elseif (Para1 / Para2 > 10) \
+      /eval /set %{1}= $[substr(Para1 / Para2,0,4)]%; \
+    /else \
+      /eval /set %{1}=  $[substr(Para1 / Para2,0,3)]%; \
+    /endif
+
+/alias fragshow fs %{*}
+/alias fs /fragstate %{*}
+/def fragstate = \
+    /if ({1}=/'') \
+      /echo -ah -p @{Cwhite}***************************  @{Cyellow}Frag Log @{Cwhite} **************************%;\
+      /echo -ah -p @{Cwhite}***** \
+                   @{Cgreen}Earth@{Cwhite}:%{earthp}\%  \
+                   @{Cblue}Water@{Cwhite}:%{waterp}\%  \
+                   @{Ccyan}Air@{Cwhite}:%{airp}\%  \
+                   @{Cred}Fire@{Cwhite}:%{firep}\%  \
+                   @{Cwhite} *****%;\
+    /else \
+      /send %{*} &+gEarth&+W:%{earthp}&+w\%  \
+                 &+bWater&+W:%{waterp}&+w\%  \
+                 &+cAir&+W:%{airp}&+w\%  \
+                 &+rFire&+W:%{firep}&+w\%%;  \
+    /endif
+
+/alias fc fragchange %{*}
+/alias fragchange \
+    /if ({*} =~ '') \
+      /echo -ah -p @{Cwhite}***********************  @{Cyellow}Frag Change @{Cwhite} ***********************%;\
+      /echo -ah -p @{Cwhite}***** \
+                   @{Cgreen}Earth@{Cwhite}: $[substr(earthp-earthfragstart+0.01,0,3)]\%  \
+                   @{Cblue}Water@{Cwhite}: $[substr(waterp-waterfragstart+0.01,0,3)]\%  \
+                   @{Ccyan}Air@{Cwhite}: $[substr(airp-airfragstart+0.01,0,3)]\%  \
+                   @{Cred}Fire@{Cwhite}: $[substr(firep-firefragstart+0.01,0,3)]\%  \
+                   @{Cwhite} *****%;\
+    /else \
+      /send %{*} Frags gained: \
+            &+gEarth&+W: $[substr(earthp-earthfragstart+0.01,0,3)]\&+w\%  \
+            &+bWater&+W: $[substr(waterp-waterfragstart+0.01,0,3)]&+w\%  \
+            &+cAir&+W: $[substr(airp-airfragstart+0.01,0,3)]&+w\%  \
+            &+rFire&+W: $[substr(firep-firefragstart+0.01,0,3)]&+w\%%;  \
+    /endif
+
+;  ===========  FRAG SHOW   end   ===========
+
+
+; ====================  Butch scripts start ========================
+
+/def -p9 -mregexp -t"^([A-z]+) (asks|tells) you '[a]?(uto|)butch(er|) on or off ..." spellbotautobutchSkip
+/def -F -mregexp -t"^([A-z]+) (asks|tells) you '[a]?(uto|)butch(er|)[ ]?(.*)'$" spellbotautobutch = \
+    /if ({P5} =~ 'off' | ({P5} =~ '' & autobutch)) \
+      autobutch 0%; \
+    /elseif ({P5} =~ 'on' | ({P5} =~ '' & !autobutch)) \
+      autobutch 1%; \
+    /elseif (autobutch) \
+      tell %P1 autobutch on or off (currently on)%; \
+    /else \
+      tell %P1 autobutch on or off (currently off)%; \
+    /endif
+
+/alias ab autobutch %*
+/alias autobutch \
+    /if ({*} =~ '1' | {*} =~ 'on') \
+      /tfshow Ok. AutoButch mode is ON.%; \
+      /set autobutch 1%; \
+      /purge butchscript*%; \
+      /if (pg) \
+        /if (owner !~ 'Valkyria69') \
+          gtf emote will now autobutch and autoloot.%; \
+        /endif%; \
+        /def -F -t"{*} just dropped Orb of *" butchscript1 = \
+          get orb%%; \
+          tell %%{groupleader} tell me "give orb <name>" (hopefully works - new, untested trig)%; \
+      /endif%; \
+      /def -F -mregexp -t"^([A-z]+) tells you 'give orb ([A-z]+)'" butchscriptGiveOrb = \
+        /if ({P1} =~ {groupleader}) \
+          give orb %%{P2}%%; \
+        /endif%; \
+      /def -F -p999 -t"You butcher Corpse of *" butchscript2 = \
+        get all %%{butchnr}.corpse%%; \
+        /set butchnr=$$[{butchnr} + 1]%%; \
+        butcher %%{butchnr}.corpse%; \
+      /def -F -p999 -t"You carve the heart out of Corpse of *" butchscript3 = \
+        get all %%{butchnr}.corpse%%; \
+        /set butchnr=$$[{butchnr} + 1]%%; \
+        butcher %%{butchnr}.corpse%; \
+      /def -F -msimple -t"Sorry, already butchered." butchscript4 = \
+        get all %%{butchnr}.corpse%%; \
+        /set butchnr=$$[{butchnr} + 1]%%; \
+        butcher %%{butchnr}.corpse%; \
+      /def -F -msimple -t"Only an animist can butcher this corpse." butchscript5 = \
+        /set butchnr=$$[{butchnr} + 1]%%; \
+        butcher %%{butchnr}.corpse%; \
+      /def -F -msimple -t"Butcher a friend, what kind of person are you???" butchscript6 = \
+        /set butchnr=$$[{butchnr} + 1]%%; \
+        butcher %%{butchnr}.corpse%; \
+      /def -F -ag -t"Sorry, no {*} here to butcher\." butchscript7 = \
+        spellup bot%; \
+      /def -mregexp -p999 -t"^You get .* coin[s]? from Corpse of [^ ]+ .*\\.$$" butchscript8 = \
+        donothing%; \
+      /def -F -mregexp -t"^You don't have a ([0-9]+)\\.corpse\\.$$" butchscript9 = \
+        /tfshow Failed to loot corpse nr %%P1!%%; \
+        /if ({P1} == 1) \
+          /tfshow I should really warn about this one!!!%%; \
+          /tfshow I should really warn about this one!!!%%; \
+          /tfshow I should really warn about this one!!!%%; \
+          /tfshow gt I failed to check for loot on that last corpse, Boss!%%; \
+        /endif%; \
+      /def -F -mregexp -p888 -t"^You get (.*) from Corpse of ([^ ]+) .*\\.$$" butchscript10 = \
+        /if (pg & autobutch) \
+          /if ({P1} =~ 'a compass') \
+            /if (owner =~ "CindyNotanymore") \
+              pb compass%%; \
+            /else \
+              drop compass%%; \
+            /endif%%; \
+          /elseif ({P1} =~ 'a magical flask') \
+            drop flask%%; \
+          /elseif ({P1} =~ 'Soul Crystal') \
+            /if (owner =~ "CindyNotanymore") \
+              pb crystal%%; \
+            /else \
+              drop crystal%%; \
+            /endif%%; \
+          /else \
+            /tfshow LOOTED %%P1!!! Giving to %%{groupleader}.%%; \
+            trigonprompt give 1."" %%{groupleader}%%; \
+          /endif%%; \
+        /endif%; \
+      /def -F -t"You give a silver potion to {*}" butchscript11 = \
+        /if (autobutch) \
+          /tfshow Autobutch script buggy???%%; \
+        /endif%%; \
+        gb %{recallitem}%; \
+      /def -F -mregexp -t"^You give (Soul Crystal|a magical flask|a compass) to ([^\\.])\\." butchscript12 = \
+        /if (autobutch & {P2} =~ {groupleader}) \
+          give 1."" %%{groupleader}%%; \
+        /endif%; \
+    /elseif ({*} =~ '0' | {*} =~ 'off') \
+      /tfshow Ok. AutoButch mode is OFF.%; \
+      /if (pg) \
+        /if (owner !~ 'Valkyria69') \
+          gtf emote will no longer autobutch or autoloot.%; \
+        /endif%; \
+      /endif%; \
+      /set autobutch 0%; \
+      /purge butchscript*%; \
+    /else \
+      /tfshow autobutch 0 or 1?%; \
+    /endif
+
+/alias butch \
+    /if ({*} =~ 'c' | {*} =~ 'co' | {*} =~ 'cor' | {*} =~ 'corp' | {*} =~ 'corps' | {*} =~ 'corpse') \
+      /set butchnr 1%; \
+    /else \
+      /set butchnr=$[replace(".corpse", "", {*})]%; \
+      /set butchnr=$[replace(".corps", "", {butchnr})]%; \
+      /set butchnr=$[replace(".corp", "", {butchnr})]%; \
+      /set butchnr=$[replace(".cor", "", {butchnr})]%; \
+      /set butchnr=$[replace(".co", "", {butchnr})]%; \
+      /set butchnr=$[replace(".c", "", {butchnr})]%; \
+    /endif%; \
+    butcher %*
+
+/alias butcher \
+    /if (position =~ 'sleep') \
+      wake%; \
+      butche %*%; \
+      sleep%; \
+    /elseif (position =~ 'rest') \
+      stand%; \
+      butche %*%; \
+      res%; \
+    /elseif (position =~ 'stand') \
+      butche %*%; \
+    /else \
+      /tfshow Bad position: {position}%; \
+      butche %*%; \
+    /endif
+
+; ====================  Butch scripts end ========================
+
+
+; ====================  Butch substitutes start ========================
+
+/set saveFragCountX 0
+/set fragSumAddTotal 0
+/def -F -ag -mregexp -t"^[^ ]+ carefully shatter[s]? a fragment into ([0-9]+) equal parts, and (passes you one|share them among your group)\.$" welltrig29 = \
+    save%; \
+    /set fragparts %{P1}%; \
+    /def -F -n1 -mregexp -t"^The fragment dissolves into ([0-9]+) drops of (earth|water|air|fire) essence, which fuses with your spirit." welltrig30 = \
+      /set saveFragCountX $$[saveFragCountX + 1]%%; \
+      /let fragSumAdd=%%{P1}%%; \
+      /set fragSumAddTotal $$[fragSumAddTotal + fragSumAdd]%%; \
+      /if (saveFragCountX > 10) \
+        /set saveFragCountX 0%%; \
+        /saveFragCount%%; \
+      /endif%%; \
+      /set fragtotalmin=$$[{fragparts} * {P1}]%%; \
+      /set fragtotalmax=$$[{fragparts} * ({P1} + 1) - 1]%%; \
+      /if ({P2} =~ 'earth') \
+        /set fragcolor green%%; \
+      /elseif ({P2} =~ 'water') \
+        /set fragcolor blue%%; \
+      /elseif ({P2} =~ 'air') \
+        /set fragcolor cyan%%; \
+      /else \
+        /set fragcolor red%%; \
+      /endif%%; \
+      /substitute -p %%{butcher} @{BCmagenta}BUTCHERS@{n} %%{butchmob}: %%{fragparts} * %%{P1} @{BC%%{fragcolor}}$$[toupper({P2})]@{n} (%%{fragtotalmin}-%%{fragtotalmax})%%; \
+      /if (owner =~ "Cindy") \
+        /if (welllevel < 1) \
+          setarea Well The Well%%; \
+        /else \
+          /if (welllevel < 10) \
+            /let lfname=~/txt/burning/logs/well_0%%{welllevel}.log%%; \
+          /else \
+            /let lfname=~/txt/burning/logs/well_%%{welllevel}.log%%; \
+          /endif%%; \
+          /let lftext=BUTCHERS %%{butchmob}: %%{fragparts} * %%{P1} $$[toupper({P2})] (%%{fragtotalmin}-%%{fragtotalmax})%%; \
+          /test fwrite("%%{lfname}", "%%{lftext}")%%; \
+        /endif%%; \
+      /endif
+
+/def -p15 -ag -mregexp -t"^([^ ]+) carve(s|) the heart out of Corpse of (.*) and find(s|) a fragment of elemental (Earth|Water|Air|Fire)\.$" welltrig31 = \
+    /set butcher %{P1}%; \
+    /set butchmob %{P3}
+
+/def -F -mregexp -t"^([^ ]+) carves the heart out of Corpse of (.*)\.$" welltrig33 = \
+    /let lftext=NO-FRAG: %{P2}%; \
+    /substitute -p %{P1} @{BCmagenta}BUTCHERS@{n} %{P2}: @{BCyellow}---@{n}%; \
+    /if (owner =~ "Cindy") \
+      /if (welllevel < 10) \
+        /let lfname=~/txt/burning/logs/well_0%{welllevel}.log%; \
+      /else \
+        /let lfname=~/txt/burning/logs/well_%{welllevel}.log%; \
+      /endif%; \
+      /test fwrite("%{lfname}", "%{lftext}")%; \
+    /endif
+
+/def -F -mregexp -t"^You butcher Corpse of (.*), but sadly find no elemental fragment.$" welltrig34 = \
+    /let lftext=NO-FRAG: %{P2}%; \
+    /substitute -p You @{BCmagenta}BUTCHERS@{n} %{P1}: @{BCyellow}---@{n}%; \
+    /if (owner =~ "Cindy") \
+      /if (welllevel < 10) \
+        /let lfname=~/txt/burning/logs/well_0%{welllevel}.log%; \
+      /else \
+        /let lfname=~/txt/burning/logs/well_%{welllevel}.log%; \
+      /endif%; \
+      /test fwrite("%{lfname}", "%{lftext}")%; \
+    /endif
+
+; ====================  Butch substitutes  end  ========================
+
+
+; ====================  Money check start ========================
+
+/def wellmoneycheck = \
+    /let money=%{1}%; \
+    /set moneyMob=$[tolower({-1})]%; \
+;    /set moneyMob=%{-1}%; \
+    /if (moneyMob =~ 'the crystal ooze') \
+      /if (money == 20480) \
+        welllevel 2%; \
+      /elseif (money == 40960) \
+        welllevel 3%; \
+      /elseif (money == 61440) \
+        welllevel 4%; \
+      /elseif (money == 81920) \
+        welllevel 5%; \
+      /elseif (money == 102400) \
+        welllevel 6%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the gas spore') \
+      /if (money == 20480) \
+        welllevel 2%; \
+      /elseif (money == 40960) \
+        welllevel 3%; \
+      /elseif (money == 61440) \
+        welllevel 4%; \
+      /elseif (money == 81920) \
+        welllevel 5%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the sandling') \
+      /if (money == 20480) \
+        welllevel 2%; \
+      /elseif (money == 40960) \
+        welllevel 3%; \
+      /elseif (money == 61440) \
+        welllevel 4%; \
+      /elseif (money == 81920) \
+        welllevel 5%; \
+      /elseif (money == 102400) \
+        welllevel 6%; \
+      /elseif (money == 122880) \
+        welllevel 7%; \
+      /elseif (money == 143360) \
+        welllevel 8%; \
+      /elseif (money == 163840) \
+        welllevel 9%; \
+      /elseif (money == 184320) \
+        welllevel 10%; \
+      /elseif (money == 204800) \
+        welllevel 11%; \
+      /elseif (money == 225280) \
+        welllevel 12%; \
+      /elseif (money == 245760) \
+        welllevel 13%; \
+      /elseif (money == 266240) \
+        welllevel 14%; \
+      /elseif (money == 286720) \
+        welllevel 15%; \
+      /elseif (money == 307200) \
+        welllevel 16%; \
+      /elseif (money == 327680) \
+        welllevel 17%; \
+      /elseif (money == 348160) \
+        welllevel 18%; \
+      /elseif (money == 368640) \
+        welllevel 19%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the strider') \
+      /if (money == 20480) \
+        welllevel 2%; \
+      /elseif (money == 40960) \
+        welllevel 3%; \
+      /elseif (money == 61440) \
+        welllevel 4%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the taer') \
+      /if (money == 20480) \
+        welllevel 2%; \
+      /elseif (money == 40960) \
+        welllevel 3%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the ascomoid') \
+      /if (money == 20992) \
+        welllevel 2%; \
+      /elseif (money == 41984) \
+        welllevel 3%; \
+      /elseif (money == 62976) \
+        welllevel 4%; \
+      /elseif (money == 83968) \
+        welllevel 5%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the violet fungus') \
+      /if (money == 21504) \
+        welllevel 2%; \
+      /elseif (money == 43008) \
+        welllevel 3%; \
+      /elseif (money == 64512) \
+        welllevel 4%; \
+      /elseif (money == 86016) \
+        welllevel 5%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the grey ooze') \
+      /if (money == 22016) \
+        welllevel 2%; \
+      /elseif (money == 44032) \
+        welllevel 3%; \
+      /elseif (money == 66048) \
+        welllevel 4%; \
+      /elseif (money == 88064) \
+        welllevel 5%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the flail snail') \
+      /if (money == 22528) \
+        welllevel 2%; \
+      /elseif (money == 45056) \
+        welllevel 3%; \
+      /elseif (money == 67584) \
+        welllevel 4%; \
+      /elseif (money == 90112) \
+        welllevel 5%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the doppleganger') \
+      /if (money == 23040) \
+        welllevel 2%; \
+      /elseif (money == 46080) \
+        welllevel 3%; \
+      /elseif (money == 69120) \
+        welllevel 4%; \
+      /elseif (money == 92160) \
+        welllevel 5%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the giant wolverine') \
+      /if (money == 23040) \
+        welllevel 2%; \
+      /elseif (money == 46080) \
+        welllevel 3%; \
+      /elseif (money == 69120) \
+        welllevel 4%; \
+      /elseif (money == 92160) \
+        welllevel 5%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the phycomid') \
+      /if (money == 92160) \
+        welllevel 5%; \
+      /elseif (money == 115200) \
+        welllevel 6%; \
+      /elseif (money == 138240) \
+        welllevel 7%; \
+      /elseif (money == 161280) \
+        welllevel 8%; \
+      /elseif (money == 184320) \
+        welllevel 9%; \
+      /elseif (money == 207360) \
+        welllevel 10%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the brown mold') \
+      /if (money == 23552) \
+        welllevel 2%; \
+      /elseif (money == 47104) \
+        welllevel 3%; \
+      /elseif (money == 70656) \
+        welllevel 4%; \
+      /elseif (money == 94208) \
+        welllevel 5%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the mind flayer') \
+      /if (money == 24064) \
+        welllevel 2%; \
+      /elseif (money == 48128) \
+        welllevel 3%; \
+      /elseif (money == 72192) \
+        welllevel 4%; \
+      /elseif (money == 96256) \
+        welllevel 5%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the mist wolf') \
+      /if (money == 76800) \
+        welllevel 4%; \
+      /elseif (money == 102400) \
+        welllevel 5%; \
+      /elseif (money == 128000) \
+        welllevel 6%; \
+      /elseif (money == 153600) \
+        welllevel 7%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the vampiric mist') \
+      /if (money == 24576) \
+        welllevel 2%; \
+      /elseif (money == 49152) \
+        welllevel 3%; \
+      /elseif (money == 73728) \
+        welllevel 4%; \
+      /elseif (money == 98304) \
+        welllevel 5%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the living web') \
+      /if (money == 25088) \
+        welllevel 2%; \
+      /elseif (money == 50176) \
+        welllevel 3%; \
+      /elseif (money == 75264) \
+        welllevel 4%; \
+      /elseif (money == 100352) \
+        welllevel 5%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the fire toad') \
+      /if (money == 102400) \
+        welllevel 5%; \
+      /elseif (money == 128000) \
+        welllevel 6%; \
+      /elseif (money == 153600) \
+        welllevel 7%; \
+      /elseif (money == 179200) \
+        welllevel 8%; \
+      /elseif (money == 204800) \
+        welllevel 9%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the roper') \
+      /if (money == 25600) \
+        welllevel 2%; \
+      /elseif (money == 51200) \
+        welllevel 3%; \
+      /elseif (money == 76800) \
+        welllevel 4%; \
+      /elseif (money == 102400) \
+        welllevel 5%; \
+      /elseif (money == 128000) \
+        welllevel 6%; \
+      /elseif (money == 153600) \
+        welllevel 7%; \
+      /elseif (money == 179200) \
+        welllevel 8%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the elder mind flayer') \
+      /if (money == 26624) \
+        welllevel 2%; \
+      /elseif (money == 53248) \
+        welllevel 3%; \
+      /elseif (money == 79872) \
+        welllevel 4%; \
+      /elseif (money == 106496) \
+        welllevel 5%; \
+      /elseif (money == 133120) \
+        welllevel 6%; \
+      /elseif (money == 159744) \
+        welllevel 7%; \
+      /elseif (money == 186368) \
+        welllevel 8%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the cloaker') \
+      /if (money == 27136) \
+        welllevel 2%; \
+      /elseif (money == 54272) \
+        welllevel 3%; \
+      /elseif (money == 81408) \
+        welllevel 4%; \
+      /elseif (money == 108544) \
+        welllevel 5%; \
+      /elseif (money == 135680) \
+        welllevel 6%; \
+      /elseif (money == 162816) \
+        welllevel 7%; \
+      /elseif (money == 189952) \
+        welllevel 8%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the water weird') \
+      /if (money == 225280) \
+        welllevel 9%; \
+      /elseif (money == 253440) \
+        welllevel 10%; \
+      /elseif (money == 281600) \
+        welllevel 11%; \
+      /elseif (money == 309760) \
+        welllevel 12%; \
+      /elseif (money == 337920) \
+        welllevel 13%; \
+      /elseif (money == 366080) \
+        welllevel 14%; \
+      /elseif (money == 394240) \
+        welllevel 15%; \
+      /elseif (money == 422400) \
+        welllevel 16%; \
+      /elseif (money == 450560) \
+        welllevel 17%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the ice toad') \
+      /if (money == 140800) \
+        welllevel 6%; \
+      /elseif (money == 168960) \
+        welllevel 7%; \
+      /elseif (money == 197120) \
+        welllevel 8%; \
+      /elseif (money == 225280) \
+        welllevel 9%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the berbalang') \
+      /if (money == 28160) \
+        welllevel 2%; \
+      /elseif (money == 56320) \
+        welllevel 3%; \
+      /elseif (money == 84480) \
+        welllevel 4%; \
+      /elseif (money == 112640) \
+        welllevel 5%; \
+      /elseif (money == 140800) \
+        welllevel 6%; \
+      /elseif (money == 168960) \
+        welllevel 7%; \
+      /elseif (money == 197120) \
+        welllevel 8%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the slithering tracker') \
+      /if (money == 86016) \
+        welllevel 4%; \
+      /elseif (money == 114688) \
+        welllevel 5%; \
+      /elseif (money == 143360) \
+        welllevel 6%; \
+      /elseif (money == 172032) \
+        welllevel 7%; \
+      /elseif (money == 200704) \
+        welllevel 8%; \
+      /elseif (money == 229376) \
+        welllevel 9%; \
+      /elseif (money == 258048) \
+        welllevel 10%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the darkenbeast') \
+      /if (money == 87552) \
+        welllevel 4%; \
+      /elseif (money == 116736) \
+        welllevel 5%; \
+      /elseif (money == 145920) \
+        welllevel 6%; \
+      /elseif (money == 175104) \
+        welllevel 7%; \
+      /elseif (money == 204288) \
+        welllevel 8%; \
+      /elseif (money == 233472) \
+        welllevel 9%; \
+      /elseif (money == 262656) \
+        welllevel 10%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the spirit naga') \
+      /if (money == 89088) \
+        welllevel 4%; \
+      /elseif (money == 118784) \
+        welllevel 5%; \
+      /elseif (money == 148480) \
+        welllevel 6%; \
+      /elseif (money == 178176) \
+        welllevel 7%; \
+      /elseif (money == 207872) \
+        welllevel 8%; \
+      /elseif (money == 237568) \
+        welllevel 9%; \
+      /elseif (money == 267264) \
+        welllevel 10%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the memory web') \
+      /if (money == 90624) \
+        welllevel 4%; \
+      /elseif (money == 120832) \
+        welllevel 5%; \
+      /elseif (money == 151040) \
+        welllevel 6%; \
+      /elseif (money == 181248) \
+        welllevel 7%; \
+      /elseif (money == 211456) \
+        welllevel 8%; \
+      /elseif (money == 241664) \
+        welllevel 9%; \
+      /elseif (money == 271872) \
+        welllevel 10%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the hell hound') \
+      /if (money == 215040) \
+        welllevel 8%; \
+      /elseif (money == 245760) \
+        welllevel 9%; \
+      /elseif (money == 276480) \
+        welllevel 10%; \
+      /elseif (money == 307200) \
+        welllevel 11%; \
+      /elseif (money == 337920) \
+        welllevel 12%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the tentamort') \
+      /if (money == 92160) \
+        welllevel 4%; \
+      /elseif (money == 122880) \
+        welllevel 5%; \
+      /elseif (money == 153600) \
+        welllevel 6%; \
+      /elseif (money == 184320) \
+        welllevel 7%; \
+      /elseif (money == 215040) \
+        welllevel 8%; \
+      /elseif (money == 245760) \
+        welllevel 9%; \
+      /elseif (money == 276480) \
+        welllevel 10%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the winter wolf') \
+      /if (money == 215040) \
+        welllevel 8%; \
+      /elseif (money == 245760) \
+        welllevel 9%; \
+      /elseif (money == 276480) \
+        welllevel 10%; \
+      /elseif (money == 307200) \
+        welllevel 11%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the gorgon') \
+      /if (money == 156160) \
+        welllevel 6%; \
+      /elseif (money == 187392) \
+        welllevel 7%; \
+      /elseif (money == 218624) \
+        welllevel 8%; \
+      /elseif (money == 249856) \
+        welllevel 9%; \
+      /elseif (money == 281088) \
+        welllevel 10%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the basilisk') \
+      /if (money == 158720) \
+        welllevel 6%; \
+      /elseif (money == 190464) \
+        welllevel 7%; \
+      /elseif (money == 222208) \
+        welllevel 8%; \
+      /elseif (money == 253952) \
+        welllevel 9%; \
+      /elseif (money == 285696) \
+        welllevel 10%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the dracolisk') \
+      /if (money == 161280) \
+        welllevel 6%; \
+      /elseif (money == 193536) \
+        welllevel 7%; \
+      /elseif (money == 225792) \
+        welllevel 8%; \
+      /elseif (money == 258048) \
+        welllevel 9%; \
+      /elseif (money == 290304) \
+        welllevel 10%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the varrangoin') \
+      /if (money == 163840) \
+        welllevel 6%; \
+      /elseif (money == 176640) \
+        welllevel 6%; \
+      /elseif (money == 196608) \
+        welllevel 7%; \
+      /elseif (money == 211968) \
+        welllevel 7%; \
+      /elseif (money == 229376) \
+        welllevel 8%; \
+      /elseif (money == 247296) \
+        welllevel 8%; \
+      /elseif (money == 262144) \
+        welllevel 9%; \
+      /elseif (money == 282624) \
+        welllevel 9%; \
+      /elseif (money == 294912) \
+        welllevel 10%; \
+      /elseif (money == 317952) \
+        welllevel 10%; \
+      /elseif (money == 353280) \
+        welllevel 11%; \
+      /elseif (money == 388608) \
+        welllevel 12%; \
+      /elseif (money == 423936) \
+        welllevel 13%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the medusa') \
+      /if (money == 166400) \
+        welllevel 6%; \
+      /elseif (money == 199680) \
+        welllevel 7%; \
+      /elseif (money == 232960) \
+        welllevel 8%; \
+      /elseif (money == 266240) \
+        welllevel 9%; \
+      /elseif (money == 299520) \
+        welllevel 10%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the white pudding') \
+      /if (money == 299520) \
+        welllevel 10%; \
+      /elseif (money == 332800) \
+        welllevel 11%; \
+      /elseif (money == 366080) \
+        welllevel 12%; \
+      /elseif (money == 399360) \
+        welllevel 13%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the grell') \
+      /if (money == 168960) \
+        welllevel 6%; \
+      /elseif (money == 202752) \
+        welllevel 7%; \
+      /elseif (money == 236544) \
+        welllevel 8%; \
+      /elseif (money == 270336) \
+        welllevel 9%; \
+      /elseif (money == 304128) \
+        welllevel 10%; \
+      /elseif (money == 337920) \
+        welllevel 11%; \
+      /elseif (money == 371712) \
+        welllevel 12%; \
+      /elseif (money == 405504) \
+        welllevel 13%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the xorn') \
+      /if (money == 171520) \
+        welllevel 6%; \
+      /elseif (money == 205824) \
+        welllevel 7%; \
+      /elseif (money == 240128) \
+        welllevel 8%; \
+      /elseif (money == 274432) \
+        welllevel 9%; \
+      /elseif (money == 308736) \
+        welllevel 10%; \
+      /elseif (money == 343040) \
+        welllevel 11%; \
+      /elseif (money == 377344) \
+        welllevel 12%; \
+      /elseif (money == 411648) \
+        welllevel 13%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the galeb duhr') \
+      /if (money == 174080) \
+        welllevel 6%; \
+      /elseif (money == 208896) \
+        welllevel 7%; \
+      /elseif (money == 243712) \
+        welllevel 8%; \
+      /elseif (money == 278528) \
+        welllevel 9%; \
+      /elseif (money == 313344) \
+        welllevel 10%; \
+      /elseif (money == 348160) \
+        welllevel 11%; \
+      /elseif (money == 382976) \
+        welllevel 12%; \
+      /elseif (money == 417792) \
+        welllevel 13%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the fire elemental') \
+      /if (money == 358400) \
+        welllevel 11%; \
+      /elseif (money == 394240) \
+        welllevel 12%; \
+      /elseif (money == 430080) \
+        welllevel 13%; \
+      /elseif (money == 465920) \
+        welllevel 14%; \
+      /elseif (money == 501760) \
+        welllevel 15%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the greater medusa') \
+      /if (money == 179200) \
+        welllevel 6%; \
+      /elseif (money == 215040) \
+        welllevel 7%; \
+      /elseif (money == 250880) \
+        welllevel 8%; \
+      /elseif (money == 286720) \
+        welllevel 9%; \
+      /elseif (money == 322560) \
+        welllevel 10%; \
+      /elseif (money == 358400) \
+        welllevel 11%; \
+      /elseif (money == 394240) \
+        welllevel 12%; \
+      /elseif (money == 430080) \
+        welllevel 13%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the ice elemental') \
+      /if (money == 394240) \
+        welllevel 12%; \
+      /elseif (money == 430080) \
+        welllevel 13%; \
+      /elseif (money == 465920) \
+        welllevel 14%; \
+      /elseif (money == 501760) \
+        welllevel 15%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the water elemental') \
+      /if (money == 465920) \
+        welllevel 14%; \
+      /elseif (money == 501760) \
+        welllevel 15%; \
+      /elseif (money == 537600) \
+        welllevel 16%; \
+      /elseif (money == 614400) \
+        welllevel 16%; \
+      /elseif (money == 573440) \
+        welllevel 17%; \
+      /elseif (money == 655360) \
+        welllevel 17%; \
+      /elseif (money == 609280) \
+        welllevel 18%; \
+      /elseif (money == 696320) \
+        welllevel 18%; \
+      /elseif (money == 737280) \
+        welllevel 19%; \
+      /elseif (money == 778240) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the thessaltrice') \
+      /if (money == 290816) \
+        welllevel 9%; \
+      /elseif (money == 327168) \
+        welllevel 10%; \
+      /elseif (money == 363520) \
+        welllevel 11%; \
+      /elseif (money == 399872) \
+        welllevel 12%; \
+      /elseif (money == 436224) \
+        welllevel 13%; \
+      /elseif (money == 472576) \
+        welllevel 14%; \
+      /elseif (money == 508928) \
+        welllevel 15%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the earth elemental') \
+      /if (money == 294912) \
+        welllevel 9%; \
+      /elseif (money == 331776) \
+        welllevel 10%; \
+      /elseif (money == 368640) \
+        welllevel 11%; \
+      /elseif (money == 405504) \
+        welllevel 12%; \
+      /elseif (money == 442368) \
+        welllevel 13%; \
+      /elseif (money == 479232) \
+        welllevel 14%; \
+      /elseif (money == 516096) \
+        welllevel 15%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the air elemental') \
+      /if (money == 299008) \
+        welllevel 9%; \
+      /elseif (money == 336384) \
+        welllevel 10%; \
+      /elseif (money == 373760) \
+        welllevel 11%; \
+      /elseif (money == 411136) \
+        welllevel 12%; \
+      /elseif (money == 448512) \
+        welllevel 13%; \
+      /elseif (money == 485888) \
+        welllevel 14%; \
+      /elseif (money == 523264) \
+        welllevel 15%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the otyugh') \
+      /if (money == 303104) \
+        welllevel 9%; \
+      /elseif (money == 340992) \
+        welllevel 10%; \
+      /elseif (money == 378880) \
+        welllevel 11%; \
+      /elseif (money == 416768) \
+        welllevel 12%; \
+      /elseif (money == 454656) \
+        welllevel 13%; \
+      /elseif (money == 492544) \
+        welllevel 14%; \
+      /elseif (money == 530432) \
+        welllevel 15%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the thessalgorgon') \
+      /if (money == 384000) \
+        welllevel 11%; \
+      /elseif (money == 422400) \
+        welllevel 12%; \
+      /elseif (money == 460800) \
+        welllevel 13%; \
+      /elseif (money == 499200) \
+        welllevel 14%; \
+      /elseif (money == 537600) \
+        welllevel 15%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the thessalmera') \
+      /if (money == 389120) \
+        welllevel 11%; \
+      /elseif (money == 428032) \
+        welllevel 12%; \
+      /elseif (money == 466944) \
+        welllevel 13%; \
+      /elseif (money == 505856) \
+        welllevel 14%; \
+      /elseif (money == 544768) \
+        welllevel 15%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the soul beckoner') \
+      /if (money == 394240) \
+        welllevel 11%; \
+      /elseif (money == 433664) \
+        welllevel 12%; \
+      /elseif (money == 473088) \
+        welllevel 13%; \
+      /elseif (money == 512512) \
+        welllevel 14%; \
+      /elseif (money == 551936) \
+        welllevel 15%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the purple worm') \
+      /if (money == 399360) \
+        welllevel 11%; \
+      /elseif (money == 439296) \
+        welllevel 12%; \
+      /elseif (money == 479232) \
+        welllevel 13%; \
+      /elseif (money == 519168) \
+        welllevel 14%; \
+      /elseif (money == 559104) \
+        welllevel 15%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the beholder') \
+      /if (money == 404480) \
+        welllevel 11%; \
+      /elseif (money == 444928) \
+        welllevel 12%; \
+      /elseif (money == 485376) \
+        welllevel 13%; \
+      /elseif (money == 525824) \
+        welllevel 14%; \
+      /elseif (money == 566272) \
+        welllevel 15%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the pyrohydra') \
+      /if (money == 532480) \
+        welllevel 14%; \
+      /elseif (money == 573440) \
+        welllevel 15%; \
+      /elseif (money == 614400) \
+        welllevel 16%; \
+      /elseif (money == 655360) \
+        welllevel 17%; \
+      /elseif (money == 696320) \
+        welllevel 18%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the remorhaz') \
+      /if (money == 532480) \
+        welllevel 14%; \
+      /elseif (money == 573440) \
+        welllevel 15%; \
+      /elseif (money == 614400) \
+        welllevel 16%; \
+      /elseif (money == 655360) \
+        welllevel 17%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the thessalhydra') \
+      /if (money == 409600) \
+        welllevel 11%; \
+      /elseif (money == 450560) \
+        welllevel 12%; \
+      /elseif (money == 491520) \
+        welllevel 13%; \
+      /elseif (money == 532480) \
+        welllevel 14%; \
+      /elseif (money == 573440) \
+        welllevel 15%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the neo-otyugh') \
+      /if (money == 414720) \
+        welllevel 11%; \
+      /elseif (money == 456192) \
+        welllevel 12%; \
+      /elseif (money == 497664) \
+        welllevel 13%; \
+      /elseif (money == 539136) \
+        welllevel 14%; \
+      /elseif (money == 580608) \
+        welllevel 15%; \
+      /elseif (money == 622080) \
+        welllevel 16%; \
+      /elseif (money == 663552) \
+        welllevel 17%; \
+      /elseif (money == 705024) \
+        welllevel 18%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the manticore') \
+      /if (money == 419840) \
+        welllevel 11%; \
+      /elseif (money == 461824) \
+        welllevel 12%; \
+      /elseif (money == 503808) \
+        welllevel 13%; \
+      /elseif (money == 545792) \
+        welllevel 14%; \
+      /elseif (money == 587776) \
+        welllevel 15%; \
+      /elseif (money == 629760) \
+        welllevel 16%; \
+      /elseif (money == 671744) \
+        welllevel 17%; \
+      /elseif (money == 713728) \
+        welllevel 18%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the gauth') \
+      /if (money == 424960) \
+        welllevel 11%; \
+      /elseif (money == 467456) \
+        welllevel 12%; \
+      /elseif (money == 509952) \
+        welllevel 13%; \
+      /elseif (money == 552448) \
+        welllevel 14%; \
+      /elseif (money == 594944) \
+        welllevel 15%; \
+      /elseif (money == 637440) \
+        welllevel 16%; \
+      /elseif (money == 679936) \
+        welllevel 17%; \
+      /elseif (money == 722432) \
+        welllevel 18%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the umber hulk') \
+      /if (money == 430080) \
+        welllevel 11%; \
+      /elseif (money == 473088) \
+        welllevel 12%; \
+      /elseif (money == 516096) \
+        welllevel 13%; \
+      /elseif (money == 559104) \
+        welllevel 14%; \
+      /elseif (money == 602112) \
+        welllevel 15%; \
+      /elseif (money == 645120) \
+        welllevel 16%; \
+      /elseif (money == 688128) \
+        welllevel 17%; \
+      /elseif (money == 731136) \
+        welllevel 18%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the ancient white dragon') \
+      /if (money == 652800) \
+        welllevel 16%; \
+      /elseif (money == 696320) \
+        welllevel 17%; \
+      /elseif (money == 739840) \
+        welllevel 18%; \
+      /elseif (money == 783360) \
+        welllevel 19%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the lesser eraditor') \
+      /if (money == 565760) \
+        welllevel 14%; \
+      /elseif (money == 609280) \
+        welllevel 15%; \
+      /elseif (money == 652800) \
+        welllevel 16%; \
+      /elseif (money == 696320) \
+        welllevel 17%; \
+      /elseif (money == 739840) \
+        welllevel 18%; \
+      /elseif (money == 783360) \
+        welllevel 19%; \
+      /elseif (money == 826880) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the eraditor') \
+      /if (money == 572416) \
+        welllevel 14%; \
+      /elseif (money == 616448) \
+        welllevel 15%; \
+      /elseif (money == 660480) \
+        welllevel 16%; \
+      /elseif (money == 704512) \
+        welllevel 17%; \
+      /elseif (money == 748544) \
+        welllevel 18%; \
+      /elseif (money == 792576) \
+        welllevel 19%; \
+      /elseif (money == 836608) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the major eraditor') \
+      /if (money == 579072) \
+        welllevel 14%; \
+      /elseif (money == 623616) \
+        welllevel 15%; \
+      /elseif (money == 668160) \
+        welllevel 16%; \
+      /elseif (money == 712704) \
+        welllevel 17%; \
+      /elseif (money == 757248) \
+        welllevel 18%; \
+      /elseif (money == 801792) \
+        welllevel 19%; \
+      /elseif (money == 846336) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the lord eraditor') \
+      /if (money == 765952) \
+        welllevel 18%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the thassaloss') \
+      /if (money == 592384) \
+        welllevel 14%; \
+      /elseif (money == 637952) \
+        welllevel 15%; \
+      /elseif (money == 683520) \
+        welllevel 16%; \
+      /elseif (money == 729088) \
+        welllevel 17%; \
+      /elseif (money == 774656) \
+        welllevel 18%; \
+      /elseif (money == 820224) \
+        welllevel 19%; \
+      /elseif (money == 865792) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the frost dragon') \
+      /if (money == 783360) \
+        welllevel 18%; \
+      /elseif (money == 829440) \
+        welllevel 19%; \
+      /elseif (money == 875520) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the horgar') \
+      /if (money == 599040) \
+        welllevel 14%; \
+      /elseif (money == 645120) \
+        welllevel 15%; \
+      /elseif (money == 691200) \
+        welllevel 16%; \
+      /elseif (money == 737280) \
+        welllevel 17%; \
+      /elseif (money == 783360) \
+        welllevel 18%; \
+      /elseif (money == 829440) \
+        welllevel 19%; \
+      /elseif (money == 875520) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the sword demon') \
+      /if (money == 698880) \
+        welllevel 16%; \
+      /elseif (money == 745472) \
+        welllevel 17%; \
+      /elseif (money == 792064) \
+        welllevel 18%; \
+      /elseif (money == 838656) \
+        welllevel 19%; \
+      /elseif (money == 885248) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the shadow demon') \
+      /if (money == 698880) \
+        welllevel 16%; \
+      /elseif (money == 745472) \
+        welllevel 17%; \
+      /elseif (money == 792064) \
+        welllevel 18%; \
+      /elseif (money == 838656) \
+        welllevel 19%; \
+      /elseif (money == 885248) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the efreeti emir') \
+      /if (money == 745472) \
+        welllevel 17%; \
+      /elseif (money == 792064) \
+        welllevel 18%; \
+      /elseif (money == 838656) \
+        welllevel 19%; \
+      /elseif (money == 885248) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the storm demon') \
+      /if (money == 714240) \
+        welllevel 16%; \
+      /elseif (money == 761856) \
+        welllevel 17%; \
+      /elseif (money == 809472) \
+        welllevel 18%; \
+      /elseif (money == 857088) \
+        welllevel 19%; \
+      /elseif (money == 904704) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the terrorite demon') \
+      /if (money == 714240) \
+        welllevel 16%; \
+      /elseif (money == 761856) \
+        welllevel 17%; \
+      /elseif (money == 809472) \
+        welllevel 18%; \
+      /elseif (money == 857088) \
+        welllevel 19%; \
+      /elseif (money == 904704) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the marid mufti') \
+      /if (money == 745472) \
+        welllevel 17%; \
+      /elseif (money == 792064) \
+        welllevel 18%; \
+      /elseif (money == 838656) \
+        welllevel 19%; \
+      /elseif (money == 885248) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the efreeti bey') \
+      /if (money == 809472) \
+        welllevel 18%; \
+      /elseif (money == 857088) \
+        welllevel 19%; \
+      /elseif (money == 904704) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the marid beglerbeg') \
+      /if (money == 809472) \
+        welllevel 18%; \
+      /elseif (money == 857088) \
+        welllevel 19%; \
+      /elseif (money == 904704) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the shadow dragon') \
+      /if (money == 721920) \
+        welllevel 16%; \
+      /elseif (money == 770048) \
+        welllevel 17%; \
+      /elseif (money == 818176) \
+        welllevel 18%; \
+      /elseif (money == 866304) \
+        welllevel 19%; \
+      /elseif (money == 914432) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the marid atabeg') \
+      /if (money == 875520) \
+        welllevel 19%; \
+      /elseif (money == 924160) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the thonis') \
+      /if (money == 778240) \
+        welllevel 17%; \
+      /elseif (money == 826880) \
+        welllevel 18%; \
+      /elseif (money == 875520) \
+        welllevel 19%; \
+      /elseif (money == 924160) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the efreeti malik') \
+      /if (money == 875520) \
+        welllevel 19%; \
+      /elseif (money == 924160) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the djinni malik') \
+      /if (money == 778240) \
+        welllevel 17%; \
+      /elseif (money == 826880) \
+        welllevel 18%; \
+      /elseif (money == 875520) \
+        welllevel 19%; \
+      /elseif (money == 924160) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the efreeti pasha') \
+      /if (money == 893952) \
+        welllevel 19%; \
+      /elseif (money == 943616) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the marid shah') \
+      /if (money == 893952) \
+        welllevel 19%; \
+      /elseif (money == 943616) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the dao hetman') \
+      /if (money == 844288) \
+        welllevel 18%; \
+      /elseif (money == 893952) \
+        welllevel 19%; \
+      /elseif (money == 943616) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the djinni vizier') \
+      /if (money == 844288) \
+        welllevel 18%; \
+      /elseif (money == 893952) \
+        welllevel 19%; \
+      /elseif (money == 943616) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the dao khan') \
+      /if (money == 963072) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the balrog') \
+      /if (money == 852992) \
+        welllevel 18%; \
+      /elseif (money == 903168) \
+        welllevel 19%; \
+      /elseif (money == 953344) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the efreeti sultan') \
+      /if (money == 963072) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the djinni caliph') \
+      /if (money == 963072) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'the marid padishah') \
+      /if (money == 963072) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /elseif (moneyMob =~ 'morgoth the valar god') \
+      /if (money == 972800) \
+        welllevel 20%; \
+      /else \
+        /wellmoneyunknown %{money} %{moneyMob}%; \
+      /endif%; \
+    /else \
+      /tfshow UNKNOWN MOB!!!%; \
+      /fixdata %{money} %{moneyMob}%; \
+    /endif
+
+/def fixdata = \
+  /let money=%{1}%; \
+  /set moneyMob=%{-1}%; \
+  /let lfname=~/txt/burning/logs/well_basic.log%; \
+  /let lftext=Mob: %{moneyMob}, Lvl %{welllevel}, Money: %{money}%; \
+  /tfshow Fix data! %{lftext}%; \
+  /test fwrite("%{lfname}", "%{lftext}")
+
+/def wellmoneyunknown = \
+  /let money=%{1}%; \
+  /set moneyMob=%{-1}%; \
+  /let lfname=~/txt/burning/logs/well_basic.log%; \
+  /let lftext=Mob: %{moneyMob}, Lvl %{welllevel}, Money: %{money}%; \
+  /tfshow Money unknown: %{lftext}%; \
+  /test fwrite("%{lfname}", "%{lftext}")
+
+; ====================  Money check end ========================
+
+
+; ====================  relocation effects start ========================
+
+/def -F -p222 -mregexp -ah -t"^([A-z]+) is too slow to react, and falls through it.$" welltrig3 = \
+    /if (currmana >= 0) \
+      /if (saferoom & classPr) \
+        tell %P1 I can't summon you. I seem to be in a safe area and can't summon people to this room.%; \
+      /elseif (fighting) \
+        /if (welldown & classMa) \
+          retreat%;dd %{P1}%;assist%; \
+        /elseif (classPr & owner !~ 'Valkyria69') \
+          retreat%; \
+          su 0.%{P1}%; \
+          /if (autoassist) \
+            assist%; \
+          /endif%; \
+        /endif%; \
+      /else \
+        /if (welldown & classMa) \
+          dd %{P1}%; \
+        /elseif (classPr) \
+          su 0.%{P1}%; \
+        /endif%; \
+      /endif%; \
+    /endif%; \
+    /if (area !~ 'Well') \
+      2 drop setareaWell%; \
+    /endif%; \
+    setarea Well The Well
+
+/def -ah -F -msimple -t"A stalactite dislodges from the ceiling and plummets to the ground, narrowly" welltrig4 = \
+    /if (area !~ 'Well') \
+      2 drop setareaWell%; \
+    /endif%; \
+    setarea Well The Well%; \
+    stand%; \
+    /eval /def -n1 -mregexp -F -t"\^$$[groupleader]'s group >>> LEAVES <<< ([A-z]+)\\." stalagtrig = \
+      /purge promptwait%%%; \
+      /tfshow LOST GROUP! Moving %%%{P1} and refollowing %%{groupleader}%%%; \
+      %%%{P1}%%%; \
+      fol %%{groupleader}%%%; \
+      group%; \
+    /def -n1 -mregexp -F -t"^(-|)([0-9]+)\\(([0-9]+)\\)H (-|)([0-9]+)\\(([0-9]+)\\)M (-|)([0-9]+)\\(([0-9]+)\\)V >" promptwait = \
+      /purge stalagtrig%%; \
+      /tfshow Did not lose group! Moving %%{lastmove} and refollowing %%{groupleader}%%; \
+      /if (groupleader =~ 'none') \
+        /tfshow Something is wrong! Error! Not moving!%%; \
+      /else \
+        %%{lastmove}%%; \
+      /endif%%; \
+      fol %%{groupleader}%%; \
+      delay 2 group 1-10
+
+/def -ah -F -t"As you try to move, you lose your grip on the slippery ice and *" welltrig9 = \
+    /tfshow Trying to stand up and move %{lastmove}.%; \
+    stand%; \
+    %{lastmove}
+
+/def -F -ah -msimple -t"You slip over on the ice and head careening out of control towards a nearby" welltrig24 = \
+    stand
+
+/def -F -ah -msimple -t"In the middle of the fight, you slip over on the ice and head careening out of" welltrig25 = \
+    stand%;assist
+
+/def -F -p222 -ah -mregexp -t"^([A-z]+) slips on the icy floor and slides off to the (north|south|east|west|up|down)" welltrig15 = \
+    /if (classPr & ({P2} !~ lastmove | {P1} =~ groupleader)) \
+      /if (saferoom) \
+        tell %P1 I can't summon you. I seem to be in a safe area and can't summon people to this room.%; \
+        /eval /def -n1 -mregexp -F -t"^You follow $[groupleader]'s group\.$$$$" summonsafe2b%P1 = \
+        tell %P1 We have moved now! (bot msg)%; \
+      /endif %; \
+      su 0.%{P1}%; \
+    /endif
+/def -F -ah -msimple -t"You are unable to react in time, and tumble through the hole in the floor." welltrig16 = \
+    /if (area !~ 'Well') \
+      2 drop setareaWell%; \
+    /endif%; \
+    setarea Well The Well%; \
+    drop wellfalling%; \
+    /def -F -ag -n1 -msimple -t"You don't seem to have a wellfalling." welltrig17b = \
+      /purge welltrig17b*%%; \
+      /if (0 & !welldown) \
+        wor%%; \
+      /endif%%; \
+      gtf emote just trapdoored!%; \
+    /def -F -n1 -mregexp -t"^([A-z]+) has summoned you!$$" welltrig17b2 = \
+      /purge welltrig17b*%%; \
+      hug %%{P1}
+
+/def -F -ah -mregexp -t"^([^']+) being sucked down through the sandy floor\. " welltrig36 = \
+    gt %{P1} just dropped through quicksand!
+
+/def -F -n1 -t"You hear a slurping sound, and as you look down you see the sand opening below*" welltrig37 = \
+    gtf just slurped through quicksand.
+
+/def -F -ah -mregexp -t"^uncontrollably to the (north|south|east|west).$" welltrig38 = \
+    /if ({P1} !~ lastmove) \
+      /tfshow I slipped %{P1}!%; \
+      /tfshow lastmove=%{lastmove}%; \
+      slipgetback%; \
+    /endif%; \
+    delay 1 stand%; \
+    delay 2 stand
+
+/def -F -ah -t"uncontrollably." welltrig39 = \
+    /tfshow I slipped during fight!%; \
+    slipgetback%; \
+    delay 1 stand%; \
+    delay 2 stand
+
+/alias slipgetback \
+    /if ((classMa | classNb) & pg) \
+      drop whoops%; \
+      /def -F -ag -n1 -t"You don't seem to have a whoops." whopsietrig1 = \
+        stand%%; \
+        /if (classMa) \
+          dd %%{groupleader}%%; \
+        /elseif (classMa) \
+          merge%%; \
+        /else \
+          getsummon%%; \
+        /endif%%; \
+        /purge whopsietrig*%; \
+      /def -F -n1 -mregexp -t"^([A-z]+) has summoned you!$$" whopsietrig2 = \
+        stand%%; \
+        /purge whopsietrig*%; \
+    /endif
+
+; ====================  relocation effects  end  ========================
+
+/alias welldown \
+    /if ({*} =~ '1' | {*} =~ 'on') \
+      /tfshow Ok. WellDown mode is ON.%; \
+      /set welldown 1%; \
+    /elseif ({*} =~ '0' | {*} =~ 'off') \
+      /tfshow Ok. WellDown mode is OFF.%; \
+      /set welldown 0%; \
+    /else \
+      /tfshow WellDown 0 or 1?%; \
+    /endif
+
+/def -ah -F -msimple -t"You feel a slight movement in the air, and you can hear a storm brewing afar." welltrig1 = \
+    /set beforewindpos=%{position}%; \
+    /set windcoming 1%; \
+    /if (area !~ 'Well') \
+      2 drop setareaWell%; \
+    /endif%; \
+    setarea Well The Well%; \
+    /if (position =~ "stand") \
+      sit%; \
+    /endif
+/def -ah -F -msimple -t"A raging tempest races through the room, leaving devastation in its wake." welltrig2 = \
+    /set windcoming 0%; \
+    /if (beforewindpos =~ "stand") \
+      stand%; \
+    /endif
+
+/def -ah -F -msimple -t"You unthinkingly immerse yourself in the water, and start to drown. Luckily" welltrig21 = \
+    doh%; \
+    /setposition stand%; \
+    /set abouttosit 0%; \
+    /set abouttosleep 0%; \
+    /set sleepdanger 1
+
+/def -F -p9999 -t"* just dropped a compass\." welltrig23 = \
+    /if (owner =~ "CindyNotanymore") \
+      get compass%; \
+      pb compass%; \
+    /endif
+/def -F -p9999 -t"* just dropped Soul Crystal\." welltrig23b = \
+    /if (owner =~ "CindyNotanymore") \
+      get crystal%; \
+      pb crystal%; \
+    /endif
+
+/def -F -msimple -t"The cloaker is dead! R.I.P." welltrig26 = \
+    /if (!pg) \
+      fol %{lastleader}%; \
+    /endif

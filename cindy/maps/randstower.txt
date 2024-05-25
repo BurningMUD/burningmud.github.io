@@ -1,0 +1,45 @@
+# Rand's Tower (113): 10-20, CAW/Stryder  (Karandras: 10e10n2e2ne)
+#
+#             |
+#             o - M - o - o - o - o - o - o
+#            /                           /
+#                           o           x
+#                           +          /
+#                           o ------- o
+#                           +        /+
+#                           o   o+o+o o
+#                              x   /
+#                      o   o  q   /
+#                      +   +     /
+#                      o - o--+-o
+#                          +   /
+#                       o  o  /
+#                       +    /
+#               o       o - o
+#               |          /
+#               o ------- o
+#               |        /
+#               o   o - o
+#                      /
+#                 o - o
+#                    /
+#       o + o - o - o
+#               |
+#           o + o  o
+#          /       |
+#         o ------ o - o RIP
+#                     /   |
+#                    o -- o
+#
+* Entrance from Moria. Some locked things need rogue to pick.
+
+Rand's Tower:                Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+A mountain goat                8   56k N-x---    -    163-163       1-1     vuln mental/gas, resist earth, flees
+A Demon of Decay              12  156k E--x-x    G    232-239       1-1     vuln pure/light/iron, immune fire, resist unlife/dark/poison
+Book Monster                  14  209k N--x--    -    279-285       1-1
+A Bad Feeling                 18  413k N--x--    G    386-388       1-1     immune unlife
+The Guardian                  18  413k N--x--    G    389-397       1-1
+Your Worst Nightmare          19  474k N--x--    -    411-421       1-1     immune unlife, resist WEAPON
+THe MAd scIeNTist             23 1014k Nx----    --   497-503    4012-4013  [human], poison
+A Black Mage                  25 1580k E--x--    G    611-613   75010-75017 [human], invis, colour spray, lightning bolt, fireball
+The powerful spirit of Rand   30 1500k E--x--    G    732-751   50416-50516 vuln energy, resist WEAPON, immune unlife, meteor swarm, meteor blast, blindness, harm, powerheal, curse, confusion, fireball, colour spray

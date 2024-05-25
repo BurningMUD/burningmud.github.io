@@ -1,0 +1,52 @@
+# Smugglers Den (218): 8-55, Stryder  (Kerofk: 3sesd)
+#
+#           o
+#          x|        _____
+#       o+o         /     \
+#       |    _     /__    |
+#     o-o   / \   / \ \---o---------o
+#     |     | |  /  | |\  |        /
+#   o-o+o-----o-----o-/ | |       o  o-o
+#   | |     | |\    |   | |      /   + +
+# o-o | o+  \_/ \---o---o-o--\  o----o-o-o-o
+# |   |/         \  |   | |  |  +      |
+# +   o           \_/___/_/__/  o      o-o-o
+# |x                                   |
+# X                            o-o-o-+-o o
+#                              | | |  /  +
+#                              o-o-o o-o-o+o
+#                Graveyard<--\       |
+#                            /       |   o  o-o-o-o o-o-o
+#                           x        |  x   |     | |   |
+#                          o----+----o-o    o-o   o-o   o-o
+#                                    |        |           |
+#                              o     o      o-o           o   o
+#                              |    /       |             |  /|
+#                            o-o-o-o        o             o-o o o-Sundhaven
+#                            | |   |        |                 |x
+#                            o o   o        o                 o
+#                              |  /         |
+#                            o-o o-o      o-o
+#                                 /       |
+#                              o /        o
+#                             /|/         |
+#                            / o   o-o    o
+#                           /      |      |
+#                          o---o---o-o--o-o
+#
+* Min level 0/8 (but can be entered through Kerofk tavern)
+* give 100+ coins Heavy to enter the maze
+* Whole area except the sea (southeast) is very bright
+
+Smugglers Den:           Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+A salty sea-dog            8   59k G-xx--    -    162-162       1-1    vuln mental, resist dark, flees
+The swab                   9   83k G-xx--    -    158-159     441-455  [human]
+The black marketeer       10  130k N-xx--    -    201-204     455-500  [human]
+A purple jellyfish        11  146k E-xx--    -    221-223       1-1    immune water, water-living
+A sundhaven smuggler      12  166k E-xx--    -    243-245     542-597  [human], sneak
+A kerofk smuggler         13  185k N-xx--    -    268-277     592-649  [human]
+The corrupt Militia Man   15  248k N-x---    -    303-304     678-743  [human]
+A relaxing pirate         17  355k N-xx--    -    391-394     774-837  [human]
+A local villain           22  880k E-xx--    -    513-515    1100-1162 [human], hide, sneak
+The Head Smuggler         27 2249k Ex-x-x    -    661-665    1625-1685 [human], kick, nosummon
+A Kerofk Heavy            30       Ex-       -                         no-attack, special-give-money

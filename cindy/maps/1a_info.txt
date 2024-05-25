@@ -1,0 +1,283 @@
+
+http://www.lysator.liu.se/~tomca/maps/1a_info.txt
+
+Map file contents:
+==================
+Area name: <name> (number): <levels>, <creator> (<poptime-unvisited>/<poptime-visited>)  (<speedie>)
+Find out:  Things in the area that still needs to be found out
+Map:       The map
+Area info: Special information about the area
+           Min level 20:   You must be at least lvl 20 to enter
+           Min level 0/20: You must be at least lvl 20 or multi to enter
+           Min level 50/20: You must be at least lvl 20 multi to enter
+           Max level 20:   You can not enter if above level 20
+           Max level 0/20: You can not enter if above level 20 or multi
+           Max level 50/20: You can not enter if above level 20 multi
+Mobs:      Mobs in the area
+
+
+Map info:
+=========
+X   Entry point
+o   room
+-   east-west exit
+|   north-south exit
+/   up-down exit
++   door (east-west or north-south)
+x   door (up-down)
+->  one-way exit
+RIP Death Trap
+WM  Wild Magic
+NM  No Magic
+U   Up exit. Connected to a...
+D   Down exit (usually used when an area has several larger floors)
+Q   Quest master
+M   Mirror - entrance to Mirror Beyond
+C   Carriage stop
+w   Water room (only used on the OC map to show rivers)
+
+Mob info:
+=========
+Sorting: Level first, then name
+Name: as seen in "<name> is in excellent condition."
+Lvl: Level
+Xp:  Mob Xp (see explanation below)
+A: Alignment     G/N/E
+S: Sanced        x/-
+W: Walking       x/-
+I: see Invis     x/-
+D: see Darkness  x/-
+M: Memory        x/-
+X: Switch        0/1/2/... (max normal switches in a round)
+#: Number        MAX number of mobs of that type
+Agg: Aggie       G/-, N/-, E/-. Example: "G-E" means aggressive against good & evil chars.
+Hp: Hit points   <lowest hp seen>-<highest hp seen>. This is the mob's max-hp (the ones inside paranthesis when he does a "ps"). A "~" before the sum means hp has been calculated by killing and looking at total damage (ie, some healing-time may be included).
+gold:            <lowest amount found>-<highest amount found>
+special:         Miscellaneous useful information about the mob (see list below).
+
+Mob XP:
+=======
+I don't have access to the code, so this is just my guess on how xp works. And
+it seems to work like this:
+
+XP gained = <mob xp> / <your level>
+IF you are multi, divide XP by 3
+If your level >= 65, divide XP by 4
+IF your level > mob level AND your level > 50, lower XP by 1/3
+IF mob is withered, lower XP by 1/3
+IF you are in a group, the <mob xp> should be divided by by the highest level
+   in the group (not with <your level>).
+   And then you also have to multiply with your percentage (5% means *0.05).
+IF you are templar, xp might be different for different mob aligns, but the
+   numbers for this is unknown to me. And it looks like Templars do get the
+   exact same xp as other classes.
+
+So, the xp listed is what a single-classed lvl 1 non-templar would get for
+killing the mob solo, without using wither. Since xp is only given in whole
+numbers and I'll need calculations to get the original xp, there will be
+some rounding errors - don't expect the values to be exact. I'm adding k/M/B
+to the end, cutting the number to max 4 digits.
+
+My guess is that you will get the actual xp the mob has (only visible by imm-
+stat:ing the mob) by dividing this xp with the mob's level. But this is just
+speculation.
+
+When in groups, your share is shown correctly in the group listing, _except_
+if the group contains pets. (have not bothered checking if charmies work or
+not).
+Mob xp is set by the creator, but it seems to go (VERY vaguely) around the
+formula: Lvl^4*5
+
+   Mobile Balance Chart (from where?)
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Level   Exp  
+  1       110
+  5      1760
+ 10     11000
+ 15     16500
+ 20     27500
+ 25     55000
+ 30    110000
+ 35    220000
+ 40    330000
+ 45    440000
+ 50    550000
+ 55    742000
+ 60   1000000
+ 65   1350000
+ 70   1800000
+ 75   2500000
+ 80   3300000
+ 85   4500000
+ 90   6000000
+ 95   8200000
+100  11000000
+
+
+
+Mob thac-X=11:
+==============
+Means that the mob has to roll at least 11 on a 20 sided dice to manage to
+hit you if you have armor class -X.
+So if you have -X in armor class, the mob will hit you 50% of the times.
+Each step difference from this -X armor class means a 5% change in the mob's
+chance to hit you, so if you are more than 8 steps from -X, the mob will have
+5% or 95% chance to hit you.
+
+Mob AC:
+=======
+Your chance of hitting the mob depends on his armor class (ac) compared with
+your ability to hit him (thac0 modified by hr).
+thac0 4 means you must roll at least 4 on a 20 sided dice to manage to hit
+him, if he has armor class 0. Each hr you get lowers the number needed by 1,
+and each step downwards in ac the mob gets, raises the number by one.
+So to calculate a mob's ac, take your thac0 minus your hitroll, minus your
+miss-percentage divided by 5, minus 1.
+Example:
+Thac0 -7 and hr +43  =>  thac0 -50
+146 misses out of 175 (83.4%): 85/5 + 1 = 18 (must roll at least 18 on a d20)
+-50-18 = -68, so mob has AC -68
+Note: You always have min 5% and max 95% hitchance, so calculationg ac is only
+reliable if you are within the 10%-90% range.
+SIMPLY PUT: Skip the signs. If your HR+thac0 = mob AC, you will always hit.
+            Each step below means 5% less chance.
+
+Mob Save:
+=========
+Save X = Roll X or higher on a d20 to make a successful save.
+Save 11 means the mob has 50% chance to save against your spell.
+Save 2 gives 95% save against spells. Each step in save changes your chance
+of saving with 5%. The level of the spell/caster does not alter this chance.
+The chance of saving a spell is never below 5% and never above 95%.
+Save <2 means you have max even if cursed.
+Default?:  lvl   save
+          1-19     ?
+          20-25   15
+          26-30    ?
+           31     12
+           32      ?
+           33     11
+           34      ?
+          35-37   10
+          38-42    7
+          43-44    ?
+          45-47    5
+          48-99    ?
+          100     <2
+
+Special:
+========
+INFO, questmaster, [creaturetype]/shopkeeper/guildmaster/no-attack/nofight-room,
+vuln xxx[heal], immune xxx, resist xxx, SUMMONER, can VAPE eq/<type>!,
+ xxx damage, summoned, assist-equals,
+sleeping/sitting, protector, shrugger, blocker, parry, dodge, parry/dodge,
+[X-Y] backstab [(nosanc-dam)], bash, kick, headbang, berserk,
+(fire|gas|lightning|acid...) breath, [area] <spell>, X-Y spells, X-Y attacks,
+xxx/yy dam per attack, negate sanc xx/yy times (zz%), +X coins,
+(random-)(delayed-)agg-(G?E|<align>|all|sleeper), X-Y skills,
+pulsing-areadamage, flees, cake,
+switch (X), no-charm (= thief?), walk-path, no-summon,
+no-where, hunt, revenger, looter, corpse taker/eater, (no)switch, hide,
+imp/invis, summon <mob>, no-group, forceflee, avgdam X, AC X,
+thac-X 11, save X, special-code[<comment>], +<nr> starthp, sneak, ignore-cop,
+aware, water-living, mountable, corpseless (= insubstantial?),
+room/area is nomag/wildmag/noflee/norecall/nosum/nosumout
+  but fleeable/recallable/sumout
+Note: Walk-path, hunt & revenger means they ignore cop!
+      Undeads, vampires & mobs with shadowform are automatically no-group
+      parry/dodge means parry if mob is wielding a weapon, dodge otherwise.
+                  Might be that all mobs have just a parry/dodge skill and
+                  the action depends on whether they wield a weapon or not.
+                  Addendum: Coven High-Priestess can do both, but dodged in
+                    last battle even though she had an athame.
+                    Zandy dodged when having spear - hass parried earlier.
+                    Lurk dodged when having Skaven. Can he parry?
+                  Maybe it's just random?
+
+[creaturetype]:
+===============
+Used if mob is vuln to a certain slay damage. He is then expected to have the
+default irv:s of that creaturetype too. Any deviations from those irv:s are
+listed after [creaturetype].
+Below is a list of known creatures and their default irv:s (gnome PC:s are
+also resistant to earth):
+Type           Vulns                    Resists                   Immunities
+Amphibian      ---                      Water                     ---
+Animal         Mental/Gas               Earth                     ---
+Astral         Pure/Light/Unlife/Dark   ---                       ---
+Beholder       Light                    Dark/Magic                ---
+Bird           Air                      ---                       Earth
+Botanic        Acid                     ---                  Air/Gas/Light/Dark
+Canine         Mental                   Dark                      ---
+Demon          Pure/Light/Iron          Dark/Unlife/Poison        Fire
+Devil          Pure/Light/Iron          Dark/Unlife/Poison        Fire
+Dinosaur       Fire                     ---                       ---
+Dragon         ---                      Fire/Ice/Earth/Air/Gas    ---
+Drow-Elf       Pure/Light/Ice           Unlife/Dark/Magic         ---
+Dwarf          SLarge/Water/Magic       Fire/Earth/Poison         ---
+Elemental      ---                      ???                       ---
+Elf            Unlife/Dark/Iron         Magic/Light/Pure          ---
+Entity         ---                      Fire/Ice/Unlife/Earth/Air ---
+Fairie         Dark/Unlife              Magic                     Pure/Light
+Feline         Mental                   Dark                      ---
+Fish           ---                      ---                       Water
+Giant          ---                      Crush/Large/SLarge/Poison ---
+Gnome          Large/SLarge             Mental                    ---
+Goblin         Fire/Large/SLarge/Light  Dark/Gas/Poison           ---
+Half-Elf       Unlife                   Light                     ---
+Half-Orc       Light                    Dark                      ---
+Hobbit         Large/SLarge/Air/Gas     Unlife/Poison/Mental      ---
+Human          ---                      ---                       ---
+Insect         Gas                      ---                       ---
+Insubstantial  Energy                   Weapon                    Unlife
+Jelly          ---                      Weapon                    ---
+Ktv            ---                      Gas/Poison/Energy/Mental  ---
+Lizardman      Fire/Ice                 Electricity/Water         ---
+Lugroki        Pure/Light/Fire          Ice/Dark/Poison           ---
+Magical        Unlife                   Magic/Energy              ---
+Mythical       ---                      Fire/Ice/Unlife/Earth/Air ---
+Orc            Fire/Light/Pure          Ice/Poison/Dark           ---
+Reptile        Ice/Fire                 Water                     ---
+Rodent         Gas/Poison               Dark                      ---
+Skeleton       ---                      Pierce/Slash              ---
+Snake          ---                      ---                       Poison
+Spider         Fire                     ---                       Poison
+Troll          Fire/Acid/Mental         Earth/Poison/Crush        ---
+Undead         Pure/Light/Silver/Heal   Earth/Water/Air/Mental    Unlife/Dark
+Vampire        Pure/Light/Silver/Wood   Crush                     Unlife/Dark
+* A number of creature types have no matching slay-weapon. Or none suitable
+  for testing. These are:
+    Amphibian, Astral, Beholder, Bird, Canine, Dinosaur, Elemental, Entity,
+    Fairie, Feline, Fish, Half-Orc, Hobbit, Insect, Insubstantial, Jelly,
+    Ktv, Lizardman, Reptile, Rodent, Skeleton, Spider
+  For these, mobs have been pinned with those types anyway, if their irv:s
+  match and their descriptions point towards it.
+* Entity has same irv:s as mythical. Any mob marked "[entity]" has the irv:s
+  matching, and is not mythical.
+
+
+Useful to know when checking:
+=============================
+fire breath   => can VAPE eq!
+Immune dark   => immune blindness  ("Your victim is immune to your spell.")
+Immune unlife => immune wither     ("Your victim is immune to your spell.")
+"somewhat resilient" to blindness => resist dark
+Resistance to unlife will NOT give a warning when using wither on the mob.
+It is possible to poison a mob that is immune to poison: No damage is taken
+per tick and no "looks really sick" messages will show, but it's seen with
+the "detect poison" spell and regen rate is slowed.
+Wither on Resist unlife: 80% of old maxhp
+Wither on Normal:        2/3 of old maxhp
+Wither on Vuln unlife:   50% of old maxhp
+no-charm & NOT thief     => immune blind
+NOTE: Immune blind does not _HAVE_ to implicate immunity to dark
+Agg-sleeper means the mob is agg-all and has a wimpy-flag (flees)
+mountable => leadable
+water-living => Can't enter non-water rooms even with fly
+Lvl X cloudkill     works on mobs of lvl (X-2) / 2, rounded down
+Lvl 88 cloudkill    works on mobs of lvl 1-43
+Lvl 100 cloudkill   works on mobs of lvl 1-49
+At lvl 66-100, charm works on lvl 53 mobs but NOT on lvl 54 mobs
+A successful energy drain gives you <target's level> * 3.75 mana, rounded
+down (minus the casting cost of 20). So to get level: (/ managain+20 3.75), rounded up.
+(does not seem to work perfectly for lower levels)

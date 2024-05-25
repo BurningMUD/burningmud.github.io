@@ -1,0 +1,42 @@
+# Shaolin Temple (68): 10-30, Unknown/Envy  (Solace: 7swn2ws2w)
+#
+#   o+o
+#   |
+#   | o                          o o
+#   |/                           |/
+# o-o-----------o----------------o-o
+#   |    ______x|               x|
+#   o   /       |          nuns/ o
+#      z+o   o  | o          +/
+#     /      +  | |     monk+o+o
+#    /     o+o--o-o+>o       +
+#    |     | +  | |  |     Wuhua
+#    | o+o o o  o o  v
+#    |   |     /     o
+#    |   o----o     x
+#    v       /     /
+#  tunnel<--/-----/
+#    |     /
+#    \--->X--
+#
+* Same area as Goblin Caves
+* Indoors is very bright
+
+Shaolin Temple:          Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+A monk child               6   21k G-x---    -    118-122       1-1    flees
+A disciple                 8   56k G-----    -    157-164       1-1    flees
+An imprisoned nun          8   56k N-x---    -    156-164       1-1
+A monk                    15  255k G-----    -    302-305       1-1
+The visiting guest        15  255k G-x---    -    298-309       1-1    flees
+The wooden man            18  414k N--x--    GN   389           1-1
+A monk guard              20  600k E--x--    GN   441-453       1-1
+The Drunken Master        21  735k Gxx---    -    469-493       1-1
+Your own inner demon      21  735k Ex-x--    GN   479-486       1-1    energy drain, vuln pure/light, immune fire
+An evil monk              22  880k E-xx--    GN   520-525       1-1    [human]
+The monk warrior          22  880k G-x---    -    498-516       1-1    headbang, flees
+Wuhua                     24 1200k Exxx--    GN   568-578       1-1    [human]
+The Master Trainer        26 1820k Gxx---    -    620-621       1-1    invis, flees
+The Luohan                27 2430k Gx---     -    661-666       1-1    [human], fireball, powerheal, colour spray, confusion, m-blast, curse
+The Master of Books       27 2160k Gx----    -    647-672       1-1    [human]
+The Abbot of Shaolin      31 4340k Gxx---    -    778-788       1-1    [human], meteor swarm, colour spray, fireball, harm, meteor blast, flees, confusion, curse, powerheal
+The Jinshen               33 6600k Gx-x--    -    834-854       1-1    invis, meteor blast, fireball, powerheal, harm, blindness, meteor swarm, curse

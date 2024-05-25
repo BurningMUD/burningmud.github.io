@@ -1,0 +1,33 @@
+# The Burning Arena: 1-100, Burning staff  (Karandras: 3nws)
+#
+#                 o
+#                 |
+#             o - o - o
+#             |   |   |
+#         o - o - o - o - o
+#         |   |   |   |   |
+#     o - o -NF - o -NF - o - o
+#     |   |   |   |   |   |   |
+# o - o - o - o - o - o - o - o - o
+#     |   |   |   |   |   |   |
+#     o - o -NF - o -NF - o - o
+#         |   |   |   |   |
+#         o - o - o - o - o
+#             |   |   |
+#             o - o - o
+#                 |
+#                 o
+#                 + Burning
+#                 X Towers
+#                 |  /      |
+#             o - o-/-o     o
+#             |   |/  |    /
+#             o - o - o   o
+#                 |     /
+#                 |   o
+#                 | /
+#                 o
+#                 +
+#
+* Must join a team to be allowed in the arena. Player killing allowed here.
+* No xp loss when dying.

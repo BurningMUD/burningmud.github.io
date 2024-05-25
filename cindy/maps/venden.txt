@@ -1,0 +1,52 @@
+# Shores of Venden (260): 30-60, Bump  (Sundhaven: 6es2esene2nw3ne3n)
+#
+#                          Hermit
+#                            |
+#               NM--NM--NM---o--NM--NM--NM
+#               |           x|          |
+#               o          /Coyote      o
+#               |          \            |
+#               o           \           o
+#               ^           |           ^
+#               +           v           +
+#       o---o---o---o---o--NM---o---o---o---o---o
+#       |   |   |   |   |   |   |   |   |   |   |
+#       o---o---o---o---o---o---o---o---o---o---o
+#       |   |   |   |   |   |   |  x|   |   |   |
+#       |   |   |   |   |   |   | o |   |   |   |
+#       o---o---o---o---o---o---o---o---o---o---o
+#       |   |   |  x|   |   |   |  x|   |   |   |
+#       |   |  Hp o |   |   |   | o |   |   |   |
+#       o---o--reg--o---o---o---o---o---o---o---o
+#       |       |       |  x    |       |       |
+# RIP---o       o       o o     o       o       o---RIP
+#       |       |       |       |       |       |
+# RIP---o---o---o---o---o---o---o---o---o---o---o---RIP
+#                           |
+#                          NM
+#                           |
+#                           X
+#                           |
+#                           o
+#                           |
+#                           o
+#                           |
+#                          -o
+#
+* ALL mobs here seem able to walk through cop
+* Most/all mobs are vuln gas. Most/all mobs are aware (can't backstab)
+* Beware the Coyote. If you mess with him he will hunt you.
+
+Venden:                   Lvl    Xp ASWIDMX # agg      Hp         Gold     Special
+A small red sand crab      30 2400k N-x---    -     761-762     1644-1710  vuln gas
+A small yellow sand crab   35 5250k N-x---    -     960-961     1655-1680  vuln gas
+A small beach snail        37 6600k N-x---    -    1117-1122    3079-3083  vuln gas
+A small blue sand crab     40   10M N-x---    -    1341-1352    2587-2632  vuln gas
+A black beach mussel       42   11M N-x---    -    1396-1399    3267-3298  vuln gas, kick, bash, headbang, berserk
+A white beach clam         42   10M N-x---    -    1396-1405    3279-3290  vuln gas, meteor blast, colour spray, fireball, meteor swarm
+A small black sand crab    45   14M N-x---    -    1643-1663    2880-2944  vuln gas, very hard to charm
+An overgrown hermit crab   50   18M E-x---    -    2031-2049    8048-8499  vuln gas, very hard to charm
+A giant cave dwelling crab 50   15M N--x--    G    2092-2118    8122-8197  vuln gas, kick, bash, headbang, berserk, very hard to charm, +1000 starthp
+A giant sea turtle         50   25M Nxx--x    -    2089-2116    6395-6669  resist WEAPON, blindness, harm, powerheal, wither, very hard to charm
+A raggedy old hermit       65  260M Gx-x -    -   ~36299           0-0     [human], resist WEAPON, immune blind, sitting, 7-9 attacks, blindness, powerword pain, wither, powerheal, confusion, mass pain, harm, meteor blast
+A large growling coyote    70  280M Nx-xxx    GNE 12057-12157  50496-50512 vuln mental, resist dark, ignore-cop, revenger

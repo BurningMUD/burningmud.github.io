@@ -1,0 +1,578 @@
+
+Donation rooms:
+Donation Room.                  Karandras  - 2n3w
+The Olympus Donation Room.      Olympus    - wn
+The Ofcol Donation Room.        Ofcol      - en
+The Solace Donation Room.       Solace     - ene
+The New Thalos Donation Room.   New Thalos - 4ws
+Kerofk Donation Outlet.         Kerofk     - 3s2e2n
+The alms room.                  Sundhaven  - d2ne
+The Myrridon Donation Room.     Myrridon   - ne
+
+/def outsideEastGate = 9e
+/def outsideWestGate = 9w
+/def outsideNorthGate = 4nen5e5n6w3n
+/def outsideSouthwestGate = 11s3w6s
+/def outsideSoutheastGate = 11s3e6s
+
+Obelisk targets:
+a - Atlantis
+ce- Celestial Peaks (northernmost part), NC
+cr- Grand Crossroads (obsidian, obelisk), NC
+d - Drow city
+e - Elven village
+ele-Elemental Canyon
+h - High tower
+k - Karandras
+ke- Kerofk
+ki- King's Castle
+kt- Milorai (ktvtown)
+ku- Kultheas, NC
+mo- Somewhere on OC
+m - Myrridon, NC
+n - New Thalos
+o - Grand crossroads (obsidian, obelisk), NC
+of- Ofcol
+ol- Olympus
+p - Palanthas, NC
+q - Enchanted Forest (quizzt) - CHANGED: "slithering mountains" / "rock formation"
+r - Ravens Point
+s - Solace
+st- Stormhaven, NC
+su- Sundhaven
+t - High tower
+th- Thalos
+u - Desolate Plains (unknown)
+ul- Ultima
+v - Valheim
+w - Whitebridge
+
+
+/parse_speedwalk
+
+
+Death Traps:
+[INFO] Myrrdin hit death trap at Uh-Oh!                         Kerofk
+[INFO] Hide hit death trap at Whoops...                         Kerofk
+[INFO] Cindy hit death trap at Sacrificial Pit                  Drow City
+[INFO] Anakaris hit death trap at The spider web                Haon Dor
+[INFO] Krag hit death trap at Mid-air                           Sewers & Moria
+[INFO] Plupp hit death trap at Mid-Air..                        Scubdu's
+[INFO] Welf hit death trap at House of Pancakes.                Wyvern Tower
+[INFO] Freak hit death trap at Climbing the Great Pyramid       Pyramid
+[INFO] Skuml hit death trap at Steep slope                      NorthernPlains
+[INFO] Ferain hit death trap at The unstable part of the wall   Alchor
+[INFO] Happy hit death trap at Free fall from the Chain         Redferne's
+[INFO] Cindy hit death trap at Hanging on the rope              Desert
+[INFO] Nobody hit death trap at AAAOOOUCCHH!                    Amazonia
+[INFO] Fiend hit death trap at Pit.                             3oS
+[INFO] Arathorn hit death trap at Too Bright to Tell.           Galaxy
+[INFO] Varg hit death trap at Cracks in the earth.             Unholy Darkness
+[INFO] Lork hit death trap at Black Hole.                       Galaxy
+[INFO] Ligur hit death trap at Falling into the flames.        Unholy Darkness
+[INFO] Skuml hit death trap at Falling down to the ground..     Elven Village
+[INFO] Bold hit death trap at The Impassible Current.           Oceania
+[INFO] Bold hit death trap at Pool of quicksand.               Feverish Swamps
+[INFO] Pong hit death trap at Falling into the gorge.           Amazonia
+[INFO] Stumpy hit death trap at The crumbling floor.            Taon
+[INFO] Gwelfy hit death trap at Mahatma's Inescapable Trap.     Arachnos
+[INFO] P hit death trap at A collision of spiralling dimensions.Taon
+[INFO] Cone hit death trap at Inside a Pentagram.               Rand's Tower
+[INFO] Pius hit death trap at An ill-balanced rock.             Amazonia
+[INFO] Deadwool hit death trap at On the second floor.          Thalos
+[INFO] Cindy hit death trap at Offer altar                      Old Kingdom
+[INFO] Chaodyn hit death trap at The Drop.                      Darkwater
+[INFO] Chaodyn hit death trap at A deadly weir.                 Darkwater
+[INFO] Stella hit death trap at Lion cages..                    Colosseum
+[INFO] Thoth hit death trap at Firm ground.                     Taon
+[INFO] Bonzai hit death trap at Collapsed stairs.               Tomaaukkhen
+[INFO] Pakaka hit death trap at Unstable ledge..                Amber Keep
+[INFO] Rage hit death trap at Burnt Alive In The Molten Lava.   Cathedral
+[INFO] Cindy hit death trap at Corpse room                      Demoncity
+[INFO] Cindy hit death trap at The short way to hell...         Graveyard
+[INFO] Thrum hit death trap at Buried under a ton of rocks..    Antiriad
+[INFO] Cindy hit death trap at Off The Edge                     Lagamore
+[INFO] Morrak hit death trap at The long fall into oblivion.    Toormail
+[INFO] P. hit death trap at A long drop to certain death.       Toormail
+[INFO] Cindy hit death trap at Walking The Plank                Shipwreck
+[INFO] Mecurio hit death trap at edon lacoF.                    Mirror Beyond
+[INFO] Mecurio hit death trap at dioV ehT.                      Mirror Beyond
+[INFO] Azeworai hit death trap at The Vault of Demons.          Taon
+[INFO] Amy hit death trap at High Speed Dirt.                   Shipwreck
+[INFO] ThomBoba hit death trap at Submerged in icy cold water.  Turvagar
+[INFO] Mecurio hit death trap at The burial.                    VoK
+[INFO] Stumpy hit death trap at A Bottomless Pit.               Gorm
+[INFO] Cindy hit death trap at By a flaming cross.              Unholy Darkness
+[INFO] Cindy hit death trap at the Rickety Pier                 Myrridon
+[INFO] Cindy hit death trap at the Target Area                  Tournament
+[INFO] Cirika hit death trap at A fathomless room.              Kerjim
+[INFO] Cindy hit death trap at Certain Death.                   Ghenna
+[INFO] Rocky hit death trap at In the pit.
+[INFO] Wren hit death trap at The sucking quicksand.            Ancient Lands
+[INFO] Cindy hit death trap at A pit of jutting spears.         Ghenna
+[INFO] Cindy hit death trap at Chaos Vortex.                    Zorn Uzkul
+[INFO] Polgara hit death trap at Schylla's Trap.                Oceania
+[INFO] Cindy hit death trap at a poison gas cloud               Myrridon Mines
+[INFO] Cindy hit death trap at Well.                            Earthsea
+[INFO] Cindy hit death trap at The well                         Storm Giant
+[INFO] Cindy hit death trap at The Cave-In                    Enchanted Forest
+[INFO] Cindy hit death trap at A Stalagmite Forest              Ancalador
+[INFO] Cindy hit death trap at The Whirlpool                    Lizard Lair
+[INFO] Cindy hit death trap at Eaten by the Wardrobe            Lorchid
+[INFO] Cindy hit death trap at The Free fall                    Solom
+[INFO] Cindy hit death trap at WAY Far Down into the Valley     Elven Valley
+[INFO] Vembi hit death trap at Darkness.                        Laboratory
+[INFO] Aoi hit death trap at In The Huge Boiling Pan.           Myrridon Mines
+[INFO] Zappo hit death trap at A Large Magma Pool.              Lorca
+[INFO] B. hit death trap at Within the eye of an energy storm.  Taon
+[INFO] Vulcan hit death trap at Sinking into the quagmire.      VoK
+[INFO] G, hit death trap at Trapped in your personal hell!.     Dunheim
+[INFO] Stmagic hit death trap at Shroud of death.               Alterac
+[INFO] Cindy hit death trap at Walking through DragonSpyre      Dragonspyre
+[INFO] Cindy hit death trap at The Deep Crevasse.               Ice Wall
+[INFO] Affe hit death trap at Trapped in the web!.              Dark Spawn
+[INFO] C... death trap at A pack of evil ugly looking <0)+++<.  Venden
+[INFO] K hit death trap at Abnormally calm deep waters.         Venden
+[INFO] C hit death trap at The mouth of a yellow gupper fish.   Venden
+[INFO] C... at Stuck on the sharp fin of a yellow gupper fish   Venden
+[INFO] Cats hit death trap at The Room Of Death.
+[INFO] Chico hit death trap at Brittle Steps.                   Midgaard
+[INFO] Spazt hit death trap at Falling Deep into a Void.        Apocalypse
+[INFO] Cindy hit death trap at Falling away.                    Taon
+[INFO] Cindy hit death trap at a playground.                    Impact
+[INFO] Cindy hit death trap at heaven.                          Impact
+[INFO] Cindy hit death trap at A Dark Bottomless Pit            Impact
+[INFO] Cindy hit death trap at Wily Ladder.                     Khronatio
+[INFO] Repti hit death trap at Falling into the bottomless pit. CitadelOfO
+[INFO] Cindy hit death trap at A small attic.                   Khronatio
+[INFO] Cindy hit death trap at A pool full of man-eating fish.  Ocean Floor
+[INFO] Amida hit death trap at The Torture Chamber.
+[INFO] Cindy hit death trap at The portcullis mechanism.        Taon
+[INFO] Cindy hit death trap at On the second floor of the library.
+[INFO] Cindy hit death trap at Beaten to death by the Mangler   Dragontail Isle
+[INFO] Cindy hit death trap at The mad doctors office           Dragontail Isle
+[INFO] Cindy hit death trap at Trapped in a shrinking cell      Dragontail Isle
+[INFO] Cindy hit death trap at A very dark, almost black, hole  Dragontail Isle
+[INFO] Cindy hit death trap at A Pit Full of Deadly Vipers      Snake Lair
+[INFO] Cindy hit death trap at Falling off the edge of the mountain!  Elven Lands
+[INFO] Cindy hit death trap at A pit of spikes.                 Battlefields
+[INFO] Cindy hit death trap at Lemmings landing.                Battlefields
+
+South - An infinity trap
+[INFO] Pery hit death trap at Jumping off a cliff without a parachute?.  ('In snowball land' (Kender))
+
+
+Low-level info mobs:
+10 The Pixie Queen                     pixieforest
+60 A crazed elven mage                 alchor
+64 The Gnome boss                      caverns
+65 Grell the undead lich               uriahstomb
+70 Cohen the veteran                   unholydarkness
+70 Hammer, the Veteran                 karandras
+70 Mor'balach the orc leader           abandonedcaves
+70 Rebure the Drow Assassin            graveyard
+70 Vidir, the Embodiment of Anarchy    taon
+74 The ogre shaman                     caverns
+75 Garatza the evil Serpent god        krashkarand
+75 Judge Cahjaani                      court
+75 Kerjim                              kerjim
+75 The Templar guard                   citadeloforder
+76 A lindskiarn warchief               alchor
+77 The Black Guardian                  toormail
+77 The White Guardian                  toormail
+78 The Varak-Ki Tribe Chief            caverns
+78 The ghost of King Torsak            toormail
+80 A githyanki protector               astralplane
+80 Chief Wahoo                         icewall
+80 King Rhalarji                       lorca
+80 King Welmar                         kingscastle
+80 Lord Ceanyth                        citadel
+80 Lord Dareil                         dunheim
+80 Lord Sith                           antiriad
+80 Mahn-Tor                            mahntor
+80 Maugrim - Chief of the Secret Police narnia
+80 Neptunus                            atlantis
+80 Remorhaz                            icewall
+80 Sleet                               icewall
+80 The Golden Titan                    solom
+80 The Mummy of KING TOMAAUKKHEN       tomaaukkhen
+80 The Titanium Statue                 tomaaukkhen
+80 The thessalhydra                    well
+80 The undead king                     blackcastle
+80 The water elemental (hard)          well
+81 The eternal witness                 demoncity
+81+ The Kraken                          toormail
+82 Atuan the Lordwizard                taon
+85 A Phase spider                      darkspawn
+85 A Warp spider                       darkspawn
+85 A great red wyrm                    enchantedforest
+85 A great white shark                 oceanfloor
+85 Achilles                            underworld
+85 Agamemnon                           underworld
+85 Ajax                                underworld
+85 An Ant Soldier                      darkspawn
+85 Bustibieren                         lorca
+85 Carac'rin                           desolateplains
+85 Celebros, the Embodiment of Control taon
+85 Jason                               underworld
+85 Lady Sarah                          dunheim
+85 Medusa                              solom
+85 Megaera                             underworld
+85 Meleth'scor                         desolateplains
+85 Musaeus                             underworld
+85 Orpheus                             underworld
+85 Perseus                             underworld
+85 Saeros, the Embodiment of Thought   taon
+85 Surak, the Embodiment of Water      taon
+85 Telemar, the Embodiment of Rage     taon
+85 The Grand Knight of Paladins        redfernes
+85 The Grand Mistress                  hightower
+85 The Grandmaster of DarkFriends      darkfriends
+85 The Master                          lagamore
+85 The Plasma dragon                   desolateplains
+85 The ancient ghost                   solom
+85 The proto shoggoth                  abandonedcaves
+85 Theseus                             underworld
+85 Uldor, the Embodiment of Calm       taon
+85 Vidir, the Embodiment of Anarchy    taon
+85 Zeus                                olympus
+85+ The huge Rockworm                   toormail
+86 A Troll mummy                       toormail
+86 The Eraditor                        well
+87 The ghost of Irokis                 citadeloforder
+89 The thassaloss                      well
+89+ A githyanki knight                  astralplane
+90 A Ruby Draconian                    dragontailisle
+90 A Sapphire Draconian                dragontailisle
+90 A Topaz Draconian                   dragontailisle
+90 An Emerald Draconian                dragontailisle
+90 Chaos Entity                        crystalmir
+90 King Minos                          underworld
+90 Pred Yrric                          desolateplains
+90 Someone                             taon
+90 The Dark Paladin Master-of-Arms     citadeloforder
+90 The Draconian King                  earthsea
+90 The Great Black Dragon              earthsea
+90 The Guardian of the Halls           haarvenu
+90 The frost dragon                    well
+90 The watch commander                 toormail
+90+ Loreshi, the undead elf-king        lahresin
+91 Korr, the Overlord of Chaos         inglestone
+91 The Great Black Dragon              caverns
+91 The Sword Demon                     well
+92 Bob, the Man of the Night           underground
+92 Giran the Torture Lord              alterac
+92 King Rok Thunderhammer              inglestone
+92 The Fire Demon                      toormail
+92+ The Draconian traitor               taon
+93 Dyrli                               drakyri
+93 Jogath                              museum
+93 Tarbor the Shadow Mage              unholydarkness
+93+ Cerberus                            underworld
+93+ Ghalotiri, the leader of the Medjai cohnshar
+93+ The Daedra Seducer                  oblivion
+93+ The Dremora                         oblivion
+93+ The Spider Daedra                   oblivion
+93+ The evil Mistress of the Gith       astralplane
+94 King Mustaine                       mustaine
+94 The Blue Dragon                     toormail
+94 The Statue of the Ancient War Gods  taon
+94+ The Brettonian Battlemaster         battlefields
+95 A Book                              sin
+95 A Fallen Angel                      sin
+95 A huge, ancient oak tree            haondor
+95 An imprisoned bodak                 dragontailisle
+95 Angerboda                           ragnarok
+95 Dark Rythsish                       desolateplains
+95 Dosandre of the Treniste            drakyri
+95 Fire Giant King                     fireelementalplain
+95 Freiza                              oblivion
+95 Ged                                 earthsea
+95 Grolim high priest                  amphitheatre
+95 Gunthar Uth Wiston                  clerists
+95 Kanaloa, Tropical God of the Seas   oceanfloor
+95 King Gorm                           gorm
+95 Lechandre of the Deriki             drakyri
+95 Lord Tarashakan                     dragontailisle
+95 Lurk                                darkspawn
+95 Olg                                 darkspawn
+95 Skye                                clerists
+95 Supreme Sorcerer Nokisus            pathweaver4
+95 Szeess                              darkspawn
+95 The Dark Paladin grand master       citadeloforder
+95 The Evil Darkmage                   dunheim
+95 The Tarrasque                       enchantedforest
+95 The enslaved red dragon             astralplane
+95 The mystical soulcrusher            laboratory
+95 Uma                                 darkspawn
+95+ A Fateguard                         pathweaver3
+95+ A Gargoyle                          sin
+95+ A Siege Troll                       battlefields
+95+ Garoth                              pathweaver3
+95+ The Draconian Jailor                dragontailisle
+95+ The Grawlth                         woodsofwhispers
+95+ The queen of Guallidurth            guallidurth
+95+ Vabal the Brettonian High Commander alterac
+95+ Yahweh                              apocalypse
+
+Area list:
+==========
+Name             Rooms DT:s
+3mages            119
+3ofswords          76   1
+abandonedcaves     80   1
+alchor             74   1
+alterac            97   1
+amazonia           65   2
+amberkeep          74   1
+amphitheatre       79
+ancalador          57   1
+ancientlands       99   1
+antharia           51
+antiriad           77   1
+apocalypse        130   5
+arachnos           58   2
+arena              52
+argo               52
+astralplane        78+
+atlantis          100
+battlefields       99   2
+blackcastle        82
+burningtowers      60
+canyon             55
+catacombs          69
+cathedral          55   1
+caverns            90
+ceanythdungeons    98
+chessboard         67
+ciqualaslair       20
+circus             50
+citadel           128
+citadeloforder    177   1
+clerists          321
+cohnshar           99
+court              65
+coven              95   2
+crystalmir         80
+darkenwood         62
+darkfriends        69
+darkspawn         102?  1
+darkunder         122+
+darkwater          62   2
+daycare            19
+demoncity          74   1
+desert             41   1
+desolateplains     78
+dharynnsforest    238
+dragoncult         37
+dragonsgraveyard   43
+dragonspyre       102   1
+dragontailisle    273   4
+drakyri            99
+drowcity           56   1
+druidforest        68
+dunheim            79   1
+dwarvenkingdom     52
+earthsea           44   1
+elvenlands         96   1
+elvenvalley        83   1
+elvenvillage       27   1
+enchantedforest    98   1
+enclave            68
+faeryforest        42
+feverishswamps     45   1
+fireelementalplain 67
+fishingvillage     42
+galaxy             60   2
+gardenofangels     55
+ghenna            104   2
+giants             99
+gnome              89
+goblik             56
+goblincaves        32
+gorm              148   1
+grasslands         20
+graveyard          86   1
+guallidurth        90
+gypsyvillage       42
+haarvenu           99
+haondor            43
+hauntedkeep        26
+herdarea           78
+highlands         199
+hightower         151
+hobgoblincamps    400
+holygrove          19
+humblin            81
+icearea            92
+icecastle         102
+icecaves           50
+icewall            79   1
+impact            100   3
+inferno            65   1
+inglestone         94
+juargan            86
+kaltor            118
+karandras         313
+kendervillage      53
+kerjim             82   1
+kerofk            159   1
+khronatio          94   2
+kingscastle        56
+krashkarand        54   1
+laboratory        126   1
+lagamore          132   1
+lahresin           75
+lethrielscrypt     88
+littlehaven        33
+lorca              54   1
+lorchid            80   1
+lostsoulscatacombs 64
+losttemple         50
+lumberjack         25
+mahntor           100
+marsh              19
+matrix             47
+midennir           19
+milorai            33
+mirrorbeyond        8   1
+mirrorrealm       167
+mobfactory         26
+moria              91   1
+muldorbrooke       90
+museum            252
+mustaine          123
+myrridon          371   1
+myrridonmines     135   3
+narnia            200
+nc                189
+newthalos          63
+nirvana            63
+northernplains     45   1
+oblivion          196
+oc                530
+oc coaches         24
+oceanfloor        148   1
+oceania            50   2
+ofcol             100
+oldkingdom         71   1
+olympus            62
+orchard            20
+orshingal          59
+palanthas         105
+pathweaver3        18
+pathweaver4        16
+pixieforest        64
+plainsofdust      112
+pyramid            59   1
+rabbitwarren       31
+ragnarok          275
+randstower         46   1
+ratslair           39
+redfernes          20   1
+reef               50
+reveredplateau     60
+scubdu             88   1
+scurvy             45
+secretgarden      259
+sewer             179   1
+shaolintemple      37
+ship               26
+shipwreck          57   2
+sin                22
+smugglersden       99
+snakelair          71   1
+solace            127
+solom              64   1
+starlet            38
+stormgiant         69   1
+sundhaven         181
+taon              221   7
+thalos             50   1
+tomaaukkhen       137   1
+toormail          483   2
+tournament         86   1
+traderoad          54
+trollden            5
+turvagar          160   1
+ultima            185
+underdark         485
+underground        53
+underworld        275
+unholydarkness    124   3
+uriahstomb        100
+valleyofkings     185   2
+venden             87   4
+wayhouse           41
+well            ~4000
+woodsofwhispers   200   3
+wyverntower        61   1
+wyvernwaterfalls   78
+yggdrasil          24
+zornuzkul          88   1
+obsolete: Midgaard    69   1
+          South Midg  42
+          Tower of Tr 39
+          Sanddune    14
+Merc halls: KoD   23
+            FS    16
+            SS     7
+            CoS    1+
+            GZ     2+
+            PoV   12
+            SC     3+
+            Tro   19
+            BoT    6
+            rest   ?
+Deathtraps       110
+
+
+Compact area list:
+3mages              3ofswords           abandonedcaves      alchor
+alterac             amazonia            amberkeep           amphitheatre
+ancalador           ancientlands        antharia            antiriad
+apocalypse          arachnos            arena               argo
+astralplane         atlantis            battlefields        blackcastle
+burningtowers       canyon              catacombs           cathedral
+caverns             ceanythdungeons     chessboard          ciqualaslair
+circus              citadel             citadeloforder      clerists
+cohnshar            court               coven               crystalmir
+darkenwood          darkfriends         darkspawn           darkunder
+darkwater           daycare             demoncity           desert
+desolateplains      dragoncult          dragonsgraveyard    dragonspyre
+dragontailisle      drakyri             drowcity            druidforest
+dunheim             dwarvenkingdom      earthsea            elvenlands
+elvenvalley         elvenvillage        enchantedforest     enclave
+faeryforest         feverishswamps      fireelementalplain  fishingvillage
+galaxy              gardenofangels      ghenna              giants
+gnome               goblik              goblincaves         gorm
+grasslands          graveyard           guallidurth         gypsyvillage
+haarvenu            haondor             hauntedkeep         herdarea
+highlands           hightower           hobgoblincamps      holygrove
+hugeforest          humblin             icearea             icecastle
+icecaves            icewall             impact              inferno
+inglestone          juargan             kaltor              karandras
+kendervillage       kerjim              kerofk              khronatio
+kingscastle         krashkarand         laboratory          lagamore
+lahresin            lethrielscrypt      littlehaven         lorca
+lorchid             lostsoulscatacombs  losttemple          lumberjack
+mahntor             marsh               matrix              merc
+midennir            milorai             mirrorbeyond        mirrorrealm
+mobfactory          moria               muldorbrooke        museum
+mustaine            myrridon            myrridonmines       narnia
+nc                  newthalos           nirvana             northernplains
+oblivion            oc                  oceanfloor          oceania
+ofcol               oldkingdom          olympus             orchard
+orshingal           palanthas           pathweaver3         pathweaver4
+pixieforest         plainsofdust        pyramid             rabbitwarren
+ragnarok            randstower          ratslair            redfernes
+reef                reveredplateau      scubdu              scurvy
+secretgarden        sewer               shaolintemple       ship
+shipwreck           sin                 smugglersden        snakelair
+solace              solom               starlet             stormgiant
+sundhaven           taon                thalos              tomaaukkhen
+toormail            tournament          traderoad           trollden
+turvagar            ultima              underdark           underground
+underworld          unholydarkness      uriahstomb          valleyofkings
+venden              wayhouse            well                woodsofwhispers
+wyverntower         wyvernwaterfalls    yggdrasil           zornuzkul

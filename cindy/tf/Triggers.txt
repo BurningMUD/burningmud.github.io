@@ -1,0 +1,271 @@
+
+http://www.lysator.liu.se/~tomca/triggers.txt
+
+NOTE: This is merely a draft. The triggers listed are probably correct, but
+many triggers are missing. If anyone is interested in completing this file,
+feel free to just take the material here and do with it as you please.
+
+
+
+This is a list of triggers that you are expected to have. Some are for your
+own convenience but most are for interactions with other players (normally
+commands from your group leader).
+You can do without them, of course, but if you lack them and are in a group,
+stay AK or the leader may get frustrated. Having these triggers is not an
+excuse for afk:ing but will give you a chance to take shorter breaks without
+messing up the group.
+
+Built like this:
+Key:    The text you should have a trigger for.
+        <leader> should be substituted with the name of the leader. If you
+                 like, you can instead allow anyone in the group (or any
+                 player at all) to (ab)use the trigger, but that is not not
+                 nessecary.
+        <name>   means a player name (containing only letters. No spaces or
+                 special chars)
+        <names>  means a name that can have spaces (which means it will
+                 trigger on both player- and mob names)
+Action: What you are supposed to do when the above key appears.
+Note:   Good-to-know stuff about this trigger
+Crap:   Variants of the same command. Good to know about but ought to be
+        avoided (by both leaders and followers) to force people into using a
+        standard.
+        Still, good leaders often use several different commands to make sure
+        all the followers "work". And good followers often have triggers for
+        these variants, so they will function even under leaders who use these
+        other commands.
+
+First, a few non-trigger things that may be good to know:
+=========================================================
+* ALWAYS CARRY A BOAT! Yeye, you have flight spell, so you don't need one?
+  EVERY time you lose the flight spell there's a risk...
+    ...the leader moves through water before you manage to recast the spell
+    ...you are out of mana
+    ...you are in a nomagic room
+    ...you lose your concentration
+    ...you mess up in some other way
+  Plus, having a boat in the top of your inventory can also be a good safety
+  precaution. Inventory vapers always vape the top item in your inventory.
+  Better to lose a boat than your bag of extra equipment.
+* ALWAYS bring some recall potions/herbs! Yes, you may have 3 spells of
+  recalling, but what if you are out of mana? What if you are confused?
+  If you die because you didn't have enough recall herbs you'll only have
+  yourself to blame. But if the group has to keep summoning you back to town,
+  everyone will suffer. And then, when you die, you will go to hell.
+* 55+ in the title means you may join if you are lvl 55 or higher.
+* DTFF in a title means "Don't Tell, Find & Follow". Don't bother the leader -
+  just find him and follow.
+* If leader has "closed" in his title, he probably doesn't want you to join.
+  At the very least, ask him before following.
+* A name in the title is probably a pointer to the priest assigned for
+  summons. If you have no means of your own to get to the leader, try telling
+  that person "summon"
+* "NC"/"OC" in title says which continent the group is on.
+* "UW" in title means group is in UnderWorld. You can't get summoned into that
+  place.
+
+
+Standard triggers:
+==================
+Key:    <leader> tells the group, 'recall'
+Key:    <leader> issues the order 'recall'.
+Action: recall (by whatever means you like)
+Note:   You do not want to recall by the normal "recall" command. It doesn't
+        work in combat and costs half your moves.
+        Íf you use a spell, either make a trigger that recasts your recall
+        spell on lostcon, or just cast the spell twice (if it succeeds the
+        first time you will be in nomag second time so you won't lose mana or
+        get any extra spell lag). Myself I cast "word of recall" first,
+        followed by eating a homesick onion. If the spell succeeds I won't
+        lose my onion, since I'll be in nomag when trying to eat it. If I lose
+        concentration or have negative mana, I can rely on my onion to bring
+        me home safely.
+        You don't want to use scrolls. Scrolls can't be read when you are
+        confused and might fail you in battle. Use potions or herbs to
+        recall instead.
+        You will want triggers for both gtell and order, since it will give
+        the leader more control. Gtell is sent to whole group but order is
+        only seen by groupmembers in the same room as the leader.
+        If you have aura/immo, you might want to remove this before recalling.
+        I'm not sure how this is best handled.
+Crap:   "RECALL" / "Recall"
+
+Key:    The Fountain Square of Karandras
+        The Temple Altar of Myrridon
+Action: Wield your "normal" weapon.
+Note:   Leaders count on people "reseting" their weapons after an area is
+        completed. And some leaders forget to tell members what to use. Better
+        to use your standard weapon than to go through a whole area using a
+        weapon the opponents are immune to.
+        People often go one step south after recalling, to get out of the
+        nomag-room. This is ok, but if you recall on NC, you must instead go 2
+        west, or you will lose the group.
+Crap:   -
+
+Key:    <names> gently lifts down your corpse from <his|her|its> shoulder.
+        <name> just dropped Corpse of <your name>.
+        <name> gives you Corpse of <your name>.
+Action: get all <your name>
+        wear all
+        get <your name>
+Note:   ALWAYS USE YOUR NAME! DO NOT USE "get all corpse", or you will risk
+        looting another player with messy result.
+        Don't forget to loot invisible items!
+        When done, sacrifice the corpse. It will fail if you still have items
+        in it - a good method to make sure you haven't forgotten to loot
+        invisible items. Also, it will be less confusing to have only one
+        corpse if you should die again.
+Crap:   "get all corpse". NO! NO! NO!
+
+Key:    <name> starts feebly trying to budge the huge mithral bar.
+Action: break bar
+Note:   Special Inglestone trigger
+Crap:   -
+
+Key:    <name> starts straining <his|her|its> muscles in an effort to push the boulder.
+Action: push boulder
+Note:   Special Inglestone trigger
+Crap:   -
+
+Key:    <names> blocks your attempt to flee, fight on you wimp!
+        PANIC! You couldn't escape!
+Action: flee
+Note:   You don't want to repeat "flee" manually! It's too slow and there's
+        always the risk of fleeing once too many (accidentally fleeing back to
+        the mob after successfully getting away)
+Crap:   -
+
+Key:    You are dead!  Sorry...
+Action: 1
+Note:   This will make you log in again. It may have disadvantages, but if
+        you're AK it's only a convenience and if you are AFK it gives people a
+        possibility to give the corpse to you, tell you where your corpse is,
+        give you information on what to do, comfort you or gloat.
+Crap:   -
+
+Key:    <leader> enters the hollow tree.
+Action: enter tree
+Note:   Special Enchanted Forest trigger. Not vital.
+Crap:   -
+
+Key:    <leader> bends over and takes a zip from the well.
+Action: drink well
+Note:   Special Dark Spawn trigger. Not vital.
+Crap:   -
+
+Key:    <leader> looks like <he's|she's|it's> about to headbutt the mirror, but *
+        <leader> slides carefully through the mirror *
+Action: enter mirror
+Note:   Special area triggers. Not vital.
+Crap:   -
+
+Key:    <leader> tells you 'refollow'
+Action: follow <leader>
+Note:   Used by leader to put a good tank at the bottom.
+Crap:   <leader> tells the group 'refollow'
+        I see no point in telling the whole group to refollow. Is there?
+
+Key:    <leader> tells the group, 'rest'
+        <leader> issues the order 'rest'.
+        <leader> tells the group, 'sleep'
+        <leader> issues the order 'sleep'.
+        <leader> tells the group, 'stand'
+        <leader> issues the order 'stand'.
+Action: wake;rest / sleep / wake;stand
+Note:   use "rest" instead of "sit" to regenerate faster.
+        A group leader should not have to order "rest" before ordering 
+        "sleep". Nor should he have to order "wake" before ordering "stand".
+        For safe & easy triggers, do a "wake" before any attempt to
+        "rest"/"stand" (gag the message about already being awake if that
+        bothers you). For more advanced scripters, have a variable keeping
+        track of your current "position" and take the best action depending
+        on that variable.
+Crap:   "REST", "sit", "SIT", "SLEEP", "STAND", "wake", "WAKE"
+
+Key:    <leader> tells the group, 'rem about'
+        <leader> tells the group, 'wear about'
+Action: remove/wear your about-body item
+Note:   Special Enchanted Forest trigger.
+Crap:   "remove", "REM", "REMOVE", "WEAR", "ABOUT"
+
+Key:    <leader> tells the group, 'drink <item>'
+        <leader> tells the group, 'enter <item>'
+        <leader> tells the group, 'leave <item>'
+        <leader> tells the group, '<your name> drink <item>'
+        <leader> tells the group, '<your name> enter <item>'
+        <leader> tells the group, '<your name> leave <item>'
+Action: drink/enter/leave <item>
+Note:   If non-spellcaster, don't trig on "enter tipi", "enter outpost", 
+        "enter wood" or "enter stone", unless <your name> is specified.
+        Leaders ought to always use "outpost" instead of "tipi"/"wooden"/
+        "stone"
+        If <item> is "outpost"/"tipi"/"wooden"/"stone", always "wake" and
+        "stand" before entering/leaving. Also, if entering, always "sleep"
+        if you manage to enter it. Leader shouldn't have to "order group
+        wake", "order group stand" just to be able to move people in/out of
+        outposts.
+Crap:   "DRINK", "ENTER", "LEAVE", "tipi", "wooden", "stone"
+
+Key:    <leader> tells the group, 'flee'
+Action: flee
+Note:   WARNING: Groupleaders often sends several gtells to make sure everyone
+        sees them. IF you make this trigger, make sure you inactivate it for
+        some time before turning it on again (eg after 1 minute, or next time
+        you recall). Otherwise you will end up fleeing and fleeing and
+        fleeing... which will probably get you killed.
+Crap:   "FLEE"
+
+Key:    The <item> seems to be closed.
+Action: open <item>
+Note:   This message only appears when you try to move through a closed door.
+        If you have a variable keeping track of your last move, a better
+        action is to
+          open <item> <lastmove>
+        This will make sure you open the correct door if there is more than
+        one.
+Crap:   -
+
+Key:    You are hungry.
+        You are thirsty.
+Action: eat <food> / drink <drink container>
+Note:   
+Crap:   -
+
+
+
+Well triggers:
+==============
+<leader> climbs into The Well, looks *
+=> enter well
+
+Key:    <leader> tells the group, 'rem shield'
+        <leader> tells the group, 'wear shield'
+Action: remove/wear your shield
+Note:   
+Crap:   "remove", "REM", "REMOVE", "WEAR", "SHIELD"
+
+
+
+Special class triggers (MA):
+============================
+Your surroundings start to change!
+=> s
+   cast/quaff/recite 'cure critic' (to avoid dying from critical wounds)
+   cast/quaff/recite some kind of healing (to avoid dying from a single hit)
+   cast 'contingency'
+
+<leader> tells the group, 'dd cop <name>'
+=> cast 'dimension door' <name>
+   cast 'circle of protection'
+
+You try to escape, but your surroundings disable your contingency!
+=> retreat
+   recall
+   flee
+   cast 'teleport without error'
+   eat homesick
+Note: This is how I handle it. You might want to solve it another way
+
+Your contingency fails, TOUGH LUCK!
+=> cast 'teleport without error'
+   eat homesick

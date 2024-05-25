@@ -1,0 +1,100 @@
+Double feeblemind:   Doesn't work on mobs.
+Bleeding to death:   [INFO] The Pixie Queen bled to death.
+Poison:              [INFO] The Pixie Queen was poisoned to death.
+Weapon:              [INFO] The Pixie Queen was killed by Cindy.
+Chill Touch:         [INFO] The mystical soulcrusher was completely drained of strength by Cindy of Matrix's group.
+Cloudkill:           as Weapon
+Bash:                as Weapon
+Frostbreath:         as Weapon
+Whirlwind:           as Weapon
+Call Lightning:      as Weapon
+Pummel:              as Weapon
+Magic Missile:       [INFO] The Pixie Queen was embarrassed to death by Cindy.
+Burning Hands:       [INFO] The Pixie Queen was scorched to cinders by Cindy.
+Fireball:            as Burning Hands
+Shocking Grasp:      [INFO] Cindy electrocuted The Pixie Queen with her tiny touch.
+Lightning Bolt:      [INFO] Cindy electrocuted the Pixie Queen with her tiny fingers.
+Ice Storm:           [INFO] The Pixie Queen was sliced into tiny ice cubes by an ice storm invoked by Cindy.
+Energy Drain:        [INFO] The Pixie Queen was drained of her life force by Cindy, leaving a dried up shriveled corpse.
+Chain Lightning:     [INFO] The Pixie Queen was electrocuted by Cindy.
+Meteor Blast:        [INFO] The Pixie Queen was crushed by a devastating meteor strike evoked by Cindy.
+Meteor Swarm:        as Meteor Blast
+Powerword Pain:      [INFO] The Pixie Queen was overcome with excruciating pain invoked by Cindy.
+Hell Fire:           [INFO] The Pixie Queen was burned to dust and ashes by Cindy.
+Vampiric Mist:       [INFO] Cindy's dark malevolent mist, totally consumes The Pixie Queen.
+Cause Light:         [INFO] The Pixie Queen barely died of light wounds invoked by Cindy.
+Earthquake:          [INFO] The Pixie Queen was swallowed whole in a violent earthquake caused by Cindy.
+Cause Serious:       [INFO] The Pixie Queen was seriously injured by Cindy's spell and never recovered.
+Cause Critic:        [INFO] The Pixie Queen died of critical wounds invoked by Cindy..
+Harm:                [INFO] The Pixie Queen was destroyed by the divine power of Cindy.
+Powerharm:           [INFO] The Pixie Queen was utterly vaporized by the divine power of Cindy.
+Hurricane:           [INFO] The Pixie Queen was blown away by Cindy.
+Assassinate:         [INFO] The Pixie Queen was assassinated outright by Tinkywinky.
+Murder:              [INFO] The Pixie Queen was viciously murdered by Tinkywinky.
+Shock Bolt:          [INFO] The Pixie Queen died from a heart attack instigated by Cindy.
+Water Bolt:          [INFO] The Pixie Queen was completely diluted by Cindy.
+Ice Bolt:            [INFO] The Pixie Queen was frozen solid by Cindy.
+Immolation Cold:     as Ice Bolt
+Fire Bolt:           [INFO] The Pixie Queen was burned alive by Cindy.
+Immolation Fire:     as Fire Bolt
+Plasma Bolt:         [INFO] The Pixie Queen was completely consumed in raw plasma by Cindy.
+Plasma Ball:         as Plasma Bolt
+Force Bolt:          [INFO] The Pixie Queen was killed by the forceful will of Cindy.
+Aura of Pain:        [INFO] The Pixie Queen was killed by a deadly grip from Cindy.
+Aura of Vampirism:   [INFO] Brutus hums innocently as his aura turned The Pixie Queen into dust.
+Headbang:            [INFO] The Pixie Queen was brutally headbutted to death by Mashiara.
+Kick:                [INFO] The Pixie Queen was killed by a well-placed kick from Mashiara.
+Sticks to Snakes:    [INFO] The Pixie Queen was bitten to death by a venomous snake created by Singolf.
+Aura of Despair:     [INFO] The Pixie Queen was consumed by Hingolf's aura of despair.
+Backstab:            [INFO] The Pixie Queen was savagely backstabbed to death by Brutus.
+Circle:              [INFO] The Pixie Queen was stabbed mercilessly from behind by Brutus.
+Insect Plague:       [INFO] The Pixie Queen was consumed by a hoard of tiny insects sent out by Singolf.
+Deadly Swarm:        [INFO] The Pixie Queen was stung to death by a vicious swarm of angry vermin sent by Singolf.
+Nether Bolt:         [INFO] The Pixie Queen was reduced to nothingness by Cindy.
+Powerword Kill       [INFO] The Pixie Queen crumpled into dust from Guido's arcane word of power.
+Deathspell:          as Powerword Kill
+Aura of Ice          [INFO] The Pixie Queen got frozen by Cindy's aura and when trying to move her body shattered.
+Aura of Fire:        [INFO] Cindy laughs as her aura burned The Pixie Queen into a charred corpse.
+Aura of Lightning:   [INFO] Skrunk smirks as his mighty aura turned The water elemental into a puddle of blood.
+Wrath Of God:        [INFO] Guido of Final Sanction was struck by Bandage of Kindred of the Dark's wrath.
+Fire Seeds:          [INFO] The horgar was blown to tiny bits by Krubba of Greenleaf's group.
+Sun arrow:           [INFO] The Storm Demon was transformed to a heap of dust by Lonneli of Ranarok's group.
+
+Judgement:           [INFO] The Dao Hetman was judged to be unfit for life by Souljah of Trent's group.
+Lava room:           [INFO] Urkel melted into a puddle of goop while standing in some molten lava.
+Lorca swamp:         [INFO] Cindy swallowed a lungful too much..shame they aren't a fish.'
+Death trap:          [INFO] Cindy hit death trap at Offer altar
+Lightning breath:    [INFO] Skrunk was electrocuted to death by Neptunus's breath.
+Negative stat/maxhp: [INFO] Guido suffered a horrible death as his body imploded.
+Well wind:           [INFO] Julle was smashed into a pulp on a cavern wall by a violent wind gust.
+
+Staff-recharge failure, ???: [INFO] Hypnotoad committed suicide.
+Critical Wounds:     [INFO] Xxx committed suicide.
+???:                 [INFO] Cindy had her life force invoked into oblivion by Takhisis.
+Triad Of Ice:        [INFO] Xxx was slain by a triad of jagged ice bolts sent by Yyy.
+Triad of Fire:       [INFO] Xxx instantly combusted in a hail of fire bolts sent by Yyy.
+Blood mirror:        [INFO] Xxx was killed by Xxx courtesy of Yyy.
+Hell Storm:          [INFO] Garatza the evil Serpent god was reduced to ashes from a ferocious hellstorm sent by Cindy.
+Judgement:           [INFO] Xxx was judged to be unfit for life by Yyy.
+Mass Pain:           [INFO] The Enchanter was overcome by a massive wave of excruciating pain called by Cindy.
+Armor of Thorns:     [INFO] Perseus was impaled on the armor of thorns protecting Cindy.
+Aura of Reflection:  [INFO] Xxx died by his/her/its own hands thanks to the aura surrounding Yyy.
+Dispel:              [INFO] Xxx was dispelled by the magical hymn mumbled by Yyy.
+Touch of God:        [INFO] Garatza the evil Serpent god was killed by the divine touch of Cindy.
+Darkunder Cocoon     [INFO] <name> succumbed to the foul gas from The Primeval Worm's cocoons.
+
+Changed since last:
+===================
+Mountain Heart:      [INFO] The Pixie Queen was killed by The Pixie Queen.
+
+Need kills with:
+================
+Fire breath
+Acid breath
+Gas breath
+
+Not possible on the queen: (try these on King Tomaaukkhen?)
+===========================================================
+Colour Spray:   
+Sun Ray:        
+

@@ -1,0 +1,122 @@
+# Sundhaven (92): 1-30, Mercy  (Sundhaven: -)
+#
+#                   o                                           /
+#                  /|                                          o
+#                 o |                                          |
+#                /  |                                    o --- y - o
+#               o-o |    o                              /      |
+#              /    |    |                         o - o   o - z - o  z
+#       o     /   o-o----o-o                      /|  /        |/    /
+#      /|    /      |    |                       o | o ---- o  o    o
+#     / o   /     o-o-o  |                         |       /        +
+#    /     /        |    |     Chessboard-o        o - o  o -- o -- o
+#   o-o-o-o-o-o-o   o  o-o                |           /             |
+#      /|     |         /                NM          y              o
+#     / o     o   o ___/                 /|                        /
+#    /            |/                    o o                       o
+# o-o-o       o   o                    / /                        |
+#            /    | Dark-             o o    [GZ]-o               o - o
+#           o   o-o water o o       o | |         |\              |   |
+#          /     /    |   | |       | | v         | Oceania       o - o
+#         o   o-o o   o---o-o-------o | y         +
+#         |     | |      /  |      /  |           |
+#         o-o-o-o-o-----o   o SmD-o   o - o   Ps  o  Map  o
+#                 |               |   |   |   |   |   |   |
+#                 o           o o-o-o+o - o - o - o - o - o - Gs     o
+#                 |           |   |       |   |  /    |   |         /
+#               o-o-o     o-o-o   o   Js->o   Ms     NM o-o ------ Fs
+#                           | |           |               |
+#                           o-o       o - o            As-o ------------ Ale
+#                             +           |               |              /|
+#                             o       o - o-Auct       Ws-o-Inn  y<-o    |o-o
+#                             |           |               |         |    /
+#                        ---- o --- o+o - o - o - X - o - o---o+o-  o-o-o
+#                                             |  /|   |   |     |
+#                         Cafe        /->y    o   o   o Museum  o-[KoD]
+#                          x         /            |             |
+#                         o    NM   o             o-----Cafe  o-o
+#                        /      |   |             |     x     |
+#               o - o - o - o + o - o             |           o
+#               |              x              o - o-King     /
+#               |             o              /|   |         o
+#               | __________________________/ o - o         |
+#               |x                           /    |         o
+#               o                          [Tro]  o        /
+#                                                x|       o
+#                                              Ws o       |
+#                                                 +       o
+#                                                         |
+#                                                         o
+#
+* Safe area. But there's a hidden thief that steals money!
+
+Sundhaven:                       Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+A dark-haired girl                 1   200 N-x--     -     27-35      201-201
+A grey cat                         1   200 N-x---    -     28-33        1-1
+A large white cat                  1   200 N----x    -     30-34        1-1
+A mendicant                        1   200 N-----    -     27-35        6-6
+A mockingbird                      1   200 N----x    -     29-33        1-1     immune earth
+A moth                             1   200 N-----    -     29-33        1
+A smoke rat                        1   200 N-x--     -     28-35        1-1     corpse eater
+A tabby cat                        1   200 N----     -     28-34        1-1
+Stu                                1   200 N-x---    -     26-33        6-6     immune blind, no-charm, flees
+A mischievious boy                 2   800 E-x--     -     42-44       61-61
+A peddler                          2   800 N-x--     -     38-45      401-401
+A raven                            2   800 N----     -     41-44        1-1
+A blackberry picker                3  2400 N----     -     56-65       81-81
+A black animal                     4  6400 N----     -     76-85        1-1
+A gypsy minstrel                   5   12k N-x--     -     96-104     301-301
+A paranoid adventurer              5   12k N----     -     97-103      41-41
+The Guide (Sundhaven)              5  4500 G-xx-x    -     63-66       48-48    special-guide-commands
+A thief                            6   21k E--x -    -    119-126     601-601   no-charm, thief, hide
+The town treasurer                10  110k N-----    -    196-200      11-11
+The village idiot                 10  110k N-x---    -    196-205      15-15    [human], flees
+A silk trader                     11  132k N-x---    -    216-228    1001-1001
+A young warrior                   11       N--       -      ?           ?       nofight-room
+A foreign princess                14  210k N-----    -    273-279    1001-1001  flees
+A disgruntled courier             15  255k N-----    -    293-304       1-1
+A squire                          15  255k N-----    -    292-300      41-41
+The gate watchman                 15  255k N--x-x    -    297-309     201-201   protector
+A wanted thief                    17  357k E-----    -    358-359     901-901   [human]
+A knight in bright armor          18  414k N----     -    381-394     901-901
+A black lamprey                   20  600k E--x-     G    438-460       1-1
+A sacrificial priestess           20  600k Nx-x-x    -    440-450       1-1
+A Sundhaven guard                 20  578k N-x---    -    438-459     401-401   [human], protector
+An old blind mage                 20  600k E-----    -    436-457     201-201   he is blind, blindness?
+A Sundhaven noble                 21  735k N-x--x    -    473-493    1301-1301
+An old mage                       22  880k N--x-x    -    505-520      56-56    colour spray, fireball, lightning bolt
+A black-robed priest              23       Nx-       -      ?           ?       nofight-room
+A black-robed priestess           23       Nx-       -      ?           ?       nofight-room
+The Earl of Sundhaven             25 1444k N-x--x    -    589-604    3001-3001  [human], flees
+A warrior of the Black Watch      28 2520k G-xx--    -    684-694    1001-1001  protector
+The jeweller                      29       N--       -                          shopkeeper (can't walk to room)
+A little old lady                 29       N--       -      ?           ?       shopkeeper
+A retired thief                   29       N--       -      ?           ?       no-attack
+Mekala                            29       N--       -      ?           ?       shopkeeper
+Phadela                           29       N--       -      ?           ?       shopkeeper
+The Archmage                      29       Nx-       -      ?           ?       nofight-room
+The armourer                      29       N--       -      ?           ?       shopkeeper
+The bartender                     29       N--       -      ?           ?       shopkeeper
+The butcher                       29       E--       -      ?           ?       nofight-room
+The cartographer                  29       N--       -      ?           ?       shopkeeper
+The falconer                      29       G--       -      ?           ?       nofight-room
+The hobbit pastry chef            29       N--       -      ?           ?       no-attack
+The Item Clerk                    29       N--       -      ?           ?       nofight-room
+The Knightmaster                  29       Nx-       -      ?           ?       nofight-room
+The magess                        29       N--       -      ?           ?       shopkeeper
+The Mistress of Assassins         29       Nx-       -      ?           ?       nofight-room
+The old alchemist                 29       N--       -      ?           ?       shopkeeper
+The Priestess of the Ministry     29       Nx-       -      ?           ?       nofight-room
+The weaponsmaster                 29       N--       -      ?           ?       shopkeeper
+Athos                             30 3465k G----x    -    738-757    2001-2001  [human]
+A black naga guardian             33 5940k E--x--    -    846-854       1-1
+A guardian basilisk               33 5940k G-----    -    842-851       1-1
+A guardian gryphon                33 5940k G--x--    -    822-843       1-1     immune earth, save 11
+A guardian imp                    33 5940k E--x--    -    821-834       1-1
+The Lord of the Black Watch       33 5940k G-xx-x    -    823-850    2001-2001  [human]
+The town hangman                  39   14M Nx-x-x    -   1284-1311    801-801   [human], immune blind, no-charm
+The Receptionist                  51       N--       -      ?           ?       nofight-mob
+A Ghenna outlaw                   59 2641k N--x -0   -  ~5247-~5555  4805-5145  vuln heal, vuln pure and/or light?, resist WEAPON, immune unlife/dark, bash, kick, headbang, +~5000 starthp
+The auctioneer                   100       N--       -      ?       44587       no-attack
+The proud servant of King Elchor 100       N--       -      ?           ?       questmaster, no-attack, cake, "whe elchor" works outside Sundhaven
+King Elchor                      100     0 N--x -    -  55501-55501 55501-55501 INFO, [human], cake, 1-1 attacks, save <2, ac <-72

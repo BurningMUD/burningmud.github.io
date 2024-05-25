@@ -1,0 +1,2686 @@
+; substitutes.tf
+
+; Useful and less useful substitutions. Browse around and copy the parts you
+; feel would be useful for you.
+
+/load mobsubs.tf
+
+/purge tfsubst*
+/unaliasSilent warnIfNotWithGroup
+
+/set lastspellseen none
+
+/def -F -mregexp -t"utters the words, '(\[|)([^\]']+)(\]|)'" tfsubstsomeknownspell = \
+    /set lastspellseen %{P2}%; \
+
+/def -p2 -F -mregexp -t"uizuguburuhl" tfsubstinvisibility = \
+    /set lastspellseen invisibility%; \
+    /substitute -p %{PL}[invisibility]%{PR}
+/def -p10 -F -mregexp -t"oculoinfra uizuguburuhl" tfsubstdetectinvis = \
+    /set lastspellseen detect invisibility%; \
+    /substitute -p %{PL}[detect invisibility]%{PR}
+/def -p10 -F -mregexp -t"uwsfazze uizuguburuhl" tfsubstimp = \
+    /set lastspellseen improved invisibility%; \
+    /substitute -p %{PL}[improved invisibility]%{PR}
+/def -p10 -F -mregexp -t"ofajs uizuguburuhl" tfsubstgroupinv = \
+    /set lastspellseen group invisibility%; \
+    /substitute -p %{PL}[group invisibility]%{PR}
+/def -p10 -F -mregexp -t"ofajs uwsfazze uizuguburuhl" tfsubstgroupimp = \
+    /set lastspellseen group improved invisibility%; \
+    /substitute -p %{PL}[group improved invisibility]%{PR}
+
+/def -p2 -F -mregexp -t"pzar" tfsubstheal = \
+    /set lastspellseen heal%; \
+    /substitute -p %{PL}[heal]%{PR}
+/def -p10 -F -mregexp -t"ofajspzar" tfsubstgroupheal = \
+    /set lastspellseen groupheal%; \
+    /substitute -p %{PL}[groupheal]%{PR}
+/def -p10 -F -mregexp -t"hfjzpzar" tfsubsttrueheal = \
+    /set lastspellseen trueheal%; \
+    /substitute -p %{PL}[trueheal]%{PR}
+/def -p10 -F -mregexp -t"saxzfpzar" tfsubstpowerheal = \
+    /set lastspellseen powerheal%; \
+    /substitute -p %{PL}[powerheal]%{PR}
+/def -p15 -F -mregexp -t"ofajssaxzfpzar" tfsubstgrouppowerheal = \
+    /set lastspellseen grouppowerheal%; \
+    /substitute -p %{PL}[grouppowerheal]%{PR}
+
+/def -p2 -F -mregexp -t"gjwwai" tfsubstsummon = \
+    /set lastspellseen summon%; \
+    /substitute -p %{PL}[summon]%{PR}
+/def -p10 -F -mregexp -t"aiuwar gjwwailla" tfsubstanimalsummoning = \
+    /set lastspellseen animal summoning%; \
+    /substitute -p %{PL}[animal summoning]%{PR}
+
+/def -p2 -F -mregexp -t"abrazak" tfsubstarmor = \
+    /set lastspellseen armor%; \
+    /substitute -p %{PL}[armor]%{PR}
+/def -p10 -F -mregexp -t"parl abrazak" tfsubstholyarmor = \
+    /set lastspellseen holy armor%; \
+    /substitute -p %{PL}[holy armor]%{PR}
+/def -p10 -F -mregexp -t"abrazak ay hpafig" tfsubstarmorofthorns = \
+    /set lastspellseen armor of thorns%; \
+    /substitute -p %{PL}[armor of thorns]%{PR}
+/def -p10 -F -mregexp -t"ofajs abrazak" tfsubstgrouparmor = \
+    /set lastspellseen group armor%; \
+    /substitute -p %{PL}[group armor]%{PR}
+
+/def -p2 -F -mregexp -t"gszrr" tfsubstspell = \
+    /set lastspellseen gszrr - unknown%; \
+    /substitute -p %{PL}gszrr(Spell - Apprentice Spellweaver @ Underground)%{PR}
+/def -p10 -F -mregexp -t"gszrryufz" tfsubstspellfire = \
+    /set lastspellseen spellfire%; \
+    /substitute -p %{PL}[spellfire]%{PR}
+/def -p10 -F -mregexp -t"oculoahpgszrr" tfsubstdeathspell = \
+    /set lastspellseen deathspell%; \
+    /substitute -p %{PL}[deathspell]%{PR}
+
+/def -p2 -F -mregexp -t"sfahzqhuai" tfsubstprotection = \
+    /set lastspellseen protection%; \
+    /substitute -p %{PL}[protection]%{PR}
+/def -p10 -F -mregexp -t"qufqrz ay sfahzqhuai" tfsubstcircleofprot = \
+    /set lastspellseen circle of protection%; \
+    /substitute -p %{PL}[circle of protection]%{PR}
+
+/def -p2 -F -mregexp -t"noselacri" tfsubstblind = \
+    /set lastspellseen blindness%; \
+    /substitute -p %{PL}[blindness]%{PR}
+/def -p10 -F -mregexp -t"saxzfxafe nose" tfsubstpblind = \
+    /set lastspellseen powerword blind%; \
+    /substitute -p %{PL}[powerword blind]%{PR}
+
+/def -p2 -F -mregexp -t"pabraw" tfsubstharm = \
+    /set lastspellseen harm%; \
+    /substitute -p %{PL}[harm]%{PR}
+/def -p10 -F -mregexp -t"qpabraw dudasabru" tfsubstcharmperson = \
+    /set lastspellseen charm person%; \
+    /substitute -p %{PL}[charm person]%{PR}
+/def -p10 -F -mregexp -t"saxzfpabraw" tfsubstpowerharm = \
+    /set lastspellseen powerharm%; \
+    /substitute -p %{PL}[powerharm]%{PR}
+/def -p10 -F -mregexp -t"qpabraw qfzahjcandus" tfsubstcharmcreature = \
+    /set lastspellseen charm creature%; \
+    /substitute -p %{PL}[charm creature]%{PR}
+
+/def -p2 -F -mregexp -t"saugai" tfsubstpoison = \
+    /set lastspellseen poison%; \
+    /substitute -p %{PL}[poison]%{PR}
+/def -p10 -F -mregexp -t"canduswazz saugai" tfsubstremovepoison = \
+    /set lastspellseen remove poison%; \
+    /substitute -p %{PL}[remove poison]%{PR}
+/def -p10 -F -mregexp -t"oculoinfra saugai" tfsubstdetectpoison = \
+    /set lastspellseen detect poison%; \
+    /substitute -p %{PL}[detect poison]%{PR}
+
+/def -p2 -F -mregexp -t"hzrzsafh" tfsubstteleport = \
+    /set lastspellseen teleport%; \
+    /substitute -p %{PL}[teleport]%{PR}
+/def -p10 -F -mregexp -t"hzrzsafh xuhpajh zffaf" tfsubstteleportwithouterror = \
+    /set lastspellseen teleport without error%; \
+    /substitute -p %{PL}[teleport without error]%{PR}
+
+/def -p2 -F -mregexp -t"judifgz" tfsubstcurse = \
+    /set lastspellseen curse%; \
+    /substitute -p %{PL}[curse]%{PR}
+/def -p10 -F -mregexp -t"canduswazz judifgz" tfsubstremovecurse = \
+    /set lastspellseen remove curse%; \
+    /substitute -p %{PL}[remove curse]%{PR}
+
+/def -p2 -F -mregexp -t"'fido'" tfsubstbless = \
+    /set lastspellseen bless%; \
+    /substitute -p %{PL}'[bless]'%{PR}
+/def -p10 -F -mregexp -t"ofajs fido" tfsubstgroupbless = \
+    /set lastspellseen group bless%; \
+    /substitute -p %{PL}[group bless]%{PR}
+/def -p10 -F -mregexp -t"iahjcandusg fidouio" tfsubstnaturesblessing = \
+    /set lastspellseen natures blessing%; \
+    /substitute -p %{PL}[natures blessing]%{PR}
+/def -p10 -F -mregexp -t"oaeg fidouio" tfsubstgodsblessing = \
+    /set lastspellseen gods blessing%; \
+    /substitute -p %{PL}[gods blessing]%{PR}
+
+/def -p2 -F -mregexp -t"'ruit'" tfsubstlink = \
+    /set lastspellseen link%; \
+    /substitute -p %{PL}'[link]'%{PR}
+
+/def -p2 -F -mregexp -t"aue" tfsubstaid = \
+    /set lastspellseen aid%; \
+    /substitute -p %{PL}[aid]%{PR}
+/def -p2 -F -mregexp -t"waouq wuggurz" tfsubstmmissile = \
+    /set lastspellseen magic missile%; \
+    /substitute -p %{PL}[magic missile]%{PR}
+/def -p2 -F -mregexp -t"sfalzf" tfsubstprayer = \
+    /set lastspellseen prayer%; \
+    /substitute -p %{PL}[prayer]%{PR}
+/def -p2 -F -mregexp -t"judicandus qfuhuq" tfsubstcc = \
+    /set lastspellseen cure critic%; \
+    /substitute -p %{PL}[cure critic]%{PR}
+/def -p99 -F -mregexp -t"xuhpzf" tfsubstwither = \
+    /set lastspellseen wither%; \
+    /substitute -p %{PL}[wither]%{PR}
+/def -p2 -F -mregexp -t"xwpjir" tfsubstwitherMazekeeper = \
+    /set lastspellseen wither%; \
+    /substitute -p %{PL}[wither]%{PR}
+/def -p2 -F -mregexp -t"qaiyjguai" tfsubstconfusion = \
+    /set lastspellseen confusion%; \
+    /substitute -p %{PL}[confusion]%{PR}
+/def -p2 -F -mregexp -t"qufqrz ay ghaiz" tfsubstcos = \
+    /set lastspellseen circle of stone%; \
+    /substitute -p %{PL}[circle of stone]%{PR}
+/def -p2 -F -mregexp -t"unsoqpaih xzasai" tfsubstenchantweapon = \
+    /set lastspellseen enchant weapon%; \
+    /substitute -p %{PL}[enchant weapon]%{PR}
+/def -p2 -F -mregexp -t"babratgtui" tfsubstbarkskin = \
+    /set lastspellseen barkskin%; \
+    /substitute -p %{PL}[barkskin]%{PR}
+/def -p2 -F -mregexp -t"grzzs" tfsubstsleep = \
+    /set lastspellseen sleep%; \
+    /substitute -p %{PL}[sleep]%{PR}
+/def -p2 -F -mregexp -t"qawbah" tfsubstcombat = \
+    /set lastspellseen combat%; \
+    /substitute -p %{PL}[combat]%{PR}
+/def -p2 -F -mregexp -t"brjf" tfsubstblur = \
+    /set lastspellseen blur%; \
+    /substitute -p %{PL}[blur]%{PR}
+/def -p2 -F -mregexp -t"nofoaw" tfsubstvenom = \
+    /set lastspellseen venom%; \
+    /substitute -p %{PL}[venom]%{PR}
+/def -p2 -F -mregexp -t"paghz" tfsubsthaste = \
+    /set lastspellseen haste%; \
+    /substitute -p %{PL}[haste]%{PR}
+/def -p2 -F -mregexp -t"waia gpuzre" tfsubstmanashield = \
+    /set lastspellseen mana shield%; \
+    /substitute -p %{PL}[mana shield]%{PR}
+/def -p2 -F -mregexp -t"pzrr ghafw" tfsubsthellstorm = \
+    /set lastspellseen hell storm%; \
+    /substitute -p %{PL}[hell storm]%{PR}
+/def -p2 -F -mregexp -t"qzrzghuar szaqz" tfsubstcelestialpeace = \
+    /set lastspellseen celestial peace%; \
+    /substitute -p %{PL}[celestial peace]%{PR}
+/def -p2 -F -mregexp -t"yufz gzzeg" tfsubstfireseeds = \
+    /set lastspellseen fire seeds%; \
+    /substitute -p %{PL}[fire seeds]%{PR}
+/def -p2 -F -mregexp -t"xahzf barh" tfsubstwaterbolt = \
+    /set lastspellseen water bolt%; \
+    /substitute -p %{PL}[water bolt]%{PR}
+/def -p2 -F -mregexp -t"yjeozwunsoh" tfsubstjudgement = \
+    /set lastspellseen judgement%; \
+    /substitute -p %{PL}[judgement]%{PR}
+/def -p2 -F -mregexp -t"gji gpuzre" tfsubstsunshield = \
+    /set lastspellseen sun shield%; \
+    /substitute -p %{PL}[sun shield]%{PR}
+/def -p2 -F -mregexp -t"gaiqhjabral" tfsubstsanctuary = \
+    /set lastspellseen sanctuary%; \
+    /substitute -p %{PL}[sanctuary]%{PR}
+/def -p2 -F -mregexp -t"ouaih gukz" tfsubstgiantsize = \
+    /set lastspellseen giant size%; \
+    /substitute -p %{PL}[giant size]%{PR}
+/def -p2 -F -mregexp -t"gpaeax eugsraqzwunsoh" tfsubstshadowdisplacement = \
+    /set lastspellseen shadow displacement%; \
+    /substitute -p %{PL}[shadow displacement]%{PR}
+/def -p2 -F -mregexp -t"ghuqtg ha giatzg" tfsubststickstosnakes = \
+    /set lastspellseen sticks to snakes%; \
+    /substitute -p %{PL}[sticks to snakes]%{PR}
+/def -p2 -F -mregexp -t"mosagh ay ruyz" tfsubstburstoflife = \
+    /set lastspellseen burst of life%; \
+    /substitute -p %{PL}[burst of life]%{PR}
+/def -p2 -F -mregexp -t"gji abrafax" tfsubstsunarrow = \
+    /set lastspellseen sun arrow%; \
+    /substitute -p %{PL}[sun arrow]%{PR}
+/def -p2 -F -mregexp -t"uwwarahuai qare" tfsubstimmolationcold = \
+    /set lastspellseen immolation cold%; \
+    /substitute -p %{PL}[immolation cold]%{PR}
+/def -p2 -F -mregexp -t"uwwarahuai yufz" tfsubstimmolationfire = \
+    /set lastspellseen immolation fire%; \
+    /substitute -p %{PL}[immolation fire]%{PR}
+/def -p2 -F -mregexp -t"qahijf gsfal" tfsubstcolourspray = \
+    /set lastspellseen colour spray%; \
+    /substitute -p %{PL}[colour spray]%{PR}
+/def -p2 -F -mregexp -t"yufzbarr" tfsubstfireball = \
+    /set lastspellseen fireball%; \
+    /substitute -p %{PL}[fireball]%{PR}
+/def -p2 -F -mregexp -t"zakezitauiunso'g gxafe" tfsubstmordsword = \
+    /set lastspellseen mordenkainen's sword%; \
+    /substitute -p %{PL}[mordenkainen's sword]%{PR}
+/def -p2 -F -mregexp -t"diesilla barh" tfsubstlightningbolt = \
+    /set lastspellseen lightning bolt%; \
+    /substitute -p %{PL}[lightning bolt]%{PR}
+/def -p2 -F -mregexp -t"wagg saui" tfsubstmasspain = \
+    /set lastspellseen mass pain%; \
+    /substitute -p %{PL}[mass pain]%{PR}
+/def -p2 -F -mregexp -t"mosailla paieg" tfsubstburninghands = \
+    /set lastspellseen burning hands%; \
+    /substitute -p %{PL}[burning hands]%{PR}
+/def -p2 -F -mregexp -t"culaae ay yufz" tfsubsttriadoffire = \
+    /set lastspellseen triad of fire%; \
+    /substitute -p %{PL}[triad of fire]%{PR}
+/def -p2 -F -mregexp -t"judicandus gzfuajg" tfsubstcs = \
+    /set lastspellseen cure serious%; \
+    /substitute -p %{PL}[cure serious]%{PR}
+/def -p2 -F -mregexp -t"ghcandusiohp" tfsubststrength = \
+    /set lastspellseen strength%; \
+    /substitute -p %{PL}[strength]%{PR}
+/def -p2 -F -mregexp -t"saxzfxafe saui" tfsubstpowerpain = \
+    /set lastspellseen powerword pain%; \
+    /substitute -p %{PL}[powerword pain]%{PR}
+/def -p2 -F -mregexp -t"saxzfxafe turr" tfsubstpowerkill = \
+    /set lastspellseen powerword kill%; \
+    /substitute -p %{PL}[powerword kill]%{PR}
+/def -p2 -F -mregexp -t"hcanduszyafw" tfsubsttreeform = \
+    /set lastspellseen treeform%; \
+    /substitute -p %{PL}[treeform]%{PR}
+/def -p2 -F -mregexp -t"uoculoihuyl" tfsubstidentify = \
+    /set lastspellseen identify%; \
+    /substitute -p %{PL}[identify]%{PR}
+/def -p2 -F -mregexp -t"euwunsoguai eaaf" tfsubstdimdoor = \
+    /set lastspellseen dimension door%; \
+    /substitute -p %{PL}[dimension door]%{PR}
+/def -p2 -F -mregexp -t"([^D]+)yrl" tfsubstfly = \
+    /set lastspellseen fly%; \
+    /substitute -p %{PL}%{P1}[fly]%{PR}
+/def -p2 -F -mregexp -t"qfzahz yaae" tfsubstcreatefood = \
+    /set lastspellseen create food%; \
+    /substitute -p %{PL}[create food]%{PR}
+/def -p2 -F -mregexp -t"braae wuffaf" tfsubstbloodmirror = \
+    /set lastspellseen blood mirror%; \
+    /substitute -p %{PL}[blood mirror]%{PR}
+/def -p2 -F -mregexp -t"wufaqrz" tfsubstmiracle = \
+    /set lastspellseen miracle%; \
+    /substitute -p %{PL}[miracle]%{PR}
+/def -p2 -F -mregexp -t"gunsogz ruyz" tfsubstsenselife = \
+    /set lastspellseen sense life%; \
+    /substitute -p %{PL}[sense life]%{PR}
+/def -p2 -F -mregexp -t"qaihfar xzahpzf" tfsubstcontrolweather = \
+    /set lastspellseen control weather%; \
+    /substitute -p %{PL}[control weather]%{PR}
+/def -p2 -F -mregexp -t"qaihuiounsoql" tfsubstcontingency = \
+    /set lastspellseen contingency%; \
+    /substitute -p %{PL}[contingency]%{PR}
+/def -p2 -F -mregexp -t"yufz barh" tfsubstfirebolt = \
+    /set lastspellseen fire bolt%; \
+    /substitute -p %{PL}[fire bolt]%{PR}
+/def -p2 -F -mregexp -t"unsozfol efaui" tfsubstenergydrain = \
+    /set lastspellseen energy drain%; \
+    /substitute -p %{PL}[energy drain]%{PR}
+/def -p2 -F -mregexp -t"pzrr yufz" tfsubsthellfire = \
+    /set lastspellseen hell fire%; \
+    /substitute -p %{PL}[hell fire]%{PR}
+/def -p2 -F -mregexp -t"sragwa barr" tfsubstplasmaball = \
+    /set lastspellseen plasma ball%; \
+    /substitute -p %{PL}[plasma ball]%{PR}
+/def -p2 -F -mregexp -t"sragwa barh" tfsubstplasmabolt = \
+    /set lastspellseen plasma bolt%; \
+    /substitute -p %{PL}[plasma bolt]%{PR}
+/def -p2 -F -mregexp -t"qaiyjcandus xahzf zrzwunsohar" tfsubstconjwaterelemental = \
+    /set lastspellseen conjure water elemental%; \
+    /substitute -p %{PL}[conjure water elemental]%{PR}
+/def -p2 -F -mregexp -t"qaiyjcandus auf zrzwunsohar" tfsubstconjureairelemental = \
+    /set lastspellseen conjure air elemental%; \
+    /substitute -p %{PL}[conjure air elemental]%{PR}
+/def -p2 -F -mregexp -t"qaiyjcandus zabrahp zrzwunsohar" tfsubstconjureearthelemental = \
+    /set lastspellseen conjure earth elemental%; \
+    /substitute -p %{PL}[conjure earth elemental]%{PR}
+/def -p2 -F -mregexp -t"qaiyjcandus spaunsoun" tfsubstconjurephoenix = \
+    /set lastspellseen conjure phoenix%; \
+    /substitute -p %{PL}[conjure phoenix]%{PR}
+/def -p2 -F -mregexp -t"braezhjfi" tfsubstbladeturn = \
+    /set lastspellseen bladeturn%; \
+    /substitute -p %{PL}[bladeturn]%{PR}
+/def -p2 -F -mregexp -t"candusounsozfahz" tfsubstregenerate = \
+    /set lastspellseen regenerate%; \
+    /substitute -p %{PL}[regenerate]%{PR}
+/def -p2 -F -mregexp -t"ruyz braae" tfsubstlifeblood = \
+    /set lastspellseen life blood%; \
+    /substitute -p %{PL}[life blood]%{PR}
+/def -p2 -F -mregexp -t"braae fuhz" tfsubstbloodrite = \
+    /set lastspellseen blood rite%; \
+    /substitute -p %{PL}[blood rite]%{PR}
+/def -p2 -F -mregexp -t"eabratzuguai" tfsubstdarkvision = \
+    /set lastspellseen darkvision%; \
+    /substitute -p %{PL}[darkvision]%{PR}
+/def -p2 -F -mregexp -t"oculoinfra aruoiwunsoh" tfsubstdetectalign = \
+    /set lastspellseen detect alignment%; \
+    /substitute -p %{PL}[detect alignment]%{PR}
+/def -p2 -F -mregexp -t"oculoinfra waouq" tfsubstdetectmagic = \
+    /set lastspellseen detect magic%; \
+    /substitute -p %{PL}[detect magic]%{PR}
+/def -p2 -F -mregexp -t"yafqz yuzre" tfsubstforcefield = \
+    /set lastspellseen force field%; \
+    /substitute -p %{PL}[force field]%{PR}
+/def -p2 -F -mregexp -t"waouq qabraszh" tfsubstmagiccarpet = \
+    /set lastspellseen magic carpet%; \
+    /substitute -p %{PL}[magic carpet]%{PR}
+/def -p2 -F -mregexp -t"fuhjar ay saui" tfsubstritualofpain = \
+    /set lastspellseen ritual of pain%; \
+    /substitute -p %{PL}[ritual of pain]%{PR}
+/def -p2 -F -mregexp -t"qpurr hajqp" tfsubstchilltouch = \
+    /set lastspellseen chill touch%; \
+    /substitute -p %{PL}[chill touch]%{PR}
+/def -p2 -F -mregexp -t"gpaqtuio ofags" tfsubstshockinggrasp = \
+    /set lastspellseen shocking grasp%; \
+    /substitute -p %{PL}[shocking grasp]%{PR}
+/def -p2 -F -mregexp -t"qrajeturr" tfsubstcloudkill = \
+    /set lastspellseen cloudkill%; \
+    /substitute -p %{PL}[cloudkill]%{PR}
+/def -p2 -F -mregexp -t"yzzbrzwuie" tfsubstfeeblemind = \
+    /set lastspellseen feeblemind%; \
+    /substitute -p %{PL}[feeblemind]%{PR}
+/def -p2 -F -mregexp -t"uqz ghafw" tfsubsticestorm = \
+    /set lastspellseen ice storm%; \
+    /substitute -p %{PL}[ice storm]%{PR}
+/def -p2 -F -mregexp -t"yafqz barh" tfsubstforcebolt = \
+    /set lastspellseen force bolt%; \
+    /substitute -p %{PL}[force bolt]%{PR}
+/def -p2 -F -mregexp -t"qpaui diesilla" tfsubstchainlightning = \
+    /set lastspellseen chain lightning%; \
+    /substitute -p %{PL}[chain lightning]%{PR}
+/def -p2 -F -mregexp -t"qkadagz dies" tfsubstcauselight = \
+    /set lastspellseen cause light%; \
+    /substitute -p %{PL}[cause light]%{PR}
+/def -p2 -F -mregexp -t"zabrahpdjatz" tfsubstearthquake = \
+    /set lastspellseen earthquake%; \
+    /substitute -p %{PL}[earthquake]%{PR}
+/def -p2 -F -mregexp -t"qkadagz gzfuajg" tfsubstcauseserious = \
+    /set lastspellseen cause serious%; \
+    /substitute -p %{PL}[cause serious]%{PR}
+/def -p2 -F -mregexp -t"eugszr" tfsubstdispel = \
+    /set lastspellseen dispel%; \
+    /substitute -p %{PL}[dispel]%{PR}
+/def -p2 -F -mregexp -t"qarr diesilla" tfsubstcalllightning = \
+    /set lastspellseen call lightning%; \
+    /substitute -p %{PL}[call lightning]%{PR}
+/def -p2 -F -mregexp -t"qkadagz qfuhuq" tfsubstcausecritic = \
+    /set lastspellseen cause critic%; \
+    /substitute -p %{PL}[cause critic]%{PR}
+/def -p2 -F -mregexp -t"saquyl" tfsubstpacify = \
+    /set lastspellseen pacify%; \
+    /substitute -p %{PL}[pacify]%{PR}
+/def -p2 -F -mregexp -t"aiuwahz oculoae" tfsubstanimatedead = \
+    /set lastspellseen animate dead%; \
+    /substitute -p %{PL}[animate dead]%{PR}
+/def -p2 -F -mregexp -t"xgruhp ay oae" tfsubstwrathofgod = \
+    /set lastspellseen wrath of god%; \
+    /substitute -p %{PL}[wrath of god]%{PR}
+/def -p2 -F -mregexp -t"gpaqt barh" tfsubstshockbolt = \
+    /set lastspellseen shock bolt%; \
+    /substitute -p %{PL}[shock bolt]%{PR}
+/def -p2 -F -mregexp -t"uqz barh" tfsubsticebolt = \
+    /set lastspellseen ice bolt%; \
+    /substitute -p %{PL}[ice bolt]%{PR}
+/def -p2 -F -mregexp -t"culaae ay uqz" tfsubsttriadofice = \
+    /set lastspellseen triad of ice%; \
+    /substitute -p %{PL}[triad of ice]%{PR}
+/def -p2 -F -mregexp -t"izhpzf barh" tfsubstnetherbolt = \
+    /set lastspellseen nether bolt%; \
+    /substitute -p %{PL}[nether bolt]%{PR}
+/def -p2 -F -mregexp -t"parl kadagru" tfsubstholyaura = \
+    /set lastspellseen holy aura%; \
+    /substitute -p %{PL}[holy aura]%{PR}
+/def -p2 -F -mregexp -t"judicandus dies" tfsubstcurelight = \
+    /set lastspellseen cure light%; \
+    /substitute -p %{PL}[cure light]%{PR}
+/def -p2 -F -mregexp -t"judicandus nose" tfsubstcureblind = \
+    /set lastspellseen cure blind%; \
+    /substitute -p %{PL}[cure blind]%{PR}
+/def -p2 -F -mregexp -t"wuiaf gspzfz ay candusounsozfahuai" tfsubstminorsor = \
+    /set lastspellseen minor sphere of regeneration%; \
+    /substitute -p %{PL}[minor sphere of regeneration]%{PR}
+/def -p2 -F -mregexp -t"wayaf gspzfz ay candusounsozfahuai" tfsubstmajorsor = \
+    /set lastspellseen major sphere of regeneration%; \
+    /substitute -p %{PL}[major sphere of regeneration]%{PR}
+/def -p2 -F -mregexp -t"hiqahz abyzqh" tfsubstlocateobject = \
+    /set lastspellseen locate object%; \
+    /substitute -p %{PL}[locate object]%{PR}
+/def -p2 -F -mregexp -t"canduszuharukz" tfsubstrevitalize = \
+    /set lastspellseen revitalize%; \
+    /substitute -p %{PL}[revitalize]%{PR}
+/def -p2 -F -mregexp -t"qpaiizr" tfsubstchannel = \
+    /set lastspellseen channel%; \
+    /substitute -p %{PL}[channel]%{PR}
+/def -p2 -F -mregexp -t"parlxafe" tfsubstholyword = \
+    /set lastspellseen holyword%; \
+    /substitute -p %{PL}[holyword]%{PR}
+/def -p2 -F -mregexp -t"parl oahz" tfsubstholygate = \
+    /set lastspellseen holy gate%; \
+    /substitute -p %{PL}[holy gate]%{PR}
+/def -p2 -F -mregexp -t"gjyyzfaoz" tfsubstsufferage = \
+    /set lastspellseen sufferage%; \
+    /substitute -p %{PL}[sufferage]%{PR}
+/def -p2 -F -mregexp -t"parl qfjgaez" tfsubstholycrusade = \
+    /set lastspellseen holy crusade%; \
+    /substitute -p %{PL}[holy crusade]%{PR}
+/def -p2 -F -mregexp -t"qfzahz xahzf" tfsubstcreatewater = \
+    /set lastspellseen create water%; \
+    /substitute -p %{PL}[create water]%{PR}
+/def -p2 -F -mregexp -t"xafe ay candusqarr" tfsubstwordofrecall = \
+    /set lastspellseen word of recall%; \
+    /substitute -p %{PL}[word of recall]%{PR}
+/def -p2 -F -mregexp -t"oaae bzffl" tfsubstgoodberry = \
+    /set lastspellseen good berry%; \
+    /substitute -p %{PL}[good berry]%{PR}
+/def -p2 -F -mregexp -t"gahuahz" tfsubstsatiate = \
+    /set lastspellseen satiate%; \
+    /substitute -p %{PL}[satiate]%{PR}
+/def -p2 -F -mregexp -t"wzhzaf bragh" tfsubstmeteorblast = \
+    /set lastspellseen meteor blast%; \
+    /substitute -p %{PL}[meteor blast]%{PR}
+/def -p2 -F -mregexp -t"wzhzaf barh" tfsubstmeteorbolt = \
+    /set lastspellseen meteor bolt%; \
+    /substitute -p %{PL}[meteor bolt]%{PR}
+/def -p2 -F -mregexp -t"wzhzaf gxabraw" tfsubstmeteorswarm = \
+    /set lastspellseen meteor swarm%; \
+    /substitute -p %{PL}[meteor swarm]%{PR}
+/def -p2 -F -mregexp -t"unsohfasl" tfsubstentropy = \
+    /set lastspellseen entropy%; \
+    /substitute -p %{PL}[entropy]%{PR}
+/def -p2 -F -mregexp -t"gji grul" tfsubstsunray = \
+    /set lastspellseen sun ray%; \
+    /substitute -p %{PL}[sun ray]%{PR}
+/def -p2 -F -mregexp -t"eaiquio braezg" tfsubstdancingblades = \
+    /set lastspellseen dancing blades%; \
+    /substitute -p %{PL}[dancing blades]%{PR}
+/def -p2 -F -mregexp -t"hgruidjuruhl" tfsubsttranquility = \
+    /set lastspellseen tranquility%; \
+    /substitute -p %{PL}[tranquility]%{PR}
+/def -p2 -F -mregexp -t"yafqzxazz" tfsubstforcewave = \
+    /set lastspellseen forcewave%; \
+    /substitute -p %{PL}[forcewave]%{PR}
+/def -p2 -F -mregexp -t"oculoahpgpaeax" tfsubstdeathshadow = \
+    /set lastspellseen deathshadow%; \
+    /substitute -p %{PL}[deathshadow]%{PR}
+/def -p2 -F -mregexp -t"nofohfuradjahz" tfsubstventriloquate = \
+    /set lastspellseen ventriloquate%; \
+    /substitute -p %{PL}[ventriloquate]%{PR}
+/def -p2 -F -mregexp -t"oauag bzaqai" tfsubstgaiasbeacon = \
+    /set lastspellseen gaias beacon%; \
+    /substitute -p %{PL}[gaias beacon]%{PR}
+/def -p2 -F -mregexp -t"gpaeax yafw" tfsubstshadowform = \
+    /set lastspellseen shadow form%; \
+    /substitute -p %{PL}[shadow form]%{PR}
+/def -p2 -F -mregexp -t"zawsufuq hajqp" tfsubstvampirictouch = \
+    /set lastspellseen vampiric touch%; \
+    /substitute -p %{PL}[vampiric touch]%{PR}
+/def -p2 -F -mregexp -t"pjffuqaiz" tfsubsthurricane = \
+    /set lastspellseen hurricane%; \
+    /substitute -p %{PL}[hurricane]%{PR}
+/def -p2 -F -mregexp -t"gajrghzar" tfsubstsoulsteal = \
+    /set lastspellseen soulsteal%; \
+    /substitute -p %{PL}[soulsteal]%{PR}
+/def -p2 -F -mregexp -t"unsohaiorz" tfsubstentangle = \
+    /set lastspellseen entangle%; \
+    /substitute -p %{PL}[entangle]%{PR}
+/def -p2 -F -mregexp -t"kadagru ay oculogsauf" tfsubstauraofdespair = \
+    /set lastspellseen aura of despair%; \
+    /substitute -p %{PL}[aura of despair]%{PR}
+/def -p2 -F -mregexp -t"zawsufuq wugh" tfsubstvampiricmist = \
+    /set lastspellseen vampiric mist%; \
+    /substitute -p %{PL}[vampiric mist]%{PR}
+/def -p2 -F -mregexp -t"oag bfzahp" tfsubstgasbreath = \
+    /set lastspellseen gas breath%; \
+    /substitute -p %{PL}[gas breath]%{PR}
+/def -p2 -F -mregexp -t"aque bfzahp" tfsubstacidbreath = \
+    /set lastspellseen acid breath%; \
+    /substitute -p %{PL}[acid breath]%{PR}
+/def -p2 -F -mregexp -t"yufz bfzahp" tfsubstfirebreath = \
+    /set lastspellseen fire breath%; \
+    /tfshow VAPE WARNING!!!%; \
+    /substitute -p %{PL}[fire breath]%{PR}
+/def -p2 -F -mregexp -t"yfagh bfzahp" tfsubsticebreath = \
+    /set lastspellseen ice breath%; \
+    /substitute -p %{PL}[ice breath]%{PR}
+/def -p2 -F -mregexp -t"yrawz ghfutz" tfsubstflamestrike = \
+    /set lastspellseen flame strike%; \
+    /substitute -p %{PL}[flame strike]%{PR}
+/def -p2 -F -mregexp -t"uigzqh sraojz" tfsubstinsectplague = \
+    /set lastspellseen insect plague%; \
+    /substitute -p %{PL}[insect plague]%{PR}
+/def -p2 -F -mregexp -t"wuffaf uwaoz" tfsubstmirrorimage = \
+    /set lastspellseen mirror image%; \
+    /substitute -p %{PL}[mirror image]%{PR}
+/def -p2 -F -mregexp -t"wunsohar oraiqz" tfsubstmentalglance = \
+    /set lastspellseen mental glance%; \
+    /substitute -p %{PL}[mental glance]%{PR}
+/def -p2 -F -mregexp -t"oculoaerl gxabraw" tfsubstdeadlyswarm = \
+    /set lastspellseen deadly swarm%; \
+    /substitute -p %{PL}[deadly swarm]%{PR}
+/def -p2 -F -mregexp -t"hajqp ay oae" tfsubsttouchofgod = \
+    /set lastspellseen touch of god%; \
+    /substitute -p %{PL}[touch of god]%{PR}
+/def -p2 -F -mregexp -t"saxzfxafe ghji" tfsubstpowerwordstun = \
+    /set lastspellseen powerword stun%; \
+    /substitute -p %{PL}[powerword stun]%{PR}
+/def -p2 -F -mregexp -t"sraih ofaxhp" tfsubstplantgrowth = \
+    /set lastspellseen plant growth%; \
+    /substitute -p %{PL}[plant growth]%{PR}
+/def -p2 -F -mregexp -t"gzfunsouhl" tfsubstserenity = \
+    /set lastspellseen serenity%; \
+    /substitute -p %{PL}[serenity]%{PR}
+/def -p2 -F -mregexp -t"qarr ay hpz zaorz" tfsubstcallofeagle = \
+    /set lastspellseen call of the eagle%; \
+    /substitute -p %{PL}[call of the eagle]%{PR}
+/def -p2 -F -mregexp -t"yazfuz yufz" tfsubstfaeriefire = \
+    /set lastspellseen faerie fire%; \
+    /substitute -p %{PL}[faerie fire]%{PR}
+/def -p2 -F -mregexp -t"culaae ay izhpzf" tfsubsttriadofnether = \
+    /set lastspellseen triad of nether%; \
+    /substitute -p %{PL}[triad of nether]%{PR}
+
+
+; Navigator
+/def -p2 -F -mregexp -t"zuu do mahertio" tfsubstihavenoidea2 = \
+    /set lastspellseen off to milo'rai?%; \
+    /substitute -p %{PL}[off to milo'rai?]%{PR}
+; Nymph queen in Enchanted forest.
+/def -p2 -F -mregexp -t"xaef xi nita" tfsubstihavenoidea3 = \
+    /set lastspellseen another powerblind?%; \
+    /substitute -p %{PL}[another powerword blind?]%{PR}
+; Ghanz
+/def -p2 -F -mregexp -t"xrsse lobcy" tfsubstihavenoidea5 = \
+    /set lastspellseen mirror images?%; \
+    /substitute -p %{PL}[mirror images?]%{PR}
+; A huge, ancient tree & Ice sphinx
+/def -p2 -F -mregexp -t"koholian dia" tfsubstihavenoidea6 = \
+    /set lastspellseen special earthquake%; \
+    /substitute -p %{PL}[special earthquake]%{PR}
+; Supreme Sorcerer Nokisus
+/def -p2 -F -mregexp -t"ballro corpicus" tfsubstihavenoidea7 = \
+    /set lastspellseen blade-to-portal%; \
+    /substitute -p %{PL}[blade-to-portal]%{PR}
+; Uriah's Tomb: Myconid Mage & Soldier
+/def -p2 -F -mregexp -t"oag gsafz" tfsubstihavenoidea8 = \
+    /set lastspellseen no idea%; \
+    /substitute -p %{PL}[no idea]%{PR}
+; Uriah's Tomb: Spider Eater
+/def -p2 -F -mregexp -t"ghix" tfsubstihavenoidea9 = \
+    /set lastspellseen no idea 2%; \
+    /substitute -p %{PL}[no idea 2]%{PR}
+; Algoth, the meta wizard
+/def -p2 -F -mregexp -t"mastro milka" tfsubstihavenoidea10 = \
+    /set lastspellseen buy stat%; \
+    /substitute -p %{PL}[buy stat]%{PR}
+
+;gru          -> ra
+;unso         -> en
+;candus       -> re
+;judi         -> cu
+;azz          -> ove
+;dies         -> light
+;wazz         -> move
+;mosa         -> bur
+;lla          -> ing
+;bra          -> r
+;qahijf       -> colour
+;oculo        -> de
+;infra        -> tect
+;nofo         -> ven
+;noselacri    -> blindness
+;nose         -> blind
+;unsoqpaih    -> enchant
+;abrazak      -> armor
+;fido         -> bless
+;babrat       -> bark
+;kada         -> au
+;culaae       -> triad
+
+;a -> o/a
+;b -> b
+;c -> 
+;d -> q
+;e -> d
+;f -> r
+;g -> s
+;h -> t
+;i -> n
+;j -> u
+;k -> r/z
+;l -> y
+;m -> 
+;n -> e... X?
+;o -> g/n
+;p -> h
+;q -> c
+;r -> l
+;s -> p
+;t -> k
+;u -> i/n
+;v -> 
+;w -> m
+;x -> w
+;y -> f/j
+;z -> e/m/v
+
+/def -Fp2 -mregexp -t"^([^ ]+) seems to be blinded\.$" tfsubstfriendblinded = \
+    /if ({P1} =~ 'someone') \
+      /set blindcounter2=$[{blindcounter2} + 1]%; \
+    /elseif ({P1} !~ blindcounterFirstname) \
+      /eval /set blindcounterFirstname %{P1}%; \
+      /set blindcounter=$[{blindcounter} + 1]%; \
+      /if (blindcounter == 1) \
+        /set blindlist=%{P1}%; \
+      /else \
+        /set blindlist=%{blindlist}, %{P1}%; \
+      /endif%; \
+    /endif%; \
+    /purge trigonpromptFriendBlind%; \
+    /def -p15 -F -n1 -mregexp -t'^(-|)[0-9]+\\\([0-9]+\\\)H (-|)[0-9]+\\\([0-9]+\\\)M (-|)[0-9]+\\\([0-9]+\\\)V >' trigonpromptFriendBlind = \
+      /if (blindcounter2 > 0) \
+        /tfshow @{hCyellow}Blinded: @{hCred}%%{blindcounter2} x someone%%; \
+      /endif%%; \
+      /if (blindcounter > 0) \
+        /tfshow @{hCyellow}Blinded: @{hCred}%{blindlist}%%; \
+      /endif%%; \
+      /set blindcounterTotal=$$[{blindcounterTotal} + {blindcounter} + {blindcounter2}]%%; \
+      /set blindcounter 0%%; \
+      /set blindcounter2 0%%; \
+      /unset blindlist
+
+
+;/def -Fp15 -n3 -mregexp -t'^(-|)[0-9]+\\([0-9]+\\)H (-|)[0-9]+\\([0-9]+\\)M (-|)[0-9]+\\([0-9]+\\)V >' trigonpromptFriendBlind = /if (blindcounter > 99) /set blindlist=$[{blindcounter} / 100]%; /tfshow Counter: %{blindcounter}%; /endif%; /tfshow @{hCyellow}Blinded: @{hCred}%; /set blindcounter 0%; /unset blindlist
+
+
+
+/def -p2 -F -mregexp -t"^([^ ]+) gets (.+) from Corpse of (.+)\.$" tfsubstcorpseloot = \
+    /if ({P1} =~ {P3}) \
+      /set owncorpselooter=%{P1}%; \
+      /substitute%; \
+      /purge trigonpromptLoot*%; \
+      /def -p15 -F -n1 -mregexp -t'^(-|)[0-9]+\\\([0-9]+\\\)H (-|)[0-9]+\\\([0-9]+\\\)M (-|)[0-9]+\\\([0-9]+\\\)V >' trigonpromptLoot%{P1} = \
+        /tfshow @{hCyellow}Looting own corpse: @{hCred}%{owncorpselooter}%; \
+    /elseif (({P1} !~ {P3}) & ({P2} !/ "* coin*")) \
+      /substitute -ah -p %{P1} gets @{Cyellow}%{P2} @{n}from Corpse of %{P3}.%; \
+    /else \
+      /substitute -p %{P1} gets %{P2} from Corpse of %{P3}.%; \
+    /endif
+
+
+/def -F -p25 -mregexp -t"(A|a) shadowy form resembling " tfsubstshadowyform = \
+    /substitute -p %{PL}%{PR} (@{hCblack}SF@{nCwhite})
+
+/def -p2 -F -mregexp -t"a clear potion" tfsubstclearpotion = \
+    /substitute -p %{PL}a clear potion @{hCyellow}(true)@{n}%{PR}
+/def -p3 -mregexp -t"a clear potion of invisibility" tfsubstclearpotion2
+
+/def -p2 -F -mregexp -t"a green potion" tfsubstgreenpotion = \
+    /substitute -p %{PL}a green potion @{hCyellow}(true?)@{n}%{PR}
+/def -p2 -F -mregexp -t"a peach-colored potion" tfsubstpeachcolpotion = \
+    /substitute -p %{PL}a peach-colored potion @{hCyellow}(pow)@{n}%{PR}
+/def -p2 -F -mregexp -t"a swirling white potion" tfsubstswirlwhitepot = \
+    /substitute -p %{PL}a swirling white potion @{hCyellow}(true)@{n}%{PR}
+/def -p2 -F -mregexp -t"a thick black potion" tfsubststhickblackpot = \
+    /substitute -p %{PL}a thick black potion @{hCyellow}(mira)@{n}%{PR}
+/def -F -p9999 -mregexp -t"..It radiates magic!" tfsubstradiatesmagic = \
+    /substitute -p %{PL}%{PR}
+
+; ------------------------  INFOKILL tfsubst start  ------------------------
+
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) bled to death\.$" tfsubstinfokill1 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} bled to death.@{Cyellow} (bleeding to death)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was poisoned to death\.$" tfsubstinfokill2 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was poisoned to death.@{Cyellow} (poison)@{n}
+/def -F -p2 -mregexp -t"^\[INFO\] (.+) was killed by ([^\(]+)$" tfsubstinfokill3 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was killed by %{P2}@{Cyellow} (weapon)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was embarrassed to death by " tfsubstinfokill4 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was embarrassed to death by %{PR}@{Cyellow} (magic missile)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was scorched to cinders by " tfsubstinfokill5 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was scorched to cinders by %{PR}@{Cyellow} (burning hands/fireball)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) electrocuted (.+) with (his|her|its) tiny touch\.$" tfsubstinfokill6 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} electrocuted %{P2} with %{P3} tiny touch.@{Cyellow} (shocking grasp)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) electrocuted (.+) with (his|her|its) tiny fingers" tfsubstinfokill7 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} electrocuted %{P2} with %{P3} tiny fingers%{PR}@{Cyellow} (lightning bolt)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was sliced into tiny ice cubes by an ice storm invoked by " tfsubstinfokill8 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was sliced into tiny ice cubes by an ice storm invoked by %{PR}@{Cyellow} (ice storm)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was drained of (his|her|its) life force by ([^,]+), leaving a dried up shriveled corpse\.$" tfsubstinfokill9 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was drained of %{P2} life force by %{P3}, leaving a dried up shriveled corpse.@{Cyellow} (energy drain)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was electrocuted by " tfsubstinfokill10 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was electrocuted by %{PR}@{Cyellow} (chain lightning)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was crushed by a devastating meteor strike evoked by " tfsubstinfokill11 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was crushed by a devastating meteor strike evoked by %{PR}@{Cyellow} (meteor blast)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was overcome with excruciating pain invoked by " tfsubstinfokill12 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was overcome with excruciating pain invoked by %{PR}@{Cyellow} (powerword pain)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was burned to dust and ashes by " tfsubstinfokill13 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was burned to dust and ashes by %{PR}@{Cyellow} (hell fire)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+)'s dark malevolent mist, totally consumes " tfsubstinfokill14 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1}'s dark malevolent mist, totally consumes %{PR}@{Cyellow} (vampiric mist)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) barely died of light wounds invoked by " tfsubstinfokill15 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} barely died of light wounds invoked by %{PR}@{Cyellow} (cause light wounds)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was swallowed whole in a violent earthquake caused by " tfsubstinfokill16 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was swallowed whole in a violent earthquake caused by %{PR}@{Cyellow} (earthquake)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was seriously injured by ([^']+)'s spell and never recovered\.$" tfsubstinfokill17 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was seriously injured by %{P2}'s spell and never recovered.@{Cyellow} (cause serious wounds)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) died of critical wounds invoked by " tfsubstinfokill18 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} died of critical wounds invoked by %{PR}@{Cyellow} (cause critical wounds)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was destroyed by the divine power of " tfsubstinfokill19 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was destroyed by the divine power of %{PR}@{Cyellow} (harm)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was utterly vaporized by the divine power of " tfsubstinfokill20 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was utterly vaporized by the divine power of %{PR}@{Cyellow} (powerharm)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was blown away by " tfsubstinfokill21 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was blown away by %{PR}@{Cyellow} (hurricane)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was assassinated outright by " tfsubstinfokill22 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was assassinated outright by %{PR}@{Cyellow} (assassinate)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was viciously murdered by " tfsubstinfokill23 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was viciously murdered by %{PR}@{Cyellow} (murder)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) died from a heart attack instigated by " tfsubstinfokill24 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} died from a heart attack instigated by %{PR}@{Cyellow} (shock bolt)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was completely diluted by " tfsubstinfokill25 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was completely diluted by %{PR}@{Cyellow} (water bolt)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was frozen solid by " tfsubstinfokill26 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was frozen solid by %{PR}@{Cyellow} (ice bolt)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was burned alive by " tfsubstinfokill27 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was burned alive by %{PR}@{Cyellow} (fire bolt)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was completely consumed in raw plasma by " tfsubstinfokill28 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was completely consumed in raw plasma by %{PR}@{Cyellow} (plasma bolt)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was engulfed in a ball of raw plasma created by " tfsubstinfokill28b = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was engulfed in a ball of raw plasma created by %{PR}@{Cyellow} (plasma ball)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was killed by the forceful will of " tfsubstinfokill29 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was killed by the forceful will of %{PR}@{Cyellow} (force bolt)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was killed by a deadly grip from " tfsubstinfokill30 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was killed by a deadly grip from %{PR}@{Cyellow} (aura of pain)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) hums innocently as (his|her|its) aura turned (.+) into dust\.$" tfsubstinfokill31 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} hums innocently as %{P2} aura turned %{P3} into dust.@{Cyellow} (aura of vampirism)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was brutally headbutted to death by " tfsubstinfokill32 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was brutally headbutted to death by %{PR}@{Cyellow} (headbang)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was killed by a well-placed kick from " tfsubstinfokill33 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was killed by a well-placed kick from %{PR}@{Cyellow} (kick)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was bitten to death by a venomous snake created by " tfsubstinfokill34 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was bitten to death by a venomous snake created by %{PR}@{Cyellow} (sticks to snakes)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was consumed by ([^']+)'s aura of despair\.$" tfsubstinfokill35 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was consumed by %{P2}'s aura of despair.@{Cyellow} (aura of despair)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was savagely backstabbed to death by " tfsubstinfokill36 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was savagely backstabbed to death by %{PR}@{Cyellow} (backstab)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was stabbed mercilessly from behind by " tfsubstinfokill37 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was stabbed mercilessly from behind by %{PR}@{Cyellow} (circle)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was consumed by a hoard of tiny insects sent out by " tfsubstinfokill38 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was consumed by a hoard of tiny insects sent out by %{PR}@{Cyellow} (insect plague)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was stung to death by a vicious swarm of angry vermin sent by " tfsubstinfokill39 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was stung to death by a vicious swarm of angry vermin sent by %{PR}@{Cyellow} (deadly swarm)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was reduced to nothingness by " tfsubstinfokill40 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was reduced to nothingness by %{PR}@{Cyellow} (nether bolt)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) crumpled into dust from the arcane word of " tfsubstinfokill41 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} crumpled into dust from the arcane word of %{PR}@{Cyellow} (powerword kill)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) suffered an agonising death from the arcane word of " tfsubstinfokill41b = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} suffered an agonising death from the arcane word of %{PR}@{Cyellow} (deathspell)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) smirks as (his|her|its) mighty aura turned (.+) into a puddle of blood\.$" tfsubstinfokill42 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} smirks as %{P2} mighty aura turned %{P3} into a puddle of blood.@{Cyellow} (aura of lightning)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) got frozen by ([^']+)'s aura and when trying to move (his|her|its) body shattered\.$" tfsubstinfokill43 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} got frozen by %{P2}'s aura and when trying to move %{P3} body shattered.@{Cyellow} (aura of ice)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) cunningly impaled (himself|herself|itself) on (his|her|its) weapon\.$" tfsubstinfokill44 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} cunningly impaled %{P2} on %{P3} weapon.@{Cyellow} (deathdance)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) melted into a puddle of goop while standing in some molten lava\.$" tfsubstinfokill45 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} melted into a puddle of goop while standing in some molten lava.@{Cyellow} (lava room)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was struck by " tfsubstinfokill46 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was struck by %{PR}@{Cyellow} (wrath of god)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was blown to tiny bits by " tfsubstinfokill47 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was blown to tiny bits by %{PR}@{Cyellow} (fire seeds)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was smashed into a pulp on a cavern wall by a violent wind gust\.$" tfsubstinfokill48 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was smashed into a pulp on a cavern wall by a violent wind gust.@{Cyellow} (well wind)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) swallowed a lungful too much\.\.shame they aren't a fish\.$" tfsubstinfokill49 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} swallowed a lungful too much..shame they aren't a fish.@{Cyellow} (lorca swampdrown)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was transformed to a heap of dust by " tfsubstinfokill50 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was transformed to a heap of dust by %{PR}@{Cyellow} (sun arrow)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) committed suicide\." tfsubstinfokill51 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} committed suicide.@{Cyellow} (critical wounds, ...)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was killed by (.+) courtesy of " tfsubstinfokill52 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was killed by %{P2} courtesy of %{PR}@{Cyellow} (blood mirror)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was reduced to ashes from a ferocious hellstorm sent by " tfsubstinfokill53 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was reduced to ashes from a ferocious hellstorm sent by %{PR}@{Cyellow} (hell storm)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was judged to be unfit for life by " tfsubstinfokill54 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was judged to be unfit for life by %{PR}@{Cyellow} (judgement)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) laughs as (his|her|its) aura burned (.+) into a charred corpse\.$" tfsubstinfokill55 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} laughs as %{P2} aura burned %{P3} into a charred corpse.@{Cyellow} (aura of fire)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was overcome by a massive wave of excruciating pain called by " tfsubstinfokill56 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was overcome by a massive wave of excruciating pain called by %{PR}@{Cyellow} (mass pain)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) instantly combusted in a hail of fire bolts sent by " tfsubstinfokill57 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} instantly combusted in a hail of fire bolts sent by %{PR}@{Cyellow} (triad of fire)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was slain by a triad of jagged ice bolts sent by " tfsubstinfokill58 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was slain by a triad of jagged ice bolts sent by %{PR}@{Cyellow} (triad of ice)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was impaled on the armor of thorns protecting " tfsubstinfokill59 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was impaled on the armor of thorns protecting %{PR}@{Cyellow} (armor of thorns)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) died by (his|her|its) own hands thanks to the aura surrounding " tfsubstinfokill60 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} died by %{P2} own hands thanks to the aura surrounding %{PR}@{Cyellow} (aura of reflection)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was dispelled by the magical hymn mumbled by " tfsubstinfokill61 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was dispelled by the magical hymn mumbled by %{PR}@{Cyellow} (dispel)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) was killed by the divine touch of " tfsubstinfokill62 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} was killed by the divine touch of %{PR}@{Cyellow} (touch of god)@{n}
+/def -F -p5 -mregexp -t"^\[INFO\] (.+) suffered a horrible death as (his|her|its) body imploded\." tfsubstinfokill63 = \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} suffered a horrible death as %{P2} body imploded.@{Cyellow} (stat <= 0)@{n}
+
+; ------------------------  INFOKILL subst end  ------------------------
+
+; ------------------------  SHOP subst start  ------------------------
+
+/def -F -mregexp -p9 -t"^\(([0-9 ]+)\) (.+) ([ ]+)\[lvl:([0-9 \-]+)\]([ ]+)([0-9]+)([ ]+)       ([0-9,]+) gold coins$" tfsubstshopSpecial = \
+    /substitute -p @{Cgreen}(%{P1}) @{Ccyan}%{P2} %{P3}@{Cgreen}[lvl:%{P4}]%{P5}@{Ccyan}%{P6}%{P7}  @{Cgreen}%{P8} gc
+/def -F -mregexp -p9 -t"^\(([0-9 ]+)\) (.+) ([ ]+)\[lvl:([0-9 \-]+)\]([ ]+)([0-9]+)([ ]+)   ([0-9,]+) gold coins$" tfsubstshopSpecial2 = \
+    /substitute -p @{Cgreen}(%{P1}) @{Ccyan}%{P2} %{P3}@{Cgreen}[lvl:%{P4}]%{P5}@{Ccyan}%{P6}%{P7}  @{Cgreen}%{P8} gc
+
+
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Cromwell's Hoard of Treasures$" tfsubstshop2n = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Cromwell:@{n}  @{Ccyan} Cromwell's Hoard of Treasures
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Under the Table$" tfsubstshop2e = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Bandolan:@{n}  @{Ccyan} Under the Table
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)A Fremen Sietch$" tfsubstshop2s = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Tryien:@{n}    @{Ccyan} A Fremen Sietch
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)The Cathedral$" tfsubstshop2w = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Nikodemus:@{n} @{Ccyan} The Cathedral
+
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)El Pollo es la Polla$" tfsubstshop3n = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Caesar:@{n}    @{Ccyan} El Pollo es la Polla
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)A Humble Abode$" tfsubstshop3e = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Danimal:@{n}   @{Ccyan} A Humble Abode
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Urkel's Market Place$" tfsubstshop3s = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Urkel:@{n}     @{Ccyan} Urkel's Market Place
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Inside a very dark shop$" tfsubstshop3w = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Kynd:@{n}      @{Ccyan} Inside a very dark shop
+
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)A K'ta'viiri Outpost$" tfsubstshop4n = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Hazard:@{n}    @{Ccyan} A K'ta'viiri Outpost
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)The Hammer and the Flying Goat$" tfsubstshop4e = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Tern:@{n}      @{Ccyan} The Hammer and the Flying Goat
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Skynet Labs$" tfsubstshop4s = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Gorog:@{n}     @{Ccyan} Skynet Labs
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)A Temporal Displacement$" tfsubstshop4w = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Legolas:@{n}   @{Ccyan} A Temporal Displacement
+
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)It's Emporium$" tfsubstshop5n = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}It:@{n}        @{Ccyan} It's Emporium
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Cindy's Curiosities$" tfsubstshop5e = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Cindy:@{n}     @{Ccyan} Cindy's Curiosities
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)The Legendary Armoury Hall of Orhan$" tfsubstshop5s = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Tsabu:@{n}     @{Ccyan} The Legendary Armoury Hall of Orhan
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)The Collections of the Vagabond$" tfsubstshop5w = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Derfian:@{n}   @{Ccyan} The Collections of the Vagabond
+
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)A Dark Alley$" tfsubstshop6n = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Amida:@{n}     @{Ccyan} A Dark Alley
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)The Diabolical Catacomb$" tfsubstshop6e = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Zephyr:@{n}    @{Ccyan} The Diabolical Catacomb
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Moe's Tavern$" tfsubstshop6s = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Moe:@{n}       @{Ccyan} Moe's Tavern
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Death and Decay$" tfsubstshop6w = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Coward:@{n}    @{Ccyan} Death and Decay
+
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Brutus's Boneyard$" tfsubstshop7n = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Brutus:@{n}    @{Ccyan} Brutus's Boneyard
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Culls Wondrous Warehouse$" tfsubstshop7e = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Culloden:@{n}  @{Ccyan} Culls Wondrous Warehouse
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Sebastian's Shop of Wonders$" tfsubstshop7s = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Sebastian:@{n} @{Ccyan} Sebastian's Shop of Wonders
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Keso's fishstore$" tfsubstshop7w = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Keso:@{n}      @{Ccyan} Keso's fishstore
+
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)A hole in the vortex$" tfsubstshop8n = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Yoggin:@{n}    @{Ccyan} A hole in the vortex
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Rorimak's lost treasures$" tfsubstshop8e = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Sam:@{n}       @{Ccyan} Rorimak's lost treasures
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Woodiz The Mage's Fuzzy Shop$" tfsubstshop8s = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Woodiz:@{n}    @{Ccyan} Woodiz The Mage's Fuzzy Shop
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)The Red Karaf$" tfsubstshop8w = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Karafred:@{n}  @{Ccyan} The Red Karaf
+
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)A Dark Crypt$" tfsubstshop9n = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Cold:@{n}      @{Ccyan} A Dark Crypt
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)A Messy Shop$" tfsubstshop9e = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}???:@{n}       @{Ccyan} A Messy Shop
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Ronja's Cave$" tfsubstshop9s = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Mummelmann:@{n}@{Ccyan} Ronja's Cave
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Kerish's Shop of Usable Items$" tfsubstshop9w = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Kerish:@{n}    @{Ccyan} Kerish's Shop of Usable Items
+
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)The Mafia Shop$" tfsubstshop10n = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}???:@{n}       @{Ccyan} The Mafia Shop
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Versatile's Shop$" tfsubstshop10e = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Versatile:@{n} @{Ccyan} Versatile's Shop
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Some wierd guy's hut$" tfsubstshop10s = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}???:@{n}       @{Ccyan} Some wierd guy's hut
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Gawyn's Store of Shining Armors$" tfsubstshop10w = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Gawyn:@{n}     @{Ccyan} Gawyn's Store of Shining Armors
+
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)The Haunted Boneyard$" tfsubstshop11n = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}???:@{n}       @{Ccyan} The Haunted Boneyard
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Jahve's secret stash of illegal goods$" tfsubstshop11e = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Jahve:@{n}     @{Ccyan} Jahve's secret stash of illegal goods
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Prowler's Play Pen$" tfsubstshop11s = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Prowler:@{n}   @{Ccyan} Prowler's Play Pen
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)The Shop of the Light$" tfsubstshop11w = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Cooli:@{n}     @{Ccyan} The Shop of the Light
+
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Aindafai's Emporium$" tfsubstshop12n = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Galmer:@{n}    @{Ccyan} Aindafai's Emporium
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Getens Hole$" tfsubstshop12e = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}???:@{n}       @{Ccyan} Getens Hole
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Oogabooga's Stone Age Cave$" tfsubstshop12s = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Oogabooga:@{n} @{Ccyan} Oogabooga's Stone Age Cave
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)The Den of Wonderous Things$" tfsubstshop12w = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}???:@{n}       @{Ccyan} The Den of Wonderous Things
+
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)The wolves den$" tfsubstshop13n = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Aldur:@{n}     @{Ccyan} The wolves den
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Gnoth's Sanctum$" tfsubstshop13e = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Gnoth:@{n}     @{Ccyan} Gnoth's Sanctum
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)The Android's Dungeon and Baseball Card Shop$" tfsubstshop13s = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}???:@{n}       @{Ccyan} The Android's Dungeon and Baseball Card Shop
+/def -F -mregexp -t"^(North - |East  - |South - |West  - |)Dark Hunter Grogshop$" tfsubstshop13w = \
+    /substitute -p @{Cgreen}%{P1}@{Cblack}@{Cbgyellow}Hingolf:@{n}   @{Ccyan} Dark Hunter Grogshop
+
+; ------------------------  SHOP subst end  ------------------------
+
+
+; ------------------------  CONSIDER subst start  ------------------------
+
+/def -F -msimple -t"Now where did that chicken go?" tfsubstcon1 = \
+    /if (mylevel = 11) \
+      /substitute -p Now where did that chicken go? @{hCyellow} (1)%; \
+    /else \
+      /substitute -p Now where did that chicken go? @{hCyellow} (1-$[mylevel -10])%; \
+    /endif
+/def -F -msimple -t"You could do it with a needle!" tfsubstcon2 = \
+    /if (mylevel = 6) \
+      /substitute -p You could do it with a needle! @{hCyellow} (1)%; \
+    /else \
+      /set minlevel=$[{mylevel} - 9]%; \
+      /if (minlevel < 1) \
+        /set minlevel 1%; \
+      /endif%; \
+      /substitute -p You could do it with a needle! @{hCyellow} ($[minlevel]-$[mylevel - 5])%; \
+    /endif
+/def -F -msimple -t"Easy." tfsubstcon3 = \
+    /if (mylevel = 3) \
+      /substitute -p Easy. @{hCyellow} (1)%; \
+    /elseif (mylevel = 4) \
+      /substitute -p Easy. @{hCyellow} (1-2)%; \
+    /else \
+      /substitute -p Easy. @{hCyellow} ($[mylevel - 4]-$[mylevel - 2])%; \
+    /endif
+/def -F -msimple -t"Fairly easy." tfsubstcon4 = \
+    /substitute -p Fairly easy. @{hCyellow} ($[mylevel - 1])
+/def -F -msimple -t"The perfect match!" tfsubstcon5 = \
+    /substitute -p The perfect match! @{hCyellow} ($[mylevel])
+/def -F -msimple -t"You would need some luck!" tfsubstcon6 = \
+    /substitute -p You would need some luck! @{hCyellow} ($[mylevel + 1])
+/def -F -msimple -t"You would need a lot of luck!" tfsubstcon7 = \
+    /substitute -p You would need a lot of luck! @{hCyellow} ($[mylevel + 2])
+/def -F -msimple -t"You would need a lot of luck and great equipment!" tfsubstcon8 = \
+    /substitute -p You would need a lot of luck and great equipment! @{hCyellow} ($[mylevel + 3])
+/def -F -msimple -t"Do you feel lucky, punk?" tfsubstcon9 = \
+    /substitute -p Do you feel lucky, punk? @{hCyellow} ($[mylevel + 4]-$[mylevel + 5])
+/def -F -msimple -t"Are you mad!?" tfsubstcon10 = \
+    /substitute -p Are you mad!? @{hCyellow} ($[mylevel + 6]-$[mylevel + 10])
+/def -F -msimple -t"You ARE mad!" tfsubstcon11 = \
+    /substitute -p You ARE mad! @{hCyellow} ($[mylevel + 11]-$[mylevel + 15])
+/def -F -msimple -t"Why don't you just lie down and pretend you're dead instead?" tfsubstcon12 = \
+    /substitute -p Why don't you just lie down and pretend you're dead instead? @{hCyellow} ($[mylevel + 16]-$[mylevel + 20])
+/def -F -msimple -t"What do you want your epitaph to say?!?" tfsubstcon13 = \
+    /substitute -p What do you want your epitaph to say? @{hCyellow} ($[mylevel + 21]-$[mylevel + 25])
+/def -F -msimple -t"Your epitaph will read: Here lies one dead and very dumb Diku-player." tfsubstcon14 = \
+    /substitute -p Your epitaph will read: Here lies one dead and very dumb Diku-player. @{hCyellow} ($[mylevel + 26]+)
+
+/def -F -msimple -t"Easy! Very easy indeed!" tfsubstcon15 = \
+    /substitute -p Easy! Very easy indeed! @{hCyellow} (self)
+/def -F -msimple -t"Would you like to borrow a cross and a shovel?" tfsubstcon16 = \
+    /substitute -p Would you like to borrow a cross and a shovel? @{hCyellow} (player)
+
+; ------------------------  CONSIDER subst end  ------------------------
+
+
+
+; ------------------------  ROOMSPEC subst start  ------------------------
+
+/def -F -msimple -t"Looking out beyond the the ship you see.." tfsubstroomspec1 = \
+    /substitute -p @{hCyellow}>> @{n}Looking out beyond the the ship you see.. @{hCyellow}<<
+
+/def -F -msimple -t"Looking out beyond the The ship you see.." tfsubstroomspec2 = \
+    /substitute -p @{hCyellow}>> @{n}Looking out beyond The the ship you see.. @{hCyellow}<<
+
+/def -F -msimple -t"Looking out beyond the A huge Silver Dragon you see.." tfsubstroomspec3 = \
+    /substitute -p @{hCyellow}>> @{n}Looking out beyond the A huge Silver Dragon you see.. @{hCyellow}<<
+/def -F -msimple -t"You take a deep breath. You feel energized." tfsubstroomspec4 = \
+    /substitute -ah -p You take a deep breath. You feel energized.@{hCyellow} (regen moves)
+/def -F -msimple -t"You take a deep breath. Your mind swells with power." tfsubstroomspec5 = \
+    /substitute -ah -p You take a deep breath. Your mind swells with power.@{hCyellow} (regen mana)
+/def -F -msimple -t"You take a deep breath. Your body tingles and you feel better." tfsubstroomspec6 = \
+    /substitute -ah -p You take a deep breath. Your body tingles and you feel better.@{hCyellow} (regen hp)
+/def -F -msimple -t"A dark soul is flying around sucking your magical power." tfsubstroomspec7 = \
+    /substitute -ah -p A dark soul is flying around sucking your magical power.@{hCyellow} (mana drain)
+
+; ------------------------  ROOMSPEC subst end  ------------------------
+
+
+; ------------------------  DAMAGE SKILLS subst start  ------------------------
+
+/def -F -mregexp -t" whirls (his|her|its) (.+) over (his|her|its) head and goes to attack\.\.\.$" tfsubstdamskillWhirl = \
+    /substitute -p %{PL}:@{%{damageSkillsSubstColor}} Whirlwind (%{P2})
+/def -F -mregexp -t" jumps up high in the air and makes a 360 degree spin-kick\.\.\.$" tfsubstdamskillUAWhirl = \
+    /substitute -p %{PL}:@{%{damageSkillsSubstColor}} Unarmed whirlwind
+/def -F -mregexp -t" frantically flails (his|her|its) arms in the air, trying to impersonate a whirlwind\.\.\.$" tfsubstdamskillUAWhirlFail = \
+    /substitute -p %{PL}:@{%{damageSkillsSubstColor}} Whirlwind fail
+/def -F -mregexp -t" cuts your throat, you can't even make a decent death scream :-\($" tfsubstdamskillMurder = \
+    /substitute -p %{PL}:@{%{damageSkillsSubstColor}} Murder!
+/def -F -mregexp -t" tries to end your life for you, but you avoid (his|her|its) foul attempt!$" tfsubstdamskillMurderFail = \
+    /substitute -p %{PL}:@{%{damageSkillsSubstColor}} Murder fail!
+/def -F -mregexp -t"^Suddenly (.+) stabs you in the back!$" tfsubstdamskillBackstab = \
+    /substitute -p %{P1}:@{%{damageSkillsSubstColor}} Backstab
+/def -F -mregexp -t" backstabs (.+), resulting in some strange noises and some blood!$" tfsubstdamskillBackstabOther = \
+    /if ({PL} =~ opponentstring) \
+      /substitute -p %{PL}:@{%{damageSkillsSubstColor}} Backstab@{n} on %{P1}%; \
+    /endif
+/def -F -mregexp -t" places (.+) in the back of (.+), resulting in some strange noises and some blood!$" tfsubstdamskillInitBackstabOther = \
+    /if ({PL} =~ opponentstring) \
+      /substitute -p %{PL}:@{%{damageSkillsSubstColor}} Initial-backstab@{n} on %{P1}%; \
+    /endif
+/def -F -mregexp -t" tries to backstab (.+) but nearly cuts (his|her|its) own finger!$" tfsubstdamskillBackstabOtherFail = \
+    /if ({PL} =~ opponentstring) \
+      /substitute -p %{PL}:@{%{damageSkillsSubstColor}} Backstab fail@{n} on %{P1}%; \
+    /endif
+/def -F -mregexp -t" tries to backstab you, but you avoid this!$" tfsubstdamskillBackstabFail = \
+    /substitute -p %{PL}:@{%{damageSkillsSubstColor}} Backstab fail
+/def -F -mregexp -t" tries to backstab (.+) but nearly cuts (his|her|its) own finger!$" tfsubstdamskillBackstabFailOther = \
+    /if ({PL} =~ opponentstring) \
+      /substitute -p %{PL}:@{%{damageSkillsSubstColor}} Backstab fail@{n} on %{P1}%; \
+    /endif
+/def -F -mregexp -t"^In the last instant ([^ ]+) detects (.*)'s assassination attempt!$" tfsubstdamskillAssassinateFailOther = \
+    /if ({P2} =~ opponentstring) \
+      /substitute -p %{P2}:@{%{damageSkillsSubstColor}} Assassinate fail@{n} on %{P1}%; \
+    /endif
+/def -F -mregexp -t" grabs your head with both (his|her|its) hands and slams it with (his|her|its) bony danish head!$" tfsubstdamskillHeadbang = \
+    /substitute -p %{PL}:@{%{damageSkillsSubstColor}} Headbang
+/def -F -mregexp -t" tries to grab your head and slam it, but you narrowly escape\.$" tfsubstdamskillHeadbangFail = \
+    /substitute -p %{PL}:@{%{damageSkillsSubstColor}} Headbang fail
+/def -F -mregexp -t" wipes (his|her|its) boots in your face!$" tfsubstdamskillKick1 = \
+    /substitute -p %{PL}:@{%{damageSkillsSubstColor}} Kick
+/def -F -mregexp -t"^You're hit in the solar plexus, wow, this is breathtaking!!$" tfsubstdamskillKick2 = \
+    /substitute -p %{opponentstring}?:@{%{damageSkillsSubstColor}} Kick
+/def -F -mregexp -t" makes a nice ballet step which plants a foot a mile above your head\.$" tfsubstdamskillKickFail = \
+    /substitute -p %{PL}:@{%{damageSkillsSubstColor}} Kick fail
+/def -F -mregexp -t" misses a kick at your groin, you breathe lighter now\.\.\.$" tfsubstdamskillKickFail2 = \
+    /substitute -p %{PL}:@{%{damageSkillsSubstColor}} Kick fail
+/def -F -mregexp -t" sends you sprawling with a powerful bash!$" tfsubstdamskillBash = \
+    /substitute -p %{PL}:@{%{damageSkillsSubstColor}} Bash
+/def -F -mregexp -t" pummels you!$" tfsubstdamskillPummel = \
+    /substitute -p %{PL}:@{%{damageSkillsSubstColor}} Pummel
+/def -F -mregexp -t"^You dodge a bash from (.+) who loses (his|her|its) balance and falls!$" tfsubstdamskillBashFail = \
+    /substitute -p %{P1}:@{%{damageSkillsSubstColor}} Bash fail
+/def -F -mregexp -t" tries to circle around your back to stab you, but misses.$" tfsubstdamskill6 = \
+    /substitute -p %{PL}:@{%{damageSkillsSubstColor}} Circlestab fail
+/def -F -mregexp -t" circles you and places a stab wound viciously in your back!$" tfsubstdamskill7 = \
+    /substitute -p %{PL}:@{%{damageSkillsSubstColor}} Circlestab
+/def -F -mregexp -t"^Suddenly (.+) sneaks around and stab you in the back!$" tfsubstdamskill10 = \
+    /substitute -p Suddenly %{P1} sneaks around and stabs you in the back!@{%{damageSkillsSubstColor}} (backstab, initializing?)
+
+
+
+/def -F -mregexp -t" seems to sense your presence and chances a wild swing at you!$" tfsubstdamskillAware = \
+    /substitute -p %{PL}:@{%{damageSkillsSubstColor}} Aware!
+
+/def -F -mregexp -t" detects your pathetic backstab attempt and charges!$" tfsubstdamskill5 = \
+    /substitute -p %{PL} detects your pathetic backstab attempt and charges!@{%{damageSkillsSubstColor}} (already been backstabbed)
+
+
+
+
+
+; ------------------------  DAMAGE SKILLS subst end  ------------------------
+
+; -------------------  DAMAGE SPELLS subst start  -------------------
+
+/def -F -msimple -t"You gulp in surprise as the blow slips through your guard..." tfsubstdamspellAttack = \
+    /substitute -p %{opponentstring}?:@{%{damageSpellsSubstColor}} attack
+/def -F -mregexp -t"Accompanied by a dazzling flash, (.*)'s sun arrow painfully blisters you\.$" tfsubstdamspellSunArrow = \
+    /substitute -p %{P1}:@{%{damageSpellsSubstColor}} sun arrow
+/def -F -msimple -t"A dazzling bright beam of light strikes you, with a scorching effect." tfsubstdamspellSunRay = \
+    /substitute -p %{opponentstring}?:@{%{damageSpellsSubstColor}} sun ray
+/def -F -msimple -t"You are staggered by a magical shockwave!" tfsubstdamspellShockwave = \
+    /substitute -p %{opponentstring}?:@{%{damageSpellsSubstColor}} shockwave
+/def -F -mregexp -t"'s magical shockwave rushes past you, leaving you unharmed\.$" tfsubstdamspellShockwave2 = \
+    /substitute -p %{PL}:@{%{damageSpellsSubstColor}} shockwave fail
+/def -F -mregexp -t" is enshrouded in (his|her|its) own dark malevolent dark mist, and (he|she|it) suffers in agony!$" tfsubstdamspellVampMist = \
+    /substitute -p %{PL}:@{%{damageSpellsSubstColor}} vampiric mist fail
+/def -F -mregexp -t"^You feel weakened as (.+) enshrouds you in a malevolent dark mist!$" tfsubstdamspellVampMist2 = \
+    /substitute -p %{P1}:@{%{damageSpellsSubstColor}} vampiric mist
+/def -F -mregexp -t"^You howl in agony as (.+) hurls black flames at you!$" tfsubstdamspellHellStorm = \
+    /if ({lastspellseen} =~ 'hell fire' | {lastspellseen} =~ 'hell storm') \
+      /substitute -p %{P1}:@{%{damageSpellsSubstColor}} %{lastspellseen}%; \
+    /else \
+      /substitute -p %{P1}:@{%{damageSpellsSubstColor}} hell fire / hell storm%; \
+    /endif
+/def -F -mregexp -t"^You feel intense PAIN as (.+) touches you\.$" tfsubstdamspellPowerharm = \
+    /substitute -p %{P1}:@{%{damageSpellsSubstColor}} powerharm
+/def -F -mregexp -t"^You feel intense pain as (.+) touches you\.$" tfsubstdamspellHarm = \
+    /substitute -p %{P1}:@{%{damageSpellsSubstColor}} harm
+/def -F -mregexp -t"^You are enveloped in flames from a fireball sent by (.+) -- OUCH!!$" tfsubstdamspellFireball = \
+    /substitute -p %{P1}:@{%{damageSpellsSubstColor}} fireball
+/def -F -msimple -t"You SCREAM as the wrath of God strikes you." tfsubstdamspellVampTouch = \
+    /if ({lastspellseen} =~ 'wrath of god' | {lastspellseen} =~ 'vampiric touch') \
+      /substitute -p %{opponentstring}?:@{%{damageSpellsSubstColor}} %{lastspellseen}%; \
+    /else \
+      /substitute -p %{opponentstring}?:@{%{damageSpellsSubstColor}} wrath of god / vampiric touch%; \
+    /endif
+/def -F -mregexp -t"^You scream in agony as (.+) hits you with raw elemental energy\.$" tfsubstdamspellPlasmaBall = \
+    /if ({lastspellseen} =~ 'plasma bolt' | {lastspellseen} =~ 'plasma ball') \
+      /substitute -p %{P1}:@{%{damageSpellsSubstColor}} %{lastspellseen}%; \
+    /else \
+      /substitute -p %{P1}:@{%{damageSpellsSubstColor}} plasma bolt / plasma ball%; \
+    /endif
+/def -F -mregexp -t"^YOU'RE HIT!  A lightning bolt from (.+) has reached its goal!$" tfsubstdamspellChainLightning = \
+    /if ({lastspellseen} =~ 'lightning bolt' | {lastspellseen} =~ 'chain lightning') \
+      /substitute -p %{P1}:@{%{damageSpellsSubstColor}} %{lastspellseen}%; \
+    /else \
+      /substitute -p %{P1}:@{%{damageSpellsSubstColor}} lightning bolt / chain lightning%; \
+    /endif
+/def -F -mregexp -t"^You are slammed by a meteor bolt sent by (.+), OUCH!$" tfsubstdamspellMeteorSwarm = \
+    /if ({lastspellseen} =~ 'meteor blast' | {lastspellseen} =~ 'meteor swarm') \
+      /substitute -p %{P1}:@{%{damageSpellsSubstColor}} %{lastspellseen}%; \
+    /else \
+      /substitute -p %{P1}:@{%{damageSpellsSubstColor}} meteor blast / meteor swarm%; \
+    /endif
+/def -F -msimple -t"A sudden burst of colors sends you reeling!" tfsubstdamspellColourSpray = \
+    /substitute -p %{opponentstring}?:@{%{damageSpellsSubstColor}} colour spray
+/def -F -msimple -t"You scream in pain!" tfsubstdamspellMassPain = \
+    /if ({lastspellseen} =~ 'powerword pain' | {lastspellseen} =~ 'mass pain') \
+      /substitute -p %{opponentstring}?:@{%{damageSpellsSubstColor}} %{lastspellseen}%; \
+    /else \
+      /substitute -p %{opponentstring}?:@{%{damageSpellsSubstColor}} powerword pain / mass pain%; \
+    /endif
+/def -F -mregexp -t"'s spell almost stopped your heart, this is getting serious!$" tfsubstdamspellShockBolt = \
+    /substitute -p %{PL}:@{%{damageSpellsSubstColor}} shock bolt
+/def -F -mregexp -t" freezes you with (his|her|its) ice storm.$" tfsubstdamspellIceStorm = \
+    /substitute -p %{PL}:@{%{damageSpellsSubstColor}} ice storm
+
+/set triadcounter 0
+/def -F -msimple -t"Ouch that really did hurt, and what a burn mark!" tfsubstdamspellFireBolt = \
+    /if ({lastspellseen} =~ 'fire bolt') \
+      /substitute -p %{opponentstring}?:@{%{damageSpellsSubstColor}} fire bolt%; \
+    /elseif ({lastspellseen} =~ 'triad of fire' | {triadcounter} > 0) \
+      /set triadcounter=$[{triadcounter} + 1]%; \
+      trigonprompt /set triadcounter 0%; \
+      /substitute -p %{opponentstring}?:@{%{damageSpellsSubstColor}} triad of fire %{triadcounter}/3%; \
+    /else \
+      /substitute -p %{opponentstring}?:@{%{damageSpellsSubstColor}} fire bolt / triad of fire%; \
+      /set triadcounter=$[{triadcounter} + 1]%; \
+      trigonprompt /set triadcounter 0%; \
+    /endif
+
+/def -F -mregexp -t"^SPLAM! (.+)'s ice bolt hit you right in your face\. Man that hurt!$" tfsubstdamspellIceBolt = \
+    /if ({lastspellseen} =~ 'ice bolt') \
+      /substitute -p %{P1}:@{%{damageSpellsSubstColor}} ice bolt%; \
+    /elseif ({lastspellseen} =~ 'triad of ice' | {triadcounter} > 0) \
+      /set triadcounter=$[{triadcounter} + 1]%; \
+      trigonprompt /set triadcounter 0%; \
+      /substitute -p %{P1}:@{%{damageSpellsSubstColor}} triad of ice %{triadcounter}/3%; \
+    /else \
+      /substitute -p %{P1}:@{%{damageSpellsSubstColor}} ice bolt / triad of ice%; \
+      /set triadcounter=$[{triadcounter} + 1]%; \
+      trigonprompt /set triadcounter 0%; \
+    /endif
+
+/def -F -mregexp -t" hits you with a bolt of force, ouch\.$" tfsubstdamspellForceBotl = \
+    /substitute -p %{PL}:@{%{damageSpellsSubstColor}} force bolt
+/def -F -mregexp -t"^You suddenly feel that nothing really did hurt!$" tfsubstdamspellNetherBall = \
+    /if ({lastspellseen} =~ 'nether bolt' | {lastspellseen} =~ 'nether ball') \
+      /substitute -p %{opponentstring}?:@{%{damageSpellsSubstColor}} %{lastspellseen}%; \
+    /else \
+      /substitute -p %{opponentstring}?:@{%{damageSpellsSubstColor}} nether bolt / nether ball%; \
+    /endif
+/def -F -mregexp -t"^You hear one single word and shutter with fear, the word was DIE!$" tfsubstdamspellDeathspell = \
+    /if ({lastspellseen} =~ 'powerword kill' | {lastspellseen} =~ 'deathspell') \
+      /substitute -p %{opponentstring}?:@{%{damageSpellsSubstColor}} %{lastspellseen}%; \
+    /else \
+      /substitute -p %{opponentstring}?:@{%{damageSpellsSubstColor}} powerword kill / deathspell%; \
+    /endif
+/def -F -mregexp -t" makes the earth tremble and shiver!$" tfsubstdamspellEarthquake = \
+    /substitute -p %{PL}:@{%{damageSpellsSubstColor}} earthquake
+/def -F -mregexp -t" exhales a huge cloud of ice shards which shoot towards you, knocking you off your feet!$" tfsubstdamspellFrostBreath = \
+    /substitute -p %{PL}:@{%{damageSpellsSubstColor}} frost breath
+/def -F -mregexp -t"^You stagger as a magic missile from (.+) hits you!$" tfsubstdamspellMagicMissile = \
+    /substitute -p %{P1}:@{%{damageSpellsSubstColor}} magic missile
+/def -F -mregexp -t" breathes a huge cloud of gas\. You didn't get away\.$" tfsubstdamspellGasBreath = \
+    /substitute -p %{PL}:@{%{damageSpellsSubstColor}} gas breath
+/def -F -mregexp -t" opens (his|her|its) hands and blasts you with elemental energy!$" tfsubstdamspellPlasmaBolt = \
+    /substitute -p %{PL}:@{%{damageSpellsSubstColor}} plasma bolt?
+/def -F -mregexp -t"^Multicolored ribbons of elemental energy shoots from (.*)'s fingertips and slams you in the chest\." tfsubstdamspellSpellfire = \
+    /substitute -p %{P1}:@{%{damageSpellsSubstColor}} spellfire
+/def -F -mregexp -t" hits you with a lightning breath\.$" tfsubstdamspell´LightningBreath = \
+    /substitute -p %{PL}:@{%{damageSpellsSubstColor}} lightning breath
+
+; -----  Area spells in the vincinity -----
+
+/def -F -msimple -t"You have to cover your eyes as a dazzling light flashes in the distance." tfsubstdamspellVincSunRay = \
+    /substitute -p You have to cover your eyes... (sun ray)
+/def -F -msimple -t"Huge black flames lick the horizon." tfsubstdamspellVincHellStorm = \
+    /substitute -p Huge black flames lick the horizon. (hell storm)
+/def -F -msimple -t"You hear a horrible SCREAM of pain in the distance." tfsubstdamspellVincMassPain = \
+    /substitute -p You hear a horrible SCREAM of pain in the distance. (mass pain)
+/def -F -msimple -t"The air stinks of a terrible gas!" tfsubstdamspellVincCloudkill = \
+    /substitute -p The air stinks of a terrible gas! (cloudkill)
+/def -F -msimple -t"The earth trembles and shivers!" tfsubstdamspellVincEarthquake = \
+    /substitute -p The earth trembles and shivers! (earthquake)
+/def -F -msimple -t"You hear the sound of hail in the distance." tfsubstdamspellVincIceStorm = \
+    /substitute -p You hear the sound of hail in the distance. (ice storm)
+/def -F -msimple -t"A horde of insects, small reptiles and rodents leave running and flying to the" tfsubstdamspellVincInsectPlague = \
+    /substitute -p A horde of insects... (insect plague)%; \
+    /def -F -n1 -msimple -ag -t"distance, as if called by something or someone." tfsubstdamspellVincInsectPlague2
+/def -F -msimple -t"A single word echos out over the realms, DIE!" tfsubstdamspellVincDeathSpell = \
+    /substitute -p A single word echos out over the realms, DIE! (deathspell)
+/def -F -msimple -t"A bright light flashes, followed by a thunderclap!" tfsubstdamspellVincPlasmaBall = \
+    /substitute -p A bright light flashes, followed by a thunderclap! (plasma ball)
+
+; -------------------  DAMAGE SPELLS subst end  -------------------
+
+; -------------------  SPECIAL MOB SPECIALS subst start  -------------------
+
+/def -F -mregexp -t"^The( Lesser| Major|) Eraditor throws back its central head and exhales mightly, burning you with its fiery breath\.$" tfsubstSpMobSpEradFireBreath = \
+    /substitute -p The%{P1} Eraditor:@{%{damageSpellsSubstColor}} fire breath
+/def -F -mregexp -t"^The( Lesser| Major|) Eraditor throws back one its outer heads and exhales a ghastly cloud of ice shards\.$" tfsubstSpMobSpEradIceBreath = \
+    /substitute -p The%{P1} Eraditor:@{%{damageSpellsSubstColor}} ice breath
+/def -F -mregexp -t"^The( Lesser| Major|) Eraditor throws back one its outer heads and exhales a driving torrent of water, battering you senseless\.$" tfsubstSpMobSpEradWaterBreath = \
+    /substitute -p The%{P1} Eraditor:@{%{damageSpellsSubstColor}} water breath
+/def -F -mregexp -t"^(The water elemental|The Marid Padishah) throws out a huge tidal wave, knocking you off your feet!$" tfsubstSpMobSpWaterElemWave = \
+    /substitute -p %{P1}:@{%{damageSpellsSubstColor}} water wave
+/def -F -mregexp -t"^The thassaloss glares intently around catching your gaze, as it does so you feel an unnerving tingle pass through you\.$" tfsubstSpMobSpThassGlare = \
+    /substitute -p The thassaloss:@{%{damageSpellsSubstColor}} glare (unknown effect... confusion?)
+/def -F -mregexp -t"^The beholder's Center eye peers at ([A-z]+)!$" tfsubstSpMobSpBeholderCenterLook = \
+    /substitute -p The beholder:@{%{damageSpellsSubstColor}} center eye@{n} at %{P1} (mana drain)
+/def -F -mregexp -t"^One of The beholder's eyestalks looks around!$" tfsubstSpMobSpBeholderLook = \
+    /substitute -p The beholder:@{%{damageSpellsSubstColor}} eyestalk look (blind/fireball/powerkill/edrain/telep/...?)
+;The beholder: eyestalk look (blindness/fireball/powerword kill/...?)
+;A shimmering purple light pulsates before Pufter, then it promptly disappears.
+;  Coincidense?
+
+/def -F -mregexp -t"^Takhisis slashes ([A-z]+)'s throat wide open!$" tfsubstSpMobSpTakhisisThroat = \
+    /substitute -p Takhisis:@{%{damageSpellsSubstColor}} throat slash@{n} at %{P1} (-9 hp)%; \
+    /tfshow ____________________
+/def -F -mregexp -t"^Malius the drow-elf imposter has slyly managed to outwit your colleagues and has disguised himself as you!$" tfsubstSpMobSpMaliusDisguise = \
+    /substitute -p Malius:@{%{damageSpellsSubstColor}} disguise as YOU!
+/def -F -mregexp -t"^The pyrohydra spits a huge glob of burning magma at ([^ ]+)\.$" tfsubstSpMobSpPyrohydraGlob = \
+    /substitute -p The pyrohydra:@{%{damageSpellsSubstColor}} magma spit
+/def -F -mregexp -t"^Zandramas the child of dark opens her mouth and you hear a horrible scream that appears to be draining the life out of you\.$" tfsubstSpMobSpZandyScream = \
+    /substitute -p Zandramas:@{%{damageSpellsSubstColor}} scream special (damage?)
+/def -F -mregexp -t"^The horgar squirts acid your face, you instinctively raise your hands to protect your face...the acid strikes the back of your hands before running down onto your (.*), your weapon seems to be uneffected\.\.\.this time$" tfsubstSpMobSpHorgarAcid = \
+    /substitute -p The horgar:@{%{damageSpellsSubstColor}} acid squirt@{n} (weapon ok)
+/def -F -mregexp -t"^The Master of the ROOTS makes a strange guesture, and you notice the roots reaching up snakily towards you!$" tfsubstSpMobSpMORootsStun = \
+    /substitute -p The Master of the ROOTS:@{%{damageSpellsSubstColor}} special stun%; \
+    /if (autoassist & pg) \
+      assist%; \
+    /endif
+/def -F -mregexp -t"^The Terrorite Demon bites at ([^ ]+)'s throat in an attempt to rip it open\.$" tfsubstSpMobSpTerrDemonThroat = \
+    /substitute -p The Terrorite Demon:@{%{damageSpellsSubstColor}} throat rip@{n} at %{P1}%; \
+    /set throatRipTarget %{P1}%; \
+    /def -F -n1 -ag -mregexp -t"^Blood from (his|her|its) ruined neck gushes out, spraying you!$$" tfsubstSpMobSpTerrDemonThroatGag
+/def -F -mregexp -t"^The Sword Demon throws back its head and screams defiance at you\.$" tfsubstSpMobSpSwordDemonScream = \
+    /substitute -p The Sword Demon:@{%{damageSpellsSubstColor}} scream
+/def -F -mregexp -t"^The Sword Demon flexes its muscles and moves its blades through a dazzling display of swordsmanship in an attempt to unnerve you\.$" tfsubstSpMobSpSwordDemonDisplay = \
+    /substitute -p The Sword Demon:@{%{damageSpellsSubstColor}} dazzling display
+/def -F -mregexp -t"^The phantom Hades grins as he disappears from existance replaced by his counterpart\.$" tfsubstSpMobSpHades1 = \
+    /set vuln='fire'%; \
+    /substitute -p Hades:@{%{damageSpellsSubstColor}} -> LEFT head@{n} (vuln fire)
+/def -F -mregexp -t"^As Hades wipes the blood from his mouth, it shows a sly grin as it dissintigrates from existance, and The Right Hades appear\.$" tfsubstSpMobSpHades2 = \
+    /set vuln='ice'%; \
+    /substitute -p Hades:@{%{damageSpellsSubstColor}} -> RIGHT head@{n} (vuln ice)
+/def -F -mregexp -t"^The phantom of Hades screams in agony as he is replaced by his fellow illusion\.$" tfsubstSpMobSpHades3 = \
+    /substitute -p Hades:@{%{damageSpellsSubstColor}} -> one head down!%; \
+    /if (autoassist & pg) \
+      assist%; \
+    /endif
+/def -F -mregexp -t"^The last of the hideous apparitions disappears replaced by the real Hades in his full glory\.$" tfsubstSpMobSpHades4 = \
+    /set vuln='none'%; \
+    /substitute -p Hades:@{%{damageSpellsSubstColor}} -> REAL Hades@{n} (vuln slay mythical)%; \
+    /if (autoassist & pg) \
+      assist%; \
+    /endif
+/def -F -mregexp -t"^The Thonis flexes its bulging muscles in an attempt to intimidate you\.$" tfsubstSpMobSpThonisIntimidate = \
+    /substitute -p The Thonis:@{%{damageSpellsSubstColor}} intimidation attempt
+/def -F -mregexp -t"^The Thonis throws back its head and screams obscenities at you!$" tfsubstSpMobSpThonisScream = \
+    /substitute -p The Thonis:@{%{damageSpellsSubstColor}} scream
+/def -F -mregexp -t"^(The Efreeti Sultan|The Efreeti Malik|The Efreeti Pasha|The fire elemental) gestures suddenly, creating a wall of flame that expands outwards from itself\.\.\.burning you as it passes\.$" tfsubstSpMobSpFiremobsFlamewall = \
+    /substitute -p %{P1}:@{%{damageSpellsSubstColor}} flame wall
+/def -F -mregexp -t"^(The Dao Hetman|The earth elemental) gestures suddenly, animating stones and rocks which batter you without remorse\.$" tfsubstSpMobSpDaoHetmanBatter = \
+    /substitute -p %{P1}:@{%{damageSpellsSubstColor}} animating stones and rocks
+/def -F -mregexp -t"^(The Djinni Vizier|The Djinni Malik|someone)'s hurricane violently shakes you, nearly ripping off your limbs\.$" tfsubstSpMobSpDjinniHurricane = \
+    /substitute -p %{P1}:@{%{damageSpellsSubstColor}} hurricane
+/def -F -mregexp -t"^(The Djinni Vizier|The Djinni Malik|The air elemental|someone) gestures suddenly, creating a swirling vortex of turbulent air which buffets you against the walls and floor\.$" tfsubstSpMobSpDjinniVortex = \
+    /substitute -p %{P1}:@{%{damageSpellsSubstColor}} air vortex
+/def -F -mregexp -t"^The thessalmera spits some acid at ([^ ]+) with one of its serpentine heads\.$" tfsubstSpMobSpThessalmeraSpit = \
+    /substitute -p The thessalmera:@{%{damageSpellsSubstColor}} acid spit@{n} at %{P1}
+/def -F -mregexp -t"^One of The thessalmera's snake heads shoots its acid spit at you\.$" tfsubstSpMobSpThessalmeraSpitMe = \
+    /substitute -p The thessalmera:@{%{damageSpellsSubstColor}} acid spit
+/def -F -mregexp -t"^The thessalmera throws back its lion head and lets loose a deafening and spine-chilling roar\.$" tfsubstSpMobSpThessalmeraRoar = \
+    /substitute -p The thessalmera:@{%{damageSpellsSubstColor}} roar
+/def -F -mregexp -t"'s eyes surrender to a dim red haze\.$" tfsubstSpMobSpBloodlustOn = \
+    /substitute -p %{PL}:@{%{damageSpellsSubstColor}} bloodlust
+/def -F -mregexp -t"^The dim red haze fades in (.+)'s eyes, leaving (him|her|it) breathing heavily\.$" tfsubstSpMobSpBloodlustOff = \
+    /substitute -p %{P1}:@{%{damageSpellsSubstColor}} bloodlust ended
+/def -F -mregexp -t"^A jet of white flame leaps from The thessalmera's dragon head to scorch ([^ ]+)\.$" tfsubstSpMobSpThessalmeraFlameScorch = \
+    /substitute -p The thessalmera:@{%{damageSpellsSubstColor}} flame scorch@{n} at %{P1}
+/def -F -mregexp -t"^The Terrorite Demon whips its tail out towards ([^ ]+), striking with great precision\.$" tfsubstSpMobSpTerrDemonTailWhip = \
+    /substitute -p The Terrorite Demon:@{%{damageSpellsSubstColor}} tail whip@{n} at %{P1}
+/def -F -mregexp -t"^The xorn seems to grow a little bigger\.$" tfsubstSpMobSpXornGrow = \
+    /substitute -p The xorn:@{%{damageSpellsSubstColor}} growing
+/def -F -mregexp -t"^You realise The xorn has been in your pockets!$" tfsubstSpMobSpXornSteal = \
+    /substitute -p The xorn:@{%{damageSpellsSubstColor}} stole money from you.
+/def -F -mregexp -t"^The neo-otyugh grapples onto ([^ ]+) and starts squeezing\.$" tfsubstSpMobSpNeoSqueeze = \
+    /substitute -p The neo-otyugh:@{%{damageSpellsSubstColor}} squeeze@{n} at %{P1}
+/def -F -mregexp -t"^The neo-otyugh squeezes you until you think you might pop!$" tfsubstSpMobSpNeoSqueeze2 = \
+    /substitute -p The neo-otyugh:@{%{damageSpellsSubstColor}} squeeze.
+/def -F -mregexp -t"^The otyugh grapples onto you and starts squeezing\.$" tfsubstSpMobSpOtyughSqueeze = \
+    /substitute -p The otyugh:@{%{damageSpellsSubstColor}} squeeze.
+/def -F -mregexp -t" gets covered in acidic spit by (The thessalgorgon|The thessaltrice)\.$" tfsubstSpMobSpThessalAcidSpit = \
+    /substitute -p %{P1}:@{%{damageSpellsSubstColor}} acid spit@{n} at %{PL}
+/def -F -mregexp -t"^The thessaltrice spits some acid at you\.$" tfsubstSpMobSpThessaltriceAcidSpit = \
+    /substitute -p The thessaltrice:@{%{damageSpellsSubstColor}} acid spit
+/def -F -mregexp -t"^The thessalhydra spits a huge glob of acid at (you|.*)\.$" tfsubstSpMobSpThessalhydraAcidSpit = \
+    /if ({P1} =~ 'you') \
+      /substitute -p The thessalhydra:@{%{damageSpellsSubstColor}} acid spit%; \
+    /else \
+      /substitute -p The thessalhydra:@{%{damageSpellsSubstColor}} acid spit@{n} at %{P1}%; \
+    /endif
+/def -F -mregexp -t"^The soul beckoner seems to grow stronger as it drains ([^ ]+) of vitality\.$" tfsubstSpMobSpSoulBeckonerDrain = \
+    /substitute -p The soul beckoner:@{%{damageSpellsSubstColor}} drain vitality@{n} at %{P1}
+/def -F -mregexp -t"^The soul beckoner seems to grow stronger as it leeches some of your lifeforce\.$" tfsubstSpMobSpSoulBeckonerDrainMe = \
+    /substitute -p The soul beckoner:@{%{damageSpellsSubstColor}} drain vitality
+/def -F -ag -msimple -t"You feel less energetic as The soul beckoner drains you!" tfsubstSpMobSpSoulBeckonerDrainMeGag
+/def -F -mregexp -t"^The purple worm strikes out and bites ([^ ]+) with its acid smeared maul!$" tfsubstSpMobSpPurpleWormAcidBite = \
+    /substitute -p The purple worm:@{%{damageSpellsSubstColor}} acid bite@{n} at %{P1}
+/def -F -mregexp -t"^The purple worm rears up on its massive sinewy coils and attempts to swallow ([^ ]+) who dives to one side and narrowly escapes being its next meal\.$" tfsubstSpMobSpPurpleWormSwallowAttempt = \
+    /substitute -p The purple worm:@{%{damageSpellsSubstColor}} swallow attempt@{n} at %{P1}
+/def -F -mregexp -t"^The purple worm rears up on its massive sinewy coils and smallows you, subjecting you to its hideous stomach acids before spitting you out!$" tfsubstSpMobSpPurpleWormSwallowYou = \
+    /substitute -p The purple worm:@{%{damageSpellsSubstColor}} swallow you!@{n} at %{P1}
+/def -F -mregexp -t"^The manticore delivers a sickening blow to ([^ ]+) with its spiked tail\.$" tfsubstSpMobSpManticoreTailStrike = \
+    /substitute -p The manticore:@{%{damageSpellsSubstColor}} tail strike@{n} at %{P1}
+/def -F -mregexp -t"^The manticore delivers a bone-jaring blow with its spiked tail, catching you full in the chest!$" tfsubstSpMobSpManticoreTailStrikeMe = \
+    /substitute -p The manticore:@{%{damageSpellsSubstColor}} tail strike
+/def -F -mregexp -t"^The manticore throws back its head and lets loose a deafening and spine-chilling roar\.$" tfsubstSpMobSpManticoreRoar = \
+    /substitute -p The manticore:@{%{damageSpellsSubstColor}} roar
+/def -F -mregexp -t"^The manticore swings its tail in a vicious arc before suddenly releasing countless small darts from its tail. The air is thick with sharp projectiles which strike you - OUCH!$" tfsubstSpMobSpManticoreTail = \
+    /substitute -p The manticore:@{%{damageSpellsSubstColor}} tailstrike%; \
+    sta%; \
+    /if (autoassist & pg) \
+      assist%; \
+    /endif
+/def -F -mregexp -t"^The manticore swings its tail in a vicious arc before suddenly releasing countless small darts from its tail. The air is thick with sharp projectiles which fly overhead as you dive to the ground\.$" tfsubstSpMobSpManticoreTailAttempt = \
+    /substitute -p The manticore:@{%{damageSpellsSubstColor}} tailstrike attempt
+/def -F -mregexp -t"^The grell reaches out and entraps ([^ ]+) in a tentacle\.$" tfsubstSpMobSpGrellEntrap = \
+    /substitute -p The grell:@{%{damageSpellsSubstColor}} entrap@{n} at %{P1}
+/def -F -mregexp -t"^The grell pecks ([^ ]+) viciously with its beak\.$" tfsubstSpMobSpGrellPeck = \
+    /substitute -p The grell:@{%{damageSpellsSubstColor}} peck@{n} at %{P1}
+/def -F -ag -msimple -t"A bolt of lightning is discharged from a nearby energy cloud." tfsubstSpMobSpDragGraveyardRoomSpec1
+/def -F -msimple -t"*CRACKLE* You are shocked by a powerful bolt of lightning!" tfsubstSpMobSpDragGraveyardRoomSpec2 = \
+    /substitute -p Room:@{%{damageSpellsSubstColor}} lightning bolt
+/def -F -mregexp -t"^The gauth makes a strange gesture, causing a cone of cold to envelop you\.$" tfsubstSpMobSpGauthConeOfCold = \
+    /substitute -p Gauth:@{%{damageSpellsSubstColor}} cone of cold
+/def -F -mregexp -t"^The remorhaz rears up on its hind legs before shifting its weight and dropping back down, ([^ ]+) is unfortunately in the wrong place at the wrong time\.\.\.SPLAT!$" tfsubstSpMobSpRemorhazCrush = \
+    /substitute -p The remorhaz:@{%{damageSpellsSubstColor}} crush@{n} at %{P1}
+/def -F -mregexp -t"^The remorhaz rears up on its hind legs before shifting its weight and dropping back down on ([^ ]+), who dives quickly to one side and narrowly escapes being crushed\.$" tfsubstSpMobSpRemorhazCrushFail = \
+    /substitute -p The remorhaz:@{%{damageSpellsSubstColor}} crush fail@{n} at %{P1}
+/def -F -mregexp -t"^The remorhaz lashes out with breathtaking speed and bites ([^ ]+)\.$" tfsubstSpMobSpRemorhazBite = \
+    /substitute -p The remorhaz:@{%{damageSpellsSubstColor}} bite@{n} at %{P1}
+/def -F -mregexp -t"^You are hit as The ice elemental throws out spear-sized icicles in all directions\.$" tfsubstSpMobSpIceElementalIcicles = \
+    /substitute -p The ice elemental:@{%{damageSpellsSubstColor}} thrown icicles
+/def -F -msimple -t"The earth crumbles..." tfsubstSpMobSpUnderdarkWorms = \
+    /substitute -p The earth crumbles...@{%{damageSpellsSubstColor}} Worm alert!!!
+
+/def -F -ag -mregexp -t"^The Thorn Demon grins evilly as the hairs on his head grow into large thick $" tfsubstSpMobSpMyrridonThornDemon= \
+    trigonprompt /purge tfsubstSpMobSpMyrridonThornDemonB*%; \
+    /def -F -n1 -ag -msimple -t"vines. They flail around the room briefly before they dart towards " tfsubstSpMobSpMyrridonThornDemonB1%; \
+    /def -F -n1 -mregexp -t" and bind (him|her|it)\." tfsubstSpMobSpMyrridonThornDemonB2 = \
+      /substitute -p The Thorn Demon:@{%{damageSpellsSubstColor}} bind@{n} at %%{PL}
+/def -F -mregexp -t"^The Primeval Worm lunges its gaping maw at ([^ ,]+), and swallows (him|her|it) whole!$" tfsubstSpMobSpDarkunderPrimevalSwallow = \
+    /substitute -p The Primeval Worm:@{%{damageSpellsSubstColor}} SWALLOWS@{n} %{P1}!
+/def -F -mregexp -t"^The Primeval Worm spits on ([^ ,]+), covering (his|her|its) face with some slimy mucus!$" tfsubstSpMobSpDarkunderPrimevalSpit = \
+    /substitute -p The Primeval Worm:@{%{damageSpellsSubstColor}} spit@{n} at %{P1}
+/def -F -mregexp -t" is turned to stone by The thessalgorgon's glare - that'll teach (him|her|it) to stare!$" tfsubstSpMobSpThessalgorgonGlare = \
+    /substitute -p The thessalgorgon:@{%{damageSpellsSubstColor}} STONED@{n} %{PL}
+/def -F -msimple -t"A strand of the web brushes against you, and drains some of your power." tfsubstSpMobSpWebBrush = \
+    /substitute -p The memory web:@{%{damageSpellsSubstColor}} mana drain
+/def -F -msimple -t"The cloaker escapes the melee long enough to surround you in a cloak of darkness." tfsubstSpMobSpCloakerGrab = \
+    /substitute -p The cloaker:@{%{damageSpellsSubstColor}} Grabbed you!
+/def -F -msimple -t"You finally manage to escape The cloaker's evil clutches." tfsubstSpMobSpCloakerGrabEnd = \
+    /substitute -p The cloaker:@{%{damageSpellsSubstColor}} Grab ended!
+/def -F -msimple -t"You suffer from the poisonous gas in your lungs." tfsubstSpMobSpWellmobPoison = \
+    /substitute -p ???:@{%{damageSpellsSubstColor}} You suffer from the poisonous gas in your lungs. (poison)%; \
+    aff
+/def -F -msimple -t"You inhale a chest full of the gas, and are paralyzed!" tfsubstSpMobSpWellmobParalyze = \
+    /substitute -p ???:@{%{damageSpellsSubstColor}} You inhale a chest full of the gas, and are paralyzed!
+/def -F -msimple -t"You feel your skin begin to burn as it is exposed to the intense heat eminating from The Balrog." tfsubstSpMobSpWellmobBalrogBurn = \
+    /substitute -p Balrog:@{%{damageSpellsSubstColor}} Its heat burns your skin
+/def -F -mregexp -t"^Morgoth the Valar God gestures at ([^ ]+) who becomes gaseous and begins to float upwards!$" tfsubstSpMobSpMorgothTelpOther = \
+    /substitute -p Morgoth:@{%{damageSpellsSubstColor}} telped %{P1}%; \
+    /if (classPr & owner !~ 'Valkyria69') \
+      retreat%; \
+      su %{P1}%; \
+    /endif
+/def -F -msimple -t"^Morgoth the Valar God gestures at you, you feel your body begin to lose solidity and float upwards!" tfsubstSpMobSpMorgothTelp = \
+    /substitute -p Morgoth:@{%{damageSpellsSubstColor}} teleport!%; \
+    /if (classMa) \
+      /tfshow Trying to dd back!%; \
+      dd %{groupleader}%; \
+      /if (autoassist) \
+        assist%; \
+      /endif%; \
+    /else \
+      /tfshow Might want to recall and/or get summon back!%; \
+    /endif
+/def -F -mregexp -t"^(Morgoth the Valar God|someone) gazes deeply into your eyes daring you to stand your ground and fight!$" tfsubstSpMobSpMorgothForceflee = \
+    /substitute -p Morgoth:@{%{damageSpellsSubstColor}} forceflee
+/def -F -t"{*} tentamort injects you with something nasty from one of its tentacles." tfsubstSpMobSpTentaInject = \
+    /substitute -p The tentamort:@{%{damageSpellsSubstColor}} INJECTED!!!%; \
+    /tfshow ==========================%; \
+    /if (classAn == 2) \
+      tran%; \
+    /else \
+      true%; \
+    /endif
+/def -F -mregexp -t"The tentamort lashes out with a tentacle and injects something ominous into (.*)\." tfsubstSpMobSpTentaInjectOther = \
+    /substitute -p The tentamort:@{%{damageSpellsSubstColor}} Inject@{n} at %{P1}%; \
+    /if (classAn == 2) \
+      tran%; \
+    /elseif (classPr == 2) \
+      true %{P1}%; \
+    /endif
+/def -F -mregexp -t"^The phycomid ejects a globule of sticky liquid at high speed towards (.*)$" tfsubstSpMobSpPhycomidInject = \
+    /if (owner =~ 'Cindy' & mylevel >= 70) \
+      /tfshow How does it look when you get it? (%{P1})%; \
+    /endif%; \
+    tickwarn 6 Phycomid%; \
+    /substitute -p The phycomid:@{%{damageSpellsSubstColor}} Injected!
+/def -F -mregexp -t"The phycomid shoots a sticky globule at ([A-z]+)\." tfsubstSpMobSpPhycomidInjectOther = \
+    /substitute -p The phycomid:@{%{damageSpellsSubstColor}} Inject@{n} at %{P1}
+/def -F -msimple -t"You get too close to The gas spore and inhale some of its sickly gas." tfsubstSpMobSpGasSporePoison = \
+    /substitute -p The gas spore:@{%{damageSpellsSubstColor}} poison%; \
+    aff
+/def -F -msimple -t"Your clumsy slashing cuts the web into two smaller webs! Doh!" tfsubstSpMobSpWebSlash = \
+    /substitute -p The living web:@{%{damageSpellsSubstColor}} SPLIT from your slash!%; \
+    unwield
+/def -F -msimple -t"The violet fungus shoots out a cloud of spores - one of them lands on you and burrows into your flesh." tfsubstSpMobSpFungusDisease = \
+    /substitute -p The violet fungus:@{%{damageSpellsSubstColor}} Fungal disease
+/def -F -mregexp -t"Shadows smother ([^ ]+) ripping (him|her|it) apart like a doll till (he|she|it) lies motionless\." tfsubstSpMobSpShadowRip = \
+    /substitute -p Shadow:@{%{damageSpellsSubstColor}} %{P1} at -9
+/def -F -mregexp -t"The Catoblepas eyes blaze red and glare intently at you filling your head with a red haze until it explodes!" tfsubstSpMobSpCatoblepas = \
+    /substitute -p The Catoblepas:@{%{damageSpellsSubstColor}} glare (trying to instakill!)
+/def -F -mregexp -t"The earth shivers by Aslan's mighty roar!" tfsubstSpMobSpAslan = \
+    /substitute -p Aslan:@{%{damageSpellsSubstColor}} Mighty roar (area)%; \
+    /def -p9999 -n1 -ag -msimple -t"You scream in pain!" tfsubstSpMobSpAslanGag%; \
+    delay 2 /purge tfsubstSpMobSpAslanGag
+
+
+; -------------------  SPECIAL MOB SPECIALS subst end  -------------------
+
+; -------------------  BAD SPELLS subst start  -------------------
+
+/def -F -msimple -t'Something just happened to you, but you cannot figure out what.' tfsubstbadspellsFeeblemind = \
+    /substitute -ah -p Something just happened to you, but you cannot figure out what.@{%{badSpellsSubstColor}} (FEEBLEMIND)%; \
+    wor
+/def -F -mregexp -t" starts to drool, looking somewhat foolish\.$" tfsubstbadspellsFeeblemindOther = \
+    /substitute -ah -p %{PL} starts to drool, looking somewhat foolish.@{%{badSpellsSubstColor}} (feeblemind)
+/def -F -msimple -t'You feel smarter.' tfsubstbadspellsFeeblemindGone = \
+    /substitute -ah -p You feel smarter.@{%{badSpellsSubstColor}} (feeblemind gone)
+/def -F -mregexp -t" tried to magic you\.$" tfsubstbadspellsBlindness2 = \
+    /if ({lastspellseen} =~ 'blindness') \
+      /substitute -p %{PL} tried to magic you.@{%{badSpellsSubstColor}} (%{lastspellseen})%; \
+    /else \
+      /substitute -p %{PL} tried to magic you.@{%{badSpellsSubstColor}} (blindness/...)%; \
+    /endif
+/def -F -msimple -t"You feel drained." tfsubstbadspellsEnergyDrain = \
+    /substitute -p You feel drained.@{%{badSpellsSubstColor}} (energy drain)
+/def -F -mregexp -t"^HEY! (.+) just tried to drain you!!!$" tfsubstbadspellsEnergyDrain2 = \
+    /substitute -p HEY! %{P1} just tried to drain you!!!@{%{badSpellsSubstColor}} (failed energy drain)
+/def -F -ag -mregexp -t"Luckily for you (.+) slept during draining-lessons!$" tfsubstbadspellsEnergyDrain3
+/def -F -mregexp -t"laughs as you feel yourself grow frail and weak\.$" tfsubstbadspellsEntropy = \
+    /substitute -p %{PL}laughs as you feel yourself grow frail and weak.@{%{badSpellsSubstColor}} (entropy)
+/def -F -msimple -t"Hmm, where am I? Ahhh, I remember. Shit, I was almost lost there for a while" tfsubstbadspellsConfusion = \
+    /substitute -p Hmm, where am I? Ahhh, I remember. Shit, I was almost lost there for a while@{%{badSpellsSubstColor}} (confusion)
+/def -F -msimple -t"Woooodiooodadoo. Who did what to whom? Where am I? Who am I?" tfsubstbadspellsConfusion2 = \
+    /substitute -p Woooodiooodadoo. Who did what to whom? Where am I? Who am I?@{%{badSpellsSubstColor}} (CONFUSION)
+/def -F -mregexp -t"tries to sleep you, but fails horribly\.$" tfsubstbadspellsSleep = \
+    /substitute -p %{PL}tries to sleep you, but fails horribly.@{%{badSpellsSubstColor}} (sleep)
+/def -F -mregexp -t"briefly reveal a red aura!" tfsubstbadspellsCurse = \
+    /substitute -p %{PL}briefly reveal a red aura!@{%{badSpellsSubstColor}} (curse)
+/def -F -ag -msimple -t"someone seems to be blinded." tfsubstbadspellsBlind
+/def -F -mregexp -t" is surrounded by chloroform gas and is knocked out cold\." tfsubstbadspellsPStun = \
+    /substitute -p %{PL} is surrounded by chloroform...@{%{badSpellsSubstColor}} (powerword stun)
+/def -F -mregexp -t"^The chloroform gas dissipates and (.*) suddenly regains conciousness\.$" tfsubstbadspellsPStun2 = \
+    /substitute -p %{P1} suddenly regains conciousness.@{%{badSpellsSubstColor}} (lost powerword stun)
+/def -F -mregexp -t" looks really sick, and shivers uncomfortably\.$" tfsubstbadspellsPoisonEffect = \
+    /if (pg & {P1} !~ opponentstring) \
+      /substitute%; \
+    /else \
+      /substitute -p %{PL} looks really sick, and shivers uncomfortably.@{%{badSpellsSubstColor}} (poisoned)%; \
+    /endif
+/def -F -msimple -t"Your victim is shocked by your hit." tfsubstbadspellsCritWounds = \
+    /substitute -p Your victim is shocked by your hit.@{%{badSpellsSubstColor}} (critical wounds)
+/def -F -mregexp -t"is bleeding from (his|her|its) critical wounds\.$" tfsubstbaspellsCritWoundsEffect = \
+    /substitute -p %{PL}is bleeding from %{P1} critical wounds.@{%{badSpellsSubstColor}} (critical wounds)
+/def -F -mregexp -t"^A black beam crackles from (.*)'s hands and slams into ([A-z]+)\." tfsubstbaspellsSoulsteal = \
+    /substitute -p %{P1}:@{%{badSpellsSubstColor}} Soulsteal@{n} at %{P2}
+/def -F -mregexp -t"^A tanglevine shoots from the ground and wraps itself firmly around ([^ !]+)!$" tfsubstbaspellsEntangleOther = \
+    /substitute -p %{opponentstring}?:@{%{badSpellsSubstColor}} entangle@{n} at %{P1}
+/def -F -mregexp -t"^A tanglevine shoots from the ground and wraps itself firmly around you!$" tfsubstbaspellsEntangleMe = \
+    /substitute -p %{opponentstring}?:@{%{badSpellsSubstColor}} entangle!
+/def -F -mregexp -t"^The tanglevine wrapped around ([^ !]+) dies and drops to the floor\.$" tfsubstbaspellsEntangleEnd = \
+    /substitute -p %{P1}:@{%{badSpellsSubstColor}} entangle gone.
+/def -F -mregexp -t" hacks at the tanglevine wrapped around (his|her|its) body\.$" tfsubstbaspellsEntangleHackOther = \
+    /substitute -p %{PL} hacks at the tanglevine...:@{%{badSpellsSubstColor}} (entangled)
+/def -F -mregexp -t"^You hack at the tanglevine wrapped around your body\.$" tfsubstbaspellsEntangleHackYou = \
+    /substitute -p You hack at the tanglevine...:@{%{badSpellsSubstColor}} (entangled)
+
+; -------------------  BAD SPELLS subst end  -------------------
+
+; ------------------------  HEAL SPELLS subst start  ------------------------
+
+;Vampirism aura
+/def -F -mregexp -t"A claw shaped mist draws blood from (.*), and you feel strengthened by (his|her|its) blood\.$" tfsubsthealspellVampAura = \
+    /substitute -p Your Vamp aura draws @{Cred}blood @{n}from %{P1}!
+
+;Tranquility
+/def -F -mregexp -t" emits a strong field of positive energy, banishing all chaotic forces\.$" tfsubsthealspellTranquility = \
+    /substitute -p %{PL} emits a strong field of positive energy, banishing all...@{%{healSpellsSubstColor}} (tranquility)
+
+;Channel
+/def -F -mregexp -t" grows weak as (.*) appears stronger\.$" tfsubsthealspellChannel = \
+    /substitute -p %{PL} grows weak as %{P1} appears stronger.@{%{healSpellsSubstColor}} (channel)
+
+;Touch of God
+/def -F -mregexp -t" looks healthier as (.*) invokes (his|her|its) divine powers\.$" tfsubsthealspellTouchOfGod = \
+    /substitute -p %{PL} looks healthier as %{P1} invokes %{P2}divine powers.@{%{healSpellsSubstColor}} (touch of god)
+
+;Burst of Life
+/def -F -mregexp -t"^You feel newfound power as ([^ ]+) releases a burst of life energy on you.$" tfsubsthealspellBurstOfLifeMe = \
+    /substitute -p %{P1}: burst of life on you.
+/def -F -mregexp -t" raises (his|her|its) palm and unleashes a burst of raw life energy on (.*)\.$" tfsubsthealspellBurstOfLifeOther = \
+    /substitute -p %{PL}: burst of raw life energy on %{P2}.@{%{healSpellsSubstColor}} (burst of life)
+/def -F -mregexp -t"^You feel newfound power as you let your charged life energy burst on yourself.$" tfsubsthealspellMeBurstOfLifeMe = \
+    /substitute -p You feel newfound power... @{%{healSpellsSubstColor}} (burst of life)
+/def -F -mregexp -t"^You release a powerful burst of life on (.*)\.$" tfsubsthealspellMeBurstOfLifeOther = \
+    /substitute -p You release a powerful burst of life on %{P1}. @{%{healSpellsSubstColor}} (burst of life)
+
+;Cure Light
+/def -F -mregexp -t" looks slightly better as (.*) heals (him|her|it)\.$" tfsubsthealspellCureLight = \
+    /substitute -p %{PL} looks slightly better as %{P1} heals %{P2}.@{%{healSpellsSubstColor}} (cure light)
+
+;Cure Serious
+/def -F -mregexp -t" looks a bit better\.$" tfsubsthealspellCureSerious = \
+    /substitute -p %{PL} looks a bit better.@{%{healSpellsSubstColor}} (cure serious)
+
+;Cure Critic
+/def -F -mregexp -t" looks somewhat better\.$" tfsubsthealspellCureCritic = \
+    /if (pg & {P1} !~ opponentstring) \
+      /substitute%; \
+    /else \
+      /substitute -p %{PL} looks somewhat better.@{%{healSpellsSubstColor}} (cure critic)%; \
+    /endif
+/def -F -mregexp -t"^You feel somewhat better as ([^ ]+) heals you\.$" tfsubsthealspellCureCriticMe = \
+    /substitute -p You feel somewhat better as %{P1} heals you.@{%{healSpellsSubstColor}} (cure critic)
+
+;Heal
+/def -F -mregexp -t" heals ([^\.]+)\.$" tfsubsthealspellHeal = \
+    /if ({PL} =~ {P1}) \
+      /substitute -p %{PL} heals %{P1}@{%{healSpellsSubstColor}} (heal)%; \
+    /endif
+/def -F -mregexp -t"^You feel better as (.+) heals you\." tfsubsthealspellHealMe = \
+    /substitute -p You feel better as %{P1} heals you.@{%{healSpellsSubstColor}} (heal)
+/def -F -mregexp -t"^You feel better as (.+) utters some strange words\." tfsubsthealspellGroupHeal = \
+    /substitute -p You feel better as %{P1} utters some strange words.@{%{healSpellsSubstColor}} (groupheal)
+
+;Powerheal
+/def -F -mregexp -t"^As (.+) solemnly chants, (.+) is powerhealed\.$" tfsubsthealspellPowerheal = \
+    /if (pg & {P1} !~ opponentstring) \
+      /substitute%; \
+    /else \
+      /substitute -p As %{P1} solemnly chants, %{P2} is powerhealed.@{%{healSpellsSubstColor}} (powerheal)%; \
+    /endif
+/def -F -mregexp -t"^A warm feeling surges through your body as (.+) solemnly chants\." tfsubsthealspellPowerhealMe = \
+    /substitute -p %{P1}:@{%{healSpellsSubstColor}} powerheal
+/def -F -mregexp -t"^You feel much better as (.+) utters some strange words\." tfsubsthealspellGroupPowerheal = \
+    /substitute -p %{P1}:@{%{healSpellsSubstColor}} grouppowerheal
+/def -F -mregexp -t" looks young and vital again!$" tfsubsthealspellWitherFixed = \
+    /substitute -p %{PL} looks young and vital again!@{%{healSpellsSubstColor}} (wither removed)
+
+;Trueheal
+/def -F -mregexp -t" looks MUCH better as (.+) invokes a heal-formula\.$" tfsubsthealspellTrueheal = \
+    /if (pg & {P1} !~ opponentstring) \
+      /substitute%; \
+    /elseif ({P1} =~ {PL}) \
+      /substitute -p %{PL}:@{%{healSpellsSubstColor}} trueheal self.%; \
+    /else \
+      /substitute -p %{PL} looks MUCH better as %{P1} invokes a heal-formula.@{%{healSpellsSubstColor}} (trueheal)%; \
+    /endif
+/def -F -p2 -mregexp -t"^You feel MUCH better as (.+) utters some strange words\.$" tfsubsthealspellTruehealMe = \
+    /substitute -p You feel MUCH better as %{P1} utters some strange words.@{%{healSpellsSubstColor}} (trueheal)
+
+;Miracle
+/def -F -mregexp -t"^As (.+) invokes, (.+)'s wounds miraculously disappear\.$" tfsubsthealspellMiracle = \
+    /if (pg & {P1} !~ opponentstring) \
+      /substitute%; \
+    /else \
+      /substitute -p As %{P1} invokes, %{P2}'s wounds miraculously disappear.@{%{healSpellsSubstColor}} (miracle)%; \
+    /endif
+
+; ------------------------  HEAL SPELLS subst end  ------------------------
+
+; ------------------------  BOOST SPELLS subst start  ------------------------
+; Always gagging, except if you are solo AND fighting something
+
+;Adrenal Focus
+/def -F -mregexp -t" looks a bit disoriented\.$" tfsubstLostAdrenalFocus = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute  -p %{PL} looks a bit disoriented.@{%{boostSpellsSubstColor}} (lost adrenal focus)%; \
+    /else \
+      /substitute%; \
+    /endif
+/def -F -mregexp -t" gets a deadly look in (his|her|its) eyes\.$" tfsubstCastAdrenalFocus = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} gets a deadly look in %{P1} eyes.@{%{boostSpellsSubstColor}} (adrenal focus)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Armor of Thorns
+/def -F -mregexp -t"'s thorns wither to death and drop to (his|her|its) feet\.$" tfsubstLostArmorOfThorns = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL}'s thorns wither to death and drop to %{P1} feet.@{%{boostSpellsSubstColor}} (lost armor of thorns)%; \
+    /else \
+      /substitute%; \
+    /endif
+/def -F -mregexp -t"^Long, wickedly-sharp thorns sprout from (.*)!$" tfsubstCastArmorOfThorns = \
+    /if ((fighting & !pg) | {P1} =~ opponentstring) \
+      /substitute -p Long, wickedly-sharp thorns sprout from %{P1}!@{%{boostSpellsSubstColor}} (armor of thorns)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Barkskin
+/def -F -mregexp -t"'s skin softens back to normal again\.$" tfsubstLostBarkskin = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL}'s skin softens back to normal again.@{%{boostSpellsSubstColor}} (lost barkskin)%; \
+    /else \
+      /substitute%; \
+    /endif
+/def -F -mregexp -t" dresses up. Ah, new fashion, tree dress\.\.\.$" tfsubstCastBarkskin = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} dresses up. Ah, new fashion, tree dress...@{%{boostSpellsSubstColor}} (barkskin)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Bladeturn
+/def -F -mregexp -t"^There is a quick rush of wind around (.*)\.$" tfsubstCastBladeturn = \
+    /if ((fighting & !pg) | {P1} =~ opponentstring) \
+      /substitute -p There is a quick rush of wind around %{P1}.@{%{boostSpellsSubstColor}} (bladeturn)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Bless
+/def -F -mregexp -t" seems less righteous\.$" tfsubstLostBless = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} seems less righteous.@{%{boostSpellsSubstColor}} (lost bless)%; \
+    /else \
+      /substitute%; \
+    /endif
+/def -F -mregexp -t" mumbles a quick blessing for (.*)\.$" tfsubstCastBless = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} mumbles a quick blessing for %{PR}@{%{boostSpellsSubstColor}} (bless)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Blood Mirror
+/def -F -mregexp -t"^The magical forcefield around (.*) disintegrates\.$" tfsubstLostBloodMirror = \
+    /if ((fighting & !pg) | {P1} =~ opponentstring) \
+      /substitute -p The magical forcefield around %{P1} disintegrates.@{%{boostSpellsSubstColor}} (lost blood mirror)%; \
+    /else \
+      /substitute%; \
+    /endif
+/def -F -mregexp -t"^A spherical forcefield surrounds (.*)\.$" tfsubstCastBloodMirror = \
+    /if ((fighting & !pg) | {P1} =~ opponentstring) \
+      /substitute -p A spherical forcefield surrounds %{P1}@{%{boostSpellsSubstColor}} (blood mirror)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Blood Rite
+/def -F -mregexp -t" looks paler, but (his|her|its) eyes glow!$" tfsubstCastBloodRite = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} looks paler, but %{P1} eyes glow!@{%{boostSpellsSubstColor}} (blood rite)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Blur
+/def -F -mregexp -t" stops blurring\.$" tfsubstLostBlur = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} stops blurring.@{%{boostSpellsSubstColor}} (lost blur)%; \
+    /else \
+      /substitute%; \
+    /endif
+/def -F -mregexp -t" starts to blur in and out of phase\.$" tfsubstCastBlur = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} starts to blur in and out of phase.@{%{boostSpellsSubstColor}} (blur)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Combat
+/def -F -mregexp -t" looks somewhat more alert and ready for combat!$" tfsubstCastCombat = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} looks somewhat more alert and ready for combat!@{%{boostSpellsSubstColor}} (combat)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Create Food
+/def -F -mregexp -t" magically creates a magic mushroom\.$" tfsubstCastCreateFood = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} magically creates a magic mushroom.@{%{boostSpellsSubstColor}} (create food)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Darkvision
+/def -F -mregexp -t"^As (.+) invokes, (.+)'s eyes tingles\.$" tfsubstCastDarkvision = \
+    /if ({P1} =~ {P2}) \
+      /substitute -p %{P1}'s eyes tingles.@{hCyellow} (darkvision)%; \
+    /endif
+
+
+;Detect Alignment
+/def -F -mregexp -t"'s eyes tingle purple for a split second\.$" tfsubstCastDetectAlignment = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL}'s eyes tingle purple for a split second.@{%{boostSpellsSubstColor}} (detect alignment)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Detect Magic
+/def -F -mregexp -t"'s eyes sparkle\.$" tfsubstCastDetectMagic = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL}'s eyes sparkle.@{%{boostSpellsSubstColor}} (detect magic)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Fly / Magic carpet
+/def -F -mregexp -t"^The wings on (.*)'s back shrink into nothingness\.$" tfsubstLostFly = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p The wings on %{P1}'s back shrink into nothingness.@{%{boostSpellsSubstColor}} (lost fly)%; \
+    /else \
+      /substitute%; \
+    /endif
+/def -F -mregexp -t" grows small black batwings, and starts flapping!$" tfsubstCastFly = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} grows small black batwings, and starts flapping!@{%{boostSpellsSubstColor}} (fly)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Force Field
+/def -F -mregexp -t"'s forcefield wavers and evaporates before your eyes\.$" tfsubstLostForceField = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL}'s forcefield wavers and evaporates before your eyes.@{%{boostSpellsSubstColor}} (lost forcefield)%; \
+    /else \
+      /substitute%; \
+    /endif
+/def -F -mregexp -t"^A magical force field appears around (.*)\.$" tfsubstCastForceField = \
+    /if ((fighting & !pg) | {P1} =~ opponentstring) \
+      /substitute -p A magical force field appears around %{P1}.@{%{boostSpellsSubstColor}} (forcefield)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Giant Size
+/def -F -mregexp -t"'s muscles grow\.$" tfsubstCastGiantSize = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL}'s muscles grow.@{%{boostSpellsSubstColor}} (giant size)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Haste
+/def -F -mregexp -t" starts to move rapidly\.$" tfsubstCastHaste = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} starts to move rapidly.@{%{boostSpellsSubstColor}} (haste)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Holy Armor
+/def -F -mregexp -t"'s suit of holy armor dissolves\.$" tfsubstLostHolyArmor = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL}'s suit of holy armor dissolves.@{%{boostSpellsSubstColor}} (lost holy armor)%; \
+    /else \
+      /substitute%; \
+    /endif
+/def -F -mregexp -t"^A shining armor materializes before (.*) then it suddenly dissolves\.$" tfsubstCastHolyArmor = \
+    /if ((fighting & !pg) | {P1} =~ opponentstring) \
+      /substitute -p A shining armor materializes before %{P1} then it suddenly dissolves.@{%{boostSpellsSubstColor}} (holy armor)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Invisibility
+/def -F -mregexp -t" slowly fades into existence\.$" tfsubstLostInvisibility = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} slowly fades into existence.@{%{boostSpellsSubstColor}} (lost invisibility)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Life Blood
+/def -F -mregexp -t"'s lifeforce fades\.$" tfsubstLostLifeBlood = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL}'s lifeforce fades.@{%{boostSpellsSubstColor}} (lost life blood)%; \
+    /else \
+      /substitute%; \
+    /endif
+/def -F -mregexp -t" starts to glow with lifeforce\.$" tfsubstCastLifeBlood = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} starts to glow with lifeforce.@{%{boostSpellsSubstColor}} (life blood)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Mana Shield
+/def -F -mregexp -t" lets out a soft sigh as the rippling light slowly fades away\.$" tfsubstLostManaShield = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} lets out a soft sigh as the rippling light slowly fades away.@{%{boostSpellsSubstColor}} (lost mana shield)%; \
+    /else \
+      /substitute%; \
+    /endif
+/def -F -mregexp -t"^A faint rippling light shimmers before (.*)\.$" tfsubstCastManaShield = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p A faint rippling light shimmers before %{P1}.@{%{boostSpellsSubstColor}} (mana shield)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Mirror Image
+/def -F -mregexp -t"^A magical kaleidoscope collapses around (.*)\.$" tfsubstLostMirrorImage = \
+    /if ((fighting & !pg) | {P1} =~ opponentstring) \
+      /substitute -p A magical kaleidoscope collapses around %{P1}.@{%{boostSpellsSubstColor}} (lost mirror image)%; \
+    /else \
+      /substitute%; \
+    /endif
+/def -F -mregexp -t" begins to spin in a kaleidoscopic blur and splits into mirror images of (himself|herself|itself)\.$" tfsubstCastMirrorImage = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} begins to spin in a kaleidoscopic blur and splits into mirror images of %{P1}.@{%{boostSpellsSubstColor}} (mirror image)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Mountain Heart
+/def -F -mregexp -t" grinds (his|her|its) teeth in pain as (he|she|it) realizes how hurt (he|she|it) really is\.$" tfsubstLostMountainHeart = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} grinds %{P1} teeth in pain as %{P2} realizes how hurt %{P3} really is.@{%{boostSpellsSubstColor}} (lost mountain heart)%; \
+    /else \
+      /substitute%; \
+    /endif
+/def -F -mregexp -t"^A look of intense concentration overcomes (.*)\.$" tfsubstCastMountainHeart = \
+    /if ((fighting & !pg) | {P1} =~ opponentstring) \
+      /substitute -p A look of intense concentration overcomes %{P1}.@{%{boostSpellsSubstColor}} (mountain heart)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Prayer
+/def -F -mregexp -t" seems less spiritual\.$" tfsubstLostPrayer = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} seems less spiritual.@{%{boostSpellsSubstColor}} (lost prayer)%; \
+    /else \
+      /substitute%; \
+    /endif
+/def -F -mregexp -t" silently prays for (.*)\.$" tfsubstCastPrayer = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} silently prays for %{P1}.@{%{boostSpellsSubstColor}} (prayer)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Protection
+/def -F -mregexp -t" protects (.*) from the Horrible in the world\.$" tfsubstCastProtection = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} protects %{P1} from the @{Cmagenta}Horrible@{n} in the world.@{%{boostSpellsSubstColor}} (protection)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Regenerate
+/def -F -mregexp -t" shivers slightly\.$" tfsubstCastRegenerate = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} shivers slightly.@{%{boostSpellsSubstColor}} (regenerate)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Remove Curse
+/def -F -mregexp -t" briefly glows red, then blue\.$" tfsubstCastRemoveCurse = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} briefly glows red, then blue.@{%{boostSpellsSubstColor}} (remove curse)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Revitalize
+/def -F -mregexp -t" revitalizes (.*)\.$" tfsubstCastRevitalize = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} revitalizes %{P1}.@{%{boostSpellsSubstColor}} (revitalize)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Ritual of Pain
+/def -F -mregexp -t"^The magical field around (.*) disintegrates\.$" tfsubstLostRitualOfPain = \
+    /if (1) \
+      /substitute -p The magical field around %{P1} disintegrates.@{%{boostSpellsSubstColor}} (lost ritual of pain)%; \
+    /endif
+/def -F -mregexp -t"^A magical field of yellow light appears around " tfsubstCastRitualOfPain = \
+    /if (1) \
+      /substitute -p A magical field of yellow light appears around %{PR}@{%{boostSpellsSubstColor}} (ritual of pain)%; \
+    /endif
+
+;Sanctuary / Holyword
+/def -F -mregexp -t" starts glowing\.$" tfsubstCastSanctuary = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /if (lastspellseen =~ 'sanctuary' | lastspellseen =~ 'holyword' | lastspellseen =~ 'sun shield') \
+        /substitute -p %{PL} starts glowing.@{%{boostSpellsSubstColor}} (%{lastspellseen})%; \
+      /else \
+        /substitute -p %{PL} starts glowing.@{%{boostSpellsSubstColor}} (sun shield / sanctuary)%; \
+      /endif%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Satiate
+/def -F -mregexp -t" looks like (he|she|it) just ate a great feast\.$" tfsubstCastSatiate = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} looks like %{P1} just ate a great feast.@{%{boostSpellsSubstColor}} (satiate)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Serenity
+/def -F -mregexp -t"^You feel a boost of vitality as ([^ ]+) channels the power of nature into your body\.$" tfsubstCastSerenity = \
+    /substitute -p You feel a boost of vitality as %{P1} channels...@{%{boostSpellsSubstColor}} (serenity)%; \
+
+;Shadow Displacement
+/def -F -mregexp -t"^Suddenly (.*)'s shadow springs to life and merges with (.*)\.$" tfsubstCastShadowDisplacement = \
+    /if ((fighting & !pg) | {P1} =~ opponentstring) \
+      /substitute -p Suddenly %{P1}'s shadow springs to life and merges with %{P2}.@{%{boostSpellsSubstColor}} (shadow displacement)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Shadow Form
+/def -F -mregexp -t"^Shadows deepen, creeping forth and consuming (.*)\.$" tfsubstCastShadowForm = \
+    /if ((fighting & !pg) | {P1} =~ opponentstring) \
+      /substitute -p Shadows deepen, creeping forth and consuming %{P1}.@{%{boostSpellsSubstColor}} (shadow form)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Strength
+/def -F -mregexp -t" strengthens (.*)\.$" tfsubstCastStrength = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL} strengthens %{P1}.@{%{boostSpellsSubstColor}} (strength)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Sun Shield
+/def -F -mregexp -t"^The yellow shield around (.*) disappears\.$" tfsubstLostSunShield = \
+    /if ((fighting & !pg) | {P1} =~ opponentstring) \
+      /substitute -p The yellow shield around %{P1} disappears.@{%{boostSpellsSubstColor}} (sun shield)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+;Venom
+/def -F -mregexp -t"'s weapon starts to drip with vile green poison\.$" tfsubstCastVenom = \
+    /if ((fighting & !pg) | {PL} =~ opponentstring) \
+      /substitute -p %{PL}'s weapon starts to drip with vile @{Cyellow}green@{n} poison.@{%{boostSpellsSubstColor}} (venom)%; \
+    /else \
+      /substitute%; \
+    /endif
+
+; ------------------------  BOOST SPELLS subst end  ------------------------
+
+; --------------------  RELOCATION SPELLS subst start  --------------------
+
+;Contingency
+/def -F -mregexp -t" disappears in a flash of light!$" tfsubstCastContingency = \
+    /substitute -p %{PL}:@{%{relocationSpellsSubstColor}} Contingency
+
+;Dimension Door
+/def -F -mregexp -t"You hear (.*) saying 'Beam me up Scotty!' and then (he|she|it) is gone\.$" tfsubstCastDimensionDoorLeaving = \
+    /substitute -p %{P1}:@{%{relocationSpellsSubstColor}} Dimension Door (leaving)
+/def -F -mregexp -t" materializes in front of your nose grinning wildly\.$" tfsubstCastDimensionDoorAppearing = \
+    /substitute -p %{PL}:@{%{relocationSpellsSubstColor}} Dimension Door (appearing)
+
+;Gaias Beacon
+/def -F -mregexp -t" slowly fades out of existance$" tfsubstUseGaiasBeacon = \
+    /substitute -p %{PL} slowly fades out of existance@{%{relocationSpellsSubstColor}} (using gaias beacon)
+
+;Holy gate
+/def -F -msimple -t"The gods decide to close a red field of energy for now." tfsubstLostHolyGate = \
+    /substitute -p The gods decide to close a red field of energy for now.@{%{relocationSpellsSubstColor}} (lost holy gate)
+/def -F -mregexp -t" creates a red field of energy\.$" tfsubstCastHolyGate = \
+    /substitute -p %{PL} creates a red field of energy.@{%{relocationSpellsSubstColor}} (holy gate)
+
+;Merge
+/def -F -mregexp -t" materializes from out of (.*)'s shadow\.$" tfsubstCastMerge = \
+    /substitute -p %{PL}:@{%{relocationSpellsSubstColor}} Merge (with %{P1})
+
+;Recall
+/def -F -mregexp -t" stares up towards the sky, and suddenly fades away like mist\.\.\.$" tfsubstCastRecallCommandLeaving = \
+    /substitute -p %{PL}:@{%{relocationSpellsSubstColor}} Recall (leaving)
+/def -F -mregexp -t" fades in from nothingness\.$" tfsubstCastRecallCommandArriving = \
+    /substitute -p %{PL}:@{%{relocationSpellsSubstColor}} Recall (appearing)
+
+;Summon
+/def -F -mregexp -t" arrives suddenly\.$" tfsubstCastSummonArriving = \
+    /substitute -p %{PL} arrives suddenly.@{%{relocationSpellsSubstColor}} (summon)
+/def -F -mregexp -t" disappears suddenly\.$" tfsubstCastSummonLeaving = \
+    /substitute -p %{PL} disappears suddenly.@{%{relocationSpellsSubstColor}} (summon)
+
+;Teleport
+/def -F -mregexp -t" enters a magical portal, in the hope of finding another time and place\.$" tfsubstCastTeleport = \
+    /if (!fighting) \
+      /substitute -p %{PL}:@{%{relocationSpellsSubstColor}} Teleport%; \
+    /elseif ({PL} =~ opponentstring) \
+      /substitute -p %{PL}:@{%{damageSpellsSubstColor}} Teleport@{n} at someone%; \
+    /else \
+      /substitute -p %{PL}: Teleport%; \
+    /endif
+
+;Teleport without Error
+/def -F -mregexp -t" enters a magical portal, in the hope of getting home quickly\.$" tfsubstCastTeleportWithoutError = \
+    /substitute -p %{PL}:@{%{relocationSpellsSubstColor}} Teleport without Error
+
+;Word of Recall
+/def -F -mregexp -t" disappears in a flash\.$" tfsubstCastWordOfRecallLeaving = \
+    /substitute -p %{PL}:@{%{relocationSpellsSubstColor}} Word of Recall (leaving)
+/def -F -mregexp -t" appears in the middle of the room\.$" tfsubstCastWordOfRecallAppearing = \
+    /substitute -p %{PL}:@{%{relocationSpellsSubstColor}} Word of Recall (appearing)
+
+; --------------------  RELOCATION SPELLS subst end  --------------------
+
+; ----------------------  SPECIAL SPELLS subst start  ----------------------
+
+;Blindness fail
+/def -F -mregexp -t"^Your spell seems to have no effect on your victim\.$" tfsubstBlindFail = \
+    /substitute -p Your spell seems to have no effect on your victim.@{%{specialSpellsSubstColor}} (immune blind)
+
+;Circle of Protection
+/def -F -mregexp -t" quickly circles the area, drawing ancient runes on the ground\.$" tfsubstCastCop = \
+    /substitute -p %{PL}:@{%{specialSpellsSubstColor}} Circle of Protection%; \
+    /set roomIsCopped 1
+
+;Circle of Stones
+/def -F -mregexp -t" draws forth arcane stones from the soil in a circle around (him|her|it)\.$" tfsubstCastCos = \
+    /substitute -p %{PL}:@{%{specialSpellsSubstColor}} Circle of Stones
+
+;Gaias Beacon
+/def -F -mregexp -t"^Gaia aides ([^ ]+) by erecting a magical beacon.$" tfsubstCastGaiasBeacon = \
+    /substitute -p %{P1}:@{%{specialSpellsSubstColor}} Gaias Beacon
+
+;Link
+/def -F -mregexp -t" takes on a look of concentration as (he|she|it) links with (.*)\.$" tfsubstCastLink = \
+    /substitute -p %{PL}:@{%{specialSpellsSubstColor}} Link with %{P2}
+
+;Major Sphere of Regeneration
+/def -F -mregexp -t" quickly circles the area, bringing a warm dark red sphere\.$" tfsubstCastMajorSphere = \
+    /substitute -p %{PL}:@{%{specialSpellsSubstColor}} Major Sphere of Regeneration
+
+;Minor Sphere of Regeneration
+/def -F -mregexp -t" quickly circles the area, bringing a warm light red sphere\.$" tfsubstCastMinorSphere = \
+    /substitute -p %{PL}:@{%{specialSpellsSubstColor}} Minor Sphere of Regeneration
+
+;Reconnect
+/def -F -mregexp -t" suddenly keels over in pain, surrounded by a (white|yellow|.*) aura\.\.\.$" tfsubstCastReconnectMaybe = \
+    /if ({P1} =~ 'yellow') \
+      /let xgender Male%; \
+    /elseif ({P1} =~ 'white') \
+      /let xgender It%; \
+    /elseif ({P1} =~ '???') \
+      /let xgender Female%; \
+    /else \
+      /let xgender Unknown gender%; \
+    /endif%; \
+    /substitute -p %{PL} suddenly keels over in pain, surrounded by a %{P1} aura...@{%{specialSpellsSubstColor}} (Reconnecting)
+;Paladia:  yellow     [70/70  Nb/Nb] Paladia  [Ktv] [evil]    (Male)
+;Fack:     yellow     [69/69  Wl/Wl] Fack     [Ktv] [evil]    (Male)
+;Changed:  yellow     [56/56  An/An] Changed  [H-O] [neutral] (Male)
+;Barnabus: yellow     [50/50  Ro/An] Barnabus [Gno] [neutral] (Male)
+;Tizgib:   white      [80/80  Fi/Ro] Tizgib   [Ktv] [evil]    (It)
+;Alyise:   yellow     [57/57  Ma/Ro] Alyise   [Trl] [evil]    (Female)
+;Bublina:  yellow     [67/67  Ma/Fi] Bublina  [Ktv] [evil]    (Male)
+;Wallie:   yellow     [62/62  Wl/Wl] Wallie   [D-E] [neutral] (It)
+;Morrissey:yellow     [50/50  Ro/Ro] Morrissey[Trl] [neutral] (Male)
+;Sweety:   yellow     [75/75  Ro/Ro] Sweety   [Ktv] [evil]    (Female)
+;Zamba:    yellow     [53/53  Ma/Ma] Zamba    [Gno] [neutral] (It)
+
+
+/def -F -mregexp -t"'s body has been taken over by a new spirit!$" tfsubstCastReconnect = \
+    /substitute -p %{PL}'s body has been taken over by a new spirit!@{%{specialSpellsSubstColor}} (Reconnected!)
+
+
+;Ventriloquate
+/def -F -mregexp -t"^Someone makes it sound like (.*) says '(.*)'$" tfsubstCastVentriloquate = \
+    /substitute -p Someone makes it sound like %{P1} says '%{P2}'@{%{specialSpellsSubstColor}} (ventriloquate)
+
+; ----------------------  SPECIAL SPELLS subst end  ----------------------
+
+
+/def -F -mregexp -t"^([A-z]+) utters the words, '(\[?)([a-z ]+)(\]?)'" tfsubstUtterWords = \
+    /if (grouplist =/ strcat('*:', {P1}, ':*') | (pg & {P1} =~ 'someone')) \
+      /if ({P3} =~ 'circle of protection' | {P3} =~ 'improved invisibility' | {P3} =~ 'combat' | {P3} =~ 'venom' | {P3} =~ 'haste' | {P3} =~ 'trueheal' | {P3} =~ 'powerheal' | {P3} =~ 'word of recall' | {P3} =~ 'summon' | {P3} =~ 'prayer' | {P3} =~ 'blood mirror' | {P3} =~ 'holyword' | {P3} =~ 'armor' | {P3} =~ 'heal' | {P3} =~ 'fly' | {P3} =~ 'protection' | {P3} =~ 'blur' | {P3} =~ 'group bless' | {P3} =~ 'powerword stun' | {P3} =~ 'contingency' | {P3} =~ 'regenerate' | {P3} =~ 'life blood' | {P3} =~ 'shadow displacement' | {P3} =~ 'bless' | {P3} =~ 'strength' | {P3} =~ 'identify' | {P3} =~ 'sanctuary' | {P3} =~ 'cure critic' | {P3} =~ 'miracle' | {P3} =~ 'sense life' | {P3} =~ 'remove poison' | {P3} =~ 'grouppowerheal' | {P3} =~ 'detect invisibility' | {P3} =~ 'teleport without error' | {P3} =~ 'mana shield' | {P3} =~ 'ritual of pain' | {P3} =~ 'holy armor' | {P3} =~ 'cure blind' | {P3} =~ 'groupheal' | {P3} =~ 'force field' | {P3} =~ 'mirror image' | {P3} =~ 'locate object' | {P3} =~ 'satiate' | {P3} =~ 'revitalize' | {P3} =~ 'giant size' | {P3} =~ 'sun shield' | {P3} =~ 'barkskin' | {P3} =~ 'create food' | {P3} =~ 'armor of thorns' | {P3} =~ 'holy gate' | {P3} =~ 'link' | {P3} =~ 'dimension door' | {P3} =~ 'circle of stone' | {P3} =~ 'animal summoning' | {P3} =~ 'conjure water elemental' | {P3} =~ 'conjure air elemental' | {P3} =~ 'conjure earth elemental' | {P3} =~ 'magic carpet' | {P3} =~ 'blood rite' | {P3} =~ 'holy aura' | {P3} =~ 'burst of life' | {P3} =~ 'tranquility' | {P3} =~ 'gaias beacon' | {P3} =~ 'darkvision' | {P3} =~ 'group armor' | {P3} =~ 'mental glance' | {P3} =~ 'gods blessing' | {P3} =~ 'poison' | {P3} =~ 'detect poison' | {P3} =~ 'plant growth' | {P3} =~ 'treeform' | {P3} =~ 'major sphere of regeneration' | {P3} =~ 'minor sphere of regeneration' | {P3} =~ 'detect magic' | {P3} =~ 'deathshadow' | {P3} =~ 'animate dead' | {P3} =~ 'sufferage' | {P3} =~ 'bladeturn' | {P3} =~ '...' | {P3} =~ '...' | {P3} =~ '...' | {P3} =~ '...') \
+        /set lastspellseen %{P3}%; \
+        /substitute%; \
+      /elseif ({P1} =~ 'someone' | {P3} =~ 'enchant weapon' | {P3} =~ 'immolation cold' | {P3} =~ 'immolation fire' | {P3} =~ 'sleep' | {P3} =~ 'mordenkainen\'s sword' | {P3} =~ 'curse' | {P3} =~ 'serenity' | {P3} =~ 'natures blessing' | {P3} =~ 'channel' | {P3} =~ 'celestial peace' | {P3} =~ 'teleport' | {P3} =~ 'remove curse' | {P3} =~ '...' | {P3} =~ '...') \
+        donothing%; \
+      /else \
+        /substitute -p GM: %{P1} utters the words, '%{P2}%{P3}%{P4}'%; \
+      /endif%; \
+    /endif
+
+; ------------------------  REP subst start ------------------------
+; Missing titles are still in the list, but with a "NO IDEA" instead
+/set subRep 0
+/def -F -t" Highscore * Reputation " tfsubstRepSubInfo = \
+    /if (subRep) \
+      /tfshow To skip rep numbers: /set subRep 0%; \
+    /else \
+      /tfshow To get rep numbers: /set subRep 1%; \
+    /endif
+
+/def -F -mregexp -t"Low Life Scum" tfsubstRepALL0 = /if (subRep)/substitute -p %{PL}(? 0%%) Low Life Scum%{PR}%;/endif
+
+; == Mages ==
+/def -F -mregexp -t"Silly Spod" tfsubstRepGM1 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 1%%) Silly Spod%{PR}%;/endif
+/def -F -mregexp -t"Helpful Apprentice" tfsubstRepGM2 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 2%%) Helpful Apprentice%{PR}%;/endif
+/def -F -mregexp -t"Conscientious Student" tfsubstRepGM3 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 3%%) Conscientious Student%{PR}%;/endif
+/def -F -mregexp -t"Modest Graduate" tfsubstRepGM4 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 4%%) Modest Graduate%{PR}%;/endif
+/def -F -mregexp -t"Skilled Cantripist" tfsubstRepGM5 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 5-6%%) Skilled Cantripist%{PR}%;/endif
+/def -F -mregexp -t"Pedantic Mentor" tfsubstRepGM7 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 7-8%%) Pedantic Mentor%{PR}%;/endif
+/def -F -mregexp -t"Whimsical Illusionist" tfsubstRepGM9 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 9-10%%) Whimsical Illusionist%{PR}%;/endif
+/def -F -mregexp -t"Cheerful Spellslinger" tfsubstRepGM11 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 11-12%%) Cheerful Spellslinger%{PR}%;/endif
+/def -F -mregexp -t"Master of Sparks" tfsubstRepGM13 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 13-14%%) Master of Sparks%{PR}%;/endif
+/def -F -mregexp -t"Ingenious Runelord" tfsubstRepGM15 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 15-16%%) Ingenious Runelord%{PR}%;/endif
+/def -F -mregexp -t"Fabled Stargazer" tfsubstRepGM17 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 17-18%%) Fabled Stargazer%{PR}%;/endif
+/def -F -mregexp -t"Mesmerizing Dreamweaver" tfsubstRepGM19 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 19-20%%) Mesmerizing Dreamweaver%{PR}%;/endif
+/def -F -mregexp -t"Legendary Chronologist" tfsubstRepGM21 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 21-22%%) Legendary Chronologist%{PR}%;/endif
+/def -F -mregexp -t"Ancient Grand Wizard" tfsubstRepGM23 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 23-25%%) Ancient Grand Wizard%{PR}%;/endif
+/def -F -mregexp -t"Celestial Embodiment" tfsubstRepGM26 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 26-28%%) Celestial Embodiment%{PR}%;/endif
+/def -F -mregexp -t"Portalmaster of the Realms" tfsubstRepGM29 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 29-31%%) Portalmaster of the Realms%{PR}%;/endif
+/def -F -mregexp -t"Eternal Abjurer" tfsubstRepGM32 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 32-34%%) Eternal Abjurer%{PR}%;/endif
+/def -F -mregexp -t"Lord Mage Almighty" tfsubstRepGM35 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 35%%) Lord Mage Almighty%{PR}%;/endif
+
+/def -F -mregexp -t"Profound Nerd" tfsubstRepNM1 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 1%%) Profound Nerd%{PR}%;/endif
+/def -F -mregexp -t"Obedient Apprentice" tfsubstRepNM2 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 2%%) Obedient Apprentice%{PR}%;/endif
+/def -F -mregexp -t"Studious Scholar" tfsubstRepNM3 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 3%%) Studious Scholar%{PR}%;/endif
+/def -F -mregexp -t"Intellectual Graduate" tfsubstRepNM4 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 4%%) Intellectual Graduate%{PR}%;/endif
+/def -F -mregexp -t"Dazzling Enchanter" tfsubstRepNM5 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 5-6%%) Dazzling Enchanter%{PR}%;/endif
+/def -F -mregexp -t"Eldritch Mentor" tfsubstRepNM7 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 7-8%%) Eldritch Mentor%{PR}%;/endif
+/def -F -mregexp -t"Eccentric Wizard" tfsubstRepNM9 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 9-10%%) Eccentric Wizard%{PR}%;/endif
+/def -F -mregexp -t"Prodigious Spellbinder" tfsubstRepNM11 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 11-12%%) Prodigious Spellbinder%{PR}%;/endif
+/def -F -mregexp -t"Adept Golemsmith" tfsubstRepNM13 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 13%%) Adept Golemsmith%{PR}%;/endif
+/def -F -mregexp -t"Prodigious Penguin" tfsubstRepNM14 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 14%%) Prodigious Penguin%{PR}%;/endif
+/def -F -mregexp -t"Powerful Sorcerer" tfsubstRepNM15 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 15-16%%) Powerful Sorcerer%{PR}%;/endif
+/def -F -mregexp -t"Illustrious Sage" tfsubstRepNM17 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 17-18%%) Illustrious Sage%{PR}%;/endif
+/def -F -mregexp -t"Archaic Charmweaver" tfsubstRepNM19 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 19-20%%) Archaic Charmweaver%{PR}%;/endif
+/def -F -mregexp -t"Mystical Archmage" tfsubstRepNM21 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 21-22%%) Mystical Archmage%{PR}%;/endif
+/def -F -mregexp -t"Magical Mastermind" tfsubstRepNM23 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 23-25%%) Magical Mastermind%{PR}%;/endif
+/def -F -mregexp -t"Blood Rune Entity" tfsubstRepNM26 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 26-28%%) Blood Rune Entity%{PR}%;/endif
+/def -F -mregexp -t"Eternal Arcanist" tfsubstRepNM29 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 29-31%%) Eternal Arcanist%{PR}%;/endif
+/def -F -mregexp -t"Enchanter of Time" tfsubstRepNM32 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 32-34%%) Enchanter of Time%{PR}%;/endif
+/def -F -mregexp -t"Archmage of Eternity" tfsubstRepNM35 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 35%%) Archmage of Eternity%{PR}%;/endif
+
+/def -F -mregexp -t"Pathetic Geek" tfsubstRepEM1 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 1%%) Pathetic Geek%{PR}%;/endif
+/def -F -mregexp -t"NO IDEA" tfsubstRepEM2 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 2%%) no idea%{PR}%;/endif
+/def -F -mregexp -t"Depraved Pupil" tfsubstRepEM3 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 3%%) Depraved Pupil%{PR}%;/endif
+/def -F -mregexp -t"Sinister Graduate" tfsubstRepEM4 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 4%%) Sinister Graduate%{PR}%;/endif
+/def -F -mregexp -t"Malevolent Alchemist" tfsubstRepEM5 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 5-6%%) Malevolent Alchemist%{PR}%;/endif
+/def -F -mregexp -t"Wicked Curseweaver" tfsubstRepEM7 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 7-8%%) Wicked Curseweaver%{PR}%;/endif
+/def -F -mregexp -t"Dreaded Invoker" tfsubstRepEM9 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 9-10%%) Dreaded Invoker%{PR}%;/endif
+/def -F -mregexp -t"Demonic Conjurer" tfsubstRepEM11 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 11-12%%) Demonic Conjurer%{PR}%;/endif
+/def -F -mregexp -t"Destructive Hellmage" tfsubstRepEM13 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 13-14%%) Destructive Hellmage%{PR}%;/endif
+/def -F -mregexp -t"Morbid Necromancer" tfsubstRepEM15 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 15-16%%) Morbid Necromancer%{PR}%;/endif
+/def -F -mregexp -t"Master of Nightmares" tfsubstRepEM17 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 17-18%%) Master of Nightmares%{PR}%;/endif
+/def -F -mregexp -t"Fiendish Thaumaturgist" tfsubstRepEM19 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 19-20%%) Fiendish Thaumaturgist%{PR}%;/endif
+/def -F -mregexp -t"Malign Gloomcaster" tfsubstRepEM21 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 21-22%%) Malign Gloomcaster%{PR}%;/endif
+/def -F -mregexp -t"Apocalyptic SoulLord" tfsubstRepEM23 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 23-25%%) Apocalyptic SoulLord%{PR}%;/endif
+/def -F -mregexp -t"NO IDEA" tfsubstRepEM26 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 26-28%%) no idea%{PR}%;/endif
+/def -F -mregexp -t"Omnipotent Arch-Sorcerer" tfsubstRepEM29 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 29-31%%) Omnipotent Arch-Sorcerer%{PR}%;/endif
+/def -F -mregexp -t"Mythical Destroyer" tfsubstRepEM32 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 32-34%%) Mythical Destroyer%{PR}%;/endif
+/def -F -mregexp -t"Doomsday Invoker" tfsubstRepEM35 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 35%%) Doomsday Invoker%{PR}%;/endif
+
+; == Priests ==
+/def -F -mregexp -t"Good Samaritan" tfsubstRepGP1 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 1%%) Good Samaritan%{PR}%;/endif
+/def -F -mregexp -t"Pious Pilgrim" tfsubstRepGP2 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 2%%) Pious Pilgrim%{PR}%;/endif
+/def -F -mregexp -t"Devout Acolyte" tfsubstRepGP3 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 3%%) Devout Acolyte%{PR}%;/endif
+/def -F -mregexp -t"Dutiful Scribe" tfsubstRepGP4 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 4%%) Dutiful Scribe%{PR}%;/endif
+/def -F -mregexp -t"Selfless Martyr" tfsubstRepGP5 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 5-6%%) Selfless Martyr%{PR}%;/endif
+/def -F -mregexp -t"Reverent Cleric" tfsubstRepGP6 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 7-8%%) Reverent Cleric%{PR}%;/endif
+/def -F -mregexp -t"Loyal Disciple" tfsubstRepGP9 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 9-10%%) Loyal Disciple%{PR}%;/endif
+/def -F -mregexp -t"Faithful Apostle" tfsubstRepGP11 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 11-12%%) Faithful Apostle%{PR}%;/endif
+/def -F -mregexp -t"Reputed Exorcist" tfsubstRepGP13 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 13-14%%) Reputed Exorcist%{PR}%;/endif
+/def -F -mregexp -t"Venerable Pontiff" tfsubstRepGP15 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 15-16%%) Venerable Pontiff%{PR}%;/endif
+/def -F -mregexp -t"Esteemed Evangelist" tfsubstRepGP17 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 17-18%%) Esteemed Evangelist%{PR}%;/endif
+/def -F -mregexp -t"Miraculous Revenant" tfsubstRepGP19 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 19-20%%) Miraculous Revenant%{PR}%;/endif
+/def -F -mregexp -t"NO IDEA" tfsubstRepGP21 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 21-22%%) no idea%{PR}%;/endif
+/def -F -mregexp -t"Hallowed Saint" tfsubstRepGP23 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 23-25%%) Hallowed Saint%{PR}%;/endif
+/def -F -mregexp -t"NO IDEA" tfsubstRepGP26 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 26-28%%) no idea%{PR}%;/endif
+/def -F -mregexp -t"Immaculate Hopebearer" tfsubstRepGP29 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 26-28 or 29-31%%) Immaculate Hopebearer%{PR}%;/endif
+/def -F -mregexp -t"The Lifebringer" tfsubstRepGP32 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 32-34%%) The Lifebringer%{PR}%;/endif
+/def -F -mregexp -t"NO IDEA" tfsubstRepGP35 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 35%%) no idea%{PR}%;/endif
+
+/def -F -mregexp -t"Staunch Believer" tfsubstRepNP1 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 1%%) Staunch Believer%{PR}%;/endif
+/def -F -mregexp -t"Devoted Worshipper" tfsubstRepNP2 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 2%%) Devoted Worshipper%{PR}%;/endif
+/def -F -mregexp -t"Duteous Scrivener" tfsubstRepNP3 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 3%%) Duteous Scrivener%{PR}%;/endif
+/def -F -mregexp -t"Loyal Curator" tfsubstRepNP4 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 4%%) Loyal Curator%{PR}%;/endif
+/def -F -mregexp -t"Silent Monk" tfsubstRepNP5 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 5-6%%) Silent Monk%{PR}%;/endif
+/def -F -mregexp -t"Practiced Healer" tfsubstRepNP7 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 7-8%%) Practiced Healer%{PR}%;/endif
+/def -F -mregexp -t"Wise Seer" tfsubstRepNP9 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 9-10%%) Wise Seer%{PR}%;/endif
+/def -F -mregexp -t"Renowned Philosopher" tfsubstRepNP11 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 11-12%%) Renowned Philosopher%{PR}%;/endif
+/def -F -mregexp -t"Admirable Augur" tfsubstRepNP13 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 13-14%%) Admirable Augur%{PR}%;/endif
+/def -F -mregexp -t"Mystical Oracle" tfsubstRepNP15 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 15-16%%) Mystical Oracle%{PR}%;/endif
+/def -F -mregexp -t"Fabled Visionary" tfsubstRepNP17 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 17-18%%) Fabled Visionary%{PR}%;/endif
+/def -F -mregexp -t"Legendary Prophet" tfsubstRepNP19 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 19-20%%) Legendary Prophet%{PR}%;/endif
+/def -F -mregexp -t"Phenomenal Theocrat" tfsubstRepNP21 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 21-22%%) Phenomenal Theocrat%{PR}%;/endif
+/def -F -mregexp -t"Penultimate Gatekeeper" tfsubstRepNP23 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 23-25%%) Penultimate Gatekeeper%{PR}%;/endif
+/def -F -mregexp -t"Magistrate of Judgement" tfsubstRepNP26 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 26-28%%) Magistrate of Judgement%{PR}%;/endif
+/def -F -mregexp -t"The Grand Pontiff" tfsubstRepNP29 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 29-31%%) The Grand Pontiff%{PR}%;/endif
+/def -F -mregexp -t"Master of Protection" tfsubstRepNP32 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 32-34%%) Master of Protection%{PR}%;/endif
+/def -F -mregexp -t"Eternal Avatar" tfsubstRepNP35 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 35%%) Eternal Avatar%{PR}%;/endif
+
+/def -F -mregexp -t"Fanatical Worshipper" tfsubstRepEP1 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 1%%) Fanatical Worshipper%{PR}%;/endif
+/def -F -mregexp -t"Zealous Desecrator" tfsubstRepEP2 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 2%%) Zealous Desecrator%{PR}%;/endif
+/def -F -mregexp -t"Fervent Defiler" tfsubstRepEP3 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 3%%) Fervent Defiler%{PR}%;/endif
+/def -F -mregexp -t"Obsessed Cultist" tfsubstRepEP4 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 4%%) Obsessed Cultist%{PR}%;/endif
+/def -F -mregexp -t"Accursed Minister" tfsubstRepEP5 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 5-6%%) Accursed Minister%{PR}%;/endif
+/def -F -mregexp -t"Vile Mystagogue" tfsubstRepEP7 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 7-8%%) Vile Mystagogue%{PR}%;/endif
+/def -F -mregexp -t"Harbinger of Doom" tfsubstRepEP9 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 9-10%%) Harbinger of Doom%{PR}%;/endif
+/def -F -mregexp -t"Forsaken Chaplain" tfsubstRepEP11 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 11-12%%) Forsaken Chaplain%{PR}%;/endif
+/def -F -mregexp -t"Infernal Patriarch" tfsubstRepEP13 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 13-14%%) Infernal Patriarch%{PR}%;/endif
+/def -F -mregexp -t"Pastor of Pestilence" tfsubstRepEP15 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 15-16%%) Pastor of Pestilence%{PR}%;/endif
+/def -F -mregexp -t"Master of Angst" tfsubstRepEP17 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 17-18%%) Master of Angst%{PR}%;/endif
+/def -F -mregexp -t"Elder Demonraiser" tfsubstRepEP19 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 19-20%%) Elder Demonraiser%{PR}%;/endif
+/def -F -mregexp -t"Cardinal of the Apocalypse" tfsubstRepEP21 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 21-22%%) Cardinal of the Apocalypse%{PR}%;/endif
+/def -F -mregexp -t"NO IDEA" tfsubstRepEP23 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 23-25%%) no idea%{PR}%;/endif
+/def -F -mregexp -t"NO IDEA" tfsubstRepEP26 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 26-28%%) no idea%{PR}%;/endif
+/def -F -mregexp -t"NO IDEA" tfsubstRepEP29 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 29-31%%) no idea%{PR}%;/endif
+/def -F -mregexp -t"Harvester of Souls" tfsubstRepEP32 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 32-34%%) Harvester of Souls%{PR}%;/endif
+/def -F -mregexp -t"Diabolical Incarnate" tfsubstRepEP35 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 35%%) Diabolical Incarnate%{PR}%;/endif
+
+; == Rogues ==
+/def -F -mregexp -t"Helpless Kleptomaniac" tfsubstRepGR1 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 1%%) Helpless Kleptomaniac%{PR}%;/endif
+/def -F -mregexp -t"Unlucky Gambler" tfsubstRepGR2 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 2%%) Unlucky Gambler%{PR}%;/endif
+/def -F -mregexp -t"Snake Oil Peddler" tfsubstRepGR3 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 3%%) Snake Oil Peddler%{PR}%;/endif
+/def -F -mregexp -t"Shrewd Welsher" tfsubstRepGR4 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 4%%) Shrewd Welsher%{PR}%;/endif
+/def -F -mregexp -t"Fledgling Pathfinder" tfsubstRepGR5 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 5-6%%) Fledgling Pathfinder%{PR}%;/endif
+/def -F -mregexp -t"Amateur Scout" tfsubstRepGR7 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 7-8%%) Amateur Scout%{PR}%;/endif
+/def -F -mregexp -t"Wandering Bard" tfsubstRepGR9 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 9-10%%) Wandering Bard%{PR}%;/endif
+/def -F -mregexp -t"Dauntless Wayfarer" tfsubstRepGR11 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 11-12%%) Dauntless Wayfarer%{PR}%;/endif
+/def -F -mregexp -t"Bold Explorer" tfsubstRepGR13 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 13-14%%) Bold Explorer%{PR}%;/endif
+/def -F -mregexp -t"Fabled Troubadour" tfsubstRepGR15 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 15-16%%) Fabled Troubadour%{PR}%;/endif
+/def -F -mregexp -t"Reliable Trailguard" tfsubstRepGR17 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 17-18%%) Reliable Trailguard%{PR}%;/endif
+/def -F -mregexp -t"Legendary Voyager" tfsubstRepGR19 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 19-20%%) Legendary Voyager%{PR}%;/endif
+/def -F -mregexp -t"Astral Navigator" tfsubstRepGR21 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 21-22%%) Astral Navigator%{PR}%;/endif
+/def -F -mregexp -t"Cosmic Cartographer" tfsubstRepGR23 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 23-25%%) Cosmic Cartographer%{PR}%;/endif
+/def -F -mregexp -t"Affluent Denmaster" tfsubstRepGR26 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 26-28%%) Affluent Denmaster%{PR}%;/endif
+/def -F -mregexp -t"Master Rogue" tfsubstRepGR29 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 29-31%%) Master Rogue%{PR}%;/endif
+/def -F -mregexp -t"NO IDEA" tfsubstRepGR32 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 32-34%%) no idea%{PR}%;/endif
+/def -F -mregexp -t"Lord of Lavish Luxury" tfsubstRepGR35 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 35%%) Lord of Lavish Luxury%{PR}%;/endif
+
+/def -F -mregexp -t"Petty Purse-snatcher" tfsubstRepNR1 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 1%%) Petty Purse-snatcher%{PR}%;/endif
+/def -F -mregexp -t"Troublesome Pickpocket" tfsubstRepNR2 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 2%%) Troublesome Pickpocket%{PR}%;/endif
+/def -F -mregexp -t"Deceptive Fraud" tfsubstRepNR3 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 3%%) Deceptive Fraud%{PR}%;/endif
+/def -F -mregexp -t"Cunning Crook" tfsubstRepNR4 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 4%%) Cunning Crook%{PR}%;/endif
+/def -F -mregexp -t"Sneaky Bandit" tfsubstRepNR5 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 5-6%%) Sneaky Bandit%{PR}%;/endif
+/def -F -mregexp -t"Opium Smuggler" tfsubstRepNR7 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 7-8%%) Opium Smuggler%{PR}%;/endif
+/def -F -mregexp -t"Underground Fence" tfsubstRepNR9 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 9-10%%) Underground Fence%{PR}%;/endif
+/def -F -mregexp -t"Elusive Fugitive" tfsubstRepNR11 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 11-12%%) Elusive Fugitive%{PR}%;/endif
+/def -F -mregexp -t"Picaresque Vagabond" tfsubstRepNR13 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 13-14%%) Picaresque Vagabond%{PR}%;/endif
+/def -F -mregexp -t"Stealthy Nightrunner" tfsubstRepNR15 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 15-16%%) Stealthy Nightrunner%{PR}%;/endif
+/def -F -mregexp -t"Collusive Peculator" tfsubstRepNR17 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 17-18%%) Collusive Peculator%{PR}%;/endif
+/def -F -mregexp -t"Twilight Hoodlum" tfsubstRepNR19 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 19-20%%) Twilight Hoodlum%{PR}%;/endif
+/def -F -mregexp -t"Covert Saboteur" tfsubstRepNR21 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 21-22%%) Covert Saboteur%{PR}%;/endif
+/def -F -mregexp -t"Darkmoon Brigand" tfsubstRepNR23 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 23-25%%) Darkmoon Brigand%{PR}%;/endif
+/def -F -mregexp -t"Master of the Shadows" tfsubstRepNR26 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 26-28%%) Master of the Shadows%{PR}%;/endif
+/def -F -mregexp -t"Louche Godfather" tfsubstRepNR29 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 29-31%%) Louche Godfather%{PR}%;/endif
+/def -F -mregexp -t"Lord of Stealth" tfsubstRepNR32 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 32-34%%) Lord of Stealth%{PR}%;/endif
+/def -F -mregexp -t"The Living Blade" tfsubstRepNR35 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 35%%) The Living Blade%{PR}%;/endif
+
+/def -F -mregexp -t"Sleazy Rapscallion" tfsubstRepER1 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 1%%) Sleazy Rapscallion%{PR}%;/endif
+/def -F -mregexp -t"Dirty Rotten Scoundrel" tfsubstRepER2 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 2%%) Dirty Rotten Scoundrel%{PR}%;/endif
+/def -F -mregexp -t"Wily Solicitor" tfsubstRepER3 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 3%%) Wily Solicitor%{PR}%;/endif
+/def -F -mregexp -t"Glib Swindler" tfsubstRepER4 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 4%%) Glib Swindler%{PR}%;/endif
+/def -F -mregexp -t"Unscrupulous Felon" tfsubstRepER5 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 5-6%%) Unscrupulous Felon%{PR}%;/endif
+/def -F -mregexp -t"Corrupt Embezzler" tfsubstRepER7 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 7-8%%) Corrupt Embezzler%{PR}%;/endif
+/def -F -mregexp -t"Crafty Larcenist" tfsubstRepER9 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 9-10%%) Crafty Larcenist%{PR}%;/endif
+/def -F -mregexp -t"Hardened Criminal" tfsubstRepER11 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 11-12%%) Hardened Criminal%{PR}%;/endif
+/def -F -mregexp -t"Murderous Outlaw" tfsubstRepER13 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 13-14%%) Murderous Outlaw%{PR}%;/endif
+/def -F -mregexp -t"Black Market Mogul" tfsubstRepER15 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 15-16%%) Black Market Mogul%{PR}%;/endif
+/def -F -mregexp -t"Nefarious Villain" tfsubstRepER17 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 17-18%%) Nefarious Villain%{PR}%;/endif
+/def -F -mregexp -t"Renegade Shadowdweller" tfsubstRepER19 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 19-20%%) Renegade Shadowdweller%{PR}%;/endif
+/def -F -mregexp -t"Midnight Extortionist" tfsubstRepER21 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 21-22%%) Midnight Extortionist%{PR}%;/endif
+/def -F -mregexp -t"Notorious Nighthawk" tfsubstRepER23 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 23-25%%) Notorious Nighthawk%{PR}%;/endif
+/def -F -mregexp -t"Stealth Mercenary" tfsubstRepER26 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 26-28%%) Stealth Mercenary%{PR}%;/endif
+/def -F -mregexp -t"Clandestine Crimelord" tfsubstRepER29 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 29-31%%) Clandestine Crimelord%{PR}%;/endif
+/def -F -mregexp -t"Master of Assassins" tfsubstRepER32 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 32-34%%) Master of Assassins%{PR}%;/endif
+/def -F -mregexp -t"Shadowy Conqueror" tfsubstRepER35 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 35%%) Shadowy Conqueror%{PR}%;/endif
+
+; == Fighters ==
+/def -F -mregexp -t"Humble Peasant" tfsubstRepGF1 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 1%%) Humble Peasant%{PR}%;/endif
+/def -F -mregexp -t"Enthusiastic Patriot" tfsubstRepGF2 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 2%%) Enthusiastic Patriot%{PR}%;/endif
+/def -F -mregexp -t"Promising Novice" tfsubstRepGF3 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 3%%) Promising Novice%{PR}%;/endif
+/def -F -mregexp -t"Aspiring Guardian" tfsubstRepGF4 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 4%%) Aspiring Guardian%{PR}%;/endif
+/def -F -mregexp -t"Intrepid Adventurer" tfsubstRepGF5 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 5-6%%) Intrepid Adventurer%{PR}%;/endif
+/def -F -mregexp -t"Seasoned Veteran" tfsubstRepGF7 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 7-8%%) Seasoned Veteran%{PR}%;/endif
+/def -F -mregexp -t"Gallant Vindicator" tfsubstRepGF9 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 9-10%%) Gallant Vindicator%{PR}%;/endif
+/def -F -mregexp -t"Defender of the Light" tfsubstRepGF11 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 11-12%%) Defender of the Light%{PR}%;/endif
+/def -F -mregexp -t"Redeemer of Honour" tfsubstRepGF13 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 13-14%%) Redeemer of Honour%{PR}%;/endif
+/def -F -mregexp -t"NO IDEA" tfsubstRepGF15 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 15-16%%) no idea%{PR}%;/endif
+/def -F -mregexp -t"Courageous Trollslayer" tfsubstRepGF17 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 17-18%%) Courageous Trollslayer%{PR}%;/endif
+/def -F -mregexp -t"Valiant Griffonrider" tfsubstRepGF19 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 19-20%%) Valiant Griffonrider%{PR}%;/endif
+/def -F -mregexp -t"Vigilant Peacemonger" tfsubstRepGF21 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 21-22%%) Vigilant Peacemonger%{PR}%;/endif
+/def -F -mregexp -t"NO IDEA" tfsubstRepGF23 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 23-25%%) no idea%{PR}%;/endif
+/def -F -mregexp -t"Ethereal Conqueror" tfsubstRepGF26 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 26-28%%) Ethereal Conqueror%{PR}%;/endif
+/def -F -mregexp -t"Master of Might" tfsubstRepGF29 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 29-31%%) Master of Might%{PR}%;/endif
+/def -F -mregexp -t"NO IDEA" tfsubstRepGF32 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 32-34%%) no idea%{PR}%;/endif
+/def -F -mregexp -t"Battlemaster of Truth" tfsubstRepGF35 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 35%%) Battlemaster of Truth%{PR}%;/endif
+
+/def -F -mregexp -t"Simple Commoner" tfsubstRepNF1 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 1%%) Simple Commoner%{PR}%;/endif
+/def -F -mregexp -t"Impatient Grasshopper" tfsubstRepNF2 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 2%%) Impatient Grasshopper%{PR}%;/endif
+/def -F -mregexp -t"Inexperienced Recruit" tfsubstRepNF3 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 3%%) Inexperienced Recruit%{PR}%;/endif
+/def -F -mregexp -t"Disciplined Skirmisher" tfsubstRepNF4 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 4%%) Disciplined Skirmisher%{PR}%;/endif
+/def -F -mregexp -t"Soldier of Fortune" tfsubstRepNF5 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 5-6%%) Soldier of Fortune%{PR}%;/endif
+/def -F -mregexp -t"Ambitious Campaigner" tfsubstRepNF7 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 7-8%%) Ambitious Campaigner%{PR}%;/endif
+/def -F -mregexp -t"Elite Legionnaire" tfsubstRepNF9 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 9-10%%) Elite Legionnaire%{PR}%;/endif
+/def -F -mregexp -t"Celebrated Champion" tfsubstRepNF11 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 11-12%%) Celebrated Champion%{PR}%;/endif
+/def -F -mregexp -t"Stalwart Brigadier" tfsubstRepNF13 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 13-14%%) Stalwart Brigadier%{PR}%;/endif
+/def -F -mregexp -t"Crimson Battlelord" tfsubstRepNF15 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 15-16%%) Crimson Battlelord%{PR}%;/endif
+/def -F -mregexp -t"NO IDEA" tfsubstRepNF17 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 17-18%%) no idea%{PR}%;/endif
+/def -F -mregexp -t"Fearless Dragonslayer" tfsubstRepNF19 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 19-20%%) Fearless Dragonslayer%{PR}%;/endif
+/def -F -mregexp -t"Tactical Powermonger" tfsubstRepNF21 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 21-22%%) Tactical Powermonger%{PR}%;/endif
+/def -F -mregexp -t"Respected Hero" tfsubstRepNF23 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 23-25%%) Respected Hero%{PR}%;/endif
+/def -F -mregexp -t"Imperial Crusader" tfsubstRepNF26 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 26-28%%) Imperial Crusader%{PR}%;/endif
+/def -F -mregexp -t"Master Warlord" tfsubstRepNF29 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 29-31%%) Master Warlord%{PR}%;/endif
+/def -F -mregexp -t"Legendary Blademaster" tfsubstRepNF32 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 32-34%%) Legendary Blademaster%{PR}%;/endif
+/def -F -mregexp -t"Archetype of the Fighting Spirit" tfsubstRepNF35 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 35%%) Archetype of the Fighting Spirit%{PR}%;/endif
+
+/def -F -mregexp -t"Lowly Rabble" tfsubstRepEF1 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 1%%) Lowly Rabble%{PR}%;/endif
+/def -F -mregexp -t"Boorish Brawler" tfsubstRepEF2 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 2%%) Boorish Brawler%{PR}%;/endif
+/def -F -mregexp -t"Reckless Myrmidon" tfsubstRepEF3 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 3%%) Reckless Myrmidon%{PR}%;/endif
+/def -F -mregexp -t"Wild Berserker" tfsubstRepEF4 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 4%%) Wild Berserker%{PR}%;/endif
+/def -F -mregexp -t"Venal Mercenary" tfsubstRepEF5 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 5-6%%) Venal Mercenary%{PR}%;/endif
+/def -F -mregexp -t"Heartless Raider" tfsubstRepEF7 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 7-8%%) Heartless Raider%{PR}%;/endif
+/def -F -mregexp -t"Fierce Marauder" tfsubstRepEF9 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 9-10%%) Fierce Marauder%{PR}%;/endif
+/def -F -mregexp -t"Bloodfist Warrior" tfsubstRepEF11 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 11-12%%) Bloodfist Warrior%{PR}%;/endif
+/def -F -mregexp -t"Ruthless Tyrant" tfsubstRepEF13 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 13-14%%) Ruthless Tyrant%{PR}%;/endif
+/def -F -mregexp -t"Militant Warlord" tfsubstRepEF15 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 15-16%%) Militant Warlord%{PR}%;/endif
+/def -F -mregexp -t"Soulless Angelslayer" tfsubstRepEF17 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 17-18%%) Soulless Angelslayer%{PR}%;/endif
+/def -F -mregexp -t"Darkhelm Usurper" tfsubstRepEF19 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 19-20%%) Darkhelm Usurper%{PR}%;/endif
+/def -F -mregexp -t"Atrocious Warmonger" tfsubstRepEF21 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 21-22%%) Atrocious Warmonger%{PR}%;/endif
+/def -F -mregexp -t"Death's Doomknight" tfsubstRepEF23 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 23-25%%) Death's Doomknight%{PR}%;/endif
+/def -F -mregexp -t"Dark Champion" tfsubstRepEF26 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 26-28%%) Dark Champion%{PR}%;/endif
+/def -F -mregexp -t"Archwarrior Of Darkness" tfsubstRepEF29 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 29-31%%) Archwarrior Of Darkness%{PR}%;/endif
+/def -F -mregexp -t"Unforgiving Banemaster" tfsubstRepEF32 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 32-34%%) Unforgiving Banemaster%{PR}%;/endif
+/def -F -mregexp -t"Lord of the Dark Armies" tfsubstRepEF35 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 35%%) Lord of the Dark Armies%{PR}%;/endif
+
+; == Templars ==
+/def -F -mregexp -t"Lowly Serf" tfsubstRepGT1 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 1%%) Lowly Serf%{PR}%;/endif
+/def -F -mregexp -t"Humble Page" tfsubstRepGT2 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 2%%) Humble Page%{PR}%;/endif
+/def -F -mregexp -t"Faithful Squire" tfsubstRepGT3 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 3%%) Faithful Squire%{PR}%;/endif
+/def -F -mregexp -t"Benevolent Vassal" tfsubstRepGT4 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 4%%) Benevolent Vassal%{PR}%;/endif
+/def -F -mregexp -t"Loyal Herald" tfsubstRepGT5 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 5-6%%) Loyal Herald%{PR}%;/endif
+/def -F -mregexp -t"Noble Lancer" tfsubstRepGT7 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 7-8%%) Noble Lancer%{PR}%;/endif
+/def -F -mregexp -t"Chivalrous Cavalier" tfsubstRepGT9 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 9-10%%) Chivalrous Cavalier%{PR}%;/endif
+/def -F -mregexp -t"Blessed Knight" tfsubstRepGT11 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 11-12%%) Blessed Knight%{PR}%;/endif
+/def -F -mregexp -t"Holy Pendragon" tfsubstRepGT13 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 13-14%%) Holy Pendragon%{PR}%;/endif
+/def -F -mregexp -t"Paladin of Truth" tfsubstRepGT15 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 15-16%%) Paladin of Truth%{PR}%;/endif
+/def -F -mregexp -t"Heroic Demonslayer" tfsubstRepGT17 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 17-18%%) Heroic Demonslayer%{PR}%;/endif
+/def -F -mregexp -t"Righteous Crusader" tfsubstRepGT19 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 19-20%%) Righteous Crusader%{PR}%;/endif
+/def -F -mregexp -t"Chosen Redeemer" tfsubstRepGT21 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 21-22%%) Chosen Redeemer%{PR}%;/endif
+/def -F -mregexp -t"God's Champion" tfsubstRepGT23 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 23-25%%) God's Champion%{PR}%;/endif
+/def -F -mregexp -t"Legendary Saviour" tfsubstRepGT26 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 26-28%%) Legendary Saviour%{PR}%;/endif
+/def -F -mregexp -t"Paragon of Virtue" tfsubstRepGT29 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 29-31%%) Paragon of Virtue%{PR}%;/endif
+/def -F -mregexp -t"Astral Guardian" tfsubstRepGT32 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 32-34%%) Astral Guardian%{PR}%;/endif
+/def -F -mregexp -t"Grand Champion of Righteousness" tfsubstRepGT35 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 35%%) Grand Champion of Righteousness%{PR}%;/endif
+
+; == Warlocks ==
+/def -F -mregexp -t"Sedulous Servant" tfsubstRepNW1 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 1%%) Sedulous Servant%{PR}%;/endif
+/def -F -mregexp -t"Assiduous Assistant" tfsubstRepNW2 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 2%%) Assiduous Assistant%{PR}%;/endif
+/def -F -mregexp -t"Austere Convert" tfsubstRepNW3 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 3%%) Austere Convert%{PR}%;/endif
+/def -F -mregexp -t"Keen Pedant" tfsubstRepNW4 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 4%%) Keen Pedant%{PR}%;/endif
+/def -F -mregexp -t"Skilled Battlemage" tfsubstRepNW5 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 5-6%%) Skilled Battlemage%{PR}%;/endif
+/def -F -mregexp -t"Elemental Savant" tfsubstRepNW7 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 7-8%%) Elemental Savant%{PR}%;/endif
+/def -F -mregexp -t"Wizard of Pain" tfsubstRepNW9 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 9-10%%) Wizard of Pain%{PR}%;/endif
+/def -F -mregexp -t"Electric Strifemage" tfsubstRepNW11 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 11-12%%) Electric Strifemage%{PR}%;/endif
+/def -F -mregexp -t"Bloodfist Sorcerer" tfsubstRepNW13 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 13-14%%) Bloodfist Sorcerer%{PR}%;/endif
+/def -F -mregexp -t"Frosty Mindslayer" tfsubstRepNW15 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 15-16%%) Frosty Mindslayer%{PR}%;/endif
+/def -F -mregexp -t"Raging Thunderlord" tfsubstRepNW17 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 17-18%%) Raging Thunderlord%{PR}%;/endif
+/def -F -mregexp -t"Brazen Stormcaster" tfsubstRepNW19 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 19-20%%) Brazen Stormcaster%{PR}%;/endif
+/def -F -mregexp -t"Blazing Glorymage" tfsubstRepNW21 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 21-22%%) Blazing Glorymage%{PR}%;/endif
+/def -F -mregexp -t"Master of the Craft" tfsubstRepNW23 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 23-25%%) Master of the Craft%{PR}%;/endif
+/def -F -mregexp -t"Elder of the Forgotten Triad" tfsubstRepNW26 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 26-28%%) Elder of the Forgotten Triad%{PR}%;/endif
+/def -F -mregexp -t"Equalizer of Dominions" tfsubstRepNW29 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 29-31%%) Equalizer of Dominions%{PR}%;/endif
+/def -F -mregexp -t"Energy Incarnate" tfsubstRepNW32 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 32-34%%) Energy Incarnate%{PR}%;/endif
+/def -F -mregexp -t"Archwizard of Domination" tfsubstRepNW35 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 35%%) Archwizard of Domination%{PR}%;/endif
+
+/def -F -mregexp -t"Defiant Servant" tfsubstRepEW1 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 1%%) Defiant Servant%{PR}%;/endif
+/def -F -mregexp -t"Wicked Assistant" tfsubstRepEW2 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 2%%) Wicked Assistant%{PR}%;/endif
+/def -F -mregexp -t"Corrupt Convert" tfsubstRepEW3 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 3%%) Corrupt Convert%{PR}%;/endif
+/def -F -mregexp -t"Frenetic Pedant" tfsubstRepEW4 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 4%%) Frenetic Pedant%{PR}%;/endif
+/def -F -mregexp -t"Savage Warmage" tfsubstRepEW5 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 5-6%%) Savage Warmage%{PR}%;/endif
+/def -F -mregexp -t"Shadow Savant" tfsubstRepEW7 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 7-8%%) Shadow Savant%{PR}%;/endif
+/def -F -mregexp -t"Forlorn Deathmage" tfsubstRepEW9 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 9-10%%) Forlorn Deathmage%{PR}%;/endif
+/def -F -mregexp -t"Flaming Widowmaker" tfsubstRepEW11 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 11-12%%) Flaming Widowmaker%{PR}%;/endif
+/def -F -mregexp -t"Hellfist Sorcerer" tfsubstRepEW13 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 13-14%%) Hellfist Sorcerer%{PR}%;/endif
+/def -F -mregexp -t"Freezewarrior of Fury" tfsubstRepEW15 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 15-16%%) Freezewarrior of Fury%{PR}%;/endif
+/def -F -mregexp -t"Master of Catastrophe" tfsubstRepEW17 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 17-18%%) Master of Catastrophe%{PR}%;/endif
+/def -F -mregexp -t"Insidious Voidcaster" tfsubstRepEW19 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 19-20%%) Insidious Voidcaster%{PR}%;/endif
+/def -F -mregexp -t"Dark Netherwarrior" tfsubstRepEW21 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 21-22%%) Dark Netherwarrior%{PR}%;/endif
+/def -F -mregexp -t"Archmage of Deception" tfsubstRepEW23 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 23-25%%) Archmage of Deception%{PR}%;/endif
+/def -F -mregexp -t"Elder of the Forsaken Triad" tfsubstRepEW26 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 26-28%%) Elder of the Forsaken Triad%{PR}%;/endif
+/def -F -mregexp -t"Mythical Battlelord" tfsubstRepEW29 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 29-31%%) Mythical Battlelord%{PR}%;/endif
+/def -F -mregexp -t"Infernal Chaoswizard" tfsubstRepEW32 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 32-34%%) Infernal Chaoswizard%{PR}%;/endif
+/def -F -mregexp -t"Gatekeeper of the Abyss" tfsubstRepEW35 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 35%%) Gatekeeper of the Abyss%{PR}%;/endif
+
+; == Animists ==
+/def -F -mregexp -t"Rockdweller" tfsubstRepGA1 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 1%%) Rockdweller%{PR}%;/endif
+/def -F -mregexp -t"Feral Forager" tfsubstRepGA2 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 2%%) Feral Forager%{PR}%;/endif
+/def -F -mregexp -t"Tree Stomper" tfsubstRepGA3 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 3%%) Tree Stomper%{PR}%;/endif
+/def -F -mregexp -t"Forest Bard" tfsubstRepGA4 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 4%%) Forest Bard%{PR}%;/endif
+/def -F -mregexp -t"Mineral Miner" tfsubstRepGA5 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 5-6%%) Mineral Miner%{PR}%;/endif
+/def -F -mregexp -t"Apostle of Energy" tfsubstRepGA7 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 7-8%%) Apostle of Energy%{PR}%;/endif
+/def -F -mregexp -t"Skilled Shapeshifter" tfsubstRepGA9 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 9-10%%) Skilled Shapeshifter%{PR}%;/endif
+/def -F -mregexp -t"NO IDEA" tfsubstRepGA11 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 11-12%%) no idea%{PR}%;/endif
+/def -F -mregexp -t"NO IDEA" tfsubstRepGA13 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 13-14%%) no idea%{PR}%;/endif
+/def -F -mregexp -t"Shepherd of the Earth" tfsubstRepGA15 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 15-16%%) Shepherd of the Earth%{PR}%;/endif
+/def -F -mregexp -t"Sentinel of the Seas" tfsubstRepGA17 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 17-18%%) Sentinel of the Seas%{PR}%;/endif
+/def -F -mregexp -t"NO IDEA" tfsubstRepGA19 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 19-20%%) no idea%{PR}%;/endif
+/def -F -mregexp -t"NO IDEA" tfsubstRepGA21 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 21-22%%) no idea%{PR}%;/endif
+/def -F -mregexp -t"Spiritual Seasonist" tfsubstRepGA23 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 23-25%%) Spiritual Seasonist%{PR}%;/endif
+/def -F -mregexp -t"Enchanter of the Elements" tfsubstRepGA26 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 26-28%%) Enchanter of the Elements%{PR}%;/endif
+/def -F -mregexp -t"NO IDEA" tfsubstRepGA29 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 29-31%%) no idea%{PR}%;/endif
+/def -F -mregexp -t"NO IDEA" tfsubstRepGA32 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 32-34%%) no idea%{PR}%;/endif
+/def -F -mregexp -t"Oracle of Creation" tfsubstRepGA35 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 35%%) Oracle of Creation%{PR}%;/endif
+
+/def -F -mregexp -t"Reclusive Hermit" tfsubstRepNA1 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 1%%) Reclusive Hermit%{PR}%;/endif
+/def -F -mregexp -t"Mysterious Gardener" tfsubstRepNA2 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 2%%) Mysterious Gardener%{PR}%;/endif
+/def -F -mregexp -t"Strange Soothsayer" tfsubstRepNA3 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 3%%) Strange Soothsayer%{PR}%;/endif
+/def -F -mregexp -t"Pagan Weedhunter" tfsubstRepNA4 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 4%%) Pagan Weedhunter%{PR}%;/endif
+/def -F -mregexp -t"Nurturing Druid" tfsubstRepNA5 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 5-6%%) Nurturing Druid%{PR}%;/endif
+/def -F -mregexp -t"Disciplined Herbalist" tfsubstRepNA7 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 7-8%%) Disciplined Herbalist%{PR}%;/endif
+/def -F -mregexp -t"Proficient Transmuter" tfsubstRepNA9 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 9-10%%) Proficient Transmuter%{PR}%;/endif
+/def -F -mregexp -t"Renown Loremaster" tfsubstRepNA11 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 11-12%%) Renown Loremaster%{PR}%;/endif
+/def -F -mregexp -t"Grand Elementalist" tfsubstRepNA13 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 13-14%%) Grand Elementalist%{PR}%;/endif
+/def -F -mregexp -t"Elder Stonekeeper" tfsubstRepNA15 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 15-16%%) Elder Stonekeeper%{PR}%;/endif
+/def -F -mregexp -t"Elder Tidewalker" tfsubstRepNA17 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 17-18%%) Elder Tidewalker%{PR}%;/endif
+/def -F -mregexp -t"Elder Windweaver" tfsubstRepNA19 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 19-20%%) Elder Windweaver%{PR}%;/endif
+/def -F -mregexp -t"Elder Flameforger" tfsubstRepNA21 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 21-22%%) Elder Flameforger%{PR}%;/endif
+/def -F -mregexp -t"Ancient Hierophant" tfsubstRepNA23 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 23-25%%) Ancient Hierophant%{PR}%;/endif
+/def -F -mregexp -t"Master of Nature" tfsubstRepNA26 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 26-28%%) Master of Nature%{PR}%;/endif
+/def -F -mregexp -t"Grand Shaman of the Ancient Sun" tfsubstRepNA29 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 29-31%%) Grand Shaman of the Ancient Sun%{PR}%;/endif
+/def -F -mregexp -t"Essence of Life" tfsubstRepNA32 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 32-34%%) Essence of Life%{PR}%;/endif
+/def -F -mregexp -t"Mystic Avatar" tfsubstRepNA35 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 35%%) Mystic Avatar%{PR}%;/endif
+
+/def -F -mregexp -t"Silent Stalker" tfsubstRepEN1 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 1%%) Silent Stalker%{PR}%;/endif
+/def -F -mregexp -t"Cruel Torturer" tfsubstRepEN2 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 2%%) Cruel Torturer%{PR}%;/endif
+/def -F -mregexp -t"Malicious Strangler" tfsubstRepEN3 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 3%%) Malicious Strangler%{PR}%;/endif
+/def -F -mregexp -t"Bloodthirsty Killer" tfsubstRepEN4 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 4%%) Bloodthirsty Killer%{PR}%;/endif
+/def -F -mregexp -t"Brutal Murderer" tfsubstRepEN5 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 5-6%%) Brutal Murderer%{PR}%;/endif
+/def -F -mregexp -t"Avaricious Ransomer" tfsubstRepEN7 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 7-8%%) Avaricious Ransomer%{PR}%;/endif
+/def -F -mregexp -t"Notorious Bounty Hunter" tfsubstRepEN9 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 9-10%%) Notorious Bounty Hunter%{PR}%;/endif
+/def -F -mregexp -t"Shadow Assassin" tfsubstRepEN11 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 11-12%%) Shadow Assassin%{PR}%;/endif
+/def -F -mregexp -t"Treacherous Conspirator" tfsubstRepEN13 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 13-14%%) Treacherous Conspirator%{PR}%;/endif
+/def -F -mregexp -t"Deadly Impostor" tfsubstRepEN15 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 15-16%%) Deadly Impostor%{PR}%;/endif
+/def -F -mregexp -t"Cold-hearted Silencer" tfsubstRepEN17 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 17-18%%) Cold-hearted Silencer%{PR}%;/endif
+/def -F -mregexp -t"Shameless Kinslayer" tfsubstRepEN19 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 19-20%%) Shameless Kinslayer%{PR}%;/endif
+/def -F -mregexp -t"Stealthy Traitor" tfsubstRepEN21 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 21-22%%) Stealthy Traitor%{PR}%;/endif
+/def -F -mregexp -t"Midnight Scourge" tfsubstRepEN23 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 23-25%%) Midnight Scourge%{PR}%;/endif
+/def -F -mregexp -t"Master of the Night" tfsubstRepEN26 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 26-28%%) Master of the Night%{PR}%;/endif
+/def -F -mregexp -t"Manipulator of Perception" tfsubstRepEN29 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 29-31%%) Manipulator of Perception%{PR}%;/endif
+/def -F -mregexp -t"Merciless Deathlord" tfsubstRepEN32 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 32-34%%) Merciless Deathlord%{PR}%;/endif
+/def -F -mregexp -t"Darkmaster of Death" tfsubstRepEN35 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 35%%) Darkmaster of Death%{PR}%;/endif
+
+
+; == Special ==
+/def -F -mregexp -t"Devoted Servant" tfsubstRepGW1 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 1%%) Devoted Servant%{PR}%;/endif
+/def -F -mregexp -t"Elder of the Hallowed Triad" tfsubstRepGW26 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 26-28 or 29-31%%) Elder of the Hallowed Triad%{PR}%;/endif
+/def -F -mregexp -t"Leaven of Wonder" tfsubstRepGW19 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 19-20%%) Leaven of Wonder%{PR}%;/endif
+/def -F -mregexp -t"Mystical Mindwarrior" tfsubstRepGW11 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 11-12%%) Mystical Mindwarrior%{PR}%;/endif
+/def -F -mregexp -t"Patient Pedant" tfsubstRepGW4 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 4%%) Patient Pedant%{PR}%;/endif
+/def -F -mregexp -t"Diligent Assistant" tfsubstRepGW2 = /if (subRep)/substitute -p %{PL}(@{hCwhite}G@{n} 2%%) Diligent Assistant%{PR}%;/endif
+
+/def -F -mregexp -t"The Loving Blade" tfsubstRepImmSpecial1 = /if (subRep)/substitute -p %{PL}(@{Cgreen}N@{n} 35%%) The Loving Blade%{PR}%;/endif
+/def -F -mregexp -t"Four-Twenty" tfsubstRepImmSpecial2 = /if (subRep)/substitute -p %{PL}(@{Cred}E@{n} 11-12%%) Four-Twenty%{PR}%;/endif
+
+
+; TESTING:
+;/load substitutes.tf
+;/set subRep 1
+;highscore rep 99
+;highscore rep 99 active
+;highscore rep f 99
+;highscore rep f 99 active
+;highscore rep ff 99
+;highscore rep pf 99
+;highscore rep mf 99
+;highscore rep rf 99
+;highscore rep wf 99
+;highscore rep nf 99
+;highscore rep tf 99
+;highscore rep af 99
+;highscore rep p 99
+;highscore rep p 99 active
+;highscore rep fp 99
+;highscore rep pp 99
+;highscore rep mp 99
+;highscore rep rp 99
+;highscore rep wp 99
+;highscore rep np 99
+;highscore rep tp 99
+;highscore rep ap 99
+;highscore rep m 99
+;highscore rep m 99 active
+;highscore rep fm 99
+;highscore rep pm 99
+;highscore rep mm 99
+;highscore rep rm 99
+;highscore rep wm 99
+;highscore rep nm 99
+;highscore rep tm 99
+;highscore rep am 99
+;highscore rep r 99
+;highscore rep r 99 active
+;highscore rep fr 99
+;highscore rep pr 99
+;highscore rep mr 99
+;highscore rep rr 99
+;highscore rep wr 99
+;highscore rep nr 99
+;highscore rep tr 99
+;highscore rep ar 99
+;highscore rep w 99
+;highscore rep w 99 active
+;highscore rep fw 99
+;highscore rep pw 99
+;highscore rep mw 99
+;highscore rep rw 99
+;highscore rep ww 99
+;highscore rep nw 99
+;highscore rep tw 99
+;highscore rep aw 99
+;highscore rep n 99
+;highscore rep n 99 active
+;highscore rep fn 99
+;highscore rep pn 99
+;highscore rep mn 99
+;highscore rep rn 99
+;highscore rep wn 99
+;highscore rep nn 99
+;highscore rep an 99
+;highscore rep a 99
+;highscore rep a 99 active
+;highscore rep fa 99
+;highscore rep pa 99
+;highscore rep ma 99
+;highscore rep ra 99
+;highscore rep wa 99
+;highscore rep ta 99
+;highscore rep aa 99
+
+
+; ------------------------  REP subst  end  ------------------------
+
+;fixme Add unimportant subs (like scrolls) here
+
+/def -F -mregexp -t"Damage dice is '([0-9]+)D([0-9]+)'" tfsubstX1 = \
+    /set mindam %{P1}%; \
+    /set maxdam=$[{P1} * {P2}]%; \
+    /set avgdam=$[({P2}+1)*{P1}/2.0]%; \
+    /substitute -p %{PL}@{Cgreen}Damage dice is '%{P1}D%{P2}' Avg: @{hCyellow}%{avgdam} @{nCgreen}(%{mindam}-%{maxdam})@{n}%{PR}
+
+/def -F -msimple -t'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=' tfsubstX2 = \
+    /substitute -p =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+/def -F -msimple -t'--------------------------------------------------------------------------------' tfsubstX3 = \
+    /substitute -p =------------------------------------------------------------------------------
+
+/def -F -msimple -t"The mist expands before your eyes, and splits into two!" tfsubstX4 = \
+    /substitute -ah -p The mist expands before your eyes, and splits into two!@{hCyellow} ==> MIST SPLIT!
+
+/eval /def -F -mregexp -t"$[name] rolls ([0-9]+)\\." tfsubstX5 = \
+    /substitute -ah -p >>> %{name} rolls %%{P1}. <<<
+/eval /def -F -mregexp -t"$[name] rolled ([0-9]+)\\." tfsubstX5b = \
+    /substitute -ah -p >>> %{name} rolled %%{P1}. <<<
+
+/def -p2 -F -mregexp -t"\(holy aura\)" tfsubstX6 = \
+    /substitute -p %{PL}@{Cbgmagenta}(HOLY AURA)@{n}%{PR}
+/def -p2 -F -mregexp -t"\(immolation cold\)" tfsubstX6b = \
+    /substitute -p %{PL}@{Cbgmagenta}(IMMOLATION COLD)@{n}%{PR}
+/def -p2 -F -mregexp -t"\(immolation fire\)" tfsubstX6c = \
+    /substitute -p %{PL}@{Cbgmagenta}(IMMOLATION FIRE)@{n}%{PR}
+
+/def -p2 -F -mregexp -t"^([A-z]+) stares around in confusion..." tfsubstX7 = \
+    /substitute -p %{P1} stares around in confusion... @{h}(CONFUSED)@{n}%{PR}
+
+/def -p199 -F -msimple -t"A Pool of Quicksand" tfsubstX8 = \
+    /substitute -p A Pool of QUICKSAND!!!
+
+/def -p2 -F -mregexp -t"^([A-z]+) is too far away for your magical powers." tfsubstX9 = \
+    /substitute -p %{P1} is too far away for your magical powers. (other continent or tipi)
+/def -F -msimple -t"You wait in vain as no dimension door appears." tfsubstX10 = \
+    /substitute -p You wait in vain as no dimension door appears. (me/target safe, or lowlevel/nonexistant target)
+/def -F -mregexp -t"^([A-z]+)'s magical aura resists your dimension door." tfsubstX11 = \
+    /substitute -p %{P1}'s magical aura resists your dimension door. (noDD/soloquest)
+
+/eval /def -p15 -mregexp -t"^You put (.*) in a shadowy void of $[name].$$" tfsubstX12 = \
+    /substitute -p You put %%{P1} in your shadowy void.
+/eval /def -p15 -mregexp -t"^You get (.*) from a shadowy void of $[name].$$" tfsubstX13 = \
+    /substitute -p You get %%{P1} from your shadowy void.
+
+/def -p15 -F -mregexp -t"Regent Diamond" tfsubstX14 = \
+    /substitute -p %{PL}@{hCbgmagenta}Regent Diamond@{n}%{PR}
+
+/def -p15 -F -mregexp -t"([A-z]+)'s (.*) named '([A-z]+)'" tfsubstX15 = \
+    /substitute -p %{PL}%{P3}%{PR}
+

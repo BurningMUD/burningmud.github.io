@@ -1,0 +1,34 @@
+# Dragons Graveyard (22): 50-100, Stryder/Bane  (Karandras: 10wn3wswswn12ws2w2se4nwds3w, enter tomb)
+* FIND OUT: A skeletal dragon   shin-whack deals 28 dam?
+* FIND OUT: A Zombie Wyrm       hp
+#
+#                    o
+#                   x
+#         o <-*o <-/
+#         |
+#     o   X   o        o - o - o
+#     |   |   |            |
+# o - o - o - o <- o - o - o - o
+#     |   |   |            |
+#     o   o   o        o - o - o
+#         |                ^
+#         o                |
+#         |                o
+#         v                |
+#     o - o - o        o   o   o
+#         |            |   |   |
+#     o - o - o - o -> o - o - o
+#         |            |   |   |
+#     o - o - o        o   o   o
+#
+* Entrance from EarthSea. Same area as EarthSea.
+* Many/all rooms can hurt you with lightning (-30 hp) & soul consuming.
+* Dracolich, Wyrm & Skeletal dragon are vuln slay dragon
+* Attendants are vuln unlife
+
+Dragons Graveyard:       Lvl    Xp ASWIDMX # agg      Hp        Gold    Special
+A dracolich               80 1344M N-xx -3   --- 16002-16005  6434-6964 [dragon], cloudkill, shock bolt, acid breath
+A Doomed Black Wyrm       81  908M N-xx -2   --- 16792-16793     1-1    [dragon], flame strike, fireball, can summon zombie wyrm on death
+A skeletal dragon         82 1526M N-xx -2   --- 19204-19205  6670-7388 [dragon], immune blind (not dark), life blood, fire bolt, special-tail-whip (20), special-shin-whack (28?)
+The Draconian Attendant   85 1683M Nx xx 2   GNE 24004-24004  7227-7978 [magical]
+A Zombie Wyrm             86  826M N-xx      GN  25602        7618-8112 [dragon], resist crush, summoned, gas breath, cloudkill, chain lightning

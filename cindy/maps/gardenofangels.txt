@@ -1,0 +1,31 @@
+# The Garden of Angels (9): 20-50, Stryder  (Karandras: 10wn3wswswn12ws2w2sws3wnwn4u2n)
+#
+#   throne      o - o - o - X - o
+#       o - o   |   |   |   |   |
+#       |   |   |   |   |       |          power
+#       o - o - o - o   o - o - o       o - o
+#               |   |   |   |   |       |   |
+#               o - o - o - o - o - o - o - o
+#               |           |   |   |
+#           o - o   o - o   o - o   o - o
+#   seraphim|   |   |   |   |   |   |   | principality
+#           o - o   o - o   o - o   o - o
+#                       |   |   |
+#           o - o       o - o   o - o
+#  archangel|   |       |       |   |
+#           o - o - o - o       o - o
+#           |   |   |             dominations
+#           o - o - o
+#
+* Their only vuln is slay magical (immune unlife)
+
+Garden of Angels:                Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+An angel of virtue                10  116k G-x---    -    183-185     617-629   [magical], immune dark/unlife
+An angel                          14  185k G-x---    -    274-265     483-539   [magical], immune dark/unlife
+A seraphim                        16  277k G-x---    -    344-345    1478-1548  [magical], immune dark/unlife, flees
+A principality of the nine orders 18  468k G-x---    -    402-409     834-901   [magical], immune dark/unlife, mana shielded
+A power of the order              20  578k G-x---    -    470-475    1529-1572  [magical], immune dark/unlife, flees
+An angel of dominations           25 1444k G-x---    -    620-621    1834-1853  [magical], immune dark/unlife, 3-3 attacks
+A throne of the order             30 3465k G-x---    -    766-771    1823-1853  [magical], immune dark/unlife, save 11
+A cherubim                        35 7875k G-x---    -    904-907    2028-2107  [magical], immune dark/unlife, save 10
+An archangel of the order         50   65M G-x---    -   2385-2565  18758-18825 [magical], immune dark/unlife, heal, wither, dispel

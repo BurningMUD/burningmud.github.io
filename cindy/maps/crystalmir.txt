@@ -1,0 +1,45 @@
+# Crystalmir Lake (105): 5-45, Strahd  (Solace: 7s)
+* FIND OUT: Chaos Entity       Description
+#
+#        x <- o - o - o-y   o+o                    ^   ^   ^   ^   ^ 
+#             |   |   | |   |                      |   |   |   |   |
+#        y <- o - o - o-x   o-o                <-- o - o - o - o - o -->
+#             |   |   | |  /  +                    |   |   |/  |   |
+#             v   |   | o+o   o                    o - o - U - o - o - o
+#     o - o   y   |   |       +                    |   |   |   |   |
+#         |       |   |       v               o-o- o - o - o - o - o
+#         o - o - o - o   Galaxy          o   |    |   |   |   |   |
+#         |   |   |   |          |        | Dragon |   |   |   |   |
+#     o - o - o - o - o Solace o o        o        |   |   |   |   |
+#         |   |   |   |   |    |/         ^    <-- o - o - o - o - o -->
+# Shaolin-o - o - D - o - o -- X          |        |   |   |   |   |
+# Temple  |   |  /|   |   |    |          o -- o - o - o - o - o - o
+#         o   o - o - o - o -- o          |        |   |   |   |   |
+#         |       |       |    |  Mirror  o        v   v   v   v   v
+#         o - o - o - o - o --riv-Realm
+#                     |        |
+#                  Darken-  Ciquala's
+#                   wood      Lair
+#
+* Some smaller aggies here and there, but nothing major. Unless someone has
+* summoned the Chaos Entity in Gretta's hut, which has min level 55
+
+Crystalmir Lake:      Lvl    Xp ASWIDMX # agg      Hp        Gold     Special
+A field mouse           4  6400 G----     --     77-80        1-1     [animal]
+Farm worker             5   12k G-x--     --     97-105      11-11    [human]
+A large rat             5   12k E-x--     --     97-105       1-1     [animal]
+Old pooh bear           5   12k G-x--     --    100-101       1-1     [entity]
+Strange fish            5   12k G----     --     96-104       1-1     [fish]
+Hobgoblin flunky        6   21k E-x--     --    122-124     101-101   [lugroki]
+Baaz Draconian          7   35k E-x--     G-    138-141     101-101   [magical]
+Barracuda               7   35k G-x--     GN    138-145       1-1     [fish]
+Farmers guarddog        7   35k G--x-     GN    136-139       1-1     [canine]
+The Farmer             10  110k G-x--x    --    200-203     151-151   [human]
+Fewmaster Toede        12  156k Exx--     GN    233-246    1001-1001  [amphibian], backstab
+The White Stag         17  357k E-x--     --    353-365       1-1     [animal], powerheal, curse, confusion, harm
+Turtle dragon          27 2160k E--x--    GN    647-653    2001-2001  [dragon]
+Riverwind              30 3600k Gxx---    --    760-764   10001-10001 [human], confusion, curse, harm, blind
+Goldmoon               44   18M Gx---x    --   1580-1582  10001-10001 [human], confusion, wither, pow, harm, blind
+Chaos Entity           90     0 N--xx     GNE 31453-33141   100-309   INFO, [entity], 9-12 attacks, does NOT do unlife/dark-damage, 25160+ hp withered
+Archibald Jolten      100       N-xxx-    --- 50001-50001     0-0     INFO, questmaster, [human], cake, can leave the area, no-attack
+Gretta the Old Sage   100       N--       ---                         no-attack

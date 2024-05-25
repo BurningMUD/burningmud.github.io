@@ -1,0 +1,542 @@
+
+http://www.lysator.liu.se/~tomca/burning/itemvalues.txt
+
+Don't know what to pick in a pg?
+Not sure if your offered trade is decent or a ripoff?
+This file won't give you a prefect answer, but it might be used to get a feel
+for what different items are worth, or to fing out if a certain item is higher
+valued than another.
+
+The first is a listing of all items I've seen sold on auction for over 50M.
+Only the highest bid for each item is shown. Note that the value of items can
+change over time, so it it may be bad to use as a guideline.
+The lists further down show the order in which items were picked in actual
+PG:s. Only top 50 picks listed for each PG.
+Some common sense might be needed to interpret the data.
+
+Highest bids seen on auction channel:
+a sinister jet black cape        1,000,000,000 coins
+the crown of misery                510,000,000 coins
+a bracelet forged from misery      500,000,000 coins
+Sardien                            470,000,001 coins
+Band of Nyx's Rage                 300,000,999 coins
+Linux Box                          300,000,000 coins
+'Frostbite', the sword of Winter   300,000,000 coins
+a honed shortsword 'Zedraikis'     250,000,000 coins
+the gauntlets of deception         230,000,000 coins
+a pair of boots of the Ancients    220,000,000 coins
+the sleeves of Eternity            200,000,000 coins
+the shield of the Ancients         190,000,000 coins
+the Demonic wing                   180,000,000 coins
+a pair of pitch black boots        170,000,000 coins
+a fiery breastplate                170,000,000 coins
+the cloak of camouflage            160,000,000 coins
+a glimmering neckchain             149,000,000 coins
+Doom                               145,000,000 coins
+some boots of searing shadow       130,000,000 coins
+laerkai life                       132,000,000 coins
+the soul ring                      130,000,000 coins
+the flame of balance               125,123,123 coins
+a Silmaril                         120,000,000 coins
+Catastrophe                        113,300,000 coins
+neckpiece formed f.a. ancient metal111,111,111 coins
+a tempest bracelet                 111,000,000 coins
+a molten mantle of lava            110,000,000 coins
+a daedric rose                     110,000,000 coins
+the elemental ring of fire         110,000,000 coins
+PathWeaver HailStrike              107,000,000 coins
+the bones of the Nexus beast       102,000,000 coins
+the stormshield                    100,000,000 coins
+boots fashioned from rexian hide   100,000,000 coins 
+Sturm's Starjewel                  100,000,000 coins
+a translucent protector            100,000,000 coins
+the robe of the tempest            100,000,000 coins
+A mithril sphere                    99,000,000 coins
+the ring of thorns                  94,000,000 coins
+the Sphere of Defence               91,000,000 coins
+Spider-Webbed boots                 90,123,123 coins
+Oblivion                            90,000,000 coins
+a titan bracelet                    85,555,555 coins
+Multihued dragon scale mail         85,000,000 coins
+Nocturnals black cape               84,000,000 coins
+a volcanic shield of iron           80,000,000 coins
+some Chameleonic leggings           80,000,000 coins
+the Runeblade 'Lawbringer           80,000,000 coins
+a robe of blood                     80,000,000 coins
+a leaf circlet                      80,000,000 coins
+laerkai pain                        80,000,000 coins
+a pair of green velvet sleeves      75,000,000 coins
+Wolf headed battle staff            74,000,000 coins
+a burning brand                     70,000,000 coins
+Overlord's sceptre                  70,000,000 coins
+the pendant of the seas             70,000,000 coins
+the Sword of Tears                  70,000,000 coins
+the spear of the seas               67,000,000 coins
+a razor sharp silver lance          65,000,000 coins
+the helm of the Alliance            62,000,000 coins
+a red crystal staff                 61,000,000 coins
+the soul reaper                     60,500,000 coins
+a melting steel elbowpad            60,500,000 coins
+the mace 'Deathbringer'             60,000,000 coins
+a rusting metallic bracelet         55,555,555 coins
+the dagger of souls                 55,000,000 coins
+a traitor's cowl                    55,000,000 coins
+Freizas chains                      55,000,000 coins
+the ring of domination              50,123,123 coins
+the Obscure Slayer                  50,000,003 coins
+a burning circlet of light          50,000,000 coins
+a flaming blade of darkness         50,000,000 coins
+some greaves of waterscale          50,000,000 coins
+a sarong of divine magic            50,000,000 coins
+a pair of shadowbane boots          50,000,000 coins
+a dagger of wind                    50,000,000 coins
+an elder sign                       50,000,000 coins
+a twisted rope belt                 50,000,000 coins
+The Flesh of a Demon                50,000,000 coins
+Nemesis, the blade of shadows       50,000,000 coins
+the Mantle of the Kor-Skarn         50,000,000 coins
+
+
+PG Sat Sep 24 2005:
+ 1 a raven feather bracelet
+ 2 some flexible blackened arm greaves
+ 3 the obsidian spear named "Gungner"
+ 4 the Gith's strangely-shaped Torture
+ 5 a rusting necklace
+ 6 a gigantic maul from ancient times
+ 7 a fiery breastplate
+ 8 Azimers razor talon
+ 9 the Demonic wing
+10 some boots of searing shadow
+11 the Sphere of Defence
+12 Band of Nyx's Rage
+13 the dagger of souls
+14 the gauntlets of deception
+15 a smooth wooden ring
+16 a sinister jet black cape
+17 a shortsword named 'Windweaver'
+18 Frontal Lobe of the Elder Brain
+19 Sturm's Starjewel
+20 the soul ring
+21 'Frostbite', the sword of Winter
+22 Wolf headed battle staff
+23 the Nightblade
+24 the sleeves of Eternity
+25 some leggings of the seven seas
+26 Sardien
+27 The Nightwalker's buckler
+28 a honed shortsword 'Zedraikis'
+29 some gloves of power
+30 a daedric rose
+31 some Chameleonic leggings
+32 the bones of the Nexus beast
+33 the ring of thorns
+34 the cloak of camouflage
+35 laerkai stealth
+36 Oblivion
+37 a neckpiece formed from an ancient metal
+38 a titan bracelet
+39 laerkai power
+40 a malignant wrap of Erebus
+41 some armplates of power
+42 the Ring of Thorns
+43 some dragonhide boots
+44 Blood spear
+45 laerkai pain
+46 a ring made of human baby's umbilical cord
+47 Deneb, the blade of light
+48 the dark cape of evil thoughts
+49 the spear of the seas
+50 a Celestial knee protector
+
+PG Sat Oct 01 2005:
+ 1 the Warhammer of Justice
+ 2 a smooth wooden ring
+ 3 the obsidian spear named "Gungner"
+ 4 Band of Nyx's Rage
+ 5 some multicolored dragonskin leggings
+ 6 a rusting necklace
+ 7 a fiery breastplate
+ 8 a glimmering neckchain
+ 9 some leggings of the seven seas
+10 some boots fashioned from rexian hide
+11 a gigantic maul from ancient times
+12 Wolf headed battle staff
+13 a sinister jet black cape
+14 a glimmering neckchain
+15 Catastrophe
+16 the gauntlets of deception
+17 a shortsword named 'Windweaver'
+18 the ring of thorns
+19 a pair of boots of the Ancients
+20 Shadows
+21 the dagger of souls
+22 a neckpiece formed from an ancient metal
+23 the cloak of camouflage
+24 a leaf circlet
+25 the Ring of Thorns
+26 a honed shortsword 'Zedraikis'
+27 the bones of the Nexus beast
+28 laerkai power
+29 the spell breaker
+30 the shield of the Ancients
+31 the boots of arch-sorcery
+32 the sleeves of Eternity
+33 some dragonhide boots
+34 a razor sharp silver lance
+35 the shield of stealth
+36 the flame of balance
+37 Azimers razor talon
+38 the spear of the seas
+39 the scepter of domination
+40 Doom
+41 the Ancient Shield
+42 a daedric rose
+43 a blackened dragon skull
+44 a Celestial knee protector
+45 laerkai life
+46 a ring made of human baby's umbilical cord
+47 the Mantle of the Kor-Skarn
+48 fiery leggings
+49 a hammer made from the tail of a red dragon
+50 the gauntlets of the righteous crusader
+
+PG Sat Oct 15 2005 (small):
+ 1 Band of Nyx's Rage
+ 2 Band of Nyx's Rage
+ 3 the spear of the seas
+ 4 the dagger of souls
+ 5 the ring of thorns
+ 6 neckpiece formed from an ancient metal
+ 7 Doom
+ 8 Doom
+ 9 the ring of Lorgon
+10 the L-i-f-e-s-t-e-a-l-e-r
+11 Oblivion
+12 a traitor's cowl
+13 Oblivion
+14 the Ancient Shield
+15 the boots of arch-sorcery
+16 a razor sharp silver lance
+17 Tail of Aslan
+18 Claws of the Lion
+19 the Nightblade
+20 the dark cape of evil thoughts
+
+PG Sat Oct 22 2005:
+ 1 the Warhammer of Justice
+ 2 A striated cut of platinum
+ 3 some leggings of the Ancients
+ 4 some multicolored dragonskin leggings
+ 5 a smooth wooden ring
+ 6 the Sphere of Defence
+ 7 Band of Nyx's Rage
+ 8 Wolf headed battle staff
+ 9 the Mace of Wickedness
+10 a sinister jet black cape
+11 the gauntlets of deception
+12 A striated cut of platinum
+13 a honed shortsword 'Zedraikis'
+14 Sturm's Starjewel
+15 the ring of thorns
+16 An azur breastplate with silver ornaments
+17 the Runeblade 'Lawbringer'
+18 laerkai power
+19 Blood spear
+20 Sardien
+21 Oblivion
+22 a glimmering bracelet
+23 laerkai life
+24 the boots of the ancients
+25 a coronet of carnage
+26 a malignant wrap of Erebus
+27 a snake shaped hammer
+28 Frontal Lobe of the Elder Brain
+29 the King's sword
+30 the Ring of Thorns
+31 Black crimson cape
+32 the breastplate of light
+33 the dagger of souls
+34 a ring made of human baby's umbilical cord
+35 Claws of the Lion
+36 A huge black demonsword called 'Zcobori'
+37 Doom
+38 a twisted rope belt
+39 the dreaded Thorn club
+40 A figment of your imagination
+41 the bones of the Nexus beast
+42 a crown of battered iron
+43 a saber of light
+44 a blackened dragon skull
+45 A sleek black unadorned ring
+46 some light absorbing padded gloves
+47 the flame of balance
+48 an amorphous blaze of radiance
+49 the cloak of camouflage
+50 The cut of tail of the red Dragon
+
+PG Sat Nov 19 2005:
+ 1 some flexible blackened arm greaves
+ 2 the Warhammer of Justice
+ 3 the girth of atomization
+ 4 some multicolored dragonskin leggings
+ 5 A striated cut of platinum
+ 6 Band of Nyx's Rage
+ 7 some malicious leggings of torment
+ 8 a fiery breastplate
+ 9 the Sphere of Defence
+10 the Demonic wing
+11 a rusting necklace
+12 Catastrophe
+13 'Frostbite', the sword of Winter
+14 a smooth wooden ring
+15 A mithril elbow protector
+16 the claws of the beast
+17 a sinister jet black cape
+18 some dragonhide boots
+19 the gauntlets of deception
+20 a glimmering bracelet
+21 a glimmering neckchain
+22 The Nightwalker's buckler
+23 The Flesh of a Demon
+24 Sardien
+25 a leaf circlet
+26 a gigantic maul from ancient times
+27 the dark cape of evil thoughts
+28 the boots of arch-sorcery
+29 the Ring of Thorns
+30 a glimmering neckchain
+31 Oblivion
+32 some leggings of the seven seas
+33 some boots of searing shadow
+34 the cloak of camouflage
+35 a malignant wrap of Erebus
+36 the bones of the Nexus beast
+37 a spiritual belt
+38 the ring of thorns
+39 a dragon bracelet
+40 some boots fashioned from rexian hide
+41 the shield of stealth
+42 a Celestial elbow protector
+43 a honed shortsword 'Zedraikis'
+44 laerkai power
+45 A counsellor's cape
+46 the dagger of souls
+47 an adamantine reinforced leather vest
+48 a razor sharp silver lance
+49 daedric dragon claws
+50 the dreaded Thorn club
+
+PG Sat Mar 4 2006 (small):
+ 1 A mithril elbow protector
+ 2 the sleeves of Eternity
+ 3 Shadows
+ 4 a shortsword named 'Windweaver'
+ 5 A mithril knee protector
+ 6 Sturm's Starjewel
+ 7 Wolf headed battle staff
+ 8 the dagger of souls
+ 9 the boots of the ancients.
+10 laerkai life
+11 the boots of arch-sorcery
+12 Darkness
+13 a malignant wrap of Erebus
+14 the ring of thorns
+15 the spear of the seas
+16 the Ancient Shield
+17 the Ring of Thorns
+18 some tattered robes
+19 a neckpiece formed from an ancient metal
+20 a Celestial elbow protector
+
+PG Fri Mar 16 2006 (small):
+ 1 the gauntlets of deception
+ 2 a sinister jet black cape
+ 3 Band of Nyx's Rage
+ 4 the Heart of Pardus the Ancient Vampire
+ 5 Sturm's Starjewel
+ 6 Oblivion
+ 7 The head of the Palladrus
+ 8 the gigantic spoon of Feast
+ 9 A sleek black unadorned ring
+10 a malignant wrap of Erebus
+11 the Heart of Pardus the Ancient Vampire
+12 Wolf headed battle staff
+13 iron plated sleevemail
+14 the helm of the Alliance
+15 Nemesis, the blade of shadows
+16 the ring of thorns
+17 the dark cape of evil thoughts
+18 the Kama Sutra
+19 the dagger of souls
+20 the head of the fallen angel Azrael
+
+PG Sat Mar 25 2006 (small):
+ 1 some multicolored dragonskin leggings
+ 2 Band of Nyx's Rage
+ 3 Oblivion
+ 4 a blackened dragon skull
+ 5 a shortsword named 'Windweaver'
+ 6 the ring of thorns
+ 7 The Flesh of a Demon
+ 8 Doom
+ 9 A mithril elbow protector
+10 Sturm's Starjewel
+11 The head of the Palladrus
+12 the head of the fallen angel Azrael.
+13 the spear of the seas
+14 Sardien
+15 the Karliik Llar
+16 a malignant wrap of Erebus
+17 the dagger of souls
+18 a razor sharp silver lance
+19 the Heart of Pardus the Ancient Vampire
+20 a pair of skeletal boots
+
+PG Sat Sep 23 2006:
+ 1 some flexible blackened arm greaves
+ 2 some flexible blackened arm greaves
+ 3 the Gith's strangely-shaped Torture blade
+ 4 the Demonic wing
+ 5 some leggings of the Ancients
+ 6 the Warhammer of Justice
+ 7 some multicolored dragonskin leggings
+ 8 the Skean-dhu
+ 9 Band of Nyx's Rage
+10 the eye of the Abyss
+11 some multicolored dragonskin leggings
+12 the obsidian spear named "Gungner"
+13 'Frostbite', the sword of Winter
+14 the claws of the beast
+15 a sinister jet black cape
+16 the gauntlets of deception
+17 The Nightwalker's buckler
+18 Sardien
+19 Oblivion
+20 the Ethereal Slayer
+21 Shadows
+22 the bones of the Nexus beast
+23 the sleeves of Eternity
+24 a blackened dragon skull
+25 the dagger of souls
+26 the heavy chains of Thrall
+27 The Nightwalker's buckler
+28 some boots fashioned from rexian hide
+29 the dark cape of evil thoughts
+30 the Ring of Thorns
+31 the ring of thorns
+32 the Mantle of the Kor-Skarn
+33 the shield of stealth
+34 the gauntlets of the righteous crusader
+35 the ring of thorns
+36 some boots of haste
+37 the shield of the veteran assassin
+38 The Flesh of a Demon
+39 some Chameleonic leggings
+40 Claws of Darkness
+41 Blood spear
+42 the spear of the seas
+43 a malignant wrap of Erebus
+44 the dreaded Thorn club
+45 a Celestial elbow protector
+46 a blackened dragon skull
+47 Baelfyre
+48 the Karliik Llar
+49 the Ancient Shield
+50 a huge stone club
+
+PG Sat Oct 20 2006:
+ 1 some flexible blackened arm greaves
+ 2 the bones of the Nexus beast
+ 3 the Gith's strangely-shaped Torture blade
+ 4 some multicolored dragonskin leggings
+ 5 a robe of blood
+ 6 Band of Nyx's Rage
+ 7 the Sphere of Defence
+ 8 Band of Nyx's Rage
+ 9 some multicolored dragonskin leggings
+10 Band of Nyx's Rage
+11 a shortsword named 'Windweaver'
+12 a shortsword named 'Windweaver'
+13 Shadows
+14 a sinister jet black cape
+15 a titan bracelet
+16 some dragonhide boots
+17 the gauntlets of deception
+18 The Nightwalker's buckler
+19 the gauntlets of deception
+20 some boots of searing shadow
+21 Azimers razor talon
+22 laerkai life
+23 the ring of thorns
+24 Oblivion
+25 A mithril elbow protector
+26 A mithril elbow protector
+27 laerkai power
+28 Sturm's Starjewel
+29 Sardien
+30 the spell breaker
+31 Oblivion
+32 a daedric rose
+33 a honed shortsword 'Zedraikis'
+34 Oblivion
+35 the Ring of Thorns
+36 the Mantle of the Kor-Skarn
+37 the dark cape of evil thoughts
+38 Claws of Darkness
+39 daedric dragon claws
+40 Doom
+41 the flame of balance
+42 a twisted rope belt
+43 Doom
+44 Nocturnal's black cape
+45 the Ethereal Slayer
+46 a mysterious flask
+47 Deneb, the blade of light
+48 laerkai pain
+49 PathWeavers blade
+50 a pair of green velvet sleeves
+
+PG Sat Oct 28 2006 (small):
+ 1 some leggings of the Ancients
+ 2 the Warhammer of Justice
+ 3 a pair of boots of the Ancients
+ 4 the Sphere of Defence
+ 5 the Ethereal Slayer
+ 6 Band of Nyx's Rage
+ 7 the gauntlets of deception
+ 8 Sturm's Starjewel
+ 9 Shadows
+10 some boots fashioned from rexian hide
+11 a sinister jet black cape
+12 Azimers razor talon
+13 the bones of the Nexus beast
+14 an adamantine reinforced leather vest
+15 a black hole
+16 laerkai pain
+17 some boots of searing shadow
+18 a titan bracelet
+19 the high-champions helmet
+20 Frontal Lobe of the Elder Brain
+
+PG Sat Nov 11 2006 (small):
+ 1 a shortsword named 'Windweaver'
+ 2 Band of Nyx's Rage
+ 3 the gauntlets of deception
+ 4 the soul ring
+ 5 a sinister jet black cape
+ 6 the ring of thorns
+ 7 the bones of the Nexus beast
+ 8 some boots of searing shadow
+ 9 Sardien
+10 Shadows
+11 some boots fashioned from rexian hide
+12 Sturm's Starjewel
+13 a dark-magic elbow protector
+14 a honed shortsword 'Zedraikis'
+15 laerkai life
+16 a razor sharp silver lance
+17 A mithril elbow protector
+18 a snake shaped hammer
+19 Oblivion
+20 The cut of tail of the red Dragon

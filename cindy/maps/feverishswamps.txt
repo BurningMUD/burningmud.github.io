@@ -1,0 +1,41 @@
+# The Feverish Swamps (173): 15-50, Wotan  (New Thalos: 2en2e2nes2en2eses4e5n2en4ene3n)
+#
+#                    o
+#                    |
+#                  o-o+-----o
+#                    |     x
+#               o  o-o-o  o
+#              /|    |
+#             o-|----o
+#               o
+#              /
+#             o                o
+#             |                |
+# o - o - o - o - o    o       o
+# |           |        |       |
+# o          RIP       o - o - o
+# |                    |   |   |
+# o - o-Allig  o - o - o - o - o
+#     |        |       |
+#     o    o - o   o - o
+#     |            |
+#     o -- o - o - o
+#          |
+#          o
+#          |
+#          X
+#          |
+#          o -
+#          |
+#
+* Lizardmen are vuln ice/fire
+
+Feverish Swamps:            Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+The mosquito swarm           15  380k N-----    GN   297-308       0-0    [insect]
+The lizardman (minding)      20  870k E-x---    --   434-454       0-0    [lizardman], flees
+The anaconda                 25 1900k N-x---    --   576-629       0-0    [snake], sitting
+The alligator                27 2822k N--xx-    GN   661-664       0-0    [reptile], sitting
+The lizardman (warrior)      27 2565k E-----    --   658-669       0-0    [lizardman], bash, headbang, kick
+The lizardman (hunter)       30 4125k E-x---    GNE  740-757       0-0    [lizardman], backstab
+The twoheaded mamba          40   15M Ex-x-x    GN  1312-1325   2188-2297 [snake], sitting
+The elite lizarman guardian  60   96M Ex-x -    --  4776-4843      0-0    [lizardman], aware

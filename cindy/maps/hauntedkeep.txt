@@ -1,0 +1,38 @@
+# Haunted keep (11): 5-15, Crom/Gloom/Stryder (?/15-28min)  (Karandras: 10e10n2e8n3ws2w4n2wn)
+* FIND OUT: The mummy        hp
+* FIND OUT: All mobs: Agg-N?
+#
+#                          o
+#                         /
+#                        o
+#                       /|
+#                      o o
+#                        |
+#     o ---- o - o - o - o
+#    x       |       |
+#  cook+o  o o       o
+#          |/        |
+#          o-o   o - o
+#          |         |
+# Faery    o         o
+# Forest  /          |
+#   ^    o           o
+#   |   /            |
+#   |  o - o         X
+#   o     /          |
+#   |   /          Faery
+#   | /            Forest
+#   o
+#
+* Max level 30
+* Entrance from Faery Forest
+
+Haunted Keep:            Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+A furry little gopher      5   19k N-----    - -   98-102       1-1     [animal]
+The skeleton               5   17k E-x---    - -   92-110       0-0     [skeleton]
+The zombie                 8   69k E-x---    - -  141-152       2-7     [undead]
+A shackled spirit          8   88k E-----    - -  164-169      24-26    [entity], sitting
+The mummy                 10  136k E--xx     G E   ~200       124-188   [undead]
+A ghastly executioner     13  228k E-----    - -  245-247       1-1     [entity]
+A rotting corpse          17  408k N-x---    - -  346-348     415-417   [human]
+Ghost of the portly cook  31 5951k N-----    - -  731-733   35010-35023 [insubstantial], flees, chill touch, save 12

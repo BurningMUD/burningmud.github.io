@@ -1,0 +1,31 @@
+# Goblin Caves (68): 10-30, Unknown/Envy  (Ofcol: 3wn2wnwne)
+* FIND OUT: Captive of the Goblins       type, irvs
+#
+#        o   o-----o-+--o
+#        |   |         /
+#      o+o-o-o        o
+#            |        |
+#            o---o    o-o
+#            |   |    | |
+#          o---o o+o  o o-o
+#          | |x       |   |
+#          o o        o-o-o
+#         /              /
+#        o              o
+#       /               |
+#      o              King-o
+#     /                    +
+#    o                     |
+#   /                      |
+# -X <--------------------/
+#
+* Same area as Shaolin Temple
+* Not too much of interest here.
+
+Goblin Caves:                 Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+Captive of the Goblins          1   200 N----     --    27-34     1001-1001 [???], no irv for pure/light/large/superlarge/gas/earth/water/wood
+An Ancient Wizard              10  110k N-----    --   192-194    1001-1001 [elf], burning hands, lightning bolt, blindness
+Goblin Soldier                 10  110k N-x---    GN   191-207    1001-1001 [---]
+Captain of the Goblin Soldiers 17  357k N-x---    GN   355-364    1001-1001 [---], bash, kick, headbang
+The Sentry to the Goblin Caves 19  475k Gx----    --   411-424    1001-1001 [human], kick, headbang
+Goblin King                    23 1035k N-----    --   535-552    1001-1001 [---], kick, bash, headbang

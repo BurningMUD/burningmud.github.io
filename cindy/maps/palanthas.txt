@@ -1,0 +1,115 @@
+# The City of Palanthas (389): 50-100, Rafo/Vortex  (Palanthas: -)
+#
+#        Raistlin*-> Takhisis
+#           |
+#           o
+#          /
+#      Dalamar
+#        /
+#       o                                            o - Tacheron
+#      /|                                            |
+#     o o ---------------- B                    Abomination
+#     |                    |                    Necromancer
+#     |   o   o   o - B - Lord                       |
+#     |   |   |       |   Soth                       o
+# o - o - o - o       o                              +
+#     |       |       |                              o
+# o   o       o       o                             /
+# |   |               |       o - o                o
+# o-o-o-o         o - o - o   |   |                |
+#     |               |       o - f - o -> g - o - o
+#     o           o - o - o       ^
+#                     |           |
+#                 o - o - o       /    Astinus        o           o
+#                     |          /        +           |           |
+#                     o         /     o - o - o   o - o - o   o - o - o
+#                     |        /          |           |           |
+#               Bak - o - Ms  /       o - o - o   o - o - o   o - o - o
+#                     |      /            |           |           |
+#             o - o - f - o-/-o - o - o - o - o - o - o - o - o - o
+#             |       |    /  |       +
+#         o   As  Au  X*--/   Ws      o
+#         |   |   |   |       |
+#         o - o - o - o - o - o
+#         |       |   |
+#     o - o       Q   o
+#                 |   |
+#                 o   o
+#                     |
+#                     X - Q - o
+#                     |
+#
+* Some rooms are very bright.
+* g: Second time you go here, you can only go back.
+* B: Only mages can move here. Others take damage when trying,
+*    losing 45-90% maxhp (summoning shadow dragons).
+*    You don't need to be pure mage.
+* To get to Takhisis: Good Pr/Pr or Pr: open portal
+*                     Evil Ma/Ma or Ma: open portal
+
+Palanthas:               Lvl    Xp ASWIDMX # agg      Hp         Gold      Special
+A well-kept dog            1       N-x--     -      14-18         2-2
+A young boy                3       G-x--     -      42-46        82-85
+A young girl               3       G-x--     -      40-43       114-141
+The servant                3  2900 G-x--     -      48-48        78-133
+A wharf rat                4 ~3060 N-x-       -     48-62         0-0      sneak
+A Citizen (of Palanthas)   5       G-x---    -      67-93       467-490    [human]
+A Citizen (walks proudly)  5       G-x---    -      49-88       436-501    [human]
+A farmer                   7  ~34k G-x--      -    138-139     1001-1001
+A beggar                   8  ~60k G----      -    156-165        1-8
+A townsman                 9  ~89k G-x--      -    180-184      862-872
+A cityguard               10   90k G-x---    -     110-130     2160-3106   [human]
+A herd of sheep           10       N----     -       2-2          2-2
+A silk trader             11 ~132k N-x--      -    211-224     1001-1001
+A drunken sailor          15  254k N----      -    293-298        1-1
+An old sailor             18  415k N--x-      -    391-393      839-875
+A solamnic knight         20  860k G-x--     -     454-530     1425-1614   [human]
+A scribe                  30 4200k G-----    -     787-868     4753-5068   [human]
+A skeletal warrior        30 4500k E-x---    G     909-1063    3276-3639   [undead?], vuln pure/light/silver/heal, resist unlife/dark, powerword kill, 0-2 spells
+The shadow dragon         54   55M Ex-xx-    -    2898-2928    3973-4127   [dragon], hide, summoned
+Astinus                   60   97M G--xxx    -    4805-4842   70668-70762  [human]
+Yuan-Ti Abomination       60  100M E--xx   1 G    4290-4521   40101-40191  vuln pure/light/iron, immune fire, resist unlife/dark
+The apprentice            65  150M E--x      G    6071-6796    8486-8725   [human], sitting, fireball
+Dalamar                   65  189M E--x      GNE  6340-6538  103707-104024 vuln dark/unlife, resist pure/light, plasma bolt, area powerword blind, teleport, 1-2 spells, mana shielded
+A githyanki necromancer   65  180M E--x    1 G    5885-5890   48605-50120  [human], powerword kill
+The monk                  65  140M E--x -    -    6371-6585   10054-10075  [human]
+The older apprentice      65  189M E--x -    ---  6573-6630   89975-97035  [human], fireball
+Tacheron the leprechaun   65 6500k N--xx-  1 -    6497-6588   20042-20072  [human], sleeping
+The young apprentice      65  150M E--xx     G    6422-6706   80580-89528  [human]
+Lord Soth                 75  563M E--xx-    -    ~16k        74859-79692  vuln pure/light/silver/heals, immune unlife/dark, mana shielded, powerword blind, hell storm, powerword kill, deathspell, energy drain, 1-2 spells, room is nosum but recallable
+Lord Amothus              80  800M G--xxx    -    ~20k       123144-127194 [human], walk-path (7am:wake-2we3n3sw, 8pm:2e-sleep)
+Takhisis (purple head)    85                                     ---       vuln heal, immune WEAPON/SPELLS
+Takhisis (red head)       85                                     ---       vuln ice, hell fire, fireball
+                                                Mass Obli Anni Vapo Pulv Atom
+  Plain:   WEAPON                   avg 22                     
+  hammer:  CRUSH SLAY Dragon        avg 24 (44)                  7    3
+
+Takhisis (green head)     85                                     ---       vuln unlife, wither
+                                                Mass Obli Anni Vapo Pulv Atom
+  Plain:   WEAPON                   avg 22                      11
+  hammer:  CRUSH SLAY Dragon        avg 24 (44)                 19    2
+
+Takhisis (blue head)      85                                     ---       vuln slay dragon/fire, triad of ice
+                                                Mass Obli Anni Vapo Pulv Atom
+  Plain:   WEAPON                   avg 22                      11
+  hammer:  CRUSH SLAY Dragon        avg 24 (44)                       9    8
+
+Takhisis (orange head)    85                                     ---       vuln slay dragon/energy, shocking grasp, entropy
+                                                Mass Obli Anni Vapo Pulv Atom
+  Plain:   WEAPON                   avg 22                      12
+  hammer:  CRUSH SLAY Dragon        avg 24 (44)                       2    5
+
+Raistlin Majere           85 1360M E--x      GNE 30532-30947 189275-202571 [human], plasma ball, triad of fire, area powerword blind, deathspell, blood mirror, 1-2 spells, mana shielded
+The auctioneer            99       N--       -                             nofight-room
+A Gatekeeper             100     0 G--xx-    -   61352-62329     1-1       INFO, [human], whirlwind
+Brian Ylani              100       G--                                     shopkeeper
+Dougan Trollbane         100       G--                                     shopkeeper
+Finbar the Cleric        100       G--                                     nofight-room
+Fintar                   100       N--                                     shopkeeper
+Fravir                   100       G--                                     questmaster, nofight-room
+Iona                     100       G--                                     nofight-room
+Otto the Barkeep         100       G--                                     shopkeeper
+Takhisis (last)          100                                 65571         immune unlife/WEAPON, special-incap-opponent
+Taylor the farmer        100     0 N--xx-    -   91142-91159     2-2       INFO, questmaster, [human], cake, 3-3 attacks
+The Herald               100       Gxx                                     questmaster, no-attack
+Trae                     100       G--                                     shopkeeper

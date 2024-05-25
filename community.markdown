@@ -12,6 +12,7 @@ Impressive to say the least, and everyone benefits from their dedication to unco
 If you would like to submit your website to be listed here, please contact an immortal in-game or at the support email address, found in the [Help](/help.markdown) page.
 
 [Cindy](http://www.lysator.liu.se/~tomca/burning/)
+[Archive Copy](/cindy/index.html)
 
 [Ozrak](http://ozrak.insomnia247.nl/burning/)
 

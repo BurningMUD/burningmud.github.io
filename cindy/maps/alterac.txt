@@ -1,0 +1,85 @@
+# The Stronghold of Alterac (350): 50-100, Stryder  (Crossroad: 2nen2en3en2en2es2es2en3enwnw3nw6ne2ne2ne2ne2ne2n4ese)
+* FIND OUT: Champion - irv for air/bleed (immune slash/pierce)
+* FIND OUT: The Lord of Sundhaven: xp, hp, hp
+#
+#                   Battlefields
+#                        +
+#                     Malius                         o
+#               /       /                           /
+#              o - o - o - o - o - o o           o o     o - o - o
+#              |           |       |/           /|/|     |   |   |
+#    o         o - o - o - o   f + o             o+|-o - o - o - o - o
+#    |         |       |   |       |               |
+# -o-o-o       o       o - o - As  o o             o
+#  |   |       |       |   |       |/              |
+#  o   o - X + o  Os - o - o       o + Battle-     | o              Lord
+#              |       |           |   Fields      |/                +
+#              o - o - o - o + o   o o             o         Vabal + o + o
+#              |   |       |  x    |/             /                  |
+#              o   o     o o o     o             o + o - o - o + o - o
+#              |/       /  |       |             |
+#              o - o - o - o - o - o             o
+#                                               /
+#          o - o
+#          |   |
+#          o - o  NF   o     f +
+#              +   +   +    /
+#          o + o - o - o - o
+#              |   +   +
+#          o + o   o   o
+#              |
+#    Giran-o + o
+#      |   |
+#     RIP- o
+#
+* Min level 0/44
+* Whole area is very bright, except the road, by the gate and the second-floor
+* areas.
+* Shops are always open
+* Look-out rooms (waywatcher-rooms) are noflee/norecall/nosumout
+* NF: Noflee, but recallable
+* Waywatchers are vuln iron/unlife/dark. The rest are mainly humans, but some
+*   have strange irv:s
+
+Stronghold of Alterac:                     Lvl    Xp ASWIDMX # agg      Hp         Gold      Special
+A doomed lugroki prisoner                   50   46M E-x---    -N   2885-3725       1-1      [lugroki], immune fire
+The Gatekeeper of Alterac                   60   96M N--xx-  1 ---  3729-4290    5647-8021   [human], immune ice/dark
+A peasant worker (female)                   65  135M G-xxx-    ---  6001-6002    8038-8067   [human]
+A peasant worker (male)                     65  135M G-xxx-    ---  6801-6801    8043-8069   [human]
+A travelling merchant                       67  135M N-xx -    ---   ~7k        57901-59779  [human], trueheal
+A merchant of the north                     68  137M N- x -    ---  6912-8106   94334-100806 [human], confusion, heal
+A Prison guard (custodian)                  70  210M N-xx x    ---   ~8k         7094-7182   [human], powerheal, blocker
+A Prison guard (detention)                  70  210M N-xx x    ---   ~8k         7140-7233   [human], powerheal, blocker
+A Brettonian Guard (defends)                78  430M G-xx x    --- 16580-18507  76007-93126  [human], immune fire, vuln stun if using "topaz coloured tunic"
+A Brettonian Guard (relaxes)                78  430M G--x x    --- 14196-14514  97535-98297  [human], immune fire
+A Brettonian guardsman                      79  601M N-xxx-    --- 15201-15204   6574-6606   [human], bash, kick, poison
+An Alliance counsellor                      80 1360M G--x x    --- 21825-21883 220105-231642 [human], resist slash/pierce/crush/dark, meteor swarm, 1-1 spells, shrugger
+A Brettonian man-at-arms                    80 1223M Nxxx x    --- 16002-16002 231487-231498 [human], special-lance-strike
+An Elven waywatcher                         80 1145M G--   4   ---             292342-301587 [elf], immune electricity, powerheal, 0-1 spells, 7-7 attacks
+A lieutenant of the Brettonian High Command 80 1040M G--xxx    --- 16383-16414 153927-154692 [human], vuln pierce/crush, resist energy, immune ice/water, backstab (60), blocker
+A captain of the Brettonian High Command    82 1485M G--xxx2   --- 21789-21801 244392-258921 [human], vuln slash, resist energy, immune fire, 5-6 attacks, backstab, blocker
+A lugroki prisoner                          83 1162M E-xx      GN  19486-19953      0-0      [lugroki], immune fire
+An Ofcol mercenary (advent.)                83 1329M N-xx x1   ---             108796-118625 [human], imp, area powerharm, powerheal, 1-2 spells, 4-5 attacks
+An Ofcol mercenary (soldier)                83 1329M N-xx x1   ---  ~20k       111157-128935 [human], imp, heal, powerharm, mass pain, 1-2 spells, 4-5 attacks
+A lugroki berserker                         84 1462M E-xx      GN  22404-22405   7370-7482   [lugroki], bash, attack, backstab, murder
+A Champion of Alterac                       90 2160M Gx-xxx1   --- 32937-32949  86017-92476  vuln fire, immune slash/pierce/ice/poison, resist earth, 7-7 attacks, bash, kick, headbang, berserk
+The Ofcol Condottiere                       91 2731M Nxxxxx2   --- 37197       707228-822801 [human], vuln earth/superlarge, immune slash/normal/fire/energy/ice/water, resist pierce/crush, imp, shrugger, backstab (65), ac -55, 7-7 attacks, mana shielded
+Giran the Torture Lord                      92 1846M E--x      GN  48114-48754 466119-479494 INFO, [human], vuln stun, immune energy/ice/electricity?, resist fire, triad of fire, powerword kill, 32026+ hp withered
+The Lord of Sundhaven                       94       Nx-xxx    ---             103220-118334 [human], vuln fire, immune unlife/dark/ice/earth/poison, 8-9 attacks, bash, kick, headbang, berserk
+Vabal the Brettonian High Commander         95       Gx-x  2 1 GNE               4909-5332   INFO, [human], resist fire, dodge, wrath of god, teleport, trueheal, special-stun-attack (790), 1-1 spells, 5-7 attacks, blocker
+  +3 deathbr.:    6 hits out of 21: 29%  (hr 12+34+3=49)
+                                               Obli Anni Vapo Pulv Atom
+  Deathbr: CRUSH         SLAY Human    avg 22                   6   (no prayer)
+The battlefield gatekeeper                  99       Nx-       ---                           no-attack
+Malius the drow-elf imposter               100       Ex-x x4 1 ---             109694-117714 INFO, vuln pure/light/earth, resist WEAPON, mass pain, special-grab-as-shield, special-flee, shrugger, hell storm, 0-1 spells, AC -68
+Old Mr Wakinesse                           100       N--       ---                           shopkeeper
+The sexy young onion saleswoman            100       G--       ---                           shopkeeper
+
+
+Malius-forms (random order):
+A female peasant is busy at work here  (White Aura)                    65
+A merchant has stopped here briefly to trade goods                     67
+A guard of Alterac defends the sanctity of his homeland (White Aura)   78
+A soldier of fortune waits here for instruction  (invisible)           83
+An elven ranger is scouting the surrounding hinterland (White Aura)    84
+A hero of the Alliance stands fully alert (White Aura)                 90

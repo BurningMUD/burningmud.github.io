@@ -1,0 +1,996 @@
+; botting.tf
+
+/purge spellbot*
+
+/alias answerspells \
+    /set botList=You can ask me: 'info', 'report', 'version', 'wake up', 'go home', 'tnl'(tell)%; \
+    /if (owner =~ "Cindy") \
+      /set botList=%{botList}, 'compass', 'crystal'%; \
+    /endif%; \
+    /if (classFi) \
+      /set botList=%{botList}, 'protect <name>'(tell)%; \
+    /endif%; \
+    /if (classFi) \
+      /set botList=%{botList}, 'arescue on/off'(tell)%; \
+    /endif%; \
+    /if (classMa | classWl) \
+      /set botList=%{botList}, 'inv'%; \
+    /endif%; \
+    /if (classMa) \
+      /set botList=%{botList}, 'fly'%; \
+    /endif%; \
+    /if (classMa | classWl | classTe) \
+      /set botList=%{botList}, 'str'%; \
+    /endif%; \
+    /if (classPr | classTe) \
+      /set botList=%{botList}, 'bless'%; \
+    /endif%; \
+    /if (classPr = 2) \
+      /set botList=%{botList}, 'gbless'%; \
+    /endif%; \
+    /if (classPr) \
+      /set botList=%{botList}, 'reg'%; \
+    /endif%; \
+    /if (classPr | classTe | classAn) \
+      /set botList=%{botList}, 'cc'%; \
+    /endif%; \
+    /if (classPr | classTe | classAn) \
+      /set botList=%{botList}, 'heal', 'cb'%; \
+    /endif%; \
+    /if (classPr) \
+      /set botList=%{botList}, 'pow'%; \
+    /endif%; \
+    /if (classPr == 2) \
+      /set botList=%{botList}, 'true'%; \
+    /endif%; \
+    /if (classPr | classTe) \
+      /set botList=%{botList}, 'uncurse'%; \
+    /endif%; \
+    /if (classPr | classTe | classAn) \
+      /set botList=%{botList}, 'rp'%; \
+    /endif%; \
+    /if (classPr | classTe) \
+      /set botList=%{botList}, 'sanc'%; \
+    /endif%; \
+    /if (classPr) \
+      /set botList=%{botList}, 'sphere'%; \
+    /endif%; \
+    /if (classPr) \
+      /set botList=%{botList}, 'food'%; \
+    /endif%; \
+    /if (classAn) \
+      /set botList=%{botList}, 'satiate'%; \
+    /endif%; \
+    /if (classPr) \
+      /set botList=%{botList}, 'revit'%; \
+    /endif%; \
+    tf %* emote %{botList}%; \
+    /set botList=%; \
+    /if (classMa | classPr | classNb | classAn | classWl | classTe) \
+      /set botList=... 'arm'%; \
+      /if (classPr == 2) \
+        /set botList=%{botList}, '(auto)garm (on/off)', '(auto)gbl (on/off)', 'gheal'%; \
+        /if (mylevel >= 60) \
+          /set botList=%{botList}, 'gate <player>'(tell)'%; \
+        /endif%; \
+      /endif%; \
+      /if (classPr) \
+        /set botList=%{botList}, '(auto)holy (on/off)'%; \
+      /endif%; \
+      /if (classMa) \
+        /set botList=%{botList}, '(auto)cop (on/off)'%; \
+      /endif%; \
+      /if (classPr) \
+        /set botList=%{botList}, 'summon'(tell)%; \
+      /endif%; \
+      /if (classMa) \
+        /set botList=%{botList}, 'come'(tell)%; \
+      /endif%; \
+      /if (classMa | classPr) \
+        /set botList=%{botList}, 'brew <potion>', 'scribe <spell>'%; \
+      /endif%; \
+      /if (classMa) \
+        /set botList=%{botList}, 'locate <object> [<triggerword>]'(tell)%; \
+      /endif%; \
+      tf %* emote %{botList}%; \
+    /endif
+
+
+/def -F -mregexp -t"^([A-z]+) asks you 'info'" spellbotinfo = \
+    answerspells %P1
+
+/def -F -t"{*} asks you 'report'" reportasked = report
+
+/def -F -mregexp -t"^([A-z]+) (asks|tells) you 'ver(sion|)'" spellbotversion = \
+    /set spellbotversionasker %{P1}%; \
+    time%; \
+    /def -f -n1 -mregexp -t"^Current machine time: ([^ ]+) ([^ ]+)[ ]+([^ ]+) ([^:]+):([^:]+):([^:]+) 20(..)$$" spellbotversion%{spellbotversionasker} = \
+      /set version %%{P7}%%; \
+      /if ({P2} =~ 'Jan') \
+        /set versionSlask 0%%; \
+      /elseif ({P1} =~ 'Feb') \
+        /set versionSlask 31%%; \
+      /elseif ({P1} =~ 'Mar') \
+        /set versionSlask 60%%; \
+      /elseif ({P1} =~ 'Apr') \
+        /set versionSlask 91%%; \
+      /elseif ({P1} =~ 'May') \
+        /set versionSlask 121%%; \
+      /elseif ({P1} =~ 'Jun') \
+        /set versionSlask 152%%; \
+      /elseif ({P1} =~ 'Jul') \
+        /set versionSlask 183%%; \
+      /elseif ({P1} =~ 'Aug') \
+        /set versionSlask 213%%; \
+      /elseif ({P1} =~ 'Sep') \
+        /set versionSlask 244%%; \
+      /elseif ({P1} =~ 'Oct') \
+        /set versionSlask 274%%; \
+      /elseif ({P1} =~ 'Nov') \
+        /set versionSlask 305%%; \
+      /else \
+        /set versionSlask 335%%; \
+      /endif%%; \
+      /eval /set version %%{version}.$$[%%{versionSlask}+%%{P2}].$$[%%{P4}*60+%%{P5}]-%%{P6}%%; \
+        tell %%{spellbotversionasker} CindyBot version %%{version} and counting
+
+/def -F -mregexp -t"^([A-z]+) (asks|tells) you 'wake up'" spellbotwakeup = \
+    bell 3%; \
+    tell %P1 Trying to wake %name.
+
+/def -ah -p5 -mregexp -t"^([A-z]+) (asks|tells) you 'go home'" spellbotgohome = \
+    /if ({P1} =~ groupleader) \
+       tell %{P1} Immediately, SIR!%;wor%;rr%; \
+    /elseif (groupleader =~ 'none') \
+      tell %{P1} I'm not in a group so I won't obey.%; \
+    /else \
+      tell %{P1} I will only obey that order from %{groupleader}!%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'compass'" spellbotcompass = \
+    /if (owner =~ "CindyNotanymore") \
+      gb compass%; \
+      /def -F -n1 -t"You get a compass from *" spellbotcompass2 = \
+        give compass %P1%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you '(soul |)crystal'" spellbotcrystal = \
+    /if (owner =~ "CindyNotanymore") \
+      gb crystal%; \
+      /def -F -n1 -t"You get Soul Crystal from *" spellbotcrystal2 = \
+        give crystal %P1%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you '(ar|arm[^ ]*)([ ]+([^ ]*)|)'$" spellbotar = \
+    /if (classMa | classPr | classNb | classAn | classWl | classTe) \
+      /if ({P4} =~ '' | {P4} =~ 'me') \
+        manawindp ar %P1%; \
+      /else \
+        manawindp ar %P4%; \
+      /endif%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'prot'" spellbotprot = \
+    /if (classPr) \
+      tell %P1 Protection is a self-only spell%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'imp[ ]*([^ ]*)'" spellbotimp = \
+    /if (classMa | classWl) \
+      /if ({P2} =~ '' | {P2} =~ 'me') \
+        tell %P1 Imp is self-only. You'll get a standard 'inv'.%; \
+        manawindp inv %P1%; \
+      /else \
+        tell %P1 Imp is self-only. %P2 will get a standard 'inv'.%; \
+        manawindp inv %P2%; \
+      /endif%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'inv[^ ]*[ ]*([^ ]*)'$" spellbotinv = \
+    /if (classMa | classWl) \
+      /if ({P2} =~ '' | {P2} =~ 'me') \
+        manawindp inv %P1%; \
+      /else \
+        manawindp inv %P2%; \
+      /endif%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'gimp'$" spellbotgimp = \
+    /if (classMa == 2) \
+      gimp%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'fly[ ]*([^ ]*)'$" spellbotfly = \
+    /if (classMa) \
+      /if ({P2} =~ '' | {P2} =~ 'me') \
+        manawindp fly %P1%; \
+      /else \
+        manawindp fly %P2%; \
+      /endif%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'gfly'$" spellbotgfly = \
+    /if (classMa == 2) \
+      manawindp gfly%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'str[^ ]*[ ]*([^ ]*)'$" spellbotstr = \
+    /if (classMa | classWl | classTe) \
+      /if ({P2} =~ '' | {P2} =~ 'me') \
+        manawindp str %P1%; \
+      /else \
+        manawindp str %P2%; \
+      /endif%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'bless[ ]*([^ ]*)'$" spellbotbl = \
+    /if (classPr | classTe) \
+      /if ({P2} =~ '' | {P2} =~ 'me') \
+        manawindp bl %P1%; \
+      /else \
+        manawindp bl %P2%; \
+      /endif%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'reg[^ ]*[ ]*([^ ]*)'$" spellbotreg = \
+    /if (classPr) \
+      /if ({P2} =~ '' | {P2} =~ 'me') \
+        manawindp reg %P1%; \
+      /else \
+        manawindp reg %P2%; \
+      /endif%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'cb'" spellbotcb1 = \
+    /if (classPr | classTe | classAn) \
+      /if ({P1} =~ groupleader | !fighting) \
+        hh %P1%; \
+      /elseif (owner !~ 'Valkyria69') \
+        tell %P1 Cure blind trigger disabled during fights.%; \
+        tell %P1 If you want to get rid of blindness, say "%{name} cb"%; \
+        tell %P1 If we are in a fight, some Pr/Pr _should_ cast gheal%; \
+      /endif%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'tranq'" spellbotTranq = \
+    /if (classAn == 2 & {P1} =~ groupleader) \
+      tranq%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'cos'" spellbotCos = \
+    /if (classAn == 2 & {P1} =~ groupleader) \
+      /if (fighting) retreat%; /endif%; \
+      manawindp cos%; \
+      /if (fighting & autoassist) assist%; /endif%; \
+    /endif
+
+/eval /def -F -mregexp -t"^([A-z]+) (says|tells the group,) '[%{name}|%{xname}].* (cb|blind)'$$" spellbotcb2 = \
+    /if (classPr) \
+      hh %%P1%%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'cc[ ]*([^ ]*)'$" spellbotcc = \
+    /if (classPr | classTe | classAn) \
+      /if ({P2} =~ '' | {P2} =~ 'me') \
+        manawindp cc %P1%; \
+      /else \
+        manawindp cc %P2%; \
+      /endif%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'heal[ ]*([^ ]*)'$" spellbothh = \
+    /if (classPr | classTe | classAn) \
+      /if ({P2} =~ '' | {P2} =~ 'me') \
+        manawindp hh %P1%; \
+      /else \
+        manawindp hh %P2%; \
+      /endif%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'pow[^ ]*[ ]*([^ ]*)'$" spellbothhh = \
+    /if (classPr & {P1} !~ name) \
+      /if ({P2} =~ '' | {P2} =~ 'me') \
+        manawindp hhh %P1%; \
+      /elseif ({P1} =~ groupleader) \
+        manawindp hhh %P2%; \
+      /endif%; \
+    /elseif (classAn & {P1} !~ name) \
+      /if ({P2} =~ '' | {P2} =~ 'me') \
+        manawindp bol %P1%; \
+      /elseif ({P1} =~ groupleader) \
+        manawindp bol %P2%; \
+      /endif%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'true[^ ]*[ ]*([^ ]*)'" spellbottrue = \
+    /if (classPr == 2 & {P1} !~ name) \
+      /if ({P2} =~ '' | {P2} =~ 'me') \
+        manawindp tru %P1%; \
+      /else \
+        manawindp tru %P2%; \
+      /endif%; \
+    /elseif (classPr & {P1} !~ name) \
+      /if ({P2} =~ '' | {P2} =~ 'me') \
+        manawindp pow %P1%; \
+      /else \
+        manawindp pow %P2%; \
+      /endif%; \
+    /elseif (classAn & {P1} !~ name) \
+      /if ({P2} =~ '' | {P2} =~ 'me') \
+        manawindp bol %P1%; \
+      /else \
+        manawindp bol %P2%; \
+      /endif%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you '(bol|burst)[^ ]*[ ]*([^ ]*)'" spellbotbol = \
+    /if (classAn & {P1} !~ name) \
+      /if ({P3} =~ '' | {P3} =~ 'me') \
+        manawindp bol %P1%; \
+      /else \
+        manawindp bol %P3%; \
+      /endif%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you '(rc|uncurse|remove curse)[ ]*([^ ]*)'$" spellbotrc = \
+    /if (classPr | classTe) \
+      /if ({P3} =~ '' | {P3} =~ 'me') \
+        manawindp rc %P1%; \
+      /else \
+        manawindp rc %P3%; \
+      /endif%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you '(poison|cp|rp)[ ]*([^ ]*)'$" spellbotcp = \
+    /if (classPr | classTe | classAn) \
+      /if ({P3} =~ '' | {P3} =~ 'me') \
+        rp %P1%; \
+      /else \
+        rp %P3%; \
+      /endif%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'sanc(t|)[^ ]*[ ]*([^ ]*)'$" spellbotsa = \
+    /if (classPr | classTe) \
+      /if ({P3} =~ '' | {P3} =~ 'me') \
+        manawindp sa %P1%; \
+      /else \
+        manawindp sa %P3%; \
+      /endif%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you '(major|sphere)'$" spellbotsphere = \
+    /if (classPr) \
+      manawindp sphere%; \
+    /endif
+
+/def -F -msimple -t"The area cools down as the dark red sphere dissolves." spellbotmajorsphere = \
+    /if (classPr) \
+      sphere%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'food'$" spellbotfood = \
+    /if (classPr) \
+      manawindp crf %P1%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'sat(iate|)'$" spellbotsatiate = \
+    /if (classAn & (1 | {P1} =~ groupleader)) \
+      manawindp sat %P1%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) gives you a barrel" spellbotfillbarrel = \
+    manawindp cw barrel%; \
+    give barrel %P1
+/def -F -mregexp -t"^([A-z]+) gives you a water jug\." spellbotfilljug = \
+    manawindp cw jug%; \
+    give jug %P1
+/def -F -mregexp -t"^([A-z]+) gives you a waterskin\." spellbotfillwaterskin = \
+    manawindp cw skin%; \
+    give skin %P1
+
+/def -F -mregexp -t"^([A-z]+) asks you 'rev[^ ]*[ ]*([^ ]*)'$" spellbotrev = \
+    /if (classPr) \
+      /if ({P2} =~ '' | {P2} =~ 'me') \
+        manap rev %P1%; \
+      /else \
+        manap rev %P2%; \
+      /endif%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) collapses with exhaustion!" spellbotrevexhau = \
+    /if (classPr) \
+      manap rev %P1%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'holy'$" spellbotholy = \
+    /if (classPr) \
+      manap hw %P1%; \
+    /endif
+
+; ----- IMMOLATION start -----
+
+/set recentimmo 0;
+/def -F -mregexp -t"^([A-z]+) tells (you|the group,) 'immo (fire|ice|cold|down|off)'$" spellbotimmo = \
+    /if ({P1} =~ groupleader & classWl == 2) \
+      /tfshow IMMO %{P3}%; \
+      /if (iHaveImmo == 0 & !recentimmo) \
+        /tfshow No immo on - need to manually change immo%; \
+      /else \
+        /if ({P3} =~ 'down' | {P3} =~ 'off')%; \
+          /set recentimmo 1%; \
+          delay 60 /set recentimmo 0%; \
+          /if (currmana <= 0) \
+            tell %{P1} Out of mana. Will probably fail to turn off immo.%; \
+          /endif%; \
+          /set wantImmo 0%; \
+          spellup%; \
+        /elseif ({P3} =~ 'fire') \
+          /set wantImmo 1%; \
+          spellup%; \
+        /elseif ({P3} =~ 'ice' | {P3} =~ 'cold') \
+          /set wantImmo -1%; \
+          spellup%; \
+        /endif%; \
+      /endif%; \
+    /endif
+
+; ----- IMMOLATION  end  -----
+
+; ----- COP start -----
+
+/def -F -mregexp -t"^([A-z]+) asks you 'cop'" spellbotcop = \
+    /if (classMa & (manapercent >= 10 | owner !~ 'Valkyria69')) \
+      manap cop %P1%; \
+    /endif
+
+/alias autocop \
+    /set autocop %*%; \
+    /if (classMa) \
+      /if (!autocop) \
+        /tfshow Ok. Autocop is now OFF.%; \
+        emote will no longer autocop.%; \
+        /if (autoassist) \
+          agg%; \
+        /endif%; \
+      /elseif (autocop == 1) \
+        /tfshow Ok. Autocop is now ON.%; \
+        emote will now autocop.%; \
+        agg%; \
+      /elseif (autocop == 2) \
+        /tfshow Ok. Aggiecop & Recop is now ON.%; \
+        emote will now autocop and aggiecop.%; \
+        noagg%; \
+      /else \
+        /tfshow BAD autocop choice. Must be 0, 1 or 2%; \
+        /tfshow Ok. autocop is now OFF.%; \
+        /set autocop 0%; \
+        /if (autoassist) \
+          agg%; \
+        /endif%; \
+      /endif%; \
+    /endif
+
+/def -F -ah -msimple -t"The ancient looking runes on the ground wither apart." spellbotacop1 = \
+    /set roomIsCopped 0%; \
+    /if (classMa & autocop >= 1) \
+      /if (currmana < 0 | (manapercent < 10 & owner =~ 'Valkyria69')) \
+        gt COP is gone and I have no mana for a new cop!%; \
+      /else \
+        cop%; \
+        get coptry%; \
+      /endif%; \
+    /endif
+
+/def -F -ah -t"* notices your retreat and launches an attack at you." spellbotacop3 = \
+    ttshow --- Retreat failed ---%; \
+    /if (classMa & pg & autocop >= 2 & !nomagic & currmana >= 0) \
+      retreat%;cop%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) (asks|tells) you 'a[uto|ggro]?[re]?cop[ ]?(.*)'$" spellbotautocop = \
+    /if ({P1} !~ groupleader) \
+      tell %{P1} acop setting can only be changed by group leader.%; \
+    /elseif (!classMa) \
+      tell %{P1} I'm not a mage.%; \
+    /else \
+      /if ({P3} =~ 'off') \
+        autocop 0%; \
+      /elseif ({P3} =~ 'on') \
+        autocop 2%; \
+      /elseif  ({P3} =~ '') \
+        /if ((autocop == 0) | (autocop == 1)) \
+          autocop 2%; \
+        /else \
+          autocop 0%; \
+        /endif%; \
+      /elseif ({P3} == 0 | {P3} == 1 | {P3} == 2) \
+        autocop %P3%; \
+      /else \
+        tell %P1 Possible autocop values are: 0 (none), 1 (autoREcop), 2 (aggiecop)%; \
+      /endif%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) tells the group, 'keep cop'$" spellbotkeepcop = \
+    /if (classMa & owner !~ 'Valkyria69') \
+      /if (iminatipi) \
+        gt Not me.%; \
+      /elseif (autocop) \
+        gt I will.%; \
+      /elseif (classMa) \
+        gt Use tell and I will.%; \
+      /endif%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) (asks|tells) you 'keep cop'$" spellbotautocop2 = \
+    /if (classMa) \
+      /if (autocop) \
+        tf %{P1} emote is keeping cop.%; \
+      /else \
+        autocop 1%; \
+        /if (position =~ 'sleep') \
+          rest%; \
+        /endif%; \
+      /endif%; \
+    /endif
+
+/def -F -msimple -ah -t'The ground is covered with ancient looking runes.' spellbotcopped1 = \
+    /set roomIsCopped 1
+
+/def -F -msimple -ahCmagenta -t'The ground gets covered with ancient runes of protection.' spellbotcopped2 = \
+    /set roomIsCopped 1
+
+/set tryingtocop 0
+/set personToRescue none
+/def -F -mregexp -p55555 -t', fighting ([A-z]+).( \(.+)?$' spellbotcopped3 = \
+    /if (classMa & pg & autocop >= 2 & !roomIsCopped & !nomagic & !tryingtocop & currmana >= 0) \
+      cop%; \
+      /set tryingtocop 1%; \
+      get coptry%; \
+    /elseif (rescue & pg & rescuelist =/ strcat('*:', {P1}, ':*')) \
+      /set personToRescue %{P1}%; \
+      rescue %{P1}%; \
+    /endif
+
+/def -F -msimple -ag -t"You fail the rescue." rescueFail = \
+    rescue %{personToRescue}
+
+
+/def -F -msimple -ag -t"You don't see a coptry here." spellbotcopped3b =\
+    /if (classMa) \
+      /set tryingtocop 0%; \
+      /if (autocop >= 1 & pg & !nomagic & !roomIsCopped & currmana >= 0 & (manapercent > 10 | owner !~ 'Valkyria69')) \
+        /if (owner =~ 'Valkyria69' & position =~ 'rest') \
+          /tfshow UP-COP-REST!%; \
+          ;upp;cop;rest%; \
+        /else \
+          /tfshow COP!%; \
+          cop%; \
+        /endif%; \
+        /set tryingtocop 1%; \
+        get coptry%; \
+      /elseif (position =~ 'stand' & autoassist) \
+        assist%; \
+      /endif%; \
+    /endif
+
+/def -p3 -F -msimple -ah -t'You join the fight!' spellbotcopped4 = \
+    /if (classMa & autocop >= 2 & !nomagic & !roomIsCopped & !tryingtocop & currmana >= 0) \
+      /tfshow COP!%; \
+      cop%; \
+      /if (autoassist) \
+        assist%; \
+      /endif%; \
+    /endif
+
+/def -F -mregexp -t'^Obvious exits: \[(.*)\]$' spellbotcopped5 = \
+    /set roomIsCopped 0%; \
+    /set exitlist %{P1}%; \
+    /if ( regmatch("^[^,]+$", {exitlist}) ) \
+      /set exits 1%; \
+    /elseif ( regmatch("^[^,]+,[^,]+$", {exitlist}) ) \
+      /set exits 2%; \
+    /elseif ( regmatch("^[^,]+,[^,]+,[^,]+$", {exitlist}) ) \
+      /set exits 3%; \
+    /elseif ( regmatch("^[^,]+,[^,]+,[^,]+,[^,]+$", {exitlist}) ) \
+      /set exits 4%; \
+    /else \
+      /set exits 5%; \
+    /endif
+
+/def -F -mregexp -ah -t"^You are rescued by ([^,]+), you are confused!$" spellbotcopped6 = \
+    /if (classMa & autocop >= 2 & !roomIsCopped & !nomagic & !tryingtocop & currmana >= 0 & (manapercent > 10 | owner !~ 'Valkyria69')) \
+      cop%; \
+      /set tryingtocop 1%; \
+      get coptry%; \
+    /elseif (pg & autoassist) \
+      assist%; \
+    /endif
+/def -F -ah -t'You fail to inscribe new runes of protection.' spellbotcopped8 = \
+    /set roomIsCopped 1
+
+; ----- COP  end  -----
+
+; ----- SUMMON start -----
+
+/def -ah -p5 -mregexp -t"^([A-z]+) tells (you|the group,) '(summon|SUMMON)([ ]*)([^ ]*)'" spellbotsu = \
+    /if (classPr & {P5} !~ name & {P5} !~ xname & ({P2} =~ 'you' | {P1} =~ groupleader)) \
+      /if (({area} =~ 'Karandras' & manapercent < 30) & \
+           ({P5} =~ '' | {P5} =~ 'me') & ({P3} =~ 'summon')) \
+        tf %P1 emote - I'm at %{currentroom} in %{area} (and low on mana). Just recall and walk here?%; \
+        tf %P1 emote - If you really need a summon, tell me "SUMMON" (with caps).%; \
+      /elseif ((area =~ 'UnderWorld' | area =~ 'DarkSpawn' | \
+                area =~ 'Haarvenu' | area =~ 'WoodsOfWhispers') & \
+               ({P5} =~ '' | {P5} =~ 'me') & ({P3} =~ 'summon')) \
+        tf %P1 emote - I'm at %{currentroom} in %{area}. I can probably not summon you to this area.%; \
+        tf %P1 emote - If you want me to try, tell me "SUMMON" (with caps).%; \
+      /elseif (iminatipi) \
+        tf %P1 emote - I'm in an outpost, so I can't summon you now. Will tell you when I get out.%; \
+        /eval /def -n1 -msimple -F -t"You leave the outpost." summonsafetipi%P1 = \
+          tf %P1 emote - I've left the outpost now! (bot msg)%; \
+      /elseif (saferoom) \
+        /if ({P5} =~ '' | {P5} =~ 'me') \
+          tf %P1 emote - I can't summon you. I seem to be in a safe area and can't summon people to this room.%; \
+        /else \
+          tf %P1 emote - I can't summon %P5. I seem to be in a safe area and can't summon stuff to this room.%; \
+        /endif%; \
+        /eval /def -n1 -msimple -F -t"You follow $[groupleader]'s group." summonsafe2b%{P1}1 = \
+          tf %P1 emote - We have moved now! (bot msg)%%%; \
+          /purge summonsafe2b%{P1}*%%; \
+        /eval /def -n1 -mregexp -F -t"^%P1('s group|) (arrives|flies in) from " summonsafe2b%{P1}2 = \
+          /purge summonsafe2b%{P1}*%%; \
+        /eval /def -n1 -msimple -F -t"%P1 arrives suddenly." summonsafe2b%{P1}3 = \
+	  /set nomagic 0%%%; \
+          /purge summonsafe2b%{P1}*%%; \
+        /eval /def -p5 -n1 -msimple -F -t"%P1 materializes in front of your nose grinning wildly." summonsafe2b%{P1}4 = \
+          /purge summonsafe2b%{P1}*%; \
+      /else \
+        bell 1%; \
+        /if (windcoming) \
+          /if ({P5} =~ '' | {P5} =~ 'me') \
+            tf %P1 emote - Wind is coming, so if I manage to summon you, I suggest you SIT!%; \
+            /def -F -n1 -msimple -t"A raging tempest races through the room, leaving devastation in its wake." sumtrigspecialwindpass = \
+              tf %P1 emote - Wind has passed now%; \
+          /elseif ({P4} !~ '') \
+            tf %P5 emote - Wind is coming, so if I manage to summon you, I suggest you SIT!%; \
+          /endif%; \
+        /endif%; \
+        /if ({P5} =~ '' | {P5} =~ 'me') \
+          /set summonasker %P1%; \
+          drop summontellstart%; \
+          manap su 0.%P1%; \
+          drop summontelldone%; \
+          /def -F -ag -msimple -t"You don't seem to have a summontellstart." sumtrigspecial0 = \
+            /def -F -ag -msimple -t"You don't seem to have a summontelldone." sumtrigspecial1 = \
+              /purge sumtrigspecial*%%; \
+            /def -F -msimple -t"That person is in a safe area!" sumtrigspecial3 = \
+              tf %P1 emote - You are in a safe area!%%%; \
+              /purge sumtrigspecial*%%; \
+            /def -F -msimple -t"You failed." sumtrigspecial4 = \
+              tf %P1 emote - I failed. Wrong continent, perhaps?%%%; \
+              /purge sumtrigspecial*%%; \
+            /def -F -msimple -t"Impossible!  You can't concentrate enough!" sumtrigspecial6 = \
+              tf %P1 emote - Can't concentrate enough (fighting & failed retreat).%%%; \
+              /purge sumtrigspecial*%%; \
+            /def -F -msimple -t"You cant seem to do that here!" sumtrigspecial7 = \
+              tf %P1 emote - Nomag here, so I couldn't do anything.%%%; \
+              /purge sumtrigspecial*%%; \
+            /def -F -msimple -t"You lost your concentration!" sumtrigspecial8 = \
+;              tf %P1 emote - Lost con. Retrying...%%%; \
+              manap su 0.%P1%%%; \
+              drop summontelldone%%%; \
+              /def -n1 -p22 -ag -msimple -t"You don't seem to have a summontelldone." sumtrigspecial1b%%; \
+            /def -F -msimple -t"%P1 arrives suddenly." sumtrigspecial9 = \
+              /set nomagic 0%%%; \
+              /purge sumtrigspecial*%; \
+        /elseif ({P4} =~ '') \
+          tf %P1 emote - summon%{P5}? (bot msg)%; \
+        /else \
+          /set summonasker %P1%; \
+          drop summontellstart%; \
+          manap su 0.%P5%; \
+          drop summontelldone%; \
+          /def -F -ag -msimple -t"You don't seem to have a summontellstart." sumtrigspecial0 = \
+            /def -F -ag -msimple -t"You don't seem to have a summontelldone." sumtrigspecial1 = \
+              tf %P1 emote - summon %P5 done. Result: Unknown%%%; \
+              /purge sumtrigspecial*%%; \
+            /def -F -msimple -t"Nobody playing by that name." sumtrigspecial2 = \
+              tf %P1 emote - Nobody playing by that name.%%%; \
+              /purge sumtrigspecial*%%; \
+            /def -F -msimple -t"That person is in a safe area!" sumtrigspecial3 = \
+              tf %P1 emote - %P5 is in a safe area!%%%; \
+              /purge sumtrigspecial*%%; \
+            /def -F -msimple -t"You failed." sumtrigspecial4 = \
+              tf %P1 emote - I failed. Wrong continent, perhaps?%%%; \
+              /purge sumtrigspecial*%%; \
+            /def -F -mregexp -t"^As the words escape your lips and (.*) travels$$$" sumtrigspecial5 = \
+              tf %P1 emote - %%%P1 is aggressive, so I failed summoning it.%%%; \
+              /purge sumtrigspecial*%%; \
+            /def -F -msimple -t"Impossible!  You can't concentrate enough!" sumtrigspecial6 = \
+              tf %P1 emote - Can't concentrate enough (fighting & failed retreat).%%%; \
+              /purge sumtrigspecial*%%; \
+            /def -F -msimple -t"You cant seem to do that here!" sumtrigspecial7 = \
+              tf %P1 emote - Nomag here, so I couldn't do anything.%%%; \
+              /purge sumtrigspecial*%%; \
+            /def -F -msimple -t"You lost your concentration!" sumtrigspecial8 = \
+;              tf %P1 emote - Lost con. Retrying...%%%; \
+              manap su 0.%P5%%%; \
+              drop summontelldone%%%; \
+              /def -n1 -p22 -ag -msimple -t"You don't seem to have a summontelldone." sumtrigspecial1b%%; \
+            /def -F -msimple -t"Way to go, you just wasted your mana!" sumtrigspecial9 = \
+              tf %P1 emote - Way to go, I just wasted my mana!%%%; \
+              /purge sumtrigspecial*%%; \
+            /def -F -msimple -t"You can't summon mobs to Karandras." sumtrigspecial10 = \
+              tf %P1 emote - I can't summon mobs to Karandras.%%%; \
+              /purge sumtrigspecial*%%; \
+            /def -F -msimple -t"You can't summon creatures to a safe area!" sumtrigspecial11 = \
+              tf %P1 emote - I can't summon creatures to a safe area.%%%; \
+              /purge sumtrigspecial*%%; \
+            /def -mregexp -F -t" shrugs off your feeble attempt." sumtrigspecial12 = \
+              tf %P1 emote - %PL shrugged off my feeble attempt.%%%; \
+              /purge sumtrigspecial*%%; \
+            /def -F -mregexp -t" arrives suddenly.$$$" sumtrigspecial13 = \
+              /set nomagic 0%%%; \
+              /if ('%P1' !~ {PL}) \
+                tf %P1 emote - %%%PL arrives suddenly.%%%; \
+              /endif%%%; \
+              /purge sumtrigspecial*%; \
+        /endif%; \
+      /endif%; \
+    /endif
+
+/def -F -ag -msimple -t"You don't seem to have a summontelldone." sumtrigxtra
+
+/def -ah -p5 -mregexp -t"^([A-z]+) tells you 'squeue'" spellbotsqueue = \
+    /if (classPr) \
+      tf %P1 emote - Sorry. I don't have squeue. I summon directly, and if I'm in safe, I'll send a tell when I move, so you can try again.%; \
+    /endif
+
+; ----- SUMMON  end  -----
+
+/def -ah -p5 -mregexp -t"^([A-z]+) tells you '(come|dd|merge)'" spellbotcome = \
+    /if ({P1} !~ groupleader) \
+      tell %{P1} %{P2} can only be requested by group leader.%; \
+    /else \
+      /if (classMa) \
+        /if (pg) \
+          tf %{P1} emote snaps to attention.%;manap dd %{P1}%; \
+        /endif%; \
+      /elseif (classNb) \
+          merge%; \
+      /endif%; \
+    /endif
+
+/def -ah -p5 -mregexp -t"^([A-z]+) tells the group, 'get here'" spellbotgethere = \
+    /if (classMa) \
+      /if ({P1} =~ groupleader) \
+        manap dd %{groupleader}%; \
+      /endif%; \
+    /elseif (classNb) \
+        merge%; \
+    /endif
+
+/def -msimple -t"You stretch out for your shadow..." shadowmerged = \
+    sd %{groupleader}
+
+/def -F -mregexp -t"^([A-z]+) asks you 'brew (.*)'$" spellbotbrew = \
+    /if (classMa | classPr) \
+      brew %P2%; \
+      pb all.escape%; \
+      give potion %P1%; \
+      gb escape%; \
+    /endif
+/def -F -mregexp -t"^([A-z]+) asks you 'darkvision'$" spellbotdarkvision = \
+    /if (classMa & ({P1} =~ groupleader | owner !~ 'Valkyria69')) \
+      brew darkvision%; \
+      give darkvision %P1%; \
+    /endif
+/def -F -mregexp -t"^([A-z]+) asks you 'detect invis'$" spellbotdetectinvis = \
+    /if (classMa) \
+      brew detect invis%; \
+      give detect %P1%; \
+    /endif
+/def -F -mregexp -t"^([A-z]+) asks you 'sense'$" spellbotsenselife = \
+    /if (classPr) \
+      brew sense life%; \
+      give sense %P1%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'scribe (.*)'$" spellbotscribe = \
+    /if ((classMa | classPr) & {P2} !~ 'wither' & {P2} !~ 'mass pain' & {P2} !~ 'sleep' & {P2} !~ 'summon') \
+      scribe %P2%; \
+      pb parchment%; \
+      give scroll %P1%; \
+    /elseif (owner =~ "Cindy" & classMa & ({P2} !~ 'enchant' | {P2} !~ 'enchant weapon')) \
+      scribe %P2%; \
+      pb parchment%; \
+      give scroll %P1%; \
+    /endif
+
+
+/def -F -mregexp -t"^([A-z]+) asks you 'powerblind'$" spellbotpowerblind = \
+    /if (classMa) \
+      bli2scroll%; \
+      give powerword %P1%; \
+    /endif
+/def -F -mregexp -t"^([A-z]+) asks you 'summon'$" spellbotsummon = \
+    /if (classPr) \
+      scribe summon%; \
+      give summon %P1%; \
+    /endif
+/def -F -mregexp -t"^([A-z]+) asks you 'wither'$" spellbotwither = \
+    /if (classPr) \
+      scribe wither%; \
+      give wither %P1%; \
+    /endif
+
+
+
+/alias blindonentry \
+    /if (classMa) \
+      gtf emote will try to blind %* on entry... once!%; \
+      noagg%; \
+      /eval /def -F -n1 -t'You follow * group.' spellbotblindonentry = \
+        bli2 %%*%%%; \
+        /if (autoassist) \
+          assist%%%; \
+        /endif%%%; \
+        /if (autocop < 2) \
+          /tfshow Turning on aggie mode again!%%%; \
+          agg%%%; \
+        /endif%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you '[p]?blind ([^ ]*)'" spellbotaskblindmob = \
+    /if ({P1} =~ groupleader) \
+      bli2 %P2%; \
+    /else \
+      tell %P1 I will only obey that order from %{groupleader}!%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'sleep ([^ ]*)'" spellbotasksleepmob = \
+    /if ({P1} =~ groupleader) \
+      sle %P2%; \
+    /else \
+      tell %P1 I will only obey that order from %{groupleader}!%; \
+    /endif
+
+
+
+/def -p40 -mregexp -t"^([A-z]+) (asks|tells) you 'locate ([^ ]+)[ ]?(.*)'$" spellbotlox = \
+    donothing
+
+/set maxObjectsToShow 10
+/def -F -p50 -mregexp -t"^([A-z]+) (asks|tells) you 'locate ([^ ]+)[ ]?(.*)'$" spellbotlo = \
+    /ismember %{P1} %{grouplist}%; \
+    /if (owner =~ 'Valkyria69') \
+      donothing%; \
+    /elseif (!inlist & groupleader != 'none') \
+      tfnextlineshow Not group member, so doing nothing.%; \
+      donothing%; \
+    /elseif (groupleader =~ name) \
+      tell %{P1} Locate-trigger turned off when leading.%; \
+    /elseif (autospellup == 2 | (autospellup & pg)) \
+      /if (nomagic) \
+        tell %{P1} I think I'm in a nomagic-room, but I will try.%; \
+      /endif%; \
+      manawindp lo %{P3}%; \
+      drop locatedone%; \
+      /set locatefound 1%; \
+      /if ({P4} =~ '') \
+        /eval /set name0=$[{P3}]%; \
+      /else \
+        /eval /set name0=$[{P4}]%; \
+      /endif%; \
+      /eval /set name1=$[tolower(name0)]%; \
+      /eval /set name2=$[strcat(toupper(substr(name0, 0, 1)), tolower(substr(name0, 1)))]%; \
+      /if ((name0 =~ name1) | (name0 =~ name2)) \
+        /eval /set name3=$[toupper(name0)]%; \
+      /else \
+        /eval /set name3=%{name0}%; \
+      /endif%; \
+      /def -F -mregexp -t"%{name1}" spellbotlohelper1 = \
+        /set locatefound=$$[{locatefound} + 1]%%; \
+        /if (locatefound <= maxObjectsToShow) \
+          tf %{P1} emote : %%{PL}%{name1}%%{PR}%%; \
+        /endif%; \
+      /def -F -mregexp -t"%{name2}" spellbotlohelper1b = \
+        /set locatefound=$$[{locatefound} + 1]%%; \
+        /if (locatefound <= maxObjectsToShow) \
+          tf %{P1} emote : %%{PL}%{name2}%%{PR}%%; \
+        /endif%; \
+      /def -F -mregexp -t"%{name3}" spellbotlohelper1c = \
+        /set locatefound=$$[{locatefound} + 1]%%; \
+        /if (locatefound <= maxObjectsToShow) \
+          tf %{P1} emote : %%{PL}%{name3}%%{PR}%%; \
+        /endif%; \
+      /def -F -msimple -t"Ok." spellbotlohelper2 = \
+        /set locatefound 0%; \
+      /def -F -msimple -t"Nothing at all by that name." spellbotlohelper3 = \
+        tf %{P1} emote : No %{P3} found!%%; \
+        /set locatefound 1%; \
+      /def -F -msimple -t"You are very confused." spellbotlohelper4 = \
+        tf %{P1} emote : There are too many %{P3} to see them all.%; \
+      /def -F -ag -msimple -t"You don't seem to have a locatedone." spellbotlohelperfinal = \
+        /tfshow testIGEN %{locatefound}, %{P3} , %{P4} %%; \
+        /if (!locatefound) \
+	  /tfshow test%%; \
+          /if ('%P4' =~ '') \
+            /tfshow tf %{P1} emote : Items found, but none containing the string "%{P3}".%%; \
+          /else \
+            /tfshow tf %{P1} emote : Items found, but none matching the string "%{P4}".%%; \
+          /endif%%; \
+        /endif%%; \
+        /if (locatefound > maxObjectsToShow & '%P4' =~ '') \
+          tf %{P1} emote : You got %%{locatefound} hits. Showing max %%{maxObjectsToShow}. If you add a second word, I'll only send you the hits containing that word.%%; \
+          tf %{P1} emote : Eg, "tell cindy locate %{P3} blue" (if you're looking for a blue one) or "tell cindy locate %{P3} dragon" (if it's on a dragon)%%; \
+        /elseif (locatefound > maxObjectsToShow & '%P4' !~ '') \
+          tf %{P1} emote : You got %%{locatefound} hits. Showing max %%{maxObjectsToShow}. A better second word might help. The name of the mob carrying the item usually helps.%%; \
+        /endif%%; \
+        /purge spellbotlohelper*%; \
+      /def -F -ag -msimple -t"In your dreams, or what?" spellbotlohelperfinal2 = \
+        /purge spellbotlohelper*%; \
+    /endif
+
+
+/alias manawindp \
+    /if (nomagic) \
+      tell %2 I'm afraid I'm in a nomagic-room, but I will try.%; \
+    /endif%; \
+    /if (!spellbot) \
+      donothing%; \
+    /elseif (currmana < 1) \
+      tell %2 Afraid I'm out of mana (%{currmana} m)%; \
+    /elseif (windcoming) \
+      tell %2 Ask me again after the wind has passed by.%; \
+    /else \
+      %*%; \
+    /endif
+
+/alias manap \
+    /if ({1} =~ 'su') \
+      /set playertosummon=$[replace("0.", "", {2})]%; \
+    /endif%; \
+    /if (nomagic) \
+      /if ({1} =~ 'su') \
+        tf $[playertosummon] emote - I think I'm in a nomagic-room, but I will try.%; \
+      /else \
+        tf %2 emote - I think I'm in a nomagic-room, but I will try.%; \
+      /endif%; \
+    /endif%; \
+    /if (!spellbot) \
+      donothing%; \
+      tf %2 emote - Spell bot has been turned off.%; \
+    /elseif (currmana < 1) \
+      /if ({1} =~ 'su') \
+        tf $[playertosummon] emote - Afraid I'm out of mana (%{currmana} m)%; \
+      /else \
+        tf %2 emote - Afraid I'm out of mana (%{currmana} m)%; \
+      /endif%; \
+    /else \
+      %*%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) (asks|tells) you 'gate ([A-z]+)'$" spellbotgate = \
+    /if (classPr == 2) \
+      /if ({P1} !~ groupleader) \
+        tell %{P1} gate can only be requested by group leader.%; \
+      /else \
+        tell %{P1} trying gate... Untested so can't say if I succeed or fail.%; \
+        manawindp gate %{P3}%; \
+      /endif%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'gheal'$" spellbotgheal = \
+    /if (classPr == 2 & {P1} =~ groupleader) \
+      manawindp gheal%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) asks you 'gpow'$" spellbotgpow = \
+    /if (classPr == 2 & {P1} =~ groupleader) \
+      manawindp gpow%; \
+    /endif
+
+/def -p200 -t'Elaxer asks you *' spellbotskipelaxer = \
+    donothing
+

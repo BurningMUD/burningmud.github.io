@@ -1,0 +1,447 @@
+; dt.tf
+
+; Deathtrap safety. When doing an "exits", if any nearby room is a DT, the
+; text "<<<R.I.P?>>>" will be added to the end of that exit. The setmovehook
+; in the bottom will trigger on any such exit line, preventing you from moving
+; in that direction and give you a warning (trying again will let you walk
+; there). Moving in any other direction will work just as usual.
+
+/purge substdt*
+
+; ------------------------  DT subst start  ------------------------
+
+/def -p2 -F -mregexp -t"^\[INFO\] ([^ ]+) hit death trap at (.+)\.$" substdtList = \
+    /if ({P2} =~ 'Pit') \
+      /let dtarea=3oS%; \
+    /elseif ({P2} =~ 'The unstable part of the wall') \
+      /let dtarea=Alchor%; \
+    /elseif ({P2} =~ 'Shroud of death') \
+      /let dtarea=Alterac%; \
+    /elseif ({P2} =~ 'AAAOOOUCCHH!') \
+      /let dtarea=Krashkarand%; \
+    /elseif ({P2} =~ 'Falling into the gorge' | {P2} =~ 'An ill-balanced rock') \
+      /let dtarea=Amazonia%; \
+    /elseif ({P2} =~ 'Unstable ledge') \
+      /let dtarea=Amber Keep%; \
+    /elseif ({P2} =~ 'A Stalagmite Forest') \
+      /let dtarea=Ancalador%; \
+    /elseif ({P2} =~ 'Buried under a ton of rocks') \
+      /let dtarea=Antiriad%; \
+    /elseif ({P2} =~ 'The spider web') \
+      /let dtarea=HaonDor%; \
+    /elseif ({P2} =~ 'Mahatma\'s Inescapable Trap') \
+      /let dtarea=Arachnos%; \
+    /elseif ({P2} =~ 'Falling Deep into a Void') \
+      /let dtarea=Apocalypse%; \
+    /elseif ({P2} =~ 'A pit of spikes' | {P2} =~ 'Lemmings landing' | {P2} =~ 'Stench of death') \
+      /let dtarea=Battlefields%; \
+    /elseif ({P2} =~ 'Burnt Alive In The Molten Lava') \
+      /let dtarea=Cathedral%; \
+    /elseif ({P2} =~ 'Falling into the bottomless pit') \
+      /let dtarea=CitadelOfOrder%; \
+    /elseif ({P2} =~ 'Lion cages.') \
+      /let dtarea=Colosseum%; \
+    /elseif ({P2} =~ 'Trapped in the web!') \
+      /let dtarea=Dark Spawn%; \
+    /elseif ({P2} =~ 'The Drop' | {P2} =~ 'A deadly weir') \
+      /let dtarea=Darkwater%; \
+    /elseif ({P2} =~ 'Corpse room') \
+      /let dtarea=Demoncity%; \
+    /elseif ({P2} =~ 'Hanging on the rope') \
+      /let dtarea=Desert%; \
+    /elseif ({P2} =~ 'Walking through DragonSpyre') \
+      /let dtarea=Dragonspyre%; \
+    /elseif ({P2} =~ 'Beaten to death by the Mangler' | {P2} =~ 'The mad doctors office' | {P2} =~ 'Trapped in a shrinking cell' | {P2} =~ 'A very dark, almost black, hole') \
+      /let dtarea=Dragontail Isle%; \
+    /elseif ({P2} =~ 'Sacrificial Pit') \
+      /let dtarea=Drow City%; \
+    /elseif ({P2} =~ 'Trapped in your personal hell!') \
+      /let dtarea=Dunheim%; \
+    /elseif ({P2} =~ 'Well') \
+      /let dtarea=Earthsea%; \
+    /elseif ({P2} =~ 'Falling off the edge of the mountain!') \
+      /let dtarea=Elven Lands%; \
+    /elseif ({P2} =~ 'WAY Far Down into the Valley') \
+      /let dtarea=Elven Valley%; \
+    /elseif ({P2} =~ 'Falling down to the ground') \
+      /let dtarea=Elven Village%; \
+    /elseif ({P2} =~ 'The Cave-In') \
+      /let dtarea=Enchanted Forest%; \
+    /elseif ({P2} =~ 'Pool of quicksand') \
+      /let dtarea=Feverish Swamps%; \
+    /elseif ({P2} =~ 'Too Bright to Tell' | {P2} =~ 'Black Hole') \
+      /let dtarea=Galaxy%; \
+    /elseif ({P2} =~ 'Certain Death' | {P2} =~ 'A pit of jutting spears') \
+      /let dtarea=Ghenna%; \
+    /elseif ({P2} =~ 'A Bottomless Pit') \
+      /let dtarea=Gorm%; \
+    /elseif ({P2} =~ 'The short way to hell...') \
+      /let dtarea=Graveyard%; \
+    /elseif ({P2} =~ 'The Deep Crevasse') \
+      /let dtarea=Ice Wall%; \
+    /elseif ({P2} =~ 'A playground' | {P2} =~ 'Heaven' | {P2} =~ 'A Dark Bottomless Pit') \
+      /let dtarea=Impact%; \
+    /elseif ({P2} =~ 'A fathomless room') \
+      /let dtarea=Kerjim%; \
+    /elseif ({P2} =~ 'Uh-Oh!' | {P2} =~ 'Whoops...') \
+      /let dtarea=Kerofk%; \
+    /elseif ({P2} =~ 'Wily Ladder' | {P2} =~ 'A small attic') \
+      /let dtarea=Khronatio%; \
+    /elseif ({P2} =~ 'Darkness') \
+      /let dtarea=Laboratory%; \
+    /elseif ({P2} =~ 'Off The Edge') \
+      /let dtarea=Lagamore%; \
+    /elseif ({P2} =~ 'The Whirlpool') \
+      /let dtarea=Lizard Lair%; \
+    /elseif ({P2} =~ 'A Large Magma Pool') \
+      /let dtarea=Lorca%; \
+    /elseif ({P2} =~ 'Eaten by the Wardrobe') \
+      /let dtarea=Lorchid%; \
+    /elseif ({P2} =~ 'Brittle Steps') \
+      /let dtarea=Midgaard%; \
+    /elseif ({P2} =~ 'edon lacoF' | {P2} =~ 'DioV ehT') \
+      /let dtarea=Mirror Beyond%; \
+    /elseif ({P2} =~ 'The Rickety Pier') \
+      /let dtarea=Myrridon%; \
+    /elseif ({P2} =~ 'A poison gas cloud' | {P2} =~ 'In The Huge Boiling Pan') \
+      /let dtarea=Myrridon Mines%; \
+    /elseif ({P2} =~ 'Steep slope') \
+      /let dtarea=Northern Plains%; \
+    /elseif ({P2} =~ 'A pool full of man-eating fish') \
+      /let dtarea=Ocean Floor%; \
+    /elseif ({P2} =~ 'The Impassible Current' | {P2} =~ 'Schylla\'s Trap') \
+      /let dtarea=Oceania%; \
+    /elseif ({P2} =~ 'Offer altar') \
+      /let dtarea=Old Kingdom%; \
+    /elseif ({P2} =~ 'Climbing the Great Pyramid') \
+      /let dtarea=Pyramid%; \
+    /elseif ({P2} =~ 'Inside a Pentagram') \
+      /let dtarea=Rand\s Tower'%; \
+    /elseif ({P2} =~ 'Free fall from the Chain') \
+      /let dtarea=Redferne\s'%; \
+    /elseif ({P2} =~ 'Mid-Air') \
+      /let dtarea=Scubdu\s'%; \
+    /elseif ({P2} =~ 'Mid-air') \
+      /let dtarea=Sewers & Moria%; \
+    /elseif ({P2} =~ 'Walking The Plank' | {P2} =~ 'High Speed Dirt') \
+      /let dtarea=Shipwreck%; \
+    /elseif ({P2} =~ 'A Pit Full of Deadly Vipers') \
+      /let dtarea=Snake Lair%; \
+    /elseif ({P2} =~ 'The Free fall') \
+      /let dtarea=Solom%; \
+    /elseif ({P2} =~ 'The well') \
+      /let dtarea=Storm Giant%; \
+    /elseif ({P2} =~ 'Falling away' | {P2} =~ 'The portcullis mechanism' | {P2} =~ 'The crumbling floor' | {P2} =~ 'A collision of spiralling dimensions' | {P2} =~ 'Firm ground' | {P2} =~ 'The Vault of Demons' | {P2} =~ 'Within the eye of an energy storm') \
+      /let dtarea=Taon%; \
+    /elseif ({P2} =~ 'On the second floor') \
+      /let dtarea=Thalos%; \
+    /elseif ({P2} =~ 'Collapsed stairs') \
+      /let dtarea=Tomaaukkhen%; \
+    /elseif ({P2} =~ 'The long fall into oblivion' | {P2} =~ 'A long drop to certain death') \
+      /let dtarea=Toormail%; \
+    /elseif ({P2} =~ 'The Target Area') \
+      /let dtarea=Tournament%; \
+    /elseif ({P2} =~ 'Submerged in icy cold water') \
+      /let dtarea=Turvagar%; \
+    /elseif ({P2} =~ 'Cracks in the earth' | {P2} =~ 'Falling into the flames' | {P2} =~ 'By a flaming cross') \
+      /let dtarea=Unholy Darkness%; \
+    /elseif ({P2} =~ 'A pack of evil ugly looking <0)+++<' | {P2} =~ 'Abnormally calm deep waters' | {P2} =~ 'The mouth of a yellow gupper fish' | {P2} =~ 'Stuck on the sharp fin of a yellow gupper fish') \
+      /let dtarea=Venden%; \
+    /elseif ({P2} =~ 'The burial' | {P2} =~ 'Sinking into the quagmire') \
+      /let dtarea=VoK%; \
+    /elseif ({P2} =~ 'House of Pancakes') \
+      /let dtarea=Wyvern Tower%; \
+    /elseif ({P2} =~ 'Chaos Vortex') \
+      /let dtarea=Zorn Uzkul%; \
+    /elseif ({P2} =~ 'The sucking quicksand') \
+      /let dtarea=Ancient Lands%; \
+    /elseif ({P2} =~ 'Jumping off a cliff without a parachute?') \
+      /let dtarea=Snowball Land%; \
+    /elseif ({P2} =~ 'In the pit') \
+      /let dtarea=Abandoned Caves%; \
+    /elseif ({P2} =~ 'Inside the ramshackled cabin') \
+      /let dtarea=Woods of Whispers%; \
+    /elseif ({P2} =~ 'A broken hayloft' | {P2} =~ 'Pit of Death') \
+      /let dtarea=Woods of Whispers%; \
+    /elseif ({P2} =~ 'The Pit of Sarlaak') \
+      /let dtarea=DarkUnder%; \
+    /elseif ({P2} =~ 'Falling into the Gorge') \
+      /let dtarea=Shadowdwell%; \
+    /elseif ({P2} =~ 'The Room Of Death' | {P2} =~ 'On the second floor of the library' | {P2} =~ 'An infinity trap' | {P2} =~ 'In the fire pit' | {P2} =~ 'Under a watchtower') \
+      /let dtarea=Known DT, but unknown where%; \
+    /elseif ({P2} =~ 'The Torture Chamber') \
+      /let dtarea=Known DT, but unknown where (NC)%; \
+    /else \
+      /let dtarea=UNKNOWN DT!!!%; \
+    /endif%; \
+    /substitute -p @{hCwhite}[@{hCred}INFO@{hCwhite}] @{n}%{P1} hit death trap at %{P2}@{Cyellow} (%{dtarea})@{n}
+
+; ------------------------  DT subst end  ------------------------
+
+
+/def -F -p8 -msimple -t"East  - Uh-Oh!" substdt1 = \
+    /substitute -p @{Cgreen}East  - @{Ccyan}Uh-Oh!@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"East  - Whoops..." substdt2 = \
+    /substitute -p @{Cgreen}East  - @{Ccyan}Whoops...@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"Down  - Sacrificial Pit" substdt3 = \
+    /substitute -p @{Cgreen}Down  - @{Ccyan}Sacrificial Pit@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"West  - The spider web" substdt4 = \
+    /substitute -p @{Cgreen}West  - @{Ccyan}The spider web@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|East |West ) - Mid-air$" substdt5 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}Mid-air@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"Down  - Mid-Air" substdt6 = \
+    /substitute -p @{Cgreen}Down  - @{Ccyan}Mid-Air@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|West |Down |Up   ) - Climbing the Great Pyramid$" substdt7 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}Climbing the Great Pyramid@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"South - Steep slope" substdt8 = \
+    /substitute -p @{Cgreen}South - @{Ccyan}Steep slope@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"North - The unstable part of the wall" substdt9 = \
+    /substitute -p @{Cgreen}North - @{Ccyan}The unstable part of the wall@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"North - Free fall from the Chain" substdt10 = \
+    /substitute -p @{Cgreen}North - @{Ccyan}Free fall from the Chain@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"Up    - Hanging on the rope" substdt11 = \
+    /substitute -p @{Cgreen}Up    - @{Ccyan}Hanging on the rope@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"North - Pit" substdt12 = \
+    /substitute -p @{Cgreen}North - @{Ccyan}Pit@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|East |West ) - Too Bright to Tell$" substdt13 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}Too Bright to Tell@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"East  - Cracks in the earth" substdt14 = \
+    /substitute -p @{Cgreen}East  - @{Ccyan}Cracks in the earth@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"North - Black Hole" substdt15 = \
+    /substitute -p @{Cgreen}North - @{Ccyan}Black Hole@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|East |West ) - Falling into the flames" substdt16 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}Falling into the flames@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"East  - Falling down to the ground" substdt17 = \
+    /substitute -p @{Cgreen}East  - @{Ccyan}Falling down to the ground@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"West  - The Impassible Current" substdt18 = \
+    /substitute -p @{Cgreen}West  - @{Ccyan}The Impassible Current@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"South - Pool of quicksand" substdt19 = \
+    /substitute -p @{Cgreen}South - @{Ccyan}Pool of quicksand@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"East  - Falling into the gorge" substdt20 = \
+    /substitute -p @{Cgreen}East  - @{Ccyan}Falling into the gorge@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"South - The crumbling floor" substdt21 = \
+    /substitute -p @{Cgreen}South - @{Ccyan}The crumbling floor@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"West  - The crumbling floor" substdt21b = \
+    /substitute -p @{Cgreen}West  - @{Ccyan}The crumbling floor@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|East |West ) - The portcullis mechanism$" substdt22 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}The portcullis mechanism@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"East  - AAAOOOUCCHH!" substdt23 = \
+    /substitute -p @{Cgreen}East  - @{Ccyan}AAAOOOUCCHH!@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"South - Mahatma's Inescapable Trap" substdt24 = \
+    /substitute -p @{Cgreen}South - @{Ccyan}Mahatma's Inescapable Trap@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|East |West |Up   |Down ) - A collision of spiralling dimensions$" substdt25 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}A collision of spiralling dimensions@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"North - Inside a Pentagram" substdt26 = \
+    /substitute -p @{Cgreen}North - @{Ccyan}Inside a Pentagram@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"West  - An ill-balanced rock" substdt27 = \
+    /substitute -p @{Cgreen}West  - @{Ccyan}An ill-balanced rock@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"West  - Offer altar" substdt28 = \
+    /substitute -p @{Cgreen}West  - @{Ccyan}Offer altar@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|East |West |Up   |Down ) - On the second floor of the library$" substdt29 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}On the second floor of the library@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"Up    - On the second floor" substdt30 = \
+    /substitute -p @{Cgreen}Up    - @{Ccyan}On the second floor@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"West  - A deadly weir" substdt31 = \
+    /substitute -p @{Cgreen}West  - @{Ccyan}A deadly weir@{hCyellow} <<<R.I.P?>>>
+;/def -F -p8 -msimple -t"Down  - The well" substdt32 = \
+;   /substitute -p @{Cgreen}Down  - @{Ccyan}The well@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"Down  - The well" substdt33 = \
+    /substitute -p @{Cgreen}Down  - @{Ccyan}The well@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"Up    - Collapsed stairs" substdt34 = \
+    /substitute -p @{Cgreen}Up    - @{Ccyan}Collapsed stairs@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"West  - Lion cages" substdt35 = \
+    /substitute -p @{Cgreen}West  - @{Ccyan}Lion cages@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"South - Corpse room" substdt36 = \
+    /substitute -p @{Cgreen}South - @{Ccyan}Corpse room@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"North - Firm ground" substdt37 = \
+    /substitute -p @{Cgreen}North - @{Ccyan}Firm ground@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"West  - Unstable ledge" substdt38 = \
+    /substitute -p @{Cgreen}West  - @{Ccyan}Unstable ledge@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"Down  - A Stalagmite Forest" substdt39 = \
+    /substitute -p @{Cgreen}Down  - @{Ccyan}A Stalagmite Forest@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"North - Falling away" substdt40 = \
+    /substitute -p @{Cgreen}North - @{Ccyan}Falling away@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"Down  - The Whirlpool" substdt41 = \
+    /substitute -p @{Cgreen}Down  - @{Ccyan}The Whirlpool@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"Down  - Burnt Alive In The Molten Lava" substdt42 = \
+    /substitute -p @{Cgreen}Down  - @{Ccyan}Burnt Alive In The Molten Lava@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"(North|South) - The short way to hell..." substdt43 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}The short way to hell...@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"East  - Buried under a ton of rocks" substdt44 = \
+    /substitute -p @{Cgreen}East  - @{Ccyan}Buried under a ton of rocks@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|East |West ) - Off The Edge$" substdt45 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}Off The Edge@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|East |West |Up   |Down ) - A long drop to certain death$" substdt46 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}A long drop to certain death@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"North - The Deep Crevasse" substdt47 = \
+    /substitute -p @{Cgreen}North - @{Ccyan}The Deep Crevasse@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|East ) - Walking The Plank$" substdt48 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}Walking The Plank@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|East |West ) - edon lacoF$" substdt49 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}edon lacoF@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|East |West |Up   |Down ) - The Vault of Demons$" substdt50 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}The Vault of Demons@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|East |West ) - High Speed Dirt$" substdt51 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}High Speed Dirt@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|East |West ) - Submerged in icy cold water$" substdt52 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}Submerged in icy cold water@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"West  - The burial" substdt53 = \
+    /substitute -p @{Cgreen}West  - @{Ccyan}The burial@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"Down  - A Bottomless Pit" substdt54 = \
+    /substitute -p @{Cgreen}Down  - @{Ccyan}A Bottomless Pit@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"East  - By a flaming cross" substdt55 = \
+    /substitute -p @{Cgreen}East  - @{Ccyan}By a flaming cross@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"West  - By a flaming cross" substdt56 = \
+    /substitute -p @{Cgreen}West  - @{Ccyan}By a flaming cross@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"South - The Rickety Pier" substdt57 = \
+    /substitute -p @{Cgreen}South - @{Ccyan}the Rickety Pier@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"South - The Target Area" substdt58 = \
+    /substitute -p @{Cgreen}South - @{Ccyan}The Target Area@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"East  - A fathomless room" substdt59 = \
+    /substitute -p @{Cgreen}East  - @{Ccyan}A fathomless room@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"North - Certain Death" substdt60 = \
+    /substitute -p @{Cgreen}North - @{Ccyan}Certain Death@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"South - Chaos Vortex" substdt61 = \
+    /substitute -p @{Cgreen}South - @{Ccyan}Chaos Vortex@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^Down  - In the pit$" substdt62 = \
+    /substitute -p @{Cgreen}Down  - @{Ccyan}In the pit@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|East |West |Up   |Down ) - The sucking quicksand$" substdt63 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}The sucking quicksand@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"Down  - A pit of jutting spears" substdt64 = \
+    /substitute -p @{Cgreen}Down  - @{Ccyan}A pit of jutting spears@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"East  - Schylla's Trap" substdt65 = \
+    /substitute -p @{Cgreen}East  - @{Ccyan}Schylla's Trap@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|West ) - A poison gas cloud$" substdt66 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}a poison gas cloud@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"East  - Eaten by the Wardrobe" substdt67 = \
+    /substitute -p @{Cgreen}East  - @{Ccyan}Eaten by the Wardrobe@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(West |South) - Shroud of death$" substdt68 = \
+    /substitute -p @{Cgreen}West  - @{Ccyan}Shroud of death@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"Down  - Well" substdt69 = \
+    /substitute -p @{Cgreen}Down  - @{Ccyan}Well@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(East |South) - The Cave-In$" substdt70 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}The Cave-In@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|East |West ) - The Free fall$" substdt71 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}The Free fall@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"Down  - WAY Far Down into the Valley" substdt72 = \
+    /substitute -p @{Cgreen}Down  - @{Ccyan}WAY Far Down into the Valley@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"Down  - In The Huge Boiling Pan" substdt73 = \
+    /substitute -p @{Cgreen}Down  - @{Ccyan}In The Huge Boiling Pan@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"South - A Large Magma Pool" substdt74 = \
+    /substitute -p @{Cgreen}South - @{Ccyan}A Large Magma Pool@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|East |West |Up   |Down ) - Within the eye of an energy storm$" substdt75 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}Within the eye of an energy storm@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"North - Sinking into the quagmire" substdt76 = \
+    /substitute -p @{Cgreen}North - @{Ccyan}Sinking into the quagmire@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"West  - Trapped in your personal hell!" substdt77 = \
+    /substitute -p @{Cgreen}West  - @{Ccyan}Trapped in your personal hell!@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"East  - House of Pancakes" substdt78 = \
+    /substitute -p @{Cgreen}East  - @{Ccyan}House of Pancakes@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"East  - The Drop" substdt79 = \
+    /substitute -p @{Cgreen}East  - @{Ccyan}The Drop@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"Walking on thin ice" substdt80 = \
+    /substitute -p @{Cwhite}Walking on thin ice@{hCyellow} (DT NEARBY!!!)
+/def -F -p8 -mregexp -t"^(North|South|East |West |Up   |Down ) - Trapped in the web!$" substdt81 = \
+    /substitute -p @{Cwhite}%{P1} - @{Ccyan}Trapped in the web!@{hCyellow} (DT NEARBY!!!)
+/def -F -p8 -msimple -t"East  - A pack of evil ugly looking <0)+++<" substdt82 = \
+    /substitute -p @{Cgreen}East  - @{Ccyan}A pack of evil ugly looking <0)+++<@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"East  - Abnormally calm deep waters" substdt83 = \
+    /substitute -p @{Cgreen}East  - @{Ccyan}Abnormally calm deep waters@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"West  - The mouth of a yellow gupper fish" substdt84 = \
+    /substitute -p @{Cgreen}West  - @{Ccyan}The mouth of a yellow gupper fish@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"West  - Stuck on the sharp fin of a yellow gupper fish" substdt85 = \
+    /substitute -p @{Cgreen}West  - @{Ccyan}Stuck on the sharp fin of a yellow gupper fish@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|East |West |Up   |Down ) - The Room Of Death$" substdt86 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}The Room Of Death@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|East |West |Up   |Down ) - Brittle Steps$" substdt87 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}Brittle Steps@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|East |West |Up   |Down ) - Falling Deep into a Void$" substdt88 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}Falling Deep into a Void@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"West  - A playground" substdt89 = \
+    /substitute -p @{Cgreen}West  - @{Ccyan}A playground@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"East  - Heaven" substdt90 = \
+    /substitute -p @{Cgreen}East  - @{Ccyan}Heaven@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"North - A Dark Bottomless Pit" substdt91 = \
+    /substitute -p @{Cgreen}North - @{Ccyan}A Dark Bottomless Pit@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(Down |North) - Wily Ladder$" substdt92 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}Wily Ladder@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"South - Falling into the bottomless pit" substdt93 = \
+    /substitute -p @{Cgreen}South - @{Ccyan}Falling into the bottomless pit@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"Down  - The long fall into oblivion" substdt94 = \
+    /substitute -p @{Cgreen}Down  - @{Ccyan}The long fall into oblivion@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"North - A small attic" substdt95 = \
+    /substitute -p @{Cgreen}North - @{Ccyan}A small attic@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"North - A pool full of man-eating fish" substdt96 = \
+    /substitute -p @{Cgreen}North - @{Ccyan}A pool full of man-eating fish@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|East |West |Up   |Down ) - The Torture Chamber$" substdt97 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}The Torture Chamber@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"West  - The bottomless pit" substdt98 = \
+    /if (area !~ 'Ghenna') \
+      /substitute -p @{Cgreen}West  - @{Ccyan}The bottomless pit@{hCyellow} <<<R.I.P?>>>%; \
+    /endif
+/def -F -p8 -msimple -t"North - Beaten to death by the Mangler" substdt99 = \
+    /substitute -p @{Cgreen}North - @{Ccyan}Beaten to death by the Mangler@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"East  - The mad doctors office" substdt100 = \
+    /substitute -p @{Cgreen}East  - @{Ccyan}The mad doctors office@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"South - Trapped in a shrinking cell" substdt101 = \
+    /substitute -p @{Cgreen}South - @{Ccyan}Trapped in a shrinking cell@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"Down  - A very dark, almost black, hole" substdt102 = \
+    /substitute -p @{Cgreen}Down  - @{Ccyan}A very dark, almost black, hole@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"North - A Pit Full of Deadly Vipers" substdt103 = \
+    /substitute -p @{Cgreen}North - @{Ccyan}A Pit Full of Deadly Vipers@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"West  - Falling off the edge of the mountain!" substdt104 = \
+    /substitute -p @{Cgreen}West  - @{Ccyan}Falling off the edge of the mountain!@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"South - A pit of spikes" substdt105 = \
+    /substitute -p @{Cgreen}South - @{Ccyan}A pit of spikes@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"East  - Lemmings landing" substdt106 = \
+    /substitute -p @{Cgreen}East  - @{Ccyan}Lemmings landing@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"South - Jumping off a cliff without a parachute?" substdt107 = \
+    /substitute -p @{Cgreen}South - @{Ccyan}Jumping off a cliff without a parachute?@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(South|West ) - Inside the ramshackled cabin$" substdt108 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}Inside the ramshackled cabin@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"Up    - A broken hayloft" substdt109 = \
+    /substitute -p @{Cgreen}Up    - @{Ccyan}A broken hayloft@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"Down  - Pit of Death" substdt110 = \
+    /substitute -p @{Cgreen}Down  - @{Ccyan}Pit of Death@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|East |West |Up   |Down ) - The Pit of Sarlaak$" substdt111 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}The Pit of Sarlaak@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|East |West |Up   |Down ) - An infinity trap$" substdt112 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}An infinity trap@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|East |West |Up   |Down ) - In the fire pit$" substdt113 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}In the fire pit@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -mregexp -t"^(North|South|East |West |Up   |Down ) - Under a watchtower$" substdt114 = \
+    /substitute -p @{Cgreen}%{P1} - @{Ccyan}Under a watchtower@{hCyellow} <<<R.I.P?>>>
+/def -F -p8 -msimple -t"West  - Falling into the Gorge" substdt115 = \
+    /substitute -p @{Cgreen}West  - @{Ccyan}Falling into the Gorge@{hCyellow} <<<R.I.P?>>>
+
+/def -F -t"North - *<<<R.I.P?>>>" dttrignorth = /set dtnorth 1%;/setmovehook
+/def -F -t"South - *<<<R.I.P?>>>" dttrigsouth = /set dtsouth 1%;/setmovehook
+/def -F -t"East  - *<<<R.I.P?>>>" dttrigeast = /set dteast 1%;/setmovehook
+/def -F -t"West  - *<<<R.I.P?>>>" dttrigwest = /set dtwest 1%;/setmovehook
+/def -F -t"Up    - *<<<R.I.P?>>>" dttrigup = /set dtup 1%;/setmovehook
+/def -F -t"Down  - *<<<R.I.P?>>>" dttrigdown = /set dtdown 1%;/setmovehook
+
+/def setmovehook = \
+    /purge sendhookdtdir%; \
+    /def -n1 -p$[{maxpri}-2] -h"SEND {west|east|down|south|north|up}" sendhookdtdir = \
+      /if (dtnorth & {1} =~ 'north') \
+        /tfshow Deathtrap north!%%; \
+      /elseif (dtsouth & {1} =~ 'south') \
+        /tfshow Deathtrap south!%%; \
+      /elseif (dteast & {1} =~ 'east') \
+        /tfshow Deathtrap east!%%; \
+      /elseif (dtwest & {1} =~ 'west') \
+        /tfshow Deathtrap west!%%; \
+      /elseif (dtup & {1} =~ 'up') \
+        /tfshow Deathtrap up!%%; \
+      /elseif (dtdown & {1} =~ 'down') \
+        /tfshow Deathtrap down!%%; \
+      /else \
+        /send %%{1}%%; \
+      /endif%%; \
+      /set dtnorth 0%%; \
+      /set dtsouth 0%%; \
+      /set dteast 0%%; \
+      /set dtwest 0%%; \
+      /set dtup 0%%; \
+      /set dtdown 0

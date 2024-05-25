@@ -1,0 +1,77 @@
+# Hobgoblin Camps (440): 15-50, Beerwulf  (Karandras: 5s3w3sw2s2e6sw3s)
+#
+# |
+# X-o-o-o-o-o-o-o-o-o-o                           o
+#                     |                           |
+#     o-o             o    o-o-o-o-o-o         o--o-o
+#     | |             |    |         |            |t
+# o-o-o o-o           o    o         o     o-o-o--o-o
+# |       |           |    |         |     |      |
+# o o-o   o-o         o    o-o-o-o   o o-o-o   o--o
+# | | |     |         |          |   | | | |   |     1
+# o-o-o-o   o         o          o   o o-o-o   o--o-o
+#     |t|   |         |          |   |     |        |
+#     o-o o-o     o-o-o          o   o-o-o-o   o--o-o
+#     | | |9      |   |          |   |   |     |  |t|
+#   o-o o o-o o-o-o   o--o-o-o-o-o   o   o   o-o--o-o
+#       | | | |                      |   |   | |
+#       o-o o-o o-o-o    o-o-o-o-o-o-o o-o   o-o
+#           |   | | |    |             |
+#           o   o-o-o    o     o-o   o-o          b
+#           |   | | |3   |     | |2  |            |
+#         o-o   o-o-o-o--o   o-o o-o-o            o-b
+#         |              |     |t|                |
+#       o-o o-o-o        o   o-o o-o       o-o    o
+#       |   | | |        |     | |         |      |
+#       o   o-o-o-o      o   o-o-o-o       o-o  b-o-b
+#       |   | | | |      |     | |         |      |4
+#     o-o   o-o-o-o      o     o-o       o-o-o o--o
+#     |    8| | |        |               |   | |
+# o-o-o     o-o-o   o-o  o-o       o-o-o-o   o-o
+# |         |       | |    |       |
+# o-o   o-o-o-o   o-o o    o-o   o-o
+#   |   |     |   |   |    | |   |
+# o-o o-o   o-o o-o o-o  o-o o-o-o o-o-o-o-o-o-o-o-o
+# |t  |     |   |   |    |         | | | | | | | | |
+# o-o o-o-o o-o-o o-o    o-o-o     o-o-o-o-o-o-o-o-o
+#   |     |       |      |   |     | | | | | | | | |
+#   o o-o o   o-o-o      o   o-o   o-o-o-o-o-o-o-o-o
+#   | | | |   |          |     |          6|     |
+# o-o o o-o o-o      o-o-o   o-o-o-o       o-o   o
+# |   |     |                |     |         |   |
+# o-o-o     o              o-o     o-o       o   o-o
+#           |              |         |       |   | |
+#     o-o o-o o-o-o-o    o-o         o       o-o o-o
+#     | | |   |     |    |           |5        | | |
+# o-o o o-o   o-o   o o--o       o-o-o-o       o o-o
+# | | |         |   | |          |     |       | | |
+# o o-o   o-o o-o o-o-o  o o-o   o-o   o-o o-o-o o-o
+# |       | | |   | |t|7 | | |     |     | |     | |
+# o     o-o o-o o-o-o-o--o-o-o   o-o-o   o-o o-o-o-o
+# |     |       | | | |  | | |   |           | | | |
+# o-o-o-o       o-o-o-o<-o-o-o   o-o         o-o-o-o
+#
+* t = Hobgoblin Trainer(s)
+* XP area! Also gives nice money. No aggies, and all hobgoblins are
+*   vuln fire/large/superlarge/light
+
+Hobgoblin Camps:          Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+A Hobgoblin Forager        25 1500k E-x---    ---  599-607    4999-5006  [goblin]
+A Hobgoblin Recruit        25 1500k E-x---    ---  599-604    4998-4999  [goblin]
+A Hobgoblin Villager       25 1500k E-x---    ---  595-600    4999-5003  [goblin]
+A Hobgoblin Stonemason     30 3600k E-x---    ---  748-756    6999-7000  [goblin]
+A Hobgoblin Worker         30 3600k E-x---    ---  747-753    6994-7008  [goblin]
+A Beast                    33   192 E-----    ---  825-828    8498-8506  [goblin]
+A Hobgoblin Archer         33 5775k E-x---    ---  833-834    8501-8501  [goblin]
+A Hobgoblin Carpenter      33 5775k E-x---    ---  822-830    8495-8497  [goblin]
+A Hobgoblin Axeman         35 8050k E-x---    ---  899-900    9997-10006 [goblin]
+A Hobgoblin Guard          35 8050k E-x---    ---  892-901   10004-10011 [goblin]
+A Hobgoblin Longswordsman  35 8050k E-x---    ---  894-905    9997-10004 [goblin]
+A Hobgoblin Shortswordsman 35 8050k E-x---    ---  901-903    9993-10007 [goblin]
+A Hobgoblin Beastrider     40   16M E-x---    --- 1399-1403  14999-15002 [goblin]
+A Hobgoblin Berserker      40   16M E-x---    --- 1399-1401  14994-15010 [goblin], berserk
+A Hobgoblin Imperial Guard 40   16M E-x---    --- 1398-1408  14999-15000 [goblin]
+A Hobgoblin Spy            40   16M E-x---    --- 1394-1406  14993-15006 [goblin]
+A Hobgoblin Master         45   21M E-x---    --- 1590-1602  21996-22002 [goblin]
+A Hobgoblin Overseer       45   21M E-x---    --- 1600-1613  22000-22006 [goblin]
+A Hobgoblin Trainer        45   21M E-x---    --- 1602-1603  21998-22006 [goblin]

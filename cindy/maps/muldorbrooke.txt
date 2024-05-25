@@ -1,0 +1,43 @@
+# Muldorbrooke (3): 5-40, Beerwulf  (Karandras: 5s3w3sw2se)
+#
+#               o       o           o   o - o
+#   |           |       |           |   |   |
+# - o - X - o - o - o - o - o - o - o - o - o
+#   |       |       |   |   |   |   |
+#           o       o - o - o - o - o   o - o
+#           |               |   |   |   |   |
+#           o - o   o   o   o - o - o   o - o
+#           |       |   |   |   |   |   |   |
+#       o - o - o - o   o - o - o - o   o - o
+#       |   |       |   |   |   |   |   |   |
+#       o   o - o   o   o   o - o - o   o - o
+#           |   |           |   |           |
+#           o - o - o - o - o - o   o - o   o
+#           |                   |   |   |   |
+#       o - o - o - o - o - o   o   o   o   o
+#       |           |   |   |   |   |   |   |
+#       o       o   o - o - o   o   o   o   o
+#       |       |   |   |   |   |   |   |   |
+#       o - o - o   o - o - o   o - o   o - o
+#       |
+#   Hobgoblin
+#     Camps
+#
+* Lowbie area. All are peaceful and vuln large/superlarge.
+
+Muldorbrooke:            Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+The child                 16  277k N-x---    --   300-306     509-525   [---], vuln large/superlarge, resist mental/earth
+The citizen               20  578k N-x---    --   435-436    2779-2794  [---], vuln large/superlarge, resist mental/earth
+The mother                20  578k N-x---    --   441-460    2776-2783  [---], vuln large/superlarge, resist mental/earth
+The peasant               20  580k N-x---    --   501-504      18-24    [---], vuln large/superlarge, resist mental/earth
+The beggar                23  920k N-x---    --   583-586     101-123   [---], vuln large/superlarge, resist mental/earth
+The father                23  920k N-x---    --   487-493    2785-2788  [---], vuln large/superlarge, resist mental/earth
+The guard                 24 1320k G-x---    --   540-549    4029-4036  [---], vuln large/superlarge, resist mental/earth
+The hobgoblin soldier     24 1248k E-x---    --   555-572    4022-4024  [lugroki]
+The soldier               24 1320k G-x---    --   585-613    4021-4045  [---], vuln large/superlarge, resist mental/earth
+The spy                   24 1248k E-x---    --   597-608    4011-4031  [lugroki]
+The captain               26 1690k G-x---    --   604-640    5021-5026  [---], vuln large/superlarge, resist mental/earth
+The gnome zombie          30 3465k N-xxx-    --   764-831    2503-2518  [undead], random-delayed-agg-?N?
+The imperial guard        30 3465k N-x---    --   722-729    2501-2512  [---], vuln large/superlarge, resist mental/earth
+The necromancer           33 6270k Exxx--    --   668-676    2522-2537  [---], vuln large/superlarge, resist mental/earth
+Kirisat                   50   29M N-xx--    --  1984-1988  10023-10047 [---], vuln large/superlarge, resist mental/earth

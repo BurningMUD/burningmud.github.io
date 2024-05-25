@@ -1,0 +1,33 @@
+# Fishing Village/Sea Routes (492): 20-100, Unknown/Nefertum  (King's Castle: 3wnwne2nw2nwne2nwn3en2es2enen5e, enter portal)
+#
+#                   o o
+#                  / /|
+#                 o o +   o
+#                 |   |   |
+#  Huge * X - o - o - o - o
+# Forest                  |
+#             o - o - o - o
+#             |       |   |
+#             o   o - o   o
+#             |       |   |
+#             o   o - o   o - o   o
+#             |       |   |       |               Ship
+#             o   o - o - o - o - o - o - o - o * to NC
+#             |       |           |
+#             o   o   o           |     o
+#             |   |   |           |    /
+#             o - o - o           o - o
+#                                 |
+#                                 o
+#
+* All rooms except end points are very bright
+* Vuln slay human
+
+Fishing Village:         Lvl    Xp ASWIDMX # agg      Hp         Gold      Special
+A small boy               15  300k N-x---    ---   320-321     3739-3823   [human], +10 starthp
+A small girl              15  300k N-x---    ---   279-328     3877-3927   [human], +10 starthp
+A teenage boy             25 1500k N-x---    ---   731-833     5278-5690   [human], +30 starthp
+A teenage girl            25 1425k N-x---    ---   698-745     4775-5313   [human], +30 starthp
+A fisherman's wife        35 7700k N-x---    ---   902-1000    5308-5454   [human], +100 starthp
+A fisherman               39   16M N-x---    ---  1198-1384    5420-5462   [human], +100 starthp
+Will, the fisherman       85 1870M Nxxxx-    --- 27264-28233 201417-203485 [human], headbang, 2-2 skills

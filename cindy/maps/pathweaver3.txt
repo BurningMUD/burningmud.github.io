@@ -1,0 +1,21 @@
+# Quest Zone, Pathweaver 3: ?-?, Rafo/Faunus?  (High Tower: n2w, say 'normu cayoria')
+#
+#       o - o - o
+#       |       |
+#       o       o
+#       |       |
+#       o - o - o
+#              /
+# o - o - o   X <-* HighTower
+# |   |   |  /
+# o-Bird- o /
+# |   |   |/
+# o - o - o
+#
+* Fateguards are vuln energy
+
+Quest Pathweaver:        Lvl    Xp ASWIDMX # agg     Hp        Gold      Special
+A Fateguard               95       Nxxx      G E           154188        INFO, vuln energy, powerheal, triad of fire, teleport
+Garoth                    95       Nxxx      G E           153870-154425 INFO, powerheal
+    not vuln slay human. Energy?
+A Celestial Bird         100       N--x -    ---                         special-give

@@ -1,0 +1,43 @@
+# City of Orshingal (139): 30-50, Unknown  (New Thalos: 2en2e2nes2enen)
+#
+#        o - o - o - o - o
+#        |   |   |   |   |
+#        o   o   o o o   o
+#        |       |/      |
+#    o - o   Js- o - o   o - o
+#    |       |   |   |       |
+#    o - Ws- o   |   o + o   o +--------\
+#    |       |   o   |       |          /
+# o  o - o   As  |   o   o - o         o
+# |      |   |   |   |   |             |
+# o      o - o - o - o - o             |
+# |              |                     o
+# \- s + o - o - o - o - p +> s        |
+#                |       ^             |
+#                o        \--------+o--/
+#                |
+#                o           o
+#                |           +
+#            o - o - o       o
+#                    |       |
+#                    o - o - o
+#                            |
+#                            o
+#                            |
+#                            X
+#                            |
+#                          - o -
+#
+* Min level 0/15
+* No irv:s found on the enfans
+
+Orshingal:               Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+The blue enfan            29 4248k E-xx--    GN   714-756    9310-9472
+The rat                   29 3668k N-xx--    GN   683-756       0-0     vuln mental
+The grey enfan            31 5084k E-xx--    GN   791-801    9400-9578
+The green enfan           33 7194k E-xx--    G    787-907    9587-9679  [---]
+The purple enfan          35 9362k E-xx--    GN   882-940    9509-9638
+The yellow enfan          37   12M E-xx--    GN   951-1037   9504-9544
+The gargoyle              38   13M E--x--    G   1047-1132      0-0     vuln unlife
+The guard dog             50   47M E--x--    G   2291-2341      0-0     vuln mental, resist dark
+The black enfan           60  118M E--x      G   3984-4020  19535-19579

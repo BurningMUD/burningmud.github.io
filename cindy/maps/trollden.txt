@@ -1,0 +1,19 @@
+# Troll Den (28): 10-20, Merc  (Karandras: 10wn3wswswn12ws2w2sw2s2es)
+#
+#     |
+#     X
+#     |
+# o - o - o
+#     |
+#     o
+#
+* Tiny! Mommy & Daddy troll are sitting, so agg off to not disturm them.
+
+Troll Den:                  Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+A baby troll                  5   14k E----     G     98-102     208-229
+The young troll               6   26k E-x--     G    113-120     389-418
+The roving beast              7   38k E--x-     G    137-155       0-0
+The medium troll              8   66k E-x--     G    162-170     751-803
+The guardian beast           10   86k E--x-     G    116-136       0-0
+The large female troll       11   88k E----     G    204-222    2500-2500  sitting
+The giant troll              13  182k E----     G    299-339    3000-3000  sitting

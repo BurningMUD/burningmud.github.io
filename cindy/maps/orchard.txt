@@ -1,0 +1,28 @@
+# Orchard (137): 1-10, Mort  (Karandras: 12en)
+#
+#                  o - o - o
+#                  |       |
+#                  o       o - o - o
+#                  |       |       |
+#                  o       o o     o
+#                  |       |/      |
+#              o - o       o       o
+#                  |       |       |
+#                  o ----- o - o - o
+#                          |
+#                          X
+#                          |
+#
+* Same area as Gypsy Village
+* Small & safe area.
+
+Orchard:                 Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+The black fly              1   200 N-x---    -     28-32       16-16   flees
+The gartersnake            1   200 G-x---    -     27-32       16-16
+The green weed             1   200 N-x---    -     30-34       16-16
+The large caterpillar      1   200 N-x---    -     27-35       16-16
+The fireant                2   800 N-x---    -     38-42       16-16
+The tiny mouse             2   800 N-x---    -     36-39       16-16
+The black beetle           3  2400 N-x---    -     57-62       16-16
+The buzzing wasp           4  6400 N-x---    -     80-84       16-16
+The old gardener           4  6400 G-x---    -     80-84       51-51

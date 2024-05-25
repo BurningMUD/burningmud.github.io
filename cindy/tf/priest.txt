@@ -1,0 +1,739 @@
+; priest.tf
+
+/purge tfPriest*
+
+; ======================  AUTOHEALING start  ======================
+
+/def -F -mregexp -t"^([A-z]+) (asks|tells) you 'a[u]?[t]?[o]?heal[ ]*([^']*)'$" tfPriestAutoheal = \
+    /if (classPr | classAn) \
+      /if ({P3} =~ 'off' | {P3} =~ '0') \
+        autoheal 0%; \
+      /elseif ({P3} =~ 'on' | {P3} =~ '1' | {P3} =~ '') \
+        /if (autoheal) \
+          tell %{P1} Autoheal is already on%; \
+          reportHealing tf %{P1} emote%; \
+        /else \
+          autoheal 1%; \
+        /endif%; \
+      /else \
+        tell %P1 Autoheal on or off?%; \
+      /endif%; \
+    /endif
+
+/alias autoheal \
+    /if ({1} =~ '0' | {1} =~ 'off') \
+      /set autoheal 0%; \
+      /if ({-1} !~ 's' & {-1} !~ 'silent') \
+        gt Autoheal Off%; \
+      /endif%; \
+      dam1%; \
+    /else \
+      /set autoheal 1%; \
+      d0%; \
+      /if ({-1} !~ 's' & {-1} !~ 'silent') \
+        gt Autoheal On%; \
+        reporthealing gtf emote%; \
+      /endif%; \
+      healgroup%; \
+    /endif
+
+/alias healspread \
+    /if ({*} < 0 | {*} > 20) \
+      /tfshow healspread: (0-20, currently %{autohealspread})%; \
+    /else \
+      /set autohealspread %{*}%; \
+      /tfshow healspread: %{autohealspread}%; \
+    /endif
+
+/alias savemana \
+    /if ({*} < 0 | {*} > 99) \
+      /tfshow save mana at what percent? (0-99, currently %{savemana})%; \
+    /else \
+      /set savemana %{*}%; \
+      /tfshow savemana: %{savemana}%; \
+    /endif
+
+/def -p5 -mregexp -t"^([A-z]+) tells you 'thp ([0-9]+)'" tfPriestThp = \
+    thp %{P2}%; \
+    reportHealing tf %{P1} emote
+
+/alias thp \
+    /set thp %{*}%; \
+    /if (thp > 90) \
+      /set thp 90%; \
+    /endif
+
+/def -p5 -mregexp -t"^([A-z]+) tells you 'ghp ([0-9]+)'" tfPriestGhp = \
+    ghp %{P2}%; \
+    reportHealing tf %{P1} emote
+
+/alias ghp \
+    /set ghp %{*}%; \
+    /if (ghp > 90) \
+      /set ghp 90%; \
+    /endif
+
+/def -p5 -mregexp -t"^([A-z]+) tells you 'mhp ([0-9]+)'" tfPriestMhp = \
+    mhp %{P2}%; \
+    reportHealing tf %{P1} emote
+
+/alias mhp \
+    /set mhp %{*}%; \
+    /if (mhp > 70) \
+      /set mhp 70%; \
+    /endif
+
+/def -p5 -mregexp -t"^([A-z]+) tells you 'gphp ([0-9]+)'" tfPriestGphp = \
+    gphp %{P2}%; \
+    reportHealing tf %{P1} emote
+
+/alias gphp \
+    /set gphp %{*}%; \
+    /if (gphp > 90) \
+      /set gphp 90%; \
+    /endif
+
+/def -p5 -mregexp -t"^([A-z]+) tells you 'gphpnr ([0-9]+)'" tfPriestGphpNr = \
+    gphpnr %{P2}%; \
+    reportHealing tf %{P1} emote
+
+/alias gphpnr \
+    /set gphpNr %{*}%; \
+    /if (gphpNr < 2) \
+      /set gphpNr 2%; \
+    /endif
+
+/def -p5 -mregexp -t"^([A-z]+) tells you 'status'" tfPriestStatus1 = \
+    reportHealing tf %{P1} emote
+
+/def -p5 -mregexp -t"^([A-z]+) tells the group, 'status'" tfPriestStatus2 = \
+    reportHealing gtf emote
+
+/alias reporthealing \
+    /if (autoholy) \
+      /let holystring=On%; \
+    /else \
+      /let holystring=Off%; \
+    /endif%; \
+    /if (classPr == 1 & autoheal) \
+      %{*} - Thp:%{thp}%% Ghp:%{ghp}%% Holy:%{holystring}%; \
+    /elseif (classAn & autoheal) \
+      %{*} - Thp:%{thp}%% Ghp:%{ghp}%% %; \
+    /elseif (classPr == 2 & autoheal) \
+      /set gSpellsString=%; \
+      /if (autogbl) \
+        /eval /set gSpellsString=%{gSpellsString} GBless:On%; \
+      /endif%; \
+      /if (autogarm) \
+        /eval /set gSpellsString=%{gSpellsString} GArm:On%; \
+      /endif%; \
+      %{*} - Mhp:%{mhp}%% Thp:%{thp}%% Ghp:%{ghp}%% Gphp:%{gphp}%%(%{gphpNr}) Holy:%{holystring}%{gSpellsString}%; \
+    /endif
+
+/set healinggroup 0
+/alias healgroup \
+    /if (!autoheal) \
+;      /tfshow Aheal: Not turned on!%; \
+    /elseif (!pg) \
+;      /tfshow Aheal: Not in a group!%; \
+    /elseif (healinggroup > 0) \
+;      /tfshow Aheal countdown: %{healinggroup}%; \
+      /set healinggroup=$[{healinggroup} - 1]%; \
+    /elseif (healinggroup <= 0) \
+      /set healinggroup 5%; \
+      /if (manapercent < savemana) \
+;        /tfshow Healing on hold (low mana)%; \
+        /set healinggroup 0%; \
+      /elseif (nomagic | wildmagic | windcoming) \
+;        /tfshow Healing on hold (nomag/wildmag/wind)%; \
+        /set healinggroup 0%; \
+      /elseif (hppercent <= ghp | hppercent <= thp | hppercent <= mhp) \
+        /tfshow Healing myself!%; \
+        /if (hppercent <= mhp & classPr == 2) \
+          mira%; \
+        /elseif (classPr == 2) \
+          true%; \
+        /elseif (classAn & !classPr) \
+          bol%; \
+        /else \
+          hhh%; \
+        /endif%; \
+        drop grouplistheal%; \
+        /def -F -msimple -ag -n1 -t"You don't seem to have a grouplistheal." grTrigStart1 = \
+          /set healinggroup 0%; \
+      /elseif (position =~ 'sleep') \
+;        /tfshow Healing on hold (sleeping)%; \
+        /set healinggroup 0%; \
+      /elseif (owner =~ 'Valkyria69' & !fighting) \
+;        /tfshow Not fighting (so not healing)%; \
+        /set healinggroup 0%; \
+      /else \
+;        /tfshow Looking for target to heal...%; \
+        /set mosthurtMember 'none'%; \
+        /set mosthurtPercent -1%; \
+        /set gphpSum 0%; \
+        /set mosthurtPercentMira -1%; \
+        /set spreadbonus=$[(manapercent * autohealspread + 50) / 100]%; \
+        /let toprange=$[ghp + spreadbonus]%; \
+        /if (thp + spreadbonus > toprange) \
+          /let toprange=$[thp + spreadbonus]%; \
+        /endif%; \
+        /if (classPr == 2 & gphp + spreadbonus > toprange) \
+          /let toprange=$[gphp + spreadbonus]%; \
+        /endif%; \
+        /if (classPr == 2 & mhp + spreadbonus > toprange) \
+          /let toprange=$[mhp + spreadbonus]%; \
+        /endif%; \
+        /if (manapercent < 0) \
+          /let toprange=0%; \
+        /endif%; \
+        drop grouplistheal%; \
+        group 0-%{toprange}%; \
+        /purge grTrigStart2%; \
+        /def -F -msimple -ag -n1 -t"You don't seem to have a grouplistheal." grTrigStart2 = \
+          /def -F -mregexp -t"^[0-9]+. .[ ]?[0-9]+ [^\]]+. ([A-z]+)[ ]+.[ ]*[\-]*([0-9]+).H[ ]+[\-]*[0-9]+.M[ ]+[\-]*[0-9]+.V. (NotHere|)([^ ]+ |)" grTrigGag = \
+            /if ({P3} =~ 'NotHere') \
+              /substitute %%%; \
+            /elseif ({PR} =~ '(Leader)') \
+              /if ({P2} > thp + spreadbonus) \
+                /substitute %%%; \
+              /else \
+                /set mosthurtPercent $$$[thp + spreadbonus - {P2}]%%%; \
+                /set mosthurtPercentMira $$$[mhp + spreadbonus - {P2}]%%%; \
+                /set mosthurtMember %%%{P1}%%%; \
+              /endif%%%; \
+              /if (classPr == 2 & {P2} <= gphp + spreadbonus) \
+                /set gphpSum $$$[gphpSum + 1]%%%; \
+              /endif%%%; \
+            /else \
+              /if ({P2} > ghp + spreadbonus) \
+                /substitute %%%; \
+              /else \
+                /if ({P1} =~ {name} & ghp + spreadbonus - {P2} + 25 > mosthurtPercent) \
+                  /set mosthurtPercent $$$[ghp + spreadbonus - {P2} + 25]%%%; \
+                  /set mosthurtMember %%%{P1}%%%; \
+                /elseif (ghp + spreadbonus - {P2} > mosthurtPercent) \
+                  /set mosthurtPercent $$$[ghp + spreadbonus - {P2}]%%%; \
+                  /set mosthurtMember %%%{P1}%%%; \
+                /endif%%%; \
+              /endif%%%; \
+              /if (classPr == 2 & {P2} <= gphp + spreadbonus) \
+                /set gphpSum $$$[gphpSum + 1]%%%; \
+              /endif%%%; \
+            /endif%%; \
+          /def -F -mregexp -t"^[0-9]+. .[ ]?[0-9]+ [^\]]+. [A-z]+'s [A-z]+ named '([A-z]+)'[ ]+.[ ]*[\-]*([0-9]+).H[ ]+[\-]*[0-9]+.M[ ]+[\-]*[0-9]+.V. (NotHere|)([^ ]+ |)" grTrigGagPets = \
+            /if ({P3} =~ 'NotHere') \
+              /substitute %%%; \
+            /else \
+              /if ({P2} > ghp + spreadbonus) \
+                /substitute %%%; \
+              /elseif (ghp + spreadbonus - {P2} > mosthurtPercent) \
+                /set mosthurtPercent $$$[ghp + spreadbonus - {P2}]%%%; \
+                /set mosthurtMember %%%{P1}%%%; \
+              /endif%%%; \
+              /if (classPr == 2 & {P2} <= gphp + spreadbonus) \
+                /set gphpSum $$$[gphpSum + 1]%%%; \
+              /endif%%%; \
+            /endif%%; \
+          /def -F -mglob -ag -t"    Present: *" grTrigEnd = \
+            /purge grTrig*%%%; \
+            /if (classPr == 2 & mosthurtPercentMira >= 0) \
+              /tfshow MIRA: %%%{mosthurtMember} (%%%{mosthurtPercentMira}%%%%)%%%; \
+              mira %%%{mosthurtMember}%%%; \
+              /set currmana $$$[currmana - 200]%%%; \
+              /set manapercent $$$[manapercent - 10]%%%; \
+            /elseif (classPr == 2 & gphpSum >= gphpNr) \
+              /tfshow GPOW: %%%{gphpSum} members in need!%%%; \
+              gpow%%%; \
+              /set currmana $$$[currmana - 150]%%%; \
+              /set manapercent $$$[manapercent - 6]%%%; \
+            /elseif (classPr == 2 & mosthurtPercent >= 0) \
+              /tfshow true: %%%{mosthurtMember} (%%%{mosthurtPercent}%%%%)%%%; \
+              true %%%{mosthurtMember}%%%; \
+              /set currmana $$$[currmana - 70]%%%; \
+              /set manapercent $$$[manapercent - 3]%%%; \
+            /elseif (classAn & !classPr & mosthurtPercent >= 0) \
+              /tfshow bol: %%%{mosthurtMember} (%%%{mosthurtPercent}%%%%)%%%; \
+              bol %%%{mosthurtMember}%%%; \
+              /set currmana $$$[currmana - 40]%%%; \
+              /set manapercent $$$[manapercent - 2]%%%; \
+            /elseif (classPr & mosthurtPercent >= 0) \
+              /tfshow powerheal: %%%{mosthurtMember} (%%%{mosthurtPercent}%%%%)%%%; \
+              hhh %%%{mosthurtMember}%%%; \
+              /set currmana $$$[currmana - 40]%%%; \
+              /set manapercent $$$[manapercent - 2]%%%; \
+            /endif%%%; \
+            /set healinggroup 0%; \
+      /endif%; \
+    /endif
+
+; ======================  AUTOHEALING  end   ======================
+
+
+; ======================  POPCHECK start  ======================
+
+/set popcheckChannel say
+/set popcheckMobSoulies 50.soulcrusher
+/set popcheckMobMonsters ceanyth
+/set popcheckMobUW jason
+/set popcheckMobDragons 5.dracolich
+/set popcheckMobCharred 5.charred
+/set popcheckMobCoven 5.crone
+/set popcheckMobSnakes 5.rattlesnake
+/set popcheckMobMedjai 20.medjai
+/set popcheckMobWaywatcher 10.waywatcher
+/set popcheckMobDecapitated 10.decapitated
+/set popcheckMobDrow 260.drow
+/set popcheckMobSarakesh 5.bodak
+
+/def -F -mregexp -t"^([A-z]+) tells (you|the group,) '(popcheck|checkpop)[ ]*([A-z]*)'$" priestPopcheckTrigger = \
+    /if ({P1} =~ groupleader & classPr & (autospellup == 2 | (autospellup & pg))) \
+      /if ({P2} =~ 'you') \
+;        /set popcheckChannel=tell %{P1}%; \
+        /set popcheckChannel=gt%; \
+      /else \
+        /set popcheckChannel=gt%; \
+      /endif%; \
+      /if ({P4} =~ 'soulies' | {P4} =~ 'soulcrusher' | {P4} =~ 'soulcrushers'| {P4} =~ 'laboratory') \
+        popcheck soulies%; \
+      /elseif ({P4} =~ 'monsters' | {P4} =~ 'beasts' | {P4} =~ 'ceanyth' | {P4} =~ 'dungeon' | {P4} =~ 'dungeons') \
+        popcheck monsters%; \
+      /elseif ({P4} =~ 'uw' | {P4} =~ 'jason') \
+        popcheck uw%; \
+      /elseif ({P4} =~ 'dragons' | {P4} =~ 'graveyard') \
+        popcheck dragons%; \
+      /elseif ({P4} =~ 'charred' | {P4} =~ 'charreds' | {P4} =~ 'kaltor') \
+        popcheck charred%; \
+      /elseif ({P4} =~ 'coven' | {P4} =~ 'witch' | {P4} =~ 'witches') \
+        popcheck coven%; \
+      /elseif ({P4} =~ 'snakes' | {P4} =~ 'snake' | {P4} =~ 'snakelair') \
+        popcheck snakes%; \
+      /elseif ({P4} =~ 'medjai' | {P4} =~ 'medjais' | {P4} =~ 'cohnshar') \
+        popcheck medjai%; \
+      /elseif ({P4} =~ 'waywatcher' | {P4} =~ 'waywatchers' | {P4} =~ 'alterac') \
+        popcheck waywatcher%; \
+      /elseif ({P4} =~ 'decapitated' | {P4} =~ 'decap' | {P4} =~ 'khronatio') \
+        popcheck decapitated%; \
+      /elseif ({P4} =~ 'drow' | {P4} =~ 'drows' | {P4} =~ 'guallidurth') \
+        popcheck drow%; \
+      /elseif ({P4} =~ 'sarakesh' | {P4} =~ 'bodak' | {P4} =~ 'bodaks' | {P4} =~ 'dragontail') \
+        popcheck sarakesh%; \
+      /elseif ({P4} =~ 'oc' | {P4} =~ 'nc') \
+        popcheck %{P4}%; \
+      /else \
+        %{popcheckChannel} Syntax: popcheck [nc|oc|soulies|monsters|uw|dragons|charred|coven|snakes|medjai|waywatcher|decapitated|drow|sarakesh]%; \
+      /endif%; \
+    /endif
+
+/alias popcheck \
+    /if (classPr) \
+      /if (position !~ 'stand') \
+        upp%; \
+      /endif%; \
+      /def -p222 -msimple -t"Nobody playing by that name." popcheckTrigNobody = \
+        %%{popcheckChannel} Popcheck %%{popcheckArea}: No!%%; \
+        purgePopCheckTrigs %{*}%; \
+      /def -p222 -msimple -t"You can't summon creatures to a safe area!" popcheckTrigWeInSafe = \
+        %%{popcheckChannel} Popcheck %%{popcheckArea}: Yes!%%; \
+        purgePopCheckTrigs %{*}%; \
+      /def -p222 -msimple -t"You failed." popcheckTrigFailed = \
+        %%{popcheckChannel} Popcheck %%{popcheckArea}: Yes!%%; \
+        purgePopCheckTrigs %{*}%; \
+      /def -p222 -msimple -t"That person is in a safe area!" popcheckTrigTargetSafe = \
+        %%{popcheckChannel} Popcheck %%{popcheckArea}: Yes!%%; \
+        purgePopCheckTrigs %{*}%; \
+      /def -p222 -t"You can't summon mobs to *" popcheckTrigTargetCant = \
+        %%{popcheckChannel} Popcheck %%{popcheckArea}: Yes!%%; \
+        purgePopCheckTrigs %{*}%; \
+      /def -p222 -msimple -t"You can't summon creatures to a safe area!" popcheckTrigTargetCant2 = \
+        %%{popcheckChannel} Popcheck %%{popcheckArea}: Yes!%%; \
+        purgePopCheckTrigs %{*}%; \
+      /def -p222 -t"As the words escape your lips and *" popcheckTrigAgg = \
+        %%{popcheckChannel} Popcheck %%{popcheckArea}: Yes!%%; \
+        purgePopCheckTrigs %{*}%; \
+      /def -p222 -t"* arrives suddenly." popcheckTrigArrives = \
+        %%{popcheckChannel} Popcheck %%{popcheckArea}: Guess so :-)%%; \
+        purgePopCheckTrigs %{*}%; \
+      /def -p222 -msimple -t"Impossible!  You can't concentrate enough!" popcheckTrigConc = \
+        %%{popcheckChannel} Popcheck %%{popcheckArea}: Can't concentrate - fighting.%%; \
+        purgePopCheckTrigs %{*}%; \
+      /def -p222 -msimple -t"You cant seem to do that here!" popcheckTrigNomag = \
+        %%{popcheckChannel} Popcheck %%{popcheckArea}: Nomag here!%%; \
+        purgePopCheckTrigs%; \
+      /def -p222 -msimple -t"You lost your concentration!" popcheckTrigLostcon = \
+        purgePopCheckTrigs lostcon%%; \
+        popcheck %{*}%; \
+      /def -p222 -ag -n1 -t"You don't seem to have a popcheck*" popcheckDone = \
+        /tfshow Done! Cleaning up trigs.%%; \
+        /purge popcheckTrig*%; \
+      /if ({*} =~ 'soulies') \
+        /set popcheckArea=Soulies (%{popcheckMobSoulies})%; \
+        cast 'summon' %{popcheckMobSoulies}%; \
+        drop popcheckSoulies%; \
+      /elseif ({*} =~ 'monsters') \
+        /set popcheckArea=Monsters (%{popcheckMobMonsters})%; \
+        cast 'summon' %{popcheckMobMonsters}%; \
+        drop popcheckMonsters%; \
+      /elseif ({*} =~ 'uw') \
+        /set popcheckArea=UW (%{popcheckMobUW})%; \
+        cast 'summon' %{popcheckMobUW}%; \
+        drop popcheckUw%; \
+      /elseif ({*} =~ 'dragons') \
+        /set popcheckArea=Dragons (%{popcheckMobDragons})%; \
+        cast 'summon' %{popcheckMobDragons}%; \
+        drop popcheckDragons%; \
+      /elseif ({*} =~ 'charred') \
+        /set popcheckArea=Charred (%{popcheckMobCharred})%; \
+        cast 'summon' %{popcheckMobCharred}%; \
+        drop popcheckCharred%; \
+      /elseif ({*} =~ 'coven') \
+        /set popcheckArea=Coven (%{popcheckMobCoven})%; \
+        cast 'summon' %{popcheckMobCoven}%; \
+        drop popcheckCoven%; \
+      /elseif ({*} =~ 'snakes') \
+        /set popcheckArea=Snakes (%{popcheckMobSnakes})%; \
+        cast 'summon' %{popcheckMobSnakes}%; \
+        drop popcheckSnakes%; \
+      /elseif ({*} =~ 'medjai') \
+        /set popcheckArea=Medjai (%{popcheckMobMedjai})%; \
+        cast 'summon' %{popcheckMobMedjai}%; \
+        drop popcheckMedjai%; \
+      /elseif ({*} =~ 'waywatcher') \
+        /set popcheckArea=Waywatcher (%{popcheckMobWaywatcher})%; \
+        cast 'summon' %{popcheckMobWaywatcher}%; \
+        drop popcheckWaywatcher%; \
+      /elseif ({*} =~ 'decapitated') \
+        /set popcheckArea=Decapitated (%{popcheckMobDecapitated})%; \
+        cast 'summon' %{popcheckMobDecapitated}%; \
+        drop popcheckDecapitated%; \
+      /elseif ({*} =~ 'drow') \
+        /set popcheckArea=Drow (%{popcheckMobDrow})%; \
+        cast 'summon' %{popcheckMobDrow}%; \
+        drop popcheckDrow%; \
+      /elseif ({*} =~ 'sarakesh') \
+        /set popcheckArea=Sarakesh (%{popcheckMobSarakesh})%; \
+        cast 'summon' %{popcheckMobSarakesh}%; \
+        drop popcheckSarakesh%; \
+      /elseif ({*} =~ 'oc') \
+        /set popcheckArea=Soulies (%{popcheckMobSoulies})%; \
+        cast 'summon' %{popcheckMobSoulies}%; \
+      /elseif ({*} =~ 'oc2') \
+        /set popcheckArea=Monsters (%{popcheckMobMonsters})%; \
+        cast 'summon' %{popcheckMobMonsters}%; \
+      /elseif ({*} =~ 'oc3') \
+        /set popcheckArea=UW (%{popcheckMobUW})%; \
+        cast 'summon' %{popcheckMobUW}%; \
+      /elseif ({*} =~ 'oc4') \
+        /set popcheckArea=Dragons (%{popcheckMobDragons})%; \
+        cast 'summon' %{popcheckMobDragons}%; \
+      /elseif ({*} =~ 'oc5') \
+        /set popcheckArea=Charred (%{popcheckMobCharred})%; \
+        cast 'summon' %{popcheckMobCharred}%; \
+      /elseif ({*} =~ 'oc6') \
+        /set popcheckArea=Coven (%{popcheckMobCoven})%; \
+        cast 'summon' %{popcheckMobCoven}%; \
+        drop popcheckOc%; \
+      /elseif ({*} =~ 'nc') \
+        /set popcheckArea=Medjai (%{popcheckMobMedjai})%; \
+        cast 'summon' %{popcheckMobMedjai}%; \
+      /elseif ({*} =~ 'nc2') \
+        /set popcheckArea=Drow (%{popcheckMobDrow})%; \
+        cast 'summon' %{popcheckMobDrow}%; \
+      /elseif ({*} =~ 'nc3') \
+        /set popcheckArea=Waywatcher (%{popcheckMobWaywatcher})%; \
+        cast 'summon' %{popcheckMobWaywatcher}%; \
+      /elseif ({*} =~ 'nc4') \
+        /set popcheckArea=Decapitated (%{popcheckMobDecapitated})%; \
+        cast 'summon' %{popcheckMobDecapitated}%; \
+      /elseif ({*} =~ 'nc5') \
+        /set popcheckArea=Sarakesh (%{popcheckMobSarakesh})%; \
+        cast 'summon' %{popcheckMobSarakesh}%; \
+        drop popcheckNc%; \
+      /else \
+        /if ({*} !~ '') \
+          /tfshow Error: popcheck %{*}%; \
+        /endif%; \
+        /tfshow Syntax: popcheck [nc|oc|soulies|monsters|uw|dragons|charred|coven|snakes| medjai|waywatcher|decapitated|drow|sarakesh]%; \
+        /purge popcheckTrig*%; \
+        /purge popcheckDone%; \
+      /endif%; \
+    /endif
+
+/alias purgePopCheckTrigs \
+    /purge popcheckTrig*%; \
+    /if ({*} =~ 'nc') \
+      /purge popcheckDone%; \
+      popcheck nc2%; \
+    /elseif ({*} =~ 'nc2') \
+      /purge popcheckDone%; \
+      popcheck nc3%; \
+    /elseif ({*} =~ 'nc3') \
+      /purge popcheckDone%; \
+      popcheck nc4%; \
+    /elseif ({*} =~ 'nc4') \
+      /purge popcheckDone%; \
+      popcheck nc5%; \
+    /elseif ({*} =~ 'oc') \
+      /purge popcheckDone%; \
+      popcheck oc2%; \
+    /elseif ({*} =~ 'oc2') \
+      /purge popcheckDone%; \
+      popcheck oc3%; \
+    /elseif ({*} =~ 'oc3') \
+      /purge popcheckDone%; \
+      popcheck oc4%; \
+    /elseif ({*} =~ 'oc4') \
+      /purge popcheckDone%; \
+      popcheck oc5%; \
+    /elseif ({*} =~ 'oc5') \
+      /purge popcheckDone%; \
+      popcheck oc6%; \
+    /elseif ({*} =~ 'lostcon') \
+      /purge popcheckDone%; \
+    /else \
+      /set popcheckChannel say%; \
+    /endif
+
+;/purge priestPopcheckTrigger
+;/unalias popcheck
+
+
+; ======================  POPCHECK  end   ======================
+
+
+; ---------------------- AUTOGBL start ----------------------
+
+/def -F -mregexp -t"^([A-z]+) asks you '[gbl|gbless]'" spellbotgbl = \
+    /if (classPr == 2) \
+      manawindp gbl%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) (asks|tells) you 'a[u]?[t]?[o]?gbl[ ]*([^']*)'$" spellbotautogbl = \
+    /if (classPr == 2) \
+      /if ({P1} !~ groupleader) \
+        tell %{P1} Group bless can only be asked for by groupleader%; \
+      /elseif ({P3} =~ 'off') \
+        autogbl 0%; \
+      /elseif ({P3} =~ 'on' | {P3} =~ '') \
+        /if (autogbl) \
+          tell %P1 Group bless is already on :-)%; \
+          gbl%; \
+        /else \
+          autogbl 1%;aff%; \
+        /endif%; \
+      /else \
+        tell %{P1} Group bless on or off?%; \
+      /endif%; \
+    /endif
+
+/alias autogbl \
+    /if ({*} =~ '1' | {*} =~ '1 s' | {*} =~ '1 silent') \
+      /tfshow Ok. Group bless is now ON.%; \
+      /if (pg & {*} !~ '1 s' & {*} !~ '1 silent') \
+        gt Group bless is now on.%; \
+      /endif%; \
+      /set autogbl 1%; \
+    /elseif ({*} =~ '0' | {*} =~ '0 s' | {*} =~ '0 silent') \
+      /tfshow Ok. Group bless is now OFF.%; \
+      /if (pg & {*} !~ '0 s' & {*} !~ '0 silent') \
+        gt Group bless is now off.%; \
+      /endif%; \
+      /set autogbl 0%; \
+    /else \
+      /tfshow autogbl 0/1 [s]%; \
+    /endif
+
+; ---------------------- AUTOGBL  end  ----------------------
+
+
+; ---------------------- AUTOGARM start ----------------------
+
+/def -F -mregexp -t"^([A-z]+) (asks|tells) you 'garm'$" spellbotgarm = \
+    /if (classPr == 2) \
+      /if ({P1} !~ groupleader) \
+        tell %{P1} garm can only be asked for by groupleader%; \
+      /else \
+        manawindp garm%; \
+      /endif%; \
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) (asks|tells) you 'a[u]?[t]?[o]?garm[ ]*([^']*)'$" spellbotautogarm = \
+    /if (classPr == 2) \
+      /if ({P1} !~ groupleader) \
+        tell %{P1} garm can only be asked for by groupleader%; \
+      /elseif ({P3} =~ 'off') \
+        autogarm 0%; \
+      /elseif ({P3} =~ 'on' | {P3} =~ '') \
+        /if (autogarm) \
+          tell %P1 Autogarm is already on :-)%; \
+          garm%; \
+        /else \
+          autogarm 1%;aff%; \
+        /endif%; \
+      /else \
+        tell %{P1} Autogarm on or off?%; \
+      /endif%; \
+    /endif
+
+/alias autogarm \
+    /if ({*} =~ '1' | {*} =~ '1 s' | {*} =~ '1 silent') \
+      /tfshow Ok. Autogarm is now ON.%; \
+      /if (pg & {*} !~ '1 s' & {*} !~ '1 silent') \
+        gt autogarm is now on.%; \
+      /endif%; \
+      /set autogarm 1%; \
+    /elseif ({*} =~ '0' | {*} =~ '0 s' | {*} =~ '0 silent') \
+      /tfshow Ok. Autogarm is now OFF.%; \
+      /if (pg & {*} !~ '0 s' & {*} !~ '0 silent') \
+        gt autogarm is now off.%; \
+      /endif%; \
+      /set autogarm 0%; \
+    /else \
+      /tfshow autogarm 0/1 [s]%; \
+    /endif
+
+; ---------------------- AUTOGARM  end  ----------------------
+
+
+; ---------------------- AUTOHOLY start ----------------------
+
+/undef tick
+/def -i tick = \
+    /if (next_tick) \
+      /eval /echo %%% $$[next_tick - $(/time @)] seconds until tick%;\
+    /else \
+      /echo -e %% Tick counter is not running.%;\
+    /endif
+
+/def -F -mregexp -t"^([A-z]+) (asks|tells) you 'a[u]?[t]?[o]?holy[ ]*([^']*)'$" spellbotautoholy = \
+    /if (classPr) \
+      /if ({P3} =~ 'off') \
+        autoholy 0%; \
+      /elseif ({P3} =~ 'on' | {P3} =~ '') \
+        /if (autoholy > 1) \
+          tell %P1 Autoholy is already on :-)%; \
+          hw%; \
+        /else \
+          autoholy 2%;aff%; \
+        /endif%; \
+      /else \
+        tell %P1 Autoholy on or off?%; \
+      /endif%; \
+    /endif
+
+/alias autoholy \
+    /if ({*} =~ '1' | {*} =~ '1 s' | {*} =~ '1 silent') \
+      /tfshow Ok. Autoholy is now ON (when grouped).%; \
+      /if (pg & {*} !~ '1 s' & {*} !~ '1 silent') \
+        gt autoholy is now on.%; \
+      /endif%; \
+      /set autoholy 1%; \
+      /ticksize 295%; \
+      /tickon%; \
+    /elseif ({*} =~ '2' | {*} =~ '2 s' | {*} =~ '2 silent') \
+      /tfshow Ok. Autoholy is now ON.%; \
+      /if (pg & {*} !~ '2 s' & {*} !~ '2 silent') \
+        gt autoholy is now on.%; \
+      /endif%; \
+      /set autoholy 2%; \
+      /ticksize 295%; \
+      /tickon%; \
+    /elseif ({*} =~ '0' | {*} =~ '0 s' | {*} =~ '0 silent') \
+      /tfshow Ok. Autoholy is now OFF.%; \
+      /if (pg & {*} !~ '0 s' & {*} !~ '0 silent') \
+        gt autoholy is now off.%; \
+      /endif%; \
+      /set autoholy 0%; \
+      /set sancsoonout 0%; \
+      /tickoff%; \
+    /elseif ({*} =~ '') \
+      /tfshow autoholy set to %{autoholy}.%; \
+      /if (next_tick) \
+        /tfshow $[next_tick - $(/time @)] seconds to tick.%; \
+      /else \
+        /tfshow Tick counter is not running.%;\
+      /endif%; \
+    /else \
+      /tfshow autoholy 0/1/2 [s]%; \
+    /endif
+/def -F -p5 -mregexp -t"^You (start glowing|glow even brighter)\.$" igotsanced = \
+;   /set sancc=$[{sancc} + 1]%; \
+    /set sancsoonout 0%; \
+    /set sancc 1%; \
+    /if (autoholy + pg <= 1) \
+      /tickoff%; \
+    /else \
+      /if (wildmagic) \
+        /tfshow Holy in a Wild-Magic room%; \
+        /ticksize 150%; \
+        /tickon%; \
+        /ticksize 295%; \
+      /else \
+        /tickon%; \
+      /endif%; \
+    /endif
+/def -F -p5 -msimple -t"The white aura around your body fades." ilostasanc = \
+    /set sancc 0%; \
+    /if (autoholy + pg <= 1) \
+      /tickoff%; \
+    /else \
+      /if (currmana < 0) \
+        /if (pg) \
+          gt Holy just went out and I have no mana (%{currmana}).%; \
+          hw%; \
+        /else \
+          sa%; \
+        /endif%; \
+      /else \
+        /if (iminatipi | currentroom =~ "The Temple Altar of Myrridon" | currentroom =~ "The Temple of Karandras") \
+          donothing%; \
+        /elseif (nomagic & pg) \
+          gt Sanc is OUT and I think this room is no-magic%; \
+        /endif%; \
+        aff%; \
+      /endif%; \
+    /endif
+/undef tick_warn
+/def -i tick_warn = \
+    /if (autoholy + pg <= 1) \
+      /tickoff%; \
+    /else \
+      /tfshow 10 SECONDS TO TICK!!!%; \
+      /set sancsoonout 1%; \
+      /if (!wildmagic) \
+        /if (pg) \
+          hw%; \
+        /else \
+          sa%; \
+        /endif%; \
+      /endif%; \
+    /endif
+/undef tick_action
+/def -i tick_action = /tfshow TICK!!!%; \
+    /if (autoholy + pg <= 1) \
+      /tickoff%; \
+    /else \
+      /set sancsoonout 2%; \
+      /if (iminatipi | currentroom =~ "The Temple Altar of Myrridon" | currentroom =~ "The Temple of Karandras") \
+        donothing%; \
+      /elseif (nomagic & pg) \
+        gt Sanc is soon out and I think this room is no-magic%; \
+      /endif%; \
+      /if (position =~ 'sleep') \
+        hw%; \
+      /else \
+        drop castaholy%; \
+      /endif%; \
+    /endif
+
+/def -F -ag -msimple -t"You don't seem to have a castaholy." castaholytrig = \
+    /if ((autoholy + pg > 1) & (sancsoonout | !sancc)) \
+      /if (pg) \
+        hw%; \
+      /else \
+        sa%; \
+      /endif%; \
+    /endif
+
+; ---------------------- AUTOHOLY  end  ----------------------
+

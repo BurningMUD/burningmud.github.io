@@ -1,0 +1,38 @@
+# Rat's Lair (26): 10-40, Unknown/Unknown  (Elven Village: senes)
+#
+#                        o            |
+#                       /             X
+#                      o             /
+#       ______________/|            o
+#      /               |            |
+#     o            o + o + o    o + o + o
+#     |                |            |
+#   o+o+o          o + o + o    o - o - o
+#     |                |            |
+#     o            o + o + o    o + o - o
+#     |                | __________/
+# o + o - o            |/
+#         |        o + o + o
+#     o - o - o
+#         |
+#         o
+#         |
+#         o
+#         +
+#         o
+#
+* Same area as Pyramid
+
+Rat's Lair:              Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+A small rat                1   100 E-x---    -      6-13        0-0
+A human slave (crouches)   2  1000 G-x---    -     32-38        0-0    flees
+A human slave (digging)    2  1000 G-x---    -     31-38        0-0
+A rat                      2  1100 E-x---    -     37-40        0-0
+A large rat                3  3300 E-x--     G     56-64        0-0
+A wererat (attacks)        4  7700 E----     G     76-85       55-137
+A wererat (discussing)     4  7000 E-----    -     76-84       67-137  flees
+A wererat guard            5   12k E----     G    101-104     207-294
+The green Ooze             5   14k N----     G     97-102       0-0
+A wererat slavemaster      6   26k E-x--     G    116-123     358-383
+A firedrake                7   42k E--x-     G E  139-143     593-642  fire breath, can VAPE eq!(?)
+The wererat leader         7   38k E----     G    136-138     613-638

@@ -1,0 +1,536 @@
+
+The following Races are available in BurningMUD:
+RACE      [DarkVision] [STR] [INT] [WIS] [DEX] [CON]  [ALIGN.]  [CLASS]
+Elf           YES       - 1         + 1   + 1   - 1   NON-EVIL  MPRFWTA
+Half-Elf      NO                          + 1   - 1   NON-EVIL  MPRFWTA
+Dwarf         YES       + 1   - 1         - 1   + 1   NON-EVIL  PRF
+Hobbit        NO        - 2               + 2         NON-EVIL  PRFA
+Gnome         YES       - 2   + 2               - 1   NON-EVIL  MPRFWA
+Human         NO         *NO bonuses or penalties*    *ANY*     *ANY*
+Orc           YES       + 1   - 1   - 1   - 1   + 1   NON-GOOD  PRFNW
+Half-Orc      NO                          - 1   + 1   NON-GOOD  MPRFNWA
+Drow Elf      YES       - 1   + 1         + 1   - 1   NON-GOOD  MPRFNW
+Troll         YES       + 2   - 1   - 1   - 3   + 1   NON-GOOD  PRFN
+Goblin        YES       - 1   - 1   + 1   + 1   - 1   NON-GOOD  PRFN
+Where the CLASS letters stand for:
+M = Magician, P = Priest,  R = Rogue,      F = Fighter,
+W = Warlock,  T = Templar, N = Nightblade, A = Animist.
+NOTE: One might think humans inferior to demi-humans, however humans receive
+      a starting bonus to THREE stats, instead of the normal two.
+
+Maximum value you can buy at meta shop is defined as following:
+MIN(27,((CLASS1_MAX+CLASS2_MAX)/2)+RACE_MOD)
+             STR INT WIS DEX CON
+Mage          22, 25, 24, 24, 22
+Priest        23, 24, 25, 22, 23
+Rogue         24, 23, 22, 25, 24
+Fighter       25, 22, 23, 23, 25
+Warlock       23, 24, 23, 24, 23
+Animist       23, 23, 25, 23, 23
+Nightblade    23, 24, 23, 25, 23
+Templar       24, 23, 24, 23, 24
+Example
+A drow Ma/Nb will have the following maximums:
+STR: (22+23)/2 = 22 - 1 (for race) = 21
+INT: (25+24)/2 = 24 + 1 (for race) = 25
+WIS: (24+23)/2 = 23    (no adjust) = 23
+DEX: (24+25)/2 = 24 + 1 (for race) = 25
+CON: (22+23)/2 = 22 - 1 (for race) = 21
+
+
+STATS:
+======
+STR   hr dr  Carry WW    Name               DEX     ac    mv          CON   hp
+30           4000
+29           3500
+28    10 20  2920  60                       28                         28
+27     9 18  2550  55                       27     - 10                27
+26     8 16  2120  50                       26     +  5                26
+25     7 14  1750  40                       25     + 20                25        147.2%
+24     6 12  1440  40                       24     + 30  598 71.3%     24
+23     5 11  1130  35                       23     + 35  573 64.2%     23   2233 115.5%
+22     4 10   970  30                       22     + 40  548 57.0%     22   2100 102.7%
+21     4  9   810  30                       21     + 45  523 49.9%     21   1967 89.9%
+20     3  8   700  25    superb             20     + 50  498 42.7%     20   1834 77.0%
+19     3  8   640  25    superb             19     + 55  473 35.5%     19   1701 64.2%
+18/00  3  6   480  30    awesome             .                          .
+18/90  2  4   330  28    awesome             .                          .
+18/80  2  4   330  26    awesome             .                          .
+18/70  2  3   305  24    awesome             .                          .
+18/60  2  3   305  24    awesome             .                          .
+18/50  1  3   280  22    awesome             .                          .
+18/40  1  3   280  22    awesome             .                          .
+18/30  1  3   280  22    awesome             .                          .
+18/20  1  3   280  22    awesome             .                          .
+18/10  1  3   280  22    awesome             .                          .
+18     1  2   255  20    awesome            18     + 60  448 28.4%     18   1568 51.4%
+17     1  1   220  18    excellent          17     + 70  423 21.2%     17   1435 38.5%
+16     0  1   195  16    very good          16     + 80  398 14.0%     16   1302 25.7%
+15     0  0   170  15    very good          15     + 90  373  6.9%     15   1169 12.8%
+14     0  0   170  14    good               14     +100  349           14   1036
+13     0  0   140  13    good               13     +100  349           13   1036
+12     0  0   140  12    near good          12     +100  349           12   1036
+11     0  0   115  11    average            11     +100  349           11   1036
+10     0  0   115  10    average            10     +100  349           10   1036
+ 9     0  0   100   9    average             9     +100  349            9   1036
+ 8     0  0   100   8    poor                8     +100  349            8   1036
+ 7    -1  0    90   7    poor                7     +100  349            7   1036
+ 6    -1  0    80   6    bad                 6     +110  349            6   1036
+ 5    -2 -1    55   5    bad                 5     +120  349            5   1036
+ 4    -2 -1    25   4    horrible            4     +130  349            4   1036
+ 3    -3 -1    10   3    horrible            3     +140  349            3
+ 2    -3 -2     3   2    unbelievably bad    2     +150                 2
+ 1    -5 -4     3   1    unbelievably bad    1     +150                 1
+ 0    -5 -4     0   0    unbelievably bad    0                          0
+
+Each con above 14 increases hp with 12.8% of _original_ hp
+Each con above 14 increases mv with 7.13% of _original_ mv
+Lvl 50 ro/ro has -12 extra ac
+
+Hp is with lvl 76 Pr/Ma and no hp-changing items. Same for mv.
+Lvl 76 G Hum (Ktv) Pr/Ma has: Base hp 1036, con-multiplier 12.8%
+lvl 50 N Tro       Ro/Ro has: Base hp 1121, con-multiplier 13.38%
+
+Nr of items you can carry = 5 + lvl/2 (rounded down) + dex/2 (rounded down) + 5
+
+
+SAVES:
+======
+Saves depend only on level and eq/spells.
+Class/race doesn't matter, and multiclass gets the same as singleclass.
+ Lvl   Saves
+ 1- 2   20
+ 3- 4   19
+ 5- 7   18
+ 8- 9   17
+10-12   16
+13-14   15
+15-17   14
+18-19   13
+20-22   12
+23-24   11
+25-27   10
+28-29    9
+30-32    8
+33-34    7
+35-37    6
+38-39    5
+40-42    4
+43-44    3
+45+      2
+
+
+THAC0:
+======
+Thac0 depends only on level and classes.
+
+          Class: Fi Te Ro Nb Pr Wl Ma An
+1st class THAC0: -3 -2 -1 -1  0 +1 +3  0
+2nd class bonus: -2 -1 -1  0  0  0 +2  0
+THAC0 for the 1st class represents a level 50 character, the 2nd class bonus is
+added to the first, as a result it would mean a L50 combo of the following has
+these THAC0's(for example):
+Fi/Fi: -5, Fi/Ro: -3, Ro/Fi: -4, Pr/Pr: 0, Ma/Ma: +5
+
+ Lvl  Ma/Ma Pr/Pr Ro/Ro Fi/Fi Wl/Wl An/An Nb/Nb Te/Te  Pr/Ma Ma/Te Ma/Ro
+   1           20          20 20 20 20 20 20    20 20          20
+   2                       19 20 20 20 20 20    20 20          20
+   3                       19 19 19    19 19    19 19          19
+   4                19     18 19 19    19 19    19 19          19
+   5           18          18 18 18    18 18    18 18          18
+   6           18          17 18 18    18 18    18 18          18
+   7           18          17 18 18    18 17    17 17          18
+   8           17   17     16 17 17 17 17 17    17 17          17
+   9          17        16 16 17 17 17 17   17  16 16          17
+  10           16       16 15 17 17    16   16  16 16          16
+  11                    15 15 16 16    16   16  16 15          16
+  12                    15 14 16 16    16   15  15 15          16
+  13                    14 14 15 15 15 15   15  15 14          15
+  14                    14 13 15 15    15   14  14 14          15
+  15           14       13 13 15 15    14   14  14 13          14
+  16           14       13 12 14 14 14 14   14  13 13          14
+  17                    12 12 14 14    13   13  13 12          13
+  18                    12 11 13 13 13 13   13  12 12          13
+  19           13       12 11 13 13    13   12  12 12          13
+  20           12       11 10 13 13 12 12   12  11 11          12
+  21                    11 10 12 12 12 12   11  11 11          12
+  22           11       10  9 12 12 11 11   11  11 10          11
+  23           11       10  9 11 11 11 11   11  10 10          11
+  24           11        9  8 11 11 11 11   10  10  9          11
+  25           10        9  8 11 11 10 10   10   9  9          10
+ Lvl  Ma/Ma Pr/Pr Ro/Ro Fi/Fi Wl/Wl An/An Nb/Nb Te/Te  Pr/Ma Ma/Te Ma/Ro Fi/Nb Ma/Nb
+  26           10        8  7 10 10 10 10    9   9  8          10
+  27            9        8  7 10 10  9  9    9   8  8           9
+  28            9        7  6 10 10  9  9    8   8  7           9
+  29            9        7  6  9  9  9  9    8   7  7           9
+  30            8        6  5  9  9  8  8    8   7  6           8
+  31            8        6  5  8  8  8  8    7   7  6           8
+  32                     5  4  8  8  7  7    7   6  5           7
+  33           7         5  4  8  8  7  7    6   6  5           7
+  34           7         5  3  7  7  7  7    6   5  5           7                 7
+  35                     4  3  7  7  6  6    5   5  4           6
+  36                     4  2  6  6  6  6    5   4  4           6
+  37           5         3  2  6  6  5  5    5   4  3           5
+  38           5         3  1  6  6  5  5    4   3  3           5                 6
+  39           4         2  1  5  5  4  4    4   3  2           4
+  40           4         2  0  5  5  4  4    3   2  2           4
+  41         4           1  0  4  4  4  4    3   2  1           4
+  42                     1 -1  4  4  3  3    2   2  1           3
+  43                     0 -1  4  4  3  3    2   1  0           3
+  44           2         0 -2  3  3  2  2    2   1  0           2
+  45         2  2       -1 -2  3  3  2  2    1   0 -1           2
+  46                    -1 -3  3  3  2  2    1   0 -1           2
+  47            1       -2 -3  2  2  1  1    0  -1 -2           1
+  48         1  1       -2 -4  2  2  1  1    0  -1 -2           1
+  49            0       -3 -4  1  1  0  0   -1  -2 -3           0
+  50            0   -2  -3 -5  1  1  0  0   -1  -2 -3           0
+ Lvl  Ma/Ma Pr/Pr Ro/Ro Fi/Fi Wl/Wl An/An Nb/Nb Te/Te  Pr/Ma Ma/Te Ma/Ro Fi/Nb Ma/Nb
+  51           0    -2    -6     1     0          -3            0          -3     1
+  52          -1    -3    -6     0    -1          -4           -1          -4     0
+  53          -1    -3    -7     0    -1    -2    -4                       -4     0
+  54          -2    -4    -7    -1    -2    -3    -5      2                -5    -1
+  55          -2    -4    -8    -1    -2          -5      1                -5
+  56     3    -2    -5    -8    -1    -2          -6      1                -6
+  57     3    -3    -5    -9    -2    -3          -6      1
+  58          -3    -6    -9    -2    -3    -4    -7      0
+  59          -4    -6   -10    -2    -4    -5    -7      0
+  60     2    -4    -6   -10    -3    -4          -8      0
+  61     2    -4    -7   -11    -3    -4    -6    -8     -1
+  62     1    -5    -7   -11    -4    -5    -6
+  63     1          -8   -12    -4
+  64     1          -8   -12    -4
+  65     0          -9   -13    -5                       -2
+  66     0          -9   -13    -5                       -3
+  67     0         -10   -14    -6                       -3
+  68    -1         -10          -6                       -3
+  69    -1                      -6                       -4
+  70    -1         -11          -7                       -4
+  71    -1         -11          -7                       -4
+  72    -2                      -8                       -5
+  73    -2         -12          -8                       -5
+  74    -2         -13          -8                       -5
+  75    -3         -13          -9                       -6
+ Lvl  Ma/Ma Pr/Pr Ro/Ro Fi/Fi Wl/Wl An/An Nb/Nb Te/Te  Pr/Ma Ma/Te Ma/Ro
+  76    -3         -14          -9                       -6
+  77    -3         -14          -9                       -6
+  78    -4         -15         -10                       -7
+  79    -4         -15         -10                       -7
+  80    -4         -15         -11                       -7
+  81    -4                     -11                       -8
+  82    -5                     -11                       -8
+  83    -5                     -12                       -8
+  84    -5                     -12                       -9
+  85    -6                     -13                       -9
+  86    -6                     -13                       -9
+  87    -6                     -13                      -10         -13
+  88    -7                     -14                      -10         -14
+  89    -7                     -14                      -11
+  90    -7                                              -11
+  91    -8         -20                                  -11
+  92    -8         -21                                  -12
+  93                                                    -12
+  94                                                    -12
+  95                                                    -13
+  96                                                    -13
+  97                                                    -13
+  98                                                    -14
+  99                     -30                            -14
+ 100                                                    -14
+Danimal: ((ammount of thaco at lvl 50)/49)*lvl  (rounded down)
+Pufter: (((level50 THAC0)*2)+1)*level  seems to work for all thac0 i have tried
+        ie 15 thac0 at 50 is .31*level, 16 is .33*level, 17 is .35*level, etc
+        (all fractions are truncated, "15 thac0" is actually +5, 16 is +4 etc)
+        Differently put: base modifier  is .41.
+                         for any -1 a class recieves add .02 to the modifier
+                         for and +1 a class recieves subtract .02
+Danimal: seems formula is THAC0 = ROUND(20 - ((20-(thac0@50))/49)*(LEVEL-1))
+
+
+REP TITLES:
+===========
+Rep titles for Mercs:
+  %      Good                    Neutral                 Evil
+  0 Unknown                   Unknown                 Unknown
+  1 ?                         ?                       ?
+  ...
+  9 ?                         ?                       ?
+ 10 Heroes of the Divine Path Eternal Warriors        Spawn of Satan
+
+Evil:    Destroyers of the Peace  ...->  Slayers of Innocents  ...->
+         Minions of Darkness      ...->  Demonic Cohorts (70%) ...->
+         Coven of the Eternal Darkness
+Evil:    Demonic Cohorts          ...->  Servants of the Unholy Alliance
+Neutral: Minor Celebrities        ...->  Heroic Adventurers    ...->
+         Staunch Defenders        ...->  Competant Questors
+
+Name                Members    Reputation
+---------------------------------------------------------------------------
+Suicide Squad           1/15       Slayers of Innocents
+Paragons of Valour      7/15       Heroes of the Divine Path
+Blades of Torment       5/15       Spawn of Satan
+Generation Zero         2/15       Eternal Warriors
+Red Hand                6/15       Minor Celebrities
+Final Sanction         15/15       Eternal Warriors
+Coalition of Sin        9/15       Spawn of Satan
+The Trocade            15/15       Spawn of Satan
+Kindred of the Dark    11/15       Spawn of Satan
+Gangsters of Domination   4/15       Spawn of Satan
+Clandestine            15/15       Spawn of Satan
+Storm Walkers           2/15       Competant Questors
+Dragon Riders           6/15       Minions of Darkness
+Titans                  1/15       Unknown
+Clearly Outplayed      15/15       Heroes of the Divine Path
+GODS                   12/15       Heroes of the Divine Path
+Shadowy Conquerors      4/15       Unknown
+
+
+Rep titles seem to change at the same interval for every class/align, but
+there's something weird with the list for neutral mages, so keeping the
+full lists until I've got it sorted out.
+Titles preceeded by questionmark haven't been checked for exact bonus, but
+the order within the list and relative to other aligns should be correct.
+The anomaly is that neutral mages have two titles at 13-14%
+
+
+
+Rep titles for Mage (Xx/Ma):
+ %    Good                     Neutral                  Evil
+ 0 Low Life Scum            Low Life Scum            Low Life Scum
+ 1 Silly Spod               Profound Nerd            Pathetic Geek
+ 2 Helpful Apprentice       ?Obedient Apprentice
+ 3 Conscientious Student    ?Studious Scholar        ?Depraved Pupil
+ 4 Modest Graduate          ?Intellectual Graduate   ?Sinister Graduate
+ 5 Skilled Cantripist       ?Dazzling Enchanter      ?Malevolent Alchemist
+ 6 Skilled Cantripist      
+ 7 Pedantic Mentor          ?Eldritch Mentor         ?Wicked Curseweaver
+ 8 Pedantic Mentor          
+ 9 Whimsical Illusionist    ?Eccentric Wizard        ?Dreaded Invoker
+10 Whimsical Illusionist   
+11 Cheerful Spellslinger    ?Prodigious Spellbinder  ?Demonic Conjurer
+12 Cheerful Spellslinger                             Demonic Conjurer
+13 Master of Sparks         ?Adept Golemsmith        ?Destructive Hellmage
+14 Master of Sparks         ?Prodigious Penguin
+15 Ingenious Runelord       ?Powerful Sorcerer       ?Morbid Necromancer
+16 Ingenious Runelord                                Morbid Necromancer
+17 Fabled Stargazer         ?Illustrious Sage        Master of Nightmares
+18 Fabled Stargazer        
+19 Mesmerizing Dreamweaver  ?Archaic Charmweaver     ?Fiendish Thaumaturgist
+20 Mesmerizing Dreamweaver                           Fiendish Thaumaturgist
+21 Legendary Chronologist   Mystical Archmage        Malign Gloomcaster
+22 Legendary Chronologist   Mystical Archmage        Malign Gloomcaster
+23 Ancient Grand Wizard     Magical Mastermind       Apocalyptic SoulLord
+24 Ancient Grand Wizard     Magical Mastermind       Apocalyptic SoulLord
+25 Ancient Grand Wizard     Magical Mastermind       Apocalyptic SoulLord
+26 Celestial Embodiment     Blood Rune Entity        Dark Sigil Incarnate
+27 Celestial Embodiment     ?Blood Rune Entity       Dark Sigil Incarnate
+28 Celestial Embodiment                              Dark Sigil Incarnate
+29 Portalmaster o/t Realms                           Omnipotent Arch-Sorcerer
+30 Portalmaster o/t Realms  ?Eternal Arcanist        Omnipotent Arch-Sorcerer
+31 Portalmaster o/t Realms                           Omnipotent Arch-Sorcerer
+32 Eternal Abjurer                                   Mythical Destroyer
+33 Eternal Abjurer          ?Enchanter of Time       Mythical Destroyer
+34 Eternal Abjurer                                   Mythical Destroyer
+35 Lord Mage Almighty       Archmage of Eternity     Doomsday Invoker
+
+Rep titles for Priest (Xx/Pr):
+ %    Good                     Neutral                  Evil
+ 0 Low Life Scum            Low Life Scum            Low Life Scum
+ 1 ?Good Samaritan          Staunch Believer         ?Fanatical Worshipper
+ 2 ?Pious Pilgrim           Devoted Worshipper       ?Zealous Desecrator
+ 3 ?Devout Acolyte          Duteous Scrivener        ?Fervent Defiler
+ 4 ?Dutiful Scribe          Loyal Curator            ?Obsessed Cultist
+ 5 ?Selfless Martyr         Silent Monk              ?Accursed Minister
+ 6 ?                        Silent Monk              ?
+ 7 ?Reverent Cleric         Practiced Healer         ?Vile Mystagogue
+ 8 ?                        Practiced Healer         ?
+ 9 ?Loyal Disciple          ?Wise Seer               ?Harbinger of Doom
+10 ?                        ?                        ?
+11 ?Faithful Apostle        Renowned Philosopher     ?Forsaken Chaplain
+12 ?                        ?                        ?
+13 ?Reputed Exorcist        Admirable Augur          ?Infernal Patriarch
+14 ?                        ?                        ?
+15 ?Venerable Pontiff       Mystical Oracle          ?Pastor of Pestilence
+16 ?                        ?                        ?
+17 ?Esteemed Evangelist     ?Fabled Visionary        ?Master of Angst
+18 ?                        Fabled Visionary         ?
+19 ?Miraculous Revenant     Legendary Prophet        ?Elder Demonraiser
+20 ?                        ?                        ?
+21 ?                        ?Phenomenal Theocrat     ?Cardinal of the
+                                                        Apocalypse
+22 ?                        ?                        ?
+23 ?                        ?                        ?
+24 ?Hallowed Saint          ?Penultimate Gatekeeper  ?
+25 ?                        ?                        ?
+26 ?                        ?                        ?
+27 ?                        ?Magistrate of Judgement ?
+28 ?                        ?                        ?
+29 ?Immaculate Hopebearer   ?                        ?
+30 ?                        ?The Grand Pontiff       ?
+31 ?                        ?                        ?
+32 ?                        ?                        ?
+33 ?The Lifebringer         ?Master of Protection    ?Harvester of Souls
+34 ?                        ?                        ?
+35 ?                        Eternal Avatar           Diabolical Incarnate
+
+Rep titles for Rogue (Xx/Ro):
+ %    Good                     Neutral                  Evil
+ 0 Low Life Scum            Low Life Scum            Low Life Scum
+ 1 ?Helpless Kleptomaniac   ?Petty Purse-snatcher    ?Sleazy Rapscallion
+ 2 ?Unlucky Gambler         ?Troublesome Pickpocket  ?Dirty Rotten Scoundrel
+ 3 ?Snake Oil Peddler       ?Deceptive Fraud         ?Wily Solicitor
+ 4 ?Shrewd Welsher          ?Cunning Crook           ?Glib Swindler
+ 5 ?Fledgling Pathfinder    ?Sneaky Bandit           ?Unscrupulous Felon
+ 6 ?                        ?                        ?
+ 7 ?Amateur Scout           ?Opium Smuggler          ?Corrupt Embezzler
+ 8 ?                        ?                        ?
+ 9 ?Wandering Bard          Underground Fence        ?Crafty Larcenist
+10 ?                        Underground Fence        ?
+11 ?Dauntless Wayfarer      Elusive Fugitive         ?Hardened Criminal
+12 ?                        Elusive Fugitive         ?
+13 ?Bold Explorer           Picaresque Vagabond      Murderous Outlaw
+14 ?                        Picaresque Vagabond      Murderous Outlaw
+15 ?Fabled Troubadour       Stealthy Nightrunner     Black Market Mogul
+16 ?                        Stealthy Nightrunner     Black Market Mogul
+17 ?Reliable Trailguard     Collusive Peculator      Nefarious Villain
+18 ?                        Collusive Peculator      Nefarious Villain
+19 ?Legendary Voyager       Twilight Hoodlum         Renegade Shadowdweller
+20 ?                        Twilight Hoodlum         Renegade Shadowdweller
+21 ?Astral Navigator        Covert Saboteur          ?Midnight Extortionist
+22 ?                        Covert Saboteur
+23 ?                        Darkmoon Brigand
+24 ?Cosmic Cartographer     Darkmoon Brigand         ?Notorious Nighthawk
+25 ?                        Darkmoon Brigand
+26 ?                        Master of the Shadows
+27 ?Affluent Denmaster      Master of the Shadows    ?Stealth Mercenary
+28 ?                        Master of the Shadows
+29 ?                        Louche Godfather
+30 ?Master Rogue            Louche Godfather         ?Clandestine Crimelord
+31 ?                        Louche Godfather
+32 ?                        Lord of Stealth
+33 ?                        Lord of Stealth          ?Master of Assassins
+34 ?                        Lord of Stealth          Master of Assassins
+35 Lord of Lavish Luxury    The Living Blade         Shadowy Conqueror
+
+Rep titles for Fighter (Xx/Fi):
+ %    Good                     Neutral                  Evil
+ 0 Low Life Scum            Low Life Scum            Low Life Scum
+ 1 ?Humble Peasant          ?Simple Commoner         Lowly Rabble
+ 2 ?Enthusiastic Patriot    ?Impatient Grasshopper   Boorish Brawler
+ 3 ?Promising Novice        ?Inexperienced Recruit   Reckless Myrmidon
+ 4 ?Aspiring Guardian       ?Disciplined Skirmisher  ?Wild Berserker
+ 5 ?Intrepid Adventurer     ?Soldier of Fortune      ?Venal Mercenary
+ 6 ?                        ?                        ?
+ 7 ?Seasoned Veteran        ?Ambitious Campaigner    ?Heartless Raider
+ 8 ?                        ?                        ?
+ 9 ?Gallant Vindicator      ?Elite Legionnaire       Fierce Marauder
+10 ?                        ?                        Fierce Marauder
+11 ?Defender of the Light   ?Celebrated Champion     Bloodfist Warrior
+12 ?                        ?                        Bloodfist Warrior
+13 ?Redeemer of Honour      ?Stalwart Brigadier      Ruthless Tyrant
+14 ?                        ?                        Ruthless Tyrant
+15 ?Marshall of Justice     ?Crimson Battlelord      Militant Warlord
+16 ?                        ?                        Militant Warlord
+17 ?Courageous Trollslayer  ?                        Soulless Angelslayer
+18 ?                        ?                        Soulless Angelslayer
+19 ?Valiant Griffonrider    ?Fearless Dragonslayer   Darkhelm Usurper
+20 ?                        ?                        Darkhelm Usurper
+21 ?Vigilant Peacemonger    ?Tactical Powermonger    Atrocious Warmonger
+22 ?                        ?                        Atrocious Warmonger
+23 ?                        ?                        Death's Doomknight
+24 ?                        ?Respected Hero          Death's Doomknight
+25 ?                        ?                        Death's Doomknight
+26 ?                        ?                        Dark Champion
+27 ?Ethereal Conqueror      ?Imperial Crusader       Dark Champion
+28 ?                        ?                        Dark Champion
+29 ?                        ?                        Archwarrior Of Darkness
+30 ?Master of Might         ?Master Warlord          Archwarrior Of Darkness
+31 ?                        ?                        Archwarrior Of Darkness
+32 ?                        ?                        Unforgiving Banemaster
+33 ?                        ?Legendary Blademaster   Unforgiving Banemaster
+34 ?                        ?                        Unforgiving Banemaster
+35 Battlemaster of Truth    Archetype of the         Lord of the Dark Armies
+                              Fighting Spirit
+
+       Templar (Xx/Te):   |      Rep titles for Warlock (Xx/Wl):
+ %    Good                |    Neutral                  Evil
+ 0 Low Life Scum            Low Life Scum            Low Life Scum
+ 1 Lowly Serf               Sedulous Servant         ?Defiant Servant
+ 2 Humble Page              Assiduous Assistant      ?Wicked Assistant
+ 3 Faithful Squire          Austere Convert          ?Corrupt Convert
+ 4 Benevolent Vassal        Keen Pedant              ?Frenetic Pedant
+ 5 Loyal Herald             Skilled Battlemage       ?Savage Warmage
+ 6 Loyal Herald             Skilled Battlemage       Savage Warmage
+ 7 Noble Lancer             Elemental Savant         Shadow Savant
+ 8 Noble Lancer             Elemental Savant         Shadow Savant
+ 9 Chivalrous Cavalier      Wizard of Pain           Forlorn Deathmage
+10 ?                        Wizard of Pain           Forlorn Deathmage
+11 ?Blessed Knight          Electric Strifemage      Flaming Widowmaker
+12 ?                        Electric Strifemage      Flaming Widowmaker
+13 ?Holy Pendragon          Bloodfist Sorcerer       Hellfist Sorcerer
+14 ?                        Bloodfist Sorcerer       Hellfist Sorcerer
+15 ?Paladin of Truth        Frosty Mindslayer        Freezewarrior of Fury
+16 Paladin of Truth         Frosty Mindslayer        Freezewarrior of Fury
+17 Heroic Demonslayer       Raging Thunderlord       Master of Catastrophe
+18 ?                        Raging Thunderlord       Master of Catastrophe
+19 ?Righteous Crusader      Brazen Stormcaster       Insidious Voidcaster
+20 ?                        Brazen Stormcaster       Insidious Voidcaster
+21 ?Chosen Redeemer         Blazing Glorymage        Dark Netherwarrior
+22 Chosen Redeemer          Blazing Glorymage        ?
+23 God's Champion           Master of the Craft      ?
+24 ?God's Champion          Master of the Craft      ?Archmage of Deception
+25 ?                        Master of the Craft      ?
+26 ?                        Elder of the Forgotten   Archmage of Deception
+                               Triad
+27 ?Legendary Saviour       Elder of the Forgotten   Elder of the Forsaken
+                               Triad                    Triad
+28 ?                        Elder of the Forgotten   Elder of the Forsaken
+                               Triad                    Triad
+29 ?                        Equalizer of Dominions   ?Mythical Battlelord
+30 ?Paragon of Virtue       Equalizer of Dominions   ?
+31 ?                        Equalizer of Dominions   ?
+32 ?                        Energy Incarnate         ?
+33 ?Astral Guardian         Energy Incarnate         ?Infernal Chaoswizard
+34 ?                        Energy Incarnate         ?
+35 Grand Champion of        Archwizard of Domination Gatekeeper of the Abyss
+     Righteousness
+
+       Rep titles for Animist (Xx/An):           |      Nightblade (Xx/Nb):
+ %    Good                     Neutral           |      Evil
+ 0 Low Life Scum            Low Life Scum            Low Life Scum
+ 1 ?Rockdweller             Reclusive Hermit         ?Silent Stalker
+ 2 ?Feral Forager           Mysterious Gardener      ?Cruel Torturer
+ 3 ?Tree Stomper            ?Strange Soothsayer      ?Malicious Strangler
+ 4 ?Forest Bard             Pagan Weedhunter         Bloodthirsty Killer
+ 5 ?Mineral Miner           Nurturing Druid          Brutal Murderer
+ 6 ?                        Nurturing Druid          Brutal Murderer
+ 7 ?Apostle of Energy       Disciplined Herbalist    Avaricious Ransomer
+ 8                          Disciplined Herbalist    Avaricious Ransomer
+ 9 ?Skilled Shapeshifter    Proficient Transmuter    Notorious Bounty Hunter
+10                          Proficient Transmuter
+11 ?                        Renown Loremaster        ?Shadow Assassin
+12                          Renown Loremaster        Shadow Assassin
+13 ?                        Grand Elementalist       Treacherous Conspirator
+14                          Grand Elementalist
+15 ?Shepherd of the Earth   Elder Stonekeeper        ?Deadly Impostor
+16                          Elder Stonekeeper
+17 ?Sentinel of the Seas    Elder Tidewalker         ?Cold-hearted Silencer
+18 
+19 ?                        ?Elder Windweaver        ?Shameless Kinslayer
+20 
+21 ?                        ?Elder Flameforger       ?Stealthy Traitor
+22 
+23 ?                       
+24 ?Spiritual Seasonist     ?Ancient Hierophant      ?Midnight Scourge
+25 ?                       
+26 ?                                                 Master of the Night
+27 ?Enchanter of the        ?Master of Nature        Master of the Night
+     ?Elements
+28 ?                                                 Master of the Night
+29 ?                                                 Manipulator of Perception
+30 ?Lord of the Wilderness  ?Grand Shaman of the     ?Manipulator of Perception
+                               Ancient Sun
+31 ?                       
+32 ?                        ?                        Merciless Deathlord
+33 ?                        ?Essence of Life         ?Merciless Deathlord
+34 ?                        ?                        ?
+35 Oracle of Creation       Mystic Avatar            Darkmaster of Death

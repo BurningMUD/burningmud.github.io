@@ -1,0 +1,188 @@
+# Nefertum's Ragnarok (452): 50-100, Nefertum  (Karandras: 10wn3wswswn12ws2w2sws3wnwn5u10nd)
+* FIND OUT: Try slay human                   on Viking
+*               magic/energyonly             on giant warrior,
+*               crush/pierce                 on fire/frost giant,
+*               crush/slay giant             on Berserker
+*               unlife/iron/slay human       on Valkyrie
+#
+#                            o-o-o-o-o-o-o
+#                            | | | | | | |
+#                            o-o-o-o-o-o-o
+#                            | | | | | | |
+#                          o-o-o-o-o-o-o-o-o b b        o-o
+#                          | | | | | | | | | | |        | |  o
+#                          o-o-o-o-o-o-o-o-o-o-o-b      o-o /|
+#                          | | | |     | | | | |        |  / o
+#        o-o-o         o-o-o-o-o |     o-o-o-o-o-b      + /  |
+#        | |           | | | |   |       | | | |        |/   o
+#    o-o-o o-o-o       o-o-o-o   U   U---o-o-o-o-b    D X D  |
+#    |       |         | | | |           | | | |      | | |  o
+#    o-o-o-o o-o o-o-o-o-o-o-o           o-o-o-o-b    o-o-o  |
+#      | |     | |     | | | |           | | | |      |   |  o
+#      o o-o-o o-o-o   o-o-o-o---U   U   o-o-o-o-b    D   D  |
+#      |   | |     |   | | | |       |   | | | |             o
+#  o-o-o o-o o-o-o o-o o-o-o-o-o     | o-o-o-o-o-b           |
+#  |   | |       |   |     | | |     | | | | | |             o
+#  o-o o-o-o A o-o o-o     o-o-o-o-o-o-o-o-o-o-o-b           |
+#    |   |   | |           | | | | | | | | | | |             o
+#    o-o-o-o-o o-o-o       o-o-o-o-o-o-o-o-o b b             |
+#      |   |     | |         | | | | | | |                   o
+#  o-o o-o o-o-o-o o-o       o-o-o-o-o-o-o                   |
+#  |     |   |       |       | | | | | | |                   o
+#  o o-o-o o o-o   o-o o     o-o-o-o-o-o-o                   |/
+#  |   |   |   |   |   |     | | | | | | |                   o
+#  o-o-o   o-o-o   o-o-o     o-o-o-o-o-o-o---o              /
+#                            | | | | | | | \ |
+#                          o-o-o-o-o-o-o-o-o-o-o
+#                          | | | | | | | | | | |
+#                          o-o-o-o-o-o-o-o-o-o-o
+#                O         | | | | | | | | | | |
+#                          o-o-o-o-o-o-o-o-o-o-o
+#                          | | | | | | | | | | |
+#                          o-o-o-o-o-o-o-o-o-o-o
+#                          | | | | | | | | | | |
+#                          o-o-o-o-o-o-o-o-o-o-o
+#                            | | | | | | | | |
+#                            o-o-o-o-o-o-o-o-o
+* b: Back to the same room
+* A: Angerboda
+* O: Odin's Vikings Rooms. Contains 16 vikings for Odin to summon.
+* NOTE: Contingency doesn't work (never even tries to kick in) when fighting
+* Frost/fire giant, Berserker, Heimdall or Angerboda. Works for Giant Warrior,
+* Odin and Thor.
+* Wolves are vuln mental, but resist dark (so not Nemesis)
+
+Ragnarok:                Lvl    Xp ASWIDMX # agg      Hp        Gold       Special
+A small grey wolf         40   16M N-xx--    G    1711-1722      1-1       vuln mental, resist dark, summoned
+A small red wolf          40   16M N-xx--    G    1703-1726      1-1       vuln mental, resist dark, summoned
+A small white wolf        40   16M N-xx--    G    1729-1749      1-1       vuln mental, resist dark, summoned
+A sleepy warg             75  338M N-xxx-    --- 15485-15624    23-23      vuln mental, resist dark/fire, special-bite
+A Viking                  75  488M G-xxx 1   GN  11435-11481    23-23      vuln dark/bleed, resist pure/light/silver, summoned, bash, kick, headbang
+A bloodthirsty Warg       80 1201M N-xxx-    --- 27008-27360    23-23      vuln mental, resist dark/fire, random-delayed-agg-all, special-bite, kick, haste (probably just an emote)
+A hungry warg             80 1160M N-xxx-    --- 23550-23709    23-23      vuln mental, resist dark/fire, special-bite
+The Fenril Wolf           90       Ex    2   ---                1          INFO, vuln mental?, resist dark, vampiric mist, ritual of pain, 2-4 spells
+                                      obli anni vapo pulv atom ultr ULTR
+   CRUSH MENTAL             avg 21                    30    1
+
+A Viking                  90       G-x   2   ---                43-50      [human], vuln dark/bleed, resist pure, dodge, not summoned, poor ac > -51
+A Giant Warrior           90       E- x  1   GNE                23-23      [giant], vuln magic?/energy?, resist pure, dodge, AC -51 or worse
+  +3 weapons:   258 hits out of 272: 95%  (hr 12+34+3=49)
+                                      obli anni vapo pulv atom ultr ULTR
+   hf: normal
+   WEAPON                   avg 21               XX
+   slash/pierce             avg 24               65   49
+   PIERCE                   avg 25               14   68    1
+   CRUSH                    avg 24          65   23
+          MAGIC ENERGY      avg 22.5                  18
+   SLASH        SLAY Human  avg 22.5         4   35   17    1    1    1
+   CRUSH        SLAY Human  avg 25          45   14
+          PURE  SLAY Giant  avg 22.5             70    2
+   SLASH  FIRE              avg 23               27   27
+   DARK                     avg 23               32   41
+   SLASH  BLEED             avg 22               19   30
+   SLASH  LARGE SLARGE      avg 22     33
+   PIERCE POISON            avg 25   1      21   11    1
+   PIERCE UNLIFE            avg 26                    23
+   PIERCE IRON              avg 20               20
+
+A Fire Giant              94       E-    3   ---                23-23      [giant], vuln WEAPON/ice/pierce?, immune fire, resist large?/superarge?, dodge, pulsing-areadamage
+  +8 slash:      11 hits out of  11:100%  (hr 11+34+8=53)
+  +8 crush:      49 hits out of  51: 96%  (hr 12+34+8=54)
+  +8 crush:      29 hits out of  30: 97%  (hr 12+34+8=54)
+  +8 crush:      28 hits out of  29: 97%  (hr 12+34+8=54)
+  +8 pierce:     26 hits out of  29: 90%  (hr 12+34+8=54)
+  +3 Stiletto:    8 hits out of   9: 89%  (hr 12+34+3=49)
+  +3 DoS:        14 hits out of  16: 88%  (hr 12+34+3=49)
+  +3 Stiletto:    4 hits out of   4:100%  (hr 12+34+3=49)
+  +3 DoS:         6 hits out of   7: 86%  (hr 12+34+3=49)
+  +3 scimitar:   24 hits out of  25: 96%  (hr 12+34+3=49)
+                                      obli anni vapo pulv atom ultr ULTR
+   WEAPON                   avg 22                    XX
+   SLASH                    avg 24                     9    2
+   CRUSH                    avg 24           1   55   45    2    1    2
+   PIERCE                   avg 25                     3   22         1
+   MAGIC ENERGY             avg 22.5              1
+   SLASH        SLAY Human  avg 22.5              1   12    6         2
+   CRUSH        SLAY Human  avg 25                8    9
+   CRUSH ICE                avg 24                    13    9
+   PIERCE POISON            avg 25                7    5
+   PIERCE UNLIFE            avg 26                     3   16         1
+   SLASH  BLEED             avg 22                    17    7
+   slay giant       ?
+
+A Frost Giant             94       E-x   3   ---                23-23      [giant], vuln WEAPON/fire/pierce?, immune ice?, dodge, pulsing-areadamage
+  +8 firebrand:  17 hits out of  19: 89%  (hr 11+34+8=53)
+  +8 firebrand:  13 hits out of  13:100%  (hr 11+34+8=53)
+  +8 crush:      12 hits out of  12:100%  (hr 12+34+8=54)
+  +8 crush:      34 hits out of  36: 94%  (hr 12+34+8=54)
+  +8 iron:        7 hits out of   8: 88%  (hr 12+34+8=54)
+  +8 iron:        8 hits out of   8:100%  (hr 12+34+8=54)
+  +8 firebrand:   4 hits out of   5: 80%  (hr 12+34+8=54)
+  +8 pierce:     22 hits out of  23: 96%  (hr 12+34+8=54)
+  +3 M-T's axe:   9 hits out of   9:100%  (hr 12+34+3=49)
+  +3 Stiletto:    9 hits out of   9:100%  (hr 12+34+3=49)
+  +3 Gungner:    10 hits out of  11: 91%  (hr 12+34+3=49)
+  +3 scimitar    45 hits out of  48: 94%  (hr 12+34+3=49)
+                                      obli anni vapo pulv atom ultr ULTR
+   WEAPON                   avg 22                    XX
+   SLASH                    avg 24                    11    1
+   CRUSH                    avg 24           1   32   10    2    1
+   PIERCE                   avg 25                     5   17
+   SLASH        SLAY Human  avg 22.5                   4    3
+   MAGIC ENERGY             avg 22.5                                  1
+   WEAPON PURE  SLAY Giant  avg 22.5                       13         1
+   SLASH FIRE               avg 23                         39    7    1
+   SLASH  LARGE SLARGE      avg 22      5    4
+   PIERCE POISON            avg 25                5    4
+   PIERCE IRON              avg 20                    13    2
+   SLASH  BLEED             avg 22                    24   15    4    1   1
+
+A Berserker               94       G-xx  5    NE                23-23      [???], vuln WEAPON/fire, resist pure, dodge, AC -51 or worse
+  +3 weapons:    93 hits out of 96: 97%  (hr 12+34+3=49)
+                                      obli anni vapo pulv atom ultr ULTR
+   hf: VULN!
+   WEAPON                   avg 22                    XX
+   SLASH                    avg 24                    37   18    1    1
+   CRUSH                    avg 24                    27   27         1
+   PIERCE                   avg 25                    13   30    1
+   MAGIC ENERGY             avg 22.5                  10    4    1
+   CRUSH MAGIC              avg 24                     2    1
+   SLASH        SLAY Human  avg 22.5              1    6    1
+   CRUSH        SLAY Human  avg 25                1   26   37         1
+   WEAPON PURE  SLAY Giant  avg 22.5             20    3         1
+   PIERCE IRON              avg 20                     7    1
+   SLASH  BLEED             avg 22                         23    3
+
+A Valkyrie                94       Gxx   4   ---                23-23      [human?], vuln dark/bleed, resist pure/light, dodge, AC -51 or worse
+  +3 weapons:   197 hits out of 204: 97%  (hr 12+34+3=49)
+                                      obli anni vapo pulv atom ultr ULTR
+   WEAPON                   avg 22                8
+   SLASH                    avg 24               33   12    1    1
+   CRUSH                    avg 24               57   38
+   PIERCE                   avg 25               13   16
+   MAGIC        SLAY Dwarf  avg 21.5              4    1
+   PURE   LIGHT             avg 21   4  5
+   DARK                     avg 23                    47    2
+   SLASH  FIRE              avg 23               94   26
+   PIERCE POISON            avg 25                9   11
+   PIERCE UNLIFE            avg 26   1       1   28   27
+   WEAPON PURE  SLAY Giant  avg 22.5        17
+   PIERCE IRON              avg 20               21         1
+   CRUSH        SLAY Human  avg 25                8   19
+   SLASH  BLEED             avg 22                    60   16
+
+Angerboda                 95 2470M Ex-x  0   G E 49011-53925    23         INFO, [mythical? (not human/giant/magical)], vuln weapon/magic/unlife?, resist crush/large/superlarge/poison, bash, summon small white wolf, summon small grey wolf, small red wolf, 5-7 attacks, 24505-26963 hp withered, either vuln unlife or less hitpoints than noted.
+Sleipner                  95       N-    2                       1         INFO, [animal?], vuln mental?/gas?, resist earth, dodge, powerheal, (area?)harm, area confusion, mass pain, area hell fire, 1-1 spell, special-hit-on-everyone
+  +8 Avalanche:   4 hits out of  5: 80%  (hr 12+34+8=54)
+  +3 Stiletto:   27 hits out of 29: 93%  (hr 12+34+3=49)
+                                      obli anni vapo pulv atom ultr ULTR
+   CRUSH  EARTH             avg 22           4
+   PIERCE POISON            avg 25           2   10   15
+Heimdal, the Guardian of Bifrost
+                          99       N-x       ---                           immune dark, trueheal, area powerblind, hellstorm, mass pain, dancing blades, whirlwind
+Odin                     100       Gxx       ---           1407285-1426492 INFO, [mythical?], resist fire/ice?/unlife?/earth?/air?, entropy, powerword kill, area wither, (area?)(power?)blind, 1-2 spells, summon viking (not if blind?), special-munin-backstab(?)
+Thor                     100   16B   x   2   ---                           INFO, [mythical?], resist fire/ice/unlife?/earth?/air?, trueheal, dodge, area powerblind, area spell_attack (1-4 attacks), special-hammer-headhit, 7-? attacks, 400/70 dam per attack, negate sanc 12/37 times (32%), has around 180k hp when withered
+  +3 Gungner:    25 hits out of 25:100%  (hr 12+34+3=49)
+                                      obli anni vapo pulv atom ultr ULTR
+   WEAPON PURE  SLAY Giant  avg 22.5             18    7
+ hf: 449

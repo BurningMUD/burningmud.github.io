@@ -1,0 +1,36 @@
+# Joker's Storm Giant Castle (180): 35-100, Joker  (Olympus: e5s3dsdsdsueun)
+#
+#         o -- o ---- o - Captain               King
+#         |           |                          x
+#         o-o-o-Horse |            o           Mage
+#         |           |            |           /
+#         o - o ----- o --- o ---- o    2-5 Commanders + Goluk
+#         |   |                    |         /
+#     o   |   |     o   o - o - o  |    2 Captains      o
+#     |   |   |     |   |       |  |       /            |
+# o - o + o --- o - o + o + ----|--|----- o         o - o - o
+# |   |   |   |     |   |       |  |                |       |
+# X   o   |   | Captain |       q  o                o - o - o
+# |       |   |         |       |  |\                   |
+#         |   |         o - o - o  | RIP                o
+#         |   |                    |                    |
+#         o - o ----- o --- o ---- o                    o - o - o
+#         |           |            |                            |
+#         o-o-o-Horse |            o                            o
+#         |           |                                         |
+#         o -- o ---- o - Captain                       o - o - o
+#
+* Vuln slay giant
+
+Storm Giant Castle:          Lvl    Xp ASWIDMX # agg     Hp         Gold      Special
+The storm giant guard         50   45M E-x---    G   2793-2665   12075-12453  [giant], lightning bolt
+The storm giant captain       55   63M E--x      G   3290-3327   12625-13458  [giant], lightning bolt
+The storm giant monk          55   55M E-xxx-    -   3138-3150   41834-42497  [giant], powerheal
+The dragon horse              60  105M N-xxx-    -   6749-6751   30131-30214  [---], vuln BM???, sitting, gas breath
+The storm giant commander     60  105M E--x      G   5471-5919   34608-36166  giant, blindness, powerheal, mass pain, 4xBANG
+The storm giant mage          70  210M E--x  0   G   4332-4342   17365-17778  [giant], invis, mass pain, lightning bolt, blindness, 2-3 spells
+Goluk the keeper of the symbol 100 70M Ex-xx-0   --- 5437-5438  100919-102759 INFO, vuln fire, immune ice, hide, area chill touch, +~7500 starthp
+The storm giant king         100       Ex-x  2   GNE              4001-4001   INFO, [giant], immune crush, parry/dodge, powerheal, area wither, mass pain, area blindness, area lightning bolt, summon storm giant guard, 2-2 spells, 6-6 attacks, 400/70 dam per attack, negate sanc 5/12 times (42%)
+  +8 something:  20 hits out of 27: 74%  (hr 10+34+8=52)
+  +3 stiletto:   22 hits out of 53: 42%  (hr 12+34+3=49)
+  +3 stiletto:   12 hits out of 42: 29%  (hr 12+34+3=49)

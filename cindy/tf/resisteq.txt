@@ -1,0 +1,80 @@
+; Adds resist information to the resist items I use and gives me the command 
+; resist" which takes the argument "ice", "dark", "unlife" or "off".
+; Typing "resist ice" will make me put on my resist-ice item. Then a "resist
+; unlife" will remove the ice-resist item and put on my unlife-resist item. 
+; resist off" will bring me back to standard no-resistance mode again.
+; Needs to be modified to work for you.
+
+/set resisting OFF
+/set bag holding
+
+/alias gb get %* %{bag}
+/alias pb put %* %{bag}
+
+
+/def -F -p55 -mregexp -t"^Cloak of the seventh star" ebasubst1 = \
+	/substitute -a -p Resist DARK: Cloak of the seventh star%{PR}
+/def -F -p55 -mregexp -t"^an adamantine reinforced leather vest" ebasubst2 = \
+	/substitute -a -p Resist UNLIFE: an adamantine reinforced leather vest%{PR}
+/def -F -p55 -mregexp -t"^some midnight velvet robes..It seems to absorb light!" ebasubst3 = \
+	/substitute -a -p Resist ICE: some midnight velvet robes..It seems to absorb light!%{PR}
+
+/alias resist \
+        /if ({*} =~ '') \
+		/echo TF: Usage: resist [ice|dark|unlife|off]     Curently: %{resisting}%; \
+        /elseif ({*} =~ 'off') \
+		noresist%; \
+                /echo TF: Resisting: %{resisting}%; \
+        /elseif ({*} =~ 'dark') \
+		noresist%; \
+		gb cloak%; \
+		rem robe%; \
+		wear cloak%; \
+		pb robe%; \
+		/set resisting DARK%; \
+                /echo TF: Resisting: %{resisting}%; \
+        /elseif ({*} =~ 'unlife') \
+		noresist%; \
+		gb reinforced%; \
+		rem blackened%; \
+		wear reinforced%; \
+		pb blackened%; \
+		/set resisting UNLIFE%; \
+                /echo TF: Resisting: %{resisting}%; \
+        /elseif ({*} =~ 'ice') \
+		noresist%; \
+		gb midnight%; \
+		rem blood%; \
+		wear midnight%; \
+		pb blood%; \
+		/set resisting ICE%; \
+                /echo TF: Resisting: %{resisting}%; \
+	/else \
+		/echo TF: Unknown resist: %{resisting}%; \
+	/endif
+
+/alias noresist \
+	/if (resisting =~ 'DARK') \
+		gb robe%; \
+		rem cloak%; \
+		wear robe%; \
+		pb cloak%; \
+		/set resisting OFF%; \
+	/elseif (resisting =~ 'UNLIFE') \
+		gb blackened%; \
+		rem reinforced%; \
+		wear blackened%; \
+		pb reinforced%; \
+		/set resisting OFF%; \
+	/elseif (resisting =~ 'ICE') \
+		gb blood%; \
+		rem midnight%; \
+		wear blood%; \
+		pb midnight%; \
+		/set resisting OFF%; \
+	/elseif (resisting =~ 'OFF') \
+		donothing%; \
+	/else \
+		/echo TF: Unknown current resist: %{resisting}%; \
+	/endif
+

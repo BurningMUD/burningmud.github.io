@@ -1,0 +1,44 @@
+# Myrridon Mines (517): 50-100, Barre  (Myrridon: 24wsw3n3w2nwn)
+* FIND OUT: The Elder-Brain          xp, agg, hp, hp, type, irvs
+* FIND OUT: The Psionic Worm         xp, hp, hp
+#
+#      Lvl 1           Lvl 2       g-o     Lvl 3              o---o---o
+# o  o   o    o o    q-o g-o         |              /         |   |   |
+# |  |   |    | |      |   |         o-o-o-o-------o o-o      o-Brain-o-o
+# o  o-o-o  o-o o      o-o-o         |     |      /    |      |   |   | |
+# |    | |  | | |        |         o-o     o     o     o-o-o  o---o---o o
+# o-o  o o  o o-o        o         |       |    /      |                |
+#   |    |    |          |         g       o   o    o--o        o  o  o o
+#   o    o    o          o                 |  /     |  |        |  |  | |
+#   |   /|    |          |/                o-/---o--o  o     o--o--o--o-o
+#   o-o  o  o-o     o-o--o                  /                |  |  |  |
+#     |  |  |       |   /|                 o                 o  o  o  o
+#     o  o  o       |    o                /                  |
+#     |  |  |       q-g  |               o-----------\       o--o--o--o
+#     o--o--o            o              /|           |          |  |  |
+#        |               |       Inferno o           |          o--o--o-o
+#        X           o-o-o-o-o           |           |          |  |  | |
+#        |           | |   | |       o-o-o  RIP      |          o--o--o o
+#                    o-o   o-o       |   |   |       |                  |
+#                                   RIP  o-o-o       \---------o--------o
+#                                        |
+#                                    RIP-o
+#
+* g = pile of gold
+* Intellect Devourer (bottom floor aggie) is vuln unlife
+* Whole area, except entry room, is very bright.
+* Many end rooms (room names starting with "Tiny") are one-player-only
+
+Myrridon Mines:            Lvl    Xp ASWIDMX # agg      Hp        Gold     Special
+A Ustilagor                 30 4200k E-----    GN    800-800    4000-4000  [---], immune mental/wood, resist water
+A Mole                      35 7700k N-xx-x    --    824-881    3000-3000  [animal]
+An Umber Hulk               40   15M E-xxx-    --   1278-1312   8000-8000  [---], confusion, hide
+An Intellect Devourer       45   32M E--xx-    GNE  1201-1201   9000-9000  [magical], mana shielded
+A Mind Flayer               50   35M E-----    GNE  2253-2271  25000-25000 [---], charm person
+A Captured Dwarven Champion 75  300M N--x -    --  13000-13001     1-1     [dwarf], bash, kick, headbang, berserk
+The Tub of briny fluid     100  200k N--x -    --- 50000-50000     0-0     INFO, [entity], vuln crush, 1-1 attacks, returns any spell/skill/weapon damage done to him back to the source (with the same damage type), summons Elder-Brain on death
+The Elder-Brain            100       E--x                          0-0     INFO, [???], resist fire/dark/unlife, dodge, shrugger, summoned, 7-7 attacks, charm person (makes you hit your friends & cast beneficial spells on the brain. If no non-charmed player is in the room, the charmed players get killed), is replaced by the Tub of briny fluid when the zone resets (moved aside to some other room until Tub is killed again)
+  Try: pure, light, large, superlarge, energy/magic(1 vapo), poison, acid, ice, iron, mental(1 vapo), gas, bleed, earth, electricity, silver, stun, water,  air, wood
+  +3 Mjollnir:  0 hits out of 14:  0%  (hr 11+34+3=48)
+  +3 Deathbr.:  2 hits out of  8: 25%  (hr 11+34+3=48)
+The Psionic Worm           150       Nxxx x1 2 ---             10979-11388 INFO, [---], immune mental/dark/unlife/bleed, dodge, confusion, energy drain, 0-1 spells, ignore-cop, 6-7 attacks, 185/95 dam per bite, 330/95 dam per sting, negate sanc 181/266 times (68%), thac-39 11 or better, AC <= -68, special-blast-on-death(500/95, damtyp fire, stun, gas, poison, energy or mental - probably energy or mental)

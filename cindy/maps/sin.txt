@@ -1,0 +1,54 @@
+# Quest Zone, Sin: ?-?, ?  (New Thalos: 2en2e2n2wn2wn2wn8d4ne)
+* FIND OUT: dark key f.f.a.m: Carried?, Dissolves?
+#
+#                       ___
+#                      /   \
+#                      |   |
+#             /------> X   o  Palladrus
+#            /         |   |      |
+#           /          v   \______/
+#          /           o        
+#         /            |
+#        /             o+Feast
+#       *              |
+# Kerjim     o-Crowley o
+#       *    |         |
+#        \   o---o     o
+#         \      +     |
+#          \     o--o--o-----o-----o
+#           \          |          /
+#            \         o Azrael  /
+#             \        +     |  t
+#              \-----> X     + /
+#                            |/
+#                            o
+#
+* Entrance from Kerjim, which has min level 0/35
+* t: tunnel (max 2(?) pers)
+* Fallen Angels, Azrael, Crowley, Feast & Palladrus are vuln pure/light/iron
+* Book & Gargoyle is vuln unlife
+* Palladrus (northern) part is norecall
+
+Quest Sin:               Lvl    Xp ASWIDMX # agg     Hp        Gold      Special
+A Book                    95       Ex x    1 GNE           191157-191187 INFO, vuln unlife, hurricane, dancing blades, powerheal
+A Fallen Angel            95       Ex x  3   GNE           191164-191255 INFO, [demon], vampiric touch, powerheal, triad of ice
+A Gargoyle                95       Exxx  1 1 GNE           191186-191210 INFO, vuln unlife, powerheal, mass pain
+Azrael                   100       Ex x    1 GNE           191126-191147 INFO, vuln pure/light/iron, immune fire, resist unlife?/dark?, powerheal
+Crowley                  100       Ex      1  NE           191171        INFO, vuln pure/light/iron, immune fire, resist unlife?/dark?, powerheal
+Feast                    100       Ex x    1 GNE           191096-191178 INFO, vuln pure/light/iron, immune fire, resist unlife/dark, powerheal, lightning/gas breath
+Palladrus                100       Ex-x  3 1 GNE           191127-191193 INFO, [devil?/demon?], vuln pure/light/iron?, immune fire, resist dark?/unlife?/poison?, mana shielded, trueheal, vampiric touch, powerheal, mass pain, triad of fire, poison, nether bolt, 2-2 spells
+  HITROLL: +38+9: 64 hits out of 71: 90%  (hr +38+9=47)
+  HITROLL: +43+9: 69 hits out of 75: 92%  (hr +43+9=52)
+                                          Mass Obli Anni Vapo Pulv
+  Plain:   WEAPON                avg 22         11
+  WoJ:     WEAPON PURE LIGHT     avg 21              64
+  Parang:  PIERCE IRON           avg 20         69
+  Noto:    WEAPON LIGHT          avg 20         12    1
+  pp: 
+
+
+Mob descriptions (for mobsubs.tf):
+Gargoyle:     A Demonic Statue stands here. (Red Aura)
+Fallen Angel: An angel stands here, its once angelic appearence replaced with a demonic.
+Book:         A book flutters about the room.
+?:            A snake is here, reading a book.

@@ -1,0 +1,97 @@
+# The Museum Of Legends (187): 30-100, Beerwulf  (Sundhaven: 2es)
+* FIND OUT: Zelboth      hp
+#
+#                                                                |
+#                                                              o X
+#                                                              |/
+#                                                o-o-o       o-Q-o
+#                                                  |  ________/|
+#                                          o       o /     o   o
+#                                          |       |/      |
+#                                          o - o - o - o - o
+#                                          |      /|       |
+#                             o-o-o-o-o    o     / o       o     
+#                                 |    _________/  |
+#                     o           o   /       o  o-o-o
+#                     |           |  /        |
+#                     o           o /         o
+#                     |           |/          |
+#                     o - o - o - o - o - o - o
+#                     |          /|           |
+#                     o         / o           o
+#                     |        /  |           |
+#                     o      SSS  o           o
+#                                 |
+#       o - o - o - o - o-o   o-o-o-o-o
+#           ^\            |
+#           | \           |
+#           o-/           o           o-o - o - o - o - o
+#           ^             |           |             ^     o
+#           |             |           o             |     |
+#           \-- o         o  SSS      |           o-o  o->o
+#         o     |         |   ^       o           |    |  |
+#         |     o-o       |   |       |       o - o    |  o
+#         o<-o    |       o Zelboth   o       |        |  |
+#         |  |    o - o   |   ^       |   o - o   /->o-o  o
+#         o  o-o      |   v   |       v   |       |  |/   |
+#         |    |      o - o +>o-o-o<+ o - o   o - o       o
+#         o    o-o        ^           ^       |   |       |
+#         |    | |        |           |       |   o       o
+#         o    o o<--- o  o-o       o-o  o -> o   |       +
+#         |    |       |    |       |    |        o - o   v  T
+#         o  o-o<---\  o-o  o - o - o  o-o        |       o  o
+#      J  +    |    |  | |      |      | |        o       |  m  S
+#      o  o    o    o<-/ o-o    o /  o-o o        ^       o->a->S
+#   S  g  |    |    |      |    |/   |   |        |       |  r  S
+#   S<-a<-o    o    o      o-o-SSS-o-o   o        o       o  i
+#   S  t  |    |    |      |    |    |   |        |       ^  n
+#      h  o    o    o  o - o    o    o-o \-o      o       +
+#         +    |    |  |        |      |   |      |       o
+#         o    o    o--o    o - o - o  o - o      o - o   ^
+#         |    |    |       |       |      |      |       |
+#         o    o o<-o   o - o       o - o  o->o   o       o
+#         |    | |      |               |     |   |       |
+#         o    o-o    o-o - o - o - o - o-o   o - o       o
+#         |    |      | |       |       | |       |       |
+#         o  o-o    o-o o       o       o o-o     o - o   o
+#         |  |      |   |       |       |   |         |   |
+#         o<-o    o-o   o       o       o   o-o       o ->o
+#         |       |     |       |       |     |           |
+#         o     o-o     o       o       o     o-o         o
+#               |       |       |       |       |
+#             o-o-o-o-o-o       o       o-o-o-o-o-o
+#                               |
+#                               o
+#
+* Min level 0/25 (bottom floor)
+* Whole area is very bright
+* Beware the agg-evil elite guards in the outer parts of the two lowest levels.
+
+;n;tell lilshedevil summon;bli2 zelboth
+;n;tell lilshedevil summon;#3 glan zelb;hf zelboth
+
+
+Museum:                  Lvl    Xp ASWIDMX # agg      Hp        Gold     Special
+The critic                20  520k E-x---    --    498-503    1201-1201  [human]
+The cleric                33 5940k G-xx-x    --    733-739    5005-5037  [human], harm, curse, blindness
+The mage                  33 5940k G-xx-x    --    722-747    5003-5041  [human], fireball, meteor blast, meteor swarm
+The thief                 33 5940k N-xx-x    --    730-747   11005-11050 [human], backstab
+The guard                 35 7525k N-x--x    --    898-900    9008-9042  [human], sleeping
+The warrior               36 8640k G-x--x    --    917-921    5035-5050  [human], kick, bash, headbang
+A patron                  40   13M N----x    --   1300-1300   1901-1901  [human]
+The guard dog             40   15M E-x---    GN   1383-1385   1047-1064  [canine], invis, sneak
+The teacher (philosopy)   40   13M N-x--x    --   1232-1239   9086-9094  [human]
+The teacher (history)     41   14M N-x--x    --   1238-1240   9052-9075  [human]
+The giant rat             42   36M E-x---    GN   3574-3579   3501-3501  [rodent]
+The teacher (alchemy)     43   20M N-x--x    --   1038-1040  10036-10053 [human]
+The artist                45   22M G-x--x    --   1693-1695  15025-15029 [human], sitting
+The cleaner               45   21M N----x    --   1603-1612   3203-3216  [human], sitting
+The carpenter             50   38M N-x--x    --   2000-2003   3092-3117  [human]
+The tunnel digger         50   38M N-x--x    --   1997-2003   3052-3064  [human]
+The vandal                50   23M E-x---    --   1965-1967  12138-12142 [human], flees
+The displacer rat         58   96M E-xx -    --   4872-4878    582-631   [rodent], sneak
+The elite guard           61  104M G-xx x    --E  4892-4893  18485-18495 [human], hide, sneak, kick, bash, headbang
+Tomarin                   88 2112M G--x x    --  29997-30094 66466-66590 INFO, [human], mana shielded, agg-sleeper, hell storm, blindness, triad of fire, armor, energy drain, teleport, blur, 2-2 spells, no-where, doesn't always pop
+Zelboth                   90 2340M G--x x    --  32967       66427-66613 INFO, [human], mana shielded, agg-sleeper, wrath of god, trueheal, blindness, wither, no-where, doesn't always pop, room is noflee
+Jogath                    93 2418M G--x x    --  36975-37077 66422-66620 INFO, [human], agg-sleeper, blocker, bash, 7-9 attacks, no-where, doesn't always pop, 4/134 misses with ac -317
+Eindenlal                 99       N--       ---                         questmaster, nofight-room

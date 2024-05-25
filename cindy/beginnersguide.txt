@@ -1,0 +1,284 @@
+
+http://www.lysator.liu.se/~tomca/burning/beginnersguide.txt
+
+------------------------------------------------------------
+NOTE: This is just a small draft. Still needs a lot of work.
+------------------------------------------------------------
+
+MUD, what's it all about?
+=========================
+MUD = Multi User Dungeon
+This is a text adventure in a fantasy setting where you control your hero.
+Burning MUD is a fantasy world with towns, dungeons, oceans, deserts, forests,
+and other imaginary and unimaginary environments. It is inhabited by a great
+variety of creatures - anything from rabbits to dragons, or from kids running
+around in the towns, to evil overlords in their castles, raising armies of
+undeads.
+You start in the capital city (Karandras), as a 17 year old person. You're a
+newbie with no fighting experience, no money and no equipment. But you are
+destined for greatness!
+To become more powerful you will need equipment, skills and, in some cases,
+spells.
+Explore the world, find weapons, armors and other items that you can have use
+for, kill monsters to gain experience, which will increase your "level",
+making you more powerful.
+In mud there is no storyline to follow and no end goal to reach. Your main
+goal is to gain power, by raising levels, improving your equipment and
+learning about the world. There are quests, but you decide what to do and
+where to go.
+You share this world with other users, so you can talk with them, trade items,
+team up to kill a tougher monster together, etc.
+Note: This is not a Player Killing mud! You can't kill other players nor be
+killed by them.
+Equipment is out there, worn by creatures just waiting for you to kill them
+and grab their loot. There are also shops selling and buying items.
+Skills and spells are taught by guildmasters. Each class has a guildmaster
+that can train them. Training is instantaneous but costs practice points. You
+start your carreer with five practice points, and each time you gain a new
+level you will get some more.
+Apart from a few quests limited to lowbies, and name/alignment/class/race being
+permanent, there are no ways to go wrong. Any "bad" choices or misfortunes can
+get sorted out in the end. And even some of the permanent things can be
+changed.
+
+Connect to Burning
+==================
+Putty, browser-link, telnet, (clients)
+
+
+Generate your character.
+========================
+Create an account
+Class
+Race
+Alignment
+Stats
+
+
+Initializing
+============
+Set prompt, wimpy, agg, channels, compact, brief, etc, etc...
+
+Prompt: I suggest
+  display %%r%%h(%%H)H %%p(%%P)M %%m(%%M)V >%%c %%l
+
+Toggles: I suggest
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ Brief Mode  : ON  | Compact Mode: ON  | Summon Prot : OFF | On Quest    : ON
+ Tell        : ON  | Auction     : ON  | Gossip      : YES | Shout       : ON
+ Yell        : ON  | Wimp Level  : OFF | Auto-exits  : ON  | CorpseGuard : OFF
+ Aggressive  : ON  | ScreenLength: 40  | Arena Info  : ON  | Ansi-Colors : ON
+ Cmd Notify  : ON  | Class Tells : YES | AFK         : NO  | Info        : ON
+ Objstack lvl: 2   | Autoloot    : ON  | Autogold    : ON  | Autosplit   : ON
+ Powergroup  : ON  | DimDoor     : ON  | Privacy     : OFF | Playing     : YES
+ Recall Prot : OFF | Metric      : OFF | Auto-assist : ON  |
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+
+Look at yourself:
+=================
+Score, stats, eq, inv, finger
+
+
+General controls.
+=================
+How to move around, look at things, drop, get, wear, wield,
+
+
+Gear up!
+========
+Get equiped! Donation room, (auction hall), (player shops), npc shops, storage.
+Identify, buy, sell, list, deposit, withdraw
+
+
+Go kill pixies!
+===============
+...
+
+
+
+
+
+
+
+
+Things to do before becoming too high level:
+============================================
+SINGLE:
+=======
+Before getting past level 7:
+  Explore Pixie Forest
+  Solve the quest: Payback
+
+Before multi:
+  Some quests may be only for pure-class, so if you plan to multi to a
+  different class, you might want to solve any pure-class quests first.
+  These are quests that _might_ have to be solved before multi:
+    * Lvl 50: A journey in time          anti-Nb
+    * Lvl 50: Come Home                  An-only
+    * Lvl 40: Diamonds are Forever       Fi-only
+    * Lvl 50: You Only Live Twice        Fi-only
+    * Lvl 50: Midget Magic               Ma- or Wl-only
+    * Lvl 50: Hail to the Thief          Ro-only
+    * Lvl 50: Terrors from the Past      ?
+    * Lvl 40: The Chalice of Death       Nb or Nb/Nb only
+    * Lvl 50: The Darkeye Assignment     Nb or Nb/Nb only
+    * Lvl 50: Dire Reflections           Ro-only
+    * Lvl 20: The deserted room          ?
+
+MULTI:
+======
+Before getting past level 4:
+  Explore Dharynn's Huge Forest. Some rooms are max level 4
+
+Before getting past level 8:
+  Explore Sanctuary room in Karandras
+  Explore the mv-reg room in Faery Forest.
+
+Before getting past level 15:
+  Solve the quest: The spaghetti incident?
+
+Before getting past level 20:
+  Explore Impact
+  Explore The City of Thalos
+  Solve the quest: Hair of the Dog
+
+Before getting past level 25:
+  Solve the quest: Knockin' on Heaven's Door
+
+Before getting past level 30:
+  Explore Faery Forest
+  Explore Haunted Keep
+  Solve the quest: Good Night
+  Solve the quest: It's a dogs life
+  Solve the quest: The Lab Rat's Lament
+  Solve the quest: Fillet o' Fly
+  Solve the quest: Egg Exchange
+
+Before getting past level 40:
+  Solve the quest: The Sword in the Stone
+  Solve the quest: Peters Big Meal
+
+Before getting past level 45:
+  Solve the quest: Hunters hunted
+
+Before getting past level 49:
+  Solve the quest: Destroy the threat from the skeletons
+  Solve the quest: Rebirth of a King
+  Solve the quest: Jambalaya that goes bump in the night
+
+
+Solo exp areas (when multi you can, of course, take them at lower level):
+=========================================================================
+Levels Area             Note
+ 1- 5: Daycare          Nice pink ice rings
+ 1- 7: Pixie forest     Don't attack any spell casters
+ 1- 8: Lagamore         Foxhounds: Lvl 10 with <20 hp. Use spell. Beware dober
+ 5-10: Haunted keep
+ 6-11: Mob factory      Fidos attack sleeping chars
+ 7-12: Atlantis
+ 7-23: Goblik Warcamps
+ 8-16: Humblin          Some decent +hp items
+ 8-20: Elemental Canyon Avoid spellcasters
+ 8-45: Antharia
+ 9-14: Thalos           Lamias attack unless you are evil, dark or imped
+10-37: Garden of Angels
+12-20: Impact           3 quick area-dam scrolls work wonders in insect room
+15-27: Muldorbrooke     Try use obsidian hobgoblin spear against them
+15-40: Fishing Village
+15-45: Kender village   Beware Bosk
+20-25: Darkenwood
+20-30: Underworld       First square. The souls flee (stabber area?)
+22-30: Galaxy           Beautiful star is high level but easy
+25-35: Turvagar         Malcor is agg-neutral. Ocre gremlins dont see in dark
+25-38: Elven lands      Elven druid casts heal on you!
+25-40: Caverns          Imp or darkness prefered
+25-50: Hobgoblin camps  Max-enchant a wielded, forged fire-headed mace
+30-45: DarkFriends
+35-50: Venden           Try use misty transparent leash
+35-50: Court
+35-50: Mustaine
+35-50: Alchor           Use unlife/poison/silver
+40-50: Museum           Beware elite guards if you are evil
+40-50: Orshingal
+45-50: Shipwreck        Troll:Fire, Ghoul:Unlife, Rest:pure/light/silver
+50-65: Argo             The trolls
+55-60: Citadel
+55-65: Antiriad         Use pure/light/fire
+
+* I'd suggest concentrating on weapon damage at lower levels even if you're
+  a pure mage, since mana runs out so fast. This means eq giving strength
+  hitroll and damroll. For convenience, try boost con (hp), wis (practices)
+  and int (spell-training) too. And a hp-boost is also great at low levels.
+  Check the Lowbie_eq file for some ideas.
+* Make sure to get an armor spell from a high-level player (ask any highbie
+  that isn't pure rogue/righter "arm"). This improves your armor class tons
+  more than a nice lowbie-ac-gear.
+* Getting 1k xp every 5 seconds is better than getting 10k exp every other
+  minute. Obvious but easily forgotten - every kill doesn't have to give
+  great exp if you just kill fast enough.
+* To get to 50/50 you only really need:
+     1- 7: Pixie forest
+     8-16: Humblin
+    15-27: Muldorbrooke
+    25-50: Hobgoblin camps
+* Joining a group can bring you exp faster, but don't forget to enjoy the
+  game yourself too.
+* A charm person scroll can give you a nice pet. With some help you can
+  order Foreman Floyd around when level 1.
+* Area damage scrolls/staffs can help your exp rate a lot, if you can find
+  good ones (vibrating?), good rooms (Karandras, Hightower or use summoners)
+  and a good method (enter, tell priest summon, recite scroll).
+
+
+Suggested Eq:
+=============
+Note that this depends a lot on your class, but also on race and availability.
+See this for what it is - an example.
+                                         AC Hr Dr Specials
+<used as light>      coral scepter                wis+1, PERM darkvision
+<worn on head>       leather helmet       4       str+1, dex+2
+<worn ar neck>  normal    cowbell         1       str+1, hp+6
+                training  ornate broach   -       int+1, wis+1
+<worn ar neck>  normal    cowbell         1       str+1, hp+6
+                training  ornate broach   -       int+1, wis+1
+<worn on finger>     banded agate ring    2       str+1, con+1, wis+1
+<worn on finger>     banded agate ring    2       str+1, con+1, wis+1
+<worn on arms>       strongman's bracers  2       str+1
+<worn on elbow>      shadow mist prot.    3       hp+10
+<worn on elbow>      shadow mist prot.    3       hp+10
+<worn on hands>      calfskin gloves      2 +1    hp+4
+<worn on wrists>     forest green bracer  - +1    hp+15
+<worn on wrists>     forest green bracer  - +1    hp+15
+<worn as shield>     scarab shield        4       con+1
+<worn on waist>      woven straw quiver   -       dex+1, str+1
+<worn on body>       spiked leather vest  9       str+2
+<worn about body>    leather apron        -       all stats +1
+<worn on legs>       Svirfneblin leggings 6       str+1
+<worn on knee>       Galvorn kneepad      -       hp+10, save-1
+<worn on knee>       Galvorn kneepad      -       hp+10, save-1
+<worn on feet>       Stryder's boots      -       PERM fly
+<wielded>       rogue     Chamorro Dagger         PIpi  1d12 (add +1+1 enchant)
+                others    noble's longsword +2+1  SLsl  1d8
+<held>          normal    blue gem      -       hp+6, dex+1, con+1
+                leveling  sphinx        -       wis+2
+                training  telescope     -       int+2
+
+Result: Hp  +92
+        Str +11
+        Con + 5
+        Wis + 4
+        Int + 1
+        Dex + 5
+        Save -2
+        PERM darkvision & fly
+...and 4 more wis when leveling, and 4 more int when training spells.
+* Any bonus exceeding max stat will be wasted, so if you don't need all the
+  stats, switch some item to something else, more usable (other stat, hitroll
+  or hp).
+* At low levels it's pretty hard to hit your target, so hitroll is a lot more
+  important than damroll.
+* When having a light source you won't need darkvision. But if you eg switch
+  your neck gear to ghostly chains (hr+1, ac-4, mv-15, DARK), you will bring
+  darkness with you, which can help you avoid many aggressive mobs.

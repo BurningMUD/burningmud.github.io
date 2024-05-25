@@ -1,0 +1,181 @@
+# OC - Roads and Rivers (Orhan): 1-100, Burning Staff
+#
+#                                 w                                                                         Venden
+#                                 |                                                                            |
+# Travelling Fair -> Circus       w                                                                            w
+#                    Drakyri      |                                                                            |
+# M -> Mirror Beyond              w                                              Little                        w
+# * = Obelisk                     |                                               Haven    /- Ice Caves        |
+# w = Water                     w-w                                            Ice    \   /                  w-w
+#                               |                                             Area\    \ /  Antharia         |
+#                               w                                                  \    |  /                 w
+#                               |                                        Ice Wall - Oceania   S.S.    Rabbit |
+#                             w-w                                                        | /-Scurvy   Warren w
+#                             |                                              Chessboard  |/             /    |
+#                             w                                            Darkwater  \  |          Starlet  w-w       Citadel
+#                             |                           Atlantis                  \  \ +             |       |         of
+#                             w            Galaxy           *|   o --- o -- o -- o - Sundhaven-------o-o       w        Order
+#                             |               |              |   |                      *+  |          |       |          |
+#                           w-w       Elven  Elven       o - o - o                       o Museum      o-o-o o-w        Marsh
+#                           |         Lands-Village      |                               |                 | | |          |
+#                           w                 *| o - o - o                               o                 o-o-|-o-o Highlands
+#                           |                  | |   |                                   |                     w   | |    |
+#                           w                  o-o   o                                   o                 w-w-w   | |  Amphi-
+#                           |                  |    /                                    |                 |       o-o Theater
+#                           w-w            o - o Rat's                                o--o             w---w         |
+#                             |            |      Lair                                |                |             |
+#                             w            o            Antiriad                      o-o              w             o-o
+#                             |            |               |                            |              |               |
+#                             w-w          o - o - o       o                            o              w-w-w           |
+#                               |          |       |       |                            |              |   |           o
+#                               w          o       o - o - o                     o------o              w   w-w         |
+#                               | Ocean    |               |                     |                     w     |         |
+#                               w-Floor  o-o               o - o    Alchor       o   o-\               |     w-w     o-o     Snake
+#                               |        |                     |       |         |   |  \            w-w       |     | |      Lair
+#                               w----w   o                     o - o - o       o-o-o-o   \           |         w   o-o o         |
+#                                    |   |                             |       | |        \          w         |   |   |   Dark  |
+#                                    | o-o                             o - o - o |         \         |         w o-o   o-o Spawn |
+#           Juargan                  w |                                         |          \      w-w         | |     | |   |   |
+#                | Ship- Smugglers   | o                             Upper---Northern        \     |   o---o-o-|-o     | |Enchanted
+#         Lost   | wreck/ Den        | |                             Argo     Plains \        \    w   |   |   | Wayhouse| Forest
+#        Temple  |   / /             | |                                    * /       \        \-o-|-o-o   o---w         o   |
+#              \-Kerofk   Kaltor     w-|-w-w                              Ultima    Mustaine       | |         |         |  Huge
+#      Elemental  *|| \     |        | |   |                                                       w-o         w         o-Forest
+#       Canyon-o---o| Reef  |        o-o   w-w                                                     |           |         |     |
+#          | * |    |       |          |     |                                                   w-w           w-w       |   Fishing
+#          |   o----|-------o--Gorm    o-o   w                                                   |               |       |   Village
+#      Revered   Valley     |            |   |                                                 w-w               w       o-o
+#      Plateau     of       o            o   w-w-w                                             |                 |         |
+#          |     Kings      |            |   |   |                                         w-w-w                 w-w       |Turvagar
+#        Herd           o---o------------o w-w   w-w                                       | | |                           o |
+#        Area           |                  |       |                                     w-w | |                           | | Black
+#                       o                  w       w-w                                   |   | |         o-----------------o |Castle
+#                       |                  |         |                                   w   | |         |                 | |/
+#                       o  ____          w-w         w                     Pixie  Haunted| Enclave-------o-o              Mahn
+#                       | /    \         |           |                     Forest   Keep  \     |          |              Tor
+#                     o-o |    |         w           w-w-w                   |         |   \    | Ancient  |               |
+#                     |   |    o         |           |   |              ------------- Faery \   | /Lands   o              Ice
+#                     o   |    |       w-w           w   |              |Redferne's | Forest| Lorca        |             Castle
+#                     |   |  o-o       |             |   |              |           |  |    |              |
+#                     o   |  |       w-w             w   w---w          |Arena      |Wyvern |              o------------o
+#                     |   |  o       |               |       |          |           |Water  |Goblik          Ceanyth    |
+#                     \___/  |       w               w       |          |     K     |falls  |/ Caverns       Dungeons   o
+#                            o       |               |       |          |           |     \ ||/       Unholy    |       |
+#                    o-o+o   |        \              w-w     |          |     A     |    Moria-Rand  Darkness Citadel o-o
+#                    |  /    o         \               |     |          |           |       | \           |     |     |     Court
+#                    | o     |          \      Druid   w     w          |     R     |       o 3oS         | o-o-o-o   o-o     |
+#                    o |     \---------\ \     Forest  |     |  Gypsy   |           |       |    Orchard  | |     |     |  King's
+#                    | o               |  \      | o-o-|-o-o | Village  |     A     |       o       |   o-o-o     o-o-o-o--Castle
+#                    |   Haon-Dor      |   |     | |   | | | |   |     O|           |O      |       |   |               |     *
+#                    o-o-o-o-o-o-o-o-o-M-o---o-o o-o   w-o o---o-o-----W|     N     |E--o-o-o-----o-o-o-o            Humblin
+#                    |   |   |   |     | | |   | |     |   | |         G|           |G     /|
+#       Arachnos-o-o-o   o   o   o o   | o-w   o-o     |   | |          |     D     |     / \----------Amber
+#    Elem.       |   |   |   |   | +   |   |           |   | |          |Mob        |  Dwarven         Keep
+#    Plain Nir-  o   o-o-o   o-o-o-o-S |   \-------\   |   o w          |     R     |  Kingdom-----Zorn  |
+#  UW   |  vana  |     |       |   |   |           |   |   | |          |           |    /    \    Uzkul |
+#    \ *|  /      \    |       o-o-o-o |         w-w   |   | |          |     A     | Dwarven  Daycare   |
+#    Olympus Storm \   |       |     | |         |     |   | |          |           | Catacombs          |
+#       |    Giant  \  |     o-o-o o o |     w-w-w     |   w-w---w      |     S     |           /--------/
+#     Scubdu/        | \-------\ | | | |     |         |         |      |           |           |
+#       |    Ragnarok|          \o-o-o |     \         |         w-w-w--|-w-w-w-w-w-|---w-w-w-w-w
+#  Yggdrasil-/       |  Dragons  \     |      \        |                |           |           |
+#       |   \ Garden | Graveyard |     |       \       |                |Darkfriends|           www
+# Secret|    \--of   |      |    |     |        \      |                |  Sewers   |             |         
+# Garden|   o Angels |  Earthsea |     o-----o   \     |                | Graveyard |             wwww
+#    |  |   |        |      |    |           |   |     |                |___________|                |            Old
+#    o--o-o-o      o-o------o  o-o-o         o   |     |                  OSwG   OSeG--o-o           www        Kingdom
+#         |        |        |  |   |         |   |     |                   |       |     |             |    Drow   |
+#         o----o-o-o    o---o--o   o     o-o-o   |     |                   |       |     |             ww   City*  | Milorai
+#                  |    |          |     | |     |     |                   | Trade |     |              |  /   \  / /
+#                  o----o-o      o-o w-w-w-|-w-w-w     |                   o-Road  |     |              w---w-Desert-Thalos
+#                  |    | |      | | |     |           |                   |       |     |               /        \      *
+#                  w----w-|--w-w-|-w-w     |           |                   |       o     |          Underdark   Pyramid
+#                  |      |      |         o           w                 o-o       |     |             /
+#              w-w-w      o   Ancalador    |           |                /|         |     |        Darkunder
+#              |          |                |           |          Impact |         |     |                    Holy
+#            w-w        o-o-o              |           |                 |         o     o--------o-------o---Grove
+#            |       Troll|                |           |  /--------------/         |                      |
+#          w-w        Den o                |           |  |                        |                      o-o
+#          |                               |           |  o                        \---------------\        |
+#          w                               o---o       w--|--------w                               |        o-o
+#          |                                   |  o-------o        |                               |          |
+#        w-w                                   |  |       |        w                               |          o
+#        |                                     |  |     Miden'     w-w                             |          |
+#        w                                     |  |      Nir     /---|-------------o               |          o-o
+#        |                                     |  |       |      |   w-w-w-w-w     |               |            | Goblin
+#        w                                     |  |       |      |     |     |     | o-------------o            o-Caves
+#                                              |  |     Ghenna   |     w-w   w-w-w-w-|-w-w         |            |      Laboratory
+#                                              |  |              |       |           |   |         |            |          |
+#                                              |  o--------------/       w           |   w-w-w     o            o-o o--Wyvern
+#                                              |  |                      |           |       |     |              | |  Tower
+#                                              |  o                      w-w         o       w-w-w-w-w            | |
+#                                              |  |                        |         |               |            o-o-o
+#                                              |  o------------------------|-o-Gnome o-o             w-w-w          | | Toormail
+#                                              |                           | |Village  |                 |          | | |
+#                                              |                           | |         o-o               w-w      o-o | |   Dragon
+#                                              |         Lagamore  o---o---|-o   Shadow  |                 |      |   | |    Cult
+#                                              |               |   |       | |    Grove  o                 w    o-o   | |     |
+#                                              | Demon-        o-o-o       | |   /  |    |                      |     o-o-o-Ofcol
+#                                              |  city \         |         w |  HT  o-o--o                  o-o-o       |     *
+#                                       Taon   |   |   Kerjim    o         | |  |*    |                     |           |
+#                                      Citadel-o   |             |         | | Path-  o                 o-o-o           |
+#                                              |   |    Aband. o-o         w | weaver |                 |               |
+#                                              o-o |   cathed. |           | |        o-o               |               |
+#                                                | |       +   |           | |          |   Abandoned   |             Plains
+#                                                o-o-o-o   o   |           w-o          o     Caves     |  Inglestone---of---Kender
+#                                                      |   |   o           |            |       |       |              Dust  Village
+#                                                      o-o-o   | Orshingal w            o-o->Dragon-    |               |
+#                                                          |   |       |   |    Gnome     |   spyre     |             Solom
+#                                                    Grass-o-o-o-o   o-o-o w-w-Village    o     o-o-o   |
+#                                                    lands     | |   | | |   |            |     |   |   |
+#                                                              o o-o-o | o-o w-w o---o----o-o-o-o   o-o-o
+#                                                              |       |   |   | |Feverish|
+#                                                          o-o-o  Lethriel |   . | Swamps o
+#                                                   *      | |             |     |   |    |
+#                                                 New -o-o-o |             o-o-o-o-Amaz.  o-o
+#                                                Thalos      |                   |   |      |
+#                                                          Coven         Temple of  Krash-  o
+#                                                                       Tomaaukkhen karand  |
+#                                                                                           |
+#                                                                           Elven           |
+#                                                                           Valley - Solace | Galaxy
+#                                                                                      |*   |/
+#                                                                          Shaolin - Crystalmir
+#                                                                          Temple       Lake ---Mirror
+#                                                                                      /    \    Realm
+#                                                                                 Ciquala's  Darkenwood--Muldorbrooke
+#                                                                                   Lair                      |
+#                                                                                                       Hobgoblin Camps
+
+OC (Orhan):                   Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+The chicken                     5       E-xx--    -    201-201       1-1    summoned, flees, can load full newbie-set
+Quifael the little Elf         20  800k G-xx-x    -    252-255    4778-8956 hide. He is actually from Midgaard
+Rampgruff the crazed berserker 50     0 E-xxx-    -   2442-2467   2022-2049 [troll], kick, bash, headbang, no-where, usually found between Antiriad & Alchor
+Elaxer                         60     0 N-xxx-    -  20745-20745  5501-5501 [human], emote-asks for spells in battle, shrugger, summon chicken, walk-path (12pm:5s14en2en3es6e [King's Castle], 4pm:6wn3ws2ws8w5s3ws2es2esese2se2ses2ese7s2w3s11wnw5nw6n2w [Inglestone-5n2w], 1am:2e6se5ses11e3n2e7nwn2wnw2nw2nwnwn2wn2wn3w5n [Karandras], 6am:5n [Karandras-5n])
+The black carriage driver      80       N--       -                         no-attack
+The blue carriage driver       80       N--       -                         no-attack
+The emerald carriage driver    80       N--       -                         no-attack
+The golden carriage driver     80       N--       -                         no-attack
+The green carriage driver      80       N--       -                         no-attack
+The grey carriage driver       80       N--       -                         no-attack
+The orange carriage driver     80       N--       -                         no-attack
+The purple carriage driver     80       N--       -                         no-attack
+The red carriage driver        80       N--       -                         no-attack
+The silver carriage driver     80       N--       -                         no-attack
+The white carriage driver      80       N--       -                         no-attack
+The yellow carriage driver     80       N--       -                         no-attack
+The Riddling Rover             84       N-x       -                         questmaster, no-attack
+Leronah the Questmaster       100       N-x       -                         questmaster, no-attack, walk-path (7am:3es2es2esese2se2ses2es3e4s [Ofcol-4s], 1pm:4n3wnwswsws2ws2ws2wn2ws3w2se2sdw8n [Solace-n], 7pm:8sw4sw2sw3se2sw2nwne2nes6e2n6e [Kerofk-3s4e], 1am:2s12wnw2swse2sw3sw4sw4s3esenen3es4e5s6e [Karandras-5s]), spawns in Kerofk
+the black carriage            100       N-x       -                         no-attack, walk-path (Karandras -> Haon-Dor -> New Thalos -> Solace -> Ofcol, every 440s, closed)
+the blue carriage             100       N-x       -                         no-attack, walk-path (2s3e4sw2sese2sw2se2se4se2sdwn [Solace-6s], seu2nw4nw2nw2ne2nwnw2ne4n3w2n [Karandras-3s], every 180s)
+the golden carriage           100       N-x       -                         no-attack, walk-path (Karandras -> Ofcol, every 188s, closed)
+the green carriage            100       N-x       -                         no-attack, walk-path (3w5sw2sw3ses2wsw2sw4s2ws2w [New Thalos], 2enes2d2wd5su9s [Karandras-3s], every 165s)
+the grey carriage             100       N-x       -                         no-attack, walk-path (Karandras -> Sundhaven, every 277s, closed)
+the purple carriage           100       N-x       -                         no-attack, walk-path (2s3es2es2esese2se2ses2es3e [Ofcol], 3wnwswsws2ws2ws2wn2ws3w2se2sdwn [Solace-6s], seu2nw2n2ws3wnwn2ws2wnw2s2ws2w [New Thalos], 2en2e2n2wn2wn3wnw2nw2ne2nwnw [Haon-Dor (Lumberjack-2e)], 4esenen3es10e3s [Karandras-3s], every 420s)
+the red carriage              100       N-x       -                         no-attack, walk-path (3n14en2en3es6e [King's Castle], 3wnwne2nw2nwne2nw3nws [Wayhouse], 5nwnwn3wn2wn6w [Sundhaven], 10swse2sw2sws2wn2wnwn2wn2w2ne2n [Elven Village], 2sw4sw2sw3se2sw2nwne2nes5e [Kerofk-5s3w], 5wnw2swse2sw3sw4sw4sw [Haon-Dor (Lumberjack-2e)], 4esenen3es10e3s [Karandras-3s], every 600s)
+the white carriage            100       N-x       -                         no-attack, walk-path (3n10n3wswswn4w [Haon-Dor (Lumberjack-2e)], e4ne4ne3ne2nwne2nes5e [Kerofk-5s3w], 5wnw2swse2se2nw3ne2ne4ne2n [Elven Village], sen2en9e [Sundhaven], 9ws2ws2wswsw2s2es2eses2es2en3en3en3enenene3s [Wayhouse], ne3se2swse2se2swses3e [King's Castle], 6wn3ws2ws14w3s [Karandras-3s], every 600s)
+the yellow carriage           100       N-x       -                         no-attack, walk-path (3n10wn3wswswn3w4ne4ne3ne2nwne2nes6e2n4e [Kerofk-3s2e], 2w2s8wnw2swse2sw3sw4sw4s3esenen3es10e3s [Karandras-3s], every 247s)
+the emerald carriage          100       N-x       -                         no-attack, walk-path (seu2nw2n2ws3wnwn2ws2wnw2s2ws2w [New Thalos], 2en2e2nes2en2eses3en2e2se2sdwn [Solace-6s], every 170s)
+the orange carriage           100       N-x       -                         no-attack, walk-path (Ofcol -> Solace, every 175s, closed)
+the silver carriage           100       N-x       -                         no-attack, walk-path (9ws2ws2wswsw4sw2sw3se2sw2nwne2nes6e2n4e [Kerofk-3s2e], 2w2s8wnw2swse2se2nw3ne2ne4nenen2en2en9e [Sundhaven], every 235s)
+The accursed spirit           100 2222k N-x       -    642-646     452-476  INFO, [insubstantial], immune blind (not dark), invis, no-where, sneak, ignore-cop, flees, random teleports every hour or two? Casts teleport-self in battle

@@ -1,0 +1,52 @@
+# Lorchid City (158): 50-100, Gobzilla (?/50-60min)  (Crossroad: 2nen2en3en2en2es2es2en3enwnw3nw6ne2ne2ne2ne2ne2ne2ne2ne2ne4n)
+* FIND OUT: The Master of the ROOTS    xp, agg-N, type, irvs
+#
+#                                                        HighPriest
+#                                                   _________/|
+#                                                  /          |
+#                                                 x           |
+#                                                o            |
+#                                                |  o+Worchdo-o
+#                                            o - o
+#                                           /    |
+#                                          o     o
+#                                         /|
+#                                        o o - RIP
+#                                   o __/|
+#                                   |/   o
+#                                 o-o-o
+#                                /  |
+#     o-o-o ----- o-Khronatio   o   o
+#     | | |      /|                 |
+#     | | | o+dog |             o - o
+#     | | |       |             |
+# o-o-o-o-o ----- o             o
+# |   | | |       |             |
+# o   o-o-o ----- o             o - o - o - o - o - o - o + o
+# |                             |                          /
+# o                             o                       Master
+# |                             |                       of the
+# o         o   o   o   o       o       o   o   o       ROOTS
+# |         |   |   |   |       |       |   |   |
+# o -- o -- o - o - o - o - o - o - o - o - o - o
+#           |   |   |   |       |       |   |   |
+#           o   o   o   o       o       o   o   o
+#                               |
+#                               X
+#                               |
+#
+* Whole area, except a few rooms on path to cemetary, is very bright.
+* Black key on ground at Worchdo opens Rune by the dog. Large silver key there
+* opens the secret behind Worchdo, which has the wooden key to Master of roots.
+* Male/female Troins are vuln slay troll/fire/acid/mental
+* Ghostly Troins are vuln energy, resist WEAPON
+
+Lorchid:                 Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+A female Troin            55   61M E-xxx     GN  3501-3501  30000-30000 [troll], invis
+A ghostly Troin           55   72M E-xxx     GN   ~4k       65535-65535 [insubstantial], invis
+Troin male                60  103M E-xxx     GN  5001-5001  40000-40000 [troll], invis
+The Troin guard           65  131M E-xx      GN  7000-7001  60000-60000 [troll], invis, sleeping
+A lazy guard dog spirit   75  338M E-xx      GN 13000-13000 65535-65535 [entity], special-rip-attack (57), sleeping
+A Lorchid high priest     75  413M Ex-x      GN 13503-13563 65535-65535 [troll], blindness, wither, poison
+Worchdo, Lord of Lorchid  85 1700M Ex-x      GN 24182-25945 65535-65535 [---], resist WEAPON/fire/ice/pure/light/unlife/energy/acid/poison/earth/electricity/water/dark/mental/air/gas, ice storm, fireball, 0-2 spells
+The Master of the ROOTS   95       Ex-x      G -            65535-65535 INFO, [botanic?], vuln acid?, immune air?/gas?/light?/dark?, vuln fire if using "suit of bark armor", imp, special-stun

@@ -1,0 +1,56 @@
+# The Elven Valley (107): 5-25, Gbetz  (Solace: 5wn)
+#
+#                o---o---o---o
+#                |           |
+# o---o---o      |     o-+-o |
+# |       |      o     +  /+ o
+# o     o+o--o   |     o+--o |
+# |    x  |  |   |      /    |
+# |   o   |  |   |   o-o     |
+# |   |   |  |   o   | |     o
+# | o+o+o |  |   |   o-o     |
+# |       |  |   |   +       |
+# o---o---o  |   o---o---o---o
+#            |       |
+#            o---o---o
+#                |
+#     DR-DR--------o----DR-DR
+#     |          |/         |
+# DR-DR          o          DR-DR
+# |              |              |
+# |          o---o---o          |
+# o          |   |   |          o
+# |\____ o---o---o---o---o ____/|
+# |     \|   |   |   |   |/     |
+# |      o---o---o---o---o      |
+# |      |   |   |   |   |      |
+# |      o---o---o---o---o      |
+# DR-DR      |   | o |      DR-DR
+#     |      |   |/| |      |
+#     DR-DR  o---o-|-o  DR-DR
+#         |        |    |
+#         o--------X----o
+#                  |
+#                  o-
+#
+* DR = Down-exit leading to DT (RIP)
+* Lowbie area, but many aggressive mobs. And many DT:s
+
+Elven Valley:            Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+An old hermit              3  2400 N----     --    56-61       11-11   [human], flees
+A wolf                     4  6400 N-x--     --    81-83        1-1    [canine], flees
+A cooshee                  5   12k N-x---    --    96-105       1-1    [animal], flees
+A valley elf (duties)      6   21k N-x---    --   118-122      11-11   [elf], flees
+A valley elf scout         6   21k N-x---    GN   116-123      11-11   [elf]
+An antelope                6   21k N-x---    --   120-125       1-1    [animal], flees
+A valley elf sentry        7   35k N-----    GN   136-145      11-11   [elf]
+The demon skeleton         7   24k E-----    GN   137-144       1-1    [skeleton], summoned
+A valley elf (female)      8   56k N-x---    --   156-165      11-11   [elf], flees
+A valley elf (male)        8   56k N-x---    --   158-162      11-11   [elf], flees
+The demon zombie          10  100k E-----    GN   196-202       1-1    [undead], summoned
+A valley elf elder (F)    15  255k N-----    GN   292-298      11-11   [elf], looter, blindness, cure critic, curse
+A valley elf elder (M)    15  255k Nx----    GN   297-302      11-11   [elf], magic missile, burning hands, lightning bolt, blindness
+The lesser demon          15  225k E-----    GN   294-308       1-1    [demon], summoned
+The pyrohydra             20  600k N-----    GN   438-462       1-1    [dragon]
+Talemon                   25 1500k N-----    GN   595-603    1001-1001 [elf], colour spray, fireball, lightning bolt
+The guardian daemon       25 1500k E-----    GN   604-607       1-1    [demon], summon 3-10 demon skeletons, summon 2-3 lesser demons, summon 2-3 demon zombies, burning hands, fireball, blindness, teleport

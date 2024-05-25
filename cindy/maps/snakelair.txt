@@ -1,0 +1,44 @@
+# Nefertum's White Snake Lair (348): 50-100, Nefertum  (Slithering: e)
+* FIND OUT: Need a special weapon to get the snakeskins?
+*           Can give snakeskin: Chakara, Snake shaped hammer, parang, ...?
+#
+#                                    o----o-----o
+#                                    |          |
+#                                  o-o-o        o   o-o
+#                                  |   |       /      |
+#                                o-o o-o      o-o-o o-o
+#                                    |        |   | |
+#                                    o-o-o-o  o-b o-i-o  o-------------o
+#               9         1              |           /   |            /
+#               ^         ^              o          o----o RIP       o
+#               |         |              |               |  |        |
+#           11<-6---------5->7           o               o--o o-o  o-o-o
+#               |         |              +                  | |    | + |
+#    -X---o  1<-3---------|-----------\  o                  o-o  o-o+A+o-o
+#        /      |         |            \ |                       |   +   |
+#       o   10<-2->5    /-9-\  8   8  /--4--\                    |   o o-o
+#      /        |       \_|_/  ^   ^  \__|__/                    |   | |
+#     o      7<-1->5      |    |   |     |                       o---o-o
+#    /          |     7<-10----7--11-----8-> 4
+#   o           o         |    |   |     |
+#  /            |         v    v   v     v
+# o-------------o        11    6   6     9
+#
+* Min level 0/50 (by cave entrance)
+* b = Bowl of blood. Max 2 in this room
+* i = Inscription
+* A = Altar
+* Snakes are immune poison
+
+Snake Lair:                Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+A green snake               75  375M G-xx  0 5 GNE                1-1    immune poison, imp/invis, hide, poison
+A red snake                 75  375M G-xx  0 5 GNE ~20k           1-1    immune poison, imp/invis, hide, poison
+A grey snake                75  375M G-xx  0 5 GNE                1-1    immune poison, imp, hide, poison
+An Ancient Copperhead       85       G-xx    6 GNE                1-1    imp, hide, headbang
+An Ancient Coral Snake      85       G-xx    6 GNE                1-1    immune poison, imp/invis, hide
+An Ancient Cottonmouth      85       G-xx    6 GNE                1-1    immune poison, imp/invis, hide, headbang
+An Ancient Rattlesnake      85       G-xx    6 GNE                1-1    immune poison, imp/invis, hide
+An Ancient Viper            85       G-xx    6 GNE                1-1    immune poison, imp/invis, hide
+A Venerable Boa Constrictor 90       G-x     6 ---                1-1    imp/invis, hide
+A Venerable Python          90       G-x     6 ---                1-1    imp/invis, hide
+The White Snake            100       N-xx  3 1 G                  1-1    INFO, imp/invis, hide, hunt, trueheal, 0-2 spells per round, shrugger, arrives when 200 snakes have been killed (~55 snakes in the area).

@@ -1,0 +1,814 @@
+
+http://www.lysator.liu.se/~tomca/burning/exp.txt
+
+!!! EXP GUIDE !!!
+
+=======================================================
+
+Followers' guide:
+
+This note is for all newbies, ie 95% of the people on the mud (won't
+say 95% of people reading this, because only 5% of the ones who needs
+it actually reads help files).
+
+* Bring a BOAT, bring a BOAT, bring a BOAT!!!
+There is no need to waste priests' mana by having to ask for summon because
+the group walked over some water, or leader's time by returning and trying
+to find an ak mage to cast fly on you.
+
+* "who group" will list available groups. The first player listed is the
+leader. His title will often hint about whether you are welcome to join
+or not. Eg:
+ask:       Ask leader if you may join.
+DTFF:      Don't Tell, Find & Follow (just get to leader and follow him).
+Lvl 80-:   You may join if you are max level 80
+50/50+:    You may join if you are at least level 50/50
+Merc only: Open only for members of that merc.
+Closed:    No, you are not welcome to join
+Normally you are expected to be at least level 50/50 to join.
+
+* Bring a BOAT!
+
+* To get to the group, if it's not in Karandras, dimdoor (if you are a mage)
+or ask a priest. If unsure, ask someone in the group where the group is.
+You can't get summons to a different continent, into Underworld, to the
+Great Red Wyrm, to Waywatcher rooms and some other places.
+
+* Bring a BOAT!
+
+* Set second in Myrridon. If it's your first trip to NC (NC=New Continent.
+You will notice when going there by grouptells about NC, waiting by a
+shore, boarding a ship and then standing still for some time while the
+boat takes you to the other continent) TELL the leader that you haven't
+been there before and he will hopefully help you set that place as
+second hometown. Second hometown means that whenever you are in NC and
+recall, you will end up in the Myrridon temple. If you haven't set
+hometown, you will recall to Karandras.
+
+* Bring a BOAT!
+
+* If blinded, wait a little before complaining. Priests _should_ gheal after
+fights against mass-blinding mobs. Unfortunately nobody does, but some leaders
+actually asks the priests for groupheals when people get blinded.
+
+* If we are resting and you have full mana and heal ability, _spend_ some of
+that mana to heal someone. If you are highest level in the group and have
+access to the armor spell, cast it on the tank, rogues & nightblades. Casting
+regenerate on non-priest spellcasters, group blessing, recasting holyword,
+spelling up yourself,... Never hurts to do if you have full mana.
+
+* Turn OFF autoloot, but keep autogold ON. ALWAYS have autosplit ON.
+
+* Try to stay with the group. If you need to recall to buy onions/etc, do it
+fast.
+
+* Bring enough recall stuff to last you the whole pg. If you _do_ run out of
+them, try recalling the "normal" way before asking for summons to get to town.
+
+* Bring a BOAT!
+
+And finally...
+BRING A BOAT!!!
+
+
+=======================================================
+=======================================================
+
+Leaders' guide:
+
+Tips:
+* Many people will follow you if you just tell them "exp" (don't expect all
+  of them to be 100% ak, though).
+* If you have a high level purepriest, have him cast group armor (ask "garm"
+  or tell "agarm").
+* Any purepriest can cast group bless (ask "gbless" or tell "agbless")
+* Any priest can cast holy, so best to set a halfpriest on it (tell "aholy")
+* Puremages can cast magic carpet (ask "gfly" or tell "agfly")
+* Puremages can cast group invisibility (ask "gimp" - useful eg when passing
+  the marsh on the way to Citadel of Order)
+* If fighting a mob that blinds, ask for a gheal after the fight.
+* If fighting a mob that withers, ask for a gpow after the fight.
+* Might be a good idea to _not_ be invisible/dark, to make sure you don't
+  run past aggies, leaving someone to battle them alone. Use gimp if needed.
+* Try to spread the priest-settings, to reduce the risk of everyone healing
+  the same person at the same time. Ghp-heals is usually more drainy than
+  thp-heals, so if you have more than one purepriest, you can eg set the best
+  one (with regen) to thp 50, ghp 60, and the other one to thp 60, ghp 50. 
+* It's probably a good idea to consider using ghostly spear as energy-weapon
+  and get your followers to do likewise. It can be stabbed with by rogues
+  but doesn't deal "PIERCE" damage, so can be used against the Solom ghosts.
+  And if everyone (most) people uses it, then it can be used against other
+  pierce-immune mobs too, even if they aren't vulnerable to energy (making
+  sure all the rogues can help out).
+* Best would be if everyone could add a new weapon type - plain, that didn't
+  have any specials. Then that could be used against any mob with weird
+  resistances/immunities (bloody dagger for rogues and the 15-thronged whip
+  for non-rogues are perfect plain-weapons. If you can't do damage with them,
+  then no other weapon will work either).
+* Some priests have popcheck-scripts to help you figure out which areas have
+  respawned (pop:ed). Try grouptelling "popcheck oc" to see if anyone has it.
+  Syntax and response can vary. If several has this trigger, try using tell
+  instead of grouptell, to get just one response. The most commonly used
+  targets to check pop on are oc/nc/medjai/drow/uw/soulies, but others exist.
+
+Common courtesy (imo):
+* If someone dies, MAKE SURE he gets his corpse back! Many people have spent
+  months and even years to get their eq.
+* Expect some people to be afk. You are still responsible for them. If you
+  don't like it, ditch whoever shows to be afk (in a SAFE place. And just tell
+  them they're welcome back once they get ak again).
+* Don't go up against mobs that normally kill people, unless you have a big
+  group consensus. Many people joining exp are there for exp - not to risk
+  their lives.
+* The followers aren't there for your personal gain. If you take a group and
+  only kill a couple of eq-mobs, roll ALL the eq. As a leader, it's ok to take
+  a leadpick, but then you're expected to lead some exp too. And even if you
+  do lead some exp, it doesn't allow you to risk peoples lives, just so you
+  can leadpick a power-item.
+* If people keep failing to recall, I see no problem in ditching them (once
+  summoned to FS). Same if you lose people because they aren't having a boat.
+  Just ditch and tell them they're welcome back once they've fixed whatever
+  they are lacking.
+
+
+Healing:
+Priest healings aren't too easy to understand. This is what (I believe) their
+different abbreviations mean, and how to handle them:
+-> grouptell status
+...and you might get something like this:
+(group)Cd is set to, 'Tank: Sue, mhp: 10% thp: 60% ghp: 60% gphp: 75%(4) dHEAL
+ Off (uzi 1.41)
+Tank: Is set to "Sue". Usually the leader, but could be a non-leader who is
+      starting every attack (because leader is too puny), or a rescuer.
+      He's the one expected to take the most damage.
+mhp:  MiraHealPercent! If tank gets below this, priest will cast mira on him.
+      Have it set low - normally to kick in only in case of emergency.
+thp:  TankHealPercent! If tank gets below this, priest will cast true on him.
+ghp:  GroupHealPercent! If a groupmember gets below this, priest will true him.
+gphp: GroupPowerHealPercent! If X groupmembers gets below this (X being the
+      number in parentheses), priest will cast a gpow. Useful when fighting
+      many opponents.
+dHEAL:Dynamic healing. Heal at higher percentage when high on mana and lower
+      when low on mana. Normally considered crap, but quite useful if handled
+      correctly. Don't bother with this unless you understand it.
+
+To change any percentage, use tell. Eg "tell <priest> thp 60".
+Good standard values, if only one priest, see the example above.
+For two priests, set the "best" priest (with regen, otherwise highest level)
+to thp-50, ghp-60, and the other one to thp-60, ghp-50 (ghp is normally more
+drainy than thp).
+Note: It's good if priests have different values, or they will both heal the
+same person at the same time, causing overhealing and inefficiency.
+
+Trueheal costs 80 mana and gives one person a double-powerheal.
+Gpow costs 150 mana and gives everyone a powerheal.
+So if 4 people needs healing, a gpow will heal as much as two trueheals,
+slightly cheaper and at half the time.
+Personally, I like having gphp set to 75% on the "best" priest.
+
+The lower your numbers are, the less overhealing you will have: If someone
+has 2k hp, it's good if he is below 50% before he gets a +1k hp trueheal.
+But you don't want them so low that people die. Deaths are always inefficient.
+A tank with 5k hp can have thp at 80% with almost no overhealing. No need
+to keep the tank permanently low on hp (just increases the risk of him dying).
+
+Stick to the basics in the beginning. If a priest gets drained too fast, or
+stays at 100% while the rest goes down, you can try modifying the numbers.
+After a while you might get a feeling for it, and find your own preferred
+settings.
+
+Finally, if priests are full, let next area be a drainy one. If priests are
+getting low, let next area be a less drainy one. Save one drainy area, to
+clear last, before taking the boat to the other continent (unless you can
+jump between the continents).
+
+
+-------------------------------------------------------
+                          O C
+-------------------------------------------------------
+
+Laboratory: (soulcrushers)
+===========
+> Get to Ofcol
+3wnwn6e
+> walk "carefully": 5e2u2w2u2eu4w (water, some aggie mini-mobs, doors)
+open mirror
+gtell use pure
+n6w5n
+open door
+d
+> Kill all on this floor:
+> Clearing east side: 6e4s3n6w (one step at a time)
+> Clearing south side: 4s4ew2ns3w4n (one step at a time)
+> Then walk to bottom floor.
+se2sen3eswsese
+open door
+d
+> Mystical ones are tough and have areablind & plasmaball, so kill on own risk.
+> Just follow the path and kill whatever you want.
+6w5n6e4s5w3n4e2s3wne
+> If you skipped many due to being in the same room, you can walk back and
+> kill the ones that's moved to more convenient positions:
+ws3e2n4w3s5e4n6w5s6e
+> Done!
+
+Note: Most soulcrushers move around (sneaking). Only the aggressive (angry)
+      and mystical ones are standing still.
+      Soulcrushers assist each other. Only exception is the aggressive ones,
+      on bottom floor, who aren't assisted by anyone. If more than one
+      soulcrusher in the same room, you can always skip them and return a bit
+      later, and they might have spread out.
+      Angry & mystical soulcrushers may spawn badly if not all are killed,
+      causing more than one to appear in the same room. 
+
+
+Ceanyth + dungeon: (beasts & monsters)
+==================
+> Get to Kings Castle
+6wnwn
+gtell use dark
+> walk carefully: 8 north (random-agg guards here)
+open door
+4nu
+open door north
+n
+> Kill & loot lady. Sometimes has 1.2M gold
+sd
+open door west
+w
+> Kill & loot lord. Sometimes has 3M gold
+unlock door north, open door north
+n
+> kill & loot golem. Sometimes has 750k gold
+n
+> kill & loot golem. Sometimes has 750k gold
+2se2s
+open door west
+gtell use pure
+ws2d
+> Walk through the whole area, step by step, killing all monsters & beasts.
+> sw part can be skipped since it's normally pretty empty. I also normally
+> skip the southeasternmost room (since it's 6 steps to check one room).
+> Walking with slight overlap, to catch moving ones:
+2snwn2snwn2snwnsw5en2snen2sn2ewsewsnwn2snwn2sn2w
+> if you want to include the southwest area, go:
+3wesewswnswese2weswe2s2nensewsnw2n2en2snen2sn2ew
+> else go:
+ese2wesew
+> Then continue:
+sw2ewswe2s2nes2nses2nses2nses2nsesn
+> To include southeast room, now go:
+ew4e
+> Then continue:
+n2w2en2w2enewnswn2sn2wsnwene
+> Done!
+
+Note: Guards might have life-items (sleeves, gauntlets, boots, etc). Have
+      a mage "cast 'locate object' life", and you'll know if the guards are
+      worth killing (not worth killing for just exp).
+
+
+Underworld: (soldiers, members & gods)
+===========
+> Get to Olympus
+where hermes
+> Get to Hermes. If you have trouble and a rogue, you can "gt track hermes"
+ask hermes death
+gtell use dark
+n
+> If barge isn't there, wait for it
+board barge
+> Check if you have a Ma/Ma. If so, ask him "gfly", to not lose non-flying
+> people who aren't carrying boats.
+> wait until barge brings you to the other side
+leave barge
+10n5e2ne3nw3n3en7e
+> Move and kill all soldiers & members, plus Ajax & Musaeus (= everything):
+3n4e6s4w6n2ese4s2w4n2e4sw2n
+> Skip the guard to the plane of the gods. Big mouth, big size, small exp.
+> Just move up and kill all guards there, plus all gods except Odysseus
+> (tough) and Arcane (no-attack):
+nu2n, kill guards, sw, kill guards, u, kill Jason
+d2e, kill guards, u, kill Theseus
+dse, kill guards, u, kill Orpheus
+d4w, kill guards, es, kill guards, u, kill Perseus
+d2e, kill guards, u, kill Achilles
+dws, kill guards, u, kill Agamemnon
+> Then head back:
+d2n
+open gate
+d3sw4nen2w3s7ws3w3se3sw2s5w10s
+> If barge isn't there, wait for it
+board barge
+> wait until it brings you to the other side
+leave barge
+s
+enter stone
+> Done!
+
+Note: Whole area is nosummon/norecall, which is why you have to walk back.
+
+
+Dragons Graveyard: (attendants, dragons, wyrms etc)
+==================
+> Get to Karandras obelisk
+10wn3wswswn12ws2w2sen
+> Hatchling has key to gate, but flees, so better pick
+gtell pick gate
+gtell use unlife
+open gate
+n
+> Careful now! Aggie draconians & bodyguards. If unsure, peek.
+2n
+> If it hasn't been done, open the door east, so draconians/bodyguards can
+> move away. Will make it a lot safer next time you (or others) come here:
+e, open door east, w
+> If diamond ring is popped, you might want to go fetch it:
+nu2se
+kill mage
+w2nds
+> Then move on to the graveyard:
+wd
+open grey
+s
+gtell pick door west
+open door west
+3w
+> Some aggie Dragon Master here. Just kill, and then move on:
+enter tomb
+gtell pick symbol
+open symbol
+d, enter abyss, s
+> (the symbol only needs to be picked and opened once - stays open until boot)
+> Kill attendants first, since they are agg and vuln unlife. 4 of them,
+> moving around. Normally one in each quadrant:
+swnswesn2en2snw3sw2ewswesw2ewn3en2snesnes2nsw3nw2ewnewne2wes4wn
+> Then another round, this time killing everything else. Note that Doomed
+> Wyrms sometimes turn into Zombie Wyrms when dead.
+gtell use slay dragon
+swnswesn2en2snw3sw2ewswesw2ewn3en2snesnes2nsw3nw2ewnewne2wes4wn
+> Done!
+
+
+Kaltor: (charred skeletons)
+=======
+> Get to Elemental Canyon
+usd
+> Agg cyclops here. Can ge ignored if you get a gimp before going.
+3dese
+gtell use unlife
+> walk carefully: 13n (aggie lvl 66 corpses)
+open door east
+ed
+open door south
+> walk carefully: 5s (aggie lvl 67 serpents)
+open door south
+s
+open door south
+> Go through the whole bottom level, one room at a time, killing all charred
+> skeletons (skip the two southernmost rooms with Balgroth & Kaltar):
+sd4s2n2eswsw2ese2s2wes2w2e2nwnwesw2sw2nwne2newswn2w2ses2n
+> Done!
+
+Note: Charred skeletons move around, so there may be several in the same room.
+      They are aggressive, and hit pretty hard. At least two purepriests is
+      preferred, and you'd want to have 3k+ hitpoints as a leader, to handle
+      walking into a room with 3 of them.
+      If you feel unsafe, use a peeker.
+      One of the skeletons is level 100 and info. He looks pretty much like the
+      other skeletons, and is just a little tougher.
+
+
+Amphitheatre: (grolims)
+=============
+> Get to Sundhaven
+3e
+open gate
+3es2es3ese2n4w
+gtell use iron
+> Go through the whole area, one room at a time, killing all the aggressive
+> grolim warrior priests (and the fanatic Grolim priests if you want).
+> East side:
+3n4e7n3wedw2e5s5w
+> And back:
+5e5nwu2e7s4w
+> West side:
+3w2ndnu4n2e2w4sd3newsd3s3e4nwe3s
+> And bottom floor. Here is a high priest (vuln energy). He can be found in
+> the northwest room, which can get nasty if there are other aggies with him.
+dnswn
+
+Note: Fanatic Grolim priests are not aggressive. If you attack them, be ready
+      to toss a gheal after the fight, since they blind people.
+      All priests (except high priest) move around.
+
+
+Abandoned Caves: (deep ones, star spawns, proto)
+================
+> Get to Solace
+7seu2nw4n3e3n3u6en
+gtell use fire
+> Find and kill Mor'balach (aggressive, vuln pure/light/fire/slay orc)
+d3ew2s2w6n2esn2w2s2w2sew2s2w
+> Get his key and get to the door in southwest (d2w2s2w from entrance).
+unlock door
+open door
+drop key
+gtell use normal
+> Go through the whole area and kill all deep ones and star spawns.
+13wne2sws2w4n2e2w2s
+> Clear the rest of the area, includng 2 proto shoggoths
+4e3nwnswes2enewnw
+> If you feel lucky, and the pnakotic manuscripts is loaded, you can use
+> the old parchment (a key) and go kill Shub-Niggurath:
+> (unlock door, open door, 3nes)
+> otherwise you're done.
+
+Note: Deep ones and star spawns move around. Hunting horrors and proto
+      shoggoths stand still (and the horrors aren't worth bothering with).
+      This is not a great exp-area, but if elder sign is loaded, it'll give
+      a decent item on the way.
+
+
+Coven: (witches)
+======
+> Get to New Thalos
+2enes
+gtell use normal
+2d2ed
+> Kill all the witches in this, southeast, arm of the star:
+wes2wsw3es2wese
+> Then, take the shortcut to FS:
+sus
+
+Note: No known irv:s, and I'm fairly sure they don't have any.
+      The priestess (sanced) casts area spells. Nothing terrifying.
+
+
+Haon Dor: (trees)
+=========
+> Get to Karandras obelisk
+10wn3wswswn9w
+gtell use acid
+> Go through the whole area, one room at a time, killing all trees except the
+> oak one, which is tougher. Small, aggie wolves will attack here & there:
+3w2new2s2e2s2wn2w2sws3wne3w2es3es2ewnensen2e2sw
+> Done!
+
+Note: Normal tree: A huge, ancient tree towers above you.
+      Big tree:    A huge, ancient oak tree looks down on you from above.
+      ....and the big one is also sanced. Not sure how much tougher it is.
+      Also, beware of the DT! If you wee an up-exit, you have most likely
+      managed to get into the Arachnos-area. DT is then just west of you.
+
+
+Snake Lair: (wyrm + snakes)
+===========
+> Get to Enchanted Forest
+> Go to the wyrm. A few tiny goats may attack you on your way:
+3w
+gtell use slay dragon
+kill wyrm
+> When he dies "get treasure" (700k gold). Loot his stuff if you like, but
+> some items are cursed. He might have a flask that young mages can kill for.
+> Next the snakes:
+4e4de4nen
+open boulder
+gtell use normal
+gtell use slay snake
+> Then just go around and kill every snake you find:
+3ne3wnen2wswenen2esdsn2esenenweswsedesesenewswnw2nedseseswswnswnen
+> Then go back to see if any snakes hiding in the tiny room has moved out
+enuwswu2wn2ws
+> If you got any snakeskins, this is the time to hand then out to whoever
+> needs them, and then wait a bit for them to finish their quests.
+
+Note: All snakes are hidden, so most non-ktv will not be able to attack.
+      Not all snakes are aggressive, so you don't want people to aura up or
+      to areaspell. Thus, the killing goes a bit slower and so does the exp.
+      Also, there may be many snakes in the same room, so it can hurt a bit
+      if you're small.
+      On the upside, once you've killed off 200 snakes (57 snakes in the area,
+      so during fourth cleanup), The White Snake will come hunting you. He has
+      a key for the altar at the bottom, with the fabled white snakeskin belt.
+
+
+Ragnarok: (wargs)
+=========
+> Get to Karandras obelisk
+10wn3wswswn12ws2w2sws3wnwn5u10ndswsd
+> Now you have to get past some rooms which might have aggressive giants.
+> Either use a peeker to make sure you don't walk into a room with several,
+> or have someone sneak past them. Or pray for luck.
+4wnw
+> Inside the warg area.
+gtell use mental
+> And now just walk around the area and kill everything except Angerboda.
+2wseseswenwn2wnwne2wne2ws2ws3ews2es2esws2esesws2ens2wnenwnws2wses2wns2enwnwne
+> (Angerboda north of here)
+2wnewnewsw2ns2wseseses2wes2w2ne
+> Done!
+
+Note: Wolves are random-delay-agg - they do not attack on entry, but there's
+      a chance they will react (growl at you or something), which means they
+      will attack you in a couple of seconds.
+      Wolves are vuln mental but resist dark, so no do not use Nemesis.
+      Angerboda is big, aggressive and summons small wolves. Skip her.
+
+
+Ragnarok: (giants)
+=========
+> Get to Karandras obelisk
+10wn3wswswn12ws2w2sws3wnwn5u10ndsesd
+gtell use slay giant
+> Now just go south, out in the plains and move around as you like, killing
+> anything you feel you can take. If unsure of where to go, just go straight
+> south until you get to the end, then go a step west or east, and then
+> straight north again. Peeker is useful here, to not get too many.
+
+Note: These guys hit VERY hard! You will want to have a tank with nice hp,
+      rescues for the weak and a peeker to not get several aggies at once.
+      Thor & Odin are PG-mobs, so skip them.
+      Non-agg:     Viking, Valkyrie
+      Agg:         Berserker, Giant Warrior
+      Delayed-agg: Fire Giant, Frost Giant
+
+
+-------------------------------------------------------
+                          N C
+-------------------------------------------------------
+
+Cohn Shar: (medjai warriors)
+==========
+> Get to Crossroad
+2nen2en3en2en2es2es2en3enwnw3nw6ne2ne2ne2nenwn
+gtell use iron
+2ne3n4eu
+> Kill both warriors here
+d8wu
+> Kill both warriors here
+d4nu
+> Kill both warriors here
+d8eu
+> Kill both warriors here
+d4wnu4n
+> Kill both warriors here
+unlock gate
+open gate
+drop key
+> Go through the north area, one step at a time, killing all the warriors.
+newns3w4n3e2wse2we2s2es4n3e4s3w3n2ese2wese2w
+> Done!
+
+Note: Only the north part has moving Medjais. Medjais are vuln slay human too.
+      Once opened, the gates will stay open until reboot.
+      The area respawns _very_ often.
+
+
+Guallidurth: (drows)
+============
+> Get to Crossroad
+2nen2en3en4ws2w2n3w2s2w
+gtell use ice
+> If you're below level 40 or good-aligned, you can't go south. If so, either
+> disband to someone that can bring the group south, or have someone move
+> south, and then have a priest create a gate to him, and bring the group
+> through it. Once there, check for notheres and summon them.
+enter field
+s
+kill drow (the gate guard)
+unlock gate
+open gate
+> Go through the area, one step at a time, killing all the drows (archers and
+> assassins are not worth bothering with)
+3sewsew2s2w4s4e
+open window
+3e
+open secret
+e3n3s4w4n4w4sw
+open door
+2w3n6sw3n
+
+Note: Many, but not all, drows walk around. Vuln pure/light/ice/slay drow-elf.
+      Elite guards are agg-good, so be careful not to walk past them, leaving
+      someone to battle them alone.
+      Once opened, the doors will stay open until reboot.
+      2 gate guards (not moving) have keys. Both are cursed. Once you learn
+      where they are, you might want to turn off autoloot for those two.
+      3 rooms in the west part have assassins. They are closed in by doors,
+      which are better left closed, to make things less messy.
+THE Dot: Ultrahidden mob. Always spawns 6sw from entry guard. Can have dots
+         as eq (mana-dots and ac-dots). Have a mage locate "dot" and if any is
+         found on "someone" (and the locating mage can see hidden), it means
+         the dot has them.
+         This dot is NOT the same as the visible (hidden) dots.
+         To find it, you need to be able to see hidden, AND have sense life.
+         The dot will then be in the room where you get the message:
+           "You sense a hidden life form in the room."
+         He is vuln unlife and flees when he's close to death.
+         He is not tough or dangerous, just a bit messy to kill.
+         To kill: Clean out the drows nearby
+                  gtell use unlife
+                  attack with some areadamage
+                  tell others to "area to join"
+                  Once fighting stops, he has fled. Check the rooms nearby for
+                  this "You sense a hidden..." line. When found, have a mage
+                  cast hell storm. This will make him flee again, so quickly
+                  repeat this 5-6 times and he'll be dead.
+
+
+Khronatio: (decapitated women)
+==========
+> Get to NC crossroad
+2nen2en3en2en2es2es2en3enwnw3nw6ne2ne2ne2ne2ne2ne2ne2ne2ne4n
+gtell use fire
+> walk carefully: 2n7w4n5ene (small aggie troins here)
+gtell use water
+> Then go through the town, first taking the whole outer circle:
+5e, e, n, n, ne, e, 3e, 2e, e, es, s, 2s, s, sw, w, 2w, w, 2w, w, wn, n
+> Then the central parts:
+ne, e, en, se, e, en, n, 2se, e, 2ws, s
+> Done! Check for survivors/respawn:
+whe woman
+> If all dead, recall group and move on.
+
+Note: Women stand still, so taking this path will always get all of them.
+      Women are aggressive.
+      Women can murder. Not often, but it does happen.
+      Women cast sun ray. Small people can easily die. If you want to play
+      safe(r), have a priest cast gpow whenever you see a sun ray.
+      If you don't kill all women, they might spawn badly, being two or even
+      three in the same room. If this happens, the double ones are usually
+      found in the south & southeast parts. There can be doubles even if you
+      did kill them all.
+
+
+Alterac: (waywatchers, guards)
+========
+> Get to NC crossroad
+2nen2en3en2en2es2es2en3enwnw3nw6ne2ne2ne2ne2ne2n4ese
+gtell use unlife
+kill gatekeeper
+get key corpse
+unlock gate
+open gate
+e3nus2u
+> Kill all waywatchers here
+d2su
+> Kill all waywatchers here
+2dsd2eu
+> Kill all waywatchers here
+d3enu
+> Kill all waywatchers here
+d2nu
+> Kill all waywatchers here
+d2nu
+> Kill all waywatchers here
+dn3wu
+> Kill all waywatchers here
+gtell use slay human
+> Go through the whole area and kill all suitable humans:
+d2w6s2eud3enud2nud2budn2ws2weseswswsn2e2s3wun
+pick door
+open door
+3e3w2ud2nu2d
+open door
+5ewn2ws2wnd5es
+pick door
+open door
+wd3w2s2n
+open door
+2nwse
+gtell use pure
+> turn off autoloot
+s
+pick cell
+open cell
+wes
+open cell
+wene
+open cell north
+ns
+open cell south
+sne
+open cell north
+ns
+open cell south
+s
+> turn on autoloot
+> Done!
+
+Note: Suitable humans are high-leveled, non-area-casting humans with standard
+      irv:s.
+        80  A lieutenant of the high command oversees proceedings
+        80  A weary Bretonnian soldier recuperates from the strains of bat...
+        82  A member of the Alterac high command opposes you
+      For extra exp, you can also take these area-harm casting mercenaries:
+        83  A soldier of fortune waits here for direction
+        83  An adventurer of the realm is killing some time here
+      The lugrokis in the cells have cursed, heavy manacles. That's why you
+      turn off autoloot. Check their corpses, in case they have some artifact.
+      And don't forget to turn on autoloot again once the area is clear.
+
+
+Dragontail Isle: (Sarakesh guys & bodaks)
+================
+> From Gressford:
+24ws2ws2w2se2swseses
+> If dragon isn't there, wait for it
+board dragon
+gtell use mental
+> wait until dragon brings you to the other side
+leave
+d3ws6w
+> If gate is closed & locked, kill gatekeeper and unlock gate with his key.
+3wsw2ses2w2s
+> Go through the ground level, one step at a time, killing all sarakesh guys:
+ensesws2es2wsewswnsw2nwsnwn2enwnens2e2se2s2wn
+> Second level, for simplicity, kill only the aggie ones.
+> Peaceful ones have are damage and blindness, but are otherwise nice exp.
+u2sw2nwne2nw2esus
+get psalmbook
+> Third level can be cleared too, but also area damage and blinds, so skipping.
+ndn2ew2s2es2wswnd3s
+get key
+unlock gate
+open gate
+> Keep the key! It may be needed for the Bodak cells too.
+> First kill the 4 draconians (area-damagers).
+sds3w6s6e6n
+> Then kill all the bodaks.
+5wn
+swse
+w2sw
+e2se
+wsw
+3es
+n2es
+nen
+sene
+wnw
+e3ne
+wnws
+Done!
+
+Note: Many sarakesh guys (the non-aggie ones) move around. Non-aggie ones will
+      asist other non-aggies.
+      Bodaks may spawn badly if not all are killed. Very often the west cell
+      (nr 3 if my route is followed) has double bodaks.
+      All mobs are vulnerable to mental. Most are also vuln silver. Bodaks are
+      vuln slash/silver/mental/slay magical. Loads of mobs are immune dark, so
+      Nemesis is a poor choice of weapon.
+      Once you get comfortable, the best might be to start with top floor,
+      since you'll be a bit rested and that one is most drainy. Working
+      downwards it gets easier and on ground level your priests can probably
+      even regain a bit of mana, which can be good for when taking the bodaks.
+
+
+Oblivion: (misc)
+=========
+
+
+
+-------------------------------------------------------
+                        SPECIAL
+-------------------------------------------------------
+
+Grand master @ Citadel of Order: (quest boots)
+================================
+> Get to Sundhaven
+6es2es3ese3ne
+> walk (carefully or use gimp):
+e4s3es3wn
+open gate
+gtell use slay human
+3n
+open <door> up
+u3n2us
+open <door> south
+> walk carefully:
+s2w
+> loot key and unlock+open the door north
+n
+> If GM isn't here, he's either east, north or north-east. Kill him.
+
+Note: All mobs here are human.
+      GM casts area wither, so once dead, have a priest toss a gpow.
+
+
+Sin quest area:
+===============
+> Get to Kerjim
+gtell use pure
+> Walk carefully:
+7d4ne
+> For angels, say: In Nomini Noctu, et Antitheus, et Spiritus Diaboli
+> ==========
+...
+...
+
+
+> For Palladrus, say: Dei gratia nos vinces
+===============
+...
+...

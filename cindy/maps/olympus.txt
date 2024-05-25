@@ -1,0 +1,84 @@
+# Olympus (25): 10-50, Unknown  (Olympus: -)
+* FIND OUT: Stuff about Auctioneer
+#
+#                          Astral
+#               Elemental  Plane
+#                   Plain  /|
+#                       | x |
+#                       |/  |
+#                       o   |
+#                    o  | Nirvana
+#                    |  o
+#                    o /
+#                    |x
+#             Hera-o-o - o - Poseidon
+#             o     /|
+#             +    / o
+#           o+o+o o  |
+#             |   |  Q
+#         o   | Zeus      o
+#         |   |x  |       |
+#         o   o   |       o
+#         |       |       |
+#   Shiva-o - o - o - o - o-Ra   o
+#         |       |       |      |
+#         o  Dr   | Post  o    Ares + Hephaestus
+#             |   |   |                  |
+#             o - X - o ---------------- o-Clive   o
+#                 |   |                  |        /|  
+#                 |  Cs                Samuel    /Cry
+#                 |                             /
+#            As - o -------------------------- o - Auc
+#                 |                            |
+#        Apollo - o - Athena                   Is
+#                 |
+#            Bs - o - o - o
+#                 |   |
+#                 o   o
+#                 |
+#                 o
+#                /
+#               o
+#              /
+#             o
+#            /
+#
+* Same area as Ciquala's Lair.
+* Some smaller aggies around Ares and below Zeus
+
+Olympus:                 Lvl    Xp ASWIDMX # agg      Hp         Gold      Special
+Demeter                    1       N--       -       ?            ?        questmaster, no-attack
+A citizen                  4  7000 Gxxx-     -      78-83        51-134    invis, looter
+A Cook                     5   12k Gx-x-     -      96-105      212-287    invis
+The Guide (Olympus)        5  4500 G-xx-x    -      64-68        48-48     special-guide-commands
+A serving boy              6   21k Gx-x--    -     117-125      364-442    invis
+A pegasus                  8   60k Nxxx-     -     157-165        0-51     invis
+An apprentice musician     8   60k Gx-x--    -     156-164      802-847    invis
+The Jailer                13  182k Nx-x-x    -     253-262       11-11     invis
+A Golden Maiden           15  255k Nx-x-x    -     294-307      101-101    invis
+A roc                     15  255k Nxxx-x    -     292-308      501-501    immune earth, invis, looter
+A chimera                 20  600k Ex-x-x    GNE   452-461      101-101    invis
+A hound of war            20  600k Ex-x--    GNE   447-465        1-1      vuln mental, invis, looter
+A Soldier                 20  600k Nx-x-x    GNE   438-451      501-501    [human], invis
+Samuel the Armourer       20  600k Gx-x-x    -     456-480     1001-1001   [human], invis
+Julius the Green Grocer   30       Gx-       -       ?            ?        invis, shopkeeper
+Clive the Weapons Master  30 3600k Gx-x-x    -     741-751     4001-4001   [human], invis
+Prometheus                31 4340k Gx-x-x    -     786-805     4001-4001   resist fire, invis, fire breath, can VAPE eq!
+The Alchemist             34       Gx-       -       ?            ?        invis, shopkeeper
+The Cartographer          51       Gx-       -       ?            ?        invis, shopkeeper
+The Cryogenicist          51       N--       -       ?            ?        nofight-room
+The Guildmaster           51       N--       -       ?            ?        guildmaster, nofight-room
+The Item Store Clerk      51       N--       -       ?            ?        nofight-room
+The Postmaster            51       N--       -       ?            ?        nofight-room
+The Reception Goddess     51       N--       -       ?            ?        nofight-room
+Hermes                    65       Gxx       -       ?            ?        invis, no-attack, ask hermes death
+Apollo                    75  412M Gx-x x    -       ?       200001-200001 [mythical], invis, curse, powerheal, harm, confusion, blindness
+Athena                    75  412M Gx-x x    -               150001-150001 [mythical?], resist unlife/ice/fire/earth/air, invis, powerheal, curse, harm, blindness, confusion
+Hephaestus                75  300M Gx-x x    -   12002-12028 300001-300001 [mythical?], resist unlife/ice/fire/earth/air, invis
+Ares                      80 1280M Ex-x x    - E 23021.25    300001        [mythical], invis, summon soldier (3-10)
+Hera                      80 1120M Gx-x x    -   15005-15030 350001-350001 [mythical?], resist unlife/ice/fire/earth/air, invis
+Poseidon                  85 1615M Gx-x x    -   24020-24020 400001-400001 [mythical?], resist unlife/ice/fire/earth/air, invis
+Ra the Sun God            85 1700M Gx-x x    -   24005-24033 500001-500001 [mythical?], resist unlife/ice/fire/earth/air, invis, fire breath, can VAPE eq!
+Shiva                     85 1572M Gx-x x    -   23005-23020 500001-500001 [mythical?], resist unlife/ice/fire/earth/air, invis, headbang, gas breath, special-attack
+Zeus                      85 1870M Gx-x x    -   25001-25035 600001-600001 INFO, [mythical?], resist unlife/ice/fire/earth/air, invis, lightning breath
+The auctioneer            99       N--

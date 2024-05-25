@@ -1,0 +1,58 @@
+# Elven Lands (234): 10-70, Dalamar/Stryder  (Elven Village: 6nw)
+#
+#        __________
+#       /          \                                        o
+#       |          |                                       /
+#   o-o-o-o-o      |                ____                  o           o
+#       |          |               /    \                /     o      |
+#       o          |              o     |         o   o o   o  |      o o
+#       |          |             /      |         |   |/   /   o      |/|
+#       o          |            o-o     |       o o   o   o    |    o o o
+#       |          |             /      |       |/|   |  /   o-o    |/
+# o-o-o-o-o-o      |            o       |     o o o   | o    |    o o
+# | | | |   |      |            |       |     |/|     o-|----o    |/|
+# o-o o o mvreg    |    Damen-o-o       |   o-o o     | o         o o
+# | |   |          |            |       |     |       |/          |
+# o-o-o-o-o-o      |            o       |     o---o---o-----o-----o
+#     |            |           /        |             |
+#     o            |        o-o         |             o
+#     |            |       /            |             +
+# o-o-o            |      o             |             o
+# |                |      |             |             |
+# o                |      o             |             o
+# |                |      |             |             |
+# o                |      o-o           |             o
+# |                |        |           |             |
+# o                |        o           |         RIP-o o
+# |                |        |           |            /|/
+# o                \________/           |           o o
+# |                                     \__________/
+# X-
+#
+* All elves! Vuln iron/unlife/dark. Nothing aggressive, unless you're evil.
+
+Elven Lands:                        Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+A duck                               10  120k N-----    --   160-160       1-1     [animal], +150 starthp
+An elven child                       15  270k G-x---    --   187-267    2045-2623  [elf]
+An elven gardener                    25 1500k G-x---    --   500-500       2-2     [elf], +500 starthp
+A stout looking elven council member 30 3150k G-----    --   750-750    5001-5001  [elf], +750 starthp
+A sturn elven sorcerer               30 3465k G-----    --   750-750     101-101   [elf], resist WEAPON, armor of thorns, fireball, +750 starthp
+An elven druid                       30 3465k G-----    --   721-723    1334-9053  [elf], casts heal on YOU
+An elven lady of the cross           30 3435k Gx----    --   625-625    1000-1000  [elf], +600 starthp
+A focused elven archer               35 7350k G----x    --   768-811    1030-1030  [elf], +400 starthp
+A resting visitor                    35 7805k G----x    --   950-950    3500-3500  [elf], sitting, +900 starthp
+A stoic elven defender               35 7805k G-----    --   900-900       1-1     [elf], backstab, +900 starthp, blocker
+An elven lady of the sword           35 7805k Gxx---    --   900-900    2000-2000  [elf], +900 starthp
+An elven visitor                     35 7805k G-x--x    --  1125-1211   1311-1825  [elf], armor of thorns
+An elven ranger                      37 8510k G-x--x    --E  950-950    5000-5000  [elf], +900 starthp
+A dwarven explorer                   39   14M N-x--x    --  1500-1500   3995-4104  [dwarf], +1400 starthp
+A solid looking elven warlord        39   14M G-----    --  1500-1500  20001-20001 [elf], +1300 starthp
+An elven noble                       39   14M G-x---    --  1230-1230   6000-6000  [elf], aware, +1200 starthp
+A small elven philosopher            40   16M G-----    --  1400-1400      1-1     [elf], +1400 starthp
+Damen the drow elf                   40   15M E-----    --   901-901   15001-15001 [drow-elf], resist WEAPON, armor of thorns, fireball, +900 starthp
+King Valentine                       50   28M Gx---x    --  3600-3600  65535-65535 [elf], earthquake, 1-1 spells, +3500 starthp
+Peradorn, keeper of the garden       50   29M G-----    --  2540-2540  40000-40000 [elf], fireball, 0-1 spells, +2500 starthp, blood mirror
+Prince Belindaor                     50   25M Gx----    --  3400-3400  65536-65536 [elf], blocker, blindness, +3000 starthp
+Queen Leodore                        50   25M Gx----    --  2500-2500  54670-54886 [elf], lightning bolt, 1-1 spells, +2500 starthp
+Swordsmaster Pennidor                55   50M Gxxx -    --  3002-3004  75243-75259 [elf], bash, kick, headbang, berserk
+The Grand Elven Sorcerer, Belindor   70  154M Gx-- -    --E 8004-8004  45305-45333 [elf], blindness, earthquake, 1-1 spells, armor of thorns

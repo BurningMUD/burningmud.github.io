@@ -1,0 +1,59 @@
+# Lethriel's Crypt (???): 42-78, Zendrax  (New Thalos: 2en2e2nes2enes)
+#
+#                               Lava
+#                                 ^
+#                                 +
+#                             c<+ w +>c
+#                                 |
+#                             c<+ o +>s      |
+#                                 |          X
+#                             c<+ w +>c      |
+#                                 |          o
+#                             s<+ o +>c     /
+#                                 |        o
+#                             c<+ o +>c   /
+#                                 |      o
+#                             s<+ o +>c /
+#       c   s   c   c   s   c     |  __/s   c   s   c   s   c
+#       ^   ^   ^   ^   ^   ^     | /   ^   ^   ^   ^   ^   ^
+#       +   +   +   +   +   +     |*    +   +   +   +   +   +
+# Ice<+ w - o - w - o - w - o --- P --- o - w - o - w - o - o +>Air
+#       +   +   +   +   +   +    x|     +   +   +   +   +   +
+#       v   v   v   v   v   v   o |     v   v   v   v   v   v
+#       c   c   s   c   c   s  x  |     c   s   C   c   c   s
+#                           __/   |
+#                          /  s<+ o +>c
+#                         o       |
+#                        x    c<+ w +>c
+#                       o         |
+#                      x      s<+ o +>c
+#                     o           |
+#                    /        c<+ w +>c
+#                   o             |
+#                  /          s<+ o +>c
+#                 o               |
+#                /            c<+ w +>c
+#             Lord                +
+#                                 v
+#                               Earth
+#
+* c: Crypt. Door is locked on both sides, and going back out always leads to P.
+* s: As above, but with spirit.
+* C: As above, but with A demon of old.
+* w: Watchman of the Dark
+* The small Guardians can be a pain, but easily avoided with darkness.
+* The entrance key pops pretty often and doors don't close/lock at reset.
+* Down from the centre is not allowed for good-align.
+* All up-exits from the centre-down lead back to entrance.
+
+Lethriel's Crypt:                       Lvl    Xp ASWIDMX # agg      Hp        Gold       Special
+A small Guardian of The Unholy           50   41M E-xx-x    G--    ~3k      30626-30861   [undead], invis, vampiric mist
+A Watchman of the Dark                   55   55M E--xx     GNE    ~4k      39776-39819   [skeleton?], vuln crush/pure/light/silver, resist slash/pierce, invis, backstab, murder, bash, vampiric mist, trueheal
+The Spirit of a forgotten Ptrekkian King 60  121M E--xx     GN     ~4.5k        2-2       [entity], vuln light, vampiric mist, blindness, trueheal
+A demon of old                           75  210M  --xx     GN    ~20k          1-1       [demon], ultra-hide, vampiric mist
+The Ice-Demon                            75  301M E--xx     GN    ~13k    1505290-1505310 [---], ice damage, vuln fire, immune unlife/dark/ice, vampiric mist, trueheal, plasma bolt(ball)
+The Ptrekkian priest of Ptrok            75       E-        ---                           no-attack
+The Red Lava-Demon                       75  338M E--xx     GN    ~13k    1500044-1500054 [---], fire damage, vuln ice, immune unlife/dark/fire, hell fire(storm), vampiric mist
+The Solid Earth-Demon                    75  376M E--xx     GN    ~12k    1504595-1505157 [---], vuln air, immune unlife/dark/earth, trueheal, plasma ball, vampiric mist
+The Translucent Air-Demon                75  301M E--xx     GN    ~13k    1504697-1505078 [---], vuln earth, immune unlife/dark/air, trueheal, plasma ball, vampiric mist
+The Chaotic Demon-Lord                  100 3381M Ex-x       N    ~50k    2141763-2142121 INFO, [---], immune ice/magic/acid, vampiric mist, plasma ball, nether bolt, miracle, bash, backstab (56), murder, 2-2 spells/skills per round, room is noflee but recallable & sumout

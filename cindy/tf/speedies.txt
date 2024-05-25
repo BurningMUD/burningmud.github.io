@@ -1,0 +1,3209 @@
+; speedies.tf
+
+; These speedies are made to fit me and my triggers. They may walk past
+; monsters that aren't aggressive to me but are to others. And they may
+; use aliases defined in other files. So don't expect them to work by just
+; copying them.
+
+/unaliasSilent speedies
+/alias speedies /load speedies.tf
+
+/unaliasSilent rent
+/unaliasSilent expareas
+/unaliasSilent eqareas
+/unaliasSilent goto
+/unaliasSilent ul
+/unaliasSilent oe
+/unaliasSilent ow
+/unaliasSilent on
+/unaliasSilent os
+/unaliasSilent ou
+/unaliasSilent od
+/unaliasSilent ox
+/unaliasSilent oxx
+/unaliasSilent oxxx
+/unaliasSilent oxxxx
+/unaliasSilent ln
+/unaliasSilent ls
+/unaliasSilent le
+/unaliasSilent lw
+/unaliasSilent lu
+/unaliasSilent ld
+/unaliasSilent arena
+/unaliasSilent burningtowers
+/unaliasSilent mob
+/unaliasSilent matrix
+/unaliasSilent graveyard
+/unaliasSilent shop
+/unaliasSilent redferne
+/unaliasSilent redfernes
+/unaliasSilent back
+/unaliasSilent pixie
+/unaliasSilent dwarf
+/unaliasSilent daycare
+/unaliasSilent moria
+/unaliasSilent 3ofswords
+/unaliasSilent rand
+/unaliasSilent caverns
+/unaliasSilent goblik
+/unaliasSilent wyvernwaterfalls
+/unaliasSilent faeryforest
+/unaliasSilent hauntedkeep
+/unaliasSilent orchard
+/unaliasSilent zornuzkul
+/unaliasSilent catacombs
+/unaliasSilent highlands
+/unaliasSilent amphitheatre
+/unaliasSilent grolims
+/unaliasSilent sundhaven
+/unaliasSilent chessboard
+/unaliasSilent scurvy
+/unaliasSilent enclave
+/unaliasSilent hugeforest
+/unaliasSilent wayhouse
+/unaliasSilent starlet
+/unaliasSilent rabbit
+/unaliasSilent venden
+/unaliasSilent kingscastle
+/unaliasSilent unholy
+/unaliasSilent northernplains
+/unaliasSilent colosseum
+/unaliasSilent enchanted
+/unaliasSilent enchantedforest
+/unaliasSilent snakelair
+/unaliasSilent mahntor
+/unaliasSilent argo
+/unaliasSilent museum
+/unaliasSilent alchor
+/unaliasSilent antiriad
+/unaliasSilent humblin
+/unaliasSilent amberkeep
+/unaliasSilent citadel
+/unaliasSilent blackcastle
+/unaliasSilent ogrevillage
+/unaliasSilent icecastle
+/unaliasSilent court
+/unaliasSilent mustaine
+/unaliasSilent turvagar
+/unaliasSilent lorca
+/unaliasSilent ancientlands
+/unaliasSilent fishingvillage
+/unaliasSilent littlehaven
+/unaliasSilent icecaves
+/unaliasSilent icearea
+/unaliasSilent icewall
+/unaliasSilent antharia
+/unaliasSilent oceania
+/unaliasSilent ultima
+/unaliasSilent u1
+/unaliasSilent marsh
+/unaliasSilent citadeloforder
+/unaliasSilent ceanythdungeons
+/unaliasSilent darkspawn
+/unaliasSilent lumberjack
+/unaliasSilent darkfriends
+/unaliasSilent ancalador
+/unaliasSilent yggdrasil
+/unaliasSilent secretgarden
+/unaliasSilent trollden
+/unaliasSilent druid
+/unaliasSilent gypsy
+/unaliasSilent herdarea
+/unaliasSilent revered
+/unaliasSilent arachnos
+/unaliasSilent earthsea
+/unaliasSilent gardenofangels
+/unaliasSilent ragnarok
+/unaliasSilent olympus
+/unaliasSilent haondor
+/unaliasSilent dragonsgraveyard
+/unaliasSilent galaxy
+/unaliasSilent ratslair
+/unaliasSilent smugglersden
+/unaliasSilent juargan
+/unaliasSilent kerofk
+/unaliasSilent lizardlair
+/unaliasSilent elvenvillage
+/unaliasSilent elvenlands
+/unaliasSilent atlantis
+/unaliasSilent canyon
+/unaliasSilent darkwater
+/unaliasSilent losttemple
+/unaliasSilent shipwreck
+/unaliasSilent reef
+/unaliasSilent valleyofkings
+/unaliasSilent kaltor
+/unaliasSilent oceanfloor
+/unaliasSilent gorm
+/unaliasSilent scubdu
+/unaliasSilent stormgiant
+/unaliasSilent nirvana
+/unaliasSilent boardbarge
+/unaliasSilent underworld
+/unaliasSilent astral
+/unaliasSilent elementalplain
+/unaliasSilent fireelemental
+/unaliasSilent holygrove
+/unaliasSilent solom
+/unaliasSilent kender
+/unaliasSilent ofcol
+/unaliasSilent toormail
+/unaliasSilent wyverntower
+/unaliasSilent wyvern
+/unaliasSilent goblincaves
+/unaliasSilent plainsofdust
+/unaliasSilent inglestone
+/unaliasSilent laboratory
+/unaliasSilent dragoncult
+/unaliasSilent hightower
+/unaliasSilent dragonspyre
+/unaliasSilent elvenvalley
+/unaliasSilent lostsoulscatacombs
+/unaliasSilent shaolin
+/unaliasSilent solace
+/unaliasSilent ciqualaslair
+/unaliasSilent ciquala
+/unaliasSilent darkenwood
+/unaliasSilent mirrorrealm
+/unaliasSilent crystalmir
+/unaliasSilent abandonedcaves
+/unaliasSilent tomaaukkhen
+/unaliasSilent amazonia
+/unaliasSilent krashkarand
+/unaliasSilent feverish
+/unaliasSilent desert
+/unaliasSilent river
+/unaliasSilent MiloWalk
+/unaliasSilent FindNavigator
+/unaliasSilent NavigatorFound
+/unaliasSilent navigator
+/unaliasSilent welldrop
+/unaliasSilent milorai
+/unaliasSilent drow
+/unaliasSilent darkunder
+/unaliasSilent desolateplains
+/unaliasSilent thalos
+/unaliasSilent nomadcamp
+/unaliasSilent pyramid
+/unaliasSilent oldkingdom
+/unaliasSilent brassdragon
+/unaliasSilent muldorbrooke
+/unaliasSilent hobgoblincamps
+/unaliasSilent hobgoblincamps2
+/unaliasSilent hobgoblincamps3
+/unaliasSilent hc1
+/unaliasSilent hc2
+/unaliasSilent hc3
+/unaliasSilent hc4
+/unaliasSilent hc5
+/unaliasSilent hc6
+/unaliasSilent hc7
+/unaliasSilent hc8
+/unaliasSilent hc9
+/unaliasSilent traderoad
+/unaliasSilent impact
+/unaliasSilent miden
+/unaliasSilent ghenna
+/unaliasSilent taon
+/unaliasSilent newt
+/unaliasSilent coven
+/unaliasSilent grasslands
+/unaliasSilent cathedral
+/unaliasSilent lagamore
+/unaliasSilent gnome
+/unaliasSilent demoncity
+/unaliasSilent kerjim
+/unaliasSilent orshingal
+/unaliasSilent lethriel
+/unaliasSilent sewer
+/unaliasSilent underdark
+/unaliasSilent underdark2
+/unaliasSilent mirrorbeyond
+/unaliasSilent mirror1
+/unaliasSilent mirror2
+/unaliasSilent mirror3
+/unaliasSilent mirror4
+/unaliasSilent mirror5
+/unaliasSilent mirror6
+/unaliasSilent mirror7
+/unaliasSilent mirror8
+/unaliasSilent mirror8b
+/unaliasSilent mirror9
+/unaliasSilent mirror10
+/unaliasSilent fair1
+/unaliasSilent fair2
+/unaliasSilent fair3
+/unaliasSilent fair4
+/unaliasSilent fair5
+/unaliasSilent fair6
+/unaliasSilent circus
+/unaliasSilent drakyri
+/unaliasSilent myrridon
+/unaliasSilent myrridonboat
+/unaliasSilent frommyrridon
+/unaliasSilent 3mages
+/unaliasSilent tournament
+/unaliasSilent myrridonmines
+/unaliasSilent dunh
+/unaliasSilent xrne
+/unaliasSilent clerists
+/unaliasSilent oblivion
+/unaliasSilent apocalypse
+/unaliasSilent underground
+/unaliasSilent dragontail
+/unaliasSilent inferno
+/unaliasSilent dunheim
+/unaliasSilent giants
+/unaliasSilent woods
+/unaliasSilent lahresin
+/unaliasSilent guallidurth
+/unaliasSilent valheim
+/unaliasSilent haarvenu
+/unaliasSilent cohnshar
+/unaliasSilent narnia
+/unaliasSilent alterac
+/unaliasSilent battlefields
+/unaliasSilent lorchid
+/unaliasSilent khronatio
+/unaliasSilent palanthas
+/unaliasSilent boardship
+/unaliasSilent showseasick
+/unaliasSilent shopfind
+/unaliasSilent shopfindx
+/unaliasSilent leronah
+/unaliasSilent leronahAll
+/unaliasSilent leronah1
+/unaliasSilent leronah2
+/unaliasSilent leronah3
+/unaliasSilent leronah4
+/unaliasSilent leronah5
+/unaliasSilent buycorpse
+
+/purge KarandrasFS
+/purge MyrridonTemple
+/purge outsideEastGate
+/purge outsideWestGate
+/purge outsideNorthGate
+/purge outsideSouthwestGate
+/purge outsideSoutheastGate
+/purge marketSquare
+/purge outsideMyrridonGate
+/purge toOlympus
+/purge boardingship
+/purge boardingship2
+/purge boardingship3
+/purge shipmove
+/purge disembarktrig
+/purge fixresist
+/purge moving1
+/purge moving2
+/purge moving3
+/purge moving4
+/purge moving5
+/purge moving6
+/purge moving7
+/purge moving8
+/purge moving9
+
+
+/def KarandrasFS = \
+    drop Gaggabagga%; \
+    /def -n1 -ag -msimple -t"You don't seem to have a Gaggabagga." speedieStart = \
+      /if (currentroom =~ "The Fountain Square of Karandras") \
+        %*%%; \
+      /elseif (currentroom =~ "Entrance to Pixie Forest") \
+        /def -p999 -n1 -msimple -t"The Temple of Karandras" pixWalkFix = \
+          donothing%%; \
+        ;2s;%*%%; \
+      /elseif (currentroom =~ "The Temple of Karandras") \
+        ;s;%*%%; \
+      /endif
+/def MyrridonTemple = \
+    drop Gaggabagga%; \
+    /def -n1 -ag -msimple -t"You don't seem to have a Gaggabagga." speedieStart = \
+      /if (currentroom =~ "The Temple Altar of Myrridon") \
+        %*%%; \
+      /elseif (currentroom =~ "The Temple of Myrridon") \
+        ;e;%*%%; \
+      /elseif (currentroom =~ "Temple square of Myrridon") \
+        ;2e;%*%%; \
+      /endif
+
+/def outsideEastGate = /KarandrasFS ;6e5s;open gate east;2e%;\
+    /def -F -ag -msimple -t"It's already open!" _gate_already_open_gag%; \
+    /def -F -msimple -t"Eastern City Entrance" _gate_outside = \
+      /purge _gate_*%%;%*
+/def outsideWestGate = /KarandrasFS ;6w5s;open gate west;2w%;\
+    /def -F -ag -msimple -t"It's already open!" _gate_already_open_gag%; \
+    /def -F -msimple -t"Western City Entrance" _gate_outside = \
+      /purge _gate_*%%;%*
+/def outsideNorthGate = /KarandrasFS 2n
+/def outsideSouthwestGate = /KarandrasFS ;10s3w;open gate south;s%; \
+    /def -F -ag -msimple -t"It's already open!" _gate_already_open_gag%; \
+    /def -F -msimple -t"South-West City Entrance" _gate_outside = \
+      /purge _gate_*%%;%*
+/def outsideSoutheastGate = /KarandrasFS ;10s3e;open gate south;s%; \
+    /def -F -ag -msimple -t"It's already open!" _gate_already_open_gag%; \
+    /def -F -msimple -t"South-East City Entrance" _gate_outside = \
+      /purge _gate_*%%;%*
+/def marketSquare = /KarandrasFS ;5s;%*
+
+/def outsideMyrridonGate = /MyrridonTemple 21w%;\
+    /def -p2 -msimple -t"The gate seems to be closed." _gate_closed = ' %{openMessage}%;\
+    /def -F -msimple -t"The Gatekeeper of Myrridon unlocks the gate." _gate_unlocked = /purge _gate_opened%%;open gate%%;w%;\
+    /def -F -msimple -t"The Gatekeeper of Myrridon opens the gate." _gate_opened = w%;\
+    /def -F -msimple -t"Before the West Gate of Myrridon" _gate_outside = /purge _gate_*%%;%*
+
+/alias rent           \
+    drop Gaggabagga%; \
+    /def -n1 -ag -msimple -t"You don't seem to have a Gaggabagga." speedieStart = \
+      /if (currentroom =~ "The Fountain Square of Karandras") \
+        ;ses;usew normal;/fixresist;ren%%; \
+      /elseif (currentroom =~ "Entrance to Pixie Forest") \
+        /def -p999 -n1 -msimple -t"The Temple of Karandras" pixWalkFix = \
+          donothing%%; \
+        ;3ses;usew normal;/fixresist;ren%%; \
+      /elseif (currentroom =~ "The Temple of Karandras") \
+        ;2ses;usew normal;/fixresist;ren%%; \
+      /elseif (currentroom =~ "The Reception") \
+        ;usew normal;/fixresist;ren%%; \
+      /elseif (currentroom =~ "The Temple Altar of Myrridon") \
+        ;8w2su;usew normal;/fixresist;ren%%; \
+      /elseif (currentroom =~ "The Temple of Myrridon") \
+        ;7w2su;usew normal;/fixresist;ren%%; \
+      /elseif (currentroom =~ "Temple square of Myrridon") \
+        ;6w2su;usew normal;/fixresist;ren%%; \
+      /else \
+        ren%%; \
+      /endif
+
+/def fixresist = \
+    /if (resisting !~ 'OFF') \
+      noresist%; \
+    /endif
+
+/alias buycorpse \
+    drop Gaggabagga%; \
+    /def -n1 -ag -msimple -t"You don't seem to have a Gaggabagga." speedieStart = \
+      /if (currentroom =~ "The Fountain Square of Karandras") \
+        ;2s3w;buy corpse%%; \
+      /elseif (currentroom =~ "Entrance to Pixie Forest") \
+        /def -p999 -n1 -msimple -t"The Temple of Karandras" pixWalkFix = \
+          donothing%%; \
+        ;4s3w;buy corpse%%; \
+      /elseif (currentroom =~ "The Temple of Karandras") \
+        ;3s3w;buy corpse%%; \
+      /elseif (currentroom =~ "The Temple Altar of Myrridon") \
+        ;2n;buy corpse%%; \
+      /else \
+        /tfshow FAILED TO BUY CORPSE!!!%%; \
+      /endif
+
+; ----------------------  EXP start  ----------------------
+
+/alias expareas \
+    /tfshow OC expareas:                          NC expareas:%; \
+    /tfshow ============                          ============%; \
+    /tfshow laboratory (+ last mob)               cohnshar%; \
+    /tfshow citadel (money + ceanythdungeons)     alterac%; \
+    /tfshow underworld                            khronatio%; \
+    /tfshow dragonsgraveyard (+ ring)             guallidurth%; \
+    /tfshow kaltor                                dragontail%; \
+    /tfshow amphitheatre                          oblivion%; \
+    /tfshow abandonedcaves (+ elder sign)%; \
+    /tfshow haondor (+ dead roots tree)%; \
+    /tfshow enchantedforest (dragon + snakelair)%; \
+    /tfshow ragnarok (wargs & possibly giants)
+/alias eqareas \
+    /tfshow    Group                                    Self%; \
+    /tfshow Lorca: Fayador & Busti             Unholy D: Cain      1M slay human%; \
+    /tfshow CitadelOfOrder: GM boots           Atlantis: Neptunus  1M no vulns%; \
+    /tfshow Solom: plate  ((& wand))           Lost Temple: Statue 3M (locate telva)%; \
+    /tfshow Mahn-Tor: Axe                      Antiriad: Lord Sith 3M? locatable?%; \
+    /tfshow Venden: Void & leash                ("platinum, mithril, and laen coins")%; \
+    /tfshow Inglestone: King & bottom mobs%; \
+    /tfshow Icewall: Sleet & Remo%; \
+    /tfshow Museum: Tomarin|Zelboth|Jogath%; \
+    /tfshow Ice Castle: Several%; \
+    /tfshow Drakyri: Tons!%; \
+    /tfshow Mirror Beyond: Detrom%; \
+    /tfshow EF: Hydra & tarra (REM ABOUT!)%; \
+    /tfshow Unholy Darkness: Cain & Ghanz%; \
+    /tfshow Dark Spawn: Uma, Olg & Lurk%; \
+    /tfshow Sin: All%; \
+    /tfshow Desolate plains: Several
+
+; ----------------------  EXP  end   ----------------------
+
+/alias goto rub obelisk%;transport %*
+/alias ul unlock %*%;open %*
+/alias oe open %* east
+/alias ow open %* west
+/alias on open %* north
+/alias os open %* south
+/alias ou open %* up
+/alias od open %* down
+/set lookdir none
+/alias ox \
+    /set lookdir North%; \
+    look north%; \
+    drop lookdirisnorth%; \
+    /def -F -ag -msimple -t"You don't seem to have a lookdirisnorth." looktrignorth = \
+      /set lookdir South%%; \
+      look south%%; \
+      drop lookdirissouth%; \
+    /def -F -ag -msimple -t"You don't seem to have a lookdirissouth." looktrigsouth = \
+      /set lookdir East%%; \
+      look east%%; \
+      drop lookdiriseast%; \
+    /def -F -ag -msimple -t"You don't seem to have a lookdiriseast." looktrigeast = \
+      /set lookdir West%%; \
+      look west%%; \
+      drop lookdiriswest%; \
+    /def -F -ag -msimple -t"You don't seem to have a lookdiriswest." looktrigwest = \
+      /set lookdir Up%%; \
+      look up%%; \
+      drop lookdirisup%; \
+    /def -F -ag -msimple -t"You don't seem to have a lookdirisup." looktrigup = \
+      /set lookdir Down%%; \
+      look down%%; \
+      drop lookdirisdown%; \
+    /def -F -ag -msimple -t"You don't seem to have a lookdirisdown." looktrigdown = \
+      /set lookdir none%%; \
+      dig%%; \
+      /tfshow Done!%%; \
+      /purge looktrig*%; \
+    /def -F -mregexp -t"^The ([^ ]+) is open\\.$$" looktrigopen = \
+      trigonnextline /tfshow %%{lookdir}: %%{P1} (open)%; \
+    /def -F -mregexp -t"^The ([^ ]+) is closed\\.$$" looktrigclosed = \
+      trigonnextline /tfshow %%{lookdir}: %%{P1} (closed)
+/alias oxx open secret %*%;open hidden %*%;open gate %*%;open door %*%;open wall %*%;open trap %*%;open floor %*%;open ceiling %*%;open window %*%;open tree %*%;open panel %*%;open fire %*%;open cabinet %*%;open brick %*%;open hole %*
+/alias oxxx open a %*%;open b %*%;open c %*%;open d %*%;open e %*%;open f %*%;open g %*%;open h %*%;open i %*%;open j %*%;open k %*%;open l %*%;open m %*%;open n %*%;open o %*%;open p %*%;open q %*%;open r %*%;open s %*%;open t %*%;open u %*%;open v %*%;open w %*%;open x %*%;open y %*%;open z %*
+/alias oxxxx oxxx north%;oxxx south%;oxxx east%;oxxx west%;oxxx up%;oxxx down
+/alias ln look north
+/alias ls look south
+/alias le look east
+/alias lw look west
+/alias lu look up
+/alias ld look down
+
+; Inside Karandras:
+/alias arena          /KarandrasFS 2sws3d3n
+/alias burningtowers  /KarandrasFS 2sws3dnu
+/alias mob            /marketSquare 6w2se
+/alias matrix         /marketSquare 6w2seu
+/alias graveyard      /marketSquare 5se4s;open gate;s
+/alias shop           /KarandrasFS 4w2s4ue
+/alias redferne       redfernes
+/alias redfernes      /KarandrasFS 4w2s19un
+/alias back           \
+    /if (currentroom =~ "Cindy's Curiosities") \
+      w4d2n4e%; \
+    /elseif (currentroom =~ "Plain of Judgment") \
+      3se3sw2s5w10s%; \
+      boardbarge%; \
+    /elseif (currentroom =~ "Tower of Paradise") \
+      d4e2w4n2s%; \
+      open gate%; \
+      d3sw4nen2w3s7ws3w%; \
+      /def -F -ag -msimple -t"Alas, you cannot go that way..." tempGagCantGo%; \
+      delay 5 /purge tempGagCantGo%; \
+    /endif
+
+; Outside North gate:
+/alias pixie          /outsideNorthGate
+
+; Outside East gate:
+/alias dwarf          /outsideEastGate 2ed3n
+/alias daycare        /outsideEastGate 2ed2s
+/alias moria          /outsideEastGate 2e3n
+/alias 3ofswords      /outsideEastGate 2e3ne
+/alias rand           /outsideEastGate 2e10n2e2ne
+/alias caverns        /outsideEastGate 2e8n2wnen
+/alias goblik         /outsideEastGate 2e10n2e7n2en
+/alias wyvernwaterfalls /outsideEastGate 2e10n2e8n2w
+/alias faeryforest    /outsideEastGate 2e10n2e8n3wsw
+/alias hauntedkeep    /outsideEastGate 2e10n2e8n3ws2w4n2wn
+/alias orchard        /outsideEastGate 4en
+/alias zornuzkul      /outsideEastGate 2ed3n2e
+/alias unholy         /outsideEastGate 6enend
+/alias catacombs      \
+    /outsideEastGate 2ed3nw%; \
+      /def -F -n1 -msimple -t"Entrance to Mountain" walkerslaskcc = \
+        tfpromptshow Dwarven Catacombs are 3w2d (past aggies) from here.
+/alias highlands      \
+    /if (useobelisks) \
+      /marketSquare ;goto sundhaven;3e;open gate;3es2es3esen%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2nwne2nw3nw4nw2n%; \
+    /endif
+/alias amphitheatre   \
+    /if (useobelisks) \
+      /marketSquare ;goto sundhaven;3e;open gate;3es2es3ese2n4w%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2nwne2nw3nw4nw3n4w%; \
+    /endif%; \
+    /def -F -msimple -n1 -t"A path through the light forest" walkerslaskAmphi = \
+      /if (groupleader =~ name) \
+        gt use iron%%; \
+      /endif%%; \
+      tfpromptshow High priests are vuln energy. Rest are vuln iron.
+/alias grolims        amphitheatre
+/alias sundhaven      \
+    /if (useobelisks) \
+      /marketSquare goto sundhaven%; \
+    /else \
+      /outsideEastGate ;6en2en3es3enwne2nw2nwne2nw3nw4nwnwn3wn2wn2w;open gate;4w%; \
+      /def -F -ag -msimple -t"It's already open!" walkerslask_g_open_gag%; \
+      /def -F -msimple -t"The east gate of Sundhaven" walkerslask_g_outside = \
+        /purge walkerslask_g_*%; \
+    /endif
+/alias chessboard     \
+    /if (useobelisks) \
+      /marketSquare ;goto sundhaven;2w5nwn2un;enter chess%; \
+    /else \
+      /outsideEastGate ;6en2en3es3enwne2nw2nwne2nw3nw4nwnwn3wn2wn2w;open gate;6w5nwn2un;enter chess%; \
+      /def -F -ag -msimple -t"It's already open!" walkerslask_g_open_gag%; \
+      /def -F -msimple -t"The east gate of Sundhaven" walkerslask_g_outside = \
+        /purge walkerslask_g_*%; \
+    /endif
+/alias scurvy         \
+    /if (useobelisks) \
+      /marketSquare ;goto sundhaven;2e4n2wn%; \
+    /else \
+      /outsideEastGate ;6en2en3es3enwne2nw2nwne2nw3nw4nwnwn3wn2wn2w;open gate;2w4n2wn%; \
+      /def -F -ag -msimple -t"It's already open!" walkerslask_g_open_gag%; \
+      /def -F -msimple -t"Standing at the brink" walkerslask_g_outside = \
+        /purge walkerslask_g_*%; \
+    /endif%; \
+    /def -F -n1 -msimple -t"The gate at the cliffs" walkerslaskscurvy = \
+      open gate%%;nd2ne
+/alias enclave        \
+    /if (useobelisks) \
+      /marketSquare ;goto kings castle;3wnwne2nw2n2wnw%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2n2wnw%; \
+    /endif
+/alias hugeforest \
+    /if (useobelisks) \
+      /marketSquare ;goto kings castle;3wnwne2nw2nwne2nwne%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2nwne2nwne%; \
+    /endif
+/alias wayhouse       \
+    /if (useobelisks) \
+      /marketSquare ;goto kings castle;3wnwne2nw2nwne2nw3nws%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2nwne2nw3nws%; \
+    /endif
+/alias starlet        \
+    /if (useobelisks) \
+      /marketSquare ;goto sundhaven;3e;open gate;3en%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2nwne2nw3nw4nwnwn3wn2w2n%; \
+    /endif
+/alias rabbit         \
+    /if (useobelisks) \
+      /marketSquare ;goto sundhaven;3e;open gate;3en3wn2esesw%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2nwne2nw3nw4nwnwn3wn2w2n3wn2esesw%; \
+    /endif
+/alias venden         \
+    /if (useobelisks) \
+      /marketSquare ;goto sundhaven;3e;open gate;3es2esene2nw3ne3n%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2nwne2nw3nw4nwnwn2wne2nw3ne3n%; \
+    /endif
+/alias kingscastle    \
+    /if (useobelisks) \
+      /marketSquare goto kings castle%; \
+    /else \
+      /outsideEastGate 6en2en3es6e%; \
+    /endif
+/alias northernplains \
+    /if (useobelisks) \
+      /marketSquare ;goto ultima;3ndne2n2ene%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2n2w4nenenen2ws2w2s%; \
+    /endif
+/alias colosseum      \
+    /if (useobelisks) \
+      /marketSquare ;goto sundhaven;3e;open gate;3es2es3eses2e%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2nwne2nw3nw4ne%; \
+    /endif
+/alias enchanted      enchantedforest
+/alias enchantedforest \
+    /if (useobelisks) \
+      /marketSquare goto slithering%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2nwne2nwne3sesw2se2swse2s8w2su2e%; \
+    /endif%; \
+    /def -F -msimple -n1 -t"A Small, Slithering Path In The Mountains" walkerslaskEf = \
+      /if (groupleader =~ name) \
+        tfpromptshow Dragon is 3 west of here. Kill him first.%%; \
+      /endif%; \
+    /def -F -msimple -n1 -t"The Dragon's Lair" walkerslaskEf2 = \
+      /if (groupleader =~ name) \
+        gt use slay dragon%%; \
+        tfpromptshow When dragon is dead, go to the snake area - 4e.%%; \
+      /endif%; \
+    /def -F -msimple -n1 -t"A Path In The Mountains" walkerslaskEf3 = \
+      /if (groupleader =~ name) \
+        tfpromptshow From here, go 4de4nen%%; \
+      /endif%; \
+    /def -F -msimple -n1 -t"Before A Massive Rock Formation" walkerslaskEf4 = \
+      /if (groupleader =~ name) \
+        open boulder%%; \
+        gt use normal%%; \
+        gt use slay snake%%; \
+      /endif
+/alias snakelair      \
+    /if (useobelisks) \
+      /marketSquare ;goto slithering;e4de4nen%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2nwne2nwne3sesw2se2swse2s8w2su3e4de4nen%; \
+    /endif
+/alias mahntor        \
+    /if (useobelisks) \
+      /marketSquare ;goto kings castle;3wnwne2nw2nwne4swse3sd4se2s2u%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2nwne4swse3sd4se2s2u%; \
+    /endif
+/alias argo           \
+    /if (useobelisks) \
+      /marketSquare ;goto ultima;3nd5nund3n%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2n2w4nenenen2ws2w2sws4w2nund3n%; \
+    /endif
+/alias museum         \
+    /if (useobelisks) \
+      /marketSquare ;goto sundhaven;2es%; \
+    /else \
+      /outsideEastGate ;6en2en3es3enwne2nw2nwne2nw3nw4nwnwn3wn2wn2w;open gate;2ws%; \
+      /def -F -ag -msimple -t"It's already open!" walkerslask_g_open_gag%; \
+      /def -F -msimple -t"The east gate of Sundhaven" walkerslask_g_outside = \
+        /purge walkerslask_g_*%; \
+    /endif
+/alias alchor         \
+    /if (useobelisks) \
+      /marketSquare ;goto elven village;2sw2s2es2eses2en%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2n2w4nenenen2ws3ws2w2n%; \
+    /endif
+/alias antiriad       \
+    /if (useobelisks) \
+      /marketSquare ;goto elven village;2sw2s2es2en%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2n2w4nenenen2ws3ws2wn2wnw2n%; \
+    /endif
+/alias humblin        \
+    /if (useobelisks) \
+      /marketSquare ;goto kings castle;3ws%; \
+    /else \
+      /outsideEastGate 6en2en3es3es%; \
+    /endif
+/alias amberkeep      \
+    /if (currentroom =~ 'A path at the fringes of a light forest') \
+      2e2seu2e3su2s%;ul gate%;usew pure%;s%;open door south%; \
+    /else \
+      /outsideEastGate 2es%; \
+    /endif
+/alias citadel        \
+    /outsideEastGate 6en2en2en%; \
+    /if (groupleader =~ name) \
+      /def -F -n1 -msimple -t"The Gatehouse of the Citadel" walkerslaskCitadel1 = \
+        gt use iron%; \
+      /def -F -n1 -p999 -msimple -t"You tell the group, 'use iron'" walkerslaskCitadel1b = \
+        tfnextlineshow 12n (Random-aggies here, so move slowly).%; \
+      /def -F -n1 -msimple -t"Obvious exits: [South, Up]" walkerslaskCitadel2 = \
+        /tfshow Lady is u-n.%; \
+      /def -F -n1 -msimple -t"The Master Bedroom" walkerslaskCitadel3 = \
+        /tfshow Kill & loot Lady, then Lord is s-d-w%; \
+      /def -F -n1 -msimple -t"The Study" walkerslaskCitadel4 = \
+        /tfshow Kill & loot Lord, then kill & loot the golems north.%; \
+      /def -F -n1 -msimple -t"The Arsenal" walkerslaskCitadel5 = \
+        tfnextlineshow 2se2s, then west%; \
+      /def -F -n1 -msimple -t"The Entrance to the Dungeon" walkerslaskCitadel6 = \
+        /if (owner =~ 'Valkyria69') \
+          gt use pure%%; \
+        /else \
+          gt use fire%%; \
+        /endif%; \
+    /endif
+/alias blackcastle    \
+    /if (useobelisks) \
+      /marketSquare ;goto kings castle;3wnwne2nw2nwne3sesen%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2nwne3sese%; \
+    /endif
+/alias ogrevillage    \
+    /if (useobelisks) \
+      /marketSquare ;goto kings castle;3wnwne2nw2nwne3ses4es4e%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2nwne3ses4es4e%; \
+    /endif
+/alias icecastle      \
+    /if (useobelisks) \
+      /marketSquare ;goto kings castle;3wnwne2nw2nwne4swse3sd4se3s%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2nwne4swse3sd4se3s%; \
+    /endif
+/alias court          \
+    /if (useobelisks) \
+      /marketSquare ;goto kings castle;4n2w2nd;open flame%; \
+    /else \
+      /outsideEastGate ;6en2en3es6e4n2w2nd;open flame%; \
+    /endif
+/alias mustaine       \
+    /if (useobelisks) \
+      /marketSquare ;goto ultima;3ndne2n4e2se%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2n2w4nenenen2ws2w5se%; \
+    /endif
+/alias turvagar       \
+    /if (useobelisks) \
+      /marketSquare ;goto kings castle;3wnwne2nw2nwne3sen%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2nwne3sen%; \
+    /endif
+/alias lorca          \
+    /if (useobelisks) \
+      /marketSquare ;goto kings castle;3wnwne2nw2n2wn5ws2wn%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2n2wn5ws2wn%; \
+    /endif
+/alias ancientlands   \
+    /if (useobelisks) \
+      /marketSquare ;goto kings castle;3wnwne2nw2n2wn5ws2wne2ne%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2n2wn5ws2wne2ne%; \
+    /endif%; \
+    /def -F -n1 -msimple -t"Before the Great Forest Of Lorca" walkerslaskal = \
+      tfpromptshow Ancient Lands is 2nen3en2es2ene2nwn (past aggies) from here.
+/alias fishingvillage \
+    /if (useobelisks) \
+      /marketSquare ;goto kings castle;3wnwne2nw2nwne2nwn3en2es2enen5e%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2nwne2nwn3en2es2enen5e%; \
+    /endif%; \
+    /def -F -n1 -msimple -t"A shimmering portal stands here" \
+      walkerslaskmyrridon = enter portal
+/alias littlehaven    \
+    /if (useobelisks) \
+      /marketSquare ;goto sundhaven;2e4n2wn%; \
+    /else \
+      /outsideEastGate ;6en2en3es3enwne2nw2nwne2nw3nw4nwnwn3wn2wn2w;open gate;2w4n2wn%; \
+      /def -F -ag -msimple -t"It's already open!" walkerslask_g_open_gag%; \
+      /def -F -msimple -t"Standing at the brink" walkerslask_g_outside = \
+        /purge walkerslask_g_*%; \
+    /endif%; \
+    /def -F -n1 -msimple -t"The gate at the cliffs" walkerslasklh0 = \
+      open gate%%;ndn%; \
+    /def -F -n2 -msimple -t"yeah sure! I suppose you can walk on water too?" \
+      walkerslasklh1 = fly%%;n%; \
+    /def -F -msimple -t"In the ocean by the Ocean Pier" walkerslasklh2 = \
+      e%%; \
+      /def -F -p1 -t"Obvious exits: *" \
+        walkerslasklh3 = /purge walkerslasklh_*%%; \
+      /def -F -mglob -t"In the Ocean" walkerslasklh4 = \
+        /def -F -p2 -msimple -t"Obvious exits: [South, West]" \
+          walkerslasklh4_1 = s%%%%; \
+          /purge walkerslasklh4_*%%%; \
+        /def -F -p2 -msimple -t"Obvious exits: [North, South]" \
+          walkerslasklh4_2 = s%%%%; \
+          /purge walkerslasklh4_*%%; \
+      /def -F -msimple -t"At a bend in the current on the ocean" \
+        walkerslasklh5 = e%%;\
+      /def -F -msimple -t"At another bend in the current on the ocean" \
+        walkerslasklh6 = s%%;\
+      /def -F -msimple -t"At cross-currents in the ocean" walkerslasklh7 = \
+        /def -F -p2 -msimple -t"Obvious exits: [North, East, West]" \
+          walkerslasklh7_1 = e%%%%; \
+          /purge walkerslasklh7_*%%%; \
+        /def -F -p2 -msimple -t"Obvious exits: [North, East, South]" \
+          walkerslasklh7_2 = e%%%%; \
+          /purge walkerslasklh7_*%%%; \
+        /def -F -p2 -msimple -t"Obvious exits: [North, South, West]" \
+          walkerslasklh7_3 = n%%%%; \
+          /purge walkerslasklh7_*%%; \
+      /def -F -msimple -t'At cross-currents in the deep, wide ocean' \
+        walkerslasklh8 = e%%; \
+      /def -F -msimple -t'In front of an island port' \
+        walkerslasklh9 = n%%;\
+      /def -F -msimple -t'At a north-south current in the ocean' \
+        walkerslasklh10 = n%%;\
+      /def -F -msimple -t'At a sharp turn in the current' \
+        walkerslasklh11 = e%%;\
+      /def -F -msimple -t'At a bend in the current' \
+        walkerslasklh12 = n%%;\
+      /def -F -msimple -t'At the entrance to a harbor' \
+        walkerslasklh13 = /purge walkerslasklh*%%%;tfpromptshow 3sw2s%%%;3sw2s
+/alias icecaves       \
+    /if (useobelisks) \
+      /marketSquare ;goto sundhaven;2e4n2wn%; \
+    /else \
+      /outsideEastGate ;6en2en3es3enwne2nw2nwne2nw3nw4nwnwn3wn2wn2w;open gate;2w4n2wn%; \
+      /def -F -ag -msimple -t"It's already open!" walkerslask_g_open_gag%; \
+      /def -F -msimple -t"Standing at the brink" walkerslask_g_outside = \
+        /purge walkerslask_g_*%; \
+    /endif%; \
+    /def -F -n1 -msimple -t'The gate at the cliffs' walkerslaskic0 = \
+      open gate%%;ndn%; \
+    /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' \
+      walkerslaskic1 = fly%%;n%; \
+    /def -F -msimple -t'In the ocean by the Ocean Pier' walkerslaskic2 = \
+      e%%; \
+      /def -F -p1 -t'Obvious exits: *' \
+        walkerslaskic3 = /purge walkerslaskic_*%%; \
+      /def -F -mglob -t'In the Ocean' walkerslaskic4 = \
+        /def -F -p2 -msimple -t'Obvious exits: [South, West]' \
+          walkerslaskic_1 = s%%%; \
+        /def -F -p2 -msimple -t'Obvious exits: [North, South]' \
+          walkerslaskic_2 = s%%; \
+    /def -F -msimple -t'At a bend in the current on the ocean' \
+      walkerslaskic5 = e%%;\
+    /def -F -msimple -t'At another bend in the current on the ocean' \
+      walkerslaskic6 = s%%;\
+    /def -F -msimple -t'At cross-currents in the ocean' walkerslaskic7 = \
+      /def -F -p2 -msimple -t'Obvious exits: [North, East, West]' \
+        walkerslaskic_3 = e%%%; \
+      /def -F -p2 -msimple -t'Obvious exits: [North, East, South]' \
+        walkerslaskic_4 = e%%%; \
+      /def -F -p2 -msimple -t'Obvious exits: [North, South, West]' \
+        walkerslaskic_5 = n%%; \
+    /def -F -msimple -t'At cross-currents in the deep, wide ocean' \
+      walkerslaskic8 = e%%; \
+    /def -F -msimple -t'In front of an island port' \
+      walkerslaskic9 = n%%;\
+    /def -F -msimple -t'At a north-south current in the ocean' \
+      walkerslaskic10 = n%%;\
+    /def -F -msimple -t'At a sharp turn in the current' \
+      walkerslaskic11 = e%%;\
+    /def -F -msimple -t'At a bend in the current' \
+      walkerslaskic12 = n%%;\
+    /def -F -msimple -t'At the entrance to a harbor' \
+      walkerslaskic13 = /purge walkerslaskic*%%%;tfpromptshow 2se%%%;2se
+/alias icearea        \
+    /if (useobelisks) \
+      /marketSquare ;goto sundhaven;2e4n2wn%; \
+    /else \
+      /outsideEastGate ;6en2en3es3enwne2nw2nwne2nw3nw4nwnwn3wn2wn2w;open gate;2w4n2wn%; \
+      /def -F -ag -msimple -t"It's already open!" walkerslask_g_open_gag%; \
+      /def -F -msimple -t"Standing at the brink" walkerslask_g_outside = \
+        /purge walkerslask_g_*%; \
+    /endif%; \
+    /def -F -n1 -msimple -t'The gate at the cliffs' walkerslaskia0 = \
+      open gate%%;ndn%; \
+    /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' \
+      walkerslaskia1 = fly%%;n%; \
+    /def -F -msimple -t'In the ocean by the Ocean Pier' walkerslaskia2 = \
+      e%%; \
+      /def -F -p1 -t'Obvious exits: *' \
+        walkerslaskia3 = /purge walkerslaskia_*%%; \
+      /def -F -mglob -t'In the Ocean' walkerslaskia4 = \
+        /def -F -p2 -msimple -t'Obvious exits: [South, West]' \
+          walkerslaskia_1 = s%%%; \
+        /def -F -p2 -msimple -t'Obvious exits: [North, South]' \
+          walkerslaskia_2 = s%%; \
+      /def -F -msimple -t'At a bend in the current on the ocean' \
+        walkerslaskia5 = e%%;\
+      /def -F -msimple -t'At another bend in the current on the ocean' \
+        walkerslaskia6 = s%%;\
+      /def -F -msimple -t'At cross-currents in the ocean' walkerslaskia7 = \
+        /def -F -p2 -msimple -t'Obvious exits: [North, East, West]' \
+          walkerslaskia_3 = e%%%; \
+        /def -F -p2 -msimple -t'Obvious exits: [North, East, South]' \
+          walkerslaskia_4 = e%%%; \
+        /def -F -p2 -msimple -t'Obvious exits: [North, South, West]' \
+          walkerslaskia_5 = n%%; \
+      /def -F -msimple -t'At cross-currents in the deep, wide ocean' \
+        walkerslaskia8 = e%%; \
+      /def -F -msimple -t'In front of an island port' \
+        walkerslaskia9 = n%%;\
+      /def -F -msimple -t'At a north-south current in the ocean' \
+        walkerslaskia10 = n%%;\
+      /def -F -msimple -t'At a sharp turn in the current' \
+        walkerslaskia11 = e%%;\
+      /def -F -p9 -n1 -msimple -t'At a bend in the current' \
+        walkerslaskia12 = /purge walkerslaskia*%%%;tfpromptshow 4nwn%%%;4nwn
+/alias icewall        \
+    /if (useobelisks) \
+      /marketSquare ;goto sundhaven;2e4n2wn%; \
+    /else \
+      /outsideEastGate ;6en2en3es3enwne2nw2nwne2nw3nw4nwnwn3wn2wn2w;open gate;2w4n2wn%; \
+      /def -F -ag -msimple -t"It's already open!" walkerslask_g_open_gag%; \
+      /def -F -msimple -t"Standing at the brink" walkerslask_g_outside = \
+        /purge walkerslask_g_*%; \
+    /endif%; \
+    /def -F -n1 -msimple -t'The gate at the cliffs' walkerslaskiw0 = \
+      open gate%%;ndn%; \
+    /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' \
+      walkerslaskiw1 = fly%%;n%; \
+    /def -F -msimple -t'In the ocean by the Ocean Pier' walkerslaskiw2 = \
+      e%%; \
+      /def -F -p1 -t'Obvious exits: *' \
+        walkerslaskiw3 = /purge walkerslaskiw_*%%; \
+      /def -F -mglob -t'In the Ocean' walkerslaskiw4 = \
+        /def -F -p2 -msimple -t'Obvious exits: [South, West]' \
+          walkerslaskiw_1 = s%%%; \
+        /def -F -p2 -msimple -t'Obvious exits: [North, South]' \
+          walkerslaskiw_2 = s%%; \
+      /def -F -msimple -t'At a bend in the current on the ocean' \
+        walkerslaskiw5 = e%%;\
+      /def -F -msimple -t'At another bend in the current on the ocean' \
+        walkerslaskiw6 = s%%;\
+      /def -F -msimple -t'At cross-currents in the ocean' walkerslaskiw7 = \
+        /def -F -p2 -msimple -t'Obvious exits: [North, East, West]' \
+          walkerslaskiw_3 = e%%%; \
+        /def -F -p2 -msimple -t'Obvious exits: [North, East, South]' \
+          walkerslaskiw_4 = e%%%; \
+        /def -F -p2 -msimple -t'Obvious exits: [North, South, West]' \
+          walkerslaskiw_5 = n%%; \
+      /def -F -msimple -t'At cross-currents in the deep, wide ocean' \
+        walkerslaskiw8 = e%%; \
+      /def -F -msimple -t'In front of an island port' \
+        walkerslaskiw9 = n%%;\
+      /def -F -msimple -t'At a north-south current in the ocean' \
+        walkerslaskiw10 = n%%;\
+      /def -F -msimple -t'At a sharp turn in the current' \
+        walkerslaskiw11 = e%%;\
+      /def -F -msimple -t'At a bend in the current' \
+        walkerslaskiw12 = n%%;\
+      /def -F -msimple -t'At the entrance to a harbor' \
+        walkerslaskiw13 = /purge walkerslaskiw*%%%;tfpromptshow Ice Wall is north of here
+/alias antharia       \
+    /if (useobelisks) \
+      /marketSquare ;goto sundhaven;2e4n2wn%; \
+    /else \
+      /outsideEastGate ;6en2en3es3enwne2nw2nwne2nw3nw4nwnwn3wn2wn2w;open gate;2w4n2wn%; \
+      /def -F -ag -msimple -t"It's already open!" walkerslask_g_open_gag%; \
+      /def -F -msimple -t"Standing at the brink" walkerslask_g_outside = \
+        /purge walkerslask_g_*%; \
+    /endif%; \
+    /def -F -n1 -msimple -t'The gate at the cliffs' walkerslaskantharia0 = \
+      open gate%%;ndn%; \
+    /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' \
+      walkerslaskantharia1 = fly%%;n%; \
+    /def -F -msimple -t'In the ocean by the Ocean Pier' walkerslaskantharia2 = \
+      e%%; \
+      /def -F -p1 -t'Obvious exits: *' \
+        walkerslaskantharia3 = /purge walkerslaskantharia_*%%; \
+      /def -F -mglob -t'In the Ocean' walkerslaskantharia4 = \
+        /def -F -p2 -msimple -t'Obvious exits: [South, West]' \
+          walkerslaskantharia_1 = s%%%; \
+        /def -F -p2 -msimple -t'Obvious exits: [North, South]' \
+          walkerslaskantharia_2 = s%%; \
+      /def -F -msimple -t'At a bend in the current on the ocean' \
+        walkerslaskantharia5 = e%%;\
+      /def -F -msimple -t'At another bend in the current on the ocean' \
+        walkerslaskantharia6 = s%%;\
+      /def -F -msimple -t'At cross-currents in the ocean' walkerslaskantharia7 = \
+        /def -F -p2 -msimple -t'Obvious exits: [North, East, West]' \
+          walkerslaskantharia_3 = e%%; \
+      /def -F -msimple -t'At cross-currents in the deep, wide ocean' \
+        walkerslaskantharia8 = e%%; \
+      /def -F -msimple -t'In front of an island port' \
+        walkerslaskantharia9 = d%%;\
+      /def -F -msimple -t'Entrance Street' \
+        walkerslaskantharia13 = /purge walkerslaskantharia*
+/alias oceania        \
+    /if (useobelisks) \
+      /marketSquare ;goto sundhaven;2e4n2wn%; \
+    /else \
+      /outsideEastGate ;6en2en3es3enwne2nw2nwne2nw3nw4nwnwn3wn2wn2w;open gate;2w4n2wn%; \
+      /def -F -ag -msimple -t"It's already open!" walkerslask_g_open_gag%; \
+      /def -F -msimple -t"Standing at the brink" walkerslask_g_outside = \
+        /purge walkerslask_g_*%; \
+    /endif%; \
+    /def -F -n1 -msimple -t'The gate at the cliffs' walkerslasko0 = \
+      open gate%%;ndn%; \
+    /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' \
+      walkerslasko1 = fly%%;n%; \
+    /def -F -n1 -msimple -t'In the ocean by the Ocean Pier' \
+      walkerslasko3 = tfpromptshow Oceania!%%;/purge walkerslasko*
+/alias ultima         \
+    /if (currentroom =~ 'The New Magincia Moongate') \
+      get moonstone%;unlock moongate%;open moongate%;drop moonstone%;u%; \
+    /elseif (currentroom =~ 'Library') \
+      w3se%;open shelf%;s%;get moonstone%;unlock moongate%;open moongate%;drop moonstone%;u%; \
+    /elseif (currentroom =~ 'The Center of the Tavern') \
+      ws%;open cellar%;des%;get moonstone%;unlock moongate%;open moongate%;drop moonstone%;u%; \
+    /elseif (currentroom =~ 'In Front of the Courthouse') \
+      5n%;get moonstone%;unlock moongate%;open moongate%;drop moonstone%;u%; \
+    /elseif (currentroom =~ 'Dungeon Entrance') \
+      u2nene%;get moonstone%;unlock moongate%;open moongate%;drop moonstone%;u%; \
+    /elseif (currentroom =~ 'Minoc') \
+      n3w4n%;get moonstone%;unlock moongate%;open moongate%;drop moonstone%;u%; \
+    /elseif (currentroom =~ 'A Campfire') \
+      2n2e%;get moonstone%;unlock moongate%;open moongate%;drop moonstone%;u%; \
+    /elseif (currentroom =~ 'The Shrine of Spirituality') \
+      get moonstone%;unlock moongate%;open moongate%;drop moonstone%;u%; \
+    /else \
+      /if (useobelisks) \
+        /marketSquare goto ultima%; \
+      /else \
+        /outsideEastGate 6en2en3es3enwne2nw2n2w3n%; \
+      /endif%; \
+      /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' \
+        walkerslaskul1 = fly%%;n%; \
+      /def -F -n1 -msimple -t'On the Ogris River' \
+        walkerslaskul2 = nenenen2ws2w2sws4w3su%; \
+      /def -F -n1 -msimple -t'Entrance to Ultima' \
+        walkerslaskul3 = 3s%%;/purge walkerslaskul*%; \
+    /endif
+/alias u1 get moonstone%;ul moongate%;drop moonstone%;u
+/alias marsh          \
+    /if (useobelisks) \
+      /marketSquare ;goto sundhaven;3e;open gate;3es2es3ese3ne%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2nwne2nw3nw4nw4ne%; \
+    /endif%; \
+    /def -F -n1 -msimple -t'The Bog' walkerslaskmarsh = \
+      /def -F -n1 -msimple -t'Obvious exits: [East, South, West]' \
+        walkerslaskmarsh2 = tfpromptshow The Marsh is east.
+/alias citadeloforder \
+    /if (useobelisks) \
+      /marketSquare ;goto sundhaven;3e;open gate;3es2es3ese3ne%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2nwne2nw3nw4nw4ne%; \
+    /endif%; \
+    /def -F -n1 -msimple -t'The Bog' walkerslaskcoo = \
+      /def -F -n1 -msimple -t'Obvious exits: [East, South, West]' walkerslaskcoo2 = \
+         /if (iHaveInvisibility & groupleader !~ name) \
+           e%%%; \
+         /else \
+           tfpromptshow Citadel of Order is east, past some aggie giants and other mobs.%%%; \
+         /endif%; \
+    /def -F -msimple -t"Muddy Path" walkerslaskcoo3 = \
+      /if (groupleader =~ name) \
+        tfpromptshow South%%; \
+      /else \
+        s%%; \
+      /endif%; \
+    /def -F -msimple -t"Swamp's Edge" walkerslaskcoo4 = \
+      /if (groupleader =~ name) \
+        tfpromptshow South%%; \
+      /else \
+        s%%; \
+      /endif%; \
+    /def -F -msimple -t"On a hill" walkerslaskcoo5 = \
+      /if (groupleader =~ name) \
+        tfpromptshow South%%; \
+      /else \
+        s%%; \
+      /endif%; \
+    /def -F -msimple -t"Gloomy Path Through the Marsh" walkerslaskcoo6 = \
+      /if (groupleader =~ name) \
+        tfpromptshow South%%; \
+      /else \
+        s%%; \
+      /endif%; \
+    /def -F -msimple -t"Near Vegetation from Hell" walkerslaskcoo7 = \
+      /if (groupleader =~ name) \
+        tfpromptshow East%%; \
+      /else \
+        e%%; \
+      /endif%; \
+    /def -F -msimple -t"By the Monolith" walkerslaskcoo8 = \
+      /if (groupleader =~ name) \
+        tfpromptshow East%%; \
+      /else \
+        e%%; \
+      /endif%; \
+    /def -F -msimple -t"Murky Bog" walkerslaskcoo9 = \
+      /if (groupleader =~ name) \
+        tfpromptshow East%%; \
+      /else \
+        e%%; \
+      /endif%; \
+    /def -F -msimple -t"Northern Lake Side" walkerslaskcoo10 = \
+      /if (groupleader =~ name) \
+        tfpromptshow South%%; \
+      /else \
+        s%%; \
+      /endif%; \
+    /def -F -msimple -t"Southern Lake Side" walkerslaskcoo11 = \
+      /if (groupleader =~ name) \
+        tfpromptshow West%%; \
+      /else \
+        w%%; \
+      /endif%; \
+    /def -F -msimple -t"A beach" walkerslaskcoo12 = \
+      /if (groupleader =~ name) \
+        tfpromptshow West%%; \
+      /else \
+        w%%; \
+      /endif%; \
+    /def -F -msimple -t"The road to the Citadel" walkerslaskcoo13 = \
+      /if (groupleader =~ name) \
+        tfpromptshow West%%; \
+      /else \
+        w%%; \
+      /endif%; \
+    /def -F -msimple -t"On a road in front of the drawbridge" walkerslaskcoo14 = n%; \
+    /def -F -msimple -t"On the drawbridge" walkerslaskcoo15 = \
+      open gate%%; \
+      tfpromptshow Citadel of Order is north of here.%%; \
+      /if (groupleader =~ name) \
+        gt use slay human%%; \
+      /endif%%; \
+      /purge walkerslaskcoo*
+/alias ceanythdungeons \
+    /outsideEastGate 6en2en2e9n%; \
+    /def -F -n1 -msimple -t'Entrance to the Keep' walkerslaskceanyth = \
+      open door%%;2n%%;open door%%;wsd%; \
+    /def -F -n1 -msimple -t'The Stairs' walkerslaskceanyth2 = \
+      /purge walkerslaskceanyth*
+/alias darkspawn      \
+    /if (useobelisks) \
+      /marketSquare ;goto slithering;2wd2nw4ne2n2w%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2nwne2nwne3sesw2se2swse2s9w4ne2n2w%; \
+    /endif%; \
+    /def -F -msimple -t"At The Hollow Tree" walkerslaskdz = \
+      open tree%%; \
+      tfpromptshow Enter tree (agg-evil druid inside)%; \
+    /def -F -msimple -t"Inside The Hollow Tree" walkerslaskdz2 = \
+      open door%%; \
+      open secret%%; \
+      tfpromptshow All the way down (8d)%; \
+    /def -F -msimple -t"The Council Of Druids" walkerslaskdz3 = \
+      tfpromptshow Drink well (norecall-area)%%; \
+      /purge walkerslaskdz*
+
+; Outside West gate:
+/alias lumberjack     /outsideWestGate 2wn3wswswn6w
+/alias darkfriends    /marketSquare ;3s2en3e;open door;s
+/alias ancalador      /outsideWestGate 2wn3wswswn10w2swse2sws
+/alias yggdrasil      /outsideWestGate 2wn3wswswn12ws2w2sws3wnwn
+/alias secretgarden   /outsideWestGate ;2wn3wswswn12ws2w2sws3wn2wn;open gate;n
+/alias trollden       /outsideWestGate 2wn3wswswn12ws2w2sw2s2es
+/alias druid          /outsideWestGate 2wn3wswn
+/alias gypsy          /outsideWestGate n
+/alias herdarea       /outsideWestGate 4ne
+/alias revered        /outsideWestGate 4ne10n
+/alias arachnos       /outsideWestGate 2wn3wswswn12ws3wu
+/alias earthsea       /outsideWestGate 2wn3wswswn12ws2w2sen
+/alias gardenofangels /outsideWestGate 2wn3wswswn12ws2w2sws3wnwn4u2n
+/alias ragnarok       /outsideWestGate 2wn3wswswn12ws2w2sws3wnwn5u10nd
+/alias olympus        /toOlympus Olympus
+/alias haondor        \
+    /outsideWestGate 2wn3wswswn12w%; \
+    /if (groupleader =~ name) \
+      /def -F -n1 -msimple -t"A narrow trail through the deep, dark forest" walkerslaskHd1 = \
+        gt use acid%; \
+    /endif
+/alias dragonsgraveyard \
+    /outsideWestGate 2wn3wswswn12ws2w2sen%; \
+    /if (groupleader =~ name) \
+      /def -F -n1 -msimple -t"The Entrance To EarthSea" walkerslaskDg1 = \
+        /if (classRo) \
+          pick gate%%; \
+        /else \
+          gt pick gate%%; \
+        /endif%%; \
+        gt use unlife%; \
+      /def -F -n1 -p999 -msimple -t"You tell the group, 'use unlife'" walkerslaskDg2 = \
+        tfpromptshow 3nwds3w. CAREFUL! Nasty aggies here!%; \
+      /def -F -n1 -msimple -t"Storage Room" walkerslaskDg3 = \
+        tfpromptshow ds3w%; \
+      /def -F -n1 -msimple -t"Guardian's Room" walkerslaskDg4 = \
+        tfpromptshow s3w, then enter tomb, down, enter abyss%; \
+      /def -F -n1 -msimple -t"The Dragon Master is dead! R.I.P." walkerslaskDg5 = \
+        ga%%; \
+        enter tomb%; \
+      /def -F -n1 -msimple -t"Inside an ancient tomb" walkerslaskDg6 = \
+        d%; \
+      /def -F -n1 -msimple -t"Purgatory" walkerslaskDg7 = \
+        enter abyss%; \
+      /def -F -n1 -msimple -t"The dragons' graveyard" walkerslaskDg8 = \
+        s%; \
+    /endif
+/alias galaxy         \
+    /if (useobelisks) \
+      /marketSquare ;goto elven village;6nend%; \
+    /else \
+      /outsideWestGate 2wn3wswswn3w4ne4ne3n2e2nw3ne2ne4ne8nend%; \
+    /endif
+/alias ratslair       \
+    /if (useobelisks) \
+      /marketSquare ;goto elven village;senes%; \
+    /else \
+      /outsideWestGate 2wn3wswswn3w4ne4ne3n2e2nw3ne2ne4nenenes%; \
+    /endif
+/alias smugglersden   \
+    /if (useobelisks) \
+      /marketSquare ;goto kerofk;3ses;open trapdoor;d%; \
+    /else \
+      /outsideWestGate 2wn3wswswn3w4ne4ne3ne2nwne2nes8e2nesd%; \
+    /endif
+/alias juargan        \
+    /if (currentroom =~ 'The hills') \
+      ;usew slaydwarf;5u2edenes;open stone;d2wn3wswnw3sw2sen%; \
+      /def -F -mglob -n1 -t"Juargan the Dwarven King *" walkerslaskjuargan2 = \
+        ;k king;pp%; \
+      /def -F -msimple -n1 -t"You get a small key from Corpse of Juargan the Dwarven King." walkerslaskjuargan3 = \
+        sw2nen2w4s2eswn%; \
+      /def -F -msimple -n1 -t"Ancients Tomb" walkerslaskjuargan4 = \
+        ;ul tomb;w;get all%; \
+    /elseif (useobelisks) \
+      /marketSquare ;goto kerofk;s7wne%; \
+    /else \
+      /outsideWestGate 2wn3wswswn3w4ne4ne3ne2nwne2nes2e3ne%; \
+    /endif
+/alias kerofk         \
+    /if (useobelisks) \
+      /marketSquare goto kerofk%; \
+    /else \
+      /outsideWestGate 2wn3wswswn3w4ne4ne3ne2nwne2nes2e2n7en%; \
+    /endif
+/alias lizardlair     \
+    /if (useobelisks) \
+      /marketSquare ;goto kerofk;open door;nw%; \
+    /else \
+      /outsideWestGate ;2wn3wswswn3w4ne4ne3ne2nwne2nes2e2n7en;open door;nw%; \
+    /endif
+/alias elvenvillage   \
+    /if (useobelisks) \
+      /marketSquare goto elven village%; \
+    /else \
+      /outsideWestGate 2wn3wswswn3w4ne4ne3n2e2nw3ne2ne4ne2n%; \
+    /endif
+/alias elvenlands     \
+    /if (useobelisks) \
+      /marketSquare ;goto elven village;6nw%; \
+    /else \
+      /outsideWestGate 2wn3wswswn3w4ne4ne3n2e2nw3ne2ne4ne8nw%; \
+    /endif
+/alias atlantis       \
+    /if (useobelisks) \
+      /marketSquare goto atlantis%; \
+    /else \
+      /outsideWestGate 2wn3wswswn3w4ne4ne3n2e2nw3ne2ne4nenen2ene2n%; \
+    /endif
+/alias canyon         \
+    /if (useobelisks) \
+      /marketSquare goto elemental canyon%; \
+    /else \
+      /outsideWestGate 2wn3wswswn3w4ne4ne3ne2nwnw2u%; \
+    /endif%; \
+    /def -F -msimple -t'Mountainside Tombs' walkerslaskca1 = \
+      tfpromptshow Canyon is up (past aggie cyclops) from here.%; \
+    /def -F -n1 -msimple -t'The Cyclops is dead! R.I.P.' walkerslaskca2 = \
+      und%; \
+    /def -F -msimple -t'A Blind Curve on the Mountain Path' walkerslaskca3 = \
+      und%; \
+    /def -F -msimple -t'Entrance to Elemental Canyon' walkerslaskca4 = \
+      /purge walkerslaskca*
+/alias darkwater      \
+    /if (useobelisks) \
+      /marketSquare ;goto sundhaven;2w4nw;open gate;2wnu3w2n;open cover;4d%; \
+    /else \
+      /outsideWestGate ;2wn3wswswn3w4ne4ne3n2e2nw3ne2ne4nenen2en2en5e;open gate;2e4nw;open gate;2wnu3w2n;open cover;4d%; \
+      /def -F -ag -msimple -t"It's already open!" walkerslask_g_open_gag%; \
+      /def -F -msimple -t"A dark shaft" walkerslask_g_outside = \
+        /purge walkerslask_g_*%; \
+    /endif
+/alias losttemple     \
+    /if (useobelisks) \
+      /marketSquare ;goto kerofk;s7wsw%; \
+    /else \
+      /outsideWestGate 2wn3wswswn3w4ne4ne3ne2nwne2nes2enw%; \
+    /endif
+/alias shipwreck      \
+    /if (useobelisks) \
+      /marketSquare ;goto kerofk;s2en;open cloth;n;open trapdoor;d2e3de2n2e2ne2n3wn%; \
+    /else \
+      /outsideWestGate ;2wn3wswswn3w4ne4ne3ne2nwne2nes2e2n9en;open cloth;n;open trapdoor;d2e3de2n2e2ne2n3wn%; \
+      /def -F -ag -msimple -t"It's already open!" walkerslask_g_open_gag%; \
+      /def -F -msimple -t"Path to the cliffs" walkerslask_g_outside = \
+	/purge walkerslask_g_*%; \
+    /endif
+/alias reef           \
+    /if (useobelisks) \
+      /marketSquare ;goto kerofk;s2en;open cloth;n;open trapdoor;d2e3de2n2e2nwn%; \
+    /else \
+      /outsideWestGate ;2wn3wswswn3w4ne4ne3ne2nwne2nes2e2n9en;open cloth;n;open trapdoor;d2e3de2n2e2nwn%; \
+      /def -F -ag -msimple -t"It's already open!" walkerslask_g_open_gag%; \
+      /def -F -msimple -t"Path to the cliffs" walkerslask_g_outside = \
+        /purge walkerslask_g_*%; \
+    /endif
+/alias valleyofkings  \
+    /if (useobelisks) \
+      /marketSquare ;goto kerofk;s2en;open cloth;n;open trapdoor;d2e3de2n2e2ne2n3ws2w2d%; \
+    /else \
+      /outsideWestGate ;2wn3wswswn3w4ne4ne3ne2nwne2nes2e2n9en;open cloth;n;open trapdoor;d2e3de2n2e2ne2n3ws2w2d%; \
+      /def -F -ag -msimple -t"It's already open!" walkerslask_g_open_gag%; \
+      /def -F -msimple -t"Path to the cliffs" walkerslask_g_outside = \
+        /purge walkerslask_g_*%; \
+    /endif
+/alias kaltor         \
+    /if (useobelisks) \
+      /marketSquare ;goto elemental canyon;usd%; \
+    /else \
+      /outsideWestGate 2wn3wswswn3w4ne4ne3ne2n%; \
+    /endif%; \
+    /def -F -msimple -t'A Blind Curve on the Mountain Path' walkerslaskka1 = \
+    delay 2 d%; \
+    /def -F -msimple -t'Mountainside Tombs' walkerslaskka2 = 2dese%; \
+    /def -F -ag -msimple -n1 -t"A Narrow Pass through the Mountains" walkerslaskka11 = \
+      drop areaKaltor%; \
+    /def -F -ag -msimple -n1 -t"You don't seem to have an areaKaltor." walkerslaskka12 = \
+      /if (groupleader =~ name) \
+        gt use unlife%%; \
+      /endif%%; \
+      /purge walkerslaskka*%%; \
+      tfpromptshow Kaltor is north of here!
+/alias oceanfloor     \
+    /if (currentroom =~ 'A narrow stream') \
+      ;3e2n2es2e2sw2s2e6d;enter mirror%; \
+    /elseif (useobelisks) \
+      /marketSquare ;goto elemental canyon;us4dese2se2nwnw3nwne%; \
+    /else \
+      /outsideWestGate 2wn3wswswn3w4ne4ne3n2e2nwnw3nwne%; \
+    /endif
+/alias gorm           \
+    /if (useobelisks) \
+      /marketSquare ;goto elemental canyon;us4des2e%; \
+    /else \
+      /outsideWestGate 2wn3wswswn3w4ne4ne3ne2ne%; \
+    /endif
+/alias scubdu         \
+    /outsideWestGate 2wn3wswswn12ws2w2sws3wnwn7u%; \
+    /def -F -n1 -msimple -t'A fluffy white cloud' walkerslaskscubdu1 = \
+      /def -F -n1 -msimple -t'A fluffy white cloud' walkerslaskscubdu2 = \
+        tfpromptshow Scubdu's area is east of here
+/def toOlympus =      \
+    /if (useobelisks) \
+      /marketSquare ;goto olympus;e%; \
+    /else \
+      /outsideWestGate 2wn3wswswn12ws2w2sws3wnwn7u%; \
+      /def -F -msimple -t'A fluffy white cloud' walkerslaskoly1 = \
+        /def -F -p3 -msimple -t'Obvious exits: [East, Down]' \
+          walkerslaskoly1_1 = tfpromptshow %* is east, past aggie harpies%%; \
+        /def -F -p3 -msimple -t'Obvious exits: [North, South]' \
+          walkerslaskoly1_2 = n%%; \
+        /def -F -p3 -msimple -t'Obvious exits: [South, Down]' \
+          walkerslaskoly1_3 = d%%; \
+        /def -F -p3 -msimple -t'Obvious exits: [North, East, Up]' \
+          walkerslaskoly1_4 = e%%; \
+        /def -F -p3 -msimple -t'Obvious exits: [North, West, Up, Down]' \
+          walkerslaskoly1_5 = d%%; \
+        /def -F -p3 -msimple -t'Obvious exits: [East, Up]' \
+          walkerslaskoly1_6 = e%%; \
+        /def -F -p2 -t'Obvious exits: *' \
+          walkerslaskoly1_7 = /purge walkerslaskoly1_*%; \
+      /def -F -msimple -t'An ominous storm cloud' walkerslaskoly2 = \
+        e%; \
+      /def -F -msimple -t'High and perilous cliff' walkerslaskoly3 = \
+        u%; \
+      /def -n1 -msimple -t'Mountain' walkerslaskoly4 = \
+        u%%; \
+        /def -F -msimple -t'Mountain' walkerslaskoly5 = \
+          u5n%%%;/purge walkerslaskoly*%; \
+      /def -F -n2 -msimple -t'Yeah sure! You think yourself a bird or something?' \
+        walkerslaskoly6 = fly%%;u%; \
+    /endif
+/alias stormgiant     \
+    /if (useobelisks) \
+      /marketSquare ;goto olympus;e5s3d%; \
+    /else \
+      /outsideWestGate 2wn3wswswn12ws2w2sws3wnwn7u%; \
+      /def -F -msimple -t'A fluffy white cloud' walkerslasksg1 = \
+        /def -F -p3 -msimple -t'Obvious exits: [East, Down]' \
+          walkerslasksg1_1 = tfpromptshow Storm Giant Castle is east, past aggie harpies%%; \
+        /def -F -p3 -msimple -t'Obvious exits: [North, South]' \
+          walkerslasksg1_2 = s%%; \
+        /def -F -p3 -msimple -t'Obvious exits: [North, East]' \
+          walkerslasksg1_3 = e%%; \
+        /def -F -p3 -msimple -t'Obvious exits: [East, West]' \
+          walkerslasksg1_4 = e%%; \
+        /def -F -p3 -msimple -t'Obvious exits: [North, West]' \
+          walkerslasksg1_5 = n%%; \
+        /def -F -p3 -msimple -t'Obvious exits: [East, South, Down]' \
+          walkerslasksg1_6 = d%%; \
+        /def -F -p3 -msimple -t'Obvious exits: [North, West, Up, Down]' \
+          walkerslasksg1_7 = d%%; \
+        /def -F -p3 -msimple -t'Obvious exits: [East, Up]' \
+          walkerslasksg1_8 = e%%; \
+        /def -F -p2 -t'Obvious exits: *' \
+          walkerslasksg1_9 = /purge walkerslasksg1_*%; \
+      /def -F -msimple -t'An ominous storm cloud' walkerslasksg2 = \
+        e%; \
+    /endif%; \
+    /def -F -msimple -t'High and perilous cliff' walkerslasksg3 = \
+      s%; \
+    /def -F -msimple -t'Narrow rocky trail' walkerslasksg4 = \
+      d%; \
+    /def -F -msimple -t'Small valley' walkerslasksg5 = \
+      /def -F -p3 -msimple -t'Obvious exits: [South, Up]' \
+        walkerslasksg5_1 = s%%; \
+      /def -F -p3 -msimple -t'Obvious exits: [North, Down]' \
+        walkerslasksg5_2 = d%%; \
+      /def -F -p2 -t'Obvious exits: *' \
+        walkerslasksg5_3 = /purge walkerslasksg5_*%; \
+    /def -F -msimple -t'Deep, slippery crevice' walkerslasksg6 = \
+      s%; \
+    /def -F -msimple -t'Steep mountainside' walkerslasksg7 = \
+      /def -F -p3 -msimple -t'Obvious exits: [North, Up]' \
+        walkerslasksg7_1 = u%%; \
+      /def -F -p3 -msimple -t'Obvious exits: [East, Down]' \
+        walkerslasksg7_2 = e%%; \
+      /def -F -p2 -t'Obvious exits: *' \
+        walkerslasksg7_3 = /purge walkerslasksg7_*%; \
+    /def -F -msimple -t'Treacherous Cliff' walkerslasksg8 = \
+      u%; \
+    /def -F -msimple -t'Cliff Face' walkerslasksg9 = \
+      n%; \
+    /def -F -msimple -t'The Land of Beware' walkerslasksg10 = \
+      /purge walkerslaskg*
+/alias nirvana        \
+    /toOlympus Nirvana%; \
+    /def -F -ag -msimple -t"It's already open!" walkerslask_g_open_gag%; \
+    /def -F -n1 -msimple -t"Zeus Street" walkerslaskni1 = \
+      3nu%%;open hatch%%;un%%;open hole%%;enter hole%%;s2u%%;x%; \
+    /def -F -n1 -msimple -t"North - In the Plane of Nirvana" walkerslaskni2 = \
+      tfpromptshow Nirvana is north from here%%;/purge walkerslaskni*
+/alias boardbarge     \
+    board barge%; \
+    /if (groupleader =~ name) \
+      donothing gt sleep%; \
+    /endif%; \
+    /def -F -t"The Barge of the Dead arrives from the *." walkerslaskbarge1 = \
+      upp%%;board barge%; \
+    /def -F -msimple -t'You board The Barge of the Dead.' walkerslaskbarge2 = \
+      /def -F -n1 -t'?he Barge of the Dead leaves *' walkerslaskbarge3 = \
+        /def -F -n1 -msimple -t'Port of the Styx Marsh' walkerslaskbarge5 = \
+          /purge walkerslaskbarge*%%%%; \
+          /if (groupleader =~ name) \
+            donothing gt wake%%%%; \
+          /endif%%%%; \
+          delay 4 ;leave barge;s%%%%; \
+          delay 6 ;enter stone;s%%%; \
+        /def -F -n1 -msimple -t'Port of Lost Souls' walkerslaskbarge6 = \
+          /purge walkerslaskbarge*%%%%; \
+          /if (groupleader =~ name) \
+            donothing gt wake%%%%; \
+            delay 4 ;leave barge;10n5e2ne3nw3n3en7e%%%%; \
+          /else \
+            ;leave barge;10n5e2ne3nw3n%%%%; \
+          /endif
+/alias underworld     \
+    /toOlympus Underworld%; \
+    /def -F -ag -msimple -t"It's already open!" walkerslask_g_open_gag%; \
+      /def -F -n1 -msimple -t"Zeus Street" walkerslaskuw1 = \
+        whe hermes%; \
+    /def -F -n1 -t"Hermes   *" walkerslaskuw2 = \
+      tfpromptshow Ask hermes death%; \
+    /def -F -n1 -t"Hermes is busy, delivering a message.*" \
+      walkerslaskuw3 = ask hermes death%; \
+    /def -F -msimple -t"He regains his composure and upon a mischievious grin you fall out of consciousness, and awaken on an eery path." walkerslaskuw4 = \
+      /if (groupleader =~ name) \
+        gt use dark%%; \
+      /endif%%; \
+      n%%; \
+      /purge walkerslaskuw*%%; \
+      boardbarge%; \
+    /def -F -ag -msimple -t"Alas, you cannot go that way..." tempGagCantGo%; \
+    delay 5 /purge tempGagCantGo%; \
+    /def -F -msimple -t"Hermes                    - Zeus Street" walkerslaskuwH1 = \
+      tfnextlineshow HERMES: HERE, 1s, 2s, 3s%%; \
+      ask hermes death%%; \
+      s%%; \
+      ask hermes death%%; \
+      s%%; \
+      ask hermes death%%; \
+      s%; \
+    /def -F -msimple -t"Hermes                    - Entrance" walkerslaskuwH2 = \
+      tfnextlineshow HERMES: 4s%%; \
+      4s%; \
+    /def -F -msimple -t"Hermes                    - Mountain" walkerslaskuwH3 = \
+      tfnextlineshow HERMES: 5s%%; \
+      5s%; \
+    /def -F -msimple -t"Hermes                    - Bakery" walkerslaskuwH4 = \
+      tfnextlineshow HERMES: 3sw%%; \
+      3sw%; \
+    /def -F -msimple -t"Hermes                    - The Olympus Adventurer's" walkerslaskuwH5 = \
+      tfnextlineshow HERMES: 3se%%; \
+      3se%; \
+    /def -F -msimple -t"Hermes                    - The training hall" walkerslaskuwH6 = \
+      tfnextlineshow HERMES: 3s2e%%; \
+      3s2e%; \
+    /def -F -msimple -t"Hermes                    - The Adventurer's Bar" walkerslaskuwH7 = \
+      tfnextlineshow HERMES: 3ses%%; \
+      3ses%; \
+    /def -F -msimple -t"Hermes                    - Residence" walkerslaskuwH8 = \
+      tfnextlineshow HERMES: 2sw, 2se%%; \
+      2sw%%; \
+      ask hermes death%%; \
+      2e%; \
+    /def -F -msimple -t"Hermes                    - Mystic Shop" walkerslaskuwH9 = \
+      tfnextlineshow HERMES: sw%%; \
+      sw%; \
+    /def -F -msimple -t"Hermes                    - The Inn of the Gods" walkerslaskuwH10 = \
+      tfnextlineshow HERMES: se%%; \
+      se%; \
+    /def -F -msimple -t"Hermes                    - The Olympus Item Store" walkerslaskuwH11 = \
+      tfnextlineshow HERMES: ses%%; \
+      ses%; \
+    /def -F -msimple -t"Hermes                    - The Olympus Auction House" walkerslaskuwH12 = \
+      tfnextlineshow HERMES: s2e%%; \
+      s2e%; \
+    /def -F -msimple -t"Hermes                    - The Reception of the Inn & Tavern of the Gods" walkerslaskuwH13 = \
+      tfnextlineshow HERMES: seu%%; \
+      seu%; \
+    /def -F -msimple -t"Hermes                    - The Olympus Cryogenic Center" walkerslaskuwH14 = \
+      tfnextlineshow HERMES: seus%%; \
+      seus%; \
+    /def -F -msimple -t"Hermes                    - The Temple of Olympus" walkerslaskuwH15 = \
+      tfnextlineshow HERMES: w%%; \
+      w%; \
+    /def -F -msimple -t"Hermes                    - The Olympus Donation Room" walkerslaskuwH16 = \
+      tfnextlineshow HERMES: wn%%; \
+      wn%; \
+    /def -F -msimple -t"Hermes                    - Ares Street" walkerslaskuwH17 = \
+      tfnextlineshow HERMES: e, 2e%%; \
+      e%%; \
+      ask hermes death%%; \
+      e%; \
+    /def -F -msimple -t"Hermes                    - The Olympus Cartographer's Shop" walkerslaskuwH18 = \
+      tfnextlineshow HERMES: es%%; \
+      es%; \
+    /def -F -msimple -t"Hermes                    - The Olympus Post Office" walkerslaskuwH19 = \
+      tfnextlineshow HERMES: en%%; \
+      en%; \
+    /def -F -msimple -t"Hermes                    - Armoury" walkerslaskuwH20 = \
+      tfnextlineshow HERMES: 2es%%; \
+      2es%; \
+    /def -F -msimple -t"Hermes                    - Weapon Shop" walkerslaskuwH21 = \
+      tfnextlineshow HERMES: 3e%%; \
+      3e%; \
+    /def -F -msimple -t"Hermes                    - Smithy" walkerslaskuwH22 = \
+      tfnextlineshow HERMES: 2en%%; \
+      2en%; \
+    /def -F -msimple -t"Hermes                    - The Planning Room" walkerslaskuwH23 = \
+      tfnextlineshow HERMES: 2en + open door + w  (Aggie Ares + soldiers)%; \
+    /def -F -msimple -t"Hermes                    - The Believer" walkerslaskuwH24 = \
+      tfnextlineshow HERMES: 2en + open door + wn  (Aggie Ares + soldiers)%; \
+    /def -F -msimple -t"Hermes                    - Castle Entryway" walkerslaskuwH25 = \
+      tfnextlineshow HERMES: n%%; \
+      n%; \
+    /def -F -msimple -t"Hermes                    - Western Wing" walkerslaskuwH26 = \
+      tfnextlineshow HERMES: nw, n2w, n2wn%%; \
+      nw%%; \
+      ask hermes death%%; \
+      w%%; \
+      ask hermes death%%; \
+      n%; \
+    /def -F -msimple -t"Hermes                    - Storage Room" walkerslaskuwH27 = \
+      tfnextlineshow HERMES: n2ws, n2es%%; \
+      n2ws%%; \
+      ask hermes death%%; \
+      n4es%; \
+    /def -F -msimple -t"Hermes                    - Guest Quarters" walkerslaskuwH28 = \
+      tfnextlineshow HERMES: n3w, n3e%%; \
+      n3w%%; \
+      ask hermes death%%; \
+      6e%; \
+    /def -F -msimple -t"Hermes                    - Kitchen" walkerslaskuwH29 = \
+      tfnextlineshow HERMES: n2w2n%%; \
+      n2w2n%; \
+    /def -F -msimple -t"Hermes                    - Eastern Wing" walkerslaskuwH30 = \
+      tfnextlineshow HERMES: ne, n2e, n2en%%; \
+      ne%%; \
+      ask hermes death%%; \
+      e%%; \
+      ask hermes death%%; \
+      n%; \
+    /def -F -msimple -t"Hermes                    - Stable" walkerslaskuwH31 = \
+      tfnextlineshow HERMES: n2e2n%%; \
+      n2e2n%; \
+    /def -F -msimple -t"Hermes                    - Throne Room" walkerslaskuwH32 = \
+      tfnextlineshow HERMES: 2n%%; \
+      2n%; \
+    /def -F -msimple -t"Hermes                    - Stairway" walkerslaskuwH33 = \
+      tfnextlineshow HERMES: 3n%%; \
+      3n%; \
+    /def -F -msimple -t"Hermes                    - Second Floor" walkerslaskuwH34 = \
+      tfnextlineshow HERMES: 3nu%%; \
+      3nu%; \
+    /def -F -msimple -t"Hermes                    - Western Hall" walkerslaskuwH35 = \
+      tfnextlineshow HERMES: 3nuw%%; \
+      3nuw%; \
+    /def -F -msimple -t"Hermes                    - Bed Room" walkerslaskuwH36 = \
+      tfnextlineshow HERMES: 3nu2w, 3nu2n, 3nu2e, 3nu2s%%; \
+      3nu2w%%; \
+      ask hermes death%%; \
+      2e2n%%; \
+      ask hermes death%%; \
+      2s2e%%; \
+      ask hermes death%%; \
+      2w2s%; \
+    /def -F -msimple -t"Hermes                    - Southern Hall" walkerslaskuwH37 = \
+      tfnextlineshow HERMES: 3nus%%; \
+      3nus%; \
+    /def -F -msimple -t"Hermes                    - Eastern Hall" walkerslaskuwH38 = \
+      tfnextlineshow HERMES: 3nue%%; \
+      3nue%; \
+    /def -F -msimple -t"Hermes                    - Northern Hall" walkerslaskuwH39 = \
+      tfnextlineshow HERMES: 3nun%%; \
+      3nun%; \
+    /def -F -msimple -t"Hermes                    - Hall of Gods" walkerslaskuwH40 = \
+      tfnextlineshow HERMES: 3nu + open hatch + u%%; \
+      3nu%%; \
+      open hatch%%; \
+      u%; \
+    /def -F -msimple -t"Hermes                    - The Portal" walkerslaskuwH41 = \
+      tfnextlineshow HERMES: 3nu + open hatch + un%%; \
+      3nu%%; \
+      open hatch%%; \
+      un
+
+/alias astral         \
+    /toOlympus Astral Plane%; \
+      /def -F -ag -msimple -t"It's already open!" walkerslask_g_open_gag%; \
+      /def -F -n1 -msimple -t"Zeus Street" walkerslaskap1 = \
+        3nu%%;open hatch%%;un%%;open hole%%;enter hole%; \
+      /def -F -n1 -msimple -t'A Strange Shimmering Room' walkerslaskap2 = \
+        tfpromptshow The Githyanki Keep is inside the gateway past some aggies%; \
+      /def -F -msimple -t'Into the Astral Plane' walkerslaskap3 = \
+        tfpromptshow To get to the keep: 2nwnwunenenun%; \
+      /def -F -msimple -t'Inside the Githyanki Keep' walkerslaskap4 = \
+        ;open steel;tfpromptshow The keep is north of here.;/purge walkerslaskap*
+/alias elementalplain fireelemental
+/alias fireelemental  \
+    /toOlympus Fire Elemental Plain%; \
+    /def -F -ag -msimple -t"It's already open!" walkerslask_g_open_gag%; \
+    /def -F -n1 -msimple -t"Zeus Street" walkerslaskfe1 = \
+      3nu%%;open hatch%%;u2n%; \
+    /def -F -n1 -msimple -t"Elemental Plain" walkerslaskfe2 = \
+      tfpromptshow The castle is 2ne2wsw2s2eu from here%%; \
+      /def -F -msimple -t"Obvious exits: [North, West]" \
+        walkerslaskfe2_1 = tfpromptshow ne2wsw2s2eu%%; \
+      /def -F -msimple -t"Obvious exits: [North, East, West]" \
+        walkerslaskfe2_2 = tfpromptshow wsw2s2eu%%; \
+      /def -F -msimple -t"Obvious exits: [East, South, West]" \
+        walkerslaskfe2_3 = tfpromptshow sw2s2eu%%; \
+      /def -F -msimple -t"Obvious exits: [West, Up, Down]" \
+        walkerslaskfe2_4 = tfpromptshow u%%; \
+      /def -F -msimple -t"Entrance" walkerslaskfe2_5 = \
+        tfpromptshow The castle is north of here%%%; \
+        /purge  walkerslask*
+
+; Outside Southeast gate:
+/alias holygrove      /outsideSoutheastGate 2es3e
+/alias solom          \
+    /if (useobelisks) \
+      /marketSquare ;goto ofcol;2w7s2w3sw3s2w%; \
+    /else \
+      /outsideSoutheastGate 2es2esese2se2ses2ese7s2w3sw3s2w%; \
+    /endif
+/alias kender         \
+    /if (useobelisks) \
+      /marketSquare ;goto ofcol;2w7s2w3s8w2nen;get key;ul gate%; \
+    /else \
+      /outsideSoutheastGate 2es2esese2se2ses2ese7s2w3s8w2nen;get key;ul gate%; \
+    /endif
+/alias ofcol          \
+    /if (useobelisks) \
+      /marketSquare goto ofcol%; \
+    /else \
+      /outsideSoutheastGate 2es2esese2se2ses2es3e%; \
+    /endif
+/alias toormail       \
+    /if (useobelisks) \
+      /marketSquare ;goto ofcol;2wn%; \
+    /else \
+      /outsideSoutheastGate 2es2esese2se2ses2esen%; \
+    /endif
+/alias wyverntower    wyvern
+/alias wyvern         \
+    /if (useobelisks) \
+      /marketSquare ;goto ofcol;3wnwne%; \
+    /else \
+      /outsideSoutheastGate 2es2esese2se2sesene%; \
+    /endif
+/alias goblincaves    \
+    /if (useobelisks) \
+      /marketSquare ;goto ofcol;3wn2wnwne%; \
+    /else \
+      /outsideSoutheastGate 2es2esese2sese%; \
+    /endif
+/alias plainsofdust   \
+    /if (useobelisks) \
+      /marketSquare ;goto ofcol;2w7s2w3s10w%; \
+    /else \
+      /outsideSoutheastGate 2es2esese2se2ses2ese7s2w3s10w%; \
+    /endif
+/alias inglestone     \
+    /if (useobelisks) \
+      /marketSquare ;goto ofcol;2w7s2w3s11wnw5nw;open door;n%; \
+    /else \
+      /outsideSoutheastGate ;2es2esese2se2ses2ese7s2w3s11wnw5nw;open door;n%; \
+    /endif
+/alias laboratory     \
+    /if (currentroom =~ "The Chamber") \
+      ;n6w5n;open door down;dse2sen3eswsese;open door down%; \
+    /else \
+      /if (groupleader =~ name) \
+        light%; \
+      /endif%; \
+      /if (useobelisks) \
+        /marketSquare ;goto ofcol;3wnwn6e%; \
+      /else \
+        /outsideSoutheastGate 2es2esese2se2sesen6e%; \
+      /endif%; \
+      /def -F -msimple -t'yeah sure! I suppose you can walk on water too?' \
+        walkerslasklab1 = ;fly;e%; \
+      /def -F -msimple -t'Western Moat' walkerslasklab2 = e%; \
+      /def -F -msimple -t'Tower Foyer' walkerslasklab3 = e%; \
+      /def -F -msimple -t'The Grand Lobby' walkerslasklab4 = e%; \
+      /def -F -msimple -t'Base of the Western Tower' walkerslasklab5 = e%; \
+      /def -F -msimple -t'The Musty Corridor' walkerslasklab6 = e%; \
+      /def -F -msimple -t'Base of the Eastern Tower' walkerslasklab7 = u%; \
+      /def -F -msimple -t'On the First Staircase' walkerslasklab8 = u%; \
+      /def -F -msimple -t'Second Level of the Eastern Tower' walkerslasklab9 = w%; \
+      /def -F -msimple -t'The Elegant Hall' walkerslasklab10 = w%; \
+      /def -F -msimple -t'Second Level of the Western Tower' walkerslasklab11 = u%; \
+      /def -F -msimple -t'The Spiral Stairs' walkerslasklab12 = u%; \
+      /def -F -msimple -t'Third Level of Western Tower' walkerslasklab13 = e%; \
+      /def -F -msimple -t"It's too dark to see anything!" walkerslasklab14 = e%; \
+      /def -F -msimple -t'Third Level of Eastern Tower' walkerslasklab15 = ;open hatchway;u%; \
+      /def -F -msimple -t'Turret of the Eastern Tower' walkerslasklab16 = w%; \
+      /def -F -msimple -t'On the Catwalk' walkerslasklab17 = w%; \
+      /def -F -msimple -t'Turret of the Western Tower' walkerslasklab18 = w%; \
+      /def -F -msimple -t'On the Other Side' walkerslasklab19 = w%; \
+      /def -F -msimple -t'The Chamber' walkerslasklab20 = \
+        tfpromptshow Laboratory is north of here.%%; \
+        /if (groupleader =~ name) \
+	  tfpromptshow Remember: Soulcrushers assist each other!%%; \
+          gt use pure%%; \
+          dark%%; \
+        /endif%%; \
+        open mirror%%; \
+        /purge walkerslasklab*%; \
+    /endif
+/alias dragoncult     \
+    /if (useobelisks) \
+      /marketSquare ;goto ofcol;2e2n%; \
+    /else \
+      /outsideSoutheastGate 2es2esese2se2ses2es5e2n%; \
+    /endif%; \
+    /def -p2 -n1 -msimple -t'The door seems to be closed.' walkerslaskdc1 = \
+      tfpromptshow the receptionist should have key.%%;exa receptionist%; \
+    /def -F -n1 -msimple -t'You get a black key from Corpse of The receptionist.' walkerslaskdc2 = \
+      unlock door%%;open door%%;n%; \
+    /def -F -n1 -msimple -t'A dimly lit corridor' walkerslaskdc3 = \
+      /purge walkerslaskdc*
+/alias hightower      \
+    /if (currentroom =~ "Entrance to the High Tower") \
+      n3e2nu3w4s4e4n%; \
+    /elseif (currentroom =~ "Below the stairs") \
+      u4w4s4e4n%; \
+    /elseif (currentroom =~ "The end of the hallway") \
+      u%; \
+      /def -F -n1 -msimple -t"Atop the stairway" walkerslaskht2b = \
+        4w4s4e4n%%; \
+        /purge walkerslaskht2*%; \
+      /def -F -n1 -msimple -t"A corridor" walkerslaskht2c = \
+        2w5s2u%%; \
+        /purge walkerslaskht2*%; \
+    /elseif (useobelisks) \
+      /marketSquare goto high tower%; \
+    /else \
+      /outsideSoutheastGate 3sw2sese2s2w%; \
+      /def -F -n1 -msimple -t"Entrance to the Shadow Grove" walkerslaskht1 = \
+        tfpromptshow the tower is 2n3swsn from here, past aggie Shadow Guardians%%; \
+        /purge walkerslaskht*%; \
+    /endif
+/alias dragonspyre    \
+    /if (currentroom =~ "An Ancient Path through the dense forest") \
+      2e3n3u7es3e3n3en%; \
+    /elseif (useobelisks) \
+      /marketSquare ;goto solace;7seu2nw4ne%; \
+    /else \
+      /outsideSoutheastGate 3sw2sese2sw2se2s2e%; \
+    /endif
+/alias elvenvalley    \
+    /if (useobelisks) \
+      /marketSquare ;goto solace;5wn%; \
+    /else \
+      /outsideSoutheastGate 3sw2sese2sw2se2se4se2sdw7n5wn%; \
+    /endif
+/alias lostsoulscatacombs   \
+    /if (useobelisks) \
+      /marketSquare ;goto solace;6s3wn;open trap;d%; \
+    /else \
+      /outsideSoutheastGate ;3sw2sese2sw2se2se4se2sdwn3wn;open trap;d%; \
+    /endif
+/alias shaolin        \
+    /if (useobelisks) \
+      /marketSquare ;goto solace;7swn2ws2w%; \
+    /else \
+      /outsideSoutheastGate 3sw2sese2sw2se2se4se2sd2wn2ws2w%; \
+    /endif
+/alias solace         \
+    /if (useobelisks) \
+      /marketSquare goto solace%; \
+    /else \
+      /outsideSoutheastGate 3sw2sese2sw2se2se4se2sdw7n%; \
+    /endif
+/alias ciqualaslair   ciquala
+/alias ciquala        \
+    /if (useobelisks) \
+      /marketSquare ;goto solace;9ses;open trapdoor%; \
+    /else \
+      /outsideSoutheastGate ;3sw2sese2sw2se2se4se2sd3s;open trapdoor%; \
+    /endif
+/alias darkenwood     \
+    /if (useobelisks) \
+      /marketSquare ;goto solace;9sws%; \
+    /else \
+      /outsideSoutheastGate 3sw2sese2sw2se2se4se2sd2s2ws%; \
+    /endif
+/alias mirrorrealm    \
+    /if (useobelisks) \
+      /marketSquare ;goto solace;9s4e2n;open door%; \
+    /else \
+      /outsideSoutheastGate ;3sw2sese2sw2se2se4se2sd2s3e2n;open door%; \
+    /endif
+/alias crystalmir     \
+    /if (useobelisks) \
+      /marketSquare ;goto solace;7se%; \
+    /else \
+      /outsideSoutheastGate 3sw2sese2sw2se2se4se2sd%; \
+    /endif
+/alias abandonedcaves \
+    /if (useobelisks) \
+      /marketSquare ;goto solace;7seu2nw4n3e3n3u6en%; \
+    /else \
+      /outsideSoutheastGate 3sw2sese2sw2se2s4e3n3u6en%; \
+    /endif%; \
+    /def -F -msimple -n1 -t"The entrance to the caves" walkerslaskAc = \
+      /if (groupleader =~ name) \
+        gt use fire%%; \
+      /endif%%; \
+      tfpromptshow No known irv:s for the mobs west of the orcs.
+/alias tomaaukkhen    \
+    /if (useobelisks) \
+      /marketSquare ;goto new thalos;2en2e2nes2en2eses3es%; \
+    /else \
+      /outsideSoutheastGate 3sw2sese2sw2se2se2s2w2s%; \
+    /endif
+/alias amazonia       \
+    /if (useobelisks) \
+      /marketSquare ;goto new thalos;2en2e2nes2en2eses4e%; \
+    /else \
+      /outsideSoutheastGate 3sw2sese2sw2se2se2s2wse%; \
+    /endif
+/alias krashkarand    \
+    /if (useobelisks) \
+      /marketSquare ;goto new thalos;2en2e2nes2en2eses4e5nw%; \
+    /else \
+      /outsideSoutheastGate 3sw2sese2sw2se2se2s2wse5nw%; \
+    /endif
+/alias feverish       \
+    /if (useobelisks) \
+      /marketSquare ;goto new thalos;2en2e2nes2en2eses4e5n2en4ene3n%; \
+    /else \
+      /outsideSoutheastGate 3sw2sese2sw2se2se2s2wse5n2en4ene3n%; \
+    /endif
+
+; Outside West gate, on the river:
+/alias desert         \
+    /if (useobelisks) \
+      /marketSquare ;goto thalos;esnnn%; \
+    /else \
+      /outsideWestGate 2w2s%; \
+      /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' \
+        walkerslaskdesert1 = fly%%;d%; \
+      /def -F -n1 -msimple -t'On the Sheol River' \
+        walkerslaskdesert2 = 2es12es2es3es2eses9e%; \
+      /def -F -msimple -t'The Great Eastern Desert' \
+        walkerslaskdesert3 = /purge walkerslaskdesert*%; \
+    /endif
+/alias river          \
+    /outsideWestGate 2w2s%; \
+    /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' \
+      walkerslaskriver1 = fly%%;d%; \
+    /def -F -n1 -msimple -t'On the Sheol River' walkerslaskriver2 = \
+      2es12es2es3es2eses6e%; \
+    /def -F -msimple -t'An underground lake' walkerslaskriver3 = \
+      /purge walkerslaskriver*
+/alias MiloWalk       \
+    /set walkstate=$[{walkstate} + 1]%; \
+    /if (navigatorfound == -1) \
+      trigonprompt /tfshow Navigator search interrupted!%; \
+    /elseif (navigatorfound == 1) \
+      NavigatorFound%; \
+    /elseif ({walkstate} < strlen(navigatorpath)) \
+      $[substr(navigatorpath, walkstate, 1)]%; \
+      /def -F -n1 -t"Obvious exits: \\[*" walkerslaskMiloWalk = \
+        trigonprompt MiloWalk%; \
+    /else \
+      /if (groupleader =~ name) \
+        /tfshow Failed to find the navigator. Recall and try again.%; \
+      /else \
+        /tfshow Failed to find the navigator. "look" to try again.%; \
+        /def -F -n1 -msimple -t"The Grand Gate of Thalos" walkerslaskmilorai1 = \
+          /set walkstate -1%%; \
+          trigonprompt MiloWalk%; \
+      /endif%; \
+    /endif
+/alias FindNavigator  \
+    /if (useobelisks) \
+      /marketSquare goto thalos%; \
+    /else \
+      /outsideWestGate 2w2s%; \
+      /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' walkerslaskfindnavi1 = \
+        fly%%;d%; \
+      /def -F -n1 -msimple -t'On the Sheol River' walkerslaskfindnavi2 = \
+        2es12es2es3es2eses9e%; \
+      /def -F -n1 -msimple -t'The Great Eastern Desert' walkerslaskfindnavi3 = \
+        4sw%; \
+    /endif%; \
+    /def -F -n1 -msimple -t"Alas, you cannot go that way..." walkerslaskfindnavi4 = \
+      /set navigatorfound -1%%;l%; \
+    /def -F -n1 -msimple -t"The Grand Gate of Thalos" walkerslaskfindnavi5 = \
+      /set navigatorpath eennewwswswenwnnwsnnnseswwwenwwewssewnewnewnewswssssssw%%; \
+      /set navigatorfound 0%%; \
+      /set walkstate -1%%; \
+      trigonprompt MiloWalk
+/alias NavigatorFound donothing
+/alias navigator      \
+    FindNavigator%; \
+    /unalias NavigatorFound%; \
+    /alias NavigatorFound /tfshow NAVIGATOR FOUND!
+/alias welldrop       \
+    ask navi home%; \
+    /def -F -n1 -msimple -t"The world fades away, and you feel yourself being pulled to another dimension." walkerslaskdrop = \
+      ;den;ask spirit bless;enter oasis;checklevel;/purge walkerslaskdrop
+/alias milorai        \
+    FindNavigator%; \
+    /unalias NavigatorFound%; \
+    /alias NavigatorFound \
+      ;ask navigator home;/purge walkerslaskfindnavi*;den;ask spirit bless
+/alias drow           \
+    /if (currentroom =~ "Outside the City Gates") \
+      wn2wnd2nundnw2nw%;open tile%;say down, open door, e%; \
+    /else \
+      /if (useobelisks) \
+        /marketSquare goto drow%; \
+      /else \
+        /outsideWestGate 2w2s%; \
+        /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' \
+          walkerslaskdrow1 = fly%%;d%; \
+        /def -F -n1 -msimple -t'On the Sheol River' walkerslaskdrow2 = \
+          2es12es2es3es2eses3en%; \
+        /def -F -n1 -msimple -t'Cave-in' walkerslaskdrow3 = \
+          tfpromptshow down%%;d%; \
+        /def -F -n1 -msimple -t'At the foot of the rubble' walkerslaskdrow4 = \
+          tfpromptshow north%%;n%; \
+        /def -F -n2 -msimple -t'Cave entrance' walkerslaskdrow5 = \
+          tfpromptshow 2 down (past aggressive Dracolich)%; \
+        /def -F -msimple -t'Giant cave' walkerslaskdrow6 = \
+          d%%;/purge walkerslaskdrow*%; \
+      /endif%; \
+    /endif
+/alias shadowdwell    \
+    /if (useobelisks) \
+      /marketSquare ;goto drow;n%; \
+    /else \
+      /outsideWestGate 2w2s%; \
+      /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' \
+        walkerslaskshadowdwell1 = fly%%;d%; \
+      /def -F -n1 -msimple -t'On the Sheol River' walkerslaskshadowdwell2 = \
+        2es12es2es3es2eses3en%; \
+      /def -F -n1 -msimple -t'Cave-in' walkerslaskshadowdwell3 = \
+        tfpromptshow down%%;d%; \
+      /def -F -n1 -msimple -t'At the foot of the rubble' walkerslaskshadowdwell4 = \
+        tfpromptshow north%%;n%; \
+      /def -F -n2 -msimple -t'Cave entrance' walkerslaskshadowdwell5 = \
+        tfpromptshow 2 down (past aggressive Dracolich)%; \
+      /def -F -msimple -t'Giant cave' walkerslaskshadowdwell6 = \
+        d%; \
+      /def -F -msimple -t'Outside the City Gates' walkerslaskshadowdwell7 = \
+        n%; \
+    /endif%; \
+    /def -F -msimple -t'A Narrow Underground Passage' walkerslaskshadowdwell8 = \
+      /if (groupleader =~ name) \
+        tfpromptshow 3n2d3n2w2n2wn4wn5wn, then open barricade%%; \
+        gt use pure%%; \
+	3n2d%%; \
+        /def -F -msimple -t"The Southern Mantle" walkerslaskshadowdwell9a0 = \
+          tfnextlineshow n%%; \
+        /def -F -msimple -t"Southern City Boundaries" walkerslaskshadowdwell9a = \
+          tfnextlineshow n%%; \
+        /def -F -msimple -t"Southern Roam" walkerslaskshadowdwell9b = \
+          tfnextlineshow n%%; \
+        /def -F -msimple -t"The Southern Dark Domains" walkerslaskshadowdwell9c = \
+          tfnextlineshow w%%; \
+        /def -F -msimple -t"Around a Stalagmite" walkerslaskshadowdwell9d = \
+          tfnextlineshow w%%; \
+        /def -F -msimple -t"A Windy Intersection" walkerslaskshadowdwell9e = \
+          tfnextlineshow n%%; \
+        /def -F -msimple -t"Broad Streets" walkerslaskshadowdwell9f = \
+	  tfnextlineshow n%%; \
+        /def -F -msimple -t"Wondrous Scents" walkerslaskshadowdwell9g = \
+	  tfnextlineshow w%%; \
+        /def -F -msimple -t"Artisan Alley" walkerslaskshadowdwell9h = \
+	  tfnextlineshow w%%; \
+        /def -F -msimple -t"Central Narbondellyn" walkerslaskshadowdwell9i = \
+	  tfnextlineshow n%%; \
+        /def -F -msimple -t"North Narbondellyn" walkerslaskshadowdwell9j = \
+	  tfnextlineshow w%%; \
+        /def -F -msimple -t"An Intersection" walkerslaskshadowdwell9k = \
+	  tfnextlineshow w%%; \
+        /def -F -msimple -t"Central Narbondellyn Roam" walkerslaskshadowdwell9l = \
+	  tfnextlineshow w%%; \
+        /def -F -msimple -t"By the Darkspires" walkerslaskshadowdwell9m = \
+	  tfnextlineshow w%%; \
+        /def -F -msimple -t"Western Narbondellyn" walkerslaskshadowdwell9n = \
+	  tfnextlineshow n%%; \
+        /def -F -msimple -t"South-Eastern Manyfolk" walkerslaskshadowdwell9o = \
+	  tfnextlineshow w%%; \
+        /def -F -msimple -t"A Flight of Steps down to the Bazaar" walkerslaskshadowdwell9p = \
+	  tfnextlineshow w%%; \
+        /def -F -msimple -t"The Crater" walkerslaskshadowdwell9q = \
+	  tfnextlineshow w%%; \
+        /def -F -msimple -t"Southern Bazaar Road" walkerslaskshadowdwell9r = \
+	  tfnextlineshow w%%; \
+        /def -F -msimple -t"A View of the Narbondel" walkerslaskshadowdwell9s = \
+	  tfnextlineshow w%%; \
+        /def -F -n1 -msimple -t"Manyfolk Roam" walkerslaskshadowdwell9t = \
+	  tfnextlineshow n, open barricade, w%%; \
+        /def -F -msimple -t"Western Manyfolk" walkerslaskshadowdwell9u = \
+	  tfpromptshow Done!%%%; \
+          /purge walkerslaskshadowdwell*%%; \
+      /else \
+        /purge walkerslaskshadowdwell*%%; \
+      /endif
+/alias darkunder      \
+    drow%; \
+    /def -F -n2 -msimple -t'Outside the City Gates' walkerslaskdarkunder1 = \
+      wn2wnd2nundnw2n%%;open door%%;w%%;open tile%%;drop darkunderX1%; \
+    /def -F -ag -n1 -msimple -t"You don't seem to have a darkunderX1." walkerslaskdarkunder2 = \
+      /tfshow d: possibly many aggies.%%; \
+      /tfshow 2d: Darkunder, but tunnel room (max 1 player).%%; \
+      /tfshow 2ds: Decent gate room.%%; \
+      /purge walkerslaskdarkunder*
+/alias desolateplains \
+    /if (useobelisks) \
+      /marketSquare goto unknown%; \
+    /else \
+      /outsideWestGate 2w2s%; \
+      /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' \
+        walkerslaskdesolateplains1 = fly%%;d%; \
+      /def -F -n1 -msimple -t'On the Sheol River' \
+        walkerslaskdesolateplains2 = 2es12es2es3es2eses3en%; \
+      /def -F -n1 -msimple -t'Cave-in' \
+        walkerslaskdesolateplains3 = tfpromptshow down%%;d%; \
+      /def -F -n1 -msimple -t'At the foot of the rubble' \
+        walkerslaskdesolateplains4 = tfpromptshow north%%;n%; \
+      /def -F -n2 -msimple -t'Cave entrance' walkerslaskdesolateplains5 = \
+        tfpromptshow down (to aggressive Dracolich), then enter portal%; \
+      /def -F -msimple -t'Giant cave' walkerslaskdesolateplains6 = \
+        enter portal%; \
+      /def -F -msimple -t'The top of a small hill' walkerslaskdesolateplains7 = \
+        /purge walkerslaskdesolateplains*%; \
+    /endif
+/alias thalos         \
+    /if (useobelisks) \
+      /marketSquare goto thalos%; \
+    /else \
+      /outsideWestGate 2w2s%; \
+      /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' walkerslaskthalos1 = \
+        fly%%;d%; \
+      /def -F -n1 -msimple -t'On the Sheol River' walkerslaskthalos2 = \
+        2es12es2es3es2eses9e4sw%; \
+      /def -F -msimple -t'The Grand Gate of Thalos' walkerslaskthalos3 = \
+        /purge walkerslaskthalos*%; \
+    /endif
+/alias nomadcamp      \
+    /if (useobelisks) \
+      /marketSquare ;goto thalos;es3newn%; \
+    /else \
+      /outsideWestGate 2w2s%; \
+      /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' walkerslasknomad1 = \
+        fly%%;d%; \
+      /def -F -n1 -msimple -t'On the Sheol River' walkerslasknomad2 = \
+        2es12es2es3es2eses10ewn%; \
+      /def -F -msimple -t'A nomad camp' walkerslasknomad3 = \
+        /purge walkerslasknomad*%; \
+    /endif
+/alias pyramid        \
+    /if (useobelisks) \
+      /marketSquare ;goto thalos;4euneu%; \
+    /else \
+      /outsideWestGate 2w2s%; \
+      /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' walkerslaskpy1 = \
+        fly%%;d%; \
+      /def -F -n1 -msimple -t'On the Sheol River' walkerslaskpy2 = \
+        2es12es2es3es2eses9eses3euneu%; \
+    /endif%; \
+    /def -F -msimple -t'The Apex of the Great Pyramid' walkerslaskpy3 = \
+      open stones%%;d%%;/purge walkerslaskpy*
+/alias oldkingdom     \
+    /if (currentroom =~ "Burial building") \
+      ne2nw6nu4n4u%;open tomb%;2n2wune4neu5nu%; \
+    /else \
+      /if (useobelisks) \
+        /marketSquare ;goto thalos;es3nen%; \
+      /else \
+        /outsideWestGate 2w2s%; \
+        /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' walkerslaskok1 = \
+          fly%%;d%; \
+        /def -F -n1 -msimple -t'On the Sheol River' walkerslaskok2 = \
+          2es12es2es3es2eses10en%; \
+      /endif%; \
+      /def -F -msimple -t'Outside the burial building' walkerslaskok3 = \
+        n%%;/purge walkerslaskok*%; \
+    /endif
+/alias brassdragon    \
+    /if (useobelisks) \
+      /marketSquare ;goto thalos;ene2nd%; \
+    /else \
+      /outsideWestGate 2w2s%; \
+      /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' walkerslaskbd1 = \
+        fly%%;d%; \
+      /def -F -n1 -msimple -t'On the Sheol River' walkerslaskbd2 = \
+        2es12es2es3es2eses12esnd%; \
+    /endif%; \
+    /def -F -msimple -t'The wind-swept ledge' walkerslaskok3 = \
+      /purge walkerslaskbd*
+/alias muldorbrooke \
+    /if (useobelisks) \
+      /marketSquare ;goto solace;9sw4se%; \
+    /else \
+      /outsideSoutheastGate 3sw2sese2sw2se2se4se2sd2s2w4se%; \
+    /endif
+/alias hobgoblincamps \
+    /if (useobelisks) \
+      /marketSquare ;goto solace;9sw4s2e6sw3s%; \
+    /else \
+      /outsideSoutheastGate 3sw2sese2sw2se2se4se2sd2s2w4s2e6sw3s%; \
+    /endif
+/alias hobgoblincamps2 10e6s5e3n3w2n5e6s6w6seses2enen3en2esenenw
+/alias hobgoblincamps3 4swswn2ws3wsws2wnwsws2eseswswswswsw2n3wseswswnwsws3w3nese2nesene2nen2enene2nwswsws2wnenwn
+/alias hc1 10e6s5e3n3w2n5e4s3e3n3esws2e
+/alias hc2 10e6s5e3n3w2n5e4s2e2swsws2w
+/alias hc3 10e6s5e3n3w2n5e6s6w2s2w
+/alias hc4 10e6s5e3n3w2n5e6s6w6seses2enen3en2esenen
+/alias hc5 10e6s5e3n3w2n5e6s6w6se2sws2eses2ese2s
+/alias hc6 10e6s5e3n3w2n5e6s6w6se2sws2eses2ese2sesesen2e2nw2nwn
+/alias hc7 10e6s5e3n3w2n5e6s6w6se2sws2eseswswswsws
+/alias hc8 10e5s2ws2wsw2swsw2sws2wseswse2sws2e2nese2n2wnen2en
+/alias hc9 10e5s2ws2wswnw
+
+; Outside Southwest gate:
+/alias gnome          /outsideSouthwestGate 2sw2sw3s2e
+/alias traderoad      /outsideSouthwestGate se
+/alias impact         /outsideSouthwestGate 2sw
+/alias miden          /outsideSouthwestGate 2sw3s
+/alias ghenna         /outsideSouthwestGate 2sw9s%; \
+    /purge lobtrig%; \
+    /def -F -n1 -msimple -t'A labyrinth of bodies' lobtrig = \
+      tfpromptshow To get past: 2e2swes, then north into aggie.
+/alias taon           \
+    /if (useobelisks) \
+      /marketSquare ;goto new thalos;2en2e2n2wn2wn3wnwn4w2s7e7n3w%; \
+    /else \
+      /outsideSouthwestGate 2sw2sw3ses2wsw2sw2s2wn2wn3wnwn4w2s7e7n3w%; \
+    /endif%; \
+    /def -F -n1 -msimple -t'A chasm' walkerslasktaon = \
+      w%; \
+    /def -F -n1 -msimple -t'Next to a chasm' walkerslasktaon2 = \
+      2w6s2u3e4n4w3u3e2n3u%; \
+    /def -F -n2 -msimple -t'Yeah sure! You think yourself a bird or something?' walkerslasktaon3 = \
+      fly%%;w%; \
+    /def -F -n1 -msimple -t'Overlooking the realm' walkerslasktaon4 = \
+      /purge walkerslasktaon*
+/alias newt           \
+    /if (useobelisks) \
+      /marketSquare goto new thalos%; \
+    /else \
+      /outsideSouthwestGate 2sw2sw3ses2wsw2sw4s2ws2w%; \
+    /endif
+/alias coven          \
+    /if (useobelisks) \
+      /marketSquare ;goto new thalos;2enes%; \
+    /else \
+      /outsideSouthwestGate 2sw2sw3ses2wsw2sw4sws%; \
+    /endif%; \
+    /def -F -msimple -n1 -t"An Old Knotted Tree" walkerslaskCoven = \
+      /if (groupleader =~ name) \
+        gt use normal%%; \
+      /endif%%; \
+      tfpromptshow No known irv:s for these witches.
+/alias grasslands     \
+    /if (useobelisks) \
+      /marketSquare ;goto new thalos;2en2e2n3w%; \
+    /else \
+      /outsideSouthwestGate 2sw2sw3ses2wsw2sw2s3w%; \
+    /endif
+/alias cathedral      \
+    /if (useobelisks) \
+      /marketSquare ;goto new thalos;2en2e2n2w2n;open gate%; \
+    /else \
+      /outsideSouthwestGate ;2sw2sw3ses2wsw2sw2s2w2n;open gate%; \
+    /endif
+/alias lagamore       \
+    /if (useobelisks) \
+      /marketSquare ;goto new thalos;2en2e4ne2nwn2w%; \
+    /else \
+      /outsideSouthwestGate 2sw2sw3ses2ws2wn2w%; \
+    /endif
+/alias demoncity      \
+    /if (useobelisks) \
+      /marketSquare ;goto new thalos;2en2e2n2wn2wn2wn%; \
+    /else \
+      /outsideSouthwestGate 2sw2sw3ses2wsw2sw2s2wn2wn2wn%; \
+    /endif
+/alias kerjim         \
+    /if (useobelisks) \
+      /marketSquare ;goto new thalos;2en2e2n2wn2wn2wnd%; \
+    /else \
+      /outsideSouthwestGate 2sw2sw3ses2wsw2sw2s2wn2wn2wnd%; \
+    /endif
+/alias orshingal      \
+    /if (useobelisks) \
+      /marketSquare ;goto new thalos;2en2e2nes2enen%; \
+    /else \
+      /outsideSouthwestGate 2sw2sw3ses2wsw2sw2ses2enen%; \
+    /endif
+/alias lethriel       \
+    /if (useobelisks) \
+      /marketSquare ;goto new thalos;2en2e2nes2enes%; \
+    /else \
+      /outsideSouthwestGate 2sw2sw3ses2wsw2sw2ses2enes%; \
+    /endif
+
+; Special
+/alias sewer          /marketSquare 3s3wsed
+/alias underdark      \
+    /if (useobelisks) \
+      /marketSquare goto underdark%; \
+    /else \
+      /marketSquare ;3s3wsedwdn;open rock;7d%; \
+    /endif
+/alias underdark2     /marketSquare ;3s3wsedwdn;open rock;7d
+
+; MIRROR:
+/alias mirror1        /outsideWestGate ;2wn3wswswn3w;enter mirror
+/alias mirror2        /outsideSouthwestGate ;s7e;enter mirror
+/alias mirror3        /outsideEastGate ;2e10n2e2ne;enter mirror
+/alias mirror4        /if (useobelisks) \
+			/marketSquare ;goto kings castle;3wnwne2nw2nwne2s;enter mirror%; \
+                      /else \
+			/outsideEastGate ;6en2en3es3enwne2nw2nwne2s;enter mirror%; \
+                      /endif
+/alias mirror5        /if (useobelisks) \
+			/marketSquare ;goto ofcol;2n;enter mirror%; \
+                      /else \
+			/outsideSoutheastGate ;2es2esese2se2ses2es3e2n;enter mirror%; \
+                      /endif
+/alias mirror6        \
+    /if (useobelisks) \
+      /marketSquare ;goto olympus;e5s3d;enter mirror%; \
+    /else \
+      /outsideWestGate 2wn3wswswn12ws2w2sws3wnwn7u%; \
+      /def -F -msimple -t'A fluffy white cloud' walkerslaskm61 = \
+        /def -F -p3 -msimple -t'Obvious exits: [East, Down]' \
+          walkerslaskm61_1 = tfpromptshow Mirror 6 is east, past aggie harpies%%; \
+        /def -F -p3 -msimple -t'Obvious exits: [North, South]' \
+          walkerslaskm61_2 = s%%; \
+    	/def -F -p3 -msimple -t'Obvious exits: [North, East]' \
+          walkerslaskm61_3 = e%%; \
+        /def -F -p3 -msimple -t'Obvious exits: [East, West]' \
+          walkerslaskm61_4 = e%%; \
+        /def -F -p3 -msimple -t'Obvious exits: [North, West]' \
+          walkerslaskm61_5 = n%%; \
+        /def -F -p3 -msimple -t'Obvious exits: [East, South, Down]' \
+          walkerslaskm61_6 = d%%; \
+        /def -F -p3 -msimple -t'Obvious exits: [North, West, Up, Down]' \
+          walkerslaskm61_7 = d%%; \
+        /def -F -p3 -msimple -t'Obvious exits: [East, Up]' \
+          walkerslaskm61_8 = e%%; \
+        /def -F -p2 -t'Obvious exits: *' \
+          walkerslaskm61_9 = ;enter mirror;/purge walkerslaskm61_*%; \
+      /def -F -msimple -t'An ominous storm cloud' walkerslaskm62 = \
+        e%; \
+    /endif%; \
+    /def -F -msimple -t'High and perilous cliff' walkerslaskm63 = \
+      s%; \
+    /def -F -msimple -t'Narrow rocky trail' walkerslaskm64 = \
+      d%; \
+    /def -F -msimple -t'Small valley' walkerslaskm65 = \
+      /purge walkerslaskm6*
+/alias mirror7        \
+    /if (useobelisks) \
+      /marketSquare ;goto sundhaven;2e4n2wn%; \
+    /else \
+      /outsideEastGate ;6en2en3es3enwne2nw2nwne2nw3nw4nwnwn3wn2wn2w;open gate;2w4n2wn%; \
+    /endif%; \
+    /def -F -n1 -msimple -t'The gate at the cliffs' walkerslaskm80 = \
+      open gate%%;ndn%; \
+    /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' \
+      walkerslaskm81 = fly%%;n%; \
+    /def -F -msimple -t'In the ocean by the Ocean Pier' walkerslaskm82 = \
+      e%%; \
+      /def -F -p1 -t'Obvious exits: *' \
+        walkerslaskm83 = /purge walkerslaskm8_*%%; \
+      /def -F -mglob -t'In the Ocean' walkerslaskm84 = \
+        /def -F -p2 -msimple -t'Obvious exits: [South, West]' \
+          walkerslaskm8_1 = s%%%; \
+        /def -F -p2 -msimple -t'Obvious exits: [North, South]' \
+          walkerslaskm8_2 = s%%; \
+      /def -F -msimple -t'At a bend in the current on the ocean' \
+        walkerslaskm85 = e%%;\
+      /def -F -msimple -t'At another bend in the current on the ocean' \
+        walkerslaskm86 = s%%;\
+      /def -F -msimple -t'At cross-currents in the ocean' walkerslaskm87 = \
+        /def -F -p2 -msimple -t'Obvious exits: [North, East, West]' \
+          walkerslaskm8_3 = e%%%; \
+        /def -F -p2 -msimple -t'Obvious exits: [North, East, South]' \
+          walkerslaskm8_4 = e%%%; \
+        /def -F -p2 -msimple -t'Obvious exits: [North, South, West]' \
+          walkerslaskm8_5 = s%%; \
+      /def -F -msimple -t'At cross-currents in the deep, wide ocean' \
+        walkerslaskm88 = e%%; \
+      /def -F -msimple -t'In front of an island port' \
+        walkerslaskm89 = n%%;\
+      /def -F -msimple -t'At a north-south current in the ocean' \
+        walkerslaskm810 = n%%;\
+      /def -F -msimple -t'At a bend in the current' \
+        walkerslaskm812 = e%%;\
+      /def -F -msimple -t'At a cross-currents' \
+        walkerslaskm813 = ;enter mirror;/purge walkerslaskm8*
+/alias mirror8        /tfshow Darkfriends. Need a lock picker.%; \
+                      /tfshow If you still want to go, type mirror8b
+/alias mirror8b       /marketSquare 3s2en3e%;open door%;2se3suw2n%;n;enter mirror%;/def -F -n1 -msimple -t'The door seems to be closed.' walkerslaskm9 = tfpromptshow Mirror is north, past this locked, pickable door
+/alias mirror9        /tfshow Mirror 9 is on top floor of Ultima
+/alias mirror10       /tfshow That mirror is inside Taon. Forget it!
+/alias mirrorbeyond   \
+    /if (!useobelisks) \
+      /tfshow Use mirror1, mirror2 etc or turn on useobelisks%; \
+    /else \
+      /marketSquare ;goto ofcol;2n;enter mirror%; \
+    /endif%; \
+    /def -F -msimple -t"You feel your molecules distort as you pass through the silvery surface of the mirror. You find yourself somewhere strange..." walkerslaskMB1 = \
+      tfpromptshow FOUND!%%; \
+      /purge walkerslaskMB*%; \
+    /def -F -msimple -t"You are unable to enter this mirror at this time." walkerslaskMB2 = \
+      /if (currentroom =~ "Impy Way") \
+        delay 1 ;2s;goto olympus;e5s3dsd;enter mirror%%; \
+      /elseif (currentroom =~ "Small valley") \
+        ;un3u5nw;goto kings castle;3wnwne2nw2nwne2s;enter mirror%%; \
+      /elseif (currentroom =~ "The dark woods") \
+        ;2nwse2se2swses3e;goto karandras;5s3w2s7e;enter mirror%%; \
+      /elseif (currentroom =~ "Trade Road") \
+        ;2ewn9w5n4wn3wswswn3w;enter mirror%%; \
+      /elseif (currentroom =~ "Intersection") \
+        ;3esenen3es20e10n2e2ne;enter mirror%%; \
+      /elseif (currentroom =~ "Mountain trail") \
+        ;w2s2w10s10w;goto sundhaven;2e4n2wn;open gate;ndne2ses%%; \
+        /def -F -msimple -n1 -t"At cross-currents in the ocean" walkerslaskMBoceania1 = \
+          ;ese3neses;enter mirror%%; \
+      /elseif (currentroom =~ "At a cross-currents") \
+        tfpromptshow Mirror is either in Darkfriends (3s2en3e2se3suw3n from MS), Ultima (top floor) or Taon (nasty).%%; \
+        /purge walkerslaskMB*%%; \
+      /else \
+        /tfshow Something wrong? Don't know how to go from here.%%; \
+      /endif
+
+; FAIR:
+/alias fair1          \
+    /outsideWestGate ;e;enter fair
+/alias fair2          \
+    /if (useobelisks) \
+      /if (currentroom =~ "Western City Entrance") \
+        ;7e;goto kerofk;s4w;enter fair%; \
+      /else \
+        /marketSquare ;goto kerofk;s4w;enter fair%; \
+      /endif%; \
+    /else \
+      /if (currentroom =~ "Western City Entrance") \
+        ;3wn3wswswn3w4ne4ne3ne2nwne2nes2e2n3e;enter fair%; \
+      /else \
+        /outsideWestGate ;2wn3wswswn3w4ne4ne3ne2nwne2nes2e2n3e;enter fair%; \
+      /endif%; \
+    /endif
+/alias fair3          \
+    /if (useobelisks) \
+      /if (currentroom =~ "Near the city Kerofk") \
+        ;4en;goto ofcol;4sw;enter fair%; \
+      /else \
+        /marketSquare ;goto ofcol;4sw;enter fair%; \
+      /endif%; \
+    /else \
+      /if (currentroom =~ "Near the city Kerofk") \
+        ;3w2s2wnw2swse2sw3sw4sw4s3esenen3es3e;open gate;e5s9e;open gate;s2es2esese2se2ses2es3e4sw;enter fair%; \
+      /else \
+        /outsideSoutheastGate ;2es2esese2se2ses2es3e4sw;enter fair%; \
+      /endif%; \
+    /endif
+/alias fair4          \
+    /if (useobelisks) \
+      /if (currentroom =~ "A pleasant field in Ofcol") \
+        ;e4n;goto solace;7s;enter fair%; \
+      /else \
+        /marketSquare ;goto solace;7s;enter fair%; \
+      /endif%; \
+    /else \
+      /if (currentroom =~ "A pleasant field in Ofcol") \
+        ;e4n3wnwswsws2ws2ws2wn2ws3w2se2sdw;enter fair%; \
+      /else \
+        /outsideSoutheastGate ;3sw2sese2sw2se2se4se2sdw;enter fair%; \
+      /endif%; \
+    /endif
+/alias fair5          \
+    /if (useobelisks) \
+      /if (currentroom =~ "Entrance to the Town of Solace") \
+        ;7n;goto sundhaven;6s;open gate;s;enter fair%; \
+      /else \
+        /marketSquare ;goto sundhaven;6s;open gate;s;enter fair%; \
+      /endif%; \
+    /else \
+      /if (currentroom =~ "Entrance to the Town of Solace") \
+        ;eu2nw4nw2nw2ne2nwnw2ne3n;open gate;n;3e5n;open gate;8en2en3es3enwne2nw2n2w3n%; \
+      /else \
+        /outsideEastGate 6en2en3es3enwne2nw2n2w3n%; \
+      /endif%; \
+      /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' walkerslaskf31 = \
+        fly%%;n%; \
+      /def -F -n1 -msimple -t'On the Ogris River' walkerslaskf32 = \
+        nenenen2ws2w2ne2nwne3n%; \
+      /def -F -n1 -msimple -t'A cobblestone road near Sundhaven' \
+        walkerslaskf33 = enter fair%%;/purge walkerslaskf3*%; \
+    /endif
+/alias fair6          \
+    /purge walker*%; \
+    tfpromptshow Failed to find the Circus. It is probably on the move.
+/alias circus         \
+    /set fairnr=1%; \
+    /def -F -msimple -t'There is no fair here.' walkercircusslask1 = \
+      /set fairnr $$[fairnr+1]%%;fair%%fairnr%; \
+    /def -F -msimple -t"The Path to the Circus" walkercircusslask3 = \
+      /purge walker*%; \
+    fair%fairnr
+/alias drakyri        \
+    /set fairnr=1%; \
+    /def -F -msimple -t'There is no fair here.' walkerdrakyrislask1 = \
+      /set fairnr $$[fairnr+1]%%;fair%%fairnr%; \
+    /def -F -msimple -t"The Path to the Circus" walkerdrakyrislask3 = \
+      /purge walker*%%;s%%;buy ticket%%;4s%%;ul door%%;3su3w%%; \
+      open trapdoor%%;d3e%%;open door south%%;s%%;open icebox%%; \
+      s%%;enter archway%%;s%%;enter pool%%;don ticket%; \
+    fair%fairnr
+
+
+; ----------- Myrridon -----------
+
+/alias myrridon \
+    /if ({*} !~ '') \
+      /tfshow for boat, use 'myrridonboat'%; \
+    /elseif (race =~ 'Ktv' & groupleader !~ name) \
+      /marketSquare goto thalos%; \
+      /def -F -n1 -msimple -t"Alas, you cannot go that way..." walkerslaskfindnavi4 = \
+        /set navigatorfound -1%%;l%; \
+      /def -F -n1 -msimple -t"The Grand Gate of Thalos" walkerslaskfindnavi5 = \
+        leav east%; \
+      /def -F -n1 -msimple -t"The Great Eastern Desert" walkerslaskfindnavi5b = \
+        /set navigatorpath ennewwswswenwnnwsnnnseswwwenwwewssewnewnewnewswssssssw%%; \
+        /set navigatorfound 0%%; \
+        /set walkstate -1%%; \
+        trigonprompt MiloWalk%; \
+      /unalias NavigatorFound%; \
+      /alias NavigatorFound \
+        ;ask navigator home;/purge walkerslask*;den;ask spirit bless;swu%%; \
+        /if (1 | (!pg & groupleader =~ 'none')) \
+          goto myrridon%%; \
+        /else \
+          ;goto thalos;transport myrridon%%; \
+        /endif%; \
+    /else \
+      myrridonboat%; \
+    /endif
+
+/alias myrridonboat   \
+    /if (useobelisks) \
+      /marketSquare ;goto kings castle;3wnwne2nw2nwne2nwn3en2es2enen5e%; \
+    /else \
+      /outsideEastGate 6en2en3es3enwne2nw2nwne2nwn3en2es2enen5e%; \
+    /endif%; \
+    /def -F -n1 -msimple -t'A shimmering portal stands here' \
+      walkerslaskmyrridon2 = enter portal%%;4e4s5e%%;boardship%; \
+
+/alias frommyrridon   /MyrridonTemple ;2w4sw2s2w2s;boardship
+/alias 3mages         /MyrridonTemple 13w3sw2s3wn
+/alias tournament     /outsideMyrridonGate 3ws2ws2w2ses2e3n2e
+/alias myrridonmines  /outsideMyrridonGate 3wsw3n3w2nwn
+/alias dunh 2w3nw2n8e2n3es3e3nwn2w3ne3nwnwn9w
+/alias xrne en2en3en2en2es2es2en3enwnw3nw6ne2ne2ne2n
+/alias underground    \
+    /MyrridonTemple ;2w2nw;open door;n%; \
+    /def -F -msimple -t'Small Room' walkerslaskug1 = \
+      pull crate%%;open crate%%;d%; \
+    /def -F -msimple -t"You can't, there is a boy sitting on it." \
+      walkerslaskug2 = tfpromptshow Boy is in the way%; \
+    /def -F -msimple -t'Small Dank Room' walkerslaskug3 = \
+      /purge walkerslaskug*%%;open door
+/alias dragontail     \
+    /outsideMyrridonGate ;3ws2ws2w2se2swseses;board dragon%; \
+    /def -F -n1 -msimple -t"The Ashinara Outpost" walkerslaskdti1 = \
+      /if (groupleader =~ name) \
+        gt use mental%%; \
+        gt sleep%%; \
+      /endif%; \
+    /def -F -msimple -t"A huge Silver Dragon arrives from the south." walkerslaskdti2 = \
+      board dragon%; \
+    /def -F -n1 -msimple -t"The Dragontail Outpost" walkerslaskdti3 = \
+      /if (groupleader =~ name) \
+        gt wake%%; \
+      /endif%%; \
+      leave%%; \
+      delay 4 ;d3ws6w;w%; \
+    /def -F -msimple -t"In the ruins of Sarakesh" walkerslaskdti4 = \
+      look east%; \
+    /def -F -msimple -t"You see The Gate of Sarakesh." walkerslaskdti5 = \
+      /purge walkerslaskdti*%%; \
+      2wsw2ses2ws%%; \
+      s
+/alias inferno        \
+    /outsideMyrridonGate ;3wsw3n3w2nw5n5d;exits%; \
+    /def -F -msimple -t"Down  - Glistening Tunnel" walkerslaskinf1 = \
+      /purge walkerslaskinf*%%; \
+      tfnextlineshow Inferno is 2 down, past unlife-vuln aggies.
+/alias dunheim        \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto crossroad;10se2sws%; \
+    /else \
+      /MyrridonTemple ;dunh;2nws%; \
+    /endif
+/alias giants         \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto crossroad;10s2e%; \
+    /else \
+      /MyrridonTemple ;dunh;4ne%; \
+    /endif
+/alias woods          \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto crossroad;2nen2en3en2en2es2es2en3enwnw3ne%; \
+    /else \
+      /MyrridonTemple ;dunh;4nw12nen2en3en2en2es2es2en3enwnw3ne%; \
+    /endif
+/alias lahresin       \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto crossroad;10se2sw3s4w4s%; \
+    /else \
+      /MyrridonTemple ;dunh;2nw3s4w4s%; \
+    /endif
+/alias guallidurth    \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto crossroad;2nen2en3en4ws2w2n3w2s2w%; \
+    /else \
+      /MyrridonTemple ;dunh;4nw12nen2en3en4ws2w2n3w2s2w%; \
+    /endif%; \
+    /def -F -n1 -msimple -t'Deep down in the ravine' walkerslaskkh = \
+      /if (groupleader =~ name) \
+        gt use ice%%; \
+      /endif
+/alias haarvenu       \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto crossroad;2nen2en3en4ws2w2n2w;open stone north;n%; \
+    /else \
+      /MyrridonTemple ;dunh;4nw12nen2en3en4ws2w2n2w;open stone north;n%; \
+    /endif
+/alias cohnshar       \
+    /if (area =~ 'Alterac') \
+      5e6s5w4ns2wn4w2swswn%; \
+      /def -F -ag -msimple -t"Alas, you cannot go that way..." tempGagCantGo%; \
+      delay 5 /purge tempGagCantGo%; \
+    /elseif (useobelisks) \
+      /MyrridonTemple ;goto celestial;sdsdsdsedend4ese2sese2s2enwn%; \
+    /else \
+      /MyrridonTemple ;dunh;4nw12n;xrne;enwn%; \
+    /endif%; \
+    /def -F -n1 -msimple -t'The Desert' walkerslaskkh = \
+      /if (groupleader =~ name) \
+        gt use iron%%; \
+;        2ne10nu4n%%; \
+      /endif
+/alias narnia         \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto celestial;sdsdsdsedend4ese2sesen;open door%; \
+    /else \
+      /MyrridonTemple ;dunh;4nw12n;xrne;w3n;open door%; \
+    /endif
+/alias alterac        \
+    /if (area =~ 'CohnShar') \
+      9sd10sw3sene2n4ese%; \
+      /def -F -ag -msimple -t"Alas, you cannot go that way..." tempGagCantGo%; \
+      delay 5 /purge tempGagCantGo%; \
+    /elseif (useobelisks) \
+      /MyrridonTemple ;goto celestial;sdsdsdsedend4ese2sese2s2e2ne2n4ese%; \
+    /else \
+      /MyrridonTemple ;dunh;4nw12n;xrne;e2ne2n4ese%; \
+    /endif%; \
+    /def -F -n1 -msimple -t'The gatehouse to the stronghold of Alterac' walkerslaskAlt = \
+      /if (groupleader =~ name) \
+        tfpromptshow Then switch to slay human and kill brettonians.%%; \
+        tfpromptshow Kill all waywatchers first.%%; \
+        gt use unlife%%; \
+      /endif
+/alias battlefields   \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto celestial;sdsdsdsedend4ese2sese2s2e2ne2n4es2e%; \
+    /else \
+      /MyrridonTemple ;dunh;4nw12n;xrne;e2ne2n4es2e%; \
+    /endif%; \
+    /def -F -n1 -msimple -t'Within a heavily fortified stronghold' \
+      walkerslaskbf = 3n2eu%%;open barricade%%;n
+/alias lorchid        \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto celestial;sdsdsdsedend4ese2sese2s2e2ne2ne2ne2ne2ne4n%; \
+    /else \
+      /MyrridonTemple ;dunh;4nw12n;xrne;e2ne2ne2ne2ne2ne4n%; \
+    /endif
+/alias khronatio      \
+    /if (area =~ 'Alterac') \
+      5e6s5w4ns2wn3w2ne2ne2ne4n%; \
+      /def -F -ag -msimple -t"Alas, you cannot go that way..." tempGagCantGo%; \
+      delay 5 /purge tempGagCantGo%; \
+    /elseif (useobelisks) \
+      /MyrridonTemple ;goto celestial;sdsdsdsedend4ese2sese2s2e2ne2ne2ne2ne2ne4n%; \
+    /else \
+      /MyrridonTemple ;dunh;4nw12n;xrne;e2ne2ne2ne2ne2ne4n%; \
+    /endif%; \
+    /def -F -n1 -msimple -t'City entrance' walkerslaskkh = \
+      tfpromptshow Khronatio is inside (2n7w4n5ene, past aggies)%%; \
+      /if (groupleader =~ name) \
+        gt use fire%%; \
+      /endif%; \
+    /def -F -n1 -msimple -t'An overgrown path' walkerslaskkh2 = \
+      /if (groupleader =~ name) \
+        gt use water%%; \
+      /endif
+/alias palanthas      \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto palanthas%; \
+    /else \
+      /MyrridonTemple ;dunh;4nw10n2w3nw2nw2nw10nwnw3n2wnwn2w3n2wn2w5n%; \
+    /endif
+/alias clerists       \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto palanthas;5s2es2e3sen%; \
+    /else \
+      /MyrridonTemple ;dunh;4nw10n2w3nw2nw2nw10nwnw3n2wnwnwn%; \
+    /endif
+/alias oblivion       \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto celestial;sd2wnd2ndnwdn2w2swsws7w5n3e3n3e%; \
+    /else \
+      /MyrridonTemple ;dunh;4nw10n2w3nw2nw2nw10nwnw3n2wnwn2w4nen2enen2enen7w5n3e3n3e%; \
+    /endif%; \
+    /def -F -n1 -msimple -t'Before the Gates' walkerslaskObl = \
+      /if (groupleader =~ name) \
+        tfpromptshow leave, say open, rejoin%%; \
+        tfpromptshow Either kill (tough) or have someone of good align to:%%; \
+        tfpromptshow A bit messy area, with different-irv mobs%%; \
+      /endif
+/alias apocalypse     \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto celestial;sd2wnd2ndnwd3n3en3ese%; \
+    /else \
+      /MyrridonTemple ;dunh;4nw10n2w3nw2nw2nw10nwnw3n2wnwn2w4nen2enen2ene2nene2n2e2n3en3ese%; \
+    /endif
+
+
+
+/alias ragerian       \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto stonewell;3e2s2w5se2sws3wsw2se%; \
+    /else \
+      /outsideMyrridonGate 3ws2ws2ws2ws3ws3ws2w2nw8ne%; \
+    /endif
+/alias stonewell      \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto stonewell%; \
+    /else \
+      /outsideMyrridonGate 3ws2ws2ws2ws3ws3ws2w2nw10nen3ene2nw5n%; \
+    /endif
+/alias whitebridge    \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto whitebridge%; \
+    /else \
+      /MyrridonTemple ;2w3nw2n8e2n3es3e3nw3n4ese2ne3s3e3ses3es2e%; \
+    /endif
+/alias estuary   \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto whitebridge;n3w;open gatehouse;d6wd3wn2wden%; \
+    /else \
+      /MyrridonTemple ;2w3nw2n8e2n3es3e3nw3n4ese2ne3s3e3seseden%; \
+    /endif
+/alias deadmanscove   \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto ravens;ne2ne3nw3nw2nwn6wswdse%; \
+    /else \
+      /MyrridonTemple ;2w3nw2n8e2n3es3e3nw3nene%; \
+    /endif%; \
+    /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' walkerslaskd11 = \
+      fly%%;e%; \
+    /def -F -n1 -msimple -t'On Terr Creek' walkerslaskd12 = \
+      en3ene2ses6en2e4n2e3s4e3se%; \
+    /def -F -n1 -msimple -t'Edging along some treacherous rocks' walkerslaskd13 = \
+      /purge walkerslaskd1*
+/alias ravenspoint    \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto ravens;s%; \
+    /else \
+      /MyrridonTemple ;2w3nw2n8e2n3es3e3nw3nene%; \
+    /endif%; \
+    /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' walkerslaskr11 = \
+      fly%%;e%; \
+    /def -F -n1 -msimple -t'On Terr Creek' walkerslaskr12 = \
+      en3ene2ses6en2e4n2e3s4e2suen6ese2se3se3sw2sw2s%; \
+    /def -F -n1 -msimple -t'The Ornate City Gates of Ravens Point' walkerslaskr13 = \
+      /purge walkerslaskr1*
+/alias kultheas       \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto kultheas%; \
+    /else \
+      /MyrridonTemple ;2w3nw2n8e2n3es3e3nw3nene%; \
+    /endif%; \
+    /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' walkerslaskk11 = \
+      fly%%;e%; \
+    /def -F -n1 -msimple -t'On Terr Creek' walkerslaskk12 = \
+      ;en3ene2nese7nw5ne5n3e2nene2n7en5e2se3se2se2ses3e4s;open gate;esw3s%; \
+    /def -F -n1 -msimple -t'The Central Square of Kultheas' walkerslaskk13 = \
+      /purge walkerslaskk1*
+/alias valheim        \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto valheim%; \
+    /else \
+      /MyrridonTemple ;2w3nw2n8e2n3es3e3nw3nene%; \
+    /endif%; \
+    /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' walkerslaskv31 = \
+      fly%%;e%; \
+    /def -F -n1 -msimple -t'On Terr Creek' walkerslaskv32 = \
+      en3ene2nese7nw5ne17n%; \
+    /def -F -n1 -msimple -t'The Central Square of Valheim' walkerslaskv33 = \
+      /purge walkerslaskv3*
+/alias desolatesteppes   \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto ravens;ne2ne3nw3nw2nw3ne3nwn%; \
+    /else \
+      /MyrridonTemple ;2w3nw2n8e2n3es3e3nw3nene%; \
+    /endif%; \
+    /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' walkerslaskd21 = \
+      fly%%;e%; \
+    /def -F -n1 -msimple -t'On Terr Creek' walkerslaskd22 = \
+      en3ene2ses6en2e4n2e3s4e2suen6e2ne3nwn%; \
+    /def -F -n1 -msimple -t'Border of the desolate steppes' walkerslaskd23 = \
+      /purge walkerslaskd2*
+/alias lostsoulsvillage   \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto kultheas;4s2w3s2w2sdswdw2s2w2n%; \
+    /else \
+      /MyrridonTemple ;2w3nw2n8e2n3es3e3nw3nene%; \
+    /endif%; \
+    /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' walkerslaskl1 = \
+      fly%%;e%; \
+    /def -F -n1 -msimple -t'On Terr Creek' walkerslaskl12 = \
+      en3ene2ses6en2e4n2e3s4e2suen6e2ne3nw3ne2nw2nen%; \
+    /def -F -n1 -msimple -t'Darkness Falls' walkerslaskl13 = \
+      /purge walkerslaskl1*
+/alias azurelake   \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto valheim;6ws2w%; \
+      /def -F -n2 -msimple -t'The rivergate seems to be closed.' walkerslaska11 = \
+        open rivergate%%;w%; \
+      /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' walkerslaska12 = \
+        fly%%;w%; \
+      /def -F -n1 -msimple -t'The Aulden underground near the walls of Valheim' walkerslaska13 = \
+        3ws4ws3wsws2wsw2s%; \
+    /else \
+      /MyrridonTemple ;2w3nw2n8e2n3es3e3nw3nene%; \
+      /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' walkerslaska12 = \
+        fly%%;e%; \
+      /def -F -n1 -msimple -t'On Terr Creek' walkerslaska13 = \
+        en3ene3nw3ne3n2wnw3n2wnw3n2wnw2n3wsws2wsw2s%; \
+    /endif %; \
+    /def -F -n1 -msimple -t'The shallows of Azure lake' walkerslaska14 = \
+      /purge walkerslaska1*
+/alias mushroomforest \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto valheim;12s3e2nene2nen%; \
+    /else \
+      /MyrridonTemple ;2w3nw2n8e2n3es3e3nw3nene%; \
+    /endif%; \
+    /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' walkerslaskm11 = \
+      fly%%;e%; \
+    /def -F -n1 -msimple -t'On Terr Creek' walkerslaskm12 = \
+      en3ene2nese7nw5ne5n3e2nene2nen%; \
+    /def -F -n1 -msimple -t'A Small Trail' walkerslaskm13 = \
+      /purge walkerslaskm1*
+/alias graven \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto valheim;12s3e2nene2ne2nen2e3ne2n%; \
+    /else \
+      /MyrridonTemple ;2w3nw2n8e2n3es3e3nw3nene%; \
+    /endif%; \
+    /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' walkerslaskg11 = \
+      fly%%;e%; \
+    /def -F -n1 -msimple -t'On Terr Creek' walkerslaskg12 = \
+      en3ene2nese7nw5ne5n3e2nene2ne2nen2e3ne2n%; \
+    /def -F -n1 -msimple -t'A Narrow Opening From The Woods' walkerslaskg13 = \
+      /purge walkerslaskg1*
+/alias stormhaven \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto stormhaven%; \
+    /else \
+      /MyrridonTemple ;2w3nw2n8e2n3es3e3nw3nene%; \
+    /endif%; \
+    /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' walkerslasks41 = \
+      fly%%;e%; \
+    /def -F -n1 -msimple -t'On Terr Creek' walkerslasks42 = \
+      en3ene2nese7nw5ne5n3e2nene2n7en4enwne3nw3nene2nen2ene4neu4en%; \
+    /def -F -n1 -msimple -t'Stormhaven city gates' walkerslasks43 = \
+      /purge walkerslasks4*
+/alias icewoodvale \
+    /if (useobelisks) \
+      /MyrridonTemple ;goto stormhaven;s4wdwsw%; \
+    /else \
+      /MyrridonTemple ;2w3nw2n8e2n3es3e3nw3nene%; \
+    /endif%; \
+    /def -F -n2 -msimple -t'yeah sure! I suppose you can walk on water too?' walkerslaski11 = \
+      fly%%;e%; \
+    /def -F -n1 -msimple -t'On Terr Creek' walkerslaski12 = \
+      en3ene2nese7nw5ne5n3e2nene2n7en4enwne3nw3nene2nen2ene3nw%; \
+    /def -F -n1 -msimple -t'Outskirts of Icewood vale' walkerslaski13 = \
+      /purge walkerslaski1*
+
+
+; ===== SHIP =====
+
+/alias boardship      \
+    board ship%; \
+    /if (groupleader =~ name) \
+      gt sleep%; \
+    /endif%; \
+    /def -F -t'?he ship arrives from the *.' walkerslaskship1 = \
+      upp%%;board ship%; \
+    /def -F -t'You board ?he ship.' walkerslaskship2 = \
+      /def -F -n1 -t'?he ship leaves *' walkerslaskship3 = \
+        /def -F -n1 -msimple -t'The landing-stage of the inter-continental ferry' walkerslaskship5 = \
+          leave ship%%%%; \
+          /purge walkerslaskship*%%%%; \
+          w%%%%; \
+          /if (groupleader =~ name) \
+            oa recall%%%%; \
+          /endif%%%%; \
+          /if (classMa | classPr | classWl | classNb) \
+            wor%%%%; \
+            rr%%%%; \
+            pb 2.%%%%{recallitem}%%%%; \
+            s%%%%; \
+          /else \
+            rr%%%%; \
+          /endif%%%; \
+        /def -F -n1 -msimple -t'A Ferry Dock in Myrridon' walkerslaskship6 = \
+          leave ship%%%%; \
+          /purge walkerslaskship*%%%%; \
+          2n2e2ne4n2e
+
+/set seasick 0
+/def -F -t"You board ?he ship." boardingship = \
+    /set shipmovestogo 58
+/def -F -t"* tells you 'Welcome aboard, that will be {*} gold.'" boardingship2 = \
+    /set shipmovestogo 58
+/def -F -t"Captain yells 'To *'" boardingship3 = \
+    /set shipmovestogo 58
+
+
+/def -F -mregexp -t"^(T|t)he ship leaves (north|south|east|west)\.$" shipmove = \
+    /set shipmovestogo=$[{shipmovestogo} - 1]%; \
+    /substitute -p The ship leaves %{P2}. (%{shipmovestogo})%; \
+    /if ((shipmovestogo == 4) & (groupleader =~ name)) \
+      gt wake%; \
+    /endif%; \
+    /if (shipmovestogo == 4 & rand(100) <= 10 & seasick >= 0) \
+      yell Land ahoy!%; \
+    /endif%; \
+    /if (((seasick == 0) & (rand(900) <= 1)) | \
+         ((seasick == 1) & (rand(900) <= 1)) | \
+         ((seasick == 2) & (rand(900) <= 5)) | \
+         ((seasick > 2) & (rand(900) <= 5))) \
+            /set seasick=$[{seasick} + 1]%; \
+            showseasick %{seasick}%; \
+    /endif
+/def -f -msimple -t"You disembark." disembarktrig = \
+    /if (seasick > 3) \
+      say Finally! Dry land!%; \
+    /endif%; \
+    /if (seasick > 8) \
+      emote kisses the ground.%; \
+    /endif%; \
+    /if (seasick > 0) \
+      /set seasick 0%; \
+    /endif
+/alias showseasick    \
+    /if ({*} == 0) \
+      donothing%; \
+    /elseif ({*} == 1) \
+      donothing%; \
+    /elseif ({*} == 2) \
+      /if (rand(100) <= 75) \
+        emote looks a bit pale.%; \
+      /elseif (rand(100) <= 66) \
+        emote 's face looks paler.%; \
+      /elseif (rand(100) <= 50) \
+        emote looks paler than usual.%; \
+      /else \
+        emote is turning pale.%; \
+      /endif%; \
+    /elseif ({*} == 3) \
+      /if (rand(100) <= 75) \
+        emote looks uncomfortable.%; \
+      /elseif (rand(100) <= 66) \
+        emote doesn't seem to enjoy this boat ride.%; \
+      /elseif (rand(100) <= 50) \
+        emote looks less comfortable than usual.%; \
+      /else \
+        emote seems to be having some trouble.%; \
+      /endif%; \
+    /elseif ({*} == 4) \
+      /if (rand(100) <= 75) \
+        emote looks really ill.%; \
+      /elseif (rand(100) <= 66) \
+        emote starts hulking.%; \
+      /elseif (rand(100) <= 50) \
+        emote is turning green.%; \
+      /else \
+        emote looks for a place to vomit.%; \
+      /endif%; \
+    /elseif ({*} == 5) \
+      /if (rand(100) <= 75) \
+        emote rushes to the railing and starts vomiting.%; \
+      /elseif (rand(100) <= 66) \
+        emote runs to the railing, covering the mouth with both hands.%; \
+      /elseif (rand(100) <= 50) \
+        emote quickly steps over to the railing and vomits.%; \
+      /else \
+        emote heads to the railing, vomiting on the way.%; \
+      /endif%; \
+    /elseif ({*} == 6) \
+      /if (rand(100) <= 75) \
+        emote bends over the railing losing all food. You start to feel a little uneasy yourself.%; \
+      /elseif (rand(100) <= 66) \
+        emote pukes up all stomach contents into the ocean. You feel a rumble in your own stomach.%; \
+      /elseif (rand(100) <= 50) \
+        emote keeps vomiting into the sea. You turn your head away, feeling uncomfortable.%; \
+      /else \
+        emote throws up again and again. You feel sick just by watching, and try to look at other things.%; \
+      /endif%; \
+    /elseif ({*} == 7) \
+      /if (rand(100) <= 75) \
+        emote slumps to the deck, pale faced, with some half-metabolized food still trickling from the mouth.%; \
+      /elseif (rand(100) <= 66) \
+        emote sits down in a tired-looking motion, drooling and not seeming to care.%; \
+      /elseif (rand(100) <= 50) \
+        emote drops to the deck of the boat, seemingly about to faint.%; \
+      /else \
+        emote goes down on all four, trying to grab hold of the deck while panting for air.%; \
+      /endif%; \
+    /elseif ({*} == 8) \
+      /if (rand(100) <= 75) \
+        say Get me off this god forsaken thing before it kills me!%; \
+      /elseif (rand(100) <= 66) \
+        say Someone PLEASE stop this boat!%; \
+      /elseif (rand(100) <= 50) \
+        say I want OFF! Just drop me off at nearest island. Or in the sea. I don't care.%; \
+      /else \
+        say This is the LAST time I travel by boat.%; \
+      /endif%; \
+    /elseif ({*} == 9) \
+      /if (rand(100) <= 75) \
+        say Kill me now! I want to die!%; \
+      /elseif (rand(100) <= 66) \
+        say Someone please kill me!%; \
+      /elseif (rand(100) <= 50) \
+        say I want to die!%; \
+      /else \
+        say Kill me! End this pain!%; \
+      /endif%; \
+    /elseif ({*} < 15) \
+      /if (rand(100) <= 75) \
+        cry%; \
+      /elseif (rand(100) <= 66) \
+        sob%; \
+      /elseif (rand(100) <= 50) \
+        sniff%; \
+      /else \
+        puke%; \
+      /endif%; \
+    /endif
+
+; ----------- Special -----------
+/alias shopfind       \
+    /def -F -ah -t'* \\[lvl:*' shopfindtrig1 = \
+      /tfshow ============================================================%%; \
+      trigonnextline /tfshow ============================================================%; \
+    /def -F -ag -msimple -t"You don't seem to have a shopfind." shopfindtrig2 = \
+      /purge shopfindtrig*%; \
+    4w2su%; \
+    n%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;eu%; \
+    n%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;eu%; \
+    n%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;eu%; \
+    n%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;eu%; \
+    n%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;eu%; \
+    n%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;eu%; \
+    n%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;eu%; \
+    n%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;eu%; \
+    n%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;eu%; \
+    n%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;eu%; \
+    n%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;eu%; \
+    n%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;e12d2n4e%; \
+    drop shopfind
+
+
+/alias shopfindx      \
+    un%;list %{*}%;se%;list %{*}%;ws%;list %{*}%;nw%;list %{*}%;e
+
+; === Special room triggers    start ===
+/def -F -p5 -msimple -t'A wrinkle in the fabric of time.' moving1 = \
+    /def -F -p5 -n1 -msimple -t'A labyrinth of bodies.' moving1b = \
+      /tfshow eewswes, then north
+/def -F -p5 -msimple -t'The Marsh' moving2 = \
+    /tfshow Sleep danger!%; \
+      /set sleepdanger 1
+/def -F -p5 -msimple -t'An Underground Lake' moving3 = \
+    /tfshow Sleep danger!%; \
+      /set sleepdanger 1
+/def -F -p5 -msimple -t'A Narrow Underground Stream' moving4 = \
+    /tfshow Sleep danger!%; \
+      /set sleepdanger 1
+/def -F -p5 -msimple -t'A Deep Pool' moving5 = \
+    /tfshow Sleep danger!%; \
+      /set sleepdanger 1
+/def -F -p5 -msimple -t'A Wide Pool' moving6 = \
+    /tfshow Sleep danger!%; \
+      /set sleepdanger 1
+/def -F -p5 -msimple -t'A Deep Eddy' moving7 = \
+    /tfshow Sleep danger!%; \
+      /set sleepdanger 1
+/def -F -p5 -msimple -t"A long narrow tunnel" moving8 = \
+    /set sleepdanger 0
+/def -F -p5 -mregexp -t'^([^ ]+[ ]+- )?(The Stairs of Ice|The Stairroom of the Second Floor|On The Stairs|A Path In The Field|A Magical Waterfall|In the Essence Flows|Top of the east tower|Top of the west tower|Blacksmith\'s Workshop|On the battlefield|Death of a Drider|High up the tree|Further Below the Pool|High up the tower|The darkest dark|Celebros, a member of a magical college is held in energy shackles here|A narrow walkway to a tower|A blazing plateau|Scorched crater|Moss nook)' moving9 = \
+    /if (({P2} =~ 'On the battlefield') & (area =~ 'Battlefields')) \
+      donothing%; \
+    /elseif ({P1} =~ '') \
+      /substitute -p %P2 @{BCyellow}(WM!)%; \
+      /tfshow Wild Magic!%; \
+      /set wildmagic 1%; \
+    /else \
+      /substitute -p @{nCgreen}%{P1}@{nCcyan}%{P2}@{BCyellow} (WM!)@{n}%{PR}%; \
+    /endif
+; === Special room triggers    end ===
+
+/alias leronah     \
+    /purge leronahJoin*%; \
+    /purge walker*%; \
+    /def -F -t"Leronah the Questmaster arrives from the *" leronahJoin1 = join%; \
+    /def -F -msimple -p6 -t"Leronah the Questmaster is here, watching you suspiciously." leronahJoin2 = join%; \
+    /def -F -t"Leronah the Questmaster tells you '*" leronahJoin3 = /purge leronahJoin*%; \
+    date%; \
+    /def -F -n1 -mregexp -t"^It is ([0-9]+) o'clock (am|pm), on the Day of " leronahDate = \
+      /set mudtime %%{P1}%%; \
+      /if ({P2} =~ 'pm') \
+        /set mudtime=$$[{mudtime} + 12]%%; \
+      /endif%%; \
+      /if (mudtime == 12) \
+        /set mudtime 24%%; \
+      /elseif (mudtime == 24) \
+        /set mudtime 12%%; \
+      /endif%%; \
+      /if (mudtime <= 2) \
+        /set LeronahWalking 1%%; \
+        /marketSquare ;5s;whe leronah%%; \
+      /elseif (mudtime <= 6) \
+        /set LeronahWalking 0%%; \
+        /marketSquare ;5s;whe leronah%%; \
+      /elseif (mudtime <= 7) \
+        /set LeronahWalking 1%%; \
+        /marketSquare ;goto ofcol;4s;whe leronah%%; \
+      /elseif (mudtime <= 12) \
+        /set LeronahWalking 0%%; \
+        /marketSquare ;goto ofcol;4s;whe leronah%%; \
+      /elseif (mudtime <= 14) \
+        /set LeronahWalking 1%%; \
+        /marketSquare ;goto solace;n;whe leronah%%; \
+      /elseif (mudtime <= 18) \
+        /set LeronahWalking 0%%; \
+        /marketSquare ;goto solace;n;whe leronah%%; \
+      /elseif (mudtime <= 20) \
+        /set LeronahWalking 1%%; \
+        /marketSquare ;goto kerofk;3s4e;whe leronah%%; \
+      /else \
+        /set LeronahWalking 0%%; \
+        /marketSquare ;goto kerofk;3s4e;whe leronah%%; \
+      /endif%; \
+    /def -F -n1 -msimple -t"No-one around by that name." LeronahWhereNo = \
+      /purge LeronahWhere*%%; \
+      /if (LeronahWalking) \
+        /tfshow Leronah should be on her way.%%; \
+      /else \
+        /tfshow Leronah should be here! Checking all places...%%; \
+        recall%%; \
+        s%%; \
+        delay 2 leronahAll%%; \
+      /endif%; \
+    /def -F -ah -n1 -t"Leronah the Questmaster   - *" LeronahWhereYes = \
+      /purge LeronahWhere*
+
+
+/alias leronahAll     \
+    /purge leronahJoin*%; \
+    /def -F -t"Leronah the Questmaster arrives from the *" leronahJoin1 = join%; \
+    /def -F -msimple -p6 -t"Leronah the Questmaster is here, watching you suspiciously." leronahJoin2 = join%; \
+    /def -F -t"Leronah the Questmaster tells you '*" leronahJoin3 = /purge leronahJoin*%; \
+    /set leronahnr=1%; \
+    /def -F -msimple -p5 -t"No-one around by that name." walkerslaskle1a = \
+      /set leronahnr $$[leronahnr+1]%; \
+    /def -F -msimple -t"No-one around by that name." walkerslaskle1b = \
+      leronah%%leronahnr%; \
+    /def -F -t"Leronah the Questmaster   - *" walkerslaskle2b = \
+      /purge walker*%%; \
+      /if (area =~ 'Ofcol') \
+        /tfshow Ofcol: 4s%%; \
+        4s%%;x%%;whe leronah%%; \
+      /elseif (area =~ 'Solace') \
+        /tfshow Solace: n%%; \
+        n%%;x%%;whe leronah%%; \
+      /elseif (area =~ 'Kerofk') \
+        /tfshow Kerofk: 3s4e%%; \
+        3s4e%%;x%%;whe leronah%%; \
+      /else \
+        /tfshow Karandras: 10s%%; \
+        10s%%;x%%;whe leronah%%; \
+      /endif%; \
+    leronah%leronahnr
+/alias leronah1	      \
+    where leronah
+/alias leronah2	      \
+    ofcol%; \
+    /def -F -msimple -t"The Big Intersection" walkerslaskleX2 = \
+      where leronah
+/alias leronah3	      \
+    ;goto solace;where leronah
+/alias leronah4	      \
+    ;goto kerofk;where leronah
+/alias leronah5	      \
+    ;goto karandras;5n%; \
+    /def -F -msimple -n1 -t"The Fountain Square of Karandras" walkerslaskle3 = \
+      /purge walker*%%; \
+      trigonnextline /tfshow Failed to find Leronah.
+
+;LOST AREAS:
+;/alias air            /marketSquare nu

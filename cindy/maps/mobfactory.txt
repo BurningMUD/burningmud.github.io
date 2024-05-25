@@ -1,0 +1,24 @@
+# Mob Factory (94): 5-40, PinkF  (Karandras: 6w2se)
+#
+#     o - o - o - o - o
+#     |   |   |   |   |
+# o + o - o - o - o - o
+#     |   |   |   |   |
+#   - X - o - o - o - o
+#     |   |   |   |   |
+#     o   o   o   o - o
+#     |   |   |   |   |
+#     o   o   o   o - Q
+#
+* Nice xp-area for lowbies. Beware, fidos are agg-sleeper.
+
+Mob Factory:               Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+Butterfly wings              1    20 G-x--     --    11-11        0-0     [magical?]
+The factory worker (asleep)  4   20k G-----    --    40-79       65-65    [human], flees, sleeping
+The factory worker (bored)   5   20k G-x---    --    55-68       50-50    [human]
+The toxic slime              8   52k N-----    --   120-124       0-0     [jelly], sitting
+The Cityguard head          10  140k N-x---    --   200-200       0-0     [magical], hide
+The mutant beastly fido     10  150k E-xx--    --   200-200    1106-8891  [canine], flees, agg-sleeper
+The revolving drunk         10  116k G-x---    --   151-151      50-50    [human]
+Foreman Floyd               39   15M Gx----    --  1300-1300  10001-10001 [human], 4 attacks
+Gribbons                   100       Nx-                                  INFO, questmaster, no-attack

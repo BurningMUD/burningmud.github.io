@@ -1,0 +1,27 @@
+# Einstein's Grasslands area (170): 10-30, Einstein  (New Thalos: 2en2e2n3w)
+#
+#        o + o   o   o
+#       x    +   +   +
+#      o     o - o - o
+#                    |
+#  o - o - X -       o + Shlad
+#  |   |   |         |
+#  o - o - o ------- o
+#  |   |   |
+#  o - o - o
+#
+* Min level 0/10
+* Inside huts are very bright
+
+Grasslands:              Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+A wild stallion           10  100k E-xx--    --   106-123     995-1035  [---], flees
+A giraffe                 11  137k G-xx--    --   152-170    1022-1050  [animal], hide, flees
+An elephant               12  210k N--x-x    --   172-184     751-751   [animal], sitting
+A buffalo                 13  260k N-xx-x    --   181-212    1957-2105  [animal]
+A fierce tiger            15  570k E-x--x    GNE  269-283    4543-4589  [feline], hide
+A head hunter             15  390k E-x---    GNE  198-213    1206-1429  [human]
+Shlad, the adventurer     18  630k G--x-x    GNE  179-185    3915-4153  [human], invis
+The master head hunter    18  450k Ex-x-x    --   159-184    4018-4148  [human]
+The medicine man          20  600k Ex-x-x    GNE  209-217    3924-4205  [human]
+Tannin, the dragon master 25 1500k Ex-x-x    --   773-788   22670-22739 [human]
+Small green dragon        28 1960k Ex-x-x    --   780-811   26560-27207 [dragon]

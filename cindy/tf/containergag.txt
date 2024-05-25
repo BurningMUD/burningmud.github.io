@@ -1,0 +1,100 @@
+
+; This script reduces the spam when looking in your container, gagging all 
+; "standard" items and only showing non-standard ones. Also, it warns if any
+; standard item is missing. One of the weapons is assumed to be missing (since
+; you you will always wield one), so weapons are only warned about if more
+; than one item is missing from the bage.
+;
+; Potions/scrolls running out will be warned about as soon as there are few
+; enough to not be compacted into one line (for me that means when there's
+; only 2 left). I've chosen not to gag my homesick onions, since I want to
+; keep that number a lot larger.
+;
+; To make this work, all the variables listed below must be set. Weapons must
+; be listed first, and the list of other items must follow. Don't forget to
+; update the variables bagweaponsum & bagallsum when you change the number of
+; items in that list.
+; Also, the trigger "ebamarkstart" must match the first line you see when you
+; examine your bag, so if it doesn't, you need to change it
+;
+; usage:
+; eba:  Look in your container. Gag all standard items
+; eba2: Look in your container. Gag only weapons
+; eba3: Look in your container. No gags
+
+
+/set bag holding
+
+/set bagweapon1 a pilfered parang..It seems to absorb light!
+/set bagweapon2 Poseidon's trident(invisible)
+/set bagweapon3 a forked lightning trident
+/set bagweapon4 a dagger of red-hot lava
+/set bagweapon5 Shiva's trident(invisible)
+/set bagweapon6 an obsidian hobgoblin spear
+/set bagweapon7 gnome shortsword
+/set bagweapon8 the royal ice dagger
+/set bagweapon9 an infernal soulblade
+/set bagweapon10 a Kraken spine
+/set bagweapon11 a horgarian fleshspine
+/set bagweapon12 the Dirk(invisible)
+/set bagweapon13 a dagger of wind
+/set bagweapon14 The Master Chefs Kris(invisible) (humming)
+/set bagweapon15 a blue dragon's claw
+/set bagweapon16 a ghostly spear(invisible) (humming)
+/set bagweapon17 Nemesis, the blade of shadows..It seems to absorb light! (humming)
+/set bagweapon18 a razor sharp silver lance
+
+/set bagweapon19 Multihued dragon scale mail
+/set bagweapon20 a mantle of malice
+/set bagweapon21 a molten mantle of lava
+/set bagweapon22 The defiled body of a paladin(invisible)
+/set bagweapon23 a black potion \[
+/set bagweapon24 a gold potion \[
+/set bagweapon25 a crystal potion \[
+/set bagweapon26 a glowing seashell \[
+/set bagweapon27 a potion of human flight \[
+/set bagweapon28 a clove of garlic \[
+/set bagweapon29 herbs of vitality \[
+/set bagweapon30 a potion of healing \[
+/set bagweapon31 penguin shaped dice
+
+/set bagweaponsum 18
+/set bagallsum 31
+
+/alias eba ebaspecial %{bagallsum}
+/alias eba2 ebaspecial %{bagweaponsum}
+/alias eba3 exa %{bag}
+
+/def -F -t"bag \(carried\) :*" ebamarkstart = \
+	trigonnextline /echo TF: ===================
+
+/alias trigonnextline \
+	/def -p15 -F -n1 -t"*" trigonnextline%{1}$[rand(100000)] = \
+	%*
+
+/alias showebaresult \
+	/echo TF: ===================%; \
+	/if (nrofbagweapons < ({*} - 1)) \
+		/for loop 1 %{*} \
+			/eval /if ({bagweapon%%{loop}found} == 0) \
+					/eval /echo TF: Missing: %%%{bagweapon%%{loop}}%%%; \
+				/endif %; \
+	/endif%; \
+	/for loop 1 %{*} \
+		/eval /if ({bagweapon%%{loop}found} > 1) \
+			/eval /echo TF: %%%{bagweapon%%{loop}found}: %%%{bagweapon%%{loop}}%%%; \
+		/endif
+
+/alias ebaspecial \
+	exa %{bag}%; \
+	drop exabagspecial %{*}%; \
+	/def -F -msimple -ag -t"You don't seem to have an exabagspecial." ebatrigfinal = \
+		/purge ebatrig*%%; \
+		showebaresult %{*}%; \
+	/set nrofbagweapons 0%; \
+	/for loop 1 %{*} \
+		/set bagweapon%%{loop}found 0%%; \
+		/eval /def -F -ag -t"$$$[bagweapon%%{loop}]*" ebatrig%%{loop} = \
+			/set bagweapon%%{loop}found=$$$$[{bagweapon%%{loop}found} + 1]%%%%; \
+			/set nrofbagweapons=$$$$[{nrofbagweapons} + 1]
+

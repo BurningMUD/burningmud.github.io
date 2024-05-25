@@ -1,0 +1,197 @@
+# Drakyri Isle (142): 50-100, Ydri/Torain/Raygar  (First get to THE CIRCUS. From there, go 8su3wd3e2s, enter pool)
+* FIND OUT: Lerylke (89): <worn on waist>  a beautiful -(+)- girth  (full id)
+* FIND OUT: The guardian spirit          type, ? before being in battle 
+* FIND OUT: The hunter                   type
+* FIND OUT: The stalker                  type
+* FIND OUT: The white lion               type
+* FIND OUT: A glyph of warding           type, ? before being in battle
+* FIND OUT: A white clad paladin               ? before being in battle
+* FIND OUT: A writhing form              type, ? before being in battle
+* FIND OUT: The hellish guardian         type
+* FIND OUT: The lab assistant                  ? before being in battle
+* FIND OUT: A demonic figure             type, ? before being in battle
+* FIND OUT: A summoned demon             type (demon?)
+* FIND OUT: The Warden                   type, ? before being in battle
+* FIND OUT: Dryna                        hp (approx)
+* FIND OUT: Voryl                        hp (approx)
+* FIND OUT: Dyraena                      hp, money, ? before being in battle
+* FIND OUT: Yllyra                       hp (approx)
+* FIND OUT: Nerr                         xp, hp (approx), money, money, ? before being in battle
+* FIND OUT: Yeven                              ? before being in battle
+* FIND OUT: Gydeas                       hp, money, ? before being in battle
+* FIND OUT: A lot more!
+#
+#                         ((+*+))  Tyrena Noriek
+#                         (deriki)     | Zeion
+#                                      +/
+#                               Nalyss+o+Daeman
+#                                     /+                    (myrxes)
+#       (treniste)                   o Ykandres    stalker  -=+)>
+#        ((-*-))   Dosandre  _______/|                |
+#                  Denylis  /      Roweni    SHADOW-+-o-hunter
+#           o      Kaele   /         |         |      |           Katyre
+#           +        /    /     Xanil|         |      o    Nyxi + Dyraena
+#    Rodwen o-+-o---p    Q+Lec.+Dyrli|         |     x       +      +
+#         + +      /        +        |         | Gydeas + Ryxis + Delise
+# Josreke+o-p     o         o      o-o-o+o     |           x
+#          /+     |                  +         |     Neraikis
+#         /Lyrene |        Rexena  FLAME       |      Jaena       /-->X
+#        /        |          |       |         |                 *
+#       o-------Deis-o-------p---+---o         |        Master    Mediator
+#                    |               |         |          *         x
+#            o       o  o------------o         +        Shop    Guardian
+#            |          |                      |         /        x
+#            X*->Warden+o -------- o -------- FIST - SHIELD ---- o
+#                       |                      |
+#                     HAND              Ryke   |
+#            Dryna      +               Dyana  |
+#              |Jorinne o                +     |
+#      Yllyra  +x       | Lerylke Rakael o     |        Loryn Kranali
+#       Nerr + o ------ o-NM         +   |     |          +      +
+#              +        +      Nyxil+o+Saera+o-o  Dreyva--o--Janalis+Toryan
+#            Voryl      o            +   |     |      |   +      +   Delyrus
+#                       |          Yeven o   CLAW-o+o-o Sorina Chake
+#       -(+)-        Nerael              +            |
+#      (noriva)      Yxanes           Versant     fig-o-beast
+#                                                     |          ->*<-
+#                                    ][+][       necromancer   (reykaris)
+#                                    (xaek)          x
+#                                                   o
+#                                                   +
+#                                                Rachal
+#
+* Entrance from Circus. Most rooms are very bright.
+* Most named mobs have walk-paths.
+* Drakyris are elves, but some resist dark/unlife. All are vuln iron.
+* Reykaris-area is agg-good. Myrxes-area is agg-all?
+* Shield, Flame and probably the others can teleport to a member of "their"(?)
+*   house that is under attack, and admonish the attacker (without attacking)
+* Shadow - iron/unlife/dark
+* Flame  - iron/unlife/dark/ice    Dyrli
+* Hand   - fire/iron/energy
+* Shield - iron/unlife/dark        Deis
+* Claw   - pure/light/iron
+* Fist   - iron/unlife/dark
+* Master - normal
+
+Drakyri:                   Lvl    Xp ASWIDMX # agg      Hp        Gold     Special
+A drakyri assassin          65  130M N--x x    --   6462-6560  27647-28275 [elf], hide, backstab (52), standing & sentinel before being in battle - flying & walking after
+A drakyri knight protector  65  130M N--xxx    --   6412-6558  27682-28657 [elf], bash, kick, headbang, standing & sentinel before being in battle - flying & walking after
+A drakyri mage protector    65  143M N--xxx    --   6478-6530  27179-27916 [elf], powerpain, masspain, mblast, 1-1 spell, standing & sentinel before being in battle - flying & walking after
+A drakyri healer            65  130M N--xxx    --   6444-6532  27843-28541 [elf], powerheal, wither, harm, blindness, 1-1 spell, standing & sentinel before being in battle - flying & walking after
+A guardian knight           72  295M N--xxx    --- 10032-10118 32989-33721 [elf], bash, kick, headbang
+A sparring warrior          72  296M N-xx x    ---  9990-9996  32515-34184 [elf], bash, kick, headbang, 4-5 attacks
+A warrior in training       72  272M N--x x    ---  9958-9990  33594-33790 [elf], bash, kick, headbang, berserk
+The grey cat                72  289M N--x  0   GNE  9975-9991  32352-34263 [feline]
+The white cat               72  281M N--x      GNE  9918-10038 33727-34263 [feline]
+The grey lion               72  277M N--x      GNE  9996-10014 32763-34649 [feline], 5-5 attacks
+The guardian spirit         72  306M N--x  0   GNE   ~10k      33468-34275 [???], vuln energy, resist WEAPON/dark/unlife, invis, powerword pain, blindness, confusion, harm, wither, meteor blast, powerheal, mass pain, ? before being in battle - standing after
+The hunter                  72  288M N--x      GN  10000-10024   771-771   [???], vuln iron/unlife/dark, resist pure/light/magic, hide, standing & sentinel before being in battle - flying & walking after
+The stalker                 72  288M N--x      GN   9968-9996    751-757   [???], vuln iron/unlife/dark, backstab (56), hide, standing & sentinel before being in battle - flying & walking after
+The white lion              72  284M N--x      GNE  9948-9963  32834-34026 [???], vuln energy, resist mental/dark, 5-5 attacks
+A black panther             75  338M N-xx      GN  10485-12484   755-760   [feline], hide, sneak
+A night hawk                75  338M N-xx      GN  12510-12543   803-807   [bird], hide, standing before being in battle - flying after
+A shadow lynx               75  346M N-xx      GN  10445-12514   751-758   [feline], hide
+A glyph of warding          75  330M N--x  0   GNE 12544-12546 51524-52539 [???], vuln electricity, resist unlife/dark, invis, hide, ? before being in battle - standing after
+A mage in training          75  330M N--x x    --- 12486-12524  9501-9518  [elf], lightning bolt/chain lightning, fireball, 0-1 spell, standing & sentinel before being in battle - flying & walking after
+A white clad paladin        75  330M G--x x0   --E 12304-12584 43400-44172 [elf], bash, kick, ? before being in battle - standing after
+A writhing form             75  330M N--x      GNE 12420-12540 45537-46324 [???], vuln energy/unlife, resist WEAPON, invis, powerword pain, meteor blast, 1-1 spell, ? before being in battle - standing after
+The hellish guardian        75  338M E-xx      GN  12445-12586  5003-5023  [???], vuln pure/light, resist unlife/dark
+The lab assistant           75  330M N--x x    --- 12348-12484 39966-40951 [elf], fireball, lightning bolt/chain lightning, ? before being in battle - standing after
+A howling beast             75  338M E--x      GN  12656-12882 41308-41433 [canine]
+A demonic figure            75  338M E--x      GN  12330-12463 40696-40865 [???], vuln pure/light, immune fire, resist unlife/dark/poison/silver, hide, ? before being in battle - standing after
+The necromancer             75  338M E--x      GN  12465-12491  9528-9539  [human], vuln pure/light, resist dark/unlife, chill touch, shocking grasp, edrain, powerpain(masspain?), curse
+A summoned demon            75  334M E--x       N  12515-12516  7513-7585  [???], vuln pure/light/silver/iron, immune fire, resist unlife/dark/poison
+A mass of writhing tentacles 75 345M E--x      GN  12132-12732 38991-39397 [magical]
+The Warden                  80 1280M Nx-xxx    --- 18012-18382 39821-40437 [???], vuln fire/unlife/ice/iron/mental/dark, resist WEAPON/pure/light/magic, bash, kick, headbang, berserk, ? before being in battle - standing after
+Zeion                       80 1040M N--x  0   GNE 18198-18331 51364-52678 [bird], vuln fire, resist ice/electricity, standing & sentinel before being in battle - flying & walking after
+Delise                      82 1476M Nx-x x    --  20794-20798   872-875   [elf], backstab (61), 1-1 skills, 5-6 attacks, standing before being in battle - flying after, sneak, walk-path (7pm:n, 9pm:back)
+Dryna                       82 1271M Nx-x x    ---             40957-41674 [elf], vuln crush, harm, blindness, wither, powerheal, 1-1 spells, 6-7 attacks, standing & sentinel before being in battle - flying & walking after, walk-path (11pm:s2e, 4am:back)
+Nyxi                        82 1394M Nx-x x    --  20816-20836   871-873   [elf], backstab (59), hide, sneak, 1-1 skills, 6-7 attacks, standing before being in battle - flying after, walk-path (4am:e, 7am:back)
+Saera                       82 1312M N-xx x1   --- 20678-20870 40628-42588 [elf], bash, kick, headbang, 4-6 attacks
+Voryl                       82 1271M Nx-x x    ---             41445-42310 [elf], flying, standing & sentinel before being in battle - flying & walking after, wither, harm, blindness, powerheal, 1-1 spells, 6-7 attacks, walk-path (11am:nes, 1pm:back)
+Loryn                       85  935M Ex-x x    G-- 24985-24990  9515-9529  [elf], vuln pure/light, resist dark/unlife, force bolt, fireball, lightning bolt/chain lightning, plasma bolt/ball, standing & sentinel before being in battle - flying & walking after, walk-path (5pm:ses, 10pm:back)
+Sorina                      85  935M Ex-x x     -- 24688-25204 40344-40362 [elf], force bolt, fireball, plasma bolt/ball, lightning bolt/chain lightning, 0-1 spell, 7-7 attacks, standing & sentinel before being in battle - flying & walking after, walk-path (7am:nws, 11am:back)
+Chake                       85  935M Ex-x x1   G-- 24874-25082 40878-41366 [elf], vuln pure/light, resist dark/unlife, standing & sentinel before being in battle - flying & walking after, fireball, force bolt, lightning bolt/chain lightning, 0-1 spells, 7-7 attacks, walk-path (9pm:shop, 12am:back)
+Josreke                     85 1190M Gx-x x    --- 24712-25198 39160-40637 [elf], powerword pain, mass pain, meteor blast, 6-6 attacks, 1-1 spells, standing & sentinel before being in battle - flying & walking after, walk-path (2pm:2en, 6pm:back)
+Rodwen                      85 1275M Gx-x x    --- 24950-25190 40601-42313 [elf], powerword pain, mass pain, meteor blast, 1-1 spells, 6-6 attacks, standing & sentinel before being in battle - flying & walking after, walk-path (9pm:sed4e2n, 11pm:back)
+Ykandres                    85 1309M Nx-x x    --- 24906-25108 41448-41772 [elf], fireball, force bolt, plasma bolt, 6-7 attacks, invis, walk-path (10am:nd2sw, 4pm:back), standing & sentinel before being in battle - flying & walking after
+Nalyss                      85 1445M Nx-x x    --- 24844-25214 41718-41851 [elf], fireball, force bolt, plasma bolt/ball, standing & sentinel before being in battle - flying & walking after
+Daeman                      85 1360M Nx-x x    --- 24998-25054 42277-43442 [elf], fireball, plasma ball, force bolt, 6-7 attacks, invis, standing & sentinel before being battle - flying & walking after
+Versant                     87 1132M N--x x1   --- 28196-28290   803-810   [elf], bash, kick, headbang, 6-6 attacks
+Dyraena                     87 1305M Nx-x x    --  28144        1005       [elf], backstab (59), hide, ? before being in battle - standing after, walk-path (1am:s, 4pm:back)
+Yllyra                      87 1192M Nx-x x    ---             46436-47275 [elf], harm, wither, powerheal, walk-path (7pm:en, 10pm:back)
+Nerr                        88       Nx-x x    ---                         [elf], harm, powerheal, blindness, wither, ? before being in battle - standing after
+Yeven                       88 1145M N--x x    --- 29716-29869   753-754   [elf], bash, kick, headbang, ? before being in battle - standing after, walk-path (1pm:n, 4pm:back)
+Gydeas                      88 1320M Nx-x x    --  29858         804       [elf], backstab (64), hide, ? before being in battle - standing after, walk-path (4pm:u2n, 10pm:back)
+Lerylke                     89       Nx-x x    ---                         [elf], resist dark/unlife, wither, powerheal, harm, blindness, ? before being in battle - standing after, walk-path (8am:2wu, 11am:back)
+Rakael                      89 1246M N--x x    --- 31398-31414   802-805   [elf], ? before being in battle - standing after, bash, kick, headbang, blocker, walk-path (11am:s2e, 9pm:back)
+Ryxis                       89 1424M Nx-x x    --  31418         808       [elf], hide, backstab (64), ? before being in battle - standing after
+Katyre                      90 1440M Nx-x x    --  33040         908       [elf], ? before being in battle - standing after, hide, backstab (65), walk-path (1pm:w, 6pm:back)
+Kranali                     90 1350M Ex-x x    G-  21040       44439       [elf], vuln pure/light, resist dark/unlife, invis, plasma bolt/ball, lightning bolt/chain lightning, force bolt, fireball, ? before being in battle - standing after, walk-path (3am:s2w2sw, 7am:back)
+Lyrene                      90 1440M Gx-x x    --- 32882-33022   903-907   [elf], 6-6 attacks, bash, kick, headgang, ? before being in battle - standing after, walk-path (6am:2n, 1pm:back)
+Tyrena                      90 1621M Nx-x x    --- 32868       46078-46096 [elf], ice storm, force bolt, teleport, plasma bolt/ball, walk-path (12pm:sd2sw, 5pm:back)
+Jorinne                     90       Nx-x x    ---                         [elf], powerheal, harm, wither, blindness, walk-path (10pm:d2e, 10am:back)
+Nyxil                       90 1260M N--x x    --- 33040         805       [elf], bash, kick, headbang, walk-path (9am:e, 7pm:back), ? before being in battle - standing after
+Deis                        91 1547M Gx-x x    --- 34802-34822  9504-9523  [elf], teleport, blindness, triad of fire, mass pain, blur, 1-2 spells, 6-6 attacks, ac -67, walk-path (9am:es, 11am:back), ? before being in battle - standing after
+Neraikis of the Myrxes      91 1456M Nx-x      GNE 34826        1003       [elf], hide, no-where, backstab (65), standing before being in battle - flying after
+Ryke of the Xaek            91 1366M N--x  1   --- 34812-34820   692-695   [elf?], vuln iron/unlife/dark, resist pure/light/magic, 6-8 attacks, special-stun-slap, no-where, ? before being in battle - standing after
+Xanil                       91 1820M Nx-x x1   --- 34648-34930 40211-40925 [elf], fireball, plasma ball, force bolt, teleport, 1-1 spells, 6-6 attacks, walk-path (8am:2w, 6pm:back)
+Nerael of the Noriva        91       Nx-x x    ---                         [elf], resist dark/unlife, curse, powerharm, miracle, no-where, can follow Yxanes, standing before being in battle - flying after
+Delyrus                     91 1274M Ex-x x     -  34997.5     39489       [elf], vuln pure/light, resist dark/unlife, force bolt, plasma bolt/ball, lightning bolt/chain lightning, invis, walk-path (12pm:ws, 5pm:back), ? before being in battle - standing after
+Yxanes of the Noriva        92       Nx-x x    ---                         [elf], resist dark/unlife, harm, powerharm, powerheal, miracle, 1-2 spells, no-where, can lead Nerael, standing before being in battle - flying after
+Rexena                      92 1564M Gx-x x    --- 36296-36754 41802-42759 [elf], vuln fire, triad of fire, blur, mass pain, blindness, teleport, 7-7 attacks, 1-2 spells, ? before being in battle - standing after, walk-path (9am:sws, 11am:back)
+Roweni                      92 1840M Nx-x x    --- 36566-36728 43643       [elf], force bolt, plasma ball, ice storm, 0-2 spells, 6-7 attacks, invis, walk-path (8am:nun, 2pm:sw, 8pm:eds), ? before being in battle - standing after
+Dyana of the Xaek           92 1357M N--       --- 36640-36724   905-910   [elf?], vuln iron/unlife/dark, resist pure/light/magic, 6-8 attacks, bash, kick, headbang, special-fling (teleport you to the room south of her), no-where, ? before being in battle - standing after
+Jaena of the Myrxes         92 1472M Nx-x x2   --  36616        1003-1006  [elf], hide, backstab (50), 2-2 skills, 6-7 attacks, no-where, standing before being in battle - flying after
+Dreyva                      92 1472M Ex-x x    G-- 36395       41055-41226 [elf], vuln pure/light, resist dark/unlife, plasma bolt/ball, fireball, lightning bolt/chain lightning, force bolt, powerword kill/deathspell, 1-2 spells, 6-7 attacks, walk-path (2pm:2se, 5pm:back), ? before being in battle - standing after
+Janalis                     93 1674M Ex-x x    G-- 38455         904       [elf], vuln pure/light, resist dark/unlife, lightning bolt/chain lightning, powerword kill/deathspell, force bolt, 1-2 spells, walk-path (10am:2ws, 12pm:back), ? before being in battle - standing after
+Dyrli                       93 1861M Nx-x x    --- 38696-38404 47273-48794 INFO, [elf], teleport, ice storm, force bolt, plasma bolt, 6-7 attacks, 1-2 spells, walk-path (10am:sw, 8pm:back)
+Kaele                       93 1396M Gx-x x1   --- 38214-38260 43109-43753 [elf], triad of fire, blur, blindness, mass pain, teleport, 1-2 spells, 6-7 attacks, walk-path (5pm:d2w2s, 8pm:back), ? before being in battle - standing after
+Toryan of the Reykaris      94       Ex-x x    G-- 40357.5     47902       [elf], vuln pure/light, resist dark/unlife, plasma bolt/ball, lightning bolt/chain lightning, force bolt, fireball, powerword kill/deathspell, 1-2 spells, 7-7 attacks, no-where, walk-path (11am:wn, 1pm:back), standing before being in battle - flying after
+Denylis of the Treniste     94 1693M Gx-x x    --- 40026       47855       [elf], triad of fire, mass pain, blur, teleport, blindness, 0-2 spells, 7-7 attacks, no-where, standing before being in battle - flying after, walk-path (11am:d2wswn, 5pm:back)
+Noriek of the Deriki        94 2068M Nx-x x    --- 39800-40120 40582-40608 [elf], vuln pierce, fireball, force bolt, plasma ball, teleport, 1-2 spells, 7-7 attacks, flying, no-where, walk-path (1pm:2d3s, 5pm:back)
+Dosandre of the Treniste    95 1900M Gx-x x    --- 41802       51555-52363 INFO, [elf], immune pure/light, triad of fire, blindness/powerword blind, mass pain, blur, 0-2 spells, flying, no-where, 7-7 attacks, ac <high> (hr 37 gives 5% hitchance), walk-path (7pm:d2wn, 10am:back)R
+Lechandre of the Deriki     95 2280M Nx-x x    --- 42002-42142 40563-40621 INFO, [elf], flying, area fireball, plasma ball, force bolt, teleport, 1-2 spells, 7-7 attacks, no-where, walk-path (4pm:shop, 7pm:back)
+Rachal of the Reykaris      95       Ex-x x     -                          [elf?], vuln pure/light, immune dark/unlife, no-where, standing & sentinel before being in battle - flying & walking after, walk-path (3pm:nu3nes, 5pm:back), 7-7 attacks, plasma bolt/ball, lightning bolt / chain lightning, powerword kill / deathspell, fireball, force bolt, 1-2 spells
+The Guardian                96       Nx-x  2   GNE             55828-57234 INFO, vuln fire, resist dark, dodge, miracle, trueheal, powerheal, heal, earthquake, area harm, powerharm, wrath of god/vampiric touch, area confusion, 1-3 spells, ?-6 attacks, ? before being in battle - standing after
+  +3 hammer:     17 hits out of 39: 44%  (hr 12+34+3=49)
+  +8 Firebrand:  17 hits out of 37: 46%  (hr 12+34+8=54)
+                                             Mass Obli Anni Vapo Pulv Atom
+  Plain:   WEAPON                    avg 22                   6
+  Unlife:  PIERCE UNLIFE             avg 26              3
+  WoJ:     WEAPON PURE LIGHT         avg 21    1    5
+  Hammer:  CRUSH  NORMAL SLAY Dragon avg 24                  13    4
+  Firebra.:SLASH  FIRE               avg 23                       11    6
+The Fist                    97       N--x x1   ---             56881-58165 INFO, [elf], resist WEAPON, ? & sentinel before being in battle - standing & walking after, 7-7 attacks, heal, special-fist-attack(stun), special-trip-attack(sit), special-sword-attack(damage), no-where
+The Hand                    97       Nx-x x1   ---             56049-57894 INFO, [elf], vuln fire/energy, resist unlife/dark, powerheal, grouppowerheal, trueheal, mira, wrath of god, area powerharm, area confusion, 1-3 spells, 7-7 attacks, standing & sentinel before being in battle - flying & walking after, no-where
+  +3 hammer:      8 hits out of 31: 26%  (hr 12+34+3=49)
+  +8 firebrand:  12 hits out of 34: 35%  (hr 12+34+8=54)
+The Shadow                  97       Nx-x x2   ---             57116-58030 INFO, [elf], hide, heal, backstab (67), 1-2 skills, 7-7 attacks, standing & sentinel before being in battle - flying & walking after, no-where
+The Claw                    98       Ex-x x4   ---             57356-58165 INFO, [elf], vuln pure/light, immune dark/unlife, area fireball, area lightning bolt, area powerword kill, area force bolt, plasma ball, heal, 1-3 spells, 7-7 attacks, standing & sentinel before being in battle - flying & walking after, no-where
+The Flame                   98       Nx-x x1   ---             56500-58372 INFO, [elf], vuln ice, immune fire/pure, area feeblemind, plasma ball, hell storm, fireball, heal, 1-3 spells, 7-7 attacks, standing & sentinel before being in battle - flying & walking after, no-where
+The Shield                  98       Gx-x x1   ---             57500-59105 INFO, [elf], immune pure/light, forceflee, special-bash-attack(stun), special-blade-attack, heal, 7-7 attacks, 219/69 dam per attack, negate sanc 3/15 times (20%), 0-1 spells, standing & sentinel before being in battle - flying & walking after, no-where
+  +3 hammer:     12 hits out of 65: 18%  (hr 12+34+3=49)
+The Laerkai Master          99       Nx    1   GNE             58269-60231 INFO, [???], parry, 2-3 backstab, plasma bolt/ball, hell fire/storm, powerword pain, mass pain, heal, powerheal, 1-3 spells, 7-7 attacks, ?/69 dam per attack, invis, hide, ? before being in battle - standing after, summons Hand/Flame/Fist/Claw/Shield/Shadow if they are alive but they don't assist him
+  +3 hammer:     17 hits out of 47: 36%  (hr 12+34+3=49)
+  +3 deathbr.:    9 hits out of 41: 22%  (hr 12+34+3=49)
+                                               Obli Anni Vapo Pulv Atom
+           WEAPON                    avg 22     
+           SLASH                     avg 24     
+           CRUSH                     avg 24     
+           PIERCE                    avg 25     
+           CRUSH  NORM. SLAY Dragon  avg 24               10    7
+           WEAPON PURE LIGHT         avg 21      1
+  DoS:     PIERCE UNLIFE             avg 26                1    3
+  Deathbr: CRUSH         SLAY Human  avg 25                9
+  dark
+  iron
+  magic
+  slay elf
+Blenok the mechanical goblin 100     N--       ---                         questmaster, [???]
+A frail old man            100       N--       ---                         shopkeeper
+The Mediator               100       Nx x  3   GNE  ~65k       58845-62194 INFO, [???], vuln energy?, dodge, mana shielded, mira, trueheal, wrath of god, area wither, area blindness, area forcebolt, area confusion, area feeblemind, plasma ball, area fireball, 2-3 spells, invis, summons Hand/Flame/Fist/Claw/Shield/Shadow if alive
+  +3 hammer:      0 hits out of 31:  0%  (hr 12+34+3=49)  (CRUSH  NORMAL)
+  +8 ghostly:    19 hits out of 80: 24%  (hr 12+34+8=54)
+                                                 Obli Anni Vapo Pulv Atom
+  Ghostly:        MAGIC, ENERGY        avg 22.5             12    7

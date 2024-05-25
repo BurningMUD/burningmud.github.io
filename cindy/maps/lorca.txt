@@ -1,0 +1,48 @@
+# The Land Of Lorca (265): 50-85, Rafo  (King's Castle: 3wnwne2nw2n2wn5ws2wn)
+#
+#                                      Ancient
+#                                       Lands
+#                                         |
+#                                         | Busti
+#                                         |/
+#                                         o - o
+#                                             |
+#                                             o
+#                                             |
+#                         M - M - M       o - o - o
+#                         |   |   |       |       |
+#             o - o - o - M   M   M - o - o   Fayador-o
+#             |           |   |   |               |   |
+#         o - o           M   M - M              RIP RIP
+#         |   |
+#         o - o - o - o               R       R ---- R
+#         |       |   |               |       |      |
+#     o - o       o - o - o - o - R - R - R - R   Rhalarji
+#     |           |   |           |   |       |      |
+#     o           o   |           R - R       R ---- R
+#     |           |   |
+# X - o           o - o
+# |
+#
+* R = Raider rooms
+* M = Marsh: Sleep there and you will die.
+*            Sit and you will die in a few seconds unless you stand up.
+* Careful in Raider rooms - many! Firebeasts can be avoided using darkness.
+
+Lorca:                   Lvl    Xp ASWIDMX # agg     Hp          Gold      Special
+A sloth                   20  600k N-x---    --   452-491      1167-1848   [animal]
+A falcon                  25 1624k N-x---    --   619-633         1-1      [animal], flees
+A man-eating plant        30 4050k N-xx--    GNE  706-730         1-1      [botanic]
+A traveller               30 3750k Nx----    --   738-747         1-1      [human]
+A watersnake              33 5940k N--x--    GNE  832-845         1-1      [animal]
+A lion                    34 7651k N-x---    GNE  877-881         1-1      [animal]
+A python                  35 8400k N-xx--    GNE  869-893         1-1      [animal]
+A Firebeast               45   22M N-xx--    GNE 1785-1887     2560-4228   [elemental], resist light/dark
+A pile of ashes           50   33M N-xx--    --  2249-2304        1-1      [entity], flees
+A Raider                  55   53M N-xxx     GNE 3509-3582    21157-23424  [human]
+A lava demon              56   70M N-xxx     GNE 3540-3560     5758-9738   [demon], plasma ball, hell fire, thac-34 11
+A shopkeeper              60   81M N--x x    --  4731-4764    32296-38882  [human]
+The Raider leader         60  105M Nx-x      GN  4935-4944    22758-24337  [human]
+King Rhalarji             80 1440M Nx-x x    -- 17684-17718   71918-78437  INFO, [human]
+Bustibieren               85 2295M Nx-xx     GNE 24771-24900 137781-155994 INFO, [human], hell storm, teleport, triad of fire, area blindness, 1-2 spells, lava room
+Fayador                   95 1901M Nx-xx-0   --- ~25-28k     144554-163094 INFO, [human], teleport, triad of fire, powerheal, 1-1 spells, 5-6 attacks

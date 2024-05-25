@@ -1,0 +1,62 @@
+# Pyramid (26): 10-40, Unknown/Unknown  (Thalos: 4e)
+#
+#             RIP      /-------------------------\
+#             /       /                          |
+#        /-- o ---\  /                     RIP   |
+#        |  /     | /                       |    |
+#        |RIP     |/                  RIP - o----/
+#        |/       o                        /|
+#  /-\   o       /|                       x RIP
+#  | |  /|     RIP|                      /
+# -o-|-o |     /  |       o -- o -- o /-/---- o ---\   o o
+#  | |   \--- o --/      /|         |/ /           /   +x|
+#  \-/       /          / o         o X           o    o |
+#          RIP          |           |/           /       |
+#                       v    Efre-o+o - o - o - o ------ o
+#                    o  o           |                    |
+#                    |  |           o                    |
+#                    o<-/           |                    |
+#                   /|      o + o - o - o - o - o ------ o
+#                  o o     /                   /
+#                 /       o                   o
+#                o       /                    |
+#                +      o                     o - o -\
+#                o      +                     |      |
+#                       o                     e      o - o
+#                       |                     |      |
+#                       o                 a - a - a  o
+#                      x                      |      |
+#                  Ramses                 b - b - b  o
+#                                             |
+#                                         c - c - c
+#                                             |
+#                                         d - d - d
+#                                             |
+#                                             o
+#                                             + e
+#                                             v/
+#                                             o
+#
+* Same area as Rat's Lair
+* Careful with the DT:s when climbing the outside of the pyramid.
+* Thieves steal money!
+
+Pyramid:                 Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+A horrible asp             5   13k N-x---    G     96-100       0-0
+A hooded cobra snake       7   35k N-x---    G    139-145       0-0
+A pyramid watcher          8   60k G-----    -    157-165     772-834   protector
+The magic carpet           9   90k G--x--    -    178-184       0-0
+A tomb thief              10  110k E--- -    -    203-205     501-501   no-charm, thief, flees
+A wily little mongoose    11  132k G-x---    -    214-229     101-101
+A mummy                   12  156k E-x---    -    237-249     751-751   [undead?], immune unlife, vuln heal
+A sandman                 14  210k N-x---    -    272-281    1501-1501  NOT immune earth
+A hieracosphinx           15  255k E-x---    G    291-308    7501-7501  immune earth
+Ali Baba                  18  414k E-x---    -    382-397    1001-1001  backstab
+A gynosphinx              19  475k G--x--    -    420-427   10001-10001 immune earth
+The efreeti               20  600k E--x--    GNE  438-455   11001-11001 fire breath, can VAPE eq!(?)
+A criosphinx              23 1035k G--x--    -    537-554    2501-2501  immune earth
+A caryatid                24 1200k N-----    -    564-576    3501-3501  lightning bolt, fireball, colour spray
+An androsphinx            27 2160k G--x--    -    646-674    5001-5001  immune earth, special-claw (277)
+The djinn                 28 2520k G-----    -    680-699    6001-6001  resist blind, pulsing-areadamage, can't assist (but can attack)
+Ramses the Damned         38   11M Gx-x--    -   1135-1153   8801-8801  [undead?], vuln pure/light/heal, immune unlife, save 7
+The great sphinx          41   14M Gx-x--    -   1357-1371  12501-12501 immune earth, vuln air

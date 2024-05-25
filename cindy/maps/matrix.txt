@@ -1,0 +1,49 @@
+# Main matrix (???): 1-20, DikuMUD  (Karandras: 6w2seu)
+#
+#          ^     ^                 ^         ^    ^
+#          |     \_____            |         |    |
+#  <---\   |           \           \-------- j ---|->
+#      |   |           |                     |    |
+#  <---|-- o --------- o ------- sign ----poster--|->
+#      |   |           |                     ^    |
+#      |   |  |        |                     |    |
+#      |   |  b  /---- o<--\                 |    |
+#      |   |  |  |     |   |                 |    |
+#      |   |  \-+o--poster |                 |    |
+#      |   |     |     |   |                 |    |
+#      |   |     |     v   |            b <- o ---/
+#      \-- o ----|-----poster                |
+#          |     |        |                  |
+#          |     |        \____________      |
+#          |     |                     \     |
+#  <------ o --- X --------------------|---- o ----->
+#          |    /|   \              /  |     |                             o <-\
+#          | OUT |    \            |   |     |                            /|   |
+#          |     |     |/          g - o --- o ----->                   |/ o   |
+#  <------ d --- o --- a           |   |     |                d       - a  |   |
+#         /|     |    /|           o -/   /- o ----\         /         /|  \-> o
+#          |     |     |           |     /  /      |        o - o o <-/        +
+#      /-- o --- o --- o <--\      |    |  v       |        |   |/|            |
+#      |   |     |  \  |    |      |    |  o       |        o - o f      /---> b
+#      |   |     |   \-|--- o -- o-o -- o  |       |              |     /      |
+#      |   |     |     |    |   /  |    |  |       |              o    /       \-+-
+#  <---/   |     |     v    |  |   |    \--|-o-----o --->         |   /
+#          |     |     g    |  v   |       |/|     |              \__/
+#          |     |          |  f   |       | |     |
+#  <-------|---- o ---------/      o ------|-|---- o --->
+#          |     |                 |       | |    x|
+#          |     |                 |    o--o-|-Dae |
+#          |     |                 |         |     |
+#          v     v                 v         v     v
+#
+* Small area. Pretty much just a maze. Nothing of interest here.
+* Actually two areas, so where doesn't always work.
+
+Main matrix:             Lvl    Xp ASWIDMX   agg     Hp        Gold    Special
+The bug                    1   150 N-x--     --    10-12        3-3    [insect]
+The butterfly              1     1 G-x--     --    10-13        1-1    [insect]
+The cursor                 3  1344 N-x---    --    37-39        1-1    [insubstantial]
+The cowboy                 5   10k G-x--x    --    62-69       41-41   [human]
+The Juggernaut             8   80k G-x---    --   152-168     101-101  [magical]
+The Shredder               9   94k E-x---    --   110-119       1-1    [magical]
+The Daemon                10   90k G--x-x     -   122-135       1-1    [demon], sitting

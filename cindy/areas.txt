@@ -1,0 +1,2344 @@
+
+http://www.lysator.liu.se/~tomca/burning/areas.txt
+
+!!! AREA GUIDE !!!
+
+This is how the information is given:
+The areas are sorted by the "Suggestion" field, but divided into OC and NC
+areas. For each area, information is given like this:
+
+<AREA NAME>
+Creator:      <Creator name>
+Suggestion:   <suggested min level>-<suggested max level> (taken from
+              Burning's "help areas")
+Restrictions: <level/alignment restrictions for entering>
+Mob levels:   <lowest mob level>-<highest mob level> (skipping special mobs
+              that aren't part of the original area or far from the "normal"
+              levels). Not counting shop keepers, quest masters or other
+              non-attackable mobs
+Size:         <number of rooms>
+Monsters:     <number of different monsters> Including shop keepers, quest
+              masters or other non-attackable mobs.
+Dangers:      <number of deathtraps> DT:s, <norecall-information> dangerous
+              mobs>, ...
+Speedie:      <path from the nearest obelisk to the area> Disregarding doors,
+              water rooms, aggressive mobs, etc.
+<My own description of the area.>
+
+-------------------------------------------------------
+                          O C
+-------------------------------------------------------
+
+THE ABANDONED CAVES
+Creator:      Solo/Static
+Suggestion:   50-95
+Restrictions: -
+Mob levels:   55-100
+Size:         79
+Monsters:     7
+Dangers:      1 DT
+Speedie:      Solace: 7seu2nw4n3e3n3u6en
+Abandoned? Yeah, right! These caves have become a nest for a group of foul
+orcs who have sealed off a large part of the cave inhabited by even worse
+beings. If you're tough enough to stand your ground against Deep Ones and
+Hunting Horrors, seek out Shub-Niggurath in the darkest, deepest place, and
+maybe he'll let you have a look at his pnakotic manuscripts before ending your
+life.
+
+GALAXY
+Creator:      Doctor
+Suggestion:   10-30
+Restrictions: -
+Mob levels:   4-36
+Size:         60
+Monsters:     32
+Dangers:      2 DT:s
+Speedie:      Karandras: 10wn3wswswn3w4ne4ne3n2e2nw3ne2ne4ne8nend
+Astronomers' heaven! You're so close to the stars you can even touch them. All
+sorts from white dwarves to red supergiants are here, as are all the Zodiac
+signs and some well known star constellations. Find out where Hercules gets
+his strength or have a closer look at Orion's belt. But beware of places too
+dark or too bright.
+
+NIRVANA
+Creator:      Forstall/Alander
+Suggestion:   25-75
+Restrictions: -
+Mob levels:   18-70
+Size:         63
+Monsters:     12
+Dangers:      0 DT:s
+Speedie:      Olympus: e3n2un, enter hole, s2u
+This is the place you've strived to get to? Well, don't expect your visit here
+to be a peaceful and harmonic one. Obviously you don't deserve to be here, or
+these guys wouldn't be so touchy about your presence. Funny names... decaton,
+nonaton, octon, septon,... Can you find "Nr One" in this place?
+
+NEFERTUM'S WHITE SNAKE LAIR
+Creator:      Nefertum
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   ?-?
+Size:         72
+Monsters:     ?
+Dangers:      1 DT
+Speedie:      Slithering: e
+This is a lair of... guess what? Snakes! Lots'a snakes! And then some more
+snakes. Kill enough of them and guess who'll appear to avenge them:
+A... snake!
+
+THE RUINED CITY OF ALCHOR
+Creator:      Arcane/Fanth
+Suggestion:   40-80
+Restrictions: -
+Mob levels:   36-76
+Size:         74
+Monsters:     7
+Dangers:      1 DT
+Speedie:      Elven Village: 2sw2s2es2eses2en
+Once a nice little city. Now overrun by creatures called "Lindskiarns". A race
+known for their ability to stand in fire without breaking a sweat, but as all
+beings they do have their weaknesses. This band is fairly organized under a
+warchief who is known to torture his prisoners.
+
+AMAZONIA
+Creator:      Leaf
+Suggestion:   10-30
+Restrictions: -
+Mob levels:   5-30
+Size:         65
+Monsters:     15
+Dangers:      2 DT:s
+Speedie:      New Thalos: 2en2e2nes2en2eses4e
+Often confused with the village Krashkarand just west of this area, but this
+place has a small village of its own, a waterfall and a mountain. Apart from
+villagers you will mostly find wildlife here, but if you're searching really
+hard you might also find a miner. He's not interested in being found, though.
+
+RANDOM'S AMBER KEEP
+Creator:      Random
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   8-55 (97+)
+Size:         74
+Monsters:     31
+Dangers:      1 DT
+Speedie:      Karandras: 10es
+A keep of ogres. You will also find gnolls, ants, horses, dogs and even a few
+innocent travellers. If you can find the keys needed, a visit to the prison
+cells might prove interesting. And for some reason, probably the privacy
+provided by these unfriendly ogres, the master magician Gandolf has placed the
+portal to his office on the top floor.
+
+THE AMPHITHEATRE
+Creator:      Gobzilla
+Suggestion:   51-100
+Restrictions: -
+Mob levels:   90-97+
+Size:         79
+Speedie:      Sundhaven: 6es2es3ese2n4w
+Monsters:     6
+Dangers:      0 DT:s, aggressive warrior priests walking around in the area.
+The headquarter for a cult of grolims - worshippers of some evil god. The
+place is crowded with quite unfriendly priests but if you manage to get past
+them, somewhere deep inside you may find a dragon, a demon lord and perhaps
+even the one they call "The child of dark".
+
+ANCALADOR/NECROMANCER'S GUILD
+Creator:      CAW
+Suggestion:   10-25
+Restrictions: -
+Mob levels:   6-23
+Size:         57
+Monsters:     19
+Dangers:      1 DT (accessible from 3 rooms)
+Speedie:      Karandras: 10wn3wswswn10w2swse2sws
+It's easy to miss the fact that this cave is actually the remnants of the
+great dragon Ancalador. Long since dead, his corpse is now a home for a group
+of necromancers and their minions. Enter his month, travel through his
+intestines and exit through his... back door. Enjoy the amazing view of
+stalagmites when crossing the bridge to reach his guarded centre, but don't
+fall down!
+
+THE ANCIENT LANDS
+Creator:      Arcane/Fanth
+Suggestion:   45-100
+Restrictions: -
+Mob levels:   45?-95+
+Size:         99
+Monsters:     ?
+Dangers:      1 DT, The whole northern part is norecall, the northwest maze
+              has only one exit, past a lvl 85:ish guardian. Rex moves around
+              in the north part and will kill you if he sees you.
+Speedie:      Kings castle: 3wnwne2nw2n2wn5ws2wne2ne2nen3en2es2ene2nwn
+Enter this large volcano and discover a world from eons ago. Watch the ancient
+rituals of neanderthals or see the majestic allosaurus flee from a group of
+hungry velociraptors. Just be sure not to disturb the king of dinosaurs, the
+Tyrannosaurus Rex!
+
+ANTHARIA
+Creator:      Unknown
+Suggestion:   10-100
+Restrictions: -
+Mob levels:   9-42
+Size:         51
+Monsters:     20
+Dangers:      0 DT:s
+Speedie:      Sundhaven: 2e4n2w2ndne2sesesed
+This small underwater city is very peaceful indeed, with guards and knights
+patrolling the place. The people are trying to get along with everyone, so
+every intelligent race has a couple of representatives here, making sure the
+peace is kept. An occational adventurer may come by now and then, wreaking
+havoc and slaughtering the defenseless antharians, but that's a rare event.
+Pay them a visit some time - they deserve to be punished!
+
+ANTIRIAD
+Creator:      Torain
+Suggestion:   50-80
+Restrictions: -
+Mob levels:   45-80
+Size:         77
+Monsters:     10
+Dangers:      1 DT:s
+Speedie:      Elven Village: 2sw2s2es2e
+This little town must have been wonderful in the past. Paved streets,
+impressing buildings, statues,... Now it's all in ruins with no clues on what
+happened to the former inhabitants. Rubble and dust covers the place, now home
+to some snotty nosed gangly creatures called Skorns. Others have moved in too
+and few of them tolerate visitors. The cave north of the ruins is home to the
+evil Lord Sith. Did he cause this tragedy? Or did he just move here to enjoy
+the solitude? We will probably never know for sure what happened here.
+
+ARACHNOS
+Creator:      DikuMUD
+Suggestion:   5-50
+Restrictions: -
+Mob levels:   5-49
+Size:         58
+Monsters:     19
+Dangers:      2 DT:s, the place is much like a maze
+Speedie:      Karandras: 10wn3wswswn12ws3wu
+A huge spiders nest, home for giant spiders and some other beasts. Be careful
+not to get lost in the maze or trapped in the web. If you can find your way
+past the dead ends, deadly traps and dangerous foes you might get an audience
+with Empress Spider Arachnos herself. She gives a hearty welcome to all new
+slaves.
+
+THE BURNING ARENA
+Creator:      Burning staff
+Suggestion:   1-100
+Restrictions: -
+Mob levels:   -
+Size:         52
+Monsters:     0
+Dangers:      0 DT:s, Risk for public humiliation
+Speedie:      Karandras: 3nws
+Want to test your powers? Get revenge? See if you're smart enough to defeat an
+opponent who might actually use a strategy against you? Or maybe take your
+verbal argument to another, more physical, level? The arena is here for your
+pleasure... and pain! And thanks to the nifty arena-channel you can be sure
+that everyone else will hear about your great victory or embarrassing defeat.
+
+THE UPPER ARGO
+Creator:      Unknown
+Suggestion:   30-65
+Restrictions: -
+Mob levels:   30-64
+Size:         52
+Monsters:     16
+Dangers:      0 DT:s
+Speedie:      Ultima: 3nd5nund3n
+Mostly known and appreciated for its large troll population, this place also
+has a fair amount of dragons and dragoneers, the open fields making the place
+perfect for takeoffs, landings and mock fights between them. The dragons are
+well trained to ignore distractions, but they will defend themselves if
+attacked. Have a go at them if you dare - they will appreciate the practice.
+But you'd probably do better by hunting down trolls like all the other
+visitors.
+
+ASTRAL PLANE/GITHYANKI
+Creator:      Andi/Klaaw
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   65-97+
+Size:         78+
+Monsters:     10+
+Dangers:      0 DT:s, first part is a maze
+Speedie:      Olympus: e3n2unu, enter portal
+Once a rarely visited lowbie area, this place was given a powerboost and is
+now one of the more dangerous places to visit. The welcoming maze of astral
+rooms is still there if you manage to get past the guardian, but the maze
+inhabitants are now a lot more inclined to find you greet you with a friendly
+smack in the spleen or a playful smash on the skull. And if you manage to get
+past the maze, you'll find the githyankis deadlier than ever. Bring friends.
+Bring LOTS of friends.
+
+ATLANTIS
+Creator:      Torain
+Suggestion:   5-50
+Restrictions: -
+Mob levels:   3-25 (40, 80)
+Size:         100
+Monsters:     30
+Dangers:      0 DT:s
+Speedie:      Atlantis: -
+Explore the sea in all its beauty. See the marvels of the ocean up close.
+Anemones, sea horses, lobsters, clams, sharks and all the other wildlife of
+the ocean. Atlantis is but a whisper of its former glory but the city still
+remains, deep under the surface. And if you go deeper you might even get a
+glimpse of Neptunus, God of the Sea.
+
+FANG'S BLACK CASTLE
+Creator:      Fang
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   30-85
+Size:         82
+Monsters:     19
+Dangers:      0 DT:s
+Speedie:      King's Castle: 3wnwne2nw2nwne3sesen
+As the name suggests, this is not a friendly place. Expect hordes of undeads
+and other evil-doers. Getting past the walls and into the centre is a hard
+task but the reward is... even harder and deeper evil. The castle is past
+salvation and the evil is rooted to the core. Enter if you dare. Pray if you
+care. But most of all, Beware!
+
+BURNING TOWERS
+Creator:      Bane
+Suggestion:   1-100
+Restrictions: -
+Mob levels:   -
+Size:         60
+Monsters:     0
+Dangers:      0 DT:s, Risk for public humiliation
+Speedie:      Karandras: 3nws3dnu
+Burning Arena + Quake = Burning Towers. This place has portals, lava rooms
+powerups and other features inspired from Quake DeathMatch. A good place to
+vent frustration or perhaps just slaughter your friends for fun.
+
+NEW ELEMENTAL CANYON
+Creator:      Raff
+Suggestion:   15-60
+Restrictions: -
+Mob levels:   2-60
+Size:         55
+Monsters:     35
+Dangers:      0 DT:s
+Speedie:      Elemental Canyon: -
+Elementals galore! This little canyon is home to elementals of all sizes.
+Bustling with activity, the inhabitants have learned to accept each other and
+move about freely. Earth, fire, water, air and lightning - each element has
+its own designated part and ruler, with a mix of everything in the middle,
+the floor of the canyon.
+
+DWARVEN CATACOMBS
+Creator:      Raff
+Suggestion:   10-25
+Restrictions: -
+Mob levels:   5-24
+Size:         69
+Monsters:     17
+Dangers:      0 DT:s
+Speedie:      Karandras: 10ed3n
+Located in the ground below the dwarven kingdom is a large complex where the
+dwarves place their dead comrades. This unattended maze has been desecrated by
+graverobbers and necromancers, resulting in undeads and spirits haunting the
+place. A group of templars have taken residence in the north part but are
+making no attempt to clear the catacombs of evildoers nor put the undeads to
+rest. They even attack pure hearted adventurers on sight! Perhaps their
+purpose is only to guard the legendary sword rumored to be hidden there?
+
+THE ABANDONED CATHEDRAL
+Creator:      CAW
+Suggestion:   10-30
+Restrictions: -
+Mob levels:   6-27
+Size:         55
+Monsters:     14
+Dangers:      1 DT
+Speedie:      New Thalos: 2en2e2n2w2n
+This holy place for worship, contemplation and rest was attacked by an evil
+priestess who slaughtered the believers and turned the cathedral into an
+unholy place used for blood sacrifice and worshipping of evil gods. Unable to
+find peace the poor victims still haunt the place, waiting for a hero to come
+and put things right.
+
+THE VARAK-KI CAVERNS
+Creator:      Arcane/Fanth
+Suggestion:   40-75
+Restrictions: level >= 20
+Mob levels:   15-79? (91)
+Size:         90
+Monsters:     17
+Dangers:      0 DT:s, don't upset the black dragon and stay away from the
+              tribe chief
+Speedie:      Karandras: 10e8n2wnen
+A large cavern, but apparently not large enough. The first part holds a tribe
+of Varak-Ki. The northern, innermost part is home for a tribe of gnomes. And
+in between, a large battlefield where they fight each other for more space.
+Deeper down, close to the battlefield lives a great dragon who wishes to be
+left alone.
+
+DARKENWOOD MOUNTAIN
+Creator:      Jydara
+Suggestion:   15-45
+Restrictions: -
+Mob levels:   15-40
+Size:         62
+Monsters:     13
+Dangers:      0 DT:s
+Speedie:      Solace: 9sws
+A rather large cave in a dark forest, crawling with spiders, snakes, bugs and
+goblins. The guards will let you pass but won't tolerate any violence. The
+ruler of this cave is King Grognok. He's got a little treasure that's up for
+grabs if you can find it. He's also got a skeleton in his closet.
+
+THE DUNGEONS OF LORD CEANYTH
+Creator:      Tjaden/Amaranth
+Suggestion:   50-85
+Restrictions: -
+Mob levels:   60-80
+Size:         98
+Monsters:     10
+Dangers:      0 DT:s, aggressive monsters walking around in the area.
+Speedie:      King's Castle: 6wnw11nwsd
+Almost as large as the citadel itself, this prison complex below is the final
+destination for numerous prisoners, both human and orc. The cells themselves
+aren't locked but a large number of guards, beasts and monsters keep the
+inmates from taking off. NO visiting hours. The guards may let you pass but
+don't expect their pets to be so lenient.
+
+THE CHESSBOARD OF KARANDRAS
+Creator:      CircleMUD
+Suggestion:   20-50
+Restrictions: -
+Mob levels:   6-55?
+Size:         67
+Monsters:     12
+Dangers:      0 DT:s, aggressive monsters walking around in the area.
+Speedie:      Sundhaven: 2w5nwn2unw
+Care for a game of chess? In this 8 x 8 tiled area the chess pieces battle
+each other for real. See the poor pawns getting sacrificed to the bigger
+pieces. Chose your side and have a go at the bishop, the rook and the knight.
+Or perhaps go for the rulers themselves - the queen and the king.
+
+CIQUALA'S LAIR
+Creator:      Unknown
+Suggestion:   10-50
+Restrictions: -
+Mob levels:   21?-52
+Size:         20
+Monsters:     17
+Dangers:      0 DT:s, aggressive mobs
+Speedie:      Solace: 9sesd
+The hideout for the infamous lich Ciquala and his undead minions and
+automatons. This place stinks of evil and should be wiped out before the lich
+is able to create enough underlings to start an attack on the helpless people
+above ground.
+
+THE CIRCUS
+Creator:      Binky
+Suggestion:   1-10
+Restrictions: -
+Mob levels:   1-10
+Size:         50
+Monsters:     30
+Dangers:      0 DT:s
+Speedie:      Entrance to Circus is "A large travelling fair" that moves
+              around between 5 locations. When moving it can't be entered.
+              1: Karandras: 7w
+              2: Kerofk: s4w
+              3: Sundhaven: 7s
+              4: Ofcol: 4sw
+              5: Solace: 7s
+The whole circus is located inside this travelling fair moving from city to
+city. Outside the main tent are some entertainers and a candy store. To get
+inside you will need a ticket, but if you're interested in watching knife
+throwers, lions, clowns and line dancers, it is money well spent. There are
+plenty of other animals and they even claim to have a unicorn, though this
+might just be a way to get more visitors.
+
+THE CITADEL
+Creator:      Unknown
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   20-80?
+Size:         128
+Monsters:     17
+Dangers:      0 DT:s, aggressive guards walking around in the courtyard.
+Speedie:      King's Castle: 6wnwn
+An elven citadel ruled by Lord Ceanyth and Lady Nydethiel. Visitors are not
+welcome but the guards in the courtyard are slow and sleepy, so if you are
+quick you can get past them. Once inside the citadel, feel free to look
+around. Beware the Lord, though. He's doesn't like evil people.
+
+THE CITADEL OF THE ORDER
+Creator:      Arcane/Fanth
+Suggestion:   45-100
+Restrictions: -
+Mob levels:   30-95? (5, 10)
+Size:         177
+Monsters:     19
+Dangers:      1 DT
+Speedie:      Sundhaven: 6es2es3ese3n2e4s3es3wn
+Paladins galore! Hordes and hordes of them. All dressed in black and all evil.
+The initiates may be a little grumpy at your presence, but disregarding those,
+you are free to visit and have a look around as long as you stay clear of the
+templar floor - the grand master doesn't want to be disturbed.
+
+THE COURT
+Creator:      Solo/Static
+Suggestion:   35-65
+Restrictions: -
+Mob levels:   36-55 (75)
+Size:         65
+Monsters:     8
+Dangers:      0 DT:s
+Speedie:      King's Castle: 4n2w2nds
+FIXME: Add info
+
+CRYSTALMIR LAKE
+Creator:      Strahd
+Suggestion:   5-45
+Restrictions: -
+Mob levels:   4-44 (90)
+Size:         80
+Monsters:     18
+Dangers:      0 DT:s
+Speedie:      Solace: 7s
+A peaceful little valley south of Solace with a lake in its centre. Some
+farmers are making a living here despite the small bands of draconians and
+hobgoblins. The lake is deep and crystal clear, with lots of fish. Some legend
+says there is a monster down in the deep - a dragon-like turtle, or maybe a
+turtle-like dragon? Many have found this to be a good place to settle down, so
+you may find some strange people here.
+
+GUILD OF DARKFRIENDS
+Creator:      Kelvik
+Suggestion:   30-100
+Restrictions: -
+Mob levels:   25-85 (98+)
+Size:         69
+Monsters:     27
+Dangers:      0 DT:s
+Speedie:      Karandras: 3s2en3es
+Thieves, assassins, smugglers, mercenaries... This is the place for people
+with a shady profession and an unclear conscience. It is located in the
+central parts of Karandras, but has their own laws. Don't expect help if you
+enter, but do expect trouble. Should you make it past the killers, knifers,
+beardogs and other obstacles, you will eventually find the grandmaster and his
+pet panther... and probably wish you hadn't.
+
+CAIN'S SPAWNS OF DARKNESS
+Creator:      Cain
+Suggestion:   45-100
+Restrictions: -
+Mob levels:   61?-96+
+Size:         102?
+Monsters:     14+
+Dangers:      1 DT, Whole area is nosummon/norecall, the exit is far from the
+              entrance, aggressive mobs
+Speedie:      Slithering: 2wd2nw4ne2n2w, enter tree, 8d, drink well
+FIXME: Add info
+
+THE DARKWATER DUNGEONS
+Creator:      Stryder
+Suggestion:   30-100
+Restrictions: -
+Mob levels:   25-75 (95+)
+Size:         62
+Monsters:     14
+Dangers:      2 DT:s
+Speedie:      Sundhaven: 2w4n3wnu3w2n4d
+FIXME: Add info
+
+DWARVEN DAYCARE
+Creator:      Sandman
+Suggestion:   1-100
+Restrictions: -
+Mob levels:   1-8
+Size:         19
+Monsters:     10
+Dangers:      0 DT:s
+Speedie:      Karandras: 10ed2s
+FIXME: Add info
+
+DEMONBYEN
+Creator:      Unknown
+Suggestion:   20-100
+Restrictions: -
+Mob levels:   ?-97+
+Size:         74
+Monsters:     ?
+Dangers:      1 DT, black stalkers are usually locked up but walk around if
+              released and their stabs do ugly damage,
+Speedie:      New Thalos: 2en2e2n2wn2wn2wn
+FIXME: Add info
+
+THE GREAT EASTERN DESERT
+Creator:      Anon
+Suggestion:   10-50
+Restrictions: -
+Mob levels:   3-50
+Size:         41
+Monsters:     18
+Dangers:      1 DT, the whole area is a maze, most mobs are < lvl 10 but in
+              one room you will find an aggressive lvl 46 sand worm.
+Speedie:      Thalos: e
+FIXME: Add info
+
+THE DESOLATE PLAINS
+Creator:      War
+Suggestion:   50-90
+Restrictions: -
+Mob levels:   62-97+
+Size:         78
+Monsters:     8
+Dangers:      0 DT:s, aggressive warriors walking around the area.
+Speedie:      Desolate Plains (transport unknown): -
+FIXME: Add info
+
+DHARYNN'S HUGE FOREST
+Creator:      Dharynn
+Suggestion:   1-8
+Restrictions: level <= ? for some rooms
+Mob levels:   1-8
+Size:         238
+Monsters:     36
+Dangers:      0 DT:s
+Speedie:      King's Castle: 3wnwne2nw2nwne2nwne
+FIXME: Add info
+
+DRAGON CULT
+Creator:      Sandman
+Suggestion:   5-20
+Restrictions: -
+Mob levels:   3-23
+Size:         37
+Monsters:     15
+Dangers:      0 DT:s
+Speedie:      Ofcol: 2e2n
+FIXME: Add info
+
+THE DRAGONS GRAVEYARD
+Creator:      Stryder
+Suggestion:   ?-?
+Restrictions: ?
+Mob levels:   ?
+Size:         42
+Monsters:     ?
+Dangers:      ?
+Speedie:      Random teleport :-)
+FIXME: Add info
+
+DRAGONSPYRE
+Creator:      Unknown
+Suggestion:   45-75
+Restrictions: -
+Mob levels:   40-60 (95)
+Size:         102
+Monsters:     10
+Dangers:      1 DT
+Speedie:      Solace: 7seu2nw4ne
+FIXME: Add info
+
+DRAKYRI ISLE
+Creator:      Ydri/Torain/Raygar
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   ?-97+
+Size:         99
+Monsters:     25+
+Dangers:      0 DT:s, some aggressive high-level mobs move around in the area.
+Speedie:      First get to THE CIRCUS. From there, go 8su3wd3e2s, enter pool
+FIXME: Add info
+
+DROW CITY
+Creator:      DikuMUD/Jess
+Suggestion:   15-50
+Restrictions: -
+Mob levels:   5-37
+Size:         56
+Monsters:     25
+Dangers:      1 DT, 2 wildmag rooms
+Speedie:      Drow: -
+FIXME: Add info
+
+TORAIN'S DRUID FOREST
+Creator:      Torain
+Suggestion:   1-10
+Restrictions: -
+Mob levels:   1-20
+Size:         68
+Monsters:     13
+Dangers:      0 DT:s
+Speedie:      Karandras: 10wn3wswn
+FIXME: Add info
+
+THE DWARVEN KINGDOM
+Creator:      Anon
+Suggestion:   5-50
+Restrictions: -
+Mob levels:   3-25 (70, 71)
+Size:         52
+Monsters:     20
+Dangers:      0 DT:s
+Speedie:      Karandras: 10ed3n
+FIXME: Add info
+
+EARTHSEA
+Creator:      Wench
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   ?
+Size:         44
+Monsters:     ?
+Dangers:      1 DT:s, lots of aggressive guards walking around near the
+              entrance
+Speedie:      Karandras: 10wn3wswswn12ws2w2sen
+FIXME: Add info
+
+DRAGONS GRAVEYARD
+Creator:      Stryder/Bane
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   80-88
+Size:         43
+Monsters:     5
+Dangers:      0 DT:s
+Speedie:      Karandras: 10wn3wswswn12ws2w2se4nwds3w, enter tomb (need key
+                         from The Draconian King to get there)
+FIXME: Add info
+
+PORLAN'S FIRE ELEMENTAL PLAIN
+Creator:      Porlan
+Suggestion:   30-50
+Restrictions: -
+Mob levels:   20-58 (95)
+Size:         67
+Monsters:     7
+Dangers:      0 DT:s, first part is a maze, most mobs are aggressive
+Speedie:      Olympus: e3n2u2n
+FIXME: Add info
+
+THE ELVEN VALLEY
+Creator:      Gbetz
+Suggestion:   5-25
+Restrictions: -
+Mob levels:   3-25
+Size:         83
+Monsters:     17
+Dangers:      1 DT (accessible from 16 different rooms)
+Speedie:      Solace: 5wn
+FIXME: Add info
+
+ELVEN VILLAGE
+Creator:      Sandman
+Suggestion:   1-100
+Restrictions: -
+Mob levels:   10-25 (99)
+Size:         27
+Monsters:     15
+Dangers:      1 DT
+Speedie:      Elven Village: -
+FIXME: Add info
+
+DHARYNN'S ENCHANTED FOREST
+Creator:      Dharynn
+Suggestion:   10-100
+Restrictions: -
+Mob levels:   2-95?
+Size:         98
+Monsters:     40+
+Dangers:      1 DT, easy to lose yourself in the forest, cave and tree are
+              norecall and may have aggressive monsters
+Speedie:      Slithering: -
+FIXME: Add info
+
+ENCLAVE
+Creator:      ?
+Suggestion:   ?
+Restrictions: -
+Mob levels:   1-15
+Size:         68
+Monsters:     12
+Dangers:      0 DT:s
+Speedie:      King's Castle: 3wnwne2nw2n2wnw
+FIXME: Add info
+
+THE FEVERISH SWAMPS
+Creator:      Wotan
+Suggestion:   15-50
+Restrictions: -
+Mob levels:   15-60
+Size:         45
+Monsters:     9
+Dangers:      1 DT
+Speedie:      New Thalos: 2en2e2nes2en2eses4e5n2en4ene3n
+FIXME: Add info
+
+FISHING VILLAGE/SEA ROUTES
+Creator:      Unknown/Nefertum
+Suggestion:   20-100
+Restrictions: -
+Mob levels:   15-39 (85)
+Size:         42
+Monsters:     7
+Dangers:      0 DT:s
+Speedie:      King's Castle: 3wnwne2nw2nwne2nwn3en2es2enen5e, enter portal
+FIXME: Add info
+
+THE KEEP OF MAHN-TOR
+Creator:      Chris
+Suggestion:   20-100
+Restrictions: -
+Mob levels:   10-80 (2)
+Size:         100
+Monsters:     34
+Dangers:      0 DT:s
+Speedie:      King's Castle: 3wnwne2nw2nwne4swse3sd4se2s2u
+FIXME: Add info
+
+THE GARDEN OF ANGELS
+Creator:      Stryder
+Suggestion:   20-50
+Restrictions: -
+Mob levels:   10-50
+Size:         55
+Monsters:     9
+Dangers:      0 DT:s
+Speedie:      Karandras: 10wn3wswswn12ws2w2sws3wnwn4u2n
+FIXME: Add info
+
+GHENNA
+Creator:      Unknown
+Suggestion:   30-70
+Restrictions: -
+Mob levels:   25-75 (1, 98+)
+Size:         104
+Monsters:     36
+Dangers:      2 DT:s, nasty death knights walking around by the entrance
+Speedie:      Karandras: 5s3w3sw9s
+FIXME: Add info
+
+GNOME VILLAGE
+Creator:      Vougon
+Suggestion:   5-15
+Restrictions: -
+Mob levels:   1-18
+Size:         89
+Monsters:     23
+Dangers:      0 DT:s
+Speedie:      New Thalos: 2en2e4ne2nen2ene
+FIXME: Add info
+
+GOBLIN CAVES
+Creator:      Unknown/Envy
+Suggestion:   10-30
+Restrictions: -
+Mob levels:   1-23
+Size:         32
+Monsters:     6
+Dangers:      0 DT:s
+Speedie:      Ofcol: 3wn2wnwne
+FIXME: Add info
+
+THE DARK LAND OF GORM
+Creator:      Unknown
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   65-81 (95)
+Size:         148
+Monsters:     11
+Dangers:      1 DT, 2 wildmag-rooms. Many mobs have random aggressiveness
+Speedie:      Elemental Canyon: us4des2e
+FIXME: Add info
+
+EINSTEIN'S GRASSLANDS AREA
+Creator:      Einstein
+Suggestion:   10-30
+Restrictions: -
+Mob levels:   10-28
+Size:         20
+Monsters:     11
+Dangers:      0 DT:s
+Speedie:      New Thalos: 2en2e2n3w
+FIXME: Add info
+
+GRAVEYARD PLUS
+Creator:      DikuMUD
+Suggestion:   30-50
+Restrictions: Some kind of max now. Don't know how much, but below 50
+Mob levels:   12-70 (95)
+Size:         86
+Monsters:     21
+Dangers:      1 DT, watch out for the pyrolisk cave
+Speedie:      Karandras: 5se5s (no key for the lock, but at least it
+              doesn't close again until boot)
+FIXME: Add info
+Guess who's in the crypt deep inside?
+Hint: He sleeps in a coffin, sucks for a living and isn't really alive.
+
+GYPSY VILLAGE
+Creator:      Mort
+Suggestion:   1-10
+Restrictions: -
+Mob levels:   1-15
+Size:         42
+Monsters:     19
+Dangers:      0 DT:s
+Speedie:      Karandras: 8wn
+FIXME: Add info
+
+HAON-DOR
+Creator:      DikuMUD
+Suggestion:   1-100
+Restrictions: -
+Mob levels:   3-21 (45, 51, 80, 95)
+Size:         43
+Monsters:     12
+Dangers:      0 DT:s, watch out for the DT in Arachnos
+Speedie:      Karandras: 10wn3wswswn12w
+FIXME: Add info
+
+LUMBERJACK FOREST
+Creator:      ?
+Suggestion:   ?
+Restrictions: -
+Mob levels:   1-8
+Size:         25
+Monsters:     6
+Dangers:      0 DT:s
+Speedie:      Karandras: 10wn3wswswn6w
+FIXME: Add info
+
+THE GRASSLANDS (Herd Area)
+Creator:      Klaaw
+Suggestion:   1-10
+Restrictions: -
+Mob levels:   1-10
+Size:         78
+Monsters:     13
+Dangers:      0 DT:s
+Speedie:      Elemental Canyon: 6s3es5deswsw6s2ws
+FIXME: Add info
+
+THE HIGHLANDS
+Creator:      Unknown
+Suggestion:   15-35
+Restrictions: -
+Mob levels:   10-35
+Size:         199
+Monsters:     17
+Dangers:      0 DT:s
+Speedie:      Sundhaven: 6es2es3esen
+FIXME: Add info
+
+HIGH TOWER OF SORCERY
+Creator:      Unknown
+Suggestion:   30-100
+Restrictions: -
+Mob levels:   1-85 (60?-98+ in PW-areas)
+Size:         151 (+34 in PW-areas)
+Monsters:     60 (+13 in PW-areas)
+Dangers:      0 DT:s, aggressive mobs here and there - most of them sentinel
+Speedie:      High Tower: -
+FIXME: Add info
+
+HOBGOBLIN CAMPS
+Creator:      Beerwulf
+Suggestion:   15-50
+Restrictions: -
+Mob levels:   25-45
+Size:         400
+Monsters:     19
+Dangers:      0 DT:s
+Speedie:      Karandras: 5s3w3sw2s2e6sw3s
+FIXME: Add info
+
+HOLY GROVE
+Creator:      Alfa
+Suggestion:   1-30
+Restrictions: -
+Mob levels:   2-20
+Size:         19
+Monsters:     10
+Dangers:      0 DT:s
+Speedie:      Ofcol: 3wn2wnw2nw2nwnwne
+FIXME: Add info
+
+HUMBLIN, THE HOBBIT HAMLET
+Creator:      Rengrave
+Suggestion:   1-10
+Restrictions: -
+Mob levels:   1-15 (51)
+Size:         81
+Monsters:     50
+Dangers:      0 DT:s
+Speedie:      King's Castle: 3ws
+FIXME: Add info
+
+STARLET'S ICE AREA
+Creator:      Starlet
+Suggestion:   30-50
+Restrictions: -
+Mob levels:   30-70
+Size:         92
+Monsters:     17
+Dangers:      0 DT:s
+Speedie:      Sundhaven: 2e4n2w2ndne2sesese3nene2n
+FIXME: Add info
+
+THE ICE CASTLE
+Creator:      Solo/Static
+Suggestion:   45-100
+Restrictions: -
+Mob levels:   ?
+Size:         102
+Monsters:     ?
+Dangers:      0 DT:s, the stairs are wildmag, some aggressive mobs
+Speedie:      King's Castle: 3wnwne2nw2nwne4swse3sd4se3s
+FIXME: Add info
+
+THE ICE CAVES OF ATAVIA
+Creator:      Unknown
+Suggestion:   10-25
+Restrictions: -
+Mob levels:   7-27
+Size:         50
+Monsters:     11
+Dangers:      0 DT:s
+Speedie:      Sundhaven: 2e4n2w2ndne2sesese3nenene2se
+FIXME: Add info
+
+ICE WALL
+Creator:      Trez
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   ?
+Size:         79
+Monsters:     ?
+Dangers:      1 DT, Feal Thas and/or Sleet walks around near the entrance
+Speedie:      Sundhaven: 2e4n2w2ndne2sesese3nenenen
+FIXME: Add info
+
+POINT OF IMPACT
+Creator:      Zendrax
+Suggestion:   10-20
+Restrictions: level <= 20
+Mob levels:   10-40 (98+)
+Size:         100
+Monsters:     18
+Dangers:      3 DT:s and 3 wildmag rooms at bottom, first room drains moves
+Speedie:      Karandras: 5s3w3sw
+FIXME: Add info
+
+THE KINGDOM OF INGLESTONE
+Creator:      Smack
+Suggestion:   30-100
+Restrictions: -
+Mob levels:   ?
+Size:         94
+Monsters:     ?
+Dangers:      0 DT:s, aggressive mobs here and there
+Speedie:      Ofcol: 2w7s2w3s11wnw5nwn
+FIXME: Add info
+
+KINGDOM OF JUARGAN
+Creator:      Anon
+Suggestion:   10-30
+Restrictions: -
+Mob levels:   5-27
+Size:         86
+Monsters:     9
+Dangers:      0 DT:s
+Speedie:      Kerofk: s7wne
+FIXME: Add info
+
+THE RUINS OF KALTOR
+Creator:      Vortex
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   65-98+
+Size:         118
+Monsters:     9
+Dangers:      0 DT:s, most mobs are aggressive
+Speedie:      Elemental Canyon: us4dese
+FIXME: Add info
+
+THE FREE CITY OF KARANDRAS
+Creator:      Torain/Burning Staff
+Suggestion:   1-100
+Restrictions: -
+Mob levels:   1-70
+Size:         197 + 56 (guilds) + 60 (player shops)
+Monsters:     111
+Dangers:      0 DT:s
+Speedie:      Karandras: -
+FIXME: Add info
+
+KENDER VILLAGE
+Creator:      Rafo/Bolt
+Suggestion:   20-100
+Restrictions: -
+Mob levels:   15-80 (2)
+Size:         53 + 8 (snowball land)
+Monsters:     29
+Dangers:      0 DT:s, lvl 50 Bosk is aggressive
+Speedie:      Ofcol: 2w7s2w3s8w2nen
+FIXME: Add info
+
+THE INFERNAL PIT OF KERJIM
+Creator:      Rafo/Bolt
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   ?-98+
+Size:         82
+Monsters:     13+
+Dangers:      1 DT, aggressive mobs, Balrog shaman & Kerjim summons you back
+              if you flee from them
+Speedie:      New Thalos: 2en2e2n2wn2wn2wnd
+FIXME: Add info
+
+KEROFK
+Creator:      CAW
+Suggestion:   1-30
+Restrictions: -
+Mob levels:   1-28 (50, 98+)
+Size:         159
+Monsters:     62
+Dangers:      1 DT (accessible from 16 different rooms)
+Speedie:      Kerofk: -
+FIXME: Add info
+
+KING'S CASTLE
+Creator:      CircleMUD
+Suggestion:   20-50
+Restrictions: -
+Mob levels:   20-80 (2)
+Size:         56
+Monsters:     30
+Dangers:      0 DT:s
+Speedie:      King's Castle: -
+FIXME: Add info
+
+KRASHKARAND
+Creator:      Akira
+Suggestion:   25-100
+Restrictions: -
+Mob levels:   25-75 (10)
+Size:         54
+Monsters:     12
+Dangers:      1 DT
+Speedie:      New Thalos: 2en2e2nes2en2eses4e5nw
+FIXME: Add info
+
+SOULSTEALER'S LABORATORY
+Creator:      Amaranth
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   68-96+
+Size:         126
+Monsters:     8
+Dangers:      1 DT
+Speedie:      Ofcol: 3wnwn6e
+FIXME: Add info
+
+LAGAMORE
+Creator:      Unknown
+Suggestion:   10-50
+Restrictions: -
+Mob levels:   1-55 (85)
+Size:         132
+Monsters:     28
+Dangers:      1 DT (accessible from 3 rooms), dobermans patrol the perimeter -
+              they are very dangerous but easy to avoid
+Speedie:      New Thalos: 2en2e4ne2nwn2w
+FIXME: Add info
+
+LITTLE HAVEN
+Creator:      Mahatma
+Suggestion:   20-50
+Restrictions: -
+Mob levels:   15-26 (55)
+Size:         33
+Monsters:     10
+Dangers:      0 DT:s
+Speedie:      Sundhaven: 2e4n2wn
+FIXME: Add info
+
+THE LAND OF LORCA
+Creator:      Rafo
+Suggestion:   50-85
+Restrictions: -
+Mob levels:   ?
+Size:         54
+Monsters:     10+
+Dangers:      1 DT (accessible from 2 rooms), sleeping in the marsh will kill you
+Speedie:      King's Castle: 3wnwne2nw2n2wn5ws2wn
+FIXME: Add info
+
+LOST TEMPLE
+Creator:      Unknown
+Suggestion:   45-65
+Restrictions: -
+Mob levels:   53-61 (80)
+Size:         50
+Monsters:     5
+Dangers:      0 DT:s
+Speedie:      Kerofk: s7wsw
+FIXME: Add info
+
+THE MARSH
+Creator:      Unknown
+Suggestion:   40-50
+Restrictions: -
+Mob levels:   15-45 (75)
+Size:         19
+Monsters:     16
+Dangers:      0 DT:s
+Speedie:      Sundhaven: 6es2es3ese3ne
+FIXME: Add info
+
+MIDEN'NIR
+Creator:      DikuMUD
+Suggestion:   5-30
+Restrictions: -
+Mob levels:   4, 30
+Size:         19
+Monsters:     2
+Dangers:      0 DT:s
+Speedie:      Karandras: 5s3w3sw3s
+FIXME: Add info
+
+THE DESERT CITY OF MILO'RAI
+Creator:      Stryder
+Suggestion:   50-100
+Restrictions: KTV only
+Mob levels:   98+
+Size:         33
+Monsters:     27
+Dangers:      0 DT:s, whole area is nosummon/norecall
+Speedie:      Thalos: Find navigator in Desert and "ask navigator home". 
+              Path to find navigator, starting and ending at Thalos obelisk:
+              eenne(w)wswswenwnnwsnnnseswwwe(nw)wew(s)s(ew)ne(w)ne(w)ne
+              (wswss)sss(sw)
+              Directions within parenthesis leads to room that have been
+              passed before.
+FIXME: Add info
+
+MIRROR BEYOND
+Creator:      ?
+Suggestion:   ?
+Restrictions: -
+Mob levels:   97
+Size:         8
+Monsters:     1
+Dangers:      1 DT, all directions are reversed (type "west" to go east etc)
+              Detrom is aggressive, but not immediately.
+Speedie:      Only 1 of the 10 mirrors are possible to enter. This changes
+              through time, but I don't know how often nor if there's any
+              pattern in it.
+               1: Karandras:    10wn3wswswn3w
+               2: Karandras:    5s3w2s7e
+               3: Kings Castle: 3wnwne2nw2nwne2s
+               4: Ofcol:        2n
+               5: Olympus:      e5s3dsd
+               6: Sundhaven:    2e4n2w2ndne2sesese3neses
+               7: Karandras:    3s2en3e2se3suw3n
+               8: Ultima:       top floor
+               9: Myrridon:     2w4s3e2ue
+              10: Inside Taon
+FIXME: Add info
+
+MIRROR REALM
+Creator:      Merri
+Suggestion:   20-50
+Restrictions: -
+Mob levels:   19-50 (60)
+Size:         167
+Monsters:     64
+Dangers:      0 DT:s
+Speedie:      Solace: 9s4e2n
+FIXME: Add info
+
+MOB FACTORY
+Creator:      PinkF
+Suggestion:   5-40
+Restrictions: -
+Mob levels:   1-10 (39)
+Size:         26
+Monsters:     9
+Dangers:      0 DT:s
+Speedie:      Karandras: 6w2se
+FIXME: Add info
+
+MULDORBROOKE
+Creator:      Beerwulf
+Suggestion:   5-40
+Restrictions: -
+Mob levels:   16-33 (50)
+Size:         90
+Monsters:     15
+Dangers:      0 DT:s
+Speedie:      Karandras: 5s3w3sw2se
+FIXME: Add info
+
+THE MUSEUM OF LEGENDS
+Creator:      Beerwulf
+Suggestion:   30-100
+Restrictions: -
+Mob levels:   20-61 (88, 90, 93)
+Size:         252
+Monsters:     23
+Dangers:      0 DT:s, elite guards are aggressive to evil people
+Speedie:      Sundhaven: 2es
+FIXME: Add info
+
+THE FORTRESS OF MUSTAINE
+Creator:      Vortex
+Suggestion:   40-100
+Restrictions: -
+Mob levels:   35-65 (5, 94, 98+)
+Size:         123
+Monsters:     20
+Dangers:      0 DT:s, watch out for the wraith, area around King is norecall
+              and king blocks
+Speedie:      Ultima: 3ndne2n4e2se
+FIXME: Add info
+
+NEW THALOS
+Creator:      Unknown
+Suggestion:   5-35
+Restrictions: -
+Mob levels:   4-35
+Size:         63
+Monsters:     34
+Dangers:      0 DT:s
+Speedie:      New Thalos: -
+FIXME: Add info
+
+PLAINS OF THE NORTH
+Creator:      Copper
+Suggestion:   1-25
+Restrictions: -
+Mob levels:   1-25
+Size:         45
+Monsters:     5
+Dangers:      1 DT
+Speedie:      Ultima: 3ndne2n2ene
+FIXME: Add info
+
+OC - ROADS AND RIVERS (ORHAN)
+Creator:      Burning Staff
+Suggestion:   1-100
+Restrictions: -
+Mob levels:   20, 50, 80, 85, 98+
+Size:         530 + 24 (carriages)
+Monsters:     27
+Dangers:      0 DT:s
+Speedie:      Karandras: 8w
+              Karandras: 8e
+              Karandras: 5s3w2s
+              Karandras: 5s3e2s
+              Karandras: 5s3ese
+FIXME: Add info
+
+NEFERTUM'S OCEAN FLOOR
+Creator:      Nefertum
+Suggestion:   40-90
+Restrictions: -
+Mob levels:   ?-98+ (1)
+Size:         148
+Monsters:     26
+Dangers:      1 DT, whole underwater area is norecall (but not nosummon)
+Speedie:      Elemental Canyon: us4dese2se2nwnw3nwne
+FIXME: Add info
+
+OCEANIA
+Creator:      Questor
+Suggestion:   20-45
+Restrictions: -
+Mob levels:   9-22 (39, 44)
+Size:         50
+Monsters:     8
+Dangers:      2 DT:s
+Speedie:      Sundhaven: 2e4n2w2nd
+FIXME: Add info
+
+CITY OF OFCOL
+Creator:      Alfa
+Suggestion:   1-100
+Restrictions: -
+Mob levels:   1-70
+Size:         100
+Monsters:     43
+Dangers:      0 DT:s
+Speedie:      Ofcol: -
+FIXME: Add info
+
+THE OLD KINGDOM
+Creator:      Unknown
+Suggestion:   30-65
+Restrictions: -
+Mob levels:   10-60
+Size:         71
+Monsters:     10
+Dangers:      1 DT:s, Parts of the area is nosummon/norecall
+Speedie:      Thalos: es3nen
+FIXME: Add info
+
+OLYMPUS
+Creator:      Unknown
+Suggestion:   10-50
+Restrictions: -
+Mob levels:   4-85
+Size:         62
+Monsters:     34
+Dangers:      0 DT:s
+Speedie:      Olympus: -
+FIXME: Add info
+
+ORCHARD
+Creator:      Mort
+Suggestion:   1-10
+Restrictions: -
+Mob levels:   1-4
+Size:         20
+Monsters:     9
+Dangers:      0 DT:s
+Speedie:      Karandras: 12en
+FIXME: Add info
+
+CITY OF ORSHINGAL
+Creator:      Unknown
+Suggestion:   30-50
+Restrictions: -
+Mob levels:   29-38 (50, 60)
+Size:         59
+Monsters:     9
+Dangers:      0 DT:s
+Speedie:      New Thalos: 2en2e2nes2enen
+FIXME: Add info
+
+PIXIE FOREST
+Creator:      Trandilar
+Suggestion:   1-8
+Restrictions: level <= 7 (single class only)
+Mob levels:   1-10
+Size:         64
+Monsters:     37
+Dangers:      0 DT:s, Pixie Queen can cast damage spells
+Speedie:      Karandras: 7n
+FIXME: Add info
+
+PLAINS OF DUST
+Creator:      Trez
+Suggestion:   30-50
+Restrictions: -
+Mob levels:   20-70 (5)
+Size:         112
+Monsters:     24
+Dangers:      0 DT:s, The Ambush room (w-n of Kender Village) can be nasty if
+              you're unprepared
+Speedie:      Ofcol: 2w7s2w3s10w
+FIXME: Add info
+
+PYRAMID
+Creator:      Unknown/Unknown
+Suggestion:   10-40
+Restrictions: -
+Mob levels:   5-41
+Size:         59
+Monsters:     18
+Dangers:      1 DT (accessible from 5 rooms)
+Speedie:      Thalos: 4e
+FIXME: Add info
+
+RABBIT WARREN
+Creator:      Unknown
+Suggestion:   1-10
+Restrictions: -
+Mob levels:   1-7
+Size:         31
+Monsters:     8
+Dangers:      0 DT:s
+Speedie:      Sundhaven: 6en3wn2esesw
+FIXME: Add info
+
+NEFERTUM'S RAGNAROK
+Creator:      Nefertum
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   90?-98+
+Size:         275
+Monsters:     9+
+Dangers:      0 DT:s, aggressive and timed-aggressive mobs roam the plains.
+              And the giants here hit HARD!
+Speedie:      Karandras: 10wn3wswswn12ws2w2sws3wnwn5u10nd
+FIXME: Add info
+
+RAT'S LAIR
+Creator:      Unknown/Unknown
+Suggestion:   10-40
+Restrictions: -
+Mob levels:   1-7
+Size:         39
+Monsters:     12
+Dangers:      0 DT:s
+Speedie:      Elven Village: senes
+FIXME: Add info
+
+GREAT BARRIER REEF
+Creator:      Jess
+Suggestion:   25-65
+Restrictions: -
+Mob levels:   35-75
+Size:         50
+Monsters:     22
+Dangers:      0 DT:s, Octopus hunts everyone in the area
+Speedie:      Kerofk: s2e2nd2e3de2n2e2nwnd
+FIXME: Add info
+
+THE REVERED PLATEAU
+Creator:      Testify
+Suggestion:   1-8
+Restrictions: -
+Mob levels:   1-7
+Size:         60
+Monsters:     20
+Dangers:      0 DT:s
+Speedie:      Elemental Canyon: s
+FIXME: Add info
+
+SCUBDU'S HARPY AREA
+Creator:      Dylan
+Suggestion:   20-40
+Restrictions: -
+Mob levels:   20-31 (50)
+Size:         88
+Monsters:     7
+Dangers:      1 DT
+Speedie:      Karandras: 10wn3wswswn12ws2w2sws3wnwn7u
+FIXME: Add info
+
+S. S. SCURVY
+Creator:      Mega
+Suggestion:   10-25
+Restrictions: -
+Mob levels:   10-25
+Size:         45
+Monsters:     14
+Dangers:      0 DT:s
+Speedie:      Sundhaven: 2e4n2wn
+FIXME: Add info
+
+THE SECRET GARDEN
+Creator:      Zax/Dobby
+Suggestion:   15-65
+Restrictions: -
+Mob levels:   17-67
+Size:         259
+Monsters:     35
+Dangers:      0 DT:s
+Speedie:      Karandras: 10wn3wswswn12ws2w2sws3wn2wn
+FIXME: Add info
+
+SHAOLIN TEMPLE
+Creator:      Unknown/Envy
+Suggestion:   10-30
+Restrictions: -
+Mob levels:   6-33
+Size:         37
+Monsters:     17
+Dangers:      0 DT:s
+Speedie:      Solace: 7swn2ws2w
+FIXME: Add info
+
+THE SHIPWRECK
+Creator:      Vortex
+Suggestion:   30-60
+Restrictions: -
+Mob levels:   45?-65
+Size:         57
+Monsters:     7
+Dangers:      2 DT:s
+Speedie:      Kerofk: s2e2nd2e3de2n2e2ne2n3wn
+FIXME: Add info
+
+CITY OF SOLACE
+Creator:      Strahd
+Suggestion:   5-50
+Restrictions: -
+Mob levels:   5-50
+Size:         127
+Monsters:     62
+Dangers:      0 DT:s
+Speedie:      Solace: -
+FIXME: Add info
+
+STARLET'S LOST CITY OF SOLOM
+Creator:      Starlet
+Suggestion:   40-100
+Restrictions: -
+Mob levels:   40-85
+Size:         64
+Monsters:     13
+Dangers:      1 DT (accessible from 4 rooms), Zarak at the entrance has a
+              painful backstab
+Speedie:      Ofcol: 2w7s2w3sw3s2ws
+FIXME: Add info
+
+STARLET'S NEWBIE AREA
+Creator:      Starlet
+Suggestion:   1-10
+Restrictions: -
+Mob levels:   1-6
+Size:         38
+Monsters:     13
+Dangers:      0 DT:s
+Speedie:      Sundhaven: 6en
+FIXME: Add info
+
+JOKER'S STORM GIANT CASTLE
+Creator:      Joker
+Suggestion:   35-100
+Restrictions: -
+Mob levels:   50-98+
+Size:         54 + 15 (unconnected)
+Monsters:     8
+Dangers:      1 DT, aggressive level 50 guards by the entrance
+Speedie:      Olympus: e5s3dsdsdsueun
+FIXME: Add info
+
+SUNDHAVEN
+Creator:      Mercy
+Suggestion:   1-30
+Restrictions: -
+Mob levels:   1-39 (59)
+Size:         181
+Monsters:     67
+Dangers:      0 DT:s
+Speedie:      Sundhaven: -
+FIXME: Add info
+
+THE FORGOTTEN CITADEL OF TAON
+Creator:      Stryder
+Suggestion:   45-100
+Restrictions: -
+Mob levels:   ?-96+
+Size:         221
+Monsters:     24+
+Dangers:      7 DT:s, without fly the speedie to Taon will kill you
+Speedie:      New Thalos: 2en2e2n2wn2wn3wnwn4w2s7e7n6w6s2u3e4n4w3u3e2n3u
+FIXME: Add info
+
+THE CITY OF THALOS
+Creator:      Anon
+Suggestion:   10-20
+Restrictions: level <= 20, unless the guardian is killed
+Mob levels:   11-30 (3, 71)
+Size:         50
+Monsters:     11
+Dangers:      1 DT
+Speedie:      Thalos: -
+FIXME: Add info
+
+THE TEMPLE OF TOMAAUKKHEN
+Creator:      Porlan
+Suggestion:   30-60
+Restrictions: -
+Mob levels:   4-80
+Size:         137
+Monsters:     27
+Dangers:      1 DT
+Speedie:      New Thalos: 2en2e2nes2en2eses3es
+FIXME: Add info
+
+CASTLE OF TOORMAIL/ROCK TROLL CITY
+Creator:      Arcane
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   ?
+Size:         483
+Monsters:     ?
+Dangers:      2 DT:s, troll-skeleton/dragon/K'rekDhor rooms are
+              noflee/norecall
+Speedie:      Ofcol: 2wn
+FIXME: Add info
+
+THE TOWER OF TRAINING
+Creator:      Converted by Rafo
+Suggestion:   1-3
+Restrictions: level <= 7
+Mob levels:   1-3 (10)
+Size:         39
+Monsters:     16
+Dangers:      0 DT:s
+Speedie:      CLOSED!
+FIXME: Add info
+
+TRADE ROAD
+Creator:      Burning Staff
+Suggestion:   1-100
+Restrictions: -
+Mob levels:   1-18
+Size:         54
+Monsters:     23
+Dangers:      0 DT:s
+Speedie:      Karandras: 5s3w2se
+FIXME: Add info
+
+TROLL DEN
+Creator:      Merc
+Suggestion:   10-20
+Restrictions: -
+Mob levels:   3-13
+Size:         5
+Monsters:     8
+Dangers:      0 DT:s
+Speedie:      Karandras: 10wn3wswswn12ws2w2sw2s2es
+FIXME: Add info
+
+TURVAGAR, THE DARK TAIGA
+Creator:      Rengrave
+Suggestion:   30-50
+Restrictions: -
+Mob levels:   20-30 (50)
+Size:         160
+Monsters:     24
+Dangers:      1 DT, Malcor (lvl 50, agg-neutral) walks around in the area
+Speedie:      King's Castle: 3wnwne2nw2nwne3sen
+FIXME: Add info
+
+ULTIMA
+Creator:      Casret
+Suggestion:   1-100
+Restrictions: -
+Mob levels:   2-80
+Size:         185
+Monsters:     74
+Dangers:      0 DT:s
+Speedie:      Ultima: -
+FIXME: Add info
+
+THE UNDERDARK
+Creator:      Silence
+Suggestion:   40-100
+Restrictions: -
+Mob levels:   10-80 (90)
+Size:         485
+Monsters:     135
+Dangers:      0 DT:s
+Speedie:      Underdark: -
+FIXME: Add info
+
+HADES' UNDERWORLD
+Creator:      Faunus
+Suggestion:   20-100
+Restrictions: -
+Mob levels:   ?-97+
+Size:         275
+Monsters:     18+
+Dangers:      0 DT:s, whole area is nosummon/norecall, many rooms with the
+              nastier mobs are noflee
+Speedie:      Olympus: find Hermes and "ask Hermes death"
+FIXME: Add info
+
+UNHOLY DARKNESS
+Creator:      Stile/Acheron
+Suggestion:   25-100
+Restrictions: level >= 20
+Mob levels:   25-94 (1)
+Size:         124
+Monsters:     22
+Dangers:      3 DT:s (accessible from 11 rooms)
+Speedie:      King's Castle: 6wn3wswnd
+FIXME: Add info
+
+URIAH'S TOMB
+Creator:      Rafo/Nefertum
+Suggestion:   60-100
+Restrictions: lvl >= 60, must be joined to the Soulweavers quest
+Mob levels:   60-65
+Size:         100
+Monsters:     4
+Dangers:      0 DT:s
+Speedie:      Sleep with pathweaver wielded after having solved the
+              Stormweavers quest
+FIXME: Add info
+
+THE VALLEY OF THE KINGS
+Creator:      Stryder
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   67-97+
+Size:         185
+Monsters:     9
+Dangers:      2 DT:s
+Speedie:      Kerofk: s2e2nd2e3de2n2e2ne2n3ws2w2d
+FIXME: Add info
+
+SHORES OF VENDEN
+Creator:      Bump
+Suggestion:   30-60
+Restrictions: -
+Mob levels:   30-70
+Size:         87
+Monsters:     12
+Dangers:      4 DT:s, some nomag rooms, some nosummon/norecall rooms, if you
+              find the coyote he will hunt you throughout the area
+Speedie:      Sundhaven: 6es2esene2nw3ne3n
+FIXME: Add info
+
+WERITH'S WAYHOUSE
+Creator:      CAW
+Suggestion:   5-25
+Restrictions: -
+Mob levels:   1-25
+Size:         41
+Monsters:     20
+Dangers:      0 DT:s
+Speedie:      King's Castle: 3wnwne2nw2nwne2nw3nws
+FIXME: Add info
+
+WYVERN'S TOWER
+Creator:      Tyrst
+Suggestion:   5-20
+Restrictions: -
+Mob levels:   5-19
+Size:         61
+Monsters:     25
+Dangers:      1 DT, wyvern can vape eq
+Speedie:      Ofcol: 3wnwne
+FIXME: Add info
+
+YGGDRASIL
+Creator:      Unknown
+Suggestion:   20-100
+Restrictions: -
+Mob levels:   7-80
+Size:         24
+Monsters:     18
+Dangers:      0 DT:s
+Speedie:      Karandras: 10wn3wswswn12ws2w2sws3wnwn
+FIXME: Add info
+
+ZORN UZKUL
+Creator:      Wotan
+Suggestion:   20-100
+Restrictions: -
+Mob levels:   5-70
+Size:         88
+Monsters:     20
+Dangers:      1 DT
+Speedie:      Karandras: 10ed3n2e2d
+FIXME: Add info
+
+ELVEN LANDS
+Creator:      Dalamar/Stryder
+Suggestion:   10-70
+Restrictions: -
+Mob levels:   10-70
+Size:         96
+Monsters:     24
+Dangers:      1 DT
+Speedie:      Elven Village: 6nw
+The elves have finally opened their lands to visitors. Treat yourself to a
+marvellous tour around their illustrious gardens and learn about elves in
+their own habitat. If you have the stamina and courage, climb the mountain to
+see and speak with the wisest and noblest of the whole elven race.
+
+SEWER
+Creator:      DikuMUD
+Suggestion:   1-30
+Restrictions: -
+Mob levels:   1-25
+Size:         179
+Monsters:     21
+Dangers:      1 DT:s
+Speedie:      Karandras: 3s3wsed
+FIXME: Add info
+
+MORIA
+Creator:      DikuMUD
+Suggestion:   5-20
+Restrictions: -
+Mob levels:   3-23
+Size:         91
+Monsters:     23
+Dangers:      1 DT:s
+Speedie:      Karandras: 10e3n
+FIXME: Add info
+
+THREE OF SWORDS
+Creator:      CAW/Stryder
+Suggestion:   5-30
+Restrictions: -
+Mob levels:   1-30
+Size:         76
+Monsters:     20
+Dangers:      1 DT
+Speedie:      Karandras: 10e3ne
+A peaceful little village where nothing much happens. Sure, they have some
+bandits in a cave southwest of the village, but they keep to themselves and
+are happy to be left alone. There's also a little dragon, Aglandiir, in a
+mountain lair nearby, who has retired from adventuring and stays in his
+cave, enjoying the treasures gathered in the past.
+
+RAND'S TOWER
+Creator:      CAW/Stryder
+Suggestion:   10-20
+Restrictions: -
+Mob levels:   12-30
+Size:         46
+Monsters:     8
+Dangers:      1 DT
+Speedie:      Karandras: 10e10n2e2ne
+FIXME: Add info
+
+GOBLIK WARCAMPS
+Creator:      Rengrave/Gildae
+Suggestion:   5-20
+Restrictions: lvl <= 30
+Mob levels:   ?
+Size:         56
+Monsters:     ?
+Dangers:      0 DT:s
+Speedie:      Karandras: 10e10n2e7n2en
+FIXME: Add info
+
+WYVERN WATERFALLS
+Creator:      Stryder
+Suggestion:   10-35
+Restrictions: -
+Mob levels:   ?
+Size:         78
+Monsters:     ?
+Dangers:      0 DT:s
+Speedie:      Karandras: 10e10n2e8n2w
+FIXME: Add info
+
+FAERY FOREST
+Creator:      Stryder/Bane
+Suggestion:   1-10
+Restrictions: lvl <= 30
+Mob levels:   1-20
+Size:         42
+Monsters:     15
+Dangers:      0 DT:s
+Speedie:      Karandras: 10e10n2e8n3wsw
+FIXME: Add info
+
+HAUNTED KEEP
+Creator:      Crom/Gloom/Stryder
+Suggestion:   5-15
+Restrictions: lvl <= 30
+Mob levels:   5-13
+Size:         26
+Monsters:     6
+Dangers:      0 DT:s
+Speedie:      Karandras: 10e10n2e8n3ws2w4n2wn
+FIXME: Add info
+
+REDFERNE'S RESIDENCE
+Creator:      Unknown
+Suggestion:   0-0
+Restrictions: -
+Mob levels:   85
+Size:         20
+Monsters:     1
+Dangers:      1 DT:s
+Speedie:      Karandras: 5n4w2s18u
+FIXME: Add info
+
+SMUGGLERS DEN
+Creator:      Stryder
+Suggestion:   8-55
+Restrictions: lvl >= 8
+Mob levels:   8-27
+Size:         99
+Monsters:     11
+Dangers:      0 DT:s
+Speedie:      Kerofk: 3sesd
+FIXME: Add info
+
+THE COVEN
+Creator:      Stryder
+Suggestion:   40-100
+Restrictions: Min level 0/25 - 0/36
+Mob levels:   30-99
+Size:         95
+Monsters:     27
+Dangers:      2 DT:s
+Speedie:      New Thalos: 2enes
+Looking for witches? You've just found them. All of them.
+
+THE DARKUNDER
+Creator:      Stryder
+Suggestion:   45-100
+Restrictions: -
+Mob levels:   51 (or lower) - 120
+Size:         122+
+Monsters:     28
+Dangers:      0 DT:s
+Speedie:      Underdark: 2e5s3wd or Drow city: 2wnwnd2nundnw2nw2d
+Worms, worms and more worms. Plus some nasty effects in the area. Beware!
+
+LETHRIEL'S CRYPT
+Creator:      Zendrax
+Suggestion:   42-78
+Restrictions: -
+Mob levels:   50-100
+Size:         88
+Monsters:     10
+Dangers:      0 DT:s
+Speedie:      New Thalos: 2en2e2nes2enes
+Demons and undeads. Not a very friendly place. And every door is locked, on
+both sides.
+
+CATACOMBS OF THE LOST SOULS
+Creator:      Angharad
+Suggestion:   15-100
+Restrictions: -
+Mob levels:   16-35
+Size:         64
+Monsters:     7
+Dangers:      0 DT:s
+Speedie:      Solace: 6s3wnd
+Filled with amall undeads.
+
+MAIN MATRIX
+Creator:      DikuMUD
+Suggestion:   1-20
+Restrictions: -
+Mob levels:   1-10
+Size:         47
+Monsters:     7
+Dangers:      0 DT:s
+Speedie:      Karandras: 6w2seu
+Pretty useless maze.
+
+SIN QUEST ZONE
+Creator:      ?
+Suggestion:   ?
+Restrictions: level >= 35
+Mob levels:   95-100
+Size:         22
+Monsters:     7
+Dangers:      0 DT:s
+Speedie:      New Thalos: 2en2e2n2wn2wn2wn8d4ne
+Quest zone for the Sin quests
+
+
+-------------------------------------------------------
+                      O C  -  N C
+-------------------------------------------------------
+
+SHIP
+Creator:      Burning Staff
+Suggestion:   1-100
+Restrictions: -
+Mob levels:   ?
+Size:         26 (2 ships)
+Monsters:     ?
+Dangers:      0 DT:s, nosummon/norecall
+Speedie:      OC: King's Castle: 3wnwne2nw2nwne2nwn3en2es2enen5e,
+                  enter portal, 4e4s5e, board ship
+              NC: Myrridon: 2w4sw2s2w2s, board ship
+FIXME: Add info
+
+THE WELL
+Creator:      ?
+Suggestion:   ?
+Restrictions: -
+Mob levels:   45?-98+ (1)
+Size:         width x height x depth = 17 x 19 x 20 = 6460: around 4000
+Monsters:     97
+Dangers:      0 DT:s, ice rooms, lava rooms, quicksand, nomag rooms, wind,
+              wildmag rooms, trapdoors, stalagmites, water rooms,...
+              And the mobs are even worse. BEWARE!
+Speedie:      Moves every 6 hour. Can be tracked with a 'compass' (item found
+              in the well). Can also be entered through Milo'rai
+FIXME: Add info
+
+
+-------------------------------------------------------
+                          N C
+-------------------------------------------------------
+
+3 MAGES
+Creator:      Barre
+Suggestion:   40-90
+Restrictions: -
+Mob levels:   ?
+Size:         119
+Monsters:     ?
+Dangers:      0 DT:s
+Speedie:      Myrridon: 13w3sw2s3wn
+FIXME: Add info
+
+THE STRONGHOLD OF ALTERAC
+Creator:      Stryder
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   ?-97+
+Size:         97
+Monsters:     ?
+Dangers:      1 DT, lookout rooms are nosummon/norecall/noflee
+Speedie:      Crossroad: 2nen2en3en2en2es2es2en3enwnw3nw6ne2ne2ne2ne2ne2n4ese
+FIXME: Add info
+
+THE APOCALYPSE
+Creator:      Sin
+Suggestion:   50-100
+Restrictions: Evils can't enter west side, good can't enter east side
+Mob levels:   ?-98+
+Size:         126
+Monsters:     29+
+Dangers:      1 DT, many rooms are nosummon
+Speedie:      Palanthas: 5s2es2enen2enen2ene2nene2n2e2n3en3ese
+FIXME: Add info
+
+ALTERAC BATTLEFIELDS
+Creator:      Stryder
+Suggestion:   0-0
+Restrictions: -
+Mob levels:   60-100
+Size:         99
+Monsters:     31
+Dangers:      2 DT:s, some roms are norecall, many rooms hurt you, at least
+              one is wildmag, lots of aggressive monsters - dangerous place!
+Speedie:      Crossroad: 2nen2en3en2en2es2es2en3enwnw3nw6ne2ne2ne2ne2ne2n4es2e3n2eun
+FIXME: Add info
+(From news:) Commanders on the Alterac Battlefields are reporting
+             heavy losses to the high command.  An urgent plea
+             has been issued throughout the realm for hardened
+             mercenaries to swell the ranks.  Those who take up
+             this offer shall be rewarded handsomly.  The high
+             command also wish to stress that the conditions on
+             the battlefields are treacherous and that any person
+             wishing to take up the fight does so at their own risk.
+
+HIGH CLERISTS TOWER
+Creator:      Sanders
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   ?-97+
+Size:         321
+Monsters:     ?
+Dangers:      0 DT:s
+Speedie:      Palanthas: 5s2es2e3sen
+FIXME: Add info
+
+THE OASIS OF COHN SHAR
+Creator:      Faunus
+Suggestion:   20-100
+Restrictions: -
+Mob levels:   ?
+Size:         99
+Monsters:     ?
+Dangers:      0 DT:s
+Speedie:      Crossroad: 2nen2en3en2en2es2es2en3enwnw3nw6ne2ne2ne2nenwn
+FIXME: Add info
+
+NEFERTUM'S DRAGONTAIL ISLE
+Creator:      Nefertum
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   50-95+ (10)
+Size:         273
+Monsters:     25
+Dangers:      4 DT:s
+Speedie:      Myrridon: 24ws2ws2w2se2swseses
+FIXME: Add info
+
+THE CASTLE DUNHEIM
+Creator:      Pakaka
+Suggestion:   40-100
+Restrictions: -
+Mob levels:   ?
+Size:         79
+Monsters:     ?
+Dangers:      1 DT, top tower rooms are wildmag
+Speedie:      Crossroad: 10se2sws
+FIXME: Add info
+
+NEFERTUM'S CASTLE GUALLIDURTH
+Creator:      Nefertum
+Suggestion:   40-100
+Restrictions: non-good only, level <= 8+
+Mob levels:   ?
+Size:         90
+Monsters:     ?
+Dangers:      0 DT:s
+Speedie:      Crossroad: 2nen2en3enw
+FIXME: Add info
+
+NEFERTUM'S HALLS OF THE HAARVENU
+Creator:      Nefertum
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   90-97+
+Size:         99
+Monsters:     9
+Dangers:      0 DT:s, most of the area is norecall
+Speedie:      Crossroad: 2nen2en3en4ws2w2n2wn
+FIXME: Add info
+
+KHRONATIO
+Creator:      Zendrax
+Suggestion:   45-99
+Restrictions: -
+Mob levels:   ?-95?
+Size:         94
+Monsters:     ?
+Dangers:      2 DT:s, guards summon you back if you attack them and flee
+Speedie:      Crossroad: 2nen2en3en2en2es2es2en3enwnw3nw6ne2ne2ne2ne2ne2ne2ne2ne2ne6n7w4n5ene
+FIXME: Add info
+
+TOWN OF LAHRESIN
+Creator:      Chandos
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   ?-90
+Size:         75
+Monsters:     ?
+Dangers:      0 DT:s
+Speedie:      Crossroad: 10se2sw3s4w4s
+FIXME: Add info
+
+LORCHID CITY
+Creator:      Gobzilla
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   ?-95
+Size:         80
+Monsters:     ?
+Dangers:      1 DT
+Speedie:      Crossroad: 2nen2en3en2en2es2es2en3enwnw3nw6ne2ne2ne2ne2ne2ne2ne2ne2ne4n
+FIXME: Add info
+
+THE CITY OF MYRRIDON
+Creator:      Roland/Vortex
+Suggestion:   1-100
+Restrictions: -
+Mob levels:   ?-97+
+Size:         371
+Monsters:     ?
+Dangers:      1 DT, rift has a nasty demon inside, ne tower has dangerous
+              aggies, swamp in southwest has aggressive mobs, evil trolls
+              near the boat south, aggie thugs in west part
+Speedie:      Myrridon: -
+FIXME: Add info
+
+MYRRIDON MINES
+Creator:      Barre
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   30-100
+Size:         135
+Monsters:     9
+Dangers:      3 DT:s
+Speedie:      Myrridon: 24wsw3n3w2nwn
+FIXME: Add info
+
+INFERNO
+Creator:      Arcane/Arbogastes
+Suggestion:   35-100
+Restrictions: -
+Mob levels:   36-100
+Size:         65
+Monsters:     13
+Dangers:      1 DT:s
+Speedie:      Myrridon: 24wsw3n3w2nw5n7d
+FIXME: Add info
+
+NARNIA
+Creator:      Gothie
+Suggestion:   40-99
+Restrictions: -
+Mob levels:   ?-97+
+Size:         200
+Monsters:     ?
+Dangers:      0 DT:s
+Speedie:      Crossroad: 2nen2en3en2en2es2es2en3enwnw3nw6ne2ne2ne2nw3n
+FIXME: Add info
+
+NEWCONT - ROADS AND RIVERS (ASHINARA)
+Creator:      Smack
+Suggestion:   1-100
+Restrictions: -
+Mob levels:   -
+Size:         189
+Monsters:     0
+Dangers:      0 DT:s
+Speedie:      Myrridon: 24wsw3nw3n3e2n
+FIXME: Add info
+
+NEFERTUM'S OBLIVION
+Creator:      Nefertum
+Suggestion:   50-90
+Restrictions: -
+Mob levels:   good align or kill the guardian
+Size:         196
+Monsters:     32+
+Dangers:      0 DT:s, room with doppelganger and rooms with sharns are
+              norecall but you can be summoned out from and into them
+Speedie:      Palanthas: 5s2es2enen2enen2enen7w5n3e3n3e
+FIXME: Add info
+
+THE CITY OF PALANTHAS
+Creator:      Rafo/Vortex
+Suggestion:   50-100
+Restrictions: only mages can go to the northwest part
+Mob levels:   ?-97+
+Size:         105
+Monsters:     ?
+Dangers:      0 DT:s, trying to get to northwest part as non-mage will hurt
+Speedie:      Palanthas: -
+FIXME: Add info
+
+THE TOURNAMENT
+Creator:      Sanders
+Suggestion:   40-100
+Restrictions: -
+Mob levels:   ?-97+
+Size:         86
+Monsters:     ?
+Dangers:      1 DT
+Speedie:      Myrridon: 24ws2ws2w2ses2e3n2e
+FIXME: Add info
+
+THE UNDERGROUND
+Creator:      Barre
+Suggestion:   50-100
+Restrictions: -
+Mob levels:   ?
+Size:         53
+Monsters:     ?
+Dangers:      0 DT:s, Bob is armed and dangerous
+Speedie:      Myrridon: 2w2nwnd
+FIXME: Add info
+
+THE LAND OF THE GIANTS
+Creator:      Stryder
+Suggestion:   40-100
+Restrictions: -
+Mob levels:   58-90
+Size:         99
+Monsters:     13
+Dangers:      0 DT:s
+Speedie:      Crossroad: 10s2e
+Tons of friendly giants of all sizes (from big and upwards)
+
+WOODS OF WHISPERS
+Creator:      Zendrax
+Suggestion:   25-100
+Restrictions: -
+Mob levels:   40-100
+Size:         200
+Monsters:     43
+Dangers:      3 DT:s
+Speedie:      Crossroad: 2nen2en3en2en2es2es2en3enwnw3ne
+Loads of trees and nature things. Beware the trolls if you're nice.

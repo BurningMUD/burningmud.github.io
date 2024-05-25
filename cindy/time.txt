@@ -1,0 +1,58 @@
+
+2 min   =  1 round        =  2.5 rl seconds
+1 hour  = 60 min          = 75   rl seconds
+1 day   = 24 hours        = 30   rl minutes
+1 week  =  7 days         =  3.5 rl hours
+1 month = 35 days         = 17.5 rl hours
+1 year  = 17 months       = 12.4 rl days (12 days 9.5 hours)
+
+48 ticks = 1 rl hour
+
+Hours: 12 am, 1 am..11 am, 12 pm, 1..11 pm
+
+Days:
+ Day of the Bull
+ Day of the Deception
+ Day of Thunder
+ Day of Freedom
+ Day of the Great Gods
+ Day of the Sun
+ Day of the Moon
+
+Months: (Each month starts with Day of the Bull)
+ Month of Winter
+ Month of the Winter Wolf
+ Month of the Frost Giant
+ Month of the Old Forces
+ Month of the Grand Struggle
+ Month of the Spring
+ Month of Nature
+ Month of Futility
+ Month of the Dragon
+ Month of the Sun
+ Month of the Heat
+ Month of the Battle
+ Month of the Dark Shades
+ Month of the Shadows
+ Long Shadows
+ Ancient Darkness
+ Month of the Great Evil
+
+My guess is that date isn't calculated from the internal clock
+since it can change within the same clock-second. Not sure how it works,
+nor do I know if time proceeds on Burning when the game is down.
+
+I also guess that the mud started on year 0 or 1, so it might be possible
+to use the current date to find out when Burning was born :-)
+
+
+Age:
+You start out being 17 years old.
+Every 2 RL weeks you become one year older.
+Age affects hp regen negatively once you've passed 45 years. When you are 80
+years old it is at its lowest, but then it starts going up again, and when
+you reach 115 it's back at max, where it will stay forever(?)
+Age affects mana regen positively (if older you regen faster). At 79 you have
+reached maximum mana regen.
+There are items that can affect your age. It is possible to have negative age.
+There are a few items that can change your age permanently (copper flask(+1d4), adam's apple(+2d4) & iron flask(-1d4)). Iron flasks can't be quaffed if you are 17 years old, so there's a limit to how young you can be (17 minus all age-decreasing eq).

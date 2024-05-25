@@ -1,0 +1,86 @@
+# Humblin, the Hobbit Hamlet (526): 1-10, Rengrave  (King's Castle: 3ws)
+#
+#         |
+#         X
+#         |
+# o - o - o - o - o
+# |   |   |   |   |
+# o - o - o - o - o
+# |   |   |   |   |
+# o - o - o - o - o   o - o - o
+# |   |   |   |   |   |   |   |
+# o - o - o - o - o   o - o - o
+# |   |   |   |   |   |   |   |
+# o - o - o - o -bee- o - o - o
+# |   |   |   |   |   |   |   |
+# o - o o-o-o o - o - o - o - o
+#         |
+#     o-o-o-o               o
+#         |                 |
+#   o o   |   o   o    o  o-o-o
+#   | |   |   |   |    |    |
+# o-o-o - o - o - o -- o -- o-o
+#   | |   |   |   |    +    |
+#   o o   o   o   o-o  o  o-o-o
+#         |   +   |         |
+#         Q   o   o         o
+#
+* Nice and safe area for lowbies
+
+Humblin:                                      Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+A little brown rabbit                           1   160 N-x---    --    13-20        2-5    [animal], flees
+A little white rabbit                           1   160 N-x---    --    11-19        2-5    [animal], flees
+A small chicken                                 1   224 N-x---    --    22-27        2-2    [bird]
+An anemic little runt pig                       1     1 N----     --     1-1         0-0    [animal]
+A fat duck                                      2   900 N-x---    --    40-42        3-4    [bird]
+A hobbit trapper (checking)                     2  1040 N-x---    --    33-39       60-93   [hobbit]
+A hobbit trapper (setting)                      2  1040 N-x---    --    33-41       63-93   [hobbit]
+A little grey rabbit (bunny)                    2   940 N-x---    --    36-41        6-10   [animal]
+A little grey rabbit (munching)                 2   940 N-x---    --    36-41        6-10   [animal]
+A little grey rabbit (nibbling)                 2   940 N-x---    --    36-41        6-10   [animal]
+A curious goose                                 3  1500 N-x---    --    56-57        4-5    [bird]
+A hobbit farmer (checking)                      3  2850 G-x---    --    61-62       98-101  [hobbit]
+A hobbit farmer (tending)                       3  2850 G-x---    --    59-62       93-102  [hobbit]
+Elmore Fodd, the rabbit trapper                 3  2850 N-x--x    --    67-67      150-150  [hobbit]
+A little black sheep                            4  4000 N-x---    --    76-83        2-6    [animal]
+A little white sheep                            4  4000 N-x---    --    81-85        4-5    [animal]
+A perturbed turkey                              4  6800 N-x---    --    79-82        5-6    [bird]
+A small plow pony                               4  6800 N-----    --    84-87       10-14   [---]
+A hobbit child (dolls)                          5   10k G-----    --    90-98      125-282  [hobbit], sitting
+A hobbit child (toys)                           5   10k G-----    --    90-98      125-282  [hobbit], sitting
+Jethro Tallfellow, the poetic hobbit shepherd   5   14k G-x--x    --   105-105     120-120  [hobbit]
+Kleetus Jomes, the slack-jawed hobbit yokel     5   14k G-x--x    --   110-110     325-325  [hobbit]
+A muddy pig                                     6   14k N-----    --   121-126       5-10   [animal]
+A small black cow                               6   24k N-x---    --   127-134       4-6    [animal]
+A small brown cow                               6   24k N-x---    --   132-135       4-7    [animal]
+A hobbit commoner (smiles)                      7   45k G-x---    --   152-155     343-387  [hobbit]
+A hobbit commoner (whistles)                    7   45k G-x---    --   152-155     343-387  [hobbit]
+A hobbit shopper                                7   38k G-x---    --   143-145     593-613  [hobbit]
+A hobbit vendor                                 7   42k G-x--x    --   140-143     746-754  [hobbit]
+A little black bull                             7   43k N-x---    --   146-150       4-7    [animal]
+A hobbit father                                 8   66k G-----    --   162-165     605-644  [hobbit]
+A hobbit mother                                 8   66k G-----    --   155-165     578-639  [hobbit]
+An old grandfather hobbit                       8   66k G-----    --   157-163     601-624  [hobbit], sitting
+An old grandmother hobbit                       8   66k G-----    --   156-163     619-638  [hobbit], sitting
+A baker's apprentice                           10  114k G-----    --   204-206     878-909  [hobbit]
+A bowyer's apprentice                          10  114k G-----    --   201-204     877-906  [hobbit]
+A fletcher's apprentice                        10  114k G-----    --   200-204     887-921  [hobbit]
+A hobbit worshipper                            10  118k Gx----    --   201-210     876-910  [hobbit], sitting
+A miller's apprentice                          10  114k G-----    --   204-206     891-908  [hobbit]
+A tanner's apprentice                          10  114k G-----    --   205-214     888-919  [hobbit]
+Amos Jakobson, the son of Jakob Jakobson       10  118k G-----    --   200-200     800-800  [hobbit]
+Ezra Jakobson, the son of Jakob Jakobson       10  118k G-----    --   200-200     800-800  [hobbit]
+Jakob Jakobson, the barn raising hobbit        10  118k G--x-x    --   215-215    1000-1000 [hobbit]
+Jebediah Jakobson, the son of Jakob Jakobson   10  118k G-----    --   200-200     800-800  [hobbit]
+A hobbit druidess                              12  168k Nx----    --   240-240    2000-1000 [hobbit], cure light
+A hobbit guard                                 12  162k G----x    --   245-254     655-940  [hobbit], bash, kick, headbang, aware
+Bobbob Dillum, the blabbering hobbit miller    12  163k G----x    --   245-245    1500-1500 [hobbit], aware
+Bupkus Goggins, the rheumatic hobbit bowyer    12  163k G----x    --   245-245    1500-1500 [hobbit]
+Cobble van Daleskipper, the hobbit tanner      12  163k G----x    --   259-259    1500-1500 [hobbit]
+Durrow Linstones, the hobbit bard              12  163k G----x    --   245-245    1500-1500 [hobbit], aware
+Kia Softfoot, the hobbit breadmistress         12  163k G----x    --   245-245    1500-1500 [hobbit]
+Wilbur Bonkfist, the irascible hobbit fletcher 12  163k G----x    --   245-245    1500-1500 [hobbit]
+Woodwob Greenheart, the hobbit animist         14  300k Nx-x-x    --   280-280    3000-3000 [hobbit]
+Mulwig Knotheels, the retired hobbit wayfarer  15       G--       ---                       quest master, nofight-room
+Theodorus Tubblewick, the Shiriff of Humblin   15  345k G--x-x    --   333-333    4000-4000 [hobbit], sitting
+The Killer Bee                                 51 1530k E--xx-    --  1897-1909      0-0    [insect]

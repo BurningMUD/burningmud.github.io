@@ -1,0 +1,39 @@
+# Dragon Cult (24): 5-20, Sandman  (Ofcol: 2e2n)
+#
+#           o - o     o   o    /-----> o
+#               |     |   |   +       /
+#           o - o ->/-o - o + o      /
+#               |  /          |     |
+#          o <- o ----- D -+- o     |
+#         /            x|           |
+#         \           / o           |
+#          \          \_|_____      |
+#           \           |     \     |
+#            \          o     |     |
+#             \         +     |     |
+#             |         X   o+|-o   |
+#             |         |   | | +   V
+#     o       |     o       | / o + o
+#     +       v    x|       |/
+#     o       o  NM o - o - U - o + o
+#     |       +   |         |
+#     o + o - o - o - o     o
+#
+* Whole area is very bright
+
+Dragon Cult:             Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+A virgin sacrifice         3  2400 N----     --    56-65        0-0     [human]
+The receptionist           4  7000 N----     --    77-78       31-62    [human]
+Marie                      5   12k G-xx-     --    96-105     245-279   [human]
+Bob                        8   60k E-xx-     --   156-163     802-842   [human]
+Jim                        8   60k E-xx-     --   158-164     774-830   [human]
+Gale                       9   90k E-xx-x    --   178-185     863-929   [human]
+Fred                      10  110k E-xx-x    --   191-202     101-101   [human]
+The minor priest          12  156k E-xx-x    --   244-250     101-101   [human]
+The minor priest (bath)   12  156k E-xx-x    --   233-243     101-101   [human]
+The robed priest          14  210k E-xx-x    GNE  273-282     101-101   [human], magic missile, burning hands, cure critic, blind
+The Zombie                15  255k E--x      GNE  304-308     101-101   [undead]
+The draconian knight      16  304k E--x-x    GNE  335-339     101-101   [magical]
+The High Priestess        18  414k E-xx-x    GNE  385-392     101-101   [magical], magic missile, curse, blindness
+The Torturer              18  414k E--x-x    GNE  382-395     101-101   [human]
+The Black Dragon Wyrmling 23 1035k Exxx-x    GNE  537-543   10001-10001 [dragon]

@@ -1,0 +1,138 @@
+; Script to look at a mob during a fight and report his condition. The bonus
+; with this script is that there is (almost) no delay between when you get the
+; information and when you deliver the information.
+; Any commands given (by you or by your triggers) between your glance-command
+; and the return of the mob's condition will be put on hold and sent after you
+; have received the condition line.
+;
+; Bonus: No more embarrassing "You tell the group, 'Mob is in awful
+; condition!'" after the mob has died - When you report the mob's condition,
+; he will be in that condition.
+; Drawback: If you mess this script up, you may be rendered totally immobile,
+; since the script catches any command you or your script tries to send (there
+; is a safety vent that kicks in if more than 5 commands have been put on
+; hold).
+;
+; Usage: xx <mob>     Make a single report on mob's condition
+;        xxx <mob>    Report everytime the mob's condition changes.
+
+/alias holdcommands \
+	/purge sendhook%; \
+	/def -F -p0 -h"SEND *" sendhook = \
+		/set heldcommands=$$[{heldcommands}];%%{*}%%; \
+		/set commandcounter=$$[{commandcounter} + 1]%%; \
+		/if (commandcounter > 5) \
+			releasecommands%%; \
+		/endif%; \
+	/set heldcommands=%; \
+	/set commandcounter=0
+
+/alias releasecommands \
+	/purge sendhook%; \
+	/def -F -p0 -h"SEND *" sendhook = \
+		/send %%{*}%; \
+	/set promptcounter -1%; \
+	/if (heldcommands !~ '') \
+		/tfshow EVAL %{heldcommands}%; \
+	/endif%; \
+	%{heldcommands}%; \
+	/set heldcommands=
+
+/alias bypasscommands \
+	/send %*
+
+/alias xxx \
+	/set repeatcheck 1%; \
+	xx %*
+
+/alias xx \
+	glan %*%; \
+	holdcommands%; \
+	/def -F -mregexp -t"([^ ]+) is in excellent condition\." glantrig1 = \
+		/if (!repeatcheck | repeatcheckinfo !~ 'excellent') \
+			bypasscommands emote - %%{P1} has: [&+Y##########&+N] &+YExcellent! &+N(100\\\%)%%; \
+		/endif%%; \
+		releasecommands%%; \
+		/purge glantrig*%%; \
+		/if (repeatcheck) \
+			/set repeatcheckinfo excellent%%; \
+			xx %*%%; \
+		/endif%; \
+	/def -F -mregexp -t"([^ ]+) has a few scratches\." glantrig2 = \
+		/if (!repeatcheck | repeatcheckinfo !~ 'few') \
+			bypasscommands emote - %%{P1} has: [&+g#########-&+N] &+gFew scratches. &+N(90-99\\\%)%%; \
+		/endif%%; \
+		releasecommands%%; \
+		/purge glantrig*%%; \
+		/if (repeatcheck) \
+			/set repeatcheckinfo few%%; \
+			xx %*%%; \
+		/endif%; \
+	/def -F -mregexp -t"([^ ]+) has some small wounds and bruises\." glantrig3 = \
+		/if (!repeatcheck | repeatcheckinfo !~ 'small') \
+			bypasscommands emote - %%{P1} has: [&+y#######-- &+N] &+ySmall wounds. &+N(75-89\\\%)%%; \
+		/endif%%; \
+		releasecommands%%; \
+		/purge glantrig*%%; \
+		/if (repeatcheck) \
+			/set repeatcheckinfo small%%; \
+			xx %*%%; \
+		/endif%; \
+	/def -F -mregexp -t"([^ ]+) has quite a few wounds\." glantrig4 = \
+		/if (!repeatcheck | repeatcheckinfo !~ 'quite') \
+			bypasscommands emote - %%{P1} has: [#####---  ] Quite a few. (50-74\\\%)%%; \
+		/endif%%; \
+		releasecommands%%; \
+		/purge glantrig*%%; \
+		/if (repeatcheck) \
+			/set repeatcheckinfo quite%%; \
+			xx %*%%; \
+		/endif%; \
+	/def -F -mregexp -t"([^ ]+) has some big nasty wounds and scratches\." glantrig5 = \
+		/if (!repeatcheck | repeatcheckinfo !~ 'big') \
+			bypasscommands emote - %%{P1} is: [##---     ] Big nasty. (30-49\\\%)%%; \
+		/endif%%; \
+		releasecommands%%; \
+		/purge glantrig*%%; \
+		/if (repeatcheck) \
+			/set repeatcheckinfo big%%; \
+			xx %*%%; \
+		/endif%; \
+	/def -F -mregexp -t"([^ ]+) looks pretty hurt\." glantrig6 = \
+		/if (!repeatcheck | repeatcheckinfo !~ 'pretty') \
+			bypasscommands emote - %%{P1} is: [&+R#--       &+N] &+RPretty hurt. &+N(15-29\\\%)%%; \
+		/endif%%; \
+		releasecommands%%; \
+		/purge glantrig*%%; \
+		/if (repeatcheck) \
+			/set repeatcheckinfo pretty%%; \
+			xx %*%%; \
+		/endif%; \
+	/def -F -mregexp -t"([^ ]+) is in awful condition\." glantrig7 = \
+		/if (!repeatcheck | repeatcheckinfo !~ 'awful') \
+			bypasscommands emote - %%{P1} is: [&+r--        &+N] &+rAwful! &+N(0-14\\\%)%%; \
+		/endif%%; \
+		releasecommands%%; \
+		/purge glantrig*%%; \
+		/if (repeatcheck) \
+			/set repeatcheckinfo awful%%; \
+			xx %*%%; \
+		/endif%; \
+	/def -F -mregexp -t"([^ ]+) is bleeding awfully from big wounds\." glantrig8 = \
+		/if (!repeatcheck | repeatcheckinfo !~ 'incap') \
+			bypasscommands emote - %%{P1} has: &+RINCAPACITATED!!!&+N (-\\\%)%%; \
+		/endif%%; \
+		releasecommands%%; \
+		/purge glantrig*%%; \
+		/if (repeatcheck) \
+			/set repeatcheckinfo incap%%; \
+			xx %*%%; \
+		/endif%; \
+	/def -F -msimple -t"No-one by that name here." glantrig9 = \
+		releasecommands%%; \
+		/purge glantrig*%%; \
+		/if (repeatcheck) \
+;			bypasscommands emote - %%{P1} has: &+RGone!&+N%%; \
+			/set repeatcheckinfo gone%%; \
+			/set repeatcheck 0%%; \
+		/endif

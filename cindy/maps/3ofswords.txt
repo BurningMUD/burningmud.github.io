@@ -1,0 +1,55 @@
+# Three of Swords (114): 5-30, CAW/Stryder  (Karandras: 10e3ne)
+#
+#         RIP
+#          |
+#          o
+#          |
+# Agland.  o
+#    |    /
+#    |   o
+#    |  /|
+#    | o |
+#    |/  o     -X-o
+#    o  /        /
+#      o        o-o-o-o-o          o+o     o
+#      |                |          |      /
+#      o--o--o--o       o      o M-o Inn-o
+#              /        |      |   |     +
+#             o----o----X--o-o-o-o-o-----o
+#            /          |      | | |
+#         o-o     o     |     Gs o o
+#                 |     |          +
+#                 o-o-o-o  Duwick  o
+#                     |       +
+#                   o-o o-o-o o-o
+#                   |   |   |   |
+#                   o-o-o o-o-o o
+#                       |     | |
+#                       o o-o o-o
+#                       | | |
+#                       o-o o o-o
+#                           | |
+#                           o-o
+#
+* Shops open at 8 am and close at 11 pm.
+* Hmm... nothing special here
+
+Three of Swords:         Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+The Horse                  5   12k G----     --    96-104       1-1    [---]
+A waiter                   5   12k N-x--     --    99-104     501-501  [human]
+A waitress                 5   12k N-x---    --    96-105     501-501  [human]
+The slave                  6   21k G----     --   117-125       1-1    [human]
+The Farmer                 7   35k G-x---    --   136-145    1001-1001 [human], flees
+The innkeeper             10  109k G-----    --   201-208    2001-2001 [human]
+The hunter                11  132k G-x---    --   212-220    1201-1201 [human]
+The Receptionist          12       G--                                 no-attack
+A bartender               15       G-x                                 no-attack
+Salle                     15  254k E-x---    --   298-310    6501-6501 [human], bash, headbang
+The bandit                16  304k E-x---    --   326-335    1001-1001 [human], flees
+The Cyclops               16  304k E-----    GN   329-336    4001-4001 [giant], bash, kick, headbang
+The bandit guard          18  413k E-----    GNE  381-396    2401-2401 [human]
+The Cowgirl               20  600k G--x--    --   443-451    3001-3001 [human], hide
+The Farmer's Wife         20       G--       ---                       shopkeeper
+The Storekeeper           20       G--       ---                       shopkeeper
+Duwick                    22  880k E-x---    --   500-525    4001-4001 [human], backstab
+Aglandiir                 30 3600k Gx-x-x    GNE  739-755    5001-5001 [dragon], gas breath

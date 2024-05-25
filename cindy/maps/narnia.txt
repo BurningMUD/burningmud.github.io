@@ -1,0 +1,83 @@
+# Narnia (530): 40-99, Gothie (?/>1.7h)  (Crossroad: 2nen2en3en2en2es2es2en3enwnw3nw6ne2ne2ne2nw3n)
+* FIND OUT: An old king of Narnia       Xp, hp (approx), gold
+* FIND OUT: The Demon Queen             Xp, hp (approx), gold
+* FIND OUT: The white Witch             Xp, hp, hp, gold
+* FIND OUT: The great Demon King        Xp, hp (approx), demon?, unlife damage?, resist unlife?/poison?
+* FIND OUT: Aslan - The great Lion      hp
+#
+#                                         S S S S S     M M M
+#                                         | | | | |     | | |
+#                                       o-o-o-o-o-o-o-o-o-o-o-o
+#                                       | | | | | |     | | | |
+#                                       o S S S S S     M M M |
+#                                       |                     |
+#             o                         o                   M-o-M
+#             +                         |                     |
+#             o       o+o               o                     o   L   L
+#             |       |                 |                     |   |   |
+#             o--o-o--o                 o       o-o-o         o-o-o-o-o-o
+#             |       |                 |       | | |           | |   | |
+#         o-o-o       o-o-o-o-o-o-o-o-o-o-o-o+o+o-o-o-Witch     L L   L |
+#     Hp   *          |         |               | | |                   |
+#   o reg   o o-o-o-o o     o-o-o-o-o           o-o-o          o--o-o-o-o-o
+#   +  +   /  | | | | |     | | | | |                          |  | |     |
+#   o--o--o   o-o-o-o o     o-o-o-o-o                          o  G G  o--o-o
+#  /          | | | | |     | | | | |                          |       |    |
+# o-o-o-o+o   o-o-o-o-o     o-o-o-o-o                          o-o-o   |King|
+#       |     | | | | |     | | | | |                              |   | ^  |
+#     o-o+o   o-o-o-o o-o   o-o-o-o-o                          o-o-o-G | |  |
+#       +     | | | |   |                                      |       o-o--o
+#       X     o-o-o-o o-o                                    Queen
+#       |             |
+#     - o             o
+#       |             |
+#                     o
+#                     |
+#                  Pegasus
+#                     |
+#                     o
+#                     +
+#                     o         o o o o
+#                     +         + + + +
+#                     o-o     o-o-o-o-o
+#                     | |     |
+#                     o-o-o-o-o---o---o
+#                     | | |   |   |   |
+#                     o-o-o   o-Aslan-o
+#                       |     |   |   |
+#                       o     o---o---o
+#
+* S: Small-sized demon,    M: Medium-sized demon
+* L: Large-sized demon,    G: Giant-sized demon
+* House and castles are very bright.
+* Demon king's room is norecall, but has a pile of BONES you can enter if not
+*   fighting, to recall to OC. So kill him or die! (or use sneak/rescue/...)
+* Queen's room is noflee but recallable
+* Many npc:s here have insane amounts of hp!
+
+Narnia:                             Lvl    Xp ASWIDMX # agg      Hp         Gold      Special
+A servant                             3   42k N-x---    --    631-642       43-51     [human], flees
+The old lady                          3   45k N-x---    --    731-733      111-118    [human]
+Mr. Tumnuz - The Faun                10  750k N-----    --   1003-1042    9286-9530   [human]
+Mrs. Beaver                          16  880k G-----    --    878-946      232-256    [animal], flees
+Mr. Beaver                           24 4007k G-----    --   1463-1484     338-349    [animal], flees
+A Dryad                              30 3277k N-----    --   1407-1496       1-1      [elemental]
+The old professor                    30 4500k G-----    --    729-750      193-199    [human], resist mental, no-charm
+A small-sized demon                  55   47M E--xx     GNE  4630-4743       1-1      [demon], unlife damage, special-standing before being in battle - standing after
+A little man with a red hat          55   68M E--x x    G-  12794-13050   1565-1859   [dwarf]
+A medium-sized demon                 60   61M E--xx     GNE  4554-4570       1-1      [demon], unlife damage, special-standing before being in battle - standing after
+A spytree                            60   61M Ex-xxx    --   4592-4903       1-1      [animal], invis
+Queen Susan                          60  122M G--x -    --  14568-14823 197013-197961 [human]
+Queen Lucy                           63  159M G--x -    --  15224-15966 197636-199671 [human]
+A large-sized demon                  65  117M E--xx     GNE  5094-5135       1-1      [demon], unlife damage, special-standing before being in battle - standing after
+King Peter                           65  228M G--x -    --  18824-19164  92520-98144  [human]
+The Pegasus                          66  429M Gx-xxx    --- 19602-21150   1166-1285   [mythical], standing before being in battle - flying after
+A giant-sized demon                  70  147M Ex-x      GNE  8373-8468       1-1      [demon], unlife damage, powerword kill, special-standing before being in battle - standing after
+Prince Caspian                       70  268M Gxxxx-    --  24241-24795 204746-206710 [human]
+Maugrim - Chief of the Secret Police 80  617M Ex-xx     GNE 19223-19854 149427-149785 INFO, [canine], vuln fire, immune dark
+King Edmund                          90 1387M N--x -    --  50108-50340  85757-87533f [human]
+An old king of Narnia               100       Gx-x -    --              674703        INFO, [human], invis, immune blind, NOT immune dark, powerheal, 1-1 spells
+The Demon Queen                     100       Ex-x      GNE             325805        INFO, [demon], unlife damage, immune dark, dodge 15/52=29%, powerheal, 2-2 spells, 6-7 attacks, 180/70 dam per attack, negate sanc 6/68 times (9%), thac-40 11 or better, AC -66, special-standing before being in battle - standing after, room is noflee but recallable
+The white Witch                     100       Ex-x      GN              999803        INFO, [human], vuln light, immune dark, force field, hell storm, powerword kill, 2-2 spells
+The great Demon King                100       Ex-x      GN              327870-329470 INFO, [demon?], unlife damage?, vuln pure/light/iron, immune fire, resist dark/unlife?/poison?, parry, area powerword blind, powerheal, 1-2 spells, special-standing before being in battle - standing after?, room is noexit/norecall
+Aslan - The great Lion              100 4602M G--x x    --- 85363.75    220269-220481 INFO, [mythical], special-roar (70), 0-1 specials, 7-7 attacks, 400(8%)/200(11%)/70(67%)/35(14%) dam per attack, negate sanc 32/144 times (22%), thac-40 11 or better, AC -64

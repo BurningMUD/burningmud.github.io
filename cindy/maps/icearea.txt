@@ -1,0 +1,49 @@
+# Ice Area (161): 30-50, Starlet  (Sundhaven: 2e4n2w2ndne2sesese3nene2n)
+#
+#            Ice
+#           Dragon
+#             |
+# o           o
+# |           |
+# o       o - o - o - o
+# |       |   |   |
+# o - o - o - o - o          key
+# |   |                       |
+# o   o                   o - o
+#     |                   |
+#     o       o - o - o - o
+#     |       |           |
+#     o -key+ o-o-o       |                   key o
+#     |       |   |       |                     |/|
+#     X       |   o o-Pri |        key      o   o o
+#     |       |    \|     |         |      /|   | |
+#     o - o   |   o-o-o   o     o - o-o - o |   o |
+#         |   o-o |   |   |     |           |   | |
+#         o   | | o-o-o   | o - o - o   o - o - o |     o-o+o+o+o+o
+#         |   | o   |     |     +       |         |    /          |
+#         o   |   Prince  |     o       |     o - o-o-o       o-King &
+#         |   |           |     |       |     |                 Queen
+#             o - o - o - o-o-o-o       o - o o -key
+#             |                         |   |/|
+#             o                        key  o o
+#
+* The mobs here are not vulnerable to fire nor resistant to ice.
+
+Ice Area:                Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+A Royal Servant           30 1500k N-----    --   717-717   10056-10059	[---]
+A Wise Man                40   11M Nx-x-x    --  1510-1522  20024-20043 [human], sitting, fireball, meteor blast
+An Ice Lizard Guard       40   12M G--x-x    --  1211-1215  10025-10031 [---], protector
+The Ice Lizard Prince     40   20M Nx-x-x    --  1712-1713  20047-20059 [---], blindness
+The Ice Sphinx            40   13M Nx-x-x    GN  1613-1617  20023-20026 [bird], special-earthquake
+The Mastadon              40   13M N-xx-x    GN  1326-1328   7038-7038  [---], vuln fire, hide, blindness
+A Frost Giant             45   20M N-xx-x    --  2518-2519   5010-5014  [giant], mass pain
+A Hippogriff              45   23M E--x-x    GN  1716-1719  10018-10026 [bird], poison
+An Ice Hulk               45   23M E--x-x    GN  1718-1718  10024-10027 [magical], poison
+An Ice Minotaur           45   20M E--x-x    GN  1713-1718  10023-10026 [---]
+The Ice Lizard Princess   45   18M Nx-x-x    --  1719-1721  20052-20053 [---], blindness
+A Frost Ogre              50   25M E--x-x    GN  1811-1820  10027-10031 [lugroki], poison, special-tail-strike
+The Ancient White Dragon  50   30M Ex-x-x    GN  2011-2015  30040-30055 [dragon], gas breath
+The Remorhaz              55   74M E--xx     GN  3517-3519  10031-10038 [dragon], poison
+The Ancient Ice Dragon    60   96M Ex-xxx    GN  4017-4017  30054-30071 [dragon], gas breath
+The Ice Lizard Queen      65  110M Ex-xx     GN  3312-3319  20044-20071 [---], mass pain
+The Ice Lizard King       70  280M Ex-xx     GN  8055-8055  20047-20067 [---], mass pain

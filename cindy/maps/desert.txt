@@ -1,0 +1,79 @@
+# The Great Eastern Desert (50): 10-50, Rorschach  (Thalos: e)
+* FIND OUT: The rabid camel          hp
+#
+#          o o
+#         /|/|
+#        / r-|--o
+#       /    |  |                                    RIP
+#   Draco-   |  o-o-o                  __         W  /
+#    lich    |      |                 /  \        ^ /
+#    /       |      o                 |  |        |/
+#   V        |      |              4<-5--/     6<-35->29
+# Drow    -o-o-o-o--o-o-o->X          |           |
+# City         | |  |                 v           v
+#              o-o  |                 6           24
+#              |    | o
+#              o-o  |/|
+#                |  o |              ____    _ 
+#                o----/             /    \  / \
+#                                   |    |  | |
+#        /--------------------------|---11--|-30-\
+#        |          o-o             |    |  | |  |
+#        |          |          /---10-\  v  \_/  |
+#        |       4<-o-o        |    | /  27      |  15
+#      /-26->35     |   :Ok:   |    |/           |  ^
+#      | |       2<-N-o  |     |    |            |  |
+#      | v   9      |    |     |27<-12-----------|--15
+#      | 26  ^   2<-O----W->28 |    |            |  |
+#      |     |      |    |     |    v   ->r      \--14
+#      \-----8->27  v    |     |   13  /           /|
+#   O        |      6    |     |      o o--o-B-o--o |
+#   ^     6<-6-----------/     |      | |           |
+#   |        |                 |      o-o /---------13-22-[CoS]
+#   4->26    v                 |          |         |
+#   |        33               _|_      /--29->16    |
+#   2->5                 W   / | \     |  |         |
+#   |       _____        ^   \-9-/     |  v   18    |
+# ->X->W   /     \       |/    |       |  18  ^     |
+#   |      |  24 |  31<-27->29 |       |      |     |
+#   3->33  |  ^  |       |     |       |  20<-18---16
+#   |      |  |  |  23<-28-----24->24  |      |     |
+#   21-----33-23-/       |     |       | :Th:-19->17|
+#   |      |  |          v     v       |      |     |
+#   32->23 |  v         28     13  28<-20->17 |     |
+#   |      |  20                       |      |     |
+#   |      \---------------------------31-----|-----17-:Py:
+#   \__________________________________|______/     |
+#                                      v            v
+#                                      19           17
+#
+* W: Worm
+* O: Oasis
+* N: Nomad camp (whole camp is nomag)
+* B: Brass Dragon (room is nomag but fleeable)
+* 27:up leads to 27
+* Py: pyramids
+* Ok: Old kingdom
+* Th: Ruins of Thalos
+* Miloraipath, starting and ending at Thalos obelisk (55 steps):
+*   eenne(w)wswswenwnnwsnnnseswwwe(nw)wew(s)s(ew)ne(w)ne(w)ne(wswss)sss(sw)
+
+Great Eastern Desert:      Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+The slave                    3  3000 G-----    --    59-71        0-0     [human], flees
+The small scorpion           3  3000 E-x---    --    58-63        0-0     [insect]
+The coral snake              4  7000 E-x---    --    76-87        0-0     [snake]
+The dark dwarf               5   14k E-xx--    GN    83-94      234-257   [dwarf]
+The dervish (raggity)        5   12k G-x---    --    94-105     207-307   [human], hide
+The myconoid                 5   12k G-xx-x    --   104-113     188-212   [---], flees
+The rabid camel              5   14k E----     GN   102           0-0     [animal]
+The dustdigger               7   38k E-----    GN   135-145     640-1066  [magical]
+The dervish (large)          8   66k G-x---    GN   172-191     726-835   [human], hide
+The drider                   8   69k E-xx--    GN   161-162     763-832   [spider]
+The nomad warrior           10   70k G--  -    --   107-110     177-504   [human]
+The nomad commander         12  162k G--- x    --  ~150-~151    649-869   [human]
+The nomad leader            14  210k G----x    --  ~175-~176   1001-1001  [human], flees
+The myconoid shaman         25 3000k Gx-x--    --  1552-1703    475-2558  [---], flees
+The brass dragon            35 7000k Gx-x-x    -- ~1161-~1215 29945-32118 [dragon], room is nomag, gas breath
+The giant, purple sand worm 46   23M E-----    GN  1972-2005   6750-8822  [magical]
+The dracolich               50   29M Ex-xxx    GN  2523-2557   9505-13903 [dragon], special-drain
+An intrepid navigator      100       Nxx       ---                        no-attack, (ask navigator home). He never walks out of Desert and does not go down to Brass dragon or to the room east of Thalos obelisk. Starts above the Brass Dragon cave.

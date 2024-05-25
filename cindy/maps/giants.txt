@@ -1,0 +1,48 @@
+# The land of the giants (???): 40-100, Stryder  (Crossroad: 10s2e)
+* FIND OUT: What is the use of "some kindling"?
+#
+#                       o       o   o
+#                       |       |   |
+#                   o - o - o - o - o
+#                               |
+#                               o
+#                               |
+#                           o - o - o
+#                           |       |
+
+#            *      |           |   |   |
+#             \ o - o           o - o - o       o - o - o
+#              *|   |           |       |       |   |   |
+#       o - o-night o           o - o - o - o - o - o - o           o - NC
+#       |       |   |           |       |       |   |   |           |
+# - X - o       o - o           o       o       o - o - o       o - o - o
+#                   |           |       |                           |
+#                   o -WM   Gs- o - o - o - o - o - o - o - o - o - o
+#                   |   |       |                           |       |
+#                   o - o - o - o             o             o - o - o
+#                   |           |            /|
+#           o - o - o           |           o |   o
+#           |   |   |           |          /  |   |
+#           o - o - o - o - o   | o - o - o o-o - o - o
+#                   |   |   |   | |   |   |
+#                   o - o   o   | o - o - o
+#                   |       |   |/
+#                   o - o - o   o
+#
+* Shops open at 8 am and close at 7 pm
+* Vuln slay giant.
+
+Giants:                  Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+A valley giant            58   69M N-xxx-    --  3602-3604   4419-4771 [giant], kick
+A field giant             60   75M N-xxx-    --  4002-4002   4670-4945 [giant], bash
+A hill giant              61   77M N-xxx-    --  4401-4402   4627-4732 [giant], headbang
+A plains giant            62   90M N-xxx-    --  4803-4806   4924-5116 [giant]
+A mountain giant          63  100M N-xxx-    --  5202-5203   4810-5135 [giant]
+A lake giant              64  103M N-xxx-    --  5602-5604   5204-5275 [giant], headbang
+A forest giant            65  106M N-xxx-    --  6002-6003   4957-5489 [giant], headbang
+A cave giant              67  128M N-xxx-    --  6803-6804   5189-5644 [giant]
+A moss giant              68  157M N--xx-    --  7205-7206   5452-5498 [giant], bash
+A marsh giant             69  170M N--xx-    --  7602-7603   5356-5805 [giant], kick
+A night giant             70  211M N-xxx- 10 --  8003-8004   5566-5989 [giant], gas breath, appear at midnight and disappear at 5 am, ignore-cop
+Alcyoneus                 90 1800M Nxxxx-    -- 32005-32005  8130-8555 INFO, [giant], 21335 hp withered
+A giant shopkeeper       100       Nx-xx-    ---                       shopkeeper

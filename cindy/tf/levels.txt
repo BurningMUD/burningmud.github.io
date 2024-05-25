@@ -1,0 +1,97 @@
+;self  : Easy!  Very easy indeed!
+;player: Would you like to borrow a cross and a shovel?
+; < : Now where did that chicken go?\r\n", ch);
+;-9 : You could do it with a needle!\r\n", ch);
+;-8 : You could do it with a needle!\r\n", ch);
+;-7 : You could do it with a needle!\r\n", ch);
+;-6 : You could do it with a needle!\r\n", ch);
+;-5 : You could do it with a needle!\r\n", ch);
+;-4 : Easy 
+;-3 : Easy 
+;-2 : Easy 
+;-1 : Fairly easy.
+;===: The perfect match!
+; 1 : You would need some luck!
+; 2 : You would need a lot of luck!
+; 3 : You would need a lot of luck and great equipment!
+; 4 : Do you feel lucky, punk?
+; 5 : Do you feel lucky, punk?
+; 6 : Are you mad!?
+; 7 : Are you mad!?
+; 8 : Are you mad!?
+; 9 : Are you mad!?
+;10 : Are you mad!?
+;11 : You ARE mad
+;12 : You ARE mad
+;13 : You ARE mad
+;14 : You ARE mad
+;15 : You ARE mad
+;16 : Why don't you just lie down instead?
+;17 : Why don't you just lie down instead?
+;18 : Why don't you just lie down instead?
+;19 : Why don't you just lie down instead?
+;20 : Why don't you just lie down instead?
+;21 : What do you want your epitaph to say?!?
+;22 : What do you want your epitaph to say?!?
+;23 : What do you want your epitaph to say?!?
+;24 : What do you want your epitaph to say?!?
+;25 : What do you want your epitaph to say?!?
+;26 : Your epitaph will read: Here lies one dead and very dumb Diku-player.
+
+;Suggestion for (TinyFugue) triggers to make "consider" easier to understand:
+
+
+/def -F -mregexp -t"^    Level: ([0-9]+)     " lvltrig = /set mylevel %{P1}
+
+/def -F -msimple -t"Now where did that chicken go?" levelTrig1 = \
+	/if (mylevel = 11) \
+		/substitute -a -p Now where did that chicken go? @{hCyellow} (1)%; \
+	/else \
+		/substitute -a -p Now where did that chicken go? @{hCyellow} (1-$[mylevel -10])%; \
+	/endif
+/def -F -msimple -t"You could do it with a needle!" levelTrig2 = \
+	/if (mylevel = 6) \
+		/substitute -a -p You could do it with a needle! @{hCyellow} (1)%; \
+	/else %; \
+		/set minlevel=$[{mylevel} - 9]%; \
+		/if (minlevel < 1) \
+			/set minlevel 1%; \
+		/endif%; \
+		/substitute -a -p You could do it with a needle! @{hCyellow} ($[minlevel]-$[mylevel - 5])%; \
+	/endif
+/def -F -msimple -t"Easy." levelTrig3 = \
+	/if (mylevel = 3) \
+		/substitute -a -p Easy. @{hCyellow} (1)%; \
+	/elseif (mylevel = 4) \
+		/substitute -a -p Easy. @{hCyellow} (1-2)%; \
+	/else \
+		/substitute -a -p Easy. @{hCyellow} ($[mylevel - 4]-$[mylevel - 2])%; \
+	/endif
+/def -F -msimple -t"Fairly easy." levelTrig4 = \
+	/substitute -a -p Fairly easy. @{hCyellow} ($[mylevel - 1])
+/def -F -msimple -t"The perfect match!" levelTrig5 = \
+	/substitute -a -p The perfect match! @{hCyellow} ($[mylevel])
+/def -F -msimple -t"You would need some luck!" levelTrig6 = \
+	/substitute -a -p You would need some luck! @{hCyellow} ($[mylevel + 1])
+/def -F -msimple -t"You would need a lot of luck!" levelTrig7 = \
+	/substitute -a -p You would need a lot of luck! @{hCyellow} ($[mylevel + 2])
+/def -F -msimple -t"You would need a lot of luck and great equipment!" levelTrig8 = \
+	/substitute -a -p You would need a lot of luck and great equipment! @{hCyellow} ($[mylevel + 3])
+/def -F -msimple -t"Do you feel lucky, punk?" levelTrig9 = \
+	/substitute -a -p Do you feel lucky, punk? @{hCyellow} ($[mylevel + 4]-$[mylevel + 5])
+/def -F -msimple -t"Are you mad!?" levelTrig10 = \
+	/substitute -a -p Are you mad!? @{hCyellow} ($[mylevel + 6]-$[mylevel + 10])
+/def -F -msimple -t"You ARE mad!" levelTrig11 = \
+	/substitute -a -p You ARE mad! @{hCyellow} ($[mylevel + 11]-$[mylevel + 15])
+/def -F -msimple -t"Why don't you just lie down and pretend you're dead instead?" levelTrig12 = \
+	/substitute -a -p Why don't you just lie down and pretend you're dead instead? @{hCyellow} ($[mylevel + 16]-$[mylevel + 20])
+/def -F -msimple -t"What do you want your epitaph to say?!?" levelTrig13 = \
+	/substitute -a -p What do you want your epitaph to say? @{hCyellow} ($[mylevel + 21]-$[mylevel + 25])
+/def -F -msimple -t"Your epitaph will read: Here lies one dead and very dumb Diku-player." levelTrig14 = \
+	/substitute -a -p Your epitaph will read: Here lies one dead and very dumb Diku-player. @{hCyellow} ($[mylevel + 26]+)
+
+/def -F -msimple -t"Easy! Very easy indeed!" levelTrig15 = \
+	/substitute -a -p Easy! Very easy indeed! @{hCyellow} (self)
+/def -F -msimple -t"Would you like to borrow a cross and a shovel?" levelTrig16 = \
+	/substitute -a -p Would you like to borrow a cross and a shovel? @{hCyellow} (player)
+

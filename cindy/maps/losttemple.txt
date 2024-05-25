@@ -1,0 +1,35 @@
+# Lost Temple (134): 45-65, Unknown  (Kerofk: s7wsw)
+#
+#     o   o   o
+#     +   +   +
+# o + o - o - o + o - o
+#     +   +   +       |
+#     o   o   o   o + o + o
+#                     |
+#           X -   o + o + o   o
+#          /          |      x
+#         |       o + o --- o
+#         v           |
+#         o       o + o + o
+#        /            |
+#       |         o + o + o
+#       v             |
+#       o         o + o + o
+#      /              |
+#      | o        o   o   o - o
+#      v/         |   +   |   |
+#      o -------- o + o + o - o - Statue
+#                     +   |   |
+#                     o   o - o
+#                     |
+#                     o - o
+#
+* Min level 0/40
+* Whole area is very bright
+
+Lost Temple:             Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+A skeleton                53   47M E-xxx-    --  2552-2615   4468-4533 [skeleton], resist WEAPON, flees, bask, kick, headbang, shrugger
+A Skeletal Warrior        55   61M E-xx      GN  2922-3013   4966-5129 [skeleton], bash, kick, headbang, berserk
+Vine creeper              55   67M N---      GNE~3017-~3115  4927-5066 [botanic]
+A Doom Guard              61  104M Exxx -    G-- 3925-4037   5458-5650 [insubstantial], bash, kick, headbang, berserk
+The Statue                80  801M Nx-x x    --  9817-9820   7403-7519 [mythical], shrugger

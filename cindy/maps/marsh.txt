@@ -1,0 +1,36 @@
+# The Marsh (83): 40-50, Unknown  (Sundhaven: 6es2es3ese3ne)
+#
+#     - X -\
+#       |  |
+#          o
+#          |
+#          o - o - o - o
+#          |
+#          o - o - o - o
+#          |   |   |
+#       Slaad  o   |
+#          |   |   |
+#          o - o - o - o
+#                      |
+# Citadel of - o - o - o
+#   Order
+#
+* Some aggies, but none that can see invis or in darkness.
+
+Marsh:                   Lvl    Xp ASWIDMX # agg     Hp          Gold      Special
+A rather small beast      15  300k N-x---    --   411-419       500-500    [---], flees
+The Marsh Hag             26 3900k E-x---    --  1313-1316    10000-10000  [---]
+A gargoyle                28 8400k E-----    GN   710-715     10000-10000  [magical]
+A marsh wolf              28 6160k E-x---    GN   883-914         0-0      [canine]
+A shambling mound         33 6600k E-x---    --  1539-1552        0-0      [jelly]
+A green troll             34 5440k E-x---    GN  1622-1633     8000-8000   [troll]
+A large snake             35 7350k E-x---    --   919-928         0-0      [snake], flees
+A huge hairy beast        36   11M E-x---    GN  1573-1576    10000-10000  [---]
+A swamp troll             36 7200k E-----    GN  1146-1163    20000-20000  [troll]
+The monstrous snake       36 7200k E-x---    --   334-354     10000-10000  [snake], flees, hide
+A gnoll                   40   12M E-x---    --  1762-1762    25000-25000  [---]
+An ogre                   40   12M E-x---    GN  2509-2515    30000-30000  [lugroki]
+The Will-O-Wisp           40 8000k N-x---    --  1011-1016     3000-3000   [insubstantial], flees
+The Swamp Thing           44   18M E-----    GN  2051-2061    25000-25000  [magical]
+A marsh giant             45   36M E-x---    GN  3334-3408    20000-20000  [giant]
+A Death Slaad             75  525M E--xx-    -- 12339-12340  250159-250197 [demon]

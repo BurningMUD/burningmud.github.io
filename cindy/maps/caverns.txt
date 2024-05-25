@@ -1,0 +1,63 @@
+# The Varak-Ki Caverns (294): 40-75, Arcane/Fanth  (Karandras: 10e8n2wnen)
+#
+#                  Moria
+#                    |
+#                    o - o
+#       Combat       |
+# Boss  Master-o o - o - o - o
+#   |           \|   |       |
+#   o -- o - o - U - o - o   o - o
+#   |    |   |   |   |       |
+# Illu.  o   o - o - o       o - o
+#           /        |           |
+#      o - o - o     o   o - o - o - o - o
+#      |   |   |                 +
+#      o - o - o           WM-WM-WM-WM-WM
+#                          |  |  |  |  |
+#                      /-+-WM-WM-WM-WM-WM
+#                     o    |  |  |  |  |
+#                    /     WM-WM-WM-WM-WM
+#       o           o            +
+#       +          /     o - o - o - o - o
+#    Dragon - o - o                      |
+#                            o - o - o - o
+#                                |
+#                            o - o
+#                 War            |
+#                Leader - o  o - o
+#                         |  |
+#                     o - o  o
+#                        /   |
+#                       o -- o - o - o - o --- o
+#                       |    |   |   |         |
+#                   o - o -- o - o o o   o - Chief
+#                       |    |   |/|
+#                       o -- o - U-|-o - o
+#                      /           |
+#                     o            o - o
+#                                  |
+#                                  X
+#                                  |
+#
+* Min level 0/20
+* Whole area is very bright
+* Varak-Ki:s are lugrokis - vuln pure/light/fire. Gnomes are vuln large/superlarge.
+
+Varak-Ki Caverns:       Lvl    Xp ASWIDMX # agg      Hp        Gold     Special
+A Varak-Ki woman         15  360k E---x-    --    315-332       0-0     [lugroki], sitting
+A Rock Gnome             25 2000k G-xxx-    --    438-440    3004-3110  [---], vuln large/superlarge, resist mental/earth
+A Varak-Ki               25 1750k E-x---    GNE   423-431     128-144   [lugroki]
+A Varak-Ki guard         29 3480k E---x-    --    676-686     415-454   [lugroki]
+A Rock Gnome Guard       30 3900k G--xx-    --    740-749     4886-5131 [---], vuln large/superlarge, resist mental/earth
+A Varak-Ki Thug          30 4200k E-x--     GNE   673-687      40-61    [lugroki], hide, sneak, backstab
+A Varak-Ki warrior       33 6930k E-x---    GNE   777-779     750-802   [lugroki], bash, headbang, blocker
+A Rock Gnome Warikk      37   11M G-xxx-    --    981-983   12018-12018 [---], vuln large/superlarge, resist mental/earth, bash, kick, headbang
+A Varak-Ki Alchemist     40   16M E--xx-    GNE  1320-1322   3379-3525  [lugroki], meteor blast, meteor swarm, fireball, colour spray
+Chubby the gnome         45   27M G--xx-    --   1912-1928  32049-32053 [---], vuln large/superlarge, resist mental/earth
+A Varak-Ki Warleader     51   17M E--xx-    GNE  1907-1923   5781-5900  [lugroki], bash, kick, headbang
+A Gnome Illusionist      55   66M Gx-x -    --E  3390-3424  18001-18001 [---], vuln large/superlarge, resist mental/earth, invis, mass pain, powerword pain, powerheal, meteor blast, harm, powerheal, blindness, wither, confusion
+The Gnome combat master  62  115M Gx-x x    --E  5073-5109  29980-30489 [---], vuln large/superlarge, resist mental/earth, shrugger, bash, kick, headbang, no-summon
+The Gnome boss           64  102M Gx-x x    --E  5369-5421  40140-40251 INFO, [---], vuln large/superlarge, resist mental/earth, shrugger, bash, kick, headbang, no-summon
+The ogre shaman          74  318M Nxxx x    --  12400-13222 20028-20033 INFO, [magical], imp, mass pain, powerword pain, meteor blast
+The Varak-Ki Tribe Chief 78  469M Ex-x      GNE 17370-17469  3624-3874  INFO, [lugroki], 3-6 attacks, blocker, bash, kick, headbang
+The Great Black Dragon   91 1893M E--x      GN  51006-51169     0-0     INFO, [dragon], vuln ice, sitting, acid breath, 5-9 attacks

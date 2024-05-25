@@ -1,0 +1,30 @@
+# Holy Grove (89): 1-30, Alfa  (Ofcol: 3wn2wnw2nw2nwnwne)
+#
+#      o - o --- o
+#      |   |     |
+#    - X - o --- o
+#      |   |     |
+#      |   |     o
+#      |   |     +
+#      |   |     o
+#      |   |     +
+#      |   |     o + o
+#      |   |     |
+#      |   | o-o+o + o
+#      |   | + + +
+#      o - o-o+o+o
+#
+* Safe area. Lowbie.
+
+Holy Grove:              Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+A small bunny              2   200 N-x--     --    25-26        2-2    [animal]
+A harmless snake           4  2000 N-x---    --    50-59        2-2    [snake], flees
+A doe                      5  3000 N-x---    --    68-72        2-2    [animal], flees
+A deer                     6  4800 N-x--     --    87-92        2-2    [animal]
+A stag                     8   16k N-x--     --   121-129       2-2    [animal], flees
+A druid                   10   50k G-xx-     --   134-174      50-50   [human]
+A druidess                10   50k G-xx--    --   146-158      50-50   [human], flees
+An elder druid            13  195k G-x---    --   199-243      50-50   [human], flees
+An elder druidess         13  195k G-x---    --   186-223      50-50   [human], flees
+The Hierophant (hollies)  20  600k Gxxx--    --   451-509      50-50   [human], +20 starthp, flees
+The Hierophant (ivy)      20  700k Gxxx--    --   475-530      50-50   [human], +20 starthp, flees

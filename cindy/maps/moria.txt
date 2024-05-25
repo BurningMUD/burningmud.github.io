@@ -1,0 +1,77 @@
+# Moria (levels 1/2) & Moria (levels 3/4) (40 & 41): 5-20, DikuMUD (?/never)  (Karandras: 10e3n)
+#
+#                                                   OC
+#                                                    |
+#                                      Wyvern  - o - o     Goblik
+#                                    Waterfalls      |       |
+#                                                    o - o - o
+#                                                    |
+#                                                    o
+#                                                    |
+#                                        o - o - o - o               o
+#                                                    |               |
+#                               Varak-Ki             o - o - o - o - o - RIP
+#                               Caverns              |           |
+# /------- o                        |                o        Varak-Ki
+# |        |                        |                |        Caverns
+# |    o - o -------- o ------- o - o     snake      o - Rand's
+# |   /                         |           |        |   Tower
+# |   | o ------ o ----- o      |           o        o
+# |   | |               /       |           |        |
+# |   | |              v        |       o - o ------ o
+# |   | |  o - o - o-o-o        |       |   |  z     |
+# |   | |      |                |       o   o  ^     o
+# |   | |      o - o            |       |   |  |    /
+# |   | |      |   |            o - o - o <-o  o - o
+# |   | |      o - o - o                |      ^
+# |   | |      |       |                o      |
+# |   | |      |       o -- o -- o - o  |      |
+# |  /  |      |       |         ^  /   o      |
+# | o --|----- o <-----|-\       | /    |      \_____
+# |     |              | |       | |    o            \
+# |     |              o o       | |    |            |
+# |     |              | |       | |    o            |
+# |     o ---- z - o   o o<-o<-o-o |    |   Three    |
+# |            |       |       | | |    X --- of     |
+# |            o       o ----- o-o |    |   Swords   |
+# |            |                   v                 |
+# \--> o - o - o <---------------- o ----------------/
+#              |                   ^                 |
+#              |                   |                 |
+#              o ----------------> o --------------- o
+#                                  |
+#                              o - o
+#                              |   |
+#                              o - o - o - o
+#                                      |
+#                                      o
+#
+* Area is indoors but not very bright
+* lowbie-area with many aggressive mobs. Thief steals money!
+
+Moria:                 Lvl    Xp ASWIDMX # agg     Hp        Gold       Special
+The centipede (small)    3  3000 G-----    --    58-66        1-1       [insect]
+A happy little bird      3     1 G----     --     1-1         1-1       [bird], +1 starthp
+The kobold (ugly)        4  7000 E-x--     --    81-81      101-101     [---]
+The rabbit               4       N-x--      -    21-25      101-101     [animal]
+The centipede (white)    5   12k E-----    --   105-111       0-0       [insect]
+The fox                  5       N-x--      -    60-61      101-101     [animal]
+The mountain lion        5   14k E-x---    GN    99-114       0-0       [feline]
+The orc (kill)           5   14k E-x--     GN    93-94      245-284     [lugroki]
+A centipede              6   24k G-----    --   115-130       0-0       [insect]
+The hobgoblin (small)    6   24k E-x---    --   118-126     388-422     [lugroki]
+The green snake          7   35k E- --     --   130-140       0-0       [snake]
+The kobold (green)       7   39k E-x---    GN   132-142     591-604     [---]
+The orc (mean)           7   35k E-x---    --   148-149     585-624     [lugroki]
+The warrior (standing)   7   39k E-x--x    GN   132-144     582-631     [human]
+The orc (eat)            8   66k E-x---    GN   162-167     758-771     [lugroki]
+The Thief                8   65k G----x    --   153-144     753-780     [human], no-charm, thief
+The warrior (grin)       9   99k E-x--x    GN   178-181     922-956     [human]
+The hobgoblin (large)   10  100k E-x---    --   122-124     301-301     [lugroki]
+The snake (brown)       10  100k E-----    GN    68-69        1-1       [snake]
+The snake (guardian)    10   89k E-----    GN    77-95        1-1       [snake]
+The snake (dreadful)    11  131k E--x--    GN    70-75        1-1       [snake]
+The troll               12  144k E-----    GN   112-120     501-502     [troll]
+The warrior (preparing) 12  143k E-x--     GN    97-107    1001-1419    [human]
+The Mage                13  220k E-xx-x    --   206-207     449-499     [human], magic missile, lightning bolt, burning hands, blindness
+The hill giant          23 1758k N-x---    --  1065-1069   2009-2018    [giant]

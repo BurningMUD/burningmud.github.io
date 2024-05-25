@@ -1,0 +1,26 @@
+# HAON-DOR-LIGHT (Lumberjack Forest) (60):  (Karandras: 10wn3wswswn6w)
+* FIND OUT: The fallow deer       [animal?], vuln gas?
+#
+# Haon-
+#  Dor-o-C-X-o-o-
+#      |   |
+#      o   o o
+#      |   | +   Lumberjack
+#      o-o-o-o-S
+#        |   |     Forest
+#        o-o-o-o
+#        |     |
+#      o-o-o o o
+#          | | |
+#          o-o-o
+#
+* Small, safe & low-level
+
+Lumberjack Forest:          Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+The cute rabbit               1   200 N-x---    --    14-17        0-0     [animal]
+The brown fox                 2  1000 E-x---    --    30-36        0-0     [animal]
+The fallow deer               2  1000 G--x--    --    36-39        0-0     [animal]
+John the Lumberjack           5  5000 G-x--x    --    95-104     247-263   [human]
+The brown bear                8   66k E-x---    --   158-161       0-0     [animal], flees
+Phorius Gobee               100       N-x       ---                        questmaster, no-attack, sneak, ignore-cop, no-where
+Billy, the lumberjack's son 100       N--       ---                        shopkeeper

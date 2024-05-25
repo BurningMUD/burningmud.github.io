@@ -1,0 +1,117 @@
+# Pixie Forest (20): 1-8, Trandilar (?/10.5-13.5min)  (Karandras: 7n)
+#
+#                             /-Queen
+#                             |   |
+#                             o---o---\
+#                                     |
+#                             /-------o  o-----yaai----o
+#                             |       |  |            /|
+#                         /---o---\   |  |           o |
+#                         |   |   |   |  o           | |
+#                         o---o---o---/  |     o--\  o |
+#                             |          |     |  |    |
+#                       o----Oak---------o     o--o----o
+#                       |     |    _                   |
+#               undine--o     |   / \           o+o or o
+#                  |          |   | |          / /  /  |
+#            o     |          | /-o-|---o-ne  o-o  o---o
+#           /      |          | | | |   |       |  |
+#      o---o--o--o |        /-o-|-/ |   |    nixie-o
+#         /        |        | | |   |   |          |
+#        o         o-o      \-|-o---/  naiad-o     o
+#        |         | |        | |            |     |
+# Herder-o---------o-o-----o  \_/  o---------o-----o---o--Faery
+#  Area            | |     |       |                      Forest
+#                  \-o-dry o---o---o
+#                          |       |
+#                          X       o
+#                          |
+#
+* Max level 0/7
+* Pixies are immune to pure/light. No known vulns.
+* Safe area. Nice place for lvl 1-7, but be careful with the spellcasters,
+* since they hurt a lot at low levels.
+* Best way to kill queen: Use l.bolt scrolls from the Atlantis magic shop
+
+Pixie Forest:            Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+The bright green Pixie     1   150 G-----    -     10-15        8-26   immune pure/light
+The cyan Pixie             1   150 G-x---    -     12-15        5-16   immune pure/light
+The lemon yellow Pixie     1   150 G-----    -      7-15       12-20   immune pure/light
+The light red Pixie        1   150 G-----    -      8-13       12-24   immune pure/light
+The orange Pixie           1   150 G-x---    -     10-12       11-21   immune pure/light
+The purple Pixie           1   150 G-x---    -     10-10       11-20   immune pure/light
+The sky blue Pixie         1   150 G-----    -     16-17       13-13   immune pure/light
+The vibrant green Pixie    1   150 G-----    -      7-11       11-20   immune pure/light
+The young Sylph            1   175 G-----    -      9-16       17-21   immune pure/light
+The Ellyllon (female)      3  3000 G-x---    -     62-55       79-79   immune pure/light, goes to sleep
+The Ellyllon (male)        3  3000 G-x---    -     54-63       69-84   immune pure/light, goes to sleep
+The sunny yellow Pixie     3  3000 G-----    -     55-60       82-86   immune pure/light
+The Sylph                  3  3000 G-----    -     53-57       68-85   immune pure/light, goes to sleep
+The turquoise Pixie (danc) 3  3000 G-x---    -     46-53       68-78   immune pure/light, goes to sleep
+The turquoise Pixie (welc) 3  3000 G-----    -     49-54       74-77   immune pure/light
+The young Nixie            3  3000 G-----    -     59-64       78-85   immune pure/light, sleeping
+The burning orange Pixie   4  7000 G-----    -     66-74       96-101  immune pure/light
+The dark red Pixie         4  7000 G-----    -     65-83      101-103  immune pure/light
+The elder Sylph            4  7000 G-----    -     75-83      106-110  immune pure/light
+The Nixie (gentleman)      5   12k G-----    -     94-96      234-272  immune pure/light
+The Nixie (lady)           5   12k G-----    -     93-94      201-231  immune pure/light
+The white Pixie            5   12k G-----    -     97-97      244-250  immune pure/light
+The pink Pixie             6   24k G-----    -    105-115     397-414  immune pure/light
+The Nixie count            7   35k G-----    -    141-149     582-600  immune pure/light
+The Nixie countess         7   35k G-----    -    126-143     627-650  immune pure/light
+The ocean blue Pixie       7   35k G-----    -    133-142     555-582  immune pure/light
+The Tylweth Teg (male)     7   35k G-----    -    131-149     521-639  immune pure/light
+The Dryad                  8       G-----    -    137-158     793-811  immune pure/light, magic missile
+The Naiad                  8       G-----    -    163-180     778-846  immune pure/light, burning hands
+The Nereid                 8       G-----    -    149-151     788-837  immune pure/light, burning hands, lightning bolt, magic missile
+The Nixie hero             8   60k G-----    -    147-153     765-818  immune pure/light, bash, kick, headbang
+The Oread                  8       G-----    -    148-153     765-835  immune pure/light, blindness, magic missile
+The Tylweth Teg (female)   8   60k G-----    -    140-165     765-805  immune pure/light
+The Undine                 8       G-----    -    123-161     768-813  immune pure/light, magic missile, burning hands
+The violet Pixie           8       G-----    -    160-160     816-818  immune pure/light
+The Yaai                   9       G-----    -    168-171     900-900  immune pure/light, imp/invis, bash, kick, headbang
+The Pixie Queen           10       Gxx---    -    215-226    5000-5000 INFO, immune pure/light, magic missile, lightning bolt, burning hands, blindness
+
+
+
+http://pastebin.com/1uqDyRtn
+
+
+Folk vet inte att #Taiji skickar fångade delfiner och valar till delfinarier. Vi MÅSTE utbilda dem
+
+@SeaWorld ni är skyldiga till mord
+Vi Förlåter Inte
+
+I år kommer #Taiji fånga levande delfiner till delfinarier, Vi kommer inte att låta det ske utan att göra något.
+
+#Taji är snart igång igen. Vi måste få #Japan att skämmas för att de tillåter slakten på delfiner.
+
+Leendet sedan länge borta. Hon dog i plågor så att @SeaWorld kunde få de söta små.
+
+Ännu en fångad medan hennes familj ropar nedifrån. Hur kan människopr göra detta? Vi ska stoppa dem #Taiji
+
+Om världen får veta kommer de stänga ned oss. #Taiji
+
+Hon dog i #Taiji så att du kunde se en delfinshow.
+Stoppa detta NU
+
+Folk vet inte att #Taiji skickar fångade delfiner och valar till delfinarier. Vi MÅSTE utbilda dem
+
+I år kommer #Taiji fånga levande delfiner till @SeaWorld China, Vi kommer inte att låta det ske utan att göra något. Hjälp oss
+
+Ännu en fångad medan hennes familj ropar nedifrån. Hur kan människopr göra detta? Vi ska stoppa dem #Taiji
+
+Älskar du #delfiner? Vill du hjälpa oss stoppa slakten i #Taiji? Hjälp oss #Spanien
+
+106 vattenparker runt om i världen har just nu delfiner som fångats i Taiji. Stoppa Detta Nu
+
+Delfiner hör hemma i havet, inte i ett akvarium eller på en tallrik - snälla hjälp dem
+
+Denna albinobäbis stals från sin mor. medan resten av hennes familj slaktades! i #Taiji
+
+Bortrövad från havet. Nu tränad att slava för ditt nöje. Stoppa slakten
+
+Delfiner hör hemma i havet, inte i ett akvarium eller på en tallrik #OpKillingBay
+
+Från havet i #Taiji till slakthuset. Detta är realitet för delfiner i #Japan #OpKillingBay
+

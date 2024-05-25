@@ -1,0 +1,119 @@
+# The forgotten citadel of Taon (197): 45-100, Stryder  (New Thalos: 2en2e2n2wn2wn3wnwn4w2s7e7n6w6s2u3e4n4w3u3e2n3u)
+#
+#                                                        o+Jedah
+#                                                       /
+#                                             Statue o-o
+#                                                 /|/
+#                                                o o
+#                                               /
+#                                              o
+#                                              |
+#                               Traitor        o
+#                                   | *       /
+#                      SSS    SSS<-*o  \->o+>o  o     |
+#                       ^          /            |    Elven
+#       o               *  *->o-o-o       o-o---o-o-Village 
+# Over- +            /->o-o    /            |         |      RIP
+# lord +o---o       w       Surak     o+o---o                /
+#       +  /        ^                x                SSS<-*o
+#       o /         *        Fire   o(chest)                ^
+#        /       Telemar-o*->Giant  *                       *
+#       /           ^        King   |                Storm  o--Uldor
+#      /            *               v                Giant  |
+#     /  g          o--------------SSS-----o*--\     King   o*->SSS
+#    /  /|       o                 /|\         |       ^    ^
+#   /    |       +       o*--->---/ o \-<-\    |       *    *
+#  o--o--o-o-o-o-o+Over  |   o-o  ^ *     |    |     Vidir--o
+#  |     |       + lord  |   | |  | v     *    |      ^
+#  |     h       o       o   o-o  | o-o*->o    |     /
+#  |    /                +   +    | |          \--->o
+#  |      T.appr+Atuan+o-o-o-o    | o              /
+#  |               +       |      | *              |
+#  |              RIP      o      * v              v
+#  |                       |  Celebros(WM)  Saeros-o*->w
+#  |   o - o +------------ o                       |
+#  |   |   |                                    Mirror
+#  |  RIP- o-o                                     *
+#  |       ^      RIP X--\                        RIP   g
+#  |       +        |/   |                             /
+#  | /---> o    RIP o    |                   o - o    o    o --------- o
+#  |/             |/     |                  x    |    |    |          /
+#  o          RIP o      |          o      o     o-o+>o    o      o   |
+#               |/       |          |      |     |    |    |      |   |
+#               o        |     Darkwizard--|+o-o+o    o+Wl o+o-o+Cardi/nal
+#               |        |          |      |     |    |    |      |  /
+#               o        |          o      |     o    o<+o-o      o /
+#               |        |                 |     |    |    +       /
+#         o-o-o-o        |                 |   o+o    | h  o+o    /
+#        /               |                 |          |/         /
+#       o                |                 |          o         o
+#      /                 |                 +                    +
+#     o                  |                 o -- o ------------- o
+#    /                   |                 |    |               |
+#   o-o-o-o-o      RIP   |          o  o   o - RIP ------------ o - o
+#           |       |    |         /   |   |    |                  /
+# o-o--o--o-|-o--o--o    |        o    o - o -- o - o             /
+# |         |       |    |       /         +        +            /
+# o         o       o    |      o     o    q   q    o           /
+# |         |       |    |      |     |       x                /
+# o         o       o    |  Q   o-o - o ---- o-o              /
+# |         |       |    |  |   | |   |        |             /
+# o         o       o    \--o-o+o o   o   o    o ---------- o
+# |         |       |       |   |         |    |
+# o   o-o-o-o       o       | o o-o - o - o -- o
+# |  /              |       |/    |   |        |
+# o o o-o-o-o-      o       o     o   |   o    o
+# |/  |             |                 |  /
+# o   o             o                 | o
+#     |             |                 |/
+#     o-o-o-o-o-o-o-o                 o
+#
+* * = Shimmering portal
+* Most of the area is very bright
+* Almost all npc:s are vuln slay human
+
+Taon:                                Lvl    Xp ASWIDMX # agg      Hp         Gold       Special
+The Gatekeeper of the citadel         10  110k N-----    -     175-181     5026-5092    [human]
+A peasant (woman)                     10  120k N-x---    -     186-207      338-339     [human]
+A peasant (man)                       10  120k N-x---    -     193-207      380-388     [human]
+A prisoner of the kingdom (female)    10  100k Gxx---    -     193-206        0-0       [human], hide, she is blind, agg neutral or evil
+A prisoner of the kingdom (male)      10  100k Gxx---    -     206-215        0-0       [human], hide, he is blind, agg neutral or evil
+A smuggler                            16  400k G--x--    -     323-323    10000-10000   [human], sitting
+A hooded ranger (smoking)             20  900k Nx-x-     -     396-397     7670-7930    vuln iron/dark/unlife, resist pure/light/magic, sitting, flees
+A townguard of Taon                   20  840k N-x---    -     401-411      202-203     [human]
+A guardian                            22 1166k N-x---    -     486-499      492-499     [human], flees
+A hooded ranger (robes)               25 2150k Nx-x--    -     593-612    20095-20144   vuln iron/dark/unlife, resist pure/light/magic, sitting
+The warlock's familiar                25 2125k E--x--    G     486-539        0-0       [lugroki], summoned
+A sentry of Taon                      32 5760k Nx-x-x    -     834-877      792-803     [human]
+A knight of Taon                      38   11M N-xxx-    -    1036-1044   12511-12975   [human]
+The armourer of Taon                  38   12M N-xx--    -    1188-1235   34203-34375   [human], imp, looter
+A scholar                             44   24M N--x--    -    1555-1565   40000-40000   [human], sitting
+The battle master                     44   23M N-xx--    -N   1681-1702   30000-30000   [human]
+The sorcerer's apprentice             47   33M E-xx--    -N   1969-1986   14591-15182   [human], colour spray, lightning bolt, fireball
+The old, wise wizard                  51   49M Nxxxx-    -    2086-2098   49115-50193   [human], sitting, imp, colour spray, fireball, lightning bolt
+A pet dragon                          52   51M Ex-xx-    GN   2113-2126       0-0       [dragon], sitting, fireball
+Atuan's black cat                     60  120M Gx-x      G    4709-4731      24-24      [human], confusion, wither, mass pain, meteor swarm, fireball, meteor blast, powerword pain, blindness
+The librarian                         60  100M Nx-x -    -    4742-4906   39995-40009   [human]
+A cardinal                            65  173M Ex-x      G   ~6000        10000-10000   [human], sitting, powerheal, confusion, wither, blindness
+The Darkwizard                        65  180M Ex-x x    ---  5915-5958   47958-49880   [human], meteor blast, meteor swarm, fireball, colour spray, shrugger
+A talented apprentice                 70  260M Nx-xx-    ---  8418-8479   67003-67037   [human], meteor blast, mass pain, powerword pain
+The elder warlock                     70  266M Ex-x      GN    ~9k        11487-11852   [human], hide, meteor blast, powerword pain, summon familiars
+Vidir, the Embodiment of Anarchy      70  281M Nx-x      G   11205-11322 500001-500001  INFO, [human], summoned by the large Vidir. Dies if large Vidir dies.
+The Dwarven Champion                  71  235M Gx-x x    -    8679-8757   40000-40000   [dwarf], NOT vuln water, sleeping
+An Elite guard of Taon                75  428M E-xx  1 7 GNE  9705-9766    2000-2000    [human], backstab
+The Draconian                         75  375M E--x      GNE  9696-9766    2000-2000    [human], vuln unlife, no player in the room -> any killed bodyguard is replaced immediately
+The Ethereal Golem                    80       Gx         NE                  1-1
+Atuan the Lordwizard                  82 1477M Nx-x      G    ~20k      1000001-1000001 INFO, [human], hide, shrugger, mass pain, blindness, powerheal, hell fire, wither, confusion, harm, 1-2 spells
+An Overlord of Taon                   84 2268M Nx-x  1   G   17847-18410 500001-500001  [human], bash, kick, headbang, berserk
+Celebros, the Embodiment of Control   85 2465M Nx-x      G   49488-50367 500001-500001  INFO, [human], special-wildmag
+Saeros, the Embodiment of Thought     85 2041M Nx-x      GNE 35829-36495 500001-500001  INFO, [human], special-mindbend (once affected, you can't cast spells in his room. Can be canceled by relogging)
+Telemar, the Embodiment of Rage       85 2041M Nx-x      G   36111-36517 500001-500001  INFO, [human], special-extra-attacks (starts with 6, ends with 20. Hp-dependant)
+Surak, the Embodiment of Water        85 2465M Nx-x      GNE 50544-56020 500001-500001  INFO, [human], special-stun (200), teleports wielded weapons to random room from Surak to Traitor
+Vidir, the Embodiment of Anarchy      85 2295M Nx-x      GNE 35193-36177 500001-500001  INFO, [human], summons 2 lvl 70 Vidirs during battle (Not sure when, but if withered, they come first round. Probably when below X hp, where X>23k).
+Uldor, the Embodiment of Calm         85       Nx-x      GNE             500001-500001  INFO, [human], special-calm (you can't do anything. "quaff" breaks the spell, eg "quaff abc")
+Someone                               90       Ex-   2   ---                142-373     INFO, [human]
+The Draconian traitor                 92       Ex-x      GNE            2000001-2000001 INFO, [dragon], resist ice?/earth?/air?/gas?, NOT vuln unlife, imp, hide, looter, special-instakill, no player in the room -> traitor is fully healed immediately (spells stay, though)
+The Statue of the Ancient War Gods    94       Ex x      G E              57887-60989   INFO, [mythical]
+Jedah the Evil Arch-Sorcerer          96       Ex-x  2   GNE            3000001-3000001 INFO, [human], imp, area-blackenergy-spell, has the power of every embodiment still alive (though smaller Jedahs don't die if the real one dies)
+Samuel                               100       Gx-x -    -    >900k                     questmaster, vuln unlife, great ac
+The Mountain Goat                    100   48M Nxxxx-    -   50001-50001      1-1       INFO, [human], imp, cake, crap ac, 2-2 attacks

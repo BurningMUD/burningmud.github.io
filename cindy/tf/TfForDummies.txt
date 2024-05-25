@@ -1,0 +1,123 @@
+
+Quick introduction for tf. Meant to be understandable for anyone.
+May contain errors.
+
+Ok. So you're a mudder without any scripting knowledge? If you are, keep
+reading. If you have some knowledge, you can probably just browse past these
+first examples and stop when it starts looking complicated.
+
+
+Aliases are used to speed up things you do often. Eg, if you often eat a bread
+when you are hungry, you can make an alias "eb" that eats a bread.
+
+/alias eb eat bread
+
+Now you only need to type "eb" to eat a bread. But how about if you keep your
+food in a bag, and always get your food from the bag before you eat it? No
+need to use 2 aliases. Make a combined one:
+
+/alias eb get bread bag%;eat bread
+
+Each line thing you want to do must be separated by the %; characters. Example:
+
+/alias eb get bread bag%;eat bread%;lick%;say Yummy!
+
+This only works if you live on bread and carry them in a bag. To make it more
+general, let's create some variables:
+
+/set mybag bag
+/set myfood bread
+
+Now, change the bread eating alias to this:
+
+/alias eb get %{myfood} %{mybag}%;eat {myfood}
+
+
+This will work as before. Typing "eb" will get a bread from the bag and eat:
+it. But if you get tired of bread and want to feed on pies instead, you can
+just change the myfood variable:
+
+/set myfood pie
+
+Now, typing "eb" will get a pie from the bag and eat it.
+
+But having to type "eb" everytime you get hungry is still too much work. You
+know you're supposed to eat something whenever the line "You are hungry."
+comes up. Let's teach tf to do it for you:
+
+/def -t"You are hungry." hungertrig = eb
+
+This is called a "trigger". Triggers look at every line that comes up on your
+screen and checks if it matches. If it does, the trigger activates, doing what
+it's been told to do. It's made of several parts:
+
+/def                  Used to create macros (triggers among other things).
+-t"You are hungry."   The -t says this is a trigger. It has to be followed by
+                      the text to look for. The text can be encapsuled by
+                      single-quotes too, but double-quotes are normally safer.
+                      (since it allows you to use single-quotes in the trigger
+                      text without risk for problems).
+hungertrig            The name of this trigger. It is not required, but this
+                      is your only possibility of manipulating (removing,
+                      rewriting, viewing) the trigger once it's been entered.
+=                     Separator that says "after this comes what I want done".
+eb                    The work you want done. In this example you've told it
+                      to call the "eb" alias.
+
+Next time you see the line "You are hungry.", you won't have to type "eb" to
+get fed - tf will do it for you.
+
+To see if it works without having to wait, you can type:
+
+/trigger You are hungry.
+
+This tells tf to pretend it's just seen the line "You are hungry.". If you've
+done everything right sofar, you will try to pick up a pie from your bag and
+eat it.
+
+How about also saying "Boy I'm hungry!" when that line comes up?
+
+/def -t"You are hungry." hungertrig2 = say Boy I'm hungry!
+
+Note that it's named hungertrig2. You have to give it a unique name, or it
+will replace the old trigger with that name. Ok, try again:
+
+/trigger You are hungry.
+
+The result here is (probably) unspecified. Either you tried to eat another
+pie, or you said "Boy I'm hungry!" But only one of these things happened. This
+is because when tf has found a matching trigger, it is happy and stops
+searching for others... unless you tell it to. This is done with the -F 
+fallthrough) flag. A trigger with fallthrough flag won't stop tf when it kicks
+in. Tf will keep searching for more matches until it either finds a trigger
+without a fallthrough flag, or all triggers have been checked.
+
+/def -F -t"You are hungry." hungertrig = eb
+/def -F -t"You are hungry." hungertrig2 = say Boy I'm hungry!
+
+Note how the old triggers are overwritten by these new ones.
+Now try the "/trigger You are hungry." again, and notice how tf reacts by
+having you both talk and eat. In which order did this happen? Well, I don't
+know, because we haven't told tf anything about that. Talk first and eat later
+sounds like the correct order. To do so we'll have to put priority on these
+triggers so tf knows which one should be checked first. By default every
+trigger has prio 1. We want higher priority on the talk-trigger, to make sure
+that one kicks in first:
+
+/def -F -p5 -t"You are hungry." hungertrig2 = say Boy I'm hungry!
+
+Try "/trigger You are hungry." again. Everything is in order now? Good. But
+spammy. Let's remove the talking trigger. To see what triggers you have, type:
+
+/list hung*
+
+That will show all triggers starting with "hung". Now remove the talking trig:
+
+/purge hungertrig2
+
+
+
+
+
+Ok... and now you're on your own. Until I get bored again and decide to
+continue working on this file.

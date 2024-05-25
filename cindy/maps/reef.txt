@@ -1,0 +1,50 @@
+# Barrier Reef (159): 25-65, Jess  (Kerofk: s2e2nd2e3de2n2e2nwnd)
+#
+# o - o -- o ----- o
+# |                |
+# o        o       o
+# |        |       |         o
+# o - o -- o       o - o     |
+#     ^    |       |   |     o - o
+#     |    |       |X  |     |
+# o-Oyster-o ----- o - o --- o
+#  (enter) |       |         |
+#          |       |   o     o        o
+#          |       |   |     |        |
+#  shark-shark-o - o - o-norecall-o - o - o-shark 
+# norecall         |   |     |    |   |       |
+#                  |   o    NM    o   o     shark
+#    Octopus - o - o   |  manareg |           |
+#              |     dest  safe   o       o - o
+#              o      mv          |
+#                             o - o
+#                             |
+#                          Keeper
+#
+* Min level 0/40 (Valley of Kings)
+* Hunting lvl 60 Octopus: Vuln slash. Keeper is vuln earth
+* Manareg-room is nomag/noattack/nosum
+
+Great Barrier Reef:         Lvl    Xp ASWIDMX # agg     Hp         Gold      Special
+Sea Slugs                    35 8750k N-----    -   1139-1155    7047-7064   immune water, water-living, save 10
+A Cluster of Oysters         45   20M N---x-    -   1661-1664   16144-16373  sitting, vuln electricity, resist pierce, immune fire/water, water-living
+A small starfish             45   21M N---x-    -   1725-1734   15351-15410  immune water/fire, water-living
+A Snail                      45   20M N-----    -   1621-1625   15128-15137  resist ice, immune water/fire, water-living
+Purple Gobi                  45   19M N-----    -   1645-1669   12597-12609  vuln electricity, immune fire/water, water-living, flees
+Sea Horse                    45   20M N-----    -   1616-1620   16695-16927  immune water, flees, water-living
+The Graceful Angelfish       47   23M N-x-x-    -   1804-1813   17365-17927  vuln electricity, immune water/fire, water-living, sneak, backstab
+Blue and Yellow Snappers     50   29M Gxx---    -   2148-2198   25349-25408  vuln electricity/ice, immune water/fire, water-living, flees
+Clownfish                    50   42M G-x---    -   2256-2300   25358-25587  vuln electricity/ice, immune water/fire, water-living, flees
+Sand Snake                   50   30M N--x--    GNE 2108-2144   25121-25151  hide, vuln ice, immune fire
+Stingray                     50   26M N---x-    -   2080-2134   35092-35136  vuln electricity, immune water/fire, water-living
+Anemone                      50   30M E---x-    -   2130-2148   21263-21349  vuln electricity, immune water/fire/blind, no-charm
+Moray Eel                    55   55M E-xxx     G   3281-3299   25161-25254  vuln ice, immune water/fire, hide
+Sea Urchin                   55   47M E--xx-    -   3147-3207   50262-50284  vuln mental, NOT immune water/fire, armor of thorns
+Stonefish                    55   47M N--  -    -   3567-3579   62281-65667  sitting, vuln pure/mental, immune pierce/water/fire/blind, resist slash, armor of thorns
+Giant Oyster                 60       N--       -                            no-attack, special-"enter oyster"
+The Octopus                  60   90M E-xxx     G  ~5352-~5491  61239-64672  vuln slash, immune water/fire/blind, resist ice, hide, hunt, ignore-cop
+Tiger Shark                  60   75M E--xx     G   4481-4524   49590-50298  vuln ice/light, immune water/fire/acid/stun, blocker
+A Giant Starfish             62   77M N--xxx    -   4756-4857  104771-105351 vuln electricity, immune water/fire/mental/blind, blocker
+The Oyster's Inner Muscles   65  114M N- x      G  ~6501-~6552  57106-57122  vuln electricity, resist ice, immune water/fire/blind
+Great White Shark            67  100M E-xxx     G  ~7021-~7045 136611-138344 immune water/fire/blind, blocker, sneak
+Keeper of Secrets            75  375M N--x x    -  12048-12057 110925-114525 vuln earth, immune water/fire/iron/blindness, resist ice/dark, invis, bash, kick, headbang, berserk

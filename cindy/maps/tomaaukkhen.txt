@@ -1,0 +1,76 @@
+# The Temple of Tomaaukkhen (110): 30-60, Porlan  (New Thalos: 2en2e2nes2en2eses3es)
+#
+#                                      o
+#                        King          |
+#                          ^ o-o   o-o-o
+#                          |/  |   |   |
+#   o ----- o + o - o - o  o   |   o   |
+#   |              /|   |      |   |   |
+#   +             / o   o - o  | S o   |
+#   |            /  +      /   | + |   o
+#   o           /   o drag/    o-o-o   |
+#   |          /    |   +/             |
+#   |         /     o   o -------------|-- o
+#   +        /      +                  |   |
+#   |   o - o       q                  o - o  Couatl
+#   |   +           +                  |        |
+#   o-o+o + o - o - o    vamp      o - o        o
+#      x|                  |       |   |        |
+#     / |     o            o - o - o   o ------ o
+#     | +    /|
+#     | |   o---- o o -- o --- o -- o
+#     | |     |  /  +               |
+#     | o     | o-o+o+o-o           |                    RIP
+#     | |     o         +           |                    /
+#     | |     |     o-o+o+o     o - o   o + o           o - o
+#     | |     |     |     |     |       |  /                |
+#     | | o-o-o     |     o-o - o - o + o o - o             o+vamp
+#     | | | |       |       |           |     +             +       |
+#     | o-o o ----- o - o   o - o       o     o         o + o+o-o-o X
+#     |  /              |   |                 |        /    +     +/
+# o   | x               o-o-o                NM - o + o     o     o
+# |   v/                                      +             |
+# o-o-o                                       o             |
+# |                                           |             |
+# o                                           o             o
+#                                             |            /
+#                                         o + o - o-o-o   o
+#                                        /            |   +
+#                                   o + o     o       o   o
+#                                   |         |       +   +
+#                                   |         o+o--Statue-o
+#                                   |        /|
+#                                   o + o - o o
+#
+* Min level 0/20
+* Only the king's room and NM room is very bright
+* Aggies here and there, but only the vampires can see in darkness.
+
+Tomaaukkhen:                 Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+The fire beetle                4   20k G-x---    -    506-511     201-204   flees
+A giant Slug                  10   40k G-x---    -    125-128       1-1     resist weapon, +20 starthp
+A hunting dog                 10  100k G-----    -    166-168     804-804   resist fire/ice/unlife/earth/air, flees
+A constrictor snake           15  375k G-----    -    398-415      12-22    immune poison, sleeping, flees
+An Olman Tribesman            17  340k G--x--    -    250-261       9-11    resist fire/ice/unlife/earth/air, flees
+A large puma                  18 1800k G--x--    -    610-614    8435-10633 resist fire/ice/unlife/earth/air, sitting, flees
+A large Rat                   20 1200k G-x---    -    577-583    2664-2983  vuln mental/gas, resist earth, hide, flees
+The black panther             20  500k G--x--    -    360-370     503-506   vuln mental, resist dark, sitting
+The water weird               20 1000k E--x-     G E  511-527    5003-5029  sitting, special-stun
+A skeleton                    25 1250k E-xx--    G E  400-483    1001-1002
+An Olman Priestess            25 1250k Nx-x--    -    333-350    5359-5364  resist fire/ice/unlife/earth/air, flees
+A green slime                 30 3000k N-----    -    367-386     151-156   +250 starthp, resist weapon, 4 attacks, flees
+An Olman Warrior              30 3000k Nx-x--    -    760-792   10530-11300 resist fire/ice/unlife/earth/air
+The ogre mage                 30 9000k Nx-x--    -   1704-1715   2510-2515  [lugroki]
+The zombie                    30 1800k E-xx--    G E  537-562    6245-7781  [undead?], vuln pure/light/silver/heal, immune unlife/dark
+A centaur mummy               35   12M E--x--    G E  837-925   10022-10500 [undead?], vuln pure/light/silver/heal, immune unlife/dark, poison, curse, mass pain, blindness
+The wight                     35 8050k E-xx--    G E  683-690   20685-21172 vuln pure/light/heal, immune unlife/dark, energy drain
+The wraith                    40   16M E-xx--    G E  833-853      38-43    vuln energy, immune unlife, resist WEAPON, energy drain
+The spectre                   45   25M E-xx--    G E 1253-1255  19880-46862 vuln energy, immune unlife, resist WEAPON, energy drain
+The mummy                     50   45M Exxx--    G   2977-3022   4431-4575  [undead?], vuln pure/light/silver/heal, immune unlife/dark, poison, wither, mass pain, curse, blindness, energy drain, flees, "reaches out and touches"
+The Nereid                    50   21M Gx-x--    -   1784-1836  10024-10025 vuln unlife/dark, immune pure/light, sitting, flees, sneak, no-group
+The Stone Dragon              50   45M N--x--    G E 2111-2166  20039-21325 [dragon]
+The Vampire                   60  102M Ex-xx     GNE~4011-~4115 12101-12751 vuln pure/light/silver/wood, immune unlife/dark, energy drain
+Couatl                        70  280M Gx-xx-    -   9095-9123  20299-42981 [snake]
+Nahual                        70  245M N--xxx1   -  14103-14165 15449-16244 [entity?/mythical?], resist WEAPON/unlife/ice/fire/earth/air, sleeping, +~2000 starthp
+The Titanium Statue           80 1280M Gx-xx-    -  26895-26975 25017-25019 INFO, resist unlife/ice/fire/earth/air, kick
+The Mummy of KING TOMAAUKKHEN 80 1280M Ex x -0   -   ~24k        7491-7563  INFO, vuln pure/light/silver/heal, immune unlife/dark, agg-sleeper, poison, blindness, wither, energy drain, curse, mass pain, 4x"reaches out and touches" (no damage)

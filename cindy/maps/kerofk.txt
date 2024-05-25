@@ -1,0 +1,120 @@
+# Kerofk (111): 1-30, CAW  (Kerofk: -)
+* FIND OUT: Kell                    human?
+* FIND OUT: The Prisoner            human?
+* FIND OUT: The Barmaid             level (5-6)
+* FIND OUT: The Receptionist        level (17-18)
+* FIND OUT: Thanalos Stormfeld      xp, hp, hp, money, money, INFO?
+* FIND OUT: Viagra the Town Guard   xp, hp, hp, money, money, INFO?
+#
+#                          Valley                                   o
+#                            of                  Smugglers         /^
+#                          Kings                    Den         out +
+#                            |                       |            Liche
+#                            +                 Book  |              ^
+#     Juargan            X   Fs            o + store |              +
+#        |               |   |                   |   |             Orb
+#        o-o-o-o-o-o--o--o-o-o--o--------- o --- o - o-RIP          ^
+#        |         |     | |    |          |         |              |
+#        |         |     | Q-o  o          |         |              o
+#        |         |     | |    +  Mansion-o         |              ^
+#        |         o-o-o | o  G-G          |         |              |
+#        |         |     |          Leonna |         |              o
+#        |         |   S-o-Hs          +   |         |              ^
+#        |         |     |         o o+o+o | SmD+Tav-o-RIP          +
+#        |         |     |  Town   |   |   |     ern/|              o
+#        |         | [SS]|  Hall o-m-o |   |       / |     g-o /->o |
+#        |         |   | |    |    |   |   |    [SC?]|     ^ | |  | o
+#  Lost -o       well--o-o--- o -- C - o - o - o --- Q-RIP + o-o  | ^
+# Temple |         |   | |    |    +       |         |     o       \+
+#        |         | o-o | Viagra  |    o  |         |     ^     o<+o--+>o
+#        |         |     |   x     |   /   o         |     +    /   +   /
+#  o-o   |         o   o-o SmD     |  o    |     o-o-o-RIP o   g    v  g
+#  | |   |         |     |         |  |    |         |     |        o
+#  o o-o-o-o-o--C--o--o--o--o---o--|--o -- o - o --- o-RIP o       /
+#  |                  |     |   |  |           |     |     ^      g
+# .|..              Jenk+o  o-o o  |         Armor [PoV]   +
+#  |  .                     | |    |         Shop          o +> o
+# -o   .               o    o-o    |                 o     ^    +
+#                     x+           |                x^     +    v        o
+#                o-o-o Edimmu      o               o-|-o - o    f        |
+#                  |   Tiersten   /                  +                o  o
+#      Korino    Celia           o +> f         o<+--o+-->o           | /
+#      Talbot-o-o /|                  |         +    ^    +         Town
+#             |  / o-o            o - q         f    +    o     o+o-Hall
+# Sosivia-o   | /                 +                  o   x          / |
+#     |   |   |/                  v                  |  q          /
+#     o---o-o-o-o-Mansion-        o -------+-------> o            o+o
+#             |
+#           o-o-o
+#
+* Whole area is very bright
+* Safe place, as long as you don't go too far east into a DT.
+
+Kerofk:                   Lvl    Xp ASWIDMX # agg      Hp        Gold     Special
+Kell                        1   200 G----     --     29-34      501-501   [human?]
+The Receptionist            1       G--       ---                         nofight-room
+The Prisoner                2   800 E----      -     36-42        1-1     [human?], sitting
+The Drunk                   4  6400 N--        -     77-84      301-301   [human]
+The Barmaid                 5   12k G-----     -     99-103      51-51    [human], flees
+The Barmaid               5-6       G--       ---                         nofight-room
+The Guide (Kerofk)          5  4500 G-xx-     --     64-69       48-48    [human], special-guide-commands, sneaking
+The demon skeleton          7   24k E----     GN    136-144       1-1     [skeleton], summoned
+The Priest                  7   35k N----     --    136-145      11-11    [human], flees
+The Citizen (debating)      8   56k G--       --   ~159-~162    501-501   [human]
+The Citizen (Kerofk male)   9   90k G-x---    --    177-184     501-501   [human]
+The Citizen (Kerofk female) 9   90k G-x---    --    177-184     501-501   [human]
+The Citizen (waiting)       9   90k G-----    --    179-184     501-501   [human]
+The gravedigger             9   90k G----     --    182-184     301-301   [human]
+A goblin                   10  110k E--x-     GNE   205-210       1-1     [---]
+The demon zombie           10  100k E----     GN    203-205       1-1     [undead], summoned
+The Jailer                 10  110k G----      -    193-202    2001-2001  [human], sitting
+The Storm Demon            10  110k E--x--    GNE   193-202       1-1     [demon], burning hands, teleport, fireball, summon demon skeleton, summon lesser demon
+Sosivia                    12  156k G----     --    232-246    4001-4001  [human]
+The Gambler (lucky)        12  156k N----     --    232-248    2501-2501  [human]
+The Gambler (unlucky)      12  156k N-----    --    239-246     101-101   [human]
+The Militia Man            13  182k G-x--     --    254-260    2001-2001  [human], protector
+The Bartender              14       G--       ---                         shopkeeper
+Bungle Fleecem             14  210k E-----    --    273-280    3001-3001  [human], sitting, flees
+The Lawyer                 14  210k E-----    --    279-288    5001-5001  [human], flees
+Korino                     15  255k N----     --    293-299    1501-1501  [human]
+Talbot                     15  255k N-----    --    303-310    1501-1501  [human]
+The Council Member         15  255k G-----    --    297-310    3001-3001  [human]
+The Gateguard              15  255k G----     --    296-303    3001-3001  [human], protector
+The lesser demon           15  225k E----     GN    291-297       1-1     [demon], summoned
+Celia                      16  304k E-----    --    325-333    2001-2001  [human]
+The Receptionist        17-18       N--       ---                         nofight-room
+A hellhound                18  414k E--x--    GNE   389-400       1-1     [magical]
+The Bright Light           18  414k N--x-     GNE   384-390       1-1     [insubstantial]
+The Farmer                 18       G--       ---                         shopkeeper
+The Guardian Wisp          18  414k N----     GN    381-399       1-1     [insubstantial]
+MouseRider                 20  600k G--x--    --    441-457       1-1     [human], armor, magic missile
+The Edimmu                 20  600k N--x-     GN    440-449       1-1     [insubstantial], invis, hide, summon demon skeleton, summon lesser demon, summon demon zombie, fireball, burning hands, blindness, teleport
+The Sentinel Beast         20  600k N--x-     GNE   453-460       1-1     [magical]
+The Council Guard          23 1035k N--x--    --    536-548    1001-1001  [human], protector
+The Bookstore Owner        23       E--       ---                         shopkeeper
+The Dealer                 23 1035k G-----    --    527-550    2001-2001  [human]
+The Herbalist              23       G--       ---                         shopkeeper
+The Sergeant               23 1035k N-----    --    534-543    2001-2001  [human], bash
+The Shopkeeper             23       G--       ---                         shopkeeper
+Ben                        24 1200k E-----     -    566-582    5001-5001  [human], backstab, sitting, flees
+Leonna                     24 1200k G-----    --    566-579    5001-5001  [human]
+Seobagn                    24 1200k E-----    --    567-583    5001-5001  [human]
+The High Priest            24 1200k Gx----    --    558-576    5001-5001  [human]
+The Secretary              24 1200k N-----     -    561-572    5001-5001  [human], sitting, bash
+Jenk                       25       E--       ---                         shopkeeper
+Kervin                     25 1500k G-x        -    608-610    3501-3501  [human], color spray, fireball, lightning bolt
+The Black Marketeer        25 1500k E-----    --    590-599    5001-5001  [human]
+The Captain                25 1500k G-----    --    598-615    5001-5001  [human]
+The Innguard               25 1500k G-----    --    589-609    5001-5001  [human], protector
+Tiersten                   26 1820k E--x      GNE  ~637-~650  10001-10001 [vampire]
+The Orb                    28 2520k G--x--    --    690-692       1-1     [entity], fireball, colour spray, meteor blast, meteor swarm
+The Liche                  30 3600k Ex---     GN    734-759   10001-10001 [undead], edrain
+Gaultor the Thief          50   25M N--x-x    --   2000-2000  16616-19749 [human], backstab
+The Cartographer           99       N--       ---                         shopkeeper
+The Item Clerk             99 1319k N--x -    --  30000-30000   101-101   INFO, [human]
+Beau the Dealer           100       E--       ---                         nofight-room, special-gamble
+Iglaus Mefren the reknowned blacksmith
+                          100       N--x -    ---                         questmaster, no-attack
+Thanalos Stormfeld        100       N--x -    ---                         INFO?, questmaster, [half-elf], 4-4 attacks, 400/70 dam per attack, negate sanc 17/252 times (7%), great ac
+The Barker                100       E--       ---                         nofight-room, special-gamble
+Viagra the Town Guard     100       N--x -    -      >640k        ?       INFO?, [human], 4-4 attacks, 400/70 dam per attack, negate sanc 15/137 times (11%), thac-39 11, AC < -76, NOT restored if alone in room

@@ -1,0 +1,31 @@
+# Dwarven Daycare (108): 1-100, Sandman  (Karandras: 10ed2s)
+#
+#           |
+#           o
+#           |
+#   o - o - X - o  o - o
+#       |   |      |   |
+#   o - o - o ---- o - o
+#  /
+# o - o - o
+#     |   |
+#     o - o
+#         |
+#       guard
+#         +
+#         Q
+#
+* Same area as Elven Village
+* Nothing aggressive. Nice newbie area. Youths steal money!
+
+Daycare:                 Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+An old doll                1   200 E-x---    --    32-37       51-51   [entity]
+The spoiled brat           1   200 E-----    --    31-34     2001-2001 [dwarf]
+A teddy bear               1   200 G-x---    --    29-35       76-76   [entity]
+A raggedy anne doll        2   800 G-----    --    36-41      251-251  [entity], sitting
+The dwarven youth          3  2400 E-----    --    63-66       51-51   [dwarf], no-charm, thief, sitting
+A toy soldier              3  2400 E-x---    --    60-62      401-401  [entity]
+The ugly teddy bear        3  2400 E-x---    --    57-61      101-101  [entity]
+The nanny                  5   12k G-x---    --    96-105     751-751  [dwarf]
+The armed guard            8   56k E--x--    --   161-163    2001-2001 [dwarf]
+Mulak                     99       Nx-       ---                       questmaster, no-attack

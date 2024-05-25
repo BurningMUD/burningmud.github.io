@@ -1,0 +1,1089 @@
+
+SPELLS:
+=======
+
+(Lvl) Magician
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-
+ ( 1) Magic Missile
+ ( 1) Ventriloquate
+ ( 2) Detect Invisibility
+ ( 2) Detect Magic
+ ( 3) Chill Touch
+ ( 4) Invisibility
+ ( 4) Strength
+ ( 5) Armor
+ ( 5) Burning Hands
+ ( 6) Locate Object
+ ( 6) Blur
+ ( 7) Shocking Grasp
+ ( 7) Cloudkill
+ ( 8) Teleport
+ ( 8) Blindness
+ ( 9) Lightning Bolt
+ ( 9) Improved Invisibility
+ (10) Control Weather
+ (10) Teleport Without Error
+ (11) Colour Spray
+ (11) Feeblemind
+ (12) Curse
+ (12) Ice Storm
+ (13) Energy Drain
+ (13) Darkvision
+ (14) Charm Person
+ (14) Sleep
+ (15) Fireball
+ (15) Fly
+ (15) Force Bolt*
+ (16) Enchant Weapon
+ (16) Chain Lightning
+ (17) Dimension Door
+ (18) Powerword Blind
+ (20) Group Invisibility*
+ (21) Meteor Blast
+ (25) Meteor Swarm
+ (25) Mordenkainen's Sword
+ (25) Identify
+ (25) Haste
+ (25) Blood Rite*
+ (25) Magic Carpet*
+ (30) Contingency
+ (30) Powerword Kill*
+ (31) Powerword Pain
+ (33) Mass Pain
+ (35) Circle Of Protection
+ (35) Blood Mirror
+ (35) Soulsteal*
+ (40) Hell Fire
+ (40) Deathspell*
+ (40) Plasma Bolt*
+ (42) Vampiric Mist
+ (45) Hell Storm
+ (45) Plasma Ball*
+ (55) Force Field*
+ (60) Mirror Image
+
+(Lvl) Priest
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-
+ ( 1) Armor
+ ( 1) Cure Light
+ ( 2) Create Water
+ ( 2) Detect Poison
+ ( 3) Create Food
+ ( 3) Detect Magic
+ ( 4) Cure Blind
+ ( 4) Detect Alignment
+ ( 5) Bless
+ ( 5) Detect Invisibility
+ ( 5) Cure Serious
+ ( 5) Cause Light
+ ( 6) Blindness
+ ( 6) Protection
+ ( 7) Earthquake
+ ( 7) Sense Life
+ ( 8) Poison
+ ( 8) Summon
+ ( 9) Cure Critic
+ ( 9) Remove Poison
+ ( 9) Cause Serious
+ (10) Aid
+ (10) Dispel
+ (11) Word Of Recall
+ (12) Remove Curse
+ (13) Control Weather
+ (13) Sanctuary
+ (14) Heal
+ (14) Regenerate
+ (15) Call Lightning
+ (15) Pacify
+ (15) Cause Critic
+ (16) Minor Sphere Of Regeneration
+ (17) Prayer
+ (18) Animate Dead
+ (21) Confusion
+ (22) Group Bless*
+ (25) Harm
+ (25) Powerheal
+ (25) Revitalize
+ (25) Groupheal*
+ (27) Group Armor*
+ (30) Channel
+ (30) Trueheal*
+ (30) Wrath Of God*
+ (31) Holyword
+ (32) Major Sphere Of Regeneration
+ (33) Wither
+ (35) Grouppowerheal*
+ (35) Powerharm
+ (37) Link
+ (40) Miracle*
+ (60) Holy Gate*
+ (65) Touch Of God
+
+(Lvl) Animist
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-
+ ( 1) Armor
+ ( 2) Detect Invisibility
+ ( 5) Cure Light
+ ( 5) Barkskin
+ ( 6) Earthquake
+ ( 7) Faerie Fire
+ ( 8) Charm Creature
+ ( 9) Hurricane
+ (10) Cure Serious
+ (11) Satiate
+ (12) Call Lightning
+ (12) Control Weather
+ (13) Entangle
+ (15) Remove Poison
+ (15) Sun Arrow
+ (15) Call Of The Eagle
+ (17) Animal Summoning
+ (18) Sun Ray
+ (20) Cure Critic
+ (20) Natures Blessing*
+ (21) Plant Growth*
+ (22) Sun Shield
+ (25) Good Berry
+ (25) Fire Seeds
+ (25) Giant Size
+ (27) Armor Of Thorns
+ (28) Tranquility*
+ (30) Heal
+ (30) Treeform
+ (34) Conjure Earth Elemental
+ (35) Sticks To Snakes
+ (38) Burst Of Life*
+ (39) Circle Of Stone*
+ (39) Conjure Air Elemental
+ (42) Conjure Water Elemental
+ (43) Insect Plague
+ (44) Gaias Beacon*
+ (45) Deadly Swarm*
+ (45) Conjure Phoenix*
+ (55) Serenity
+
+(Lvl) Warlock
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-
+ ( 2) Armor
+ ( 3) Detect Invisibility
+ ( 4) Shock Bolt
+ ( 5) Blur
+ ( 6) Invisibility
+ ( 7) Strength
+ ( 8) Water Bolt
+ ( 9) Improved Invisibility
+ (10) Teleport
+ (15) Teleport Without Error
+ (16) Ice Bolt
+ (20) Combat
+ (24) Fire Bolt
+ (25) Mordenkainen's Sword
+ (25) Haste
+ (26) Triad Of Ice*
+ (30) Bladeturn
+ (35) Mana Shield
+ (38) Triad Of Fire*
+ (40) Nether Bolt
+ (43) Immolation Fire
+ (43) Immolation Cold
+ (45) Blood Rite*
+ (53) Ritual Of Pain*
+ (55) Mental Glance
+
+(Lvl) Templar
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-
+ ( 1) Armor
+ ( 2) Detect Poison
+ ( 3) Detect Alignment
+ ( 4) Cure Light
+ ( 6) Bless
+ ( 8) Strength
+ (10) Protection
+ (12) Dispel
+ (14) Cure Serious
+ (15) Pacify
+ (17) Remove Curse
+ (18) Remove Poison
+ (20) Prayer
+ (25) Cure Critic
+ (25) Sufferage*
+ (30) Heal
+ (30) Holy Armor
+ (30) Judgement
+ (40) Sanctuary
+ (40) Channel
+ (40) Holy Aura
+ (40) Celestial Peace*
+ (45) Miracle*
+ (56) Holy Crusade*
+ (60) Gods Blessing*
+
+(Lvl) Nightblade
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-
+ ( 1) Attack
+ ( 2) Armor
+ ( 4) Detect Poison
+ ( 5) Detect Invisibility
+ ( 5) Sense Life
+ ( 9) Poison
+ (10) Blur
+ (12) Blindness
+ (13) Remove Poison
+ (15) Improved Invisibility
+ (17) Darkvision*
+ (20) Mountain Heart
+ (25) Adrenal Focus
+ (27) Teleport Without Error
+ (30) Aura Of Despair
+ (30) Life Blood*
+ (33) Shadow Displacement
+ (35) Deathshadow*
+ (40) Shadow Form
+ (55) Venom*
+ (65) Powerword Stun*
+
+-------------------------------------------------------
+
+Spell damage types:
+===================
+Data has only been retrieved by tests on immune mobs, so any "-" (doesn't do
+that type of damage) should be correct whereas "#" (does this type of damage)
+can't be 100% certain.
+
+                     A A B D E E E F G I I L L M M P P S S S U W W .
+                     c i l a a l n i a c r a i a e o u i t L n a o .
+                     i r e r r e e r s e o r g g n i r l u a l t o .
+                     d   e k t c r e     n g h i t s e v n r i e d .
+                         d   h t g         e t c a o   e   g f r   .
+                               r y               l n   r   e e     .
+Armor Of Thorns                                                    .
+Attack                                                             .
+Aura Of Despair                                                    .
+Blood Mirror         - -   - - - - - - -     -   - - -   -   - -   .
+Burning Hands          -   - - - - # - -     -   - - -       - -   .
+Call Lightning       - -   - - # - - - -     -   - - -   -   - -   .
+Cause Critic         - -   - - - - - - - -   -   - - -   -   # -   .
+Cause Light          - -   - - - - - - - -   -   - - -   -   # -   .
+Cause Serious        - -   - - - - - - - -   -   - - -   -   # -   .
+Chain Lightning      - -   - - # - - - - -   -   - - -   -   - -   .
+Chill Touch          - -   - - - - - - # -   -   - - -   -   # -   .
+Cloudkill              -   - #     - - -     -     - -       - -   .
+Colour Spray         -     - - - - -   - -   #   - -     -   - -   .
+Deadly Swarm                                                       .
+Dispel               - -   - - - - - - -     -   - - -   -   # -   .
+Earthquake           - -   - #   - - - - -   -   - - -   -   - -   .
+Energy Drain         - -   - - - # - - - -   -   - - -   -   # -   .
+Fire Bolt                                                          .
+Fire Seeds                                                         .
+Fireball               -   - - - - # - -     -   - - -       - -   .
+Force Bolt                       ?               -                 .
+Harm                 - -   - - - - - - - -   -   - - -   -   # -   .
+Hell Fire/Storm        -   - - - - # - -     -   - - -       - -   .
+Holy Aura                                                          .
+Hurricane                                                          .
+Ice Bolt                               ?                           .
+Ice Storm            - -   - - - - - - # -   -   - - -   -   - -   .
+Immolation Cold                                                    .
+Immolation Fire                                                    .
+Insect Plague                                                      .
+Judgement                                                          .
+Lightning Bolt       - -   - - # - - - - -   -   - - -   -   - -   .
+Magic Missile        - -   - - - - - - - -   -   - - -   -   - -   .
+Meteor Blast/Swarm     -   - #   - # - -     -   - - -       - -   .
+Nether Bolt/Ball                                             ?     .
+Plasma Bolt/Ball                 ?                                 .
+Pow.Pain/Mass Pain   ? -   - - - - - - - -   -   - - -   #   - -   .
+Powerharm            - -   - - - - - - - -   -   - - -   -   # -   .
+Pow.Kill/Deathspell                                                .
+Powerword Stun                                                     .
+Shock Bolt                     #                                   .
+Shocking Grasp       - -   - - # - - - - -   -   - - -   -   - -   .
+Sticks To Snakes                                                   .
+Sun Arrow/Ray                                                      .
+Touch Of God           -   - -               -   -   # -     - -   .
+Triad Of Fire                                                      .
+Triad Of Ice                                                       .
+Vampiric Mist        - -   - - - # - - - -   -   - - -   -   - -   .
+Water Bolt                                                         .
+Wrath of God               #                                       .
+Blindness                  #                                       .
+Celestial Peace*                                                   .
+Charm Creature                                                     .
+Charm Person                                                       .
+Confusion                                                          .
+Curse                                                              .
+Entangle                                                           .
+Faerie Fire                                                        .
+Feeblemind                                                         .
+Pacify                                                             .
+Poison                                             #               .
+Sleep                                                              .
+Soulsteal*                                                         .
+Venom*                                                             .
+Wither                                                       #     .
+
+
+-------------------------------------------------------
+
+Spell damage:
+=============
+Cost  Name           Type          Dam             Lvl 1   Lvl 100 Av1->100  Special
+ 3  Magic Missile   S Normal?    3d(lvl+15) / 2    1- 24   1- 177  12->  89
+ 4  Chill Touch     S Ice/Unlife 2d(lvl+15)        2- 32   2- 230  17-> 116  Can drain 1-3 Str
+ 4  Shock Bolt      S Electr.    2d(lvl+10)        2- 22   2- 220  12-> 111
+ 5  Burning Hands   S Fire       5d(lvl+15) / 2    5- 80   5- 575  42-> 290
+ 5  Cause Light     S Unlife     5d(lvl+15) / 2    5- 80   5- 575  42-> 290
+ 7  Shocking Grasp  S ?          7d(lvl+15) / 2    7-126   7- 805  66-> 406
+ 8  Water Bolt      S Water      4d(lvl+10)        4- 44   4- 440  24-> 222
+ 9  Lightning Bolt  S Electr?    9d(lvl+15) / 2    9-144   9-1035  76-> 522
+10  Cause Serious   S Unlife     9d(lvl+15) / 2    9-144   9-1035  76-> 522
+10  Cloudkill       A Earth      Maxdam(?)                                   Only hits mobs of (<lvl>-2)/2
+10  Force Bolt      S Energy?    10dlvl + lvl     11- 11 110-1100  11-> 605
+11  Colour Spray    S Light      11d(lvl+15) / 2   5- 88  11- 632  46-> 321
+15  Call Lightning  S ?          13dlvl + lvl     26- 26 113-1400  26-> 756
+15  Cause Critic    S Unlife     15d(lvl+15) / 2   7-120   7- 862  63-> 434
+15  Dispel          S Unlife     100             100-100 100- 100 100-> 100
+15  Earthquake      A Earth      1d8 + lvl         2-  9 101- 108   5-> 104
+15  Fireball        S Fire       15d(lvl+15) / 2   7-120   7- 862  63-> 434
+15  Hurricane       A Air        8dlvl + lvl       9-  9 101- 900   9-> 500
+15  Ice Storm       A Ice        5d10 + lvl        6- 51 105- 150  28-> 127
+16  Chain Lightning A ?          9d(lvl+15) / 2    9-144   9-1035  76-> 522
+16  Ice Bolt        S Ice        8d(lvl+10)        8- 88   8- 880  48-> 444
+20  Fire Seeds      S Fire       13d(Lvl+(Lvl/5)) 13- 13  13-1560  13-> 786
+21  Meteor Blast    S Earth/Fire 21d(lvl+15) / 2  10-168  10-1207  89-> 608
+24  Fire Bolt       S Fire       12d(lvl+10)      12-132  12-1320  72-> 666
+25  Harm            S Unlife     20d20 + lvl      21-401 120- 500 211-> 310
+25  Meteor Swarm    A Earth/Fire 21d(lvl+15) / 2  10-168  10-1207  89-> 608
+25  Sun Arrow       S Light      16dlvl + lvl     17- 17 116-1700  17-> 908
+30  Sticks To SnakesS Poison?    ?                                           Can cause poison/blind/confusion
+30  Sun Ray         A Light      15dlvl + lvl     16- 16 115-1600  16-> 857
+30  Wrath Of God    A Dark       15d50 + lvl      16-751 115- 850 383-> 482
+31  Powerword Pain  S Stun       31d(lvl+15) / 2  15-248  15-1782 131-> 898
+35  Insect Plague   S ?          ?
+35  Mass Pain       A Stun       31d(lvl+15) / 2  15-248  15-1782 131-> 898
+35  Powerharm       S Unlife     15d50 + lvl      16-751 115- 850 383-> 482
+40  Hell Fire       S Fire       20d(lvl+15)      20-320  20-2300 170->1160
+40  Judgement       S Pure       ?
+40  Nether Bolt     S Unlife     20d(lvl+10)      20-220  20-2200 120->1110
+40  Touch of God    S Pure       ? Non-varied damage (439 with lvl 78 Pr/Ma, 442 with lvl 85 Pr/Ma 1294 maxmana) Only damages if different alignment than you
+45  Hell Storm      A Fire       20d(lvl+15)      20-320  20-2300 170->1160
+45  Plasma Bolt     S Energy     ?
+48  Triad Of Ice    S Ice        Ice bolt * 3     24-264  24-2640 144->1332
+50  Aura Of Despair A ?          Aura. Damages good-aligned
+50  Immolation Fire A Fire       Aura.
+50  Immolation Ice  A Ice        Aura.
+50  Plasma Ball     A Energy     ?
+50  Powerword Kill  S Stun       31d(lvl+15) / 2  15-248  15-1782 131-> 898  Chance to instakill
+55  Deadly Swarm    S ?          ?
+55  Deathspell      A Stun       31d(lvl+15) / 2  15-248  15-1782 131-> 898  Chance to instakill
+72  Triad Of Fire   S Fire       Fire Bolt * 3    36-396  36-3960 216->1998
+Note: since damage is capped, the effective average may differ from what's
+noted here. Adding this into the calculation, the average damage may change.
+The same goes for sanced mobs.
+
+
+SPELL DAMAGE tested as lvl 69 Pr/Ma with 1061 maxmana.
+100 spells has been cast unless stated otherwise.
+-------------------------------------------------------
+NOTE: This is a checklist to make sure I do the same way every time.
+If repeated by someone else, you can expect different results, since it is
+affected by extra_damage, negate_sanc, level, classes, maxmana and maybe
+other things too.
+-------------------------------------------------------
+How to do:
+* Reset damlog
+* Attack opponent
+* Cast the spell until 100 spells have successfully been cast.
+* Do NOT try to differ between spells where opponent fails saving throw and
+  spells where opponent succeeds in his saving throw - the large number of
+  spells cast will hopefully even this out.
+* Check your damlog, and make sure to check the SPELL damage done.
+* Divide with 100 (or with the number of times you cast the spell)
+* For safety, do it in groups of 10: reset damlog, cast the spell 10 times,
+  note down SPELL damage, reset damlog, cast... This will make counting
+  easier, reduce the risk of errors and ruin less if you do a mistake.
+* Do NOT change your max-mana while doing this. Maxmana affects your damage.
+
+Results:
+                    Elchor (no sanc)   Goat (sanc)        Lowbie
+Single:             avgdam dam/mana  avgdam dam/mana  avgdam dam/mana
+ 3 Magic Missile     40.17  13.39     39.60  13.20
+ 4 Chill Touch       63.83  15.96     58.25  14.56
+     xtra check      67.29  16.82     63.13  15.78
+     ICE vuln whale  78.94  19.73
+ 5 Burning Hands     70.02  14.00     63.96  12.79     69.54  13.91   (lvl 45 convict)
+     BH vuln                                          103.96  20.79   (lvl 45 trainer)
+ 7 Shocking Grasp    93.95  13.42
+ 9 Lightning Bolt   117.22  13.02
+10 Force bolt       249.73  24.97
+11 Colour Spray     109.83   9.98
+15 Dispel                Trainer lvl 35: 61/122 dam. 4/31=12.9% chance of doing 122 dam
+                         So even if always success, only 8.13 dam/mana
+15 Fireball         205.76  13.72
+21 Meteor Blast     278.57  13.27
+25 Vampiric Mist    203.97   8.16                    heal:157.40  6.30
+     VM whale       136.53   5.46                    heal:157.41  6.30
+31 Powerword Pain   408.04  13.16    276.88   8.93
+40 Hell Fire        499.57  12.49    304.58   7.61
+45 Plasma Bolt      631.00  14.02 (maxdam)
+
+Area:
+10 Cloudkill
+15 Earthquake       129.16   8.61
+15 Ice Storm         91.10   6.07
+     IS vuln whale   98.68   6.58
+16 Chain Lightning  115.21   7.20
+25 Meteor Swarm     270.15  10.81
+35 Mass Pain        417.00  11.91
+45 Hell Storm       494.13  10.98
+
+Heals:              avgheal heal/mana       lvl 78, 1209 maxmana, 50 tries
+  5 Cure Light         8      1.6
+  7 Cure Serious      14      2.0
+ 10 Cure Critic       24      2.4
+ 35 Heal             122      3.49
+ 40 Touch of God                               347.78    8.7 hp/m
+ 50 Powerheal        330.94   6.62             378.66    7.6 hp/m
+ 80 Trueheal
+150 Gpow
+
+Extra info:
+Chill touch  : Can drain strength.
+                 Elchor: 9/200 = 4.5% chance of success
+                 Goat r: 5/200 = 2.5% chance of success
+Dispel       : Only against evil
+Vampiric mist: Heals too. Damage counts as skill damage, so not improved by maxmana.
+               Half as powerful & costly as pow. So just as good manawise, just slower. And with risk of backfire.
+
+Damage data from Gaztro (Lvl 72 Te/Te) using Judgement:
+ 1      2       3     4     5
+1410 - 557     350 - 27    5,1%          1 Mana
+1380 - 556     320 - 26    4,9%          2 Spell damage
+1355 - 553     295 - 23    4,3%          3 Difference in mana with mana eq and normal
+1335 - 553     285 - 23    4,3%          4 Difference in spell damage
+1330 - 553     280 - 23    4,3%          5 The difference on old spell damage and new in percentage
+
+1320 - 550     270 - 20    3,7%
+1315 - 550     265 - 20    3,7%
+
+1310 - 549     260 - 19    3,5%
+1305 - 549     255 - 19    3,5%
+1300 - 549     250 - 19    3,5%
+1290 - 549     240 - 19    3,5%
+1280 - 549     230 - 19    3,5%
+
+1270 - 548     220 - 18    3,3%
+1240 - 544     190 - 14    2,6%
+1210 - 542     160 - 12    2,2%
+1180 - 541     130 - 11    2,0%
+1150 - 537     100 -  7    1,3%
+1110 - 536      90  - 6    1,1% 
+1080 - 534      30  - 4    0,75%
+1065 - 533      15  - 3    0,56%
+1050 - 530   Normal mode without mana eq.
+
+-------------------------------------------------------
+
+Spell Name              Cost Req
+Adrenal Focus:               Nb(25) 
+
+Aid:                     10  Pr(10) 
+
+Animal Summoning:            An(17) 
+Summons a wolf pet. For stats on pets, see the list in the bottom.
+Lvl 45 An(SC)can summon max 2 lvl 46 wolves
+Lvl 27 An/An can summon max 1 lvl 51 wolves
+Lvl 28 An/An can summon max 2 lvl 51 wolves
+Lvl 44 An/An can summon max 2 lvl 52 wolves
+Lvl 50 An/An can summon max 2 lvl 53 wolves
+Lvl 50 An/An can summon max 2 lvl 55 wolves
+
+
+Animate Dead:            55  Pr(18) 
+Summons an undead pet. For stats on pets, see the list in the bottom.
+Helpfile: You gain a new type when gaining level: 23, 31, 37, 46 and 50.
+Utility:  shadow pa L18, wraith pa L20 eller 21 tror jag..
+Starting as wraiths? Change to spectres when lvl 50? And to vampires when
+lvl 50 purepriest?
+No difference in hp/m/mv between the types. Hp varies slightly, probably due
+to some enhancement spell (natures blessing?)
+Wraiths can headbang (~33% chance per round)
+Ghasts can kick
+Spectres can kick    (  ?% chance per round)
+Vampires can suck blood (?)
+Utility: Wraiths hit harder than ghasts... (anni/vapo vs obliterate).
+
+[31        Pr   ]: lvl  4 Wraith
+[33-39/50  Ma/Pr]: lvl 46 Ghast
+[40-49/50  Ma/Pr]: lvl 46 Wraith
+[50/50+    Ma/Pr]: lvl 46 Spectre
+[65-86     Pr/Ma]: lvl 28 Spectre
+[66        Pr/Pr]: lvl 30 Vampires
+[66        Pr/Pr]: lvl 53 Vampires
+
+Armor:                    5  An/Pr/Te(1),Nb/Wl(2),Ma(5)
+
+Armor Of Thorns:             An(27) 
+Every time a hit lands on you, there is a chance the attacker gets damaged by
+your thorns. Damage done... not sure if it's affected by damage done to you or
+anything else.
+
+Attack:                      Nb(1) 
+
+Aura Of Despair:             Nb(30) 
+
+Barkskin:                    An(5) 
+Lvl/2 extra ac
+Vulnerability to fire
+
+Bladeturn:                   Wl(30) 
+
+Bless:                       Pr(5),Te(6)
+
+Blindness:                   Pr(6),Ma(8),Nb(12)
+
+Bloodlust:                   -
+Lasts for 8 seconds. Boosts dr or something?
+Or is this blood rite?
+
+Blood Mirror:                Ma(35) 
+Damage done to you is halved, and the other half is returned back to your
+opponent. Damage is shown as weapon damage (deals blast damage). Chance for
+success is better the higher level you are compared to opponent.
+Same level means blood mirror kicks in on 50% of the attacks.
+Each level changes the chance with 10%. Chance can be 0% but never above 90%.
+Blood mirror can kick in and deal damage against weapon-immune mobs, but then
+the damage done to you isn't reduced (nor is the returned damage).
+
+Blood Rite:                  Ma/Ma(25),Wl/Wl(45)
+Costs 10 mana, gives some mana at the cost of hp and maxhp. The maxhp is
+restored after a certain time. Cumulative.
+Avg when testing with lvl 87 WaWa: mana gain:    121  111  115
+                                   maxhp lost:    91   88
+                                   hp lost:      159  149
+                                   restore time: 108  190  161  seconds
+Adding 115 mana every 161 seconds (for the cost of 10 mana) means approx .7
+extra mana per second, or +50 mana/tick.
+
+Blur:                        Wl(5),Ma(6),Nb(10)
+
+Burning Hands:               Ma(5) 
+
+Burst Of Life:               An/An(38) 
+
+Call Lightning:              An(12),Pr(15)
+Only works outside in thunder
+
+Call Of The Eagle:           An(15) 
+
+Cause Critic:                Pr(15) 
+
+Cause Light:                 Pr(5) 
+
+Cause Serious:               Pr(9) 
+
+Celestial Peace:             Te/Te(40) 
+
+Chain Lightning:             Ma(16) 
+
+Champions Strength:          -
++9 str (random? Level dependant?)
+Also gives +9 hr/dr?
+
+Channel:                     Pr(30),Te(40)
+
+Charm Creature:              An(8) 
+
+Charm Person:                Ma(14) 
+Only works on mobs of your level or lower. Above level the 50 restrictions
+tighten. To succeed, your opponent must fail his spellsave 2 times in a row.
+ Lvl  MaxMobLvl
+ 1-50   <lvl>
+  51     50+
+52-57    51
+  58
+  59
+  60
+  61
+  62
+  63
+  64
+  65
+66-92    53
+
+Chill Touch:                 Ma(3) 
+
+Circle Of Protection:        Ma(35) 
+
+Circle Of Stone:             An/An(39) 
+
+Cloudkill:                   Ma(7) 
+Lvl X cloudkill works on mobs of lvl (X-2) / 2, rounded down.
+
+Colour Spray:                Ma(11) 
+
+Combat:                      Wl(20) 
+
+Confusion:                   Pr(21) 
+
+Conjure Air Elemental:       An(39) 
+Summons an air elemental. For stats on pets, see the list in the bottom.
+
+Conjure Earth Elemental:     An(34) 
+Summons an earth elemental. For stats on pets, see the list in the bottom.
+
+Conjure Phoenix:             An/An(45) 
+Summons a phoenix. For stats on pets, see the list in the bottom.
+Lvl 45 An/An can summon max 3 lvl 52 elementals. Trying Phoenix gives:
+   You are unable to control any more elementals.
+Lvl 50 An/An can summon max 3 lvl 53 elementals.
+Lvl 50 An/An can summon max 3 lvl 55 elementals.
+
+Conjure Water Elemental:     An(42) 
+Summons a water elemental. For stats on pets, see the list in the bottom.
+
+Contingency:                 Ma(30) 
+
+Control Weather:             Ma(10),An(12),Pr(13)
+
+Create Food:                 Pr(3) 
+
+Create Water:                Pr(2) 
+
+Cure Blind:                  Pr(4) 
+
+Cure Critic:                 Pr(9),An(20),Te(25)
+
+Cure Light:                  Pr(1),Te(4),An(5)
+
+Cure Serious:                Pr(5),An(10),Te(14)
+
+Curse:                       Ma(12) 
+
+Darkvision:                  Ma(13),Nb/Nb(17)
+
+Deadly Swarm:                An/An(45) 
+
+Deathshadow:                 Nb/Nb(35) 
+
+Deathspell:                  Ma/Ma(40) 
+
+Detect Alignment:            Te(3),Pr(4)
+
+Detect Invisibility:         An/Ma(2),Wl(3),Nb/Pr(5)
+
+Detect Magic:                Ma(2),Pr(3)
+
+Detect Poison:               Pr/Te(2),Nb(4)
+
+Dimension Door:              Ma(17) 
+
+Dispel:                      Pr(10),Te(12)
+Only works on opposite alignments
+
+Earthquake:                  An(6),Pr(7)
+
+Enchant Weapon:              Ma(16) 
+* Enchants a weapon, by giving it a bonus to hitroll & damroll. The bonus
+  depends on the level of the enchant (level of the caster / the one scribing
+  the enchant scroll). The level of the one reciting the scroll is irrelevant.
+* If enchanted by a non-neutral char, the weapon will also get an anti-align
+  flag, making it unwieldable by someone of the opposite alignment. Note that
+  if reciting a scroll, it's the alignment of the person reciting the scroll
+  that matters, NOT the alignment of the one scribing the scroll.
+* An anti-evil flag on a weapon only makes it unusable by evil-aligned chars.
+* An anti-good flag on a weapon makes it unusable by good-aligned chars AND
+  also lowers the level restrictions a little (10%).
+* Only weapons that has no bonuses (no "Affects : ...") can be enchanted. The
+  only bonus allowed is "SLAY vs <type>". Also, it may not have a "MAGIC" flag.
+* Once enchanted, the level-requirements of the weapon will increase to match
+  its new powers. So a highly enchanted weapon will increase the levels more.
+  Remember that if you are not good-aligned, you can reduce the requirements
+  a bit by having it enchanted by an evil char (giving it an antigood-flag).
+* Once enchanted, the weapon will also be given a "MAGIC" flag, making it
+  impossible to forge. So before enchanting it, always make sure it's forged.
+* Once enchanted the weapon will also be given a "UNIQUE" flag, making it
+  impossible to donate or sacrifice it.
+* Note: If you enchant a wielded weapon, it will still be wielded once
+  enchanted, even if the level requirements exceed your level. This means you
+  will be allowed to use the weapon, but if you die or unwield your weapon
+  you can not rewield it.
+* Table of bonuses depending on enchant level:
+      Lvl  Hr Dr
+     13-30 +1 +1
+     31-34 +1 +2
+     35-40 +2 +2
+     41-44 +2 +3
+     45-50 +3 +3
+     51-54 +3 +4
+     55-60 +4 +4
+     61-64 +4 +5
+     65-70 +5 +5
+     71-74 +5 +6
+     75-80 +6 +6
+     81-84 +6 +7
+     85-90 +7 +7
+     91-94 +7 +8
+     95-00 +8 +8
+
+Energy Drain:            20  Ma(13) 
+Does low damage, but can drain mana. If spell kills, no mana is gained.
+Gives mana from unlife-resistant/immune mobs too, but deals no damage against
+immune mobs and sometimes no damage against resistant ones.
+               <cost>     = Casting cost
+               <chance>   = Chance to drain
+               <drain>    = <target's level> * 3.75  (rounded down)
+               <perspell> = <chance>*<drain> - <cost>
+               <percast>  = 0.95*<perspell> - 0.025*<cost>
+               <permin>   = <percast> * 24
+               For me (lvl 77, adding curse):
+               Mob             Lvl Chance Drain  PerSpell  PerCast  PerMin
+               Elchor          100  0.05   375     -1.25
+               Grey Mare        45  0.25   168     22
+               Snowman          45  0.25   168     22
+               Rhododen Sentry  41  0.35   153     33.55
+               etchers wife     40  0.35   130     25.5
+               Ramses (w. mask) 38  0.30   142     22.6
+               Revenant         37  0.50   138     49       46.3     1111
+               Cherubim         35  0.50   131     45.5
+               Gryphon          33  0.55   123     47.65
+               Cadet            33  0.55   123     47.65
+               portly cook      31  0.60   116     49.6     46.6     1119
+               The Smithy       30  0.70   112     78.4     55.0     1320
+               Throne o/t order 30  0.55   112     41.6
+               Minky            25  0.75    93     49.75    47.8     1122
+               Mira-Monk        20  0.75    75     36.25
+Save 11 means the mob has 50% chance to save against your spell.
+
+Entangle:                    An(13) 
+
+Entropy:                     ---
+
+Faerie Fire:                 An(7) 
+
+Feeblemind:                  Ma(11) 
+Sets intelligence to 3. A second feeblemind will kill you.
+If you wear eq giving -3 int you might die from first feeblemind (untested).
+For mobs, it sets intelligence to 3 as well, but after eq-mods, and a second
+feeblemind has no effect. So mobs will only die if they put on -3 int eq after
+getting the feeblemind.
+
+Fire Bolt:                   Wl(24) 
+
+Fire Seeds:                  An(25) 
+
+Fireball:                    Ma(15) 
+
+Fly:                         Ma(15) 
+
+Force Bolt:                  Ma/Ma(15) 
+
+Force Field:                 Ma/Ma(55) 
+
+Gaias Beacon:                An/An(44) 
+
+Giant Size:                  An(25) 
+
+Gods Blessing:               Te/Te(60) 
+Gives you resting regen rate, even if you are standing?
+
+Good Berry:                  An(25) 
+
+Group Armor:                 Pr/Pr(27) 
+
+Group Bless:                 Pr/Pr(22) 
+
+Group Invisibility:          Ma/Ma(20) 
+
+Groupheal:                   Pr/Pr(25) 
+
+Grouppowerheal:              Pr/Pr(35) 
+
+Harm:                        Pr(25) 
+
+Haste:                       Ma/Wl(25)
+
+Heal:                        Pr(14),An/Te(30)
+
+Hell Fire:                   Ma(40) 
+
+Hell Storm:                  Ma(45) 
+
+Holy Armor:                  Te(30) 
+Damage from evil is reduced to
+   73 + ((<opponent level> - <your level>) / 2) rounded up
+Thanks to Tehanu, for helping me finding that out!
+
+Holy Aura:                   Te(40) 
+
+Holy Crusade:                Te/Te(56) 
+
+Holy Gate:                   Pr/Pr(60) 
+
+Holyword:                    Pr(31) 
+
+Hurricane:                   An(9) 
+
+Ice Bolt:                    Wl(16) 
+
+Ice Storm:                   Ma(12) 
+
+Identify:                    Ma(25) 
+
+Immolation Cold:             Wl(43) 
+
+Immolation Fire:             Wl(43) 
+
+Improved Invisibility:       Ma/Wl(9),Nb(15)
+
+Insect Plague:               An(43) 
+
+Invisibility:                Ma(4),Wl(6)
+
+Judgement:                   Te(30) 
+
+Life Blood:                  Nb/Nb(30) 
+
+Lightning Bolt:              Ma(9) 
+
+Link:                        Pr(37) 
+
+Locate Object:               Ma(6) 
+
+Magic Carpet:                Ma/Ma(25) 
+
+Magic Missile:               Ma(1) 
+
+Major Sphere Of Regeneration:Pr(32) 
+
+Mana Shield:                 Wl(35) 
+Damage taken (from spell and weapon) is halved.
+Some mana is drained instead.
+
+Mass Pain:                   Ma(33) 
+
+Mental Glance:               Wl(55) 
+
+Meteor Blast:                Ma(21) 
+
+Meteor Swarm:                Ma(25) 
+
+Minor Sphere Of Regeneration:Pr(16) 
+
+Miracle:                     Pr/Pr(40),Te/Te(45)
+
+Mirror Image:                Ma(60) 
+Creates X mirror images of you. Each hit has a chance of hitting a mirror
+image, destroying that image (but not hurting you).
+Probably equal chance of hitting mirrors compared to chance of hitting you.
+Can also save you against some spells, which seem to be treated the same way
+as attacks.
+Pure mages are supposed to get more mirrors.
+X max seen is 10 (lvl 99 Pr/Ma)
+Mirror image works on: Plasma ball, hell fire, ?
+MI does not work on:   ?
+
+
+Mordenkainen's Sword:        Ma/Wl(25)
+Creates a noremove/nodrop weapon with
+ damroll: 1dlvl (lvls above 50 are halved, rounded down)
+ hitroll: 1d(lvl/10)
+It lasts: 538s-589s at lvl 80
+
+Mountain Heart:              Nb(20) 
+
+Natures Blessing:            An/An(20) 
+Gives detect invis, sense life and 2 "nothing happened" (detect align &
+darkvision?) and hp (450-478 for lvl 57 Animist)
+
+Nether Bolt:                 Wl(40) 
+
+Pacify:                      Pr/Te(15)
+
+Plant Growth:                An/An(21) 
+
+Plasma Ball:                 Ma/Ma(45) 
+
+Plasma Bolt:                 Ma/Ma(40) 
+
+Poison:                      Pr(8),Nb(9)
+
+Powerharm:                   Pr(35) 
+
+Powerheal:                   Pr(25) 
+
+Powerword Blind:             Ma(18) 
+
+Powerword Kill:              Ma/Ma(30) 
+
+Powerword Pain:              Ma(31) 
+
+Powerword Stun:              Nb/Nb(65) 
+Earth elemental (well) is resistant to it.
+
+Prayer:                      Pr(17),Te(20)
+
+Protection:                  Pr(6),Te(10)
+
+Regenerate:                  Pr(14) 
+
+Remove Curse:                Pr(12),Te(17)
+
+Remove Poison:               Pr(9),Nb(13),An(15),Te(18)
+
+Revitalize:                  Pr(25) 
+
+Ritual Of Pain:          32- Wl/Wl(53) 
+Damage taken, divided by 6, is added to your mana.
+Works for spell damage too, I think.
+
+Sanctuary:                   Pr(13),Te(40)
+
+Satiate:                     An(11) 
+
+Sense Life:                  Nb(5),Pr(7)
+
+Serenity:                    An(55) 
+
+Shadow Displacement:         Nb(33) 
+
+Shadow Form:                 Nb(40) 
+
+Shock Bolt:                  Wl(4) 
+
+Shocking Grasp:              Ma(7) 
+
+Sleep:                       Ma(14) 
+
+Soulsteal:                   Ma/Ma(35) 
+
+Spirit armor:                -
+ac bonus = lvl/2 rounded down
+Also gives -5 saves vs spells
+
+Sticks To Snakes:            An(35) 
+
+Strength:                    Ma(4),Wl(7),Te(8)
+
+Sufferage:                   Te/Te(25) 
+
+Spell Name              Cost Req
+Summon:                      Pr(8) 
+Summon a player or mob. Can only summon someone of max 4 levels above your own.
+Once you have passed lvl 50, you can summon any player. You can never summon
+aggressive monsters or monsters of level 80+.
+
+Sun Arrow:                   An(15) 
+
+Sun Ray:                     An(18) 
+
+Sun Shield:                  An(22) 
+
+Teleport:                    Ma(8),Wl(10)
+
+Teleport Without Error:      Ma(10),Wl(15),Nb(27)
+
+Touch Of God:                Pr(65) 
+Heals if same alignment as you, otherwise damages.
+
+Tranquility:                 An/An(28) 
+
+Treeform:                    An(30) 
+
+Triad Of Fire:               Wl/Wl(38) 
+
+Triad Of Ice:                Wl/Wl(26) 
+
+Trueheal:                    Pr/Pr(30) 
+
+Vampiric Mist:               Ma(42) 
+Draw life from your opponent to heal yourself.
+Half as powerful & costly as powerheal, but also damages your opponent.
+It has a risk of backfiring (approx 25%, maybe only 20%), damaging you
+and healing your opponent.
+
+Venom:                       Nb/Nb(55) 
+
+Ventriloquate:               Ma(1) 
+
+Water Bolt:                  Wl(8) 
+
+Wither:                      Pr(33) 
+Hp is set to 2/3 of maxhp.
+If resistant to unlife, hp is set to 4/5 of maxhp.
+If vulnerable to unlife, hp is set to 1/2 of maxhp.
+
+Word Of Recall:              Pr(11) 
+
+Wrath Of God:                Pr/Pr(30) 
+
+
+
+
+Pets:
+
+Dreadlock: Each pet takes 1/12th of the final take home xp your character gets. so 6 pets, they take half.
+
+Lvl XpToNext   Animated dead          Wolf          Air Elemental      Earth Elemental    Water Elemental
+ 1:  
+ 2:  
+ 3:                              150H, 100M,101V
+ 4:           262H, 120M,101V
+ 5:           310H, 150M,101V
+ 6:           360H, 180M,101V
+ 7:           410H, 210M,101V
+ 8:           460H, 240M,104V
+ 9:           510H, 270M,117V    450H, 270M,117V
+10:           562H, 300M,130V
+11:           612H, 330M,143V    550H, 330M,143V
+12:           662H, 360M,156V    600H, 360M,156V
+13:           712H, 390M,169V    650H, 390M,169V
+14:           762H, 420M,182V    700H, 420M,182V
+15:           810H, 450M,195V    750H, 450M,195V
+16:           860H, 480M,208V    800H, 480M,208V
+17:           910H, 510M,221V
+18:           962H, 540M,234V    900H, 540M,234V
+19:          1012H, 570M,247V    950H, 570M,247V
+Lvl XpToNext   Animated dead          Wolf          Air Elemental      Earth Elemental    Water Elemental
+20:          1062H, 600M,260V   1000H, 600M,260V
+21:          1112H, 630M,273V   1050H, 630M,273V
+22:          1162H, 660M,286V   1100H, 660M,286V
+23:          1212H, 690M,299V
+24:          1262H, 720M,288V
+25:          1312H, 750M,325V
+26:          1360H, 780M,336V
+27:          1412H, 810M,351V
+28:          1462H, 840M,355V
+29:          1512H, 870M,377V
+30:          1562H, 900M,390V
+31:          1612H, 930M,403V
+32:          1660H, 960M,416V
+33:          1712H, 990M,429V
+34:          1762H,1020M,442V
+35:          1812H,1050M,455V
+36:          1850H,1080M,468V
+37:          1900H,1110M,481V
+38:          1950H,1140M,494V
+39:          2010H,1170M,507V
+Lvl XpToNext   Animated dead          Wolf          Air Elemental      Earth Elemental    Water Elemental
+40:          2060H,1200M,520V
+41:          2110H,1230M,533V
+42:          2160H,1260M,546V
+43:          2210H,1290M,559V
+44:          2260H,1320M,572V
+45:          2310H,1350M,585V
+46:          2340H,1380M,598V
+47:          2390H,1410M,611V
+48:          2440H,1440M,624V
+49:          2490H,1470M,637V   2450H,1470M,637V   2550H,1470M,637V   2500H,1470M,637V   2600H,1470M,637V
+50:          2540H,1500M,650V                                         2550H,1500M,650V
+51:          2600H,1530M,663V                      2700H,1530M,663V
+52:   50M?   2660H,1560M,676V
+53:  100M    2710H,1590M,689V   2650H,1590M,689V   2750H,1590M,689V   2700H,1590M,689V   2800H,1590M,689V
+54:
+55:          2812H,1650M,715V 
+56: 
+57: 
+58: 
+59: 
+60: 

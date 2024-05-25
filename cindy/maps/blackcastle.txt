@@ -1,0 +1,55 @@
+# Fang's Black Castle (225): 50-100, Fang  (King's Castle: 3wnwne2nw2nwne3sesen)
+#
+#                     o-+-King
+#                     |
+#                     o   Prince
+#                    /      |
+#         o---------o---o---o
+#        /          |
+#   o---o  o---o----o---o---o     o---o---o
+#   |      |       /        |    /|       |
+#  Uruk  o-o-Bard o         o   / |  HaS  |
+#  Orc     |      +         |  /  |   |   |
+#          o    o-o   Druid-o /   o---o---o     Archmage
+#         x       |         |/                    /
+# Dragon-o-Necro  |     o   o-Knight         o-+-o
+#                 |    /                    /
+#                 |   o------o-------o--o--o
+#                 |   |             /      |
+#                 o   o o        o-o-o     o o
+#                 |   |/         |         |/
+#                 |   o-Comma.   |         o
+#                 |   |          |         |
+#                 |   o o      o-o-o       o o
+#                 |   |/         |         |/
+#               o-o   o-o-o----------o-----o
+#               |        /       |
+#       Captain-o---+---o      o-o---o
+#               |                |   |
+#               X            o---o---o
+#               |                +
+#             - o -           Wraith
+#
+* Captain has key to the east area. Commander has key to the Wraith.
+* Wraith has key to the north part. Uruk orc (moving) has key to the King.
+
+Fang's Black Castle:     Lvl    Xp ASWIDMX # agg     Hp         Gold     Special
+The cook servant          30 3780k N----x    --   750-750     2500-2500  [human]
+The castle guard          35 9100k N-x--x    G-   893-899     3040-3064  [human], bash, kick
+The archer                40   16M N-xx-x    GN  1289-1316    6339-10216 [human]
+The cook                  45   27M N----x    --  1800-1800    7500-7500  [human]
+The mercenary             45   32M N-xx-x    GN  1756-1765    8446-8618  [human], bash, kick, headbang, berserk
+The black skeleton        50   47M N-xx--    GN  2283-2298       0-0     [skeleton]
+The captain of the guards 55   60M N--x x    --  3395-3408   12553-12589 [human], bash, kick, headbang
+The commander             60   99M N--x x    --  4763-4794   17446-17461 [human], bash, headbang
+The uruk orc              60  111M E-xx      GN  4896-4917   19934-20045 [orc], hide, backstab (50)
+The black knight          65  150M Nx-x      GN   ~7k        66047-66145 [insubstantial], bash, kick, headbang, berserk
+The black wraith          65  139M N-xx      GN   ~6.5k      59466-59472 [insubstantial]
+The silver druid          65  156M Ex-x x    G-  6489-6526   14558-14624 [human], blindness, powerword blind, wrath of god, wither, 1-2 spells
+The archmage              70  273M N--x      GN  8490-8493   65988-66092 [human], triad of ice, water bolt, energy drain, chain lightning, mana shield, teleport, 2-2 spells
+The dark-elf bard         70  252M Ex-x x    G-  8505-8512   65927-66079 [drow-elf], backstab, blocker, sleep, haste, teleport, armor, blindness, 6804 hp withered
+The necromancer           70  275M Nx-x      GN  8208-8281   65899-66216 [human], triad of fire, wither, energy drain, teleport, hell storm, mana shield, 1-2 spells
+Hammershield              75  330M N--x x    -- 12993-13041  65798-65981 [---], shrugger, bash, kick, headbang, berserk
+The prince of evil        75  450M Ex-x      GN 13104-13105  65963-65992 [devil], bash, kick, headbang, 10483 hp withered
+The undead king           80 1025M Ex-x      GN 18046-18087  65535-65535 INFO, [skeleton], invis, wrath of god, energy drain, powerword kill, entropy, powerharm, blindness, wither, 2-2 spells
+The silver dragon         85 1689M Nx-x      GN 24288-24303  65915-66026 INFO, [dragon], forceflee-stun(tailstrike)

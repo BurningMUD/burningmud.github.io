@@ -1,0 +1,88 @@
+# Lagamore (190): 10-50, Unknown  (New Thalos: 2en2e4ne2nwn2w)
+* FIND OUT: The Janitor           [human?]
+* FIND OUT: The Master            hp, hp
+#
+#                                  RIP
+#                                   +
+#                           RIP + Master + RIP
+#                                  /+
+#     /---------------------------/ o
+#    /                              |
+#   /                    o - o      o      o - o
+#   |                    |   |      |      |   |
+#   |                    o - o ---- o ---- o - o
+#   |                    |   |      |      |   |
+#   |                    o - o   /->o      o - o
+#   |                           o
+#   |                           |
+#   |             o-----o       o               o-----o
+#   |            /|    /|       |              /|    /|
+#   |           o-|---o-|---o-----o-----o-----o-|---o |
+#   |           | |   | |   |   +/      |     | |   | |
+#   |           | o-----o   o   o       o     | o-----o
+#   |           |/    |/    |           |     |/    |
+#   |           o-----o-----o-----o-----o-----o-----o
+#   |                             +                      
+#   |                             o
+#   |   h ------------------ h --/-------------------- h
+#   |   |                       /                      |
+#   |   |    o ---------- o ---/----------------- o    |
+#   |   |    |                /                   |    |
+#   |   |    o <---- o ----- o ----- o ---------> o    |
+#   |   |    |       |       |       |            |    |
+#   |   h    |       |       o       |            |    h
+#   |   |    o       |       |       |    o   o   |    |
+#   |   |    |       |   o - o - o   |    |   |   |    |
+#   |   |    |       |   |   |   |   |    o - o - o    |
+#   |   |    |       |   o - o - o   |    |   |   |    |
+#   |   |    |       |   |   |   |   |    o   o   |    |
+#   |   |    |       |   o-> o - o   |            |    |
+#   |   h    |       |       |       |            |    h
+#   |   |    U - U - o ----- o ----- o            |    |
+#   |   |    |   |   |       |       |            |    |
+#   |   |    U - U   o ----- o ----- o -- o - o - o    |
+#   |   |                    ^       |    |   |        |
+#   |   |    D - o - o - D   |       |    o   o        |
+#   v   |    |   |   |   |   |       o-o               |
+#   o-----o--o - o - o - o   |       |    o   o   o    |
+#  /    |/   |   |   |   |   |       |    |   |   |    |
+# o     h    D - o - o - D   |       o -- o - o + o    h
+# |     |                    |                         |
+# o     h ------- h -------> o <--------- h ---------- h
+# |                          +
+# o ------------------------ X - o - o
+# |                                  |
+# o                                  o - o -
+#                                        |
+#
+* h: Hedge. Here be dobermans!
+
+Lagamore:                Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+The Duck                   1   125 G----     --     8-17        1-1     [bird]
+The Janitor                1   150 G----     --    11-13       35-35    [human?], corpse taker, looter
+The pelican                1    10 G----     --     9-13       21-21    [bird]
+The Sparrow                1   100 G-x--     --     6-12        1-1     [bird]
+The Swan                   1   150 G----     --    11-17        1-1     [bird]
+The beaver                 2  1600 N----     --    30-32      201-201   [animal], sitting
+The chipmunk               2   800 G-x--     --    19-24      101-101   [animal]
+The Ewe                    2   400 G-x--     --    14-16       76-76    [animal]
+Timmy the Carthorse        2  1400 N-----    --    55-58       51-51    [animal], looter, flees
+The Ram                    4  1400 G-x---    --    28-32      151-151   [animal]
+Tiny                       4   12k N-----    --    85-92       74-108   [---], flees
+Burr                       5   95k N-----    --   207-210    1658-1684  [animal], flees
+Bessy                      6   48k N-----    --   132-136    1292-2107  [animal], flees
+A foxhound                10   25k G-x--     --    10-17      751-751   [canine]
+The groom                 10  250k G-----    --   309-313    3009-3283  [human], mana shielded, sitting
+Flash the Magnificent     15  300k Gx-x--    GNE  592-621     807-886   [animal]
+Jeeves, the butler        24 1200k G-----    --   601-651    2618-2892  [human], invis, flees
+The Maid                  26 1300k N--x-x    --   532-544    5486-5522  [human]
+The lackey                27 1620k N-x---    --   535-557    3152-3931  [human], agg-sleeper, flees, looter
+The cook                  32 4160k N--x--    --   983-1113     16-17    [human], sitting
+Bela the Governess        33 6600k Ex-x-x    --  1255-1365  25828-26839 [human]
+The Student (yellow belt) 35 5950k E-xx--    --  1272-1313   3560-4439  [human]
+The student (blue belt)   38 7410k E-xx--    --  1392-1450   6363-11040 [human]
+The librarian             42   15M Nx-x--    --  1203-1214  12830-14852 [human]
+The student (brown belt)  42   13M Exxx--    --  1984-2129  15038-19552 [human]
+The doberman              47   31M E-xx--    GNE 2418-2469   1154-5883  [canine]
+The Sensei                55   66M Gx-xx-    --  3440-3489  28765-38895 [human]
+The Master                85 1530M Gxxxxx    --   ~24k      44364-58334 INFO, [human], powerheal, 0-1 spells, sitting, special-throw (to the room 2 down from him)

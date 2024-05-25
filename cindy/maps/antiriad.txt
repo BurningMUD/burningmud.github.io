@@ -1,0 +1,51 @@
+# Antiriad (143): 50-80, Torain  (Elven Village: 2sw2s2es2e)
+#
+#         o + Sith - o - o
+#                    |
+#            o - o --|-- o
+#            |   |   |   |
+#            o   o   o - o - RIP
+#                +
+#   o ---- o --- o -------- o - o
+#   |      |     |          |   |
+#   |      o     |    o o   o   |
+#   |            o   /  |       |
+#   o - o        |  o - o - o + o
+#   |            |      |       |
+#   |            |      o       |
+#   o - o ------ o -------- o - o
+#   |         o          o      |
+#   |         |          |      |
+#   |   o---o-o-o    o   o      |
+#   |   |   |   |    |   |      |
+#   |   | o o   o    o - o      |
+#   |   | +          |          |
+#   |   | o --- o -- o          |
+#   |   |/           |          |
+#   o + o        o - o   o      |
+#   |   |               /|  o - o
+#   |   o - o   o   Polt +      |
+#   |      /    |        |      |
+# o o --------- o - o -- o ---- o
+#  \+    /          |
+#   o   /     o+o   o
+#      /      |     |
+#     o - o - o     o
+#         |         |
+#         o         X
+#                   |
+#
+* Whole area is very bright
+* Skorns are vuln pure/light/fire. Poltergeist is vuln energy (resist weapon).
+
+Antiriad:               Lvl    Xp ASWIDMX # agg      Hp        Gold     Special
+The Rock Grub            45   20M E--xx-    GN   1797-1826  10287-11604 [animal], hide
+The Basilisk             50   26M E--xx-    GNE  2280-2322  12661-12739 [reptile]
+The troglodyte           52   44M E-xxx-    --   2792-2809  10908-13472 [lugroki], sneak
+The skorn                55   55M E-xx -    --   3510-3516  11789-15752 [lugroki], random-agg-all, sneak, kick, headbang, murder
+The Fire-Hound           57   57M E--x      GNE  4207-4217  13490-16314 [magical]
+The greater skorn        60   90M E-xx -    --   4793-4812  14718-16197 [lugroki], random-agg-all, sneak, kick, headbang
+The Watchtower Guardian  62  105M N--x      GNE  5210-5217  14155-17065 [entity], kick, headbang
+The Serpent Guardian     65  130M N--x -    --   5567-5571  15918-16534 [snake], random-agg-all, kick, headbang, backstab, murder
+The Poltergeist          70  133M E--x  0   GNE  ~10k       16008-19284 [insubstantial]
+Lord Sith                80 1360M E--x    1 GN  21042-21078 19765-21064 INFO, [snake], backstab, murder, kick, headbang, 2-2 skills

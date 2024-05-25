@@ -1,0 +1,74 @@
+# The Circus (59): 1-10, Binky  (Speedie information below the map)
+#
+#                                   X
+#                                   |
+#                                 Ticket
+#                                   |
+#                               o - o - o
+#                                   |
+#                           Candy - o - o - o - o
+#                                   |   |   |   |
+#                                   o   o - o - o
+#                                   |
+#                            o--\   o   /----o
+#                           /   |   +   |   /
+#                          o----|---o---|--o
+#                               |   |   |
+#                               \---f---/
+#                                  /|
+#                                SC |
+#                                   |
+#           o-------------------o-o-|-o
+#          /                   /    |/
+#         x   o   o   o       o--+--o---o
+#        /    +   +   +      x     /
+# o-o-o-o-----o---w---w+o   v     o
+#       |     +   +   +     o
+#     o+o+o   o   o   o         
+#       +             +
+#       o             o*->Drakyri
+#
+* Entrance is "A large travelling fair" that moves around between 5 locations.
+* One round in approx 43 hours (54 rl mins). Waits 7.6 hours (9.5 rl mins) in
+* each town. When moving it can't be entered.
+*    1: n3wswswn3w4ne4ne3ne2nwne2nes2e2n3e                   [Kerofk-s4w]
+*    2: 3w2s2wnw2swse2se2nw3ne2ne2n2es2eses2es2ene2ne2nwne3n [Sundhaven-7s]
+*    3: 3swse2sw2s2en3en3enenene2se3se2swse2se2swses3wn...
+*       3ws2ws8w5s3ws2es2esese2se2ses2es3e4sw                [Ofcol-4sw]
+*    4: e4n3wnwswsws2ws2ws2wn2ws3w2se2sdw                    [Solace-7s]
+*    5: eu2nw4nw2nw2ne2nwnw2ne4n9w5nw                        [Karandras-7w]
+* w: "look" in this room will show location of circus.
+* SC: The Ringmaster's shortcut (cannot be entered).
+
+Circus:                     Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+The knife thrower's assistant 1   200 N----     --    12-12       30-31   [human]
+Little Bobby                  1   200 G-x--     --    14-16       29-30   [human]
+A member of the audience      1   200 N----     --    12-17       26-35   [human]
+A red-nosed clown             1   200 G----     --    14-15       27-33   [human], flees
+A small child                 1   200 G----     --    14-18       30-35   [human]
+The Sword Swallower           1   200 N----     --    11-16       32-33   [human]
+An animal keeper              3  3000 G-x--     --    57-60       72-80   [human]
+Bobby's mother                3  3000 G-x--     --    58-63       75-76   [human]
+The child's mother            3  3000 N----     --    62-63       71-78   [human]
+A clown with big shoes        3  3000 G----     --    57-59       71-76   [human], flees
+The Midget (amusing)          3  2400 E----     --    57-57       73-77   [hobbit], flees
+The Midget (stealing)         3  3000 E-x---    --    58-61       79-79   [hobbit]
+A poor horse                  3  3000 N----     --    57-63        0-0    [---]
+A guard dog                   4  7500 E--x-     GN    81-82        0-0    [canine]
+A horse                       4  7000 N----     --    79-85        0-0    [---]
+The knife thrower             4  7000 N----     --    77-77      129-144  [human]
+The Bearded Lady              5   12k N----     --   103-103     207-215  [human]
+A big clown                   5   12k G----     --   100-105     213-297  [human], flees
+The child's father            5   12k N----     --    96-97      221-277  [human]
+The Illusionist               5   12k N--x--    --    97-104     205-255  [human]
+A tightrope walker            5   12k G----     --   100-103     286-289  [human]
+A trained bear                6   26k N----     GN   118-122       0-0    [animal]
+The cotton candy vendor       7       G--       ---                       shopkeeper
+Ivan                          7   35k G-----    --   138-139     569-596  [human], flees
+A ferocious Lion              8   66k E----     GN   159-165       0-0    [feline]
+The lion tamer                8   60k G----     --   156-158     779-793  [human]
+The Circus Owner             10  110k E-----    --   194-199       9-9    [human], flees
+An elephant                  10  110k N-----    --   196-208       9-9    [animal]
+The Ringmaster               10       N-x       ---                9      [human], no-attack, walk-path (8.5 hours:d, 1 hour:back)
+Binky's chef                 18  413k N-----     -   382-398       9-9    [human]
+The Ticket Clerk             31       G--       ---                       shopkeeper

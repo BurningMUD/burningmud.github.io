@@ -1,0 +1,30 @@
+# Mirror Beyond (197):  (Speedie information below the map)
+#
+# X     Detrom
+# |       |
+# o - o - o
+#     |   |
+#    RIP- o - o
+#
+* Part of The forgotten citadel of Taon
+* All directions are reversed (type "west" to go east etc)
+*
+* 10 mirrors are spread out in the world. Only one is possible to enter.
+* Which one, changes from time to time. Probably when zone resets.
+* Don't know if there is any specific order in which they change.
+* Mirror locations:
+*    1: Karandras:    10wn3wswswn3w
+*    2: Karandras:    5s3w2s7e
+*    3: Karandras:    10e10n2e2ne
+*    4: Kings Castle: 3wnwne2nw2nwne2s
+*    5: Ofcol:        2n
+*    6: Olympus:      e5s3dsd
+*    7: Sundhaven:    2e4n2w2ndne2sesese3neses
+*    8: Karandras:    3s2en3e2se3suw3n
+*    9: Ultima:       top floor
+*   10: Inside Taon
+*
+* Just after boot mirror 5 (ofcol-2n) was open.
+
+Mirror Beyond:           Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+Detrom                    97       N--x    1 GN     ?           0      INFO, [human], Only appears when someone enters his room. NOT vuln heal but starts at awful and gains hp when you hurt him. Dies when on full hp. Does not seem to be vuln light, but maybe vuln pure? Murder messes up so he dies "badly" without dogtags. Room is noflee, but recall and summon out works. If nobody is in the room he returns to corpse-state (item) and when reappearing he has lost any bad spells cast on him, and health is probably reset too.

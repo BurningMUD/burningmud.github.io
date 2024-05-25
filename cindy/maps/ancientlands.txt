@@ -1,0 +1,77 @@
+# The Ancient Lands (525): 45-100, Arcane/Fanth (45-70min/?)  (Kings castle: 3wnwne2nw2n2wn5ws2wne2ne2nen3en2es2ene2nwn)
+* FIND OUT: Brontosaur: hp, gold
+* FIND OUT: Crystal Guardian: irv:s, xp, hp, hp, gold
+#
+#                                                                 clearing
+#                                                                 (noflee)
+#                                                                    |
+#                                forest------forest------f.path----forest
+#                                  |           |            |        |
+#                                forest      glade       f.path      |
+#                                  |        (noflee)    (noflee)     |
+#                                  |                        |        |
+#                                forest------forest         |      forest
+#                               (noflee)       |         f.path      |
+#                                            forest         |        |
+#                                              |            |        |
+#                                            forest      f.path----forest
+#                                              |            |     (noflee)
+#                                            forest------f.path
+#                                                           |
+#  Pterod--bend                                          f.path
+#           |            small                              |
+#         split----------ravine                          f.path
+#           |             /                                 |
+#         ravine       foot------------smaller---------pathTTforest
+#           |                                               |     smelly
+#         hole                      sw.path--inswamp-----inswamp--swamp <-\
+#          /                           |        |     \     |        |    |
+#        cave                       sw.path---still--> \-shallow--smelly  |
+#         +                            |     shallow      lake    swamp   |
+#         V       o----o            sw.path   lake          |        |    |
+# o-> o---o-> o   |    |               |                 shallow----RIP   |
+# |   |   |   |   |    V            sw.path               still           |
+# o---m <-o---o---o--> m               |     /--o--o--o    lake           |
+# |   ^   |   |   ^    ^             wading  |  ^    /                    |
+# |   |   |   |   |    |    o->Home    |     |  | o----o                  |
+# o---o   o---o---o----o    ^        river   |   \|    |                  |
+#     |   |   ^   |    ^    +          |     |    o----|------------------/
+#     |   |   |   |    |  Crystal    green   |    ^    |
+#     |   |   |   o----o+>Guardian     |     |    \----o        NORECALL
+#     |   |   |   |    |             mouth   |
+# o <-o---o---o   |  /-o       - - - - |- - -|- - - - - - - - - - - - - - -
+# |   |   |   |   \  |       /         o     |              o
+# |   o---o   o----> o                 |     |             /|   RECALL
+# |           ^            /           o-----/            o |   WORKS
+# \___________/                        |                 /  /
+#                        /     o       E <-------------*o  o
+#                              |       |                  /
+#                      /       o - o - o                 o
+#                              |   |                     |
+#                    /         o - o - o                 o
+#                                                        |
+#                  /                                     X
+#                                                        |/
+#                                                        o -
+#
+* All but southernmost part is nosummon/norecall/nosumout. Dangerous place!
+* The recallable area and the west-side maze are very bright.
+* The dinosaurs' items are created when they die.
+* Dinosaurs are vuln fire.
+
+Ancient Lands:         Lvl    Xp ASWIDMX # agg      Hp        Gold     Special
+A green snake           35   81M N-x- - 10 GN    851-908       1-1     [snake], sneak, poison
+A female neanderthal    40   13M N---x-    ---  1207-1323   3746-3806  [---], sitting, flees
+A neanderthal hunter    45   27M N-x-x-    GNE  1584-1602   5010-5019  [---], bash, kick, headbang, berserk, looter
+A huge cave-bear        55   54M N--x    1 GN   5151-5214      1-1     [animal], sleeping, berserk, blocker
+The pterodactyl         60   90M Nx-xx   1 GN   3750-3787      1-1     [dinosaur], standing before battle - flying after
+The neanderthal shaman  65  234M Nx-x    1 GN   6085.5     31682-31760 [---], sitting, curse, trueheal, powerharm
+A velociraptor          65  156M Exxxx     GNE  6051-6138      1-1     [dinosaur], hide, sneak, blocker
+The triceratops         70  294M Nxxxx-  2 --   8484-8659      1-1     [dinosaur], bash, berserk, 4-6 attacks
+The neanderthal leader  75  488M Nx-x    1 GN  11892-12144 66036-66283 [---], bash, kick, headbang, berserk, blocker, 2-7 attacks
+The stegosaurus         75  488M Nxxxx-    --  12150-12201     1-1     [dinosaur], bash, flees
+The allosaurus          80 1345M Nxxxx 1 2 GNE 16611-16731     1-1     [dinosaur]
+The brontosaur          85 1530M N--xx-  3 --  32373           1       [dinosaur], blocker, flees
+Crystal Guardian        85       Nx x    1 ---                         vuln unlife/fire, resist earth/air/ice, special-open-door, shrugger, around 500 damage per round
+  Try: pure, light, large, superlarge, energy, magic, poison, acid, dark, iron, mental, gas, bleed, electricity, silver, stun, water, wood, slay human, slay mythical
+The tyrannosaurus rex   99       Nxxxx   1 GNE 65283.75        1-1     [dinosaur], resist WEAPON/fire/dark/ice/acid/poison/air/unlife/energy/eletricity/pure/light/gas/mental/water/earth, only a small chance it will spawn each zone reset, bash, kick, headbang, 10-10 attacks, 395/69 dam per attack, negate sanc 12/24 times (50%), 52227 hp when withered

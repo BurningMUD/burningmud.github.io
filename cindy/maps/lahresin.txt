@@ -1,0 +1,58 @@
+# Town of Lahresin (219): 50-100, Chandos (?/55-75min)  (Crossroad: 10se2sw3s4w4s)
+* FIND OUT: A lost soul             hp (approx)
+* FIND OUT: A lost soul (summoned)  Xp, DESC, hp (approx), align, sanc, walking, detect invis, see dark, agg, gold, gold
+* FIND OUT: Loreshi                 Xp, see dark, hp (approx)
+* FIND OUT: Lorhesi room summons souls even if he is dead (but before all
+* FIND OUT:   summoned souls were killed). What triggers soul-summons?
+#
+# o----g
+# |   x           |
+# o maze          o -
+# |               |
+# g-o-o-o         X                        Lorhesi
+#   |             |                           +
+#   | g  o        o                           o           _
+#   |/| x+        |                      __   |          / \
+#   o |/ o    o-o-o                     /  \  o-------s----/
+#     o  +        |                     \  |      /   |
+#    o-o-o-o-o    o---o          s----s----s-----/    |
+#    |       |        |         x     |               |
+#  o+o+o   o+o+o    o-o-o     NM      s-\             |
+#    |       |        |               | /             |
+#    o   o o o        o               |/              |
+#    |   + | |       /                |               |
+#    o-o-o-o-o      /       /---------o               |
+#    | | +   |      |       |                         v
+#    o o o   o      v       |   /--------------o-\ <-\
+#    |       |      o       |   |  /  /        | /    \
+#  o+o+o   o+o+o   /        |   s-/   |        |/     |
+#    |       |    /         |   |     |        |      |
+#    o-o+o+o-o    |         \___/     \--s----maze----s-\
+#        +        v                      |  /      \    |
+#        o        o                      \_/        \___/
+#        +       /
+#        o      /                Getting past the maze:
+#        |     /                 down, nwsnneewn, open door
+#        o <--/
+#
+* Entrance from Dunheim
+* Maze rooms are norecall, except entrance and south of king.
+* s: Lost soul
+* NM: Nomag. Pops "A dark-blue potion" when Lorhesi dies.
+* Pure/light works on most, but slay undead (Soul reaper / Artemis) is
+* advisable against Loreshi, and tortured souls only has resists.
+
+Lahresin:                      Lvl    Xp ASWIDMX # agg     Hp        Gold       Special
+A rabbit                         1   500 N-x--     --    35-39        1-1       [animal]
+A sparrow                        1   200 N-x--     --    28-31        1-1       [---]
+An orc child                    30 4500k E-xxx-    --   714-717     142-173     [orc], flees
+An orc woman                    40   17M E-xxxx    --  1259-1268    540-554     [orc]
+An orc man                      45   28M E-x-xx    --  1549-1558   1057-1059    [orc], kick
+An orc commander                50   50M E-x-xx    G-- 2846-2848   7044-7061    [orc], aware
+An orc guard                    53   59M E--xxx    G-  4552-4554   7054-7066    [orc], bash, kick, headbang, berserk
+The orc guardian                65  163M E--x x    G-  8046-8056  90410-90473   [orc], vuln bash, kick, headbang, berserk, special-open-door-and-create-treasure-on-death
+A suffering ghoul               65  144M E-xx      GNE  ~5k           1-1       [undead], colour spray, meteor blast, meteor swarm, fireball, sneak, special-appear-on-entry (unless you fled in), special-max-1-player-at-first-entry
+A tortured soul                 67  202M E-xx      GNE 7048-7051      1-1       [entity], sneak, meteor blast, meteor swarm, fireball, colour spray
+A lost soul                     75  375M E--x  0   GNE  <30k          0-0       [undead], dodge, corpseless, meteor blast, mass pain, powerword pain
+A lost soul (summoned)          75                                              [undead], dodge, corpseless, meteor blast, mass pain, powerword pain, summoned, 1-1 spells
+Loreshi, the undead elf-king    90       E--x  3   GNE          3500000-3500000 INFO, [undead], resist WEAPON/pure/light/silver, dodge, meteor blast, mass pain, powerword pain, 1-1 spells, summon lost soul, blocker, corpseless, AC -54

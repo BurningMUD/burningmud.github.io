@@ -1,0 +1,156 @@
+# High Tower of Sorcery (130): 30-100, Skylar  (High Tower: -)
+* FIND OUT: An undead giant        Hp, hp
+* FIND OUT: The Librarian          Agg-N?
+* FIND OUT: A clay golem           Xp
+* FIND OUT: The Mad Alchemist      Hp (approx)
+* FIND OUT: The Necromancer        Hp
+* FIND OUT: The Grand Mistress     Hp (approx), money
+#
+#   o + o   o   o                                    o   o - o
+#  /   x    +  x|                                    +   +   +
+# o   q     o o |                                  o-o - o - D-o   U
+# |         |/  |     Lvl 1                        |               |
+# o     o---o-o+|-o                            o + o               o + o
+# |    x    |   |                                  |               |
+#  \- o     o   |           U + o              Q + o     Lvl 2     o + o
+#          /    |           |                      |               |
+#   Sewer /  Ms-Q-Tav   o   o + o              o + o               o + o
+#     /  /      |       +   +                      |               |
+#    o<-/   o+o-o - o - o - o + o                  o - o - o - o - o
+#          *    |       +   +                          +   +   +
+#       Path-   X       o   o                          o  b.m  o
+#      weaver   |
+#
+#
+#  /------------------------------------\
+#  |         o  Scr.+o                  |            o+sp.bi+o
+#  |         +       +                  |            +       +
+#  |       o-o - o - o-D   U            |          o-o - o - o-D   U
+#   \      |               |            |          |               |
+#    o o + o               o  mobs      |      o   o               o Necro
+#     x|   |               |   +        |      |   |               |   |
+#      o + o     Lvl 3     o+Charmer    |    Golem+o     Lvl 4     o   o
+#      +   |               |            |     /|   |               |   |
+#    ench. o               o + o         \---/ o   o               o + o
+#          |               |                       |               |
+#          o - o - o - o - o                   a   o - o - o - o - o
+#              +       +                       |           +   +
+#              o-Al. Summ.                 a - a ----- Illus.  o
+#                      |                       |
+#                      | -> SouthOfYgg.        a
+#                      v/                              -> Home
+#             Solom <- o -> Sewer                     /
+#           (Medusa)  /|                             o<-o<+o+o
+#                    v v                                   |
+#          SouthOfYgg. Drow                             o-MoM-o
+#                                                          |
+#                                                          o
+#                                                          +
+#                                                          o    Lvl 6
+#                                                          +
+#              Lvl 5                                       o
+#                                                          +
+#                      o - o - D                  o        o        o
+#          |   |       |                          |        |        |
+#  o     - o - o -     o                      o-good-o+o-o-o-o-o-o+evil-o
+#  |       |   |       |                          |       /|        |
+#  o - o - o - o - o - o - o + o                  o      / o        o
+#          |   |       |                                /  |
+#        - o - o -     o   /---------------------------/   o
+#          |   |       |  /                                +
+#                      o o                                 o
+#                      |/                                  |
+#                      o                                o-neu-o
+#                                                          |
+#                                                          o
+*     n  s  e  w
+*  1: 3  -  4  2
+*  2: 2  1  3  4
+*  3: 1  5  2  4
+*  4: 4  1  2  3       |
+*  5: 3  6  2  4     - 1 -
+*  6: 5  7  6  1       ^
+*  7: 6  8  9 10       |      From entrance: nnsssws -> HT
+*  8: 9  6  8  1       X -
+*  9: 5  8  4  9
+* 10: 7 11 10  3
+* 11:HT  4  7 11
+*
+* Entrance from the Shadow Grove. Whole area is very bright.
+* Area does not pop with players in it.
+* Interesting area with lots of different NPC:s - most of them human.
+* Explore carefully - some aggressive mobs are high-level.
+
+High Tower of Sorcery:       Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+Edgar                          1   200 G-x--     --    15-20      465-22326 [human], flees
+The Wolf                       4  6400 N----     --    51-58        1-1     [canine]
+The Cityguard                  8   60k G-x--x    --   163-174     753-847   [human], protector
+The snake                     11  132k E--x--    GNE   75-78        0-0     [snake]
+The skeleton warrior          12  168k E-xxx-    GNE  178-180      10-12    [skeleton]
+The warrior                   12  144k E-x--x    GNE  108-111       0-0     [human]
+The Guardian of the riches    25     0 E-----    --   667-667    2190-7165  [human]
+A broom                       30 4125k G--x--    GNE  706-812   13882-13952 [entity]
+A pair of disembodied hands   30 4125k E-x---    GNE  735-775   13888-13961 [entity]
+A shadow guardian             30 4125k E-xxx-    GNE  755-763   14473-14647 [insubstantial]
+A large kitten                35 7875k G-----    --   901-963       0-0     [feline], energy drain
+A pair of disembodied eyes    35 8663k E-xx--    GNE  896-901   17144-17315 [entity]
+An ugly witch                 35 8663k E--x--    GNE  890-917   17148-17304 [---]
+The cook's assistant          38   11M E--x--    --   926-1134  17643-17797 [human], flees
+A mage                        40   14M G-xx--    --  1166-1242  18600-18641 [human], lightning bolt, colour spray, fireball
+A scribe (manuscripts)        40   14M Gx-x--    --  1313-1328  19703-19715 [human]
+A scribe (translations)       40   14M Gx-x--    --  1280-1296  19672-19711 [human]
+A student                     40   15M G-----    --  1297-1346  19705-19779 [human], sitting, fireball, colour spray, lightning bolt
+A student of spells (asleep)  40   15M G--x--    --  1281-1302  19775-19783 [human], sleeping, fireball, lightning bolt, colour spray
+A student of spells (trying)  40   15M G--x--    --  1256-1300  19697-19830 [human], invis, colour spray, lightning bolt, fireball
+A young apprentice (mumbling) 40   15M G-----    --  1291-1352  19698-19892 [human], fireball, colour spray, lightning bolt
+A young apprentice (sleeping) 40   15M G-----    --  1292-1300  19650-19697 [human], fireball, colour spray, lightning bolt
+A young apprentice magic user 40   15M G-----    --  1234-1272  19728-19779 [human], sitting, fireball, colour spray, lightning bolt
+A young mage                  40   15M G--x--    --  1299-1317  19716-19765 [human], colour spray, lightning bolt, fireball
+An animated skeleton          40   15M E--x--    GNE 1266-1331      0-0     [skeleton]
+The mage                      40   15M G--x--    --  1269-1308  19688-19692 [human], sleeping, lightning bolt, colour spray, fireball
+An undead giant               45   30M E--x      GNE   ~1700        0-0     [undead]
+A young apprentice (teasing)  42   21M G-----    --  1427-1528  20743-20873 [human], fireball, colour spray, lightning bolt
+The prisoner                  45   30M G-----    -NE 1862-1932      0-0     [human]
+A black cat                   50   47M E--x--    --  2242-2296      0-0     [feline], hide, special-claw-attack (300 hp)
+A calico cat                  50   47M Gx-x--    --  2239-2307      0-0     [feline], hide, special-claw-attack (295 hp)
+A dancing sword               50   47M Ex-x--    GNE 2300-2379      0-0     [human]
+A spell teacher (relaxing)    50   47M Gx-x--    --  2273-2297  24787-24840 [human], sitting, meteor blast, meteor swarm, fireball, colour spray
+A spell teacher (screams)     50   51M Gx-x--    GNE 2318-2347  29784-29843 [human], invis, fireball, meteor swarm, colour spray, meteor blast
+A wooden golem                50   47M G--x--    GNE 2318-2322      0-0     [entity], blindness
+An aged wizard                50   51M Gx-x--    GN  2304-2308  24802-24904 [human], sleeping, meteor blast, meteor swarm, powerword pain, mass pain, fireball
+An instructor of magic        50   51M Gx-x--    GNE 2290-2370  24728-24816 [human], invis, meteor blast, fireball, colour spray, meteor swarm
+Ezmerelda                     50   42M E--x--    --  2242-2291  23550-23743 [human]
+The Librarian                 50   42M G--x--    -   2282-2320  22396-22660 [human], sleeping, flees
+The master's apprentice       50   51M N--x--    GNE 2195-2338  23055-23072 [human], powerword pain, mass pain, meteor blast, meteor swarm, fireball
+The scribe's assistant        50   42M G--x--    --  2307-2311  24711-24775 [human]
+A cloth golem                 55   67M G--x      GNE 2980-3007      0-0     [entity]
+A black robed apprentice      55   73M E--x      GNE 2991-3001  24913-25405 [human], hide, powerword pain, mass pain, meteor blast, meteor swarm
+A white cat                   55   73M G--x      GNE 3026-3042      0-0     [feline], hide, special-claw-attack (300 hp)
+A clay golem                  60       G--x      GNE 3997-4005      0-0     [entity]
+A granite golem               60  106M G--x      GNE 3880-3905      0-0     [entity]
+A grey cat                    60  106M N--x -    --  3951-4122      0-0     [feline], invis, hide, special-claw-attack (300 hp)
+A white robed apprentice      60  115M G--x      GN  3921-3924  27298-27797 [human], mass pain, powerword pain, meteor blast
+A wizard                      60  106M Gx-x -    --  4002-4005  29686-29691 [human], invis, meteor blast, meteor swarm, fireball, powerword pain, mass pain
+The Jailor                    60   96M Gx-x x    --  4037-4057  28633-28655 [human], sleeping
+The master charmer            60  115M Ex-x      GNE 3885-3930  27310-27584 [human], invis, meteor blast, powerword pain, mass pain
+The master spell binder       60  115M Ex-x      GNE 3956-3975  27267-27707 [human], mass pain, powerword pain, meteor blast
+The master summoner           60  115M Ex-x      GNE 3774-4231  27351-27761 [human], invis, meteor blast, powerword pain, mass pain
+A flesh golem                 65  150M G--x      GNE 5485-5500      0-0     [entity]
+The battle mistress           65  164M Gx-x      GNE 5525-5605  25327-27062 [human], invis, kick
+A bronze golem                70  231M E--x      GNE 6990-7035      0-0     [entity]
+The diamond golem             70  280M G--x x    --  6880-6932  33523-33835 [entity], blindness, 4xBANG
+The Mad Alchemist             70  252M Gx-x      GNE            32467-32534 [human], wither, powerword pain, mass pain, blindness, powerheal, harm
+The master of illusions       70  231M G--x -    --  6916-7186  32161-32849 [human], powerword pain, mass pain, meteor blast
+The master of Neutrality      70  231M Nx-x -    --  6972-7104  32449-32465 [human], powerword pain, mass pain, meteor blast
+The master of the black robes 70  308M Ex-x -    --  6990-7053  32256-32669 [human], mass pain, powerword pain, meteor blast
+The Necromancer               70  252M Ex-x      GNE 6960       32366-32967 [human], wither, harm, confusion, powerword pain, mass pain, meteor blast, powerheal
+The master of goodness        75  360M Gx-x      GNE 8409-8571  35244-35360 [human], mass pain, powerword pain, meteor blast
+The master scribe             77  373M Gx-x -    --  8990-9009 35725-36028  [human], invis, powerword pain, mass pain, meteor blast
+An adamantite golem           80  880M G--x      GNE 9960-10003     0-0     [entity]
+The golem maker               80  880M Gx-x x    ---   ~12k     37958-37433 [human], powerheal, powerword pain, mass pain, blindness, meteor blast, confusion, wither, harm
+Professor Gazinki             84       G--       ---                        questmaster, no-attack
+The Grand Mistress            85 1701M Nx-x -    --             39722       INFO, [human], wither, blindness, harm, powerheal, confusion, hell fire, mass pain, 1-2 spells per round
+The Enchanter                 85 1105M Ex-x      GNE 9975-10002 39903-40406 INFO, [human], 6 attacks, powerword pain, mass pain, meteor blast
+Quimon                        99       Nx        ---                        questmaster, no-attack, sitting
+Strick the bartender         100       G--                                  shopkeeper
+Tatorious                    100       G--                                  shopkeeper

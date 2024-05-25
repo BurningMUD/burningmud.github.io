@@ -1,0 +1,63 @@
+# Zorn Uzkul (174): 20-100, Wotan  (Karandras: 10ed3n2e2d)
+#
+#                                  o q          /-> Home
+#                                 /|/ *        x
+#                                o o  |       o
+#                               /     |      /
+#                              o      \-> Hashut
+#                             /
+#                            o-o
+#                            | |
+#                            o o-Lammasu  o - o
+#                           /             |   |
+#                          o    o -- o -- o - o
+#                         /     |    |
+#                        o o -- o    o
+#                        +/
+#                        o
+#                        |
+#                        o - o
+#                            |
+#                o - o - o - o ------ o ----- o smith
+#                |       |   |                |   |
+#                o - o   o   o     o-o-o    o-o - o
+#                |   |       |    /
+#                o - o       o - o
+#                            |   |
+#    o - o - o   o - o - o - o   o
+#    |   |   |   |   +       +   |
+#    g   o   o - o   o       o   h
+#    |   |                       |
+#    o   o        /   Zha. o-o   o
+#        |       X -    |  | |   |
+#    o - o      /       o--o o-o-o - o - o
+#        |     o        |  | |   |       |
+#       RIP   /         o--o-o   o + o - o
+#            o                   |
+#           /                    |
+#          o -------- o -------- o
+#
+* North from 'g' leads to 'h'
+* Tons of dwarves! Many aggies. Dwarves are vuln water/magic/superlarge 
+
+Zorn Uzkul:              Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+The human slave            5   12k N-x---    -     96-113       0-0
+The dwarven slave         10  110k N-x-x-    -    218-243       0-0     vuln water, resist fire/earth/poison
+The hobgoblin             15  380k E-x---    -    263-293       0-0     vuln fire/light/pure, flees
+The large wolf            17  561k E-x---    G    364-366       0-0     vuln mental
+The Sneaky Git            17  561k E-x-x     -    354-369       7-154   vuln fire/light/pure/superlarge, resist large/poison, sneak, flees, backstab, poison
+The slavedriver           18  612k E-x-x-    G    371-391    1205-1331  vuln water/magic/superlarge, resist fire/earth/poison
+The Chaos Dwarf warrior   20  957k E-x-x-    G    448-453    1659-1801  vuln water/magic/superlarge, resist fire/earth/poison
+The Chaos Dwarf guard     23 1556k E-x---    G E  538-544    2016-2099  vuln water/magic/superlarge, resist fire/earth/poison, bash, kick, berserk
+The Chaos Dwarf           32 5632k Ex-xxx    G    809-812    2046-2126  vuln water/magic/superlarge, resist fire/earth/poison, bash, kick, headbang, berserk
+The Bullcentaur           37   11M Exx-x-    G    987-1000   1961-1977  bash, kick, headbang
+The apprentice            40   14M Ex---x    -   1259-1304   2539-2544  vuln water/magic/superlarge, resist fire/earth/poison, fireball, harm, meteor swarm, blindness, powerheal, meteor blast, wither
+The high priest           40   14M Ex----    - - 1301-1308   1183-1270  vuln water/magic/superlarge, resist fire/earth/poison, wither, mass pain, powerword pain, confusion, fireball, meteor blast, meteor swarm
+The sorcerer              40   14M E--x--    GNE 1294-1302  10001-10004 vuln water/magic/superlarge, resist fire/earth/poison, meteor blast, fireball, meteor swarm, mass pain, powerword pain
+The Great Taurus          47   36M Ex-xx-    GNE 1993-2029      0-0     meteor blast, mass pain, powerword pain, meteor swarm, fireball
+Hashut                    52   53M Ex-x      GN                 9       vuln heal, immune WEAPON, room is noflee/norecall
+The Lammasu               53   58M Ex-xx-    GNE 2566-2637      0-0     powerword pain, meteor blast, mass pain
+The disciple              57   74M Ex-x x    -   4005-4014   5039-5058  vuln water/magic/superlarge, resist fire/earth/poison, powerword pain, meteor blast, meteor swarm, fireball
+The runesmith             65  151M Ex-x      G E             4536-4559  vuln water/magic/superlarge, resist fire/earth/poison, blindness, meteor blast, mass pain, wither, powerheal, powerword pain, harm, confusion
+Zhatan the Black          65  151M Ex-x x    -   6420-6609   7603-7624  vuln water/magic/superlarge, resist fire/earth/poison, backstab
+Astragoth                 70  231M Ex-x x    -   8448-8467  11614-11833 vuln water/magic/superlarge, resist fire/earth/poison, fireball, lightning bolt, mass pain

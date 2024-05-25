@@ -1,0 +1,55 @@
+# The Desolate Plains (163): 50-90, War  (Unknown: -)
+* FIND OUT: Demigod      money
+#
+#                                    Carac'rin
+#                                      x|
+#                     o --- o --- o---/-o
+#                     |              /
+#                     |             o
+#                     |             |
+#                     |             o - o
+#                     |                 |
+#                     |                 o
+#          Plasma     |                 |
+#          Dragon     o - o     o - o - o
+#             |           |     |   |
+#     o - o - o - o       |     o - o
+#     |   |   |   |       |     |   |
+# o - o - o - o - o       |     o - o
+#     |   |   |   |       |     +
+#     o - o - o - o - o - o  Rythsish
+#     |   |   |   |   |         |
+#     o - o - o - X - o <--o--o-|-o
+#     |   |   |   |   |         |/
+# o - o - o - o - o - o - o     o
+#     |   |   |   |   |   |
+#     o - o - o - o - o - o - o - Cresh - o - Meleth
+#     |   |   |   |   |   |         |
+# o - o - o - o - o - o - o         o
+#         |           |             |
+#         o           o             o - o
+#                                       |
+#                                       v
+#                                       o
+#                                       |
+#                                       o
+#                                       |
+#                                       o
+#                                       +
+#                                     Pred
+#                                       +
+#                                       o
+#
+* Min level 0/40
+* Entrance near Drow or by 'transport unknown'
+* Ni'hachbin warriors are vuln unlife
+
+Desolate Plains:     Lvl    Xp ASWIDMX # agg      Hp        Gold     Special
+A Ni'hachbin warrior  63  110M E-xxx     GNE  5955-6001  20493-20601 [magical], shrugger, bash, kick, headbang, berserk
+Cresh'urim            70  315M E--xx     GN   8505-8586  10000-10000 [insect], shrugger, bash, kick, headbang
+Carac'rin             85  935M E--xx     GN  24992-25038 20157-20288 INFO, [magical], shrugger, hide, backstab (58)
+Meleth'scor           85 1190M E--x      GN  24888       50000-50000 INFO, [beholder], shrugger, 11-18 attacks, flying/special-standing before being in battle - standing after
+The Plasma dragon     85 1190M E--xxx    --- 24941-24976 50254-50337 INFO, [dragon], plasma bolt(ball), shrugger
+Pred Yrric            90 1530M E--xx     GN  32975-33040 50399-50545 INFO, [mythical], vuln gas, imp, shrugger, plasma bolt, plasma ball, nether bolt/ball, blindness, haste
+Dark Rythsish         95 2660M E--x      GNE   ~40k          0-0     INFO, [insubstantial], shrugger, imp, hell fire, powerheal, mass pain, harm, wither, blindness, confusion, 2-2 spells, ac -50
+Demigod              100       G--xxx    ---             50634       INFO, [mythical], powerheal, wither, harm, shrugger, 7-7 attacks, 1-1 spells

@@ -1,0 +1,76 @@
+# Graveyard Plus (34): 30-50, DikuMUD  (Karandras: 5se5s)
+* FIND OUT: Some giant cave weeds...      hp
+* FIND OUT: The Mi-Go                     hp
+* FIND OUT: A pyrolisk                    hp (approx)
+* FIND OUT: Rebure the Drow Assassin      [drow-elf?], resist unlife?/dark?/magic?, xp, money, hp (approx)
+* FIND OUT: Count Dracula                 xp, hp (approx)
+#
+#                   +
+#                   X
+#                   |
+#                   o
+#                   |
+#                   o
+#                   |
+#                   o-------o
+#                   |       |
+#                   o    p--p--p
+#                   +    |  ^  |
+#                   o    |  |  |
+#                  x     p-Reb-WM
+#                 /      |  |  |           o-----------o
+#                 \--+o  p--p--p  /-+-\    |           |
+#                     +           |   |    |           o------o<--\
+# o---------o---------o----o--o---o   o    |                  |   |
+# +  \                +    +               |            /---o-o   |
+# o  | o--o----o-o    o    o-o-o o         |           |      |   |
+# |  | |  |    ^ |    |    |   |/    __    |           |     RIP  |
+# |  | o  | o  | o-\  o----o   o    /  \   |           v      |   |
+# |  | |  |x|  |   |      x        |    |  |        Dracula-o-o   |
+# |  \_/  o |  |   v     /         v    |  |          x       |   |
+# |         |  \---o-o--/--\       o-o-/   |   o-o   s         \_/
+# o---------o      | | /    \      | |     |   | |
+#                  o-o-------------o-o     |   | o-o+>o
+#                                    |     |   |   |  |
+#                                  o-o     |   |   o  |
+#                                  | |     |   |   |  |
+#                                  o hc    |   |   o  |
+#                                  |       |   |   |  |
+#                                  o--o+-----o |   o  |
+#                                          |/  |   |  |
+#                                        o-o---o   o  |
+#                                          |     /\|  |
+#                                          o     \-o<+o
+#                                
+#                                
+#
+* Min level 0/32, Min level 0/50 for the Pyrolisk area
+* p = Pyrolisk area (part of Kender Village). Vuln pure/light/iron/ice
+* The room east of Rebure seems to be wildmag. Other rooms too?
+* Entrance gate locked. No key (Sexton had it earlier).
+* When unlocked/picked, the gate stays unlocked.
+* s: Exits in all directions, all leading back to s, except up
+
+Graveyard:                   Lvl    Xp ASWIDMX # agg     Hp         Gold       Special
+The skeleton warrior          12  300k E-xxx-    GNE  170-189        4-15      [skeleton]
+Some giant cave weeds spring up out of the ground and
+                              30 3000k E-xx-x    GNE  499            1-1       [botanic]
+The bony skeleton             30 3000k E-x--x    GNE  623-863     2118-3859    [skeleton]
+The ghoul                     30 3600k E-xx      GNE  ~700        5001-5019    [undead]
+The half-decomposed body      30 3600k E-xx      GNE  ~750       20003-20019   [undead]
+The Mi-Go                     30 3600k E-xx-x    GNE  957        20004-20016   [botanic]
+The rock slug                 30 3000k E-xx-x    GNE 2023-2198       5-21      [jelly]
+The undead zombie             30 3000k E-x--x    GNE  923-947       11-21      [undead]
+The wraith                    30 4200k E-xx-x    GNE  993-999    20001-20008   [insubstantial]
+The mad etcher                40   16M G--x--    --  2061-2061    3951-3959    [human], sitting
+The nightgaunt                40 9600k E-xx-x    GNE 1130-1138   20016-20607   [insubstantial]
+The spectral etchers wife     40   20M G--x--    --  2061-2061    3938-3948    [undead], sitting, save 7
+The hunting horror            50   25M E-xx--    GNE 2001-2001    3735-3913    [insubstantial]
+The X'ist flesh eater         50   45M E--x--    GNE 3016-3016   20005-20007   [demon]
+A pyrolisk                    55   53M E-xx      GNE             21464-24335   [demon], thac-33 11, avgdam 66, average 5 attacks
+Snapper Joe                   60  120M E--x -    --  4066-4066   30507-30508   [demon], corpse eater
+The Priest                    60   90M Gx xxx    --  4002-4002   30000-30000   [human]
+The spirit of King Crotus     60   90M G--x -    ---  ~5k        40013-40014   [insubstantial]
+Rebure the Drow Assassin      70       Ex-       GNE             50020         INFO, [drow-elf?], vuln pure/light/ice, resist unlife?/dark?/magic?, backstab, murder
+The Ghost of Cristis the Kind 70  175M G--x      GNE  ~8k        65555-65547   [insubstantial]
+Count Dracula                 95       Ex-x      GNE           1000001-1000001 [vampire], wields/unwields his sword during fight

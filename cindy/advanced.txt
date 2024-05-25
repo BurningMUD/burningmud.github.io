@@ -1,0 +1,630 @@
+
+DAMAGE:
+=======
+Id on a weapon will say something like this:
+  Item is: ANTI-GOOD FORGED
+  Weight: 12.0 lbs, Value: 43500
+  Damage Dice is '9D3'
+  Damage type is Bludgeoning  (WEAPON CRUSH FIRE)
+  Can affect you as :
+      Affects : DAMROLL By 6
+      Affects : HITROLL By 3
+      Affects : SLAY vs Human
+This means....
+  ANTI-GOOD: Weapon can't be used if you are good-aligned. Similar flags exist
+          for neutral and evil.
+  FORGED: Adds +1 to the weapon's damage (does not affect DR shown in stats).
+  Weight: If heavy, you will need a certain strength to wield it. If it weighs
+          25 lbs or less, even a gnome mage can wield it (once maxed strength),
+          but for heavier weapons you might have problems.
+  Damage Dice: 9D3 means "Throw nine 3-sided dice". A 3-sided die has 3 sides,
+          1, 2 & 3. Average 2. So 9D3 has an average of 9 * 2 = 18.
+          Minimum result 9 (all 1:s) and maximum result 27 (all 3:s).
+          A y-sided dice rolls, on average, (y+1)/2
+          Formula, xDy: Average = x * (y+1)/2
+                        Min     = x
+                        Max     = x * y
+  Damage type is Xxx: This affects the output, ie what you see when fighting
+          someone. Eg a "Bludgeoning" weapon deals pounding damage:
+          "You vaporize <opponent> with your pound."
+          The only real importance of this damage type is that rogues can't
+          backstab with a weapon unless its damage type is "Pierce".
+  (WEAPON CRUSH FIRE): These flags affects the damage you do, depending on your
+          opponent's irv:s. Every weapon should have the "WEAPON" flag.
+          Every (normal) weapon should also have either SLASH, CRUSH or PIERCE.
+          If the weapon does special damage it can also have one or more of the
+          other flags, like IRON, PURE, WATER, FIRE, WOOD,...
+          Any flag that matches the opponent's vulnerabilities will increase
+          total & max damage with 25% (cumulative).
+          Any flag that matches the opponent's resistances will decrease
+          total & max damage with 25% (cumulative).
+          Any flag that matches the opponent's immunities will decrease the
+          damage to 0.
+  Affects : HITROLL By 3: Improves your hitroll
+  Affects : DAMROLL By 6: Improves your damage. Added before irv is applied.
+  Affects : SLAY vs <type>: Doubles your damage dice when fighting creatures
+          of this type. So for the above example, when fighting humans the
+          damage dice of 9D3 would be multiplied by 2.
+Worth noting: A weapon with "Damage type is Piercing  (WEAPON)" can be used to
+              backstab mobs that are immune to PIERCE.
+
+-----
+
+NWD = Normal Weapon Damage (whatever damage you do with your weapon).
+Damage and Maxdam is NOT affected by stats
+Maxdam for lvl 72 Te/Te: 451 + max_mana/13.3
+Maxdam for lvl 64 Ma/Ma with 1706 maxmana: 661
+Maxdam for Pr/Ma or Ma/Pr: (100 + extra_damage_skill + lvl/2) * (1 + <maxmana>/4800)
+                       resist: 70/450
+                Cindy  normal: 93/600
+                       vuln:  116/750
+                       manashield: 300 spelldamage and half weapon damage
+
+
+If a mob has 95% chance of saving a spell for half damage, the expected
+outcome will be: spelldamage * 0.525
+
+slay = damage-dice * 2
+vuln = damage * 1.25
+Slay does not affect maxdamage.
+Vulnerability improves maxdamage (and damage) by 25%.
+Resistance decreases maxdamage (and damage) by 25%
+Resistance (and vuln?) is added _after_ sanc calculation.
+Race vuln is NOT cumulative with eq-vuln, so eg a troll can wear fire-vuln eq
+without any added penalty.
+I think a vuln and a resist cancel each other out, but you can't cancel a race
+vuln and then add a resist. So a troll wearing one vuln-fire and one resist-
+fire item is still vulnerable to fire, while if wearing two fire-resist items
+I don't think he'll be resistant to fire. And a human putting on one vuln-fire
+item and then two resist fire items will probably be resistant to fire.
+But this is just a guess.
+
+Max weapon damage through sanc: level/2 + 20, rounded down
+Max skill damage through sanc : level/2 + 20, rounded down
+Max spell damage through sanc : level/2 + 20, rounded down  +  maxmana/100, rounded up
+
+Miss Tick Bare Hits Hard Very  Extre Massa Oblit Annih Vapor Pulv   Atom    Ultr     ULTR   *U*L*T*R*  SPANK
+  0   1-2  3-4  5-6 7-10 11-15 16-22 23-31 32-42 43-56 57-69 70-90 91-120 121-160  161-250  251-396?   ?400+
+
+
+Berserk from Orb of Madness:
+----------------------------
+With forged parang (11D1) and 52 damroll:
+  Expected damage without madness: 64
+  Avg 100 damage per hit  (+36, 55% bonus)
+  Possible function: 64 + 30% = 83 + 17 = 100
+With small knife (1D1) and 18 damroll:
+  Expected damage without madness: 19
+  Avg 42 damage per hit (+23, 120% bonus)
+  Possible function: 19 + 30% = 25 + 17 =  42
+
+
+Improved critchance from Orb of Carnage:
+---------------------------------------
+Testing against mira-monk, using +8+8 parang
+
+Dr +19 - Expected damage each hit: 31 (Massacre)
+Without orb of carnage: 
+Hitlog
+Name      Miss ... Extr Mass Obli Anni Vapo Pulv Atom Ultr ULTR U*L* SPNK
+Cindy      62   0    0  963   60    1    2    0    0    0    1    0    0
+Damlog
+Name                  Miss  Hits  Weapon   Skill   Spell    Total Average Ticks
+Cindy                   62  1027   32406       0       0    32406    2160    15
+Avg dam per hit: 31.55404089581305
+Bonus: 1.787%   (6.23% of the hits)
+With    orb of carnage: 
+Hitlog
+Name      Miss ... Extr Mass Obli Anni Vapo Pulv Atom Ultr ULTR U*L* SPNK
+Cindy      55   0    0  824   50  119    9    0    0    0    0    0    0
+Damlog
+Name                  Miss  Hits  Weapon   Skill   Spell    Total Average Ticks
+Cindy                   55  1002   33843       0       0    33843    2417    14
+Avg dam per hit: 33.775449101796404
+Bonus: 8.953%   (17.76% of the hits)
+
+Dr +44 - Expected damage each hit: 56 (Annihilate)
+Without orb of carnage:
+Hitlog
+Name      Miss ... Extr Mass Obli Anni Vapo Pulv Atom Ultr ULTR U*L* SPNK
+Cindy      56   0    0    0    0 1039  116    3    1    4    1    0    0
+Damlog
+Name                  Miss  Hits  Weapon   Skill   Spell    Total Average Ticks
+Cindy                   56  1164   66287       0       0    66287     770    86
+Avg dam per hit: 56.947594501718214
+Bonus: 1.692%   (10.74% of the hits)
+With    orb of carnage:
+Hitlog
+Name      Miss ... Extr Mass Obli Anni Vapo Pulv Atom Ultr ULTR U*L* SPNK
+Cindy      56   0    0    0    0  903  144    3   61    2    2    0    0
+Damlog
+Name                  Miss  Hits  Weapon   Skill   Spell    Total Average Ticks
+Cindy                   56  1115   66228       0       0    66228    4139    16
+Avg dam per hit: 59.39730941704036
+Bonus: 6.067%   (19.01% of the hits)
+
+Conclusion: Carnage doubles the number of critical hits, and also doubles the
+bonus-damage given for each of these hits, resulting in a net damage weapon
+boost of approx 5%.
+
+
+XP:
+===
+xpgain: 1 xp per damage done (nothing for damaging self)
+
+xploss for dt:ing at lvl 1-10:  2 * maxxp
+xploss for dt:ing at lvl 50/1: 392  (9 -> -389)
+xploss for dt:ing at lvl 56:    5000k
+xploss for dt:ing at lvl 66+:   1250k
+
+xploss for dying  at lvl   1:   0   (even with excess xp)
+xploss for dying  at lvl   2-7: 1/10 of current xp, rounded down)
+xploss for dying  at lvl   8:   50k (can never go below 0)
+xploss for dying  at lvl 50/1:  0 (if on negative exp)
+xploss for dying  at lvl 50/50: 5M-10M depending on number of stats bought.
+xploss for dying  at lvl 59 19M?
+xploss for dying  at lvl 66+:   (lvl-40)*250000
+
+Above level 50, you will stop gaining xp once you reach 2.1B. 
+Above level 50, you will/may drop in stats when dying, if below -200M xp?
+
+Bringing 3 pets with you in a group, brings your xp down by 25%. Only leader
+will suffer this xp-loss. The pets may gain more xp than these lost 25%.
+
+MONEY:
+======
+Cost for buying corpse seems to be fixed and depend on level, until you reach
+50/50. Then it depends on... the value of your eq? Buying corpse from a place
+you cannot walk to (you need to use obelisk or enter portal or other object)
+costs more.
+Buying corpse with lvl  1-12, walkable place:  500*lvl
+Buying corpse with lvl 16-22, walkable place: 2000*lvl
+Buying corpse with lvl 50 Mthead, walkable place: 1398890
+  Eq value: 656440 (approx), Inside bag: 487649 (approx), Sum: 1144089 (approx)
+Buying corpse with lvl 50 Mthead, walkable place: 1570750
+  Eq value: 664440, Inside bag: 756810, Sum: 1421250
+
+
+SPELLS:
+=======
+Spellsave 2 gives 95% save against blindness, poison & curse. Probably same
+  for most (all?) of the other spells too.
+Each step in saves changes your chance of saving with 5%
+The level of the spell/caster does not alter this chance.
+The chance of saving a spell is never below 5% and never above 95%
+There is always a 5% risk of the caster losing concentration
+So: spell save 1 should be the lowest you will ever need, making you as safe
+    as possible, even if you get cursed.
+
+REGENERATION:
+=============
+Mana regen for Pr/Ma: 2(int+wis) + (lvl-24)  mana per rl minute (with maxed
+age, standing up and without any other mana boosters).
+Mana regen is NOT affected by maxmana.
+Regenerate gives  +10% bonus to regen. Cumulative. (same bonus for hp regen)
+Treeform   gives  +50% bonus to regen. Cumulative.
+Outposts   gives  +50% bonus to regen. Cumulative. (regardless of outpost type)
+Cos        gives  +25% bonus to regen. Cumulative.
+Regen-aura gives +100% bonus to regen. Cumulative. (same bonus for hp regen)
+Sitting    gives same manareg as standing
+Resting    improves manaregen with 11.4% compared with standing ( *10/9 )
+Sleeping   improves manaregen with 22.5% compared with standing ( *11/9 )
+Reef's regen room improves regen-rate with average +229 mana/minute (irregular)
+
+Lvl 89 test data:                                  RL value
+Standard:          2(25+25) + (89-24)    = 165.0     165.3
+Regen-spell:      (* 165 1.1)            = 181.5     181.6
+Tipi+sleep+regen: (* 165 1.1 1.225 1.5)  = 332.7     334.9
+Tipi+regen:       (* 165 1.1 1.5)        = 272.2     273.7
+Wood+regen:       (* 165 1.1 1.5)        = 272.2     273.8
+Stone+regen:      (* 165 1.1 1.5)        = 272.2     273.2
+CoS+regen:        (* 165 1.1 1.25)       = 226.9     225.3
+CoS+sleep+regen:  (* 165 1.1 1.225 1.25) = 277.9     278.2
+Age:              Approx 44% higher at 79 years old compared to age 17
+
+WEAPONS:
+========
+Weapon levels (uncertain):
+Fighter has increased level for PIERCE weapons.
+For anti-good flagged weapons, divide level by 1.15.
+Each bonus to hitroll normally adds +2 level
+
+Weapons without MAGIC flag can be forged.
+The "enchant weapon" spell puts a MAGIC flag on the weapon and increases the
+weapon's levels. The increase in levels depends on the power of the enchant
+(and on whether the weapon gets an anti-good flag or not).
+
+Enchants made by a good-aligned player puts an anti-evil flag on the weapon.
+Enchants made by a neutral-aligned player puts no flag on the weapon.
+Enchants made by an evil-aligned player puts an anti-good flag on the weapon.
+
+If an enchant weapon scroll is used, the power of the enchant is based on the
+level on the scroll, while the (possible) anti-align flag put on the weapon
+depends on the alignment of the reciter, NOT the alignment of the scroll creator.
+
+
+REPUTATION:
+===========
+Some of this data isn't certain, but I _think_ this is how it works:
+* You start with 0 rep points.
+* Every 100 rep points gives you 1% discount.
+* Getting to a new 100-interval gives you a new rep title. After you've
+  advanced a few steps, you will need 200 for each new title, and at the end
+  you will need 300 for each new title.
+* Max rep points is 3599, giving you 35% discount.
+* Membership in a merc improves your discount by up to 10%, depending on the
+  sum of the rep of the members in the merc. This sum is _maybe_ just taken
+  from the members shown in "merc info <mercname>", not counting the rep of
+  other chars from those accounts. You aren't considered a member (no crest
+  and no discount) until you've reached lvl 20.
+* Rep title depends on your alignment and your first class.
+* Discount is applied when paying for ship between continents, in most npc
+  shops, and when buying stats and levels above 50 (don't know about obelisk
+  costs). For buying stats and levels, the discount is applied to the cost in
+  both money and xp (you still need to get excess xp, but when you buy your
+  level, the xp you earned by your discount is given back, so you'll start on
+  your next level with some xp already earned).
+* To figure out your discount, check the price of the fireball staff in the
+  Kender Village magic shop. Unmodified price is 100k, so if your price is eg
+  97k, you have 3% discount.
+* At lvl 65+, your discount for buying level & practices is reduced. Formula
+  for this is still unknown (seems like you get to keep approx 35% of your
+  discount, but not exactly 35%. More like 34.889%)
+* Bublina before getting lvl 65: 259M excess
+           after getting lvl 65: Exp: 166M (needing 1433M)
+  17-18% rep, + merc = 27%. 1/4 of this is 6.75%, and 6.75% of 1.5B = 101.25M
+  101.25M + 259M/4 = 166M
+  Illegal before getting lvl 65:  52M excess
+           after getting lvl 65: Exp:  99M (needing 1501M)
+  13-14% rep, + merc = 23%. 1/4 of this is 5.75%, and 5.75% of 1.5B =  86.25M
+   86.25M +  52M/4 =  99M
+  So: When gaining level 65, the cost is 1.5B xp, lowered by a fourth of your
+      discount. And you get to keep 1/4 of your excess exp.
+  Ie: <exp after leveling> = 0.25 * (1.5B * <discount> + <excess>)
+
+
+You get higher rep for:
+Killing Morgoth @ Well
+Killing Dao Hetman @ Well
+Killing The Marid Padishah @ Well
+Killing The Efreeti Pasha @ Well
+Killing The Balrog @ Well
+Killing The Djinni Vizier @ Well
+Killing The Marid Shah @ Well
+Killing The Djinni Caliph @ Well
+Killing The Efreeti Sultan @ Well
+Killing The Dao Khan @ Well
+Killing Gond @ Well
+Getting to lvl 50, 50/50, 55, 60,...
+Solving mud quests
+Participating in / Winning Imm quests
+Becoming Ktv / training stats at Gond
+Solving daily Leronah quest
+Exploring the world (every 5%)
+Finding the well entrance (in some cases)
+
+Cost for buying practices: (max 1M)
+Lvl 50 Mthead with 18%: 8,200,000 Exp AND   820,000 Coins. (18.0% discount)
+Lvl 50 Mthead with 20%: 8,000,000 Exp AND   820,000 Coins. (20.0% discount)
+Lvl 74 Cindy  with 45%: 8,431,250 Exp AND   843,125 Coins. (15.7% discount)
+Lvl 78 Cindy  with 45%: 8,431,250 Exp AND   843,125 Coins. (15.7% discount)
+Lvl 78 Cindy  with 45%: 1,686,250,000 Exp to buy level     (15.6875% discount)
+Lvl 80 Cindy  with 45%: 1,686,250,000 Exp to buy level     (15.6875% discount)
+Lvl 50 Mthead with 20%: Buying lvl 51 = 80M xp & 8M gold
+
+
+CHARMIES:
+=========
+Charmies and pets:
+  * Have varying stats.
+  * Con does not affect hp
+  * Dex does not affect moves
+  * Int does not affect mana
+  * Str skips the 18/X steps, but can't go above 30.
+  * Str affects carry capacity and hr/dr
+  * Dex affecting ac? Don't know.
+  * Maxmana affects spell damage? Don't know.
+
+Standard:
+* Until you pass lvl 50, the highest level mob you can charm is your own
+  level. When you pass lvl 50, the highest will be lvl 51. Somewhere above lvl
+  57 the max is changed to 52 and somewhere below lvl 67 the max is changed to
+  lvl 53. Nobody has sofar been able to charm a lvl 54+ mob.
+* The time a charmie will stay charmed depends on his int, so a feeblemind
+  (lowers his int to 3) before charming helps a lot.
+* If you want to recharm, first order him to sit (so you can spell on him
+  without risking that he'll flail) and have him wear some eq that ruins his
+  saves (large dwarven shield from the tomb in southwest part of Juargan
+  usually does the trick).
+* Give your charmie a boat and some money, so you don't lose him when
+  travelling over water or by navigators.
+* If your charmie can't see invis, he may have problems either with you (if
+  you are invis) or with your opponents (if they are invis). A detect invis
+  potion fixes this.
+* If your charmie doesn't seem to obey you, it's usually because charm has run
+  out ("order followers smile" to check), or because he can't see the target
+  ("order followers smile <target>").
+* Any charmie can protect you. So if you want protection, just "order
+  followers protect <yourname>".
+* If you are attacked and a charmie is protecting you, you can improve your
+  chance of getting rescued by "order followers rescue <yourname>". This will
+  make him try an additional time to rescue you, above his standard protection
+  try.
+* I think all charmies can be ordered to kick, so if you don't have anything
+  else you need to do, this can boost their damage a little bit.
+* All charmies can recite scrolls. They are often poor at doing this during
+  battle, but starting the battle with a damage scroll works just fine.
+* Charmies can wear any eq allowed to be worn by a mage at the same level and
+  with the same alignment as the charmie. Good eq kan improve your charmie a
+  LOT, but there's always the risk of losing your charmie and the eq he's
+  wearing.
+* Weapons wielded by a charmie don't improve their damage with the hit dice,
+  but elemental damage done by the weapon counts, as does all bonuses a weapon
+  gives. So an enchanted low-level weapon is probably better than an
+  unenchanted high-level one.
+* When charm runs out, the charmie will still follow you, but won't obey any
+  orders. If he's been set to protect you, he will keep doing so.
+
+Good charmie mobs:
+There are lots around! And how good they are depends on what you want them
+for, what equipment you give them, whom you want to use it against etc. Mobs
+that powerheal are often prefered since they will last long. Lvl 50 Paladin of the
+third ring from Citadel of Order is a good choice. Just make sure you get the
+one that does powerheal. For lowbies a lvl 33 Rhododen cadet may be of
+interest (casts trueheal). The level 20 monk that casts miracle every round is
+no longer charmable :-)
+If you want to level up a lowbie, Foreman Floyd from Mob Factory is a good
+choice if you can prepare" him first. There's a staff with lvl 40 charm, so by
+first cursing Floyd, having him to wear eq that ruins his save and making him
+sit, then ditching, anyone of any level can get him for a pet, using that
+staff. Give him a cheap fire-headed mace and he'll clean out hobgoblin camps
+for you.
+If you are a lowbie and just want someone to stand in your way, a Rock slug
+from Graveyard Plus might be a good deal. Great hp for his level, and resists
+weapon.
+For highbies interested in a good combination of damage dealing and tanking,
+the Purple sand worm in Desert has been a valued companion. Nowadays the Sand
+Snake in Reef seems to be the most popular one. Ceng in Dunheim went straight
+to the top as (ab)used charmie nr 1 when he was introduced. He's been
+downgraded conciderably, but is still a great charmie.
+Paladin of the third ring has always been a good choice and probably always
+will, thanks to its combination of damage- and healing spells.
+And if you want to experiment, you could try a Maid from Dunheim. She doesn't
+hit too hard but has a lot of attacks, so with some eq she may become deadly.
+And for mana, I prefer using Revenants in Underdark.
+To find out which mob is on todays hotlist, just locate "dwarven" and check
+out which mobs are wearing that large dwarven shield (charmie item no. 1)
+
+Advanced:
+Some of these things _could_ be considered abuse. But imms know about these
+possibilities as well as many players. Better to let everyone know, imho.
+* To kill a mob doing non-normal damage, it can be a lot easier if you use a
+  mob that is immune to that type of damage. Some mobs do a certain damage
+  naturally, as does any mob with a weapon that does special damage. If the
+  mob doesn't cast any nasty spells, any mob immune to that type will be
+  sufficient. Ex: A level 1 fish is enough to tank Poseidon (though you must
+  probably have the fish quaff a detect-invis potion to be able to attack him,
+  or attack yourself and have the fish rescue you). A pixie is enough to bring
+  down King Tomaaukkhen, if you can deliver the damage needed).
+* Some mobs with weapons have been "fixed" so they remove their weapon if
+  fighting an immune charmie. Not all, though. Tomaaukkhen doesn't do this.
+  Poseidon does, but a powerblind will take care of that.
+* Mobs like to switch target and attack the one controlling the charmie. Any
+  mob can do this, even if they can't normally switch target. This can be
+  removed by disbanding right after having ordered your charmie to attack.
+  This will stop the mob from doing any switch-to-controller. However, if the
+  mob has the ability to switch, or if you use backstab/murder, your opponent
+  may still switch to you. In this case it's up to you to decide if you want
+  to wait and hope for the mob to switch back, or perhaps just flee, go back
+  and attack again, from behind your former charmie.
+* For extra protection you can order your charmie to protect you before the
+  fight. ANY charmie can be set to protect you. And this setting will stay
+  even after he's been ditched.
+* If you want to try an army, charm a guard in King's castle (they assist
+  eachother). Have it protect you. When charm runs out, charm another guard,
+  then another and another, etc. Whenever you attack a mob, the guard you
+  charmed first will rescue you and the other guards will then assist him.
+  When all guards of interest have been charmed, you can still afford to charm
+  one more mob, That you keep under your control. Kerish and I did this, and
+  in the end we had 5 guards (one set to protect me), Goldmoon (set to protect
+  Kerish), a paladin of the 3:rd ring (controlled by me) and 3 spectres.
+  Result: A 10 10-mob-2-pc army! (and they all died when we tried King Rok).
+
+
+AVOIDING DAMAGE:
+================
+Dodge is checked first.
+Parry is checked second.
+Ac is checked third.
+  Chance for mob to hit = (mob hr - mob thac0 - your ac + 20) * 5 %
+                          (min 5%, max 95%)
+
+Good-aligned hobbit fighter, lvl 65:
+dex 25: ac +20
+                                             h d  ac
+<used as light>      48 eye of the storm    +1    13  hp+10
+<worn on head>       42 inc. helm o/t gods  +1+2  31
+<worn around neck>   42 pendant of the seas +1    15  dex+1
+<worn around neck>   42 pendant of the seas +1    15  dex+1
+<worn on finger>     48 ring of Lorgon            17
+<worn on finger>     48 ring of Lorgon            17
+<worn on arms>       52 Solamnic armplates  +2    13
+<worn on elbow>      48 mithril elbow prot.        6  hp-10, save-1
+<worn on elbow>      48 mithril elbow prot.        6  hp-10, save-1
+<worn on hands>      48 pitch black gauntl.   +1  16
+<worn on wrists>     44 dragon bracelet     +2    16  hp+25, breath-3, DARK
+<worn on wrists>     44 dragon bracelet     +2    16  hp+25, breath-3, DARK
+<worn as shield>     54 laerkai justice     +1    34
+<worn on waist>      39 bones . Nexus beast +2+2  10  S+1,C+1,D+1, dodge
+<worn on body>       45 blessed platemail   +1+1  45
+<worn about body>    52 gold etched S. cape +1+1  16
+<worn on legs>       60 Phase spider leggings +1  32
+<worn on knee>       48 mithril knee prot.         6  save-1, hp-10
+<worn on knee>       48 mithril knee prot.         6  save-1, hp-10
+<worn on feet>       51 laerkai stealth     +1+1  15
+<wielded>            33 gleaming white sword 12d1 10
+<held>               50 pendant of eternity       15  S+1,C+1,D+1,I+1,W+1
+Sum: ac = +20 - 370 =     -350
+lvl 100 armor             -450
+hazy vial                 -500
+lvl 65 spirit arm         -532
+ +15 ac with ktv-dex      -547
+ +10 ac with orb of steel -557
+  +3 ac if skipping dodge
+  +8 ac if accepting vuln fire
+  +5 ac with crest-ac
+
+SHOPS:
+======
+Cost: 20M. Gives you a shop and 20 slots.
+Possible to buy more slots for 1M per slot.
+Max slots allowed: 50
+You can add items to a slot until the weight (in lbs) or number exceeds 500
+
+
+VALUES:
+=======
+Sacrificing donated eq gives 0 gold.
+Other eq gives itemvalue/16 gold, rounded down. Min 1, Max 200.
+
+Auction:
+ Item      Max    Multi-
+ Value  Startbid  plier
+   50	    550     11
+  120      1320     11
+  150      1650     11
+ 2750	  30250     11
+ 3670	  40370     11
+ 4160	  45760
+ 6000     66000     11
+ 7000     77000
+ 7500     82500
+ 7750     85250     11
+ 7820    172040     22
+ 8000	 176000
+ 8700	 287100
+10500	 231000     22
+12050	 397650
+12550	 414150
+14370	 316140     22
+16200	 534600     33
+16750	 368500
+18000	 594000
+19000    209000
+19800	 435600
+21200	 699600     33
+25500	 841500
+28450	 938850     33
+40060	1321980     33
+43300	1905200     44
+
+
+LERONAH QUEST REWARDS:
+======================
+Lvl below 50/50 gets X * max-xp (NOT divided by 3 for multiclass)
+Lvl 50/50 gets X * 1M xp
+Lvl 51/51 gets X * 1.2M xp
+Lvl 52/52 gets X * 1.4M xp
+Lvl 53/53 gets X * 1.6M xp
+Lvl 54/54 gets X * 1.8M xp
+Lvl 55/55 gets X * 2.0M xp
+ diff -8 to -5: X = 2
+ diff -4 to  0: X = 3
+ diff  1 to  5: X = 4
+Lvl 56+ gets 1 or 2 qp. Probable formula: 1 qp if (1d20 > 10+diff)
+So, the chance of getting 2 qp is 25% if the mob is 5 levels below, 50% if
+the same level and 75% for creatures 5 levels above you.
+If you gain level before killing, max-xp and level-diff are recalculated.
+
+
+ITEM STORE:
+===========
+Each level adds 2 slots to the item store.
+Each level as multiclass adds 2 slots to the item store.
+Each level past 50 adds 4 slots to the item store.
+All characters in your account are summed up.
+
+
+HINTS & TRICKS:
+===============
+* To find if a hidden door in a room, looking in all six direction seems
+  like a nearly infallible method. Ie, "look north", "look south", "look
+  up" etc.
+* If a mob has a strange description and you don't know his name, you can
+  try exa 1."", exa 2."", etc and you will be able to look at him. Usually
+  he is 2."" if you are alone, since the last person entering a room (which
+  probably is you) is 1.""
+* Found stuff and don't know who it belongs to? The items are probably
+  marked, so try to donate the least important item in the pile (a bread or
+  a barrel, eg) and you will get a "You can't donate it, since it belongs
+  to Cindy". This way you can figure out the owner and just mail the whole
+  lot and get rid of it.
+* Buying con early or late does _NOT_ affect your hit points in the end.
+  This goes for both normal con and the one bought for frags. Thanks Virus
+  for clearing this out!
+* Immortals are never wrong.
+* On NC, in 3 Mages, there is a looking pool. You can "look <mob/player>"
+  and see the room that mob/player is in.
+* With the "locate object" spell you can locate outposts too. Nice way of
+  finding a place to rest. Feel free to tell me "locate outpost", for an
+  updated list.
+* Dwarves are NOT vulnerable to energy. The fact that people use ghostly
+  spears & swords against dwarves is NOT for their ENERGY flag, but for their
+  MAGIC flag (they are vulnerable to MAGIC).
+* There's a large pirate treaure in Venden that pops each boot. If you need
+  money, you might want to check it out. Even a level 1 char can safely get
+  that treasure.
+* If the flowing blue longsword is on a trainer, it is always on the
+  southernmost trainer in hobgoblin camps.
+* Everful pouch & mug are rare, but very useful for lowbies. Found on Satyrs
+  in Enchanted Forest. Satyrs can't be summoned, but the pouch & mug can at
+k
+  least be located with 'locate object' spell. Everfuls can spawn during
+  gameplay, if the satyrs have been killed.
+* An oak leaf symbol held as light will keep your belly happy forever.
+* Fire breath can VAPORIZE equipment. It always vapes the top item in your
+  inventory. So do not have anything valuable as top item. Especially not
+  your bag with all your needed items. I'd suggest keeping a canoe as the
+  top item in your inventory (or at least above your container), since it's
+  easy to replace if vaporized and EVERYONE should carry a BOAT. Yes, even
+  mages!
+* Most spellcasters have triggers to automatically cast spells on you when
+  you ask them. If you don't know how this works, ask someone about it.
+  Whenever you see me on FS, feel free to (ab)use my triggers. If you want
+  help on how to use them, just "ask cindy info" and feel free to test all
+  my triggers.
+* If you need a weapon enchant, "ask cindy scribe enchant weapon".
+* If you want to know if an item is loaded, "tell cindy locate <item>
+  [<keyword>]".
+  Example: "tell cindy locate pink doll" (I will then locate "pink" and return
+  every hit containing the word "doll", ie you will see if the pink ice ring
+  is loaded on any of the old dolls).
+* If you use TinyFugue and want an extra window that shows the map of the area
+  you are in, automatically switching the map whenever you enter a new area,
+  have a look at areaviewer.tf in the /tf directory.
+* If you want to download all map files neatly packed, try the file
+  0maps_061207.tar in the /maps directory.
+* The navigator summoned from the Milorai obelisk can transport you to NC.
+  To move a whole group to NC (leader must be Ktv), you bring the group to
+  the thalos obelisk, leave east (so group is still by the obelisk), find
+  the navigator and enter Milorai. Rub the obelisk to summon the navigator,
+  and then "transport thalos" quickly followed by "transport myrridon". Done!
+* If you haven't solved the quest Rainbow after the Rain, you can quickly get
+  from NC to OC, by joining the quest, getting into the quest area and then
+  recall (bringing you to Karandras). This, unfortunately, can't be used to
+  bring a whole group.
+  If you're sneaky, you can instead try the Demon King in Narnia - sneak in
+  and "enter bones" before he attacks you, and you will also get to Karandras.
+  But fail and you _will_ die (noexit & norecall, can't enter bones when
+  fighting).
+* If you're looking for hidden treasures: The chance of sensing something
+  buried when looking is bigger than the chance of finding something when
+  digging. And looking is fast. So look several times, and don't bother to
+  dig unless "You sense something buried here.".
+* One of the above hints is a total, complete and obvious lie. The rest are
+  things I believe in, but that doesn't mean they're true.
+* Cloudkill cast by mobs will damage other mobs in the room, within the level
+  limited by the spell. Which eg means that V'rama Vair can often be killed by
+  the minions he himself summoned. So if you find a tough mob that casts
+  cloudkill, you can summon other suitable mobs to his room, and once he casts
+  the spell, all these mobs will get hit and start fighting him.

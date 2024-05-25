@@ -1,0 +1,28 @@
+# The Ice Caves of Atavia (78): 10-25, Unknown  (Sundhaven: 2e4n2w2ndne2sesese3nenene2se)
+#
+#     o-o
+#       |                        ______            /\
+# o-o-o o-o->o          o       /      \   /-o     \--y - o
+#   |   |   /           |       |   _  |   | |      / |
+#   o-o-o  o      o-o-o o -> q  |  / \ o-o | o-o+o-|--o
+# |   |   /       |   | |   /   |  | | |   | |   | |  |
+# o---X   \->o->o-o---|-o   |   |  o-|-o-o-|-o   o-/  o-\
+# |             |     | |   v   \  | |   | |     |      |
+#             o o     o-o   o----->a |   o-/   /-o      |
+#             | |                  | |         \________/
+#             o-o-o                \_/
+#
+* Whole area is very bright
+
+Ice Caves:               Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+Some ice cubes             7   35k N-----    --   138-145       1-1    [entity]
+A blood snake             10  110k E-xx-x    --   192-202       1-1    [snake], hide
+A killer penguin          13  182k N-xx-x    -    253-254       1-1    [bird]
+A brown bear              15  255k E-xx-x    GNE  292-303       1-1    [animal]
+A wild man                15  255k E-x--x    GN   294-306      11-11   [human]
+An ice sloth              15  255k N-xx--    --   294-298       1-1    [animal]
+A snow zombie             20  600k E-x--x    GN   439-465      11-11   [undead]
+A snowman                 20  600k E-xx--    GNE  437-465      21-21   [entity]
+An iceman                 23 1035k E-xx-x    GN   528-546      51-51   [entity]
+The ice king              25 1500k Ex-x-x    GN   610-612     121-121  [elemental]
+The yeti                  27 2160k E-xx-x    GN   647-668     201-201  [lugroki]

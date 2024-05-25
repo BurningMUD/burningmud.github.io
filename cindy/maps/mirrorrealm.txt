@@ -1,0 +1,121 @@
+# Mirror Realm (75): 20-50, Merri  (Solace: 9s4e2n)
+#
+#                                 King
+#                                   |
+#              D---D---D        U---U---U    Phoenix
+#              |   |   |        |   |   |      /
+#            o+D---D---D+o      U---U---U     o
+#              |   |   |            |   |    /
+#              o---D---D            o---U   o
+#                                   | _____/
+#                                   |/
+#                                   o                     _____
+#                                   |                    /     \
+#                          <--- 8---7---9 --->          | Vell, |
+#                               |   |   |               |  hi!  |
+#                          <--- 4---2---6 --->           \_____/
+#                               |   |   |
+#                          <--- 3---1---5 --->
+#               o                   |
+#              x                    o
+#            ame                    +
+#            x                      o
+#          sap                      |                                    o
+#          x                   rub  o       o---o-o---o                 /
+#        eme                    +   |       |         |                o
+#        x      o---o-o----amb  o+o+|---o---o---o-o---o               x
+#      top      |           |   |   |       |   | |   |              o
+#      x        o---o-o-----o---o   |       |   | |   |             x
+#    amb   o    |   | |     |     o+o--+--o |   | |   |    o       o
+#    x     |    |sapo-o     |    x  |    x  |   o-o   |    |      x
+#  rub  Bs-o-Gs | |/| | cry |   o   |   o   |   | |   | Gs-o-Bs  o
+#  x       |    | o | |  x  |  /    |  /    |   | |   |    |    /
+# o----o---o----o---|-|-o-o-o+o     | o--+--o-o-|-|-o-o----o-o-o
+#          |    |   | |     |       |       |   | |   |    |
+#     o o  |    o---o-o-----o       |       o---o-o---o    |   Fs
+#     + +  |    |   |       |       o       |   ^ |   |    |   |
+#     o-o+o|    |   | o     |  top  |       |   | |   | Ms-o--Bar
+# Fs /+ +  |    |   |/      |   |   o       |   o |   |    |
+#  |/ o o  |    o---o---o---o   o   +       |   ^ |   |    o
+# Bar------o-Ms |   |   |   |  x    X       |    \|   |
+#          |    o---o---o---o o     |       o---o-o---o
+#          o        |   |   |/      o       |   | |   |
+#                   o---o---o       |     o o---o-o---o
+#                  x    +      -o-o-o      \|   | |
+#                ame   eme                  o---o-o
+#
+* North part and the towers are very bright
+* Very nice area. Lots of different mobs and items. Most mobs are humans.
+* Getting to top of the towers gives seals that can be given to the king for
+*  a reward. Right tower is just fighting, but left can be climbed peacefully.
+* Vell, hi!: Room is norecall/nosum/nosumout with no exits. Has a lvl 60
+*  Bear-de-bear without worn eq. Caerlin and the masters in west tower used to
+*  go there when dying.
+
+Mirror Realm:             Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+A watchman (enforcing)     19  475k N--x--    --   416-425       1-1    [human], colour spray, fireball, lightning bolt
+A watchman (eyeing)        19  475k N--x--    --   419-430       1-1    [human], colour spray, fireball, lightning bolt
+The woman (good)           19  475k G-x---    --   415-429    1001-1001 [human]
+The young man (good)       19  475k G-x---    --   417-430    1001-1001 [human]
+The woman (evil)           20  600k E-x---    --   438-465    1001-1001 [human]
+The young boy              20  600k G-----    --   450-461       1-1    [human], flees
+The young man (evil)       20  600k E-x---    --   446-462    1001-1001 [human]
+The young urchin           20  600k E--x--    --   450-464       1-1    [human]
+The mirror guardian        23 1035k N--x--    --   538-554       1-1    [human], bash, kick
+The bride                  25 1500k Gxx---    --   587-608       1-1    [human]
+The card shark             25 1500k E-----    --   593-613       1-1    [human]
+The fisherman              25 1500k G-----    --   586-613       1-1    [human]
+The gardener (evil)        25 1500k E-xx--    --   589-594       1-1    [human]
+The gardener (good)        25 1500k G-x---    --   589-613       1-1    [human]
+The groom                  25 1500k Gxx---    --   597-613       1-1    [human]
+The lady of ill repute     25 1500k E--x--    --   568-611       1-1    [human]
+The pool player            25 1500k G-----    --   599-612       1-1    [human]
+The bear                   30 3600k E--x--    GN   742-767       1-1    [animal]
+The buck                   30 3600k G-----    --   761-770       1-1    [animal]
+The moose                  30 3600k G-----    --   731-762       1-1    [animal]
+Carvallo                   35       E--       ---                       shopkeeper
+Caerlin                    35 7700k Gxx---    --   883-919       1-1    [human]
+The Black Lord             35 7700k E-xx--    --   855-913       1-1    [human]
+The Blue Lord              35 7700k G-xx--    --   892-899       1-1    [human]
+The Green Lord             35 7700k G-xx--    --   884-911       1-1    [human]
+The grey fox               35 7700k E--x--    GN   885-907       1-1    [animal]
+The mass of red ants       35 7700k E-----    GN   913-918       1-1    [insect]
+The master                 35 7700k E--x--    --   886-904       1-1    [human]
+The Orange Lord            35 7700k G-xx--    --   884-917       1-1    [human]
+The Red Lord               35 7700k G-xx--    --   886-908       1-1    [human]
+The Violet Lord            35 7700k G-xx--    --   903-944       1-1    [human]
+The White Lord             35 7700k E-xx--    --   890-918       1-1    [human]
+The wily little thief (hidden somewherehere amongst the shadows)
+                           35 7700k E--x--    --   884-890       1-1    [human], invis, backstab
+The Yellow Lord            35 7700k G-xx--    --   889-916       1-1    [human]
+A standard issue wizard    39       Gx-       ---                       shopkeeper
+Brother Thomas             39   12M Gx----    --  1210-1240      1-1    [human], powerheal, confusion, blindness, harm, wither
+Father Franklin            39   12M Gx----    --  1189-1240      1-1    [human], powerheal, harm, blindness, wither, confusion
+Lauraine the barkeep       39       G--       ---                       shopkeeper
+The unicorne               39   12M Gxxx--    --  1215-1239      1-1    [animal]
+The waiter (good)          39       G--       ---                       shopkeeper
+Hepzibah the Barkeep       40       E--       ---                       shopkeeper
+Mandeep the Beekeeper      40   13M G-----    --  1297-1304      1-1    [human]
+Mr. Teece                  40   13M G--x--    --  1319-1324      1-1    [human]
+The waiter (evil)          40       E--       ---                       shopkeeper
+Mrs. Truxton the Librarian 45       G--       ---                       shopkeeper
+The Grey Mare              45   19M E-xx--    --  1577-1621      1-1    [undead], save 5
+The proprietor             45       G--       ---                       shopkeeper
+The wizard                 45       E--       ---                       shopkeeper
+A withered knight          45   19M N--x--    GN  1609-1617      1-1    [human], mass pain, powerheal, confusion, wither, harm, meteor blast, powerword pain, fireball, meteor swarm, blindness
+Master Dunn                45   19M Gx-x--    --  1592-1610      1-1    [human], special-throw
+Storn the assassin         45   19M E--x--    --  1587-1622      1-1    [human], backstab
+King Loranhir              49   24M N--x--    --  1908-1938      1-1    [human], special-code[give sigil king]
+Something                  50   27M E--x--    GN  2018-2021      1-1    [insubstantial], invis
+Jerry Garcia               50   25M N-xx--    --  2032-2044      1-1    [human], powerheal, wither, harm, blindness
+The Amber Master           50   27M Gx-x--    --  1976-2019      1-1    [human], special-code[give amber master]
+The Blue Master            50   27M Gx-x--    --  1982-1995      1-1    [human], special-code[give sapphire master]
+The Green Master           50   27M Gx-x--    --  2002-2015      1-1    [human], special-code[give emerald master]
+The Master of Light        50   27M Gx-x--    --  2006-2026      1-1    [human], special-code[give crystal master]
+The Phoenix                50   27M N--x--    GN  2007-2029      1-1    [magical], Clone at death (0-4 times, might be a % chance each death)
+The Red Master             50   27M Gx-x--    --  1975-1981      1-1    [human], special-code[give ruby master]
+The Violet Master          50   27M Gx-x--    --  2004-2023      1-1    [human], special-code[give amethyst master]
+The Black Master           50   27M E--x--    GN  1977-2028      1-1    [human]
+The White Master           50   27M E--x--    GN  2014-2016      1-1    [human]
+The Yellow Master          50   27M Gx-x--    --  1999-2030      1-1    [human], special-code[give topaz master]
+Bear-de-bear               60        -                                  [???]

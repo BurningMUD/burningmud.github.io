@@ -1,0 +1,50 @@
+# Faery Forest (409): 1-10, Stryder/Bane  (Karandras: 10e10n2e8n3wsw)
+* FIND OUT: A tiny faery           [fairie?], vuln unlife?/dark?      flying or special-standing before being in battle?
+* FIND OUT: A playful pink faery   [fairie?], vuln unlife?/dark?, resist magic?     flying or special-standing before being in battle?
+* FIND OUT: A chirpy red faery           flying or special-standing before being in battle?
+* FIND OUT: A brightly glowing faery     flying or special-standing before being in battle?
+* FIND OUT: A fiesty fire red faery      flying or special-standing before being in battle?
+* FIND OUT: An angry orange faery        flying or special-standing before being in battle?
+#
+#                                   o
+#                                   |  o
+#                                   *  |
+#                                   o  o
+#                      Haunted     /   |
+#                    o  Keep   o  o+o--o--o
+#                    |  / |    |    |  |
+#                    o----S----o----o--o--o
+#                    |    |         |
+#                    |    |     Q   |
+#                    |    |    /    |
+#            SS   o--o----o---o-----o--mv
+#            /    |       |         |
+# Pixie--o--o--o--o    o--o         o--o
+# Forest               |  |         |
+#                      o--o--o      o--o
+#                      |            |       Wyvern
+#                    tree           o--X--Waterfalls
+*
+* Max level 30
+* tree room is max level 8 and regens moves
+* Nice & safe lowbie area.
+*  6 am: 90% chance of Mr Toad coming back to the look-out.
+* 12 pm: Mr Toad leaves for a lunch break.
+*  1 pm: 50% chance of Mr Toad coming back to the look-out.
+* 10 pm: If Mr Toad is in the look-out, it's 50% chance of him going home.
+
+Faery Forest:            Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+A tiny faery               1   120 N--xx-    --    32-33       51-69   [fairie?], vuln unlife?/dark?, immune pure/light, resist magic, flees, flying/special-standing & sentinel before being in battle - standing & walking after
+The wise old granny        2   370 G-----    --    12-13       79-86   [human], sitting, fireball, lightning bolt
+A playful pink faery       3  3150 N-----    --    13-23      893-908  [fairie?], vuln unlife?/dark?, immune pure/light, resist magic? (3 insta), +5 starthp, flees, flying/special-standing before being in battle - standing after
+A wild horse               3  3000 N-xxx-    --    60-63        0-0    [---], mountable
+A chirpy red faery         4  7000 N-x---    --    68-72      339-349  [fairie], flees, flying/special-standing before being in battle - standing after
+A brightly glowing faery   5   12k N-----    --    91-93      455-463  [fairie], flees, flying/special-standing before being in battle - standing after
+A shy forest gnome         5   12k N-x-x     --    42-49     1512-1977 [gnome], resist magic, imp, flees on look, sneak
+A fiesty fire red faery    6   24k N-x---    --   109-113     492-495  [fairie], flees, flying/special-standing before being in battle - standing after
+An angry orange faery      7   35k N-----    --   138-147     547-554  [fairie], flees, flying/special-standing before being in battle - standing after
+A large owl                8   60k N--xxx    --   148-150     957-959  [bird], looter, flees
+A wood elf                10  150k Nx-xxx    --   181-187    5142-5158 [elf], cause critic, burning hands
+Mr Toad                   50       G--       -                         questmaster, no-attack, walk-path (see above)
+The old oak tree          60       Nx-       -                         no-attack, casts spells on you (bless, revitalize, armor, remove curse, remove poison)
+The lodge shopkeeper     100       N--       -                         shopkeeper

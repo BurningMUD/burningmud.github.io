@@ -1,0 +1,64 @@
+# Dwarven Catacombs (19): 10-25, Raff  (Karandras: 10ed3n)
+* FIND OUT: The zombie      Summoned by necromancer? Data?
+* FIND OUT: The spectre     Data?
+#
+#                     x
+#                    o
+#                    |
+#                    o
+#                    |
+# o - o - o - o ---- o
+# |       |          |       a
+# o - o   o - o      o       ^
+#     |   |          |       |
+# a<- o   o - o      o - t - t - t
+#     |   |          |       |   |
+#     o   o - o      o       t - t
+#     |   |          |           +
+#     o - o - G  /-o-Db- o       o
+#                |       |
+#                |       o - o - o - o - o - o
+#                |       |       |           |
+#                |       |       v           |
+#                o       |       o      o -- o
+#                |       |       |     /     |
+#                |       o       o -- o      |
+#                |       |       |           o
+#        o - o - o - o   |       o -> a      |
+#        |               |       |           o
+#        o ----- o ----- o - o - o --- o     |
+#        |               |             |     |
+#        o ------------- o             o --- o
+#                        |                   |
+#                        v                   o
+#                        a - o               |
+#                        |   |               o
+#                        o - o               |x
+#                                            X
+#
+* Northwest part is very bright
+* Db: Darkenbeast
+* G:  Grand templar
+* t:  Tunnel room. Max 2 livings.
+
+Dwarven Catacombs:   Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+The zombie ?           5?                                           [undead?], summoned
+A bat                  5   14k N-----    GNE   97-105       0-0     [animal]
+A templar page         7   35k G-x--x    --   137-145     541-818   [human], flees
+A spelunker            8   60k G-x--x    --   156-160     738-858   [human], flees
+A graverobber          9   90k E-x---    GNE  177-185     877-919   [human]
+It                    10  110k N-x---    GNE  194-207    1001-1001  [insubstantial]
+Some mist             10  100k Nxx---    --   193-204     201-201   [insubstantial]
+The spectre           10? 100k?           N                 1       [insubstantial?], summoned
+A skeleton            11  132k E-x---    GNE  214-223    1101-1101  [skeleton]
+A mysterious wraith   12  156k N-x---    GNE  232-249     601-601   [insubstantial]
+A templar             12  156k G-x--x    GNE  233-244     501-501   [human]
+The templar officer   13  182k G-xx-x    GNE  256-262     601-601   [human], bash, berserk, headbang, kick
+Zombie                13  182k E-xx--    GNE  257-262     551-551   [undead]
+The shadow            14  210k N-x---    --   278-287     801-801   [insubstantial]
+The evil necromancer  15  255k E-x--     GNE  315-323    1101-1001  [human], blindness, curse, cure critic, no-charm, energy drain, feeblemind, summon spectre, summon zombie?, summon wraith
+The vampire           15  255k E----x    GNE  294-302    1001-1001  [vampire]
+The wraith            15  225k?           N                 1       [insubstantial?], summoned
+The grand templar     16  304k Gx-x-x    --   326-336    1501-1501  [human], blindness, cure critic, curse
+The prism dragon      20  600k E--x-x    GNE  442-461    3001-3001  [dragon]
+The DarkenBeast       24 1200k E-----    GNE  565-585   20001-20001 [magical]

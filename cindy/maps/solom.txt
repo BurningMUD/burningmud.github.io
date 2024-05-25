@@ -1,0 +1,61 @@
+# Starlet's Lost City of Solom (140): 40-100, Starlet  (Ofcol: 2w7s2w3sw3s2ws)
+#
+#                              |
+#                            - X -
+#                              |
+#                            Zarak
+#                              +
+#                              o                       f
+#                              |                       ^
+#                              o                       |
+#             ________________/|               o     Titan
+#            /                 |               |       |
+#           /              o - f ----- o ----- o   o - o
+#           |              |                   |   |
+#           o-o     Grell  o - o - o           o   o - o
+#             |       |            |       7   |       |        8
+#           o-o       o--------o   |       ^   o-o-Northlord    ^
+#          /         /|        |   o       |                    |
+#       o-o         / Ghosts   |   |   7<- 7 ------------------ 8 ->8
+#       |          /           |   |       |                    |
+#     o-o RIP RIP o-o   Medusa-o   |   5<- 5 ->5                |
+#     |    |   |    |              o       |                    |
+# RIP-o----o---o----o-RIP          |   3<- 3 ------------------ 4 ->4
+#     |    |   |   /|              |       |                    |
+#    RIP  RIP RIP o RIP        1<- 1 ----- 2 ->2   11  10   6<- 6 ->6
+#                 |                |       |        ^   ^       |
+#              Dragon              v       v        |   |       |
+#                                  1       2   11<-11--10 ----- 9 ->9
+#                                                   |   |       |
+#                                                   |   v  13   v
+#                                                   |  10   ^   9
+#                                                   |       |
+#                                              12<-12 ---- 13 ->13
+#                                                   |       |
+#                                                   v  14<-14 - o
+#                                                  12       |   |
+#                                                           v   o
+#                                                          14   |
+#                                                               o
+#                                                               |
+#                                                           Dragonne + o
+#
+* Min level 0/32
+* Toll-Gate room is very bright. Beware Zarak - nasty backstabber.
+* Ancient ghosts are vuln energy but immune to pierce. All 3 in the same room,
+*  but once they've been in fight, they will start moving around.
+*  Once killed, the wand bearer spawns on the "f"?
+Solom:                         Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+A Giant Rat                     40 8000k E--x-x    G    827-839   8050-8792  vuln gas, NOT vuln poison, NOT resist dark
+The Deadly Grell                40   24M Ex-x-x    G   2019-2019  20009-20009 [magical]
+An Orc of the Broken Bone       50   37M E-xx-x    G   2009-2011  20010-20024 vuln pure/light/fire, resist ice/poison/dark, invis
+The Bugbear                     55   55M E-xxx     G   2583-2622  20016-20038 [---]
+A Skeleton of Sith              60   75M E-xxx     G   3017-3018  20001-20002 resist pierce/slash
+Zarak the Evil-Half Orc Assassin 60 120M Ex-x      G   5022-5034  40006-40010 vuln light, resist dark, backstab (548)
+The Three-Headed Chimera        60   75M E-xxx     G   3102-3108  20012-20016 [dragon], invis
+The Black Dragon                65  162M Ex-xx     G  13576-14580 40135-40179 [dragon], gas breath
+Northlord the Barbarian         75  315M Gx-xxx    -   8029-8031  30009-30015 [---]
+Dragonne                        80 1200M Ex-x      G  13031-13066 40045-40063 [dragon], poison, mass pain, energy drain, curse, blindness, special-tail-swing
+The Golden Titan                80 1280M Gx-xxx    -    ~11k      30009-30013 INFO, [entity], invis, blindness, powerheal, mass pain, 4xBANG
+Medusa                          85 2040M Ex-xx     GNE            40015-40018 INFO, [magical], powerheal, invis
+The ancient ghost               85   43M E-xxx     G E                        INFO, vuln energy, immune pierce/unlife, resist WEAPON, 6 attacks, area powerword pain, flying & sentinel before being in battle - standing & walking after

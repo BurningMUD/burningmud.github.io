@@ -1,0 +1,108 @@
+# Cain's Spawns of Darkness (353, 355): 45-100, Cain  (Slithering: 2wd2nw4ne2n2w, enter tree, 8d, drink well)
+* FIND OUT: A Black worm      Level (51-56)                     hp, hp, gold, gold, [insect?]
+* FIND OUT: A Pink worm       Level (51-56), xp, walk, di, agg, hp, hp, gold, gold, [insect?], vuln gas?, resist dark?, sneak?, 3-5 attacks?
+* FIND OUT: A White worm      Level (51-56)                     hp, hp, gold, gold, [insect?]
+* FIND OUT: A Snail           [insect?]
+* FIND OUT: A Mole            sanced,        xp, walk, di,      hp, hp, gold, gold, type, irvs
+* FIND OUT: A Black rat                          walk,          hp, hp, resist dark?, vuln pure?/light?
+* FIND OUT: An Ant worker                    xp, walk,     agg, hp, hp,             [insect?], vuln gas?, resist dark?, immune fire?
+* FIND OUT: An Ant Soldier                   xp, walk,          hp, hp,             [insect?], vuln gas?, resist dark?
+* FIND OUT: A Phase spider                   xp, walk,          hp, hp, gold, gold, immune poison?
+* FIND OUT: A Poisonous Viper                xp,       di,      hp, hp, gold, gold, [snake?], immune poison?, imp/invis, memory
+* FIND OUT: A Warp spider                    xp, walk,          hp, hp, gold, gold, immune poison?
+* FIND OUT: A Black spider                   xp, walk,          hp, hp,             [spider?], vuln fire?, immune poison?
+* FIND OUT: Lurk                             xp, walk,          hp, hp,             type?, irvs?
+* FIND OUT: Olg                              xp,       di,      hp, hp,             type?, irvs?
+* FIND OUT: Uma                              xp,                hp, hp
+* FIND OUT: Szeess                           xp,                hp, hp,             type?, irvs?
+* FIND OUT: Tixin'erto                       xp,                                    type?, irvs?
+* FIND OUT: MAP Tixi-part
+#
+#       o - o ------------ o ------------ o -Uma      X
+#       |   |                             |   |       |
+#       o - o                   /-> out   o   o       o
+#       |                      /          |           |
+#       o                     o <-\       o           o
+#      /                          |       |           |
+#     /   o - o - o -Olg- o - o - o       o - o - o - o
+#     \   |   |       |                   |
+#      \->o   o       o                   o
+#            /        |                   |
+#           a    Lurk+o                   o
+#                     |                   |
+#                 o - o                   o           o - o - o - o
+#                 |                       |           |           |
+#                 o                       o       o - o       o - o
+#                 |                       |       |           |
+#         o - o - o                       o   o - o       o - o
+#         |           o - ? - o - o - o   |   |           |
+#         o          /|   |  /|   |  /|   o - o --------- o
+#         +       RIP o - ? - ? -   - ?
+# o - o - o - o       |  /|   |   |   |
+# |           |       o - o -Tix- ? - ?
+# o       o   o       |   |   |   |  /|                /-> Tix
+# |      /|   |       o - ? - ? - ? - ?               /
+# o - o-/-o - o      /|   |  /|  /|   |             RIP
+#      x          RIP o - o - o - o - ?              |
+#     /              /   /   /|      /           In the web
+#    o - o         RIP RIP RIP|    RIP               |
+#        |                    |                  In the web
+#        o - o Szeess         a                      |
+#            |   |                                   v
+#            o - o                                   a
+#
+* Entrance from Enchanted Forest
+* The whole area is nosum/norecall
+* Area with Tixin'erto drains moves, and corpses quickly drop into DT:s.
+* Lurk is vuln pure/light. Olg is vuln fire if using plate. Uma is vuln fire.
+* RIP: Former deathtraps. Now they lead up to Tixi and south towards safety.
+
+Cain's Dark Spawn:       Lvl    Xp ASWIDMX # agg     Hp        Gold       Special
+A Black worm           51-56   45M E-xx      GN                           [insect?], vuln gas, resist dark, imp/invis, sneak, 3-5 attacks
+A Pink worm            51-56       E-                                     [insect?], vuln gas?, resist dark?, imp/invis
+A White worm           51-56   45M E-xx      GN                           [insect?], vuln gas, resist dark, imp/invis, sneak, 3-5 attacks
+A Large bug               56   45M E-xx      GNE 3837-3885   8878-10439   [insect], immune pierce, resist water, 3-5 attacks
+A Snail                   56   45M E-xx x    --- 3846-3895   9868-10655   [insect?], vuln gas, immune mental, resist pierce/poison/water, sneak, 4-5 attacks, looter
+A Mole                    65       N         ---                          [insect?], vuln gas?, resist dark?
+A Black rat               66   85M E- x  3   GNE            25091-25899   [rodent], resist dark?, vuln pure?/light?, dodge
+                                               Obli Anni Vapo Pulv Atom
+  WoJ:     WEAPON PURE LIGHT           avg 21                   6    1
+An Ant worker             68       E- x      G              30044-30075   [insect?], vuln gas?, resist dark?, immune fire?
+                                      Anni Vapo Pulv Atom
+  Firebrand: SLASH FIRE       avg 23        15   20
+An Ant Soldier            85       E- x  1   GNE           241098-241741  INFO, [insect?], vuln gas?, resist dark?, immune fire, resist unlife if using "lapis lazuli encrusted platemail"
+                                      Anni Vapo Pulv Atom
+  Souls:     PIERCE UNLIFE    avg 26         3   42
+A Phase spider            85       E- x       N                           INFO, [spider], immune poison?, imp
+A Poisonous Viper         85       E-x       ---                          [snake?], immune poison?, imp/invis
+A Warp spider             85       E- x       N                           INFO, [spider], immune poison?, imp
+A Black spider            90       E- x  2   GNE           244527-247151  [spider?], vuln fire?, immune poison?, dodge
+  +8 Firebrand:  16 hits out of 16:100%  (hr 12+34+8=54)
+                                               Obli Anni Vapo Pulv Atom
+  Firebrand: SLASH FIRE                avg 23             55   70
+Lurk                      95       Ex x  2 1 G--          2009446-2012132 INFO, [???], vuln pure/light, dodge, earthquake, 1-1 spell, >=5 attacks, 380/67 dam per attack, negate sanc 2/7 times (29%)
+  +3 WoJ:        18 hits out of 19: 95%  (hr 12+34+3=49)
+                                               Obli Anni Vapo Pulv Atom Ultr
+  WoJ:     WEAPON PURE LIGHT           avg 21                       17    1
+Olg                       95       Nxx   2 1 ---          2010705-2013022 INFO, [???], vuln fire if using "plate of the seventh star", immune dark, dodge, area feeblemind, earthquake, powerheal, 1-1 spell
+  +3 deathbr.:    4 hits out of 41: 10%  (hr 12+34+3=49)
+                                               Obli Anni Vapo Pulv Atom
+  Deathbr: CRUSH         SLAY Human    avg 25         1    3
+Uma                       95       N-xx x  1 ---          3000152-3000161 INFO, [human], vuln fire, resist dark if using "Cloak of the seventh star", area powerword blind, powerword kill, deathspell, wither, earthquake, hell storm, shrugger, 8-9 attacks
+Szeess                   100       E--x  2   GNE          3004428-3009668 INFO, [???], parry, imp, shrugger, immune dark, area wither, earthquake, powerword blind, 1-1 spell
+  +8 firebrand:     13 hits out of 25: 52%  (hr 11+34+8=53)
+  +8 whip:          10 hits out of 20: 50%  (hr 11+34+8=53)
+                                               Anni Vapo Pulv Atom
+  Plain:     WEAPON                    avg 22        20
+  Crush:     CRUSH                      ?
+  Slash:     SLASH                      ?
+  Pierce:    PIERCE                     ?
+  Gas:       CRUSH LARGE GAS SlayMyth  avg 26   immune   (21 misses)
+  Firebrand: SLASH FIRE                avg 23   12    1
+Tixin'erto               100       Ex-x  3 1 GN   ~50k    5001398-5002223 INFO, [???], resist fire, imp, area powerword blind, area sleep, hell storm, area wither, 1-2 spells, 7-? attacks, shrugger
+  +8 something:  13 hits out of  96: 14%  (hr 10+34+8=52)
+  +3 deathbr.:    9 hits out of 101:  9%  (hr 12+34+3=49)
+                                                    Anni Vapo Pulv
+  Plain:   WEAPON                      avg 22             13
+  Deathbr: CRUSH         SLAY Human    avg 25              5    4
+  hf: 57/417  (resist)

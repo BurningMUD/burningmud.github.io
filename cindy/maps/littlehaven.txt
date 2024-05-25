@@ -1,0 +1,41 @@
+# Little Haven (13): 20-50, Mahatma  (Sundhaven: 2e4n2w2ndne2sesese3nenene3s)
+#
+#                               |
+#                          o <- o
+#                          |
+#                          v
+#   Queen                  o
+#  _  ^   _                |
+# / \ |  / \               v
+# \---NM---/               X
+#     |                 ___|______
+#  /--NM-\             /   |      \
+# |   |   |            |   o      |
+#  \- o -/          ___|___|___   |      o
+#     +            /   |   |   \  |     /^
+#     o            \-- o - o --/  |    / +
+#     |             ___|___|___   |   /  o
+#     o            /   |   |   \  |   |  +
+#     |            \-- o - o --/  |   |  o
+#     o                |   |      |   |  +
+#     |                o   \______/   |  o
+#  /->o               x               |  |
+#  |  |              o                |  o - o
+#  |  o + o         /                 |  |   ^
+#  \__|__x         o                  \__|___/
+#     |           /                      |
+#     o - o - o ---------- o ----------- o
+#
+* Whole inside area is very bright
+
+Little Haven:            Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+The thief                 15  345k E-x--x    --   286-301       0-0    [---], vuln large/superlarge, resist mental, flees
+The busy gnome            16  424k G-x--x    --   322-337    1516-1588 [---], vuln large/superlarge, resist mental
+The gnome guard           20  870k G-----    --   448-462    1903-2000 [---], vuln large/superlarge, resist mental
+The cold frost giant      20  957k N-xx-x    --   453-464    1926-1996 [giant], pulsing-areadamage
+The master herbal         20  957k N- --x    --   441-457    1917-1986 [elf], colour spray
+The white mistress        20  957k E-xx--    GNE  438-446    1954-1980 [human]
+The giant polar bear      24 1808k N--x--    GNE  570-577       0-0    [animal]
+The white dragon          25 2090k Ex-x-x    --   596-603    2409-2491 [dragon], pulsing-areadamage
+The blue dragon           26 2652k Exxx-x    GNE  627-642    2501-2583 [dragon], lightning breath
+The Snow Queen            55  110M Nx-- x    --  2995-2996   5189-5375 [human]

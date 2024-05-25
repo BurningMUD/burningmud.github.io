@@ -1,0 +1,187 @@
+
+http://www.lysator.liu.se/~tomca/burning/areas2.txt
+
+Min:       My suggestion for minimum level
+Sugg:      The creator's level suggestions
+Area name: The name of the area
+Dangers:   Things to be careful with, preceeded by mob's level
+
+Min Sugg  Area Name                 Dangers
+===========================================
+ 1  1-10  Faery Forest              
+ 1  1-10  Gypsy Village             6 Rat (walking), 8 & 10 sentinel mobs
+ 1  1-10  Herdarea                  
+ 1  1-10  Humblin                   
+ 1  1-10  Orchard                   
+ 1  1-10  Rabbit Warren             5-7 mobs
+ 1  1-10  Starlet's Newbie Area     
+ 1  1-10  The Circus                
+ 1  1-10  Torain's Druid Forest     
+ 1  1-100 Burning Arena             
+ 1  1-100 Burning Towers            
+ 1  1-100 City Of Myrridon          50-100 A few really nasty mobs
+ 1  1-100 City of Karandras         
+ 1  1-100 City of Ofcol             
+ 1  1-100 Dwarven Daycare           
+ 1  1-100 Elven Village             
+ 1  1-100 Lumberjack Forest         
+ 1  1-100 Merchant's Tower          
+ 1  1-100 Trade Road                
+ 1  1-100 Ultima                    Agg mobs. Harder the higher up you go
+ 1  1-25  Plains of the North       25 Shudde-M'ell
+ 1  1-30  Holy Grove                
+ 1  1-30  Kerofk                    DT:s
+ 1  1-30  Sundhaven                 
+ 1  1-8   Dharynn's Huge Forest     
+ 1  1-8   Pixie Forest              8-10 non-agg spellcasting mobs
+ 1  1-8   The Revered Plateau       
+ 1  5-15  Gnome Village             5 Crab
+ 1  5-20  Dragon Cult               14-23 agg mobs
+ 1  5-35  New Thalos                
+ 1  5-40  Mob Factory               
+ 1  5-40  Muldorbrooke              
+ 1  5-50  Atlantis                  10-35 agg mobs in northwest and lower parts
+ 1  5-50  City of Solace            
+ 1  5-50  The Dwarven Kingdom       Guards assist eachother
+ 1  8-55  Smugglers Den             
+ 1 10-20  The City of Thalos        lvl 10 if good-align
+ 1 10-30  Amazonia                  15 Avalanche, 25 Spirit, 30 Aguirre
+ 1 10-30  Galaxy                    10 comet, 20 upper floor, 25-30 top floor
+ 1 10-30  The Abandoned Cathedral   19 Erich
+ 1 10-35  Wyvern waterfalls         
+ 1 10-40  Rat's Lair                3-7 agg mobs
+ 1 10-50  Lagamore                  47 dobermans moving by the hedges
+ 1 10-50  Olympus                   20 By Ares
+ 1 10-70  Elven lands               37 agg-evil Rangers
+ 1 15-35  The HighLands             
+ 1 15-50  Hobgoblin Camps           
+ 1 15-60  New Elemental Canyon      22 Cyclops (obelisk to avoid)
+ 1 20-100 Fishing Village           
+ 1 20-100 Hades' Underworld         90 Tisiphone (agg-evil), 95 Cerberus, 75 Guards
+ 1 20-100 Kender Village            40 Bodyguard, 50 Bosk
+ 1 20-100 The Oasis of Cohn Shar    
+ 1 20-50  King's Castle             
+ 1 20-50  Mirror Realm              30-50 agg mobs
+ 1 20-50  The Garden of Angels      
+ 1 30-100 The Museum Of Legends     61 agg-evil mobs moving around
+ 1 30-100 kingdom of Inglestone     
+ 1 30-60  Shores of Venden          50 Giant Crab, 70 Coyote
+ 1 30-60  The Shipwreck             DT:s
+ 1 30-65  Upper Argo                
+ 1 35-65  The Court                 40 Astebeth
+ 1 40-100 Fortress of Mustaine      65 Torturer, 94 King, 100 Wraith
+ 1 40-100 The Castle Dunheim        50 Bear moving around
+ 1 40-100 The Tournament            50 Squire, 75 Gladiator
+ 1 40-50  The Marsh                 45 if not invis
+ 1 40-90  Nefertum's Ocean Floor    70 Chief, 50-55 agg mobs, underwater is norecall
+ 1 40-99  Narnia                    80 Maugrim, 55-100 agg demons
+ 1 45-75  DragonSpyre               45-60 Dragons
+ 1 50-100 City of Palanthas         lvl 50 for the part behind Lord Soth
+ 1 50-100 Dragontail Isle           85-95 agg mobs (temple and dungeons)
+ 1 50-100 High Clerists Tower       30-80 agg-evil Knights moving around
+ 1 50-100 Myrridon Mines            30-50 agg mobs on bottom floor
+ 1 50-100 Stronghold of Alterac     lvl 60 gatekeeper has entrance key
+ 1 50-100 Town of Lahresin          lvl 45 if good align, 50-65 agg-good mobs
+ 2  5-30  Miden'Nir                 4 Goblin
+ 5  1-100 Haondor                   17 Druid, 21 Dragon
+ 5  1-15  Enclave                   10 Orc Chief, 15 Elstar
+ 5  1-30  Sewer                     13-25 agg mobs
+ 5  5-15  Haunted keep              10 Mummy
+ 5  5-20  Moria                     5-12 agg mobs
+ 5  5-20  Wyvern's Tower            9-19 agg mobs
+ 5  5-25  The Elven Valley          DT:s, 15 Houses
+ 5  5-25  Werith's Wayhouse         
+ 5  5-30  Three of Swords           16-30 some mobs
+ 5 10-20  Point of Impact           15 Plant, 15 Eye, 30 Beast
+ 5 10-30  Einstein's Grasslands     15 tiger, head hunter
+ 5 10-30  Kingdom of Juargan        20-27 a few non-moving mobs
+ 5 10-30  Shaolin Temple            18-24 agg mobs
+ 5 10-40  Pyramid                   DT:s, 15 h-sphinx, 20 efreeti
+ 5 15-50  Drow City                 15-37 agg mobs
+ 5 20-100 Yggdrasil                 40 Gorgimera
+10  5-20  Goblik Warcamps           5-25 agg mobs (lots)
+10  5-45  Crystalmir Lake           27 Turtle dragon
+10  5-50  Arachnos                  DT:s, 6-29 agg mobs
+10 10-100 Antharia                  22 agg mobs on the way to the area
+10 10-100 Enchanted Forest          22-27 agg mobs, to enter tree or cave is dangerous!
+10 10-20  Troll Den                 5-13 agg mobs
+10 10-25  Ancalador                 5-25 agg mobs
+10 10-25  Dwarven Catacombs         5-24 mobs moving around
+10 10-30  Goblin Caves              17 Captain
+10 10-50  Great Eastern Desert      46 Worm, 50 Dracolich
+10 15-45  Darkenwood Mountain       25 Iggy, 35 Sammy
+10 15-65  The Secret Garden         30-42 agg mobs, 53 Master moving around
+10 30-65  The Old Kingdom           25 guide, 50 top floor agg mobs
+10 45-100 Citadel of Taon           DT:s, agg mobs moving around far inside
+15 10-20  Rand's Tower              25 Mage, 30 Spirit
+15 10-25  S. S. Scurvy              21-25 agg mobs
+15 10-25  The Ice Caves of Atavia   15-27 agg mobs
+15 20-100 The Keep of Mahn-Tor      Agg mobs. Lvl 40 to go inside the keep
+15 20-45  Oceania                   DT:s, 22 Serpents
+20 15-50  The Feverish Swamps       30 hunter, 40 mamba
+20 20-100 Zorn Uzkul                17-65 mobs. Some moving around
+20 20-40  Scubdu's Harpy Area       20-31 agg mobs
+20 25-100 Unholy Darkness           Agg mobs. Harder the lower you go
+20 25-75  The Plane of Nirvana      21-70 agg mobs
+20 30-60  Temple of Tomaaukkhen     30-60 agg mobs
+20 50-100 Soulstealer's Laboratory  90 Soulcrushers (bottom floor)
+25 20-50  Little Haven              Nomag-rooms with agg mobs
+25 30-100 Guild of DarkFriends      35-85 agg mobs
+25 30-50  Turvagar, the Dark Taiga  DT, 30 Gremlin, 50 agg-neutral King
+30 20-100 Demonbyen                 Careful! Lots of agg mobs up to lvl 75
+30 25-100 Krashkarand               75 Garatza
+30 30-50  Plains of Dust            50+ Ambush point, do NOT enter Solom
+30 40-75  The Varak-Ki Caverns      lvl 20 with imp, 51 warleader, 78 chief
+30 45-100 Citadel of the Order      Need invis or lvl 50 to get there, 71 Templars
+30 50-100 Random's Amber Keep       30-55 agg mobs
+30 50-85  The Land Of Lorca         many agg mobs, 55 Raiders
+32  0-0   Redferne's Residence      
+32 30-50  Graveyard Plus            55 Pyrolisks
+35 10-50  Ciquala's Lair            52 Ciquala
+35 30-100 High Tower of Sorcery     50 wooden golem, 50-85 sentinel mobs
+35 50-100 The Underground           45 Crawler, 92 Bob
+40 20-50  Chessboard of Karandras   24-55 agg mobs
+40 30-100 darkwater dungeons        44 Argrok, 50 Argotann
+40 30-50  City of Orshingal         60 Black Enfan
+40 30-50  Ice Area                  60 Dragon, guards assist each other
+40 40-80  Ruined City of Alchor     45 Lindskiarns moving around, 75 Warchief
+40 40-90  3 Mages                   25-75 agg mobs (lots)
+50 30-50  Fire Elemental Plain      55-58 guards moving around
+50 30-70  Ghenna                    lvl 55 if good-align, 60-75 agg mobs
+50 35-100 Storm Giant Castle        Agg mobs moving around
+50 40-100 The Underdark             Lots of agg mobs
+50 50-100 Fang's Black Castle       
+50 50-100 Ice Wall                  80 Sleet, agg mobs wandering around
+50 50-100 Milo'rai                  Must be KTV
+50 50-100 The Citadel               60 random-agg guards moving around, 80 lord agg-evil
+50 50-80  Antiriad                  45-80 agg mobs moving around
+51  ?-?   The Well                  40-100 agg mobs. Dangerous place!
+51 45-100 The Ice castle            55 Guards, 60 Guards
+51 50-100 Castle of Toormail        58 Gatekeeper, 30-94 agg mobs
+51 50-85  Dungeons of Lord Ceanyth  60 random-agg mobs on the way. 80 Beast & Monster
+51 50-95  The Abandoned Caves       55 agg mobs, 70 Mor'balach
+55 25-65  Barrier Reef              60 Octopus (hunts), 50-67 agg mobs
+55 35-100 Inferno                   50 Mind Flayers by entrance, 72-78 random-agg devils moving around
+55 45-65  Lost Temple               lvl 65 if you are good-aligned
+55 45-99  Khronatio                 55 agg mobs on the way (lots), 84 Ghosts (lots)
+55 50-100 Lorchid City              All mobs agg and moving around
+55 50-90  Nefertum's Oblivion       80 Sharns (lots), 85 Doppelganger
+55 51-100 The Amphitheatre          94-95 agg mobs (lots)
+60 40-100 Lost City of Solom        60 Zarak at entrance (550 hp backstabs), 40-85 agg mobs
+60 50-100 Astral Plane/Githyanki    65-95 agg mobs (lots)
+60 50-100 EarthSea                  70 bodyguards & 75 Draconians moving around
+60 50-100 valley of the Kings       68 Watchmen (lots)
+60 50-90  The Desolate Plains       63 mobs moving around
+65 40-100 Guallidurth               85-95 agg mobs
+65 45-100 The Ancient Lands         Dangerous! Norecall!
+65 50-100 Drakyri Isle              CAREFUL! Agg mobs of high levels
+65 50-100 Infernal Pit of Kerjim    Lots of agg mobs moving around. Some summon you back if you get away
+65 50-100 Ruins of Kaltor           66 Flaming Corpses (lots)
+65 50-100 The Dark Land of Gorm     72 random-agg gorms moving around
+65 55-100 Alterac Battlefields      Dangerous place!
+70 50-100 The Apocalypse            
+75 45-100 Spawns of darkness        Norecall, 60-100 agg mobs
+75 50-100 Nefertum's Ragnarok       Danger!
+75 50-100 White Snake Lair          75-85 agg mobs (lots)
+80 50-100 Dragons Graveyard         
+85 50-100 Halls of the Haarvenu     

@@ -1,0 +1,107 @@
+; My autobutch script. It kicks in whenever I gain xp or when I "butch" a
+; corpse. After (trying to) butcher, if the response showed the corpse to be a
+; true wellmob corpse, it does a "get all" on the same corpse, then repeats
+; the procedure with 2.corpse, 3.corpse etc, until no corpse found. Any items
+; found are given to the leader.
+; Spellup is done once all corpses have been properly taken care of.
+; If I give a homesick onion to the leader (I always keep it on top of
+; inventory), I get another one from your container (safety trig so I don't
+; start handing over my own eq in case of some bug). 
+; If someone drops an orb, I automatically pick it up (if I loot an orb and
+; leader is not ktv, he will drop it when my script gives it to to him).
+; Flasks and soul crystals are dropped. Compasses are put in my bag.
+; Usage: autobutch 1    Turn it on
+;        autobutch 0    Turn it off
+; This script uses "trigonprompt" which can be found in "useful.tf".
+; The "spellup" alias has been defined here to do nothing.
+
+/alias pb put %* bag
+/alias gb get %* bag
+/alias spellup /set whatever 0
+
+
+/set autobutch 0
+/alias ab autobutch %*
+/alias autobutch \
+	/if ({*} =~ '1' | {*} =~ 'on') \
+		/echo TF: Ok. AutoButch mode is ON.%; \
+		/set autobutch 1%; \
+		/purge butchscript*%; \
+		/if (pg) \
+			gtf emote will now autobutch and autoloot.%; \
+			/def -F -t"{*} just dropped Orb of *" butchscript0 = \
+				get orb%; \
+		/endif%; \
+		/def -F -t"You butcher Corpse of *" butchscript1 = \
+			get all %%{butchnr}.corpse%%; \
+			/set butchnr=$$[{butchnr} + 1]%%; \
+			butcher %%{butchnr}.corpse%; \
+		/def -F -t"You carve the heart out of Corpse of *" butchscript2 = \
+			get all %%{butchnr}.corpse%%; \
+			/set butchnr=$$[{butchnr} + 1]%%; \
+			butcher %%{butchnr}.corpse%; \
+		/def -F -msimple -t"Sorry, already butchered." butchscript3 = \
+			get all %%{butchnr}.corpse%%; \
+			/set butchnr=$$[{butchnr} + 1]%%; \
+			butcher %%{butchnr}.corpse%; \
+		/def -F -msimple -t"Only an animist can butcher this corpse." butchscript4 = \
+			/set butchnr=$$[{butchnr} + 1]%%; \
+			butcher %%{butchnr}.corpse%; \
+		/def -F -msimple -t"Butcher a friend, what kind of person are you???" butchscript5 = \
+			/set butchnr=$$[{butchnr} + 1]%%; \
+			butcher %%{butchnr}.corpse%; \
+		/def -F -ag -t"Sorry, no {*} here to butcher\." butchscriptgag = \
+			spellup%; \
+		/def -mregexp -p2 -t"^You get .* coin[s]? from Corpse of [^ ]+ .*\\.$$" butchscript6 = \
+			donothing%; \
+		/def -F -mregexp -t"^You get (.*) from Corpse of ([^ ]+) .*\\.$$" butchscript7 = \
+			/if (pg & autobutch) \
+				/if ({P1} =~ 'A compass') \
+					pb compass%%; \
+				/elseif ({P1} =~ 'A magical flask') \
+					drop flask%%; \
+				/elseif ({P1} =~ 'Soul Crystal') \
+					drop crystal%%; \
+				/else \
+					/echo TF: LOOTED %%P1!!! Giving to %%{groupleader}.%%; \
+					trigonprompt give 1."" %%{groupleader}%%; \
+				/endif%%; \
+			/endif%; \
+		/def -F -t"You give a homesick onion to {*}" butchscript8 = \
+			/if (autobutch) \
+				/echo TF: Autobutch script buggy???%%; \
+			/endif%%; \
+			gb onion%; \
+		/def -F -mregexp -t"^You give (Soul Crystal|A magical flask|A compass) to ([^\\.])\\." butchscript9 = \
+			/if (autobutch & {P2} =~ {groupleader}) \
+				give 1."" %%{groupleader}%%; \
+			/endif%; \
+	/elseif ({*} =~ '0' | {*} =~ 'off') \
+		/echo TF: Ok. AutoButch mode is OFF.%; \
+		/if (pg) \
+			gtf emote will no longer autobutch or autoloot.%; \
+		/endif%; \
+		/set autobutch 0%; \
+		/purge butchscript*%; \
+	/else \
+		/echo TF: autobutch 0 or 1?%; \
+	/endif
+
+/def -F -ah -mregexp -t"^You receive ([0-9]+) experience points\.$" ireceivexp = \
+	/if (autobutch) \
+		/set butchnr 1%; \
+		butcher corpse%; \
+	/endif
+
+/alias butch \
+	/if ({*} =~ 'c' | {*} =~ 'co' | {*} =~ 'cor' | {*} =~ 'corp' | {*} =~ 'corps' | {*} =~ 'corpse') \
+		/set butchnr 1%; \
+	/else \
+		/set butchnr=$[replace(".corpse", "", {*})]%; \
+		/set butchnr=$[replace(".corps", "", {butchnr})]%; \
+		/set butchnr=$[replace(".corp", "", {butchnr})]%; \
+		/set butchnr=$[replace(".cor", "", {butchnr})]%; \
+		/set butchnr=$[replace(".co", "", {butchnr})]%; \
+		/set butchnr=$[replace(".c", "", {butchnr})]%; \
+	/endif%; \
+	butcher %*
