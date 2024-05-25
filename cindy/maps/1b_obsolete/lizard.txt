@@ -1,0 +1,18 @@
+# Lizard Lair Safari:
+#
+#           X ----------- o
+#           |          /  +
+#           V         |
+#         o o         |
+#         +/          |
+#         o - o - o   |
+#                /    |
+#       shop    /     |
+#         |    /      |
+#     o - o + o       |
+#    /   /            |
+#   /  RIP  o + o ---/ 
+#  /       /
+# o - o - o
+
+Lizard Lair Safari:      Lvl    Xp ASWIDMX # agg     Hp        Gold    Special

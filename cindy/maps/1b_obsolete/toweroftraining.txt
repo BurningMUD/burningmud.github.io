@@ -1,0 +1,55 @@
+# The Tower of Training: 1-3, Converted by Rafo
+#
+#                                            o
+#                                            +
+#                                            o
+#                                           /
+#                                          o
+#                                         /
+#                                 f   e<-/-o
+#                                 ^   ^ /  |
+#                                 |   |/   |
+#                                 o---o----o
+#                                 |  /|    |
+#                                 o-/-o----o
+#                                  /
+#                           o---o-/-o
+#                           |   |/  |
+#                           o---o---o
+#                           |  /|   |
+#                           o-/-o---o
+#                       gobl /
+#                          |/
+#                     skel-o-kob
+#                       o /|
+#                       |x gnom
+#                     o-o
+#      q               /|
+#      ^ o<---\     a o o
+#      |/     |     +/
+#   d<-o->a e-o-f b+q+c
+#     /|      |    /+
+# c<-/ V     zoo<-/ d
+#      b     /
+#         Recall
+#
+* Max lvl 7
+
+Tower of Training:       Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+A plains goblin            1       N--- -    -     17-22        2-2
+A rabid gnome              1       N--- -    -     23-27        2-2
+A river kobold             1       N--- -    -     18-28        2-2
+A skeleton                 1       N--- -    -     30-34        2-2    timed-agg-all
+A scrawny wolf             2       N-x- -    -     20-25        2-2
+A spider                   2       N-x- -    -     30-31        2-2
+A zombie                   2       E-x- -    -     19-23        2-2
+The monster of the tower   3       N--- -    G E   92-101     109-152
+Official Greeter          10       Gx-x      -                         nofight-room
+The first adept           10       Gx-       -                         nofight-room
+The fourth acolyte        10       Gx-- -    -    199-216       2-2
+The second acolyte        10       Gx-       -                         nofight-room
+The third acolyte         10       Gx-       -                         nofight-room
+Employment Officer       99+       N--       -                         no-attack
+Ticketmaster           59-63       Gx-       -                         nofight-room, say hi, say yes
+An Overjoyed Shopkeeper  94+       N--       -                         no-attack
+A BurningMud greeter     99+       N-        -                         no-attack

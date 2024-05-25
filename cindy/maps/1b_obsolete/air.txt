@@ -1,0 +1,21 @@
+# Air:
+#
+#       lvl 1                lvl 2
+#
+#   |   |   |   |        |   |   |   |  
+# - U - U - U - U -    - D - D - D - D -
+#   |   |   |   |        |   |   |   |  
+# - U - U - U - X -    - D - D - D - D -
+#   |   |   |  /|        |   |   |   |  
+# - U - U - U - U -    - D - o - D - D -
+#   |   |   |   |        |   |   |   |  
+# - U - U - U - U -    - D - D - D - D -
+#   |   |   |   |        |   |   |   |  
+# - U - U - U - U -    - D - D - D - D -
+#   |   |   |   |        |   |   |   |  
+#
+* U: Going up leads to same position at lvl 2
+* D: Going down leads to same position at lvl 1
+* o: No down exit, but otherwise not special.
+*
+* Going n/s/e/w past map also leads back to same room

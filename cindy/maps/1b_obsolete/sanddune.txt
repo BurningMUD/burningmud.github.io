@@ -1,0 +1,30 @@
+# Sand Dune:
+#
+# o
+# |
+# o - D
+#     |
+#     o - o
+#         |
+#         C         A
+#         |        /
+# o - o - o - o - B
+#         |
+#         o
+#         |
+#         o
+#
+* Seems to be in the same area as gypsy village and orchard.
+* Found no way in or out of zone. Random teleported there.
+*
+* A: The Sandcrab scuttles in your direction.
+* B: a driftwood log.
+* C: A Black Monolith stands here.
+*    A small monkey  screams at you then attacks wildly!
+* D: A lost goblin looks at you.
+* All 3 mobs are low level and aggro.
+
+Sand Dune:               Lvl    Xp ASWIDMX # agg     Hp        Gold    Special
+The sandcrab               5       N--x--    G     96-108       1-1
+The small monkey           8   55k E--x--    G    159-166       1-1
+The lost goblin           10  110k E-x---    G    191-193       1-1

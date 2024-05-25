@@ -1,0 +1,344 @@
+# The Free City of Karandras: 1-100, Torain/Burning Staff
+# FIND OUT: Hammer (detect invis, memory, hp, money)
+#
+#                                  |
+#                                -ONG-
+#                                  |
+#  o - o                       o   o   o                       o - o
+#  |   |/                      |/  +   |/                      |/  |
+#  o - o - o - o - o - o - o - o + o + o - o - o - o - o - o - o - o
+#      |                           +                           |
+#      o   o - o - o - o - o - o - o - o - o - o - o - o - o   o
+#      |   |   +   +   +   +   +       +   +   +   +   +   |   |
+#      |   |   o   o   o   o   o       o   o   o   o   o   |   |
+#      o   o                                               o   o
+#      |   |               o - o                           |   |
+#      |   |               |   |                           |   |
+#      o   o + o           o - o                           o   o
+#      |   |                   |                           |   |
+#      |   |            Post - o   o     Forge             |   |
+#      |   |                  /    |       |               |   |
+#      o   o + o    Meta Auc / o - o - o  Inn  o   o   o   o   o
+#      |   |     |   |   |  /  |   |   |   |   +   +   +   |   |
+#      |   |     CR- o - o-/-o o - o - o   o -Rec- o - o   |   |
+#      o   o + o |   +   |/        +       |   |   +   +   o   o
+#      |   |     o  GR D-o --- o - o - o - Q  ItS  o   o   |   |
+#      |   |                   |   |/  |                   |   |
+#      o   o - o - o - o - o - o -Ftn- o - Q - o - o - o - o   o
+#      |   |               |   |   |   |                   |   |
+#      o   o             Arena o - o - o                   o   o
+#      |   |                       |                       |   |
+#      o   o                       o                       o   o
+#      |   |        WlG            |                AnG    |   |
+#      o   o   G   o / o-o    Ss   o  Is     o-o   o / G   o   o
+#      |/  |   |   |/  |       |/  |   |/      |   |/  |   |   |/
+#    o-o   o   o -MaG- o   Hs- o - o - o -Ls   o -PrG- o   o   o-o
+#  O   +   |       |           |   |   |           |       |   +   O
+# -W-o+o + o - o - o - o - o - o -ATM- o - o - o - o - o - o + o-o-E-
+#  G   +/  |       |           |/  |   |/          |       |   +   G
+#    o-o   o       | NbG   Bs- o - o - o -Gs       | TeG   o   |/
+#      |   |       |/          |   |   |           |/      |   o-o
+#      o   o      ThG       o Ms   o  Herbs       FiG      o   |
+#      |   |                +/     |                       |   |
+#      |   |                o - o  |                       |   |
+#      o   |                   x   |                       |   |
+#      |   |                  o    |                       |   |
+#      o   |                       |                       |   o
+#      |   o + o   o   o   o   Bs- o -Vs   o   o   o   o + o   |
+#      o   |       |   |   |       |       |   |   |       |   o
+#      |   o + o   o   o   o   o - o - o   o   o   o   o + o   |
+#      o   |       +   +   +   |   |   |   +   +   +       |   o
+#      |   o - o - o - o - o - o - C - o - o - o - o - o - o   |
+#      o   |                   |   |   |                   |   o
+#      |   o + o     Halvdan - o - o - o               o + o   |
+#      o   |                       |   |                   |   o
+#      |   o + o                   o Darkfriends       o + o   |
+#      o   |                boat   |                       |   o
+#      |   o + o            shop-o-o-o-Brewery         o + o   |
+#      o   |                       |                       |   o
+#      |   o                       o                       o   |
+#      o   |                       |                       |   o
+#      |   o   o   o   o   o - o - o - o - o   o   o   o   o   |
+#      o   |   +   +   +   |   |   |   |   |   +   +   +   |   o
+#      |   o - o - o - o - o - o - o - o - o - o - o - o - o   |
+#      o       +       |           +           |               o
+#      |   o - o - o   o   o   o - o + o   o   o               |
+#      o   |   |   |   |   +       |       +   |   Mob         o
+#      |   o - o - o   o   o - o - o - o - o   o - Factory     |
+#      o   |   |   |   |   +       |       +   |               o
+#      |   o - o - o   o   o   o + o + o   o   o               |
+#      o               +                       +               o
+#      |/           /  +    /               /  +    /          |/
+#  o - o - o - o - o + o + o - o - o - o - o + o + o - o - o - o - o
+#  |   |           |   +   |       +       |   +   |           |   |
+#  o - o           o   o   o    Grave-     o   o   o           o - o
+#                      |         yard          |
+#                    OSwG                    OSeG-
+#                      |                       |
+#
+#
+#      o - o                       o - o - o                       o - o
+#      |   |                       |   |   |                       |   |
+#      o - o                       o - o - o                       o - o
+#         /                           /                           /
+#  o - o /                     o - o-/-o                       o-/-o
+#  |   |/                      |   |/  |                       |/  |
+#  o - o - o - o - o - o - o - o - o - o - o - o - o - o - o - o - o
+#     /|                      /       /                       /|
+#      o                                                       o
+#      |                                                       |
+#      o                                                       o
+#      |                                                       |
+#      o                                                       o
+#      |                                                       |
+#      o                                                       o
+#      |                                                       |
+#      o                                                       o
+#      |                                                       |
+#      o                                                       o
+#      |                                                       |
+#      o                                                       o      o - o
+#      | o - o                                                 |      |   |
+#      o |   |                                                 o      o - o
+#      | o - o                                                 |     /|   |
+#      o |  /|                                                 o    / o - o
+#      | o-/-o                                                 |   /
+#  o - o  /                                                    o--/-o
+#  |  /| /                                                    /| /  |
+#  |   |/                                                      |/   |
+#  o - o                                                       o -- o
+#  |   |                                                       |    |
+#  |   |                                                       |    |
+#  o - o                                                       o -- o
+#     /|                                                      /|
+#      o                                                       o
+#      |                                                       |
+#      o                                                       o
+#      |                                                       |
+#      o                                                       o
+#      |                                                       |
+#      o                                                       o
+#      |                                                       |
+#      o                                                       o
+#      |                                                       |
+#      o                                                       o
+#      |                                                       |
+#      o                                                       o
+#      |                                                       |
+#      o                                                       o
+#      |                                                       |
+#      o                                                       o
+#      |                                                       |
+#      o                                                       o
+#      |                                                       |
+#      o o - o                                                 o
+#      | |  /|                                                 |
+#      o o-/-o         o - o - o               o - o - o       o   o - o
+#      |  /            |  /|   |               |  /|   |       |  /|   |
+#      o /             o-/-o - o               o-/-o - o       o / o - o
+#      |/               /                       /              |/
+#  o - o - o - o - o - o - o - o - o - o - o - o - o - o - o - o - o
+#  |  /|          /|   |  /|              /|   |  /|          /|   |
+#  o - o           o - o - o               o - o - o           o - o
+#
+* Player Shop Zone: 1-100, Bane
+* Shop Endymion : unknown-d
+* Shop Guile    : Ofcol-3en
+#
+#                       Kynd  Zedd--?    Gorog
+#                         |    |    |      |
+#                ?-----Keso-Laalaa-Zzz  Wolf-Lablanca Cold Candyman
+#                |        |    |           |      |      |   |
+#     Calizz-Cromwell-Legolas-Gabe Hazard-Jahve--It---Drool--?
+#                |        |    |           |      |      |
+#           ?--Coward--Cindy - o --- o --- o ---Sam---Gnoth-Suffer
+#           |    |        |   /|          /|      |      |
+#        Kerish--?     Elric   |           | Oogabooga Kasexi
+#                              o           o
+#              Thika           |           |        Amida
+#                |             |           |         /
+#     Gawyn-Sebastian-Culloden-o --- o --- o ---- ?-/--Morby---Eibon
+#                |        |   /|          /|      |/     |      |
+#           ?----?----Brutus-Tsabu Totto-Woodiz-Amida-Derfian---Oi---?
+#                |        |    |           |      |      |      |    |
+#              Cooli------?--Mizzy-?      Moe--Methaus--Guile-Zephyr-Tern
+#                         |    |           |      |      |
+#                     Caesar Prowler       ?  Nikodemus Adde
+
+Karandras:               Lvl    Xp ASWIDMX # agg     Hp        Gold     Special
+A Dwarf Ent (guild)     1-40       N--       -                          nofight-room
+A hobbit traveler       1-40       G--       -                          no-attack
+A Holy Guardian (guild) 1-40       N--       -                          nofight-room
+A lone adventurer       1-40       G--       -                          no-attack
+A patron (drinking)     1-40       G--       -                          no-attack
+A patron (guild,levitat)1-59       G--       -                          nofight-room
+A patron (guild,listeni)1-59       G--       -                          nofight-room
+A patron (guild,mumblin)1-59       G--       -                          nofight-room
+A patron (guild,talking)1-59       G--       -                          nofight-room
+A patron (guild,eyeing) 1-40        --       -                          nofight-room
+A patron (guild,drinkin)1-40        --       -                          nofight-room
+A patron (mourning)     1-40       G--       -                          no-attack
+A scout (packing)       1-40       G--       -                          no-attack
+A secretary (writing)   1-40       G--       -                          nofight-room
+A troll bounty hunter   1-40       G--       -                          no-attack
+A visiting undertaker   1-40       E-x       -                          no-attack
+A wall guard            1-40       G-x       -                          no-attack
+A wandering traveller   1-40       N-x       -               3561       vuln slay human, invis, no-attack
+An elite guard (post)   1-40       Gx-       -                          nofight-room
+The Arch Bishop (hall)  1-40       Gx-       -                          nofight-room
+The Arch Wizard (hall)  1-40       Gx-       -                          nofight-room
+The attendant to the cathedral
+                        1-40       G--       -                          nofight-room
+The Knight (guild)      1-40       N--       -                          nofight-room
+The Mage Guild Sorcerer 1-40       N--       -                          nofight-room
+The Master Thief (guild)1-40       N--       -                          nofight-room
+The Master Thief (hall) 1-40       Gx-       -                          nofight-room
+The Nightblade Guard (g)1-40       E--       -                          nofight-room
+The Paladin (guild)     1-40       N--       -                          nofight-room
+The Sword Master (hall) 1-40       Gx-       -                          nofight-room
+The Tourist Guide (Kar.)1-40       G-x       -                          no-attack
+The Warlock (guild)     1-40       E--       -                          nofight-room
+A dog (digging)            1       N-xx--    -     29-34        0-0
+A peasant boy (blocks)     1       G----     -     13-18       14-16    +3 starthp
+A peasant girl (playing)   1       G----     -     15-19       12-13    +3 starthp
+The peasant boy (chasing)  1       G-x---    -     27-28        2-3
+The peasant boy (playing)  1       G-x---    -     31-38        2-5
+The peasant girl (crying)  1       G-x---    -     27-28        3-5
+The pigeon (bathes)        1       N-----    -     24-31       16-18    immune earth
+The cat (sleeping)         1       N-x---    -     32-33        0-0
+The duckling               1       N-x--     -     29-29        0-0
+The hen (pecking)          1       N-x---    -     28-29        0-0
+The peasant girl (sits)    1       G-x---    -     27-29        2-4
+The pig (lost)             1       N-x--     -     24-31        0-0
+The rooster (strutting)    1       N-x--     -     32-32        0-0     immune earth
+The squirrel               1       N-x--     -     28-34       20-27
+A bourgeois boy (chases)   2       G-x---    -     25-40        9-12
+A bourgeois boy (marbles)  2       G----     -     36-37       40-41
+A bourgeois boy (hoop)     2       G-x--     -     29-41       10-15
+A bourgeois girl (looking) 2       G-x---    -     29-38        9-11
+A bourgeois girl (petting) 2       G-x--     -     74-88       12-15
+A bourgeois girl (sleeps)  2       G----     -     36-37       45-45
+A peasant woman (preparing)2       G----     -     32-34       39-42
+A pilgrim (looking)        2       G-x--     -     37-41      191-199
+A pilgrim (walks)          2       G-x--     -     25-38      191-193
+The duck                   2       N-x---    -     35-35        0-0
+The orcish peasant woman (picking)
+                           2       G-x--     -     33-38       10-11
+The peasant woman (wanders)2       G-x--     -     31-34        6-15
+The swan                   2       N-x--     -     35-38        0-0
+A peasant man (resting)    3       G----     -     57-62       67-67
+An aristocrat boy (looking)3       G-x---    -     59-69       85-90
+An aristocrat boy (school) 3       G-x---    -     55-59       67-91
+An aristocrat boy (studyin)3       G-----    -     58-65       62-65
+An aristocrat girl (pushin)3       G-x---    -     63-65       68-79    vuln slay human
+An aristocrat girl (sew)   3       G----     -     56-57       71-73
+An aristocrat girl (smelli)3       G-x---    -     58-61       75-83    vuln slay human
+The dwarven peasant man    3       G-x---    -     56-65       20-24
+The fox                    3       N-x--     -     63-69        0-0
+The peasant man (sits)     3       G-x---    -     56-68       21-29
+The pony (wanders)         3       N-x---    -     66-66        0-0
+A bourgeois woman (busies) 4       G----     -     75-86      113-114
+A bourgeois woman (shoppin)4       G-x---    -     71-78       36-48
+A bourgeois woman (waiting)4       G-x--     -     82-89       38-58
+A traveller (pauses)       4       N-x--     -     81-83      377-389
+A traveller (rests)        4       N-x--     -     80-91       82-82
+A cutpurse (leans)         5       E-x---    -    103-111     470-471   sneak, vuln slay human
+A recruit (warrior's)      5       N-x---    -    104-111     480-481   vuln slay human
+An acolyte (Cleric)        5       G-x---    -     96-105     471-479   vuln slay human
+An initiate (mage)         5       N-xx--    -    103-104     476-479   vuln slay human
+The chicken                5       E-xx--    -    201-201       1-1     summoned, flees, can load full newbie-set
+The riding horse (tied)    5       N-----    -    103-104       0-0     mountable
+A bourgeois man (handsome) 6   18k G-x--     -    131-138      74-82    vuln slay human
+A bourgeois man (reading)  6   24k G-----    -    109-110      67-70    vuln slay human
+A bourgeois man (relaxing) 6   24k G-x---    -    111-118      46-74    vuln slay human
+An aristocrat woman (fanni)6   24k G-----    -    103-133      85-86    vuln slay human
+An aristocrat woman (waiti)6   24k G-x--     -    115-128     360-410   vuln slay human
+An aristocrat woman (walks)6   24k G-x---    -    112-118     401-441   vuln slay human
+The draft horse (tied)     6   24k N----     -     91-118       0-0     mountable
+The light war horse (tied) 7   35k N-----    -    118-144       0-0     mountable
+An aristocrat man (smoking)9   90k G-----    -    172-183     853-860   vuln slay human
+An aristocrat man (waits)  9  108k G-x---    -    180-187     896-918   vuln slay human
+An aristocrat man (watchi) 9  108k G-x---    -    203-221     884-892   vuln slay human
+A fence (wondering)       10  110k E-x---    -    190-193     949-952   sneak, vuln slay human
+A mendicant (helping)     10  120k G-x---    -    190-221     958-959   vuln slay human
+A mercenary (waiting)     10  120k E-x---    -    189-191     947-948   vuln slay human
+A militia guard (manning) 10  120k G--x--    -    198-199     942-978   vuln slay human
+A militia guard (watching)10  120k G-xx--    -    193-197     920-968   vuln slay human
+A scholar (studying)      10  120k G-xx--    -    186-202     965-968   vuln slay human
+An archer (guarding)      10  120k G-xx--    -    152-195     963-967   vuln slay human
+An archer (watching)      10  120k G--x--    -    188-215     924-999   vuln slay human
+A city guard (keeping)    15  285k G-xx--    -    306-309    1412-1500  vuln slay human
+A city guard (silently)   15  270k G--x--    -    267-351    1408-1482  vuln slay human
+A cleric (thinking)       15  285k G-x---    -    277-290    1455-1456  vuln slay human
+A fighter (passes)        15  285k G-x---    -    293-297    1439-1457  vuln slay human
+A mage (performing)       15  263k G-xx--    -    275-309    1439-1459  vuln slay human
+A thief (hiding)          15  345k E-x---    -    276-315    1456-1461  hide, sneak, NOT thief
+A magsman (eyeing)        20  640k E-x---    -    446-496    1948-1956  sneak, vuln slay human
+A priest (ministering)    20  600k G-x---    -    476-523    1937-1951  vuln slay human
+A sorcerer (looking)      20  600k E-xx--    -    457-466    1956-1966  vuln slay human, casts bless on you
+A tower guard             20  600k G--x-     -    441-451    5016-5095  vuln slay human
+A warrior (headed)        20  600k G-x---    -    453-491    1953-1963  vuln slay human
+A bishop (exuding)        25 1500k G-x---    -    597-608    2446-2469
+A gate guard (watching)   25 1500k G--x--    -    582-601    5014-5078  vuln slay human
+A swordsman (practicing)  25 1500k G-x---    -    654-694    2442-2460  vuln slay human
+A wizard (mumbling)       25 1500k N-xx-     -    613-666    2441-2460  vuln slay human
+An assassin (slinks)      25 1625k E-x---    -    594-597    2468-2468  hide, sneak, vuln slay human
+The Potion-Brewing Apprentice
+                          25 1000k Nx----    -    622-634    8427-8494  vuln slay human
+The Scroll-Scribing Apprentice
+                          25 1000k Nx----    -    585-591    8174-8269  vuln slay human
+A high guard (wanders)    30 3750k G-xx--    -    722-782    2937-2978  vuln slay human
+A high guard (silently)   30 3465k G--x--    -    757-796    2979-2981  vuln slay human
+A sneaky killer           35 7875k E-x---    -    924-926    3549-3556  vuln slay human
+A travelling paladin      35 7875k G-x---    -    910-922    3561-3564  vuln slay human
+An elite guard (hall)     35 7700k Gx-x--    -    719-915    2903-2986  vuln slay human
+The Guard Captain (hall)  50       Gx-       -                          nofight-room
+An officer of the Orhan young adventurer's society
+                          50       Nx-       -                          shopkeeper
+The Chimpanzee Librarian  51   20M Nx xxx    -   2007-2008  37356-37395
+The Wrinkled Old Mother of the Wizard
+                       54-55   55M Nx-xxx    -   6000-6000  30826-32151 +~6000 hp, vuln slay human
+Elaxer                    60     0 N-xxx-    -  20745-20745  5501-5501  vuln slay human, walk-special, emote-asks for spells in battle, shrugger, summon chicken
+The Master Conjurer       60   90M Nx-xxx    -   6336-6600  49913-49914 vuln slay human
+Hammer, the Veteran       70       G-x       -                          INFO, hunt naked chars and give them newbie eq
+The Mayor (hall)          70       Gx-       -                          no-attack
+The Grand Knight of Paladins
+                          85       Gxxx x    -              19994-29702 INFO, vuln slay human, wither, powerheal, confusion, miracle
+A Blue Navigator        100+       Gx-       -                          no-attack, transport-special
+A Red Navigator         100+       Gx-       -                          no-attack, transport-special
+Algoth, the meta wizard 100+       N--       -                          shopkeeper
+Allanon the Priest      100+       Nx-       -                          nofight-room
+An ancient guardian     100+       N--       -                          nofight-room
+Braveheart the Lion     100+       Nxx       -                          CR-special, no-attack
+Dneg Rockbeard the dwarven smith  
+                        100+       Nx-       -                          shopkeeper
+Gryshk the Questmaster  100+       Ex-       -                          no-attack, questmaster
+Halvdan the Quest shopkeeper
+                        100+       N--       -                          shopkeeper
+Irmgarde                100+       N--       -                          shopkeeper
+Leowyn                  100+       N--       -                          shopkeeper
+Lionheart the Brave     100+       Nxx       -                          CR-special, flying, no-attack
+Sheila                  100+       N--       -                          nofight-room
+The armourer (guild)    100+       N--       -                          shopkeeper
+The auctioneer          100+       N--       -                          auctioneer
+The baker               100+       N--       -                          shopkeeper
+The bartender (guild)   100+       N--       -                          shopkeeper
+The boatswain           100+       N--       -                          shopkeeper
+The brewer              100+       N--       -                          shopkeeper
+The Captain of the Karandras cityguard guild
+                        100+       Gx-       -                          questmaster, no-attack
+The clerk               100+       N--       -                          shopkeeper
+The grocer              100+       N--       -                          shopkeeper
+The guildmaster (guild) 100+       N--       -                          nofight-room
+The hammer crafter      100+       N--       -                          shopkeeper
+The herbalist           100+       N--       -                          shopkeeper
+The innkeeper           100+       N--       -                          shopkeeper
+The iron worker         100+       N--       -                          shopkeeper
+The item store clerk    100+       N--       -                          nofight-room
+The librarian (guild)   100+       N--       -                          shopkeeper
+The Overseer            100+       N--       -                          no-attack
+The postmaster          100+       N--       -                          nofight-room
+The receptionist        100+       N--       -                          nofight-room
+The Sorcerer            100+       Gxx       -                          no-attack, invis
+The steel worker        100+       N--       -                          shopkeeper
+The wizard              100+       N--       -                          shopkeeper
